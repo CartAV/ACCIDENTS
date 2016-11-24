@@ -6,7 +6,7 @@
       "group": "DSCR",
       "type": "ANALYST_READWRITE",
       "runJob": false,
-      "downloadData": true
+      "downloadData": false
     },
     {
       "group": "SIC",
