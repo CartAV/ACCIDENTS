@@ -7,6 +7,12 @@
       "type": "ANALYST_READWRITE",
       "runJob": false,
       "downloadData": true
+    },
+    {
+      "group": "SIC",
+      "type": "READER",
+      "runJob": false,
+      "downloadData": false
     }
   ],
   "tutorialProject": false,
