@@ -13,12 +13,6 @@
       "type": "READER",
       "runJob": false,
       "downloadData": false
-    },
-    {
-      "group": "DGOM",
-      "type": "READER",
-      "runJob": false,
-      "downloadData": false
     }
   ],
   "tutorialProject": false,
