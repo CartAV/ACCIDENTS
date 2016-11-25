@@ -10,6 +10,42 @@
         {
           "ref": "lieux_2006",
           "deps": []
+        },
+        {
+          "ref": "lieux_2007",
+          "deps": []
+        },
+        {
+          "ref": "lieux_2008",
+          "deps": []
+        },
+        {
+          "ref": "lieux_2009",
+          "deps": []
+        },
+        {
+          "ref": "lieux_2010",
+          "deps": []
+        },
+        {
+          "ref": "lieux_2011",
+          "deps": []
+        },
+        {
+          "ref": "lieux_2012",
+          "deps": []
+        },
+        {
+          "ref": "lieux_2013",
+          "deps": []
+        },
+        {
+          "ref": "lieux_2014",
+          "deps": []
+        },
+        {
+          "ref": "lieux_2015",
+          "deps": []
         }
       ]
     }
@@ -31,13 +67,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1480095072671
+    "lastModifiedOn": 1480095186153
   },
   "customMeta": {
     "kv": {}

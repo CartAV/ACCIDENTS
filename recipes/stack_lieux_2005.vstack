@@ -17,6 +17,51 @@
         "language": "GREL",
         "distinct": false
       }
+    },
+    {
+      "index": 2,
+      "originLabel": "lieux_2007",
+      "preFilter": {}
+    },
+    {
+      "index": 3,
+      "originLabel": "lieux_2008",
+      "preFilter": {}
+    },
+    {
+      "index": 4,
+      "originLabel": "lieux_2009",
+      "preFilter": {}
+    },
+    {
+      "index": 5,
+      "originLabel": "lieux_2010",
+      "preFilter": {}
+    },
+    {
+      "index": 6,
+      "originLabel": "lieux_2011",
+      "preFilter": {}
+    },
+    {
+      "index": 7,
+      "originLabel": "lieux_2012",
+      "preFilter": {}
+    },
+    {
+      "index": 8,
+      "originLabel": "lieux_2013",
+      "preFilter": {}
+    },
+    {
+      "index": 9,
+      "originLabel": "lieux_2014",
+      "preFilter": {}
+    },
+    {
+      "index": 10,
+      "originLabel": "lieux_2015",
+      "preFilter": {}
     }
   ],
   "engineParams": {
@@ -40,13 +85,32 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "language": "GREL",
     "distinct": false
   },
-  "originColumnName": "original_dataset",
-  "selectedColumns": [],
+  "selectedColumns": [
+    "Num_Acc",
+    "catr",
+    "voie",
+    "v1",
+    "v2",
+    "circ",
+    "nbv",
+    "pr",
+    "pr1",
+    "vosp",
+    "prof",
+    "plan",
+    "lartpc",
+    "larrout",
+    "surf",
+    "infra",
+    "situ",
+    "env1"
+  ],
   "addOriginColumn": false,
   "mode": "UNION"
 }
