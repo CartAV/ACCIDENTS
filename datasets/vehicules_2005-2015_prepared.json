@@ -48,12 +48,14 @@
       {
         "name": "senc",
         "type": "bigint",
+        "meaning": "vehiculessenc",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "catv",
         "type": "bigint",
+        "meaning": "vehiculescatv",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -108,6 +110,15 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1480096919387
   },
   "customMeta": {
     "kv": {}
