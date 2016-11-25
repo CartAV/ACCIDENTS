@@ -116,7 +116,8 @@
     "dimensions": []
   },
   "tags": [
-    "source"
+    "source",
+    "usagers"
   ],
   "checklists": {
     "checklists": []
@@ -137,13 +138,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1480094801097
+    "lastModifiedOn": 1480094830846
   },
   "customMeta": {
     "kv": {}
