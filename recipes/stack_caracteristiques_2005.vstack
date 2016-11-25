@@ -1,0 +1,52 @@
+{
+  "virtualInputs": [
+    {
+      "index": 0,
+      "originLabel": "caracteristiques_2005",
+      "preFilter": {
+        "enabled": false,
+        "language": "GREL",
+        "distinct": false
+      }
+    },
+    {
+      "index": 1,
+      "originLabel": "caracteristiques_2006",
+      "preFilter": {
+        "enabled": false,
+        "language": "GREL",
+        "distinct": false
+      }
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "useGlobalMetastore": false
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "overwriteOutputSchema": true,
+      "readParams": {
+        "map": {}
+      }
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "postFilter": {
+    "enabled": false,
+    "language": "GREL",
+    "distinct": false
+  },
+  "originColumnName": "original_dataset",
+  "selectedColumns": [],
+  "addOriginColumn": false,
+  "mode": "UNION"
+}
