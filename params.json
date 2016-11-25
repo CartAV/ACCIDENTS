@@ -32,36 +32,43 @@
         "items": [
           {
             "done": true,
-            "text": "Create the project",
+            "text": "Import des données via data.gouv.fr",
+            "createdOn": 1479920510514,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": true,
+            "text": "Insertion des dictionnaires",
             "createdOn": 1479920510514,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
           },
           {
             "done": false,
-            "text": "Set a project image (click on the color next to the project title)",
+            "text": "Dictionnaires des valeurs",
             "createdOn": 1479920510514,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
           },
           {
             "done": false,
-            "text": "Import your [first dataset](datasets/new/)",
+            "text": "Jointures",
             "createdOn": 1479920510514,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
           },
           {
             "done": false,
-            "text": "Invite [other users](settings/permissions/) to collaborate",
+            "text": "Normalisation des lieux",
             "createdOn": 1479920510514,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
           },
           {
             "done": false,
-            "text": "Organize your work by replacing this with a real todo",
-            "createdOn": 1479920510514,
+            "text": "Géolocalisation",
+            "createdOn": 1480097013129,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
           }
