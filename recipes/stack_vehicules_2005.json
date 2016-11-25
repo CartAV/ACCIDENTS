@@ -10,6 +10,38 @@
         {
           "ref": "vehicules_2006",
           "deps": []
+        },
+        {
+          "ref": "vehicules_2007",
+          "deps": []
+        },
+        {
+          "ref": "vehicules_2008",
+          "deps": []
+        },
+        {
+          "ref": "vehicules_2009",
+          "deps": []
+        },
+        {
+          "ref": "vehicules_2010",
+          "deps": []
+        },
+        {
+          "ref": "vehicules_2012",
+          "deps": []
+        },
+        {
+          "ref": "vehicules_2013",
+          "deps": []
+        },
+        {
+          "ref": "vehicules_2014",
+          "deps": []
+        },
+        {
+          "ref": "vehicules_2015",
+          "deps": []
         }
       ]
     }
@@ -31,13 +63,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1480095573599
+    "lastModifiedOn": 1480095668269
   },
   "customMeta": {
     "kv": {}

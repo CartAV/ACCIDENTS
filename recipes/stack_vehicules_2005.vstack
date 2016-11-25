@@ -17,6 +17,46 @@
         "language": "GREL",
         "distinct": false
       }
+    },
+    {
+      "index": 2,
+      "originLabel": "vehicules_2007",
+      "preFilter": {}
+    },
+    {
+      "index": 3,
+      "originLabel": "vehicules_2008",
+      "preFilter": {}
+    },
+    {
+      "index": 4,
+      "originLabel": "vehicules_2009",
+      "preFilter": {}
+    },
+    {
+      "index": 5,
+      "originLabel": "vehicules_2010",
+      "preFilter": {}
+    },
+    {
+      "index": 6,
+      "originLabel": "vehicules_2012",
+      "preFilter": {}
+    },
+    {
+      "index": 7,
+      "originLabel": "vehicules_2013",
+      "preFilter": {}
+    },
+    {
+      "index": 8,
+      "originLabel": "vehicules_2014",
+      "preFilter": {}
+    },
+    {
+      "index": 9,
+      "originLabel": "vehicules_2015",
+      "preFilter": {}
     }
   ],
   "engineParams": {
@@ -40,13 +80,23 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "language": "GREL",
     "distinct": false
   },
-  "originColumnName": "original_dataset",
-  "selectedColumns": [],
+  "selectedColumns": [
+    "Num_Acc",
+    "senc",
+    "catv",
+    "occutc",
+    "obs",
+    "obsm",
+    "choc",
+    "manv",
+    "num_veh"
+  ],
   "addOriginColumn": false,
   "mode": "UNION"
 }
