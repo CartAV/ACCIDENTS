@@ -10,6 +10,42 @@
         {
           "ref": "caracteristiques_2006",
           "deps": []
+        },
+        {
+          "ref": "caracteristiques_2007",
+          "deps": []
+        },
+        {
+          "ref": "caracteristiques_2008",
+          "deps": []
+        },
+        {
+          "ref": "caracteristiques_2009",
+          "deps": []
+        },
+        {
+          "ref": "caracteristiques_2010",
+          "deps": []
+        },
+        {
+          "ref": "caracteristiques_2011",
+          "deps": []
+        },
+        {
+          "ref": "caracteristiques_2012",
+          "deps": []
+        },
+        {
+          "ref": "caracteristiques_2013",
+          "deps": []
+        },
+        {
+          "ref": "caracteristiques_2014",
+          "deps": []
+        },
+        {
+          "ref": "caracteristiques_2015",
+          "deps": []
         }
       ]
     }
@@ -31,13 +67,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1480095225812
+    "lastModifiedOn": 1480095327005
   },
   "customMeta": {
     "kv": {}
