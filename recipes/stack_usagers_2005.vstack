@@ -17,6 +17,51 @@
         "language": "GREL",
         "distinct": false
       }
+    },
+    {
+      "index": 2,
+      "originLabel": "usagers_2007",
+      "preFilter": {}
+    },
+    {
+      "index": 3,
+      "originLabel": "usagers_2008",
+      "preFilter": {}
+    },
+    {
+      "index": 4,
+      "originLabel": "usagers_2009",
+      "preFilter": {}
+    },
+    {
+      "index": 5,
+      "originLabel": "usagers_2010",
+      "preFilter": {}
+    },
+    {
+      "index": 6,
+      "originLabel": "usagers_2011",
+      "preFilter": {}
+    },
+    {
+      "index": 7,
+      "originLabel": "usagers_2012",
+      "preFilter": {}
+    },
+    {
+      "index": 8,
+      "originLabel": "usagers_2013",
+      "preFilter": {}
+    },
+    {
+      "index": 9,
+      "originLabel": "usagers_2014",
+      "preFilter": {}
+    },
+    {
+      "index": 10,
+      "originLabel": "usagers_2015",
+      "preFilter": {}
     }
   ],
   "engineParams": {
@@ -40,13 +85,26 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "language": "GREL",
     "distinct": false
   },
-  "originColumnName": "original_dataset",
-  "selectedColumns": [],
+  "selectedColumns": [
+    "Num_Acc",
+    "place",
+    "catu",
+    "grav",
+    "sexe",
+    "trajet",
+    "secu",
+    "locp",
+    "actp",
+    "etatp",
+    "an_nais",
+    "num_veh"
+  ],
   "addOriginColumn": false,
   "mode": "UNION"
 }
