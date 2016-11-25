@@ -97,9 +97,7 @@
     "ignoreNonMatchingFile": false,
     "dimensions": []
   },
-  "tags": [
-    "creator_antoinefa"
-  ],
+  "tags": [],
   "checklists": {
     "checklists": []
   },
@@ -117,6 +115,15 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1480094557237
   },
   "customMeta": {
     "kv": {}
