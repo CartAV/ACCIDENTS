@@ -1,6 +1,36 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "MeaningTranslate",
+      "params": {
+        "meaningId": "vehiculessenc",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "senc"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "MeaningTranslate",
+      "params": {
+        "meaningId": "vehiculescatv",
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "catv"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": true,
+      "disabled": false,
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -24,11 +54,14 @@
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "1P3"
     }
   ],
   "previewMode": "ALL_ROWS",
