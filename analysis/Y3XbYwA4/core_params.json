@@ -16,17 +16,19 @@
       "selection": {
         "samplingMethod": "HEAD_SEQUENTIAL",
         "partitionSelectionMethod": "ALL",
-        "maxRecords": 10000,
+        "maxRecords": 100000,
         "targetRatio": 0.02
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1
     },
     "vizSampling": {
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS",
@@ -34,12 +36,12 @@
     "chartsEngine": "LINO"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dauriame",
       "displayName": "Mélanie d\u0027Auria"
     },
-    "lastModifiedOn": 1481725532313
+    "lastModifiedOn": 1481725546590
   },
   "creationTag": {
     "versionNumber": 0,
