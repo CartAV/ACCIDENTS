@@ -3,11 +3,23 @@
     "source": {
       "color": "#0f6d82"
     },
-    "usagers": {},
-    "vehicules": {},
-    "caracteristiques": {},
-    "lieux": {},
-    "creator_antoinefa": {},
-    "creator_dauriame": {}
+    "usagers": {
+      "color": "#123883"
+    },
+    "vehicules": {
+      "color": "#90a8b7"
+    },
+    "caracteristiques": {
+      "color": "#d66b9b"
+    },
+    "lieux": {
+      "color": "#a088bd"
+    },
+    "creator_antoinefa": {
+      "color": "#1ac2ab"
+    },
+    "creator_dauriame": {
+      "color": "#afc277"
+    }
   }
 }
