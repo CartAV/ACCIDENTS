@@ -14,19 +14,21 @@
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
-        "samplingMethod": "HEAD_SEQUENTIAL",
+        "samplingMethod": "RANDOM_FIXED_NB",
         "partitionSelectionMethod": "ALL",
         "maxRecords": 10000,
         "targetRatio": 0.02
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1
     },
     "vizSampling": {
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS",
@@ -34,12 +36,12 @@
     "chartsEngine": "LINO"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine"
     },
-    "lastModifiedOn": 1481723866555
+    "lastModifiedOn": 1481723900454
   },
   "creationTag": {
     "versionNumber": 0,
