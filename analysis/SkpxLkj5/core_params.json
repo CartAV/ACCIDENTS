@@ -1,0 +1,64 @@
+{
+  "inputDatasetSmartName": "caracteristiques_lieux_2005-2015_prepared",
+  "script": {
+    "steps": [],
+    "tags": [],
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "analysisColumnData": {
+      "senc": {
+        "meaning": "vehiculessenc"
+      },
+      "catv": {
+        "meaning": "vehiculescatv"
+      }
+    },
+    "explorationSampling": {
+      "selection": {
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "partitionSelectionMethod": "ALL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {},
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS",
+    "charts": [],
+    "chartsEngine": "LINO"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dauriame",
+      "displayName": "Mélanie d\u0027Auria"
+    },
+    "lastModifiedOn": 1481727112183
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dauriame",
+      "displayName": "Mélanie d\u0027Auria"
+    },
+    "lastModifiedOn": 1481727112183
+  },
+  "name": "Analyze caracteristiques_lieux_2005-2015_prepared",
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
