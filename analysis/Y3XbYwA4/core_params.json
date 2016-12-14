@@ -4,7 +4,169 @@
     "steps": [],
     "tags": [],
     "columnsSelection": {
-      "mode": "ALL"
+      "mode": "SELECT",
+      "list": [
+        {
+          "name": "Organisme",
+          "d": false
+        },
+        {
+          "name": "Lumière",
+          "d": false
+        },
+        {
+          "name": "Agglomération",
+          "d": false
+        },
+        {
+          "name": "Intersection",
+          "d": false
+        },
+        {
+          "name": "Condition atmosphérique",
+          "d": false
+        },
+        {
+          "name": "Type de Collision",
+          "d": false
+        },
+        {
+          "name": "Département",
+          "d": false
+        },
+        {
+          "name": "Catégorie de route",
+          "d": false
+        },
+        {
+          "name": "Aménagement - Infrastructure",
+          "d": false
+        },
+        {
+          "name": "Voie",
+          "d": false
+        },
+        {
+          "name": "V1",
+          "d": false
+        },
+        {
+          "name": "V2",
+          "d": false
+        },
+        {
+          "name": "Régime de circulation",
+          "d": false
+        },
+        {
+          "name": "Nombre total de voies de circulation",
+          "d": false
+        },
+        {
+          "name": "PR",
+          "d": false
+        },
+        {
+          "name": "PR1",
+          "d": false
+        },
+        {
+          "name": "Voie spéciale",
+          "d": false
+        },
+        {
+          "name": "Profil en long",
+          "d": false
+        },
+        {
+          "name": "Tracé en plan",
+          "d": false
+        },
+        {
+          "name": "Situation de l’accident",
+          "d": false
+        },
+        {
+          "name": "Nombre de personnes tuées dans l\u0027accident",
+          "d": false
+        },
+        {
+          "name": "Nombre de blessés hospitalisés (blessés graves) dans l\u0027accident",
+          "d": false
+        },
+        {
+          "name": "Nombre de blessés légers dans l\u0027accident",
+          "d": false
+        },
+        {
+          "name": "Nombre de personnes indemnes dans l\u0027accident",
+          "d": false
+        },
+        {
+          "name": "Type numero",
+          "d": false
+        },
+        {
+          "name": "Numero",
+          "d": false
+        },
+        {
+          "name": "Distance metre",
+          "d": false
+        },
+        {
+          "name": "Libelle voie",
+          "d": false
+        },
+        {
+          "name": "Code Rivoli",
+          "d": false
+        },
+        {
+          "name": "Indice de gravité de l\u0027accident",
+          "d": false
+        },
+        {
+          "name": "Gps",
+          "d": false
+        },
+        {
+          "name": "Latitude",
+          "d": false
+        },
+        {
+          "name": "Longitude",
+          "d": false
+        },
+        {
+          "name": "Adresse",
+          "d": true
+        },
+        {
+          "name": "Numac",
+          "d": false
+        },
+        {
+          "name": "Code Insee",
+          "d": false
+        },
+        {
+          "name": "Geofla Match",
+          "d": false
+        },
+        {
+          "name": "Nombre impliques",
+          "d": false
+        },
+        {
+          "name": "Coordonnées",
+          "d": false
+        },
+        {
+          "name": "Situation de l\u0027accident",
+          "d": false
+        }
+      ]
     },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -41,7 +203,7 @@
       "login": "dauriame",
       "displayName": "Mélanie d\u0027Auria"
     },
-    "lastModifiedOn": 1481725546590
+    "lastModifiedOn": 1481725636650
   },
   "creationTag": {
     "versionNumber": 0,
