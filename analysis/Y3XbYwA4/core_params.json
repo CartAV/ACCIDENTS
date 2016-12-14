@@ -48,8 +48,8 @@
       {
         "type": "CreateColumnWithGREL",
         "params": {
-          "column": "newcolumn_expression",
-          "expression": "100*"
+          "column": "grav",
+          "expression": "100*numval(\"Nombre de personnes tuées dans l\u0027accident\")+10*numval(\"Nombre de blessés légers dans l\u0027accident\")+numval(\"Nombre de blessés légers dans l\u0027accident\")"
         },
         "metaType": "PROCESSOR",
         "preview": true,
@@ -220,6 +220,10 @@
         {
           "name": "Situation de l\u0027accident",
           "d": true
+        },
+        {
+          "name": "newcolumn_expression",
+          "d": true
         }
       ]
     },
@@ -268,7 +272,7 @@
       "login": "dauriame",
       "displayName": "Mélanie d\u0027Auria"
     },
-    "lastModifiedOn": 1481725961392
+    "lastModifiedOn": 1481726203857
   },
   "creationTag": {
     "versionNumber": 0,
