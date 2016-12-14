@@ -1,142 +1,197 @@
 {
   "inputDatasetSmartName": "accidents_corporels_de_la_circulation_en_france_echantillon",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "FindReplace",
+        "params": {
+          "output": "",
+          "normalization": "EXACT",
+          "matching": "FULL_STRING",
+          "stopAfterFirstMatch": false,
+          "mapping": [
+            {
+              "from": "rue SCHOELCHER",
+              "to": "RUE SCHOELCHER"
+            },
+            {
+              "from": "SCHOELCHER (RUE)",
+              "to": "RUE SCHOELCHER"
+            },
+            {
+              "from": "05, REPUBLIQUE (BD DE LA",
+              "to": "Boulvard de la république"
+            },
+            {
+              "from": "13, REPUBLIQUE (BD DE LA",
+              "to": "Boulvard de la république"
+            },
+            {
+              "from": "REPUBLIQUE (BD DE LA)",
+              "to": "Boulvard de la république"
+            },
+            {
+              "from": ", REPUBLIQUE (BD DE LA)",
+              "to": "Boulvard de la république"
+            }
+          ],
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "Adresse"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "newcolumn_expression",
+          "expression": "100*"
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "tags": [],
     "columnsSelection": {
       "mode": "SELECT",
       "list": [
         {
           "name": "Organisme",
-          "d": false
+          "d": true
         },
         {
           "name": "Lumière",
-          "d": false
+          "d": true
         },
         {
           "name": "Agglomération",
-          "d": false
+          "d": true
         },
         {
           "name": "Intersection",
-          "d": false
+          "d": true
         },
         {
           "name": "Condition atmosphérique",
-          "d": false
+          "d": true
         },
         {
           "name": "Type de Collision",
-          "d": false
+          "d": true
         },
         {
           "name": "Département",
-          "d": false
+          "d": true
         },
         {
           "name": "Catégorie de route",
-          "d": false
+          "d": true
         },
         {
           "name": "Aménagement - Infrastructure",
-          "d": false
+          "d": true
         },
         {
           "name": "Voie",
-          "d": false
+          "d": true
         },
         {
           "name": "V1",
-          "d": false
+          "d": true
         },
         {
           "name": "V2",
-          "d": false
+          "d": true
         },
         {
           "name": "Régime de circulation",
-          "d": false
+          "d": true
         },
         {
           "name": "Nombre total de voies de circulation",
-          "d": false
+          "d": true
         },
         {
           "name": "PR",
-          "d": false
+          "d": true
         },
         {
           "name": "PR1",
-          "d": false
+          "d": true
         },
         {
           "name": "Voie spéciale",
-          "d": false
+          "d": true
         },
         {
           "name": "Profil en long",
-          "d": false
+          "d": true
         },
         {
           "name": "Tracé en plan",
-          "d": false
+          "d": true
         },
         {
           "name": "Situation de l’accident",
-          "d": false
+          "d": true
         },
         {
           "name": "Nombre de personnes tuées dans l\u0027accident",
-          "d": false
+          "d": true
         },
         {
           "name": "Nombre de blessés hospitalisés (blessés graves) dans l\u0027accident",
-          "d": false
+          "d": true
         },
         {
           "name": "Nombre de blessés légers dans l\u0027accident",
-          "d": false
+          "d": true
         },
         {
           "name": "Nombre de personnes indemnes dans l\u0027accident",
-          "d": false
+          "d": true
         },
         {
           "name": "Type numero",
-          "d": false
+          "d": true
         },
         {
           "name": "Numero",
-          "d": false
+          "d": true
         },
         {
           "name": "Distance metre",
-          "d": false
+          "d": true
         },
         {
           "name": "Libelle voie",
-          "d": false
+          "d": true
         },
         {
           "name": "Code Rivoli",
-          "d": false
+          "d": true
         },
         {
           "name": "Indice de gravité de l\u0027accident",
-          "d": false
+          "d": true
         },
         {
           "name": "Gps",
-          "d": false
+          "d": true
         },
         {
           "name": "Latitude",
-          "d": false
+          "d": true
         },
         {
           "name": "Longitude",
-          "d": false
+          "d": true
         },
         {
           "name": "Adresse",
@@ -144,27 +199,27 @@
         },
         {
           "name": "Numac",
-          "d": false
+          "d": true
         },
         {
           "name": "Code Insee",
-          "d": false
+          "d": true
         },
         {
           "name": "Geofla Match",
-          "d": false
+          "d": true
         },
         {
           "name": "Nombre impliques",
-          "d": false
+          "d": true
         },
         {
           "name": "Coordonnées",
-          "d": false
+          "d": true
         },
         {
           "name": "Situation de l\u0027accident",
-          "d": false
+          "d": true
         }
       ]
     },
@@ -173,7 +228,17 @@
       "individualColumns": [],
       "valueColoringMode": "HASH"
     },
-    "analysisColumnData": {},
+    "analysisColumnData": {
+      "Aménagement - Infrastructure": {
+        "meaning": "Text"
+      },
+      "Voie spéciale": {
+        "meaning": "Text"
+      },
+      "Situation de l’accident": {
+        "meaning": "Text"
+      }
+    },
     "explorationSampling": {
       "selection": {
         "samplingMethod": "HEAD_SEQUENTIAL",
@@ -203,7 +268,7 @@
       "login": "dauriame",
       "displayName": "Mélanie d\u0027Auria"
     },
-    "lastModifiedOn": 1481725636650
+    "lastModifiedOn": 1481725961392
   },
   "creationTag": {
     "versionNumber": 0,
