@@ -13,7 +13,28 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "on": [],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
+      "on": [
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Num_Acc",
+            "table": 0
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "Num_Acc",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        }
+      ],
       "type": "LEFT"
     }
   ],
@@ -38,138 +59,172 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "postFilter": {},
   "selectedColumns": [
     {
       "name": "Num_Acc",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "an",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "mois",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "jour",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "hrmn",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "lum",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "agg",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "int",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "atm",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "col",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "com",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "adr",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "gps",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "lat",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "long",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "dep",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "catr",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "voie",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "v1",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "v2",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "circ",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "nbv",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "pr",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "pr1",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "vosp",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "prof",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "plan",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "lartpc",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "larrout",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "surf",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "infra",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "situ",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "env1",
-      "table": 0
+      "table": 1,
+      "type": "string"
     }
   ]
 }
