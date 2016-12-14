@@ -28,41 +28,7 @@
     "autoRefresh": true
   },
   "globalSearchQuery": "",
-  "explorationFilters": [
-    {
-      "column": "an",
-      "type": "columnFilter",
-      "currentMode": "FACET",
-      "active": true,
-      "facet": {
-        "type": "facet",
-        "column": "an",
-        "columnType": "NUMERICAL",
-        "currentMode": "NUMERICAL",
-        "sort": "count",
-        "selectedValues": {}
-      },
-      "alphanumFilter": {
-        "type": "alphanum",
-        "column": "an",
-        "values": [],
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "validityFilter": {
-        "type": "validity",
-        "column": "an",
-        "params": {
-          "type": "LongMeaning",
-          "ok": true,
-          "nok": true,
-          "empty": true
-        }
-      }
-    }
-  ],
+  "explorationFilters": [],
   "previewMode": "ALL_ROWS",
   "charts": [],
   "chartsEngine": "LINO"
