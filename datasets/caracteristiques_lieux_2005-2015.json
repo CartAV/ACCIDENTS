@@ -37,7 +37,7 @@
     "compress": "gz"
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
@@ -240,6 +240,7 @@
       {
         "name": "senc",
         "type": "string",
+        "meaning": "vehiculessenc",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -362,13 +363,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "dauriame",
-      "displayName": "Mélanie d\u0027Auria",
-      "email": "melanie.d-auria@interieur.gouv.fr"
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1481723314500
+    "lastModifiedOn": 1481724139099
   },
   "customMeta": {
     "kv": {}
