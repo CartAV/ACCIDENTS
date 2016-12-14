@@ -24,7 +24,45 @@
         ]
       },
       "metaType": "PROCESSOR",
-      "preview": true,
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "StringTransformer",
+      "params": {
+        "mode": "NORMALIZE",
+        "truncate_limit": 0,
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "adr"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "normalization": "LOWERCASE",
+        "matching": "PATTERN",
+        "stopAfterFirstMatch": false,
+        "mapping": [
+          {
+            "from": "\\s*(de|du)\\s*",
+            "to": " "
+          }
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "adr"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
       "disabled": false,
       "alwaysShowComment": false
     }
