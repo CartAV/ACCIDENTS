@@ -5,6 +5,12 @@
     },
     {
       "index": 1
+    },
+    {
+      "index": 2
+    },
+    {
+      "index": 3
     }
   ],
   "joins": [
@@ -13,8 +19,70 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
+      "on": [
+        {
+          "maxDistance": 0,
+          "column1": {
+            "name": "Num_Acc",
+            "table": 0
+          },
+          "caseInsensitive": false,
+          "type": "EQ",
+          "strict": false,
+          "column2": {
+            "name": "Num_Acc",
+            "table": 1
+          },
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
+        }
+      ],
       "rightLimit": {
         "decisionColumn": {}
+      },
+      "type": "LEFT"
+    },
+    {
+      "table1": 1,
+      "outerJoinOnTheLeft": true,
+      "table2": 2,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "on": [
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Num_Acc",
+            "table": 1
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "Num_Acc",
+            "table": 2
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        }
+      ],
+      "type": "LEFT"
+    },
+    {
+      "table1": 2,
+      "outerJoinOnTheLeft": true,
+      "table2": 3,
+      "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {
+          "name": "Num_Acc",
+          "table": 3
+        },
+        "enabled": false,
+        "type": "KEEP_LARGEST",
+        "maxMatches": 1
       },
       "on": [
         {
@@ -22,20 +90,37 @@
           "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
-            "table": 0
+            "table": 2
           },
           "strict": false,
           "type": "EQ",
           "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
-            "table": 1
+            "table": 3
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        },
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "num_veh",
+            "table": 2
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "num_veh",
+            "table": 3
           },
           "dateDiffUnit": "DAY",
           "maxMatches": 1
         }
       ],
-      "type": "LEFT"
+      "type": "ADVANCED"
     }
   ],
   "engineParams": {
@@ -224,6 +309,96 @@
     {
       "name": "env1",
       "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "senc",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "catv",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "occutc",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "obs",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "obsm",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "choc",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "manv",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "num_veh",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "place",
+      "table": 3,
+      "type": "string"
+    },
+    {
+      "name": "catu",
+      "table": 3,
+      "type": "string"
+    },
+    {
+      "name": "grav",
+      "table": 3,
+      "type": "string"
+    },
+    {
+      "name": "sexe",
+      "table": 3,
+      "type": "string"
+    },
+    {
+      "name": "trajet",
+      "table": 3,
+      "type": "string"
+    },
+    {
+      "name": "secu",
+      "table": 3,
+      "type": "string"
+    },
+    {
+      "name": "locp",
+      "table": 3,
+      "type": "string"
+    },
+    {
+      "name": "actp",
+      "table": 3,
+      "type": "string"
+    },
+    {
+      "name": "etatp",
+      "table": 3,
+      "type": "string"
+    },
+    {
+      "name": "an_nais",
+      "table": 3,
       "type": "string"
     }
   ]

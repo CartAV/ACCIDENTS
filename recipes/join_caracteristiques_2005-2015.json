@@ -10,6 +10,14 @@
         {
           "ref": "lieux_2005-2015",
           "deps": []
+        },
+        {
+          "ref": "vehicules_2005-2015",
+          "deps": []
+        },
+        {
+          "ref": "usagers_2005-2015",
+          "deps": []
         }
       ]
     }
@@ -31,13 +39,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "dauriame",
       "displayName": "Mélanie d\u0027Auria",
       "email": "melanie.d-auria@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1481722905830
+    "lastModifiedOn": 1481723314731
   },
   "customMeta": {
     "kv": {}
