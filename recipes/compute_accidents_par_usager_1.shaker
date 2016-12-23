@@ -1,6 +1,138 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "steps": [
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "an",
+            "expression": "\"20%02d\".format(an)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "mois",
+            "expression": "\"%02d\".format(mois)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "jour",
+            "expression": "\"%02d\".format(jour)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "hrmn",
+            "expression": "\"%04d\".format(hrmn)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "ColumnsConcat",
+          "params": {
+            "join": "",
+            "columns": [
+              "an",
+              "mois",
+              "jour",
+              "hrmn"
+            ],
+            "outputColumn": "date"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "DateParser",
+          "params": {
+            "lang": "auto",
+            "timezone_id": "UTC",
+            "formats": [
+              "yyyyMMddHHmm"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "date"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "date",
+      "alwaysShowComment": false
+    },
+    {
+      "steps": [
+        {
+          "type": "DateParser",
+          "params": {
+            "lang": "auto",
+            "timezone_id": "UTC",
+            "formats": [
+              "yyyy"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "an_nais"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "DateDifference",
+          "params": {
+            "input1": "an_nais",
+            "input2": "date",
+            "output": "age",
+            "outputUnit": "YEARS",
+            "compareTo": "COLUMN",
+            "reverse": false
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "usager",
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -12,23 +144,26 @@
   "analysisColumnData": {},
   "explorationSampling": {
     "selection": {
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "RANDOM_FIXED_NB",
       "partitionSelectionMethod": "ALL",
       "maxRecords": 10000,
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 0
+    "_refreshTrigger": 1
   },
   "vizSampling": {
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "ZMZ"
     }
   ],
   "previewMode": "ALL_ROWS",
