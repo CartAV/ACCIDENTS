@@ -27,8 +27,8 @@ def adresse_submit(df):
     requests_session = requests.Session()
     kwargs = {
         'data': OrderedDict([
-                ('columns', 'VOIE_INFRACTION'), 
-                ('citycode', 'CODE_INSEE_INFRACTION')
+                ('columns', 'adr'), 
+                ('citycode', 'code_insee')
         ]),
         'method': 'post',
         'files': OrderedDict([
