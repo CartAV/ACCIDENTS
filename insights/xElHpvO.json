@@ -18,7 +18,7 @@
     "chart": {
       "type": "stacked_columns",
       "variant": "normal",
-      "name": "Count by date",
+      "name": "gravité par semaine",
       "userEditedName": true,
       "genericDimension0": [
         {
@@ -62,7 +62,7 @@
           "column": "grav",
           "type": "ALPHANUM",
           "maxValues": 20,
-          "generateOthersCategory": true,
+          "generateOthersCategory": false,
           "oneTickPerBin": false,
           "filters": [],
           "isA": "dimension",
@@ -162,7 +162,7 @@
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Count by date",
+  "name": "gravité par semaine",
   "type": "CHART",
   "miniature": {
     "type": "chart",
