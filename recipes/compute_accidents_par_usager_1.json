@@ -33,7 +33,7 @@
         "createdOn": 0,
         "items": [
           {
-            "done": false,
+            "done": true,
             "text": "Age de l\u0027usager lors de l\u0027accident",
             "createdOn": 1482507613883,
             "createdBy": "antoinefa",
@@ -63,13 +63,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1482507767372
+    "lastModifiedOn": 1482507768458
   },
   "customMeta": {
     "kv": {}
