@@ -58,6 +58,13 @@
             "createdOn": 1482507730500,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "parsing des coordonnées géo lat lon",
+            "createdOn": 1482507746378,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
           }
         ]
       },
@@ -78,13 +85,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1482507827237
+    "lastModifiedOn": 1482507843482
   },
   "customMeta": {
     "kv": {}
