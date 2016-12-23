@@ -13,10 +13,10 @@ f = d.Dataset("accidents_par_usager")
 i=0
 liste=[]
 futures=[]
-split=1000
-verbosechunksize=10000
+split=500
+verbosechunksize=2000
 maxtries=4
-nthreads=2
+nthreads=3
 j=0
 
 def adresse_submit(df):
