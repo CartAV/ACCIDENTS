@@ -52,14 +52,14 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "Dictionnaires des valeurs",
             "createdOn": 1479920510514,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "Jointures",
             "createdOn": 1479920510514,
             "createdBy": "antoinefa",
@@ -76,6 +76,13 @@
             "done": false,
             "text": "Géolocalisation",
             "createdOn": 1480097013129,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": true,
+            "text": "Migration vers vertica",
+            "createdOn": 1482511565405,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
           }
