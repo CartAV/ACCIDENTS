@@ -20,33 +20,33 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "an",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "mois",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "jour",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "hrmn",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "lum",
@@ -80,9 +80,9 @@
       },
       {
         "name": "com",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "adr",
@@ -98,9 +98,9 @@
       },
       {
         "name": "lat",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "long",
@@ -110,9 +110,9 @@
       },
       {
         "name": "dep",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "catr",
@@ -122,15 +122,15 @@
       },
       {
         "name": "voie",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "v1",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "v2",
@@ -146,21 +146,21 @@
       },
       {
         "name": "nbv",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "pr",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "pr1",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "vosp",
@@ -182,15 +182,15 @@
       },
       {
         "name": "lartpc",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "larrout",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "surf",
@@ -230,9 +230,9 @@
       },
       {
         "name": "occutc",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "obs",
@@ -266,9 +266,9 @@
       },
       {
         "name": "place",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "catu",
@@ -320,9 +320,9 @@
       },
       {
         "name": "an_nais",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       }
     ]
   },
@@ -341,12 +341,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1482505022293
+    "lastModifiedOn": 1482505359222
   },
   "customMeta": {
     "kv": {}
