@@ -129,6 +129,65 @@
       "disabled": false,
       "name": "usager",
       "alwaysShowComment": false
+    },
+    {
+      "steps": [
+        {
+          "type": "ColumnsConcat",
+          "params": {
+            "join": "",
+            "columns": [
+              "dep",
+              "com"
+            ],
+            "outputColumn": "code_insee"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "normalization": "EXACT",
+            "matching": "PATTERN",
+            "stopAfterFirstMatch": false,
+            "mapping": [
+              {
+                "from": "^201.",
+                "to": "2A"
+              },
+              {
+                "from": "^202.",
+                "to": "2B"
+              },
+              {
+                "from": "^97(.).(..)$",
+                "to": "97$1$2"
+              },
+              {
+                "from": "^(..).(...)$",
+                "to": "$1$2"
+              }
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "code_insee"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "Lieux",
+      "alwaysShowComment": false
     }
   ],
   "tags": [],
@@ -164,6 +223,40 @@
     {
       "type": "global_search",
       "$$hashKey": "ZMZ"
+    },
+    {
+      "column": "code_insee",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "code_insee",
+        "columnType": "ALPHANUM",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "code_insee",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "code_insee",
+        "params": {
+          "type": "Text",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      },
+      "$$hashKey": "09P2"
     }
   ],
   "previewMode": "ALL_ROWS",
