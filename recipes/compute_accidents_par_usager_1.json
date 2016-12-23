@@ -46,7 +46,7 @@
         "createdOn": 0,
         "items": [
           {
-            "done": false,
+            "done": true,
             "text": "Calcul du code commune à partir de dep et com",
             "createdOn": 1482507669668,
             "createdBy": "antoinefa",
@@ -63,13 +63,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1482507766320
+    "lastModifiedOn": 1482507767372
   },
   "customMeta": {
     "kv": {}
