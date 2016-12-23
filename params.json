@@ -28,9 +28,9 @@
     "gitCommitMode": "AUTO",
     "disableAutomaticTriggers": false
   },
-  "name": "accidents corporels",
+  "name": "accidents corporels - dataprep master",
   "description": "Le projet vise à reproduire les traitements déjà effectués en python/panda.\nLes données sont issues de la sécurité routière, dans la version opendata (liens directs des données depuis le site etalab).\nLe projet vise également à offrir un exemple d\u0027usage des outils de préparation des données et de modélisation.",
-  "shortDesc": "The project *accidents* was created by Fabien Antoine on Nov 23rd 2016",
+  "shortDesc": "Données issues de l\u0027opendata etalab (BAAC)\nDataprep master",
   "checklists": {
     "checklists": [
       {
@@ -73,7 +73,7 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "Géolocalisation",
             "createdOn": 1480097013129,
             "createdBy": "antoinefa",
