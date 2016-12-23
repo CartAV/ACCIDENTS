@@ -18,7 +18,7 @@
     "chart": {
       "type": "stacked_columns",
       "variant": "normal",
-      "name": "Count by catu",
+      "name": "catu",
       "userEditedName": true,
       "genericDimension0": [
         {
@@ -117,7 +117,17 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
-      "filters": [],
+      "filters": [
+        {
+          "filterType": "DATE_FACET",
+          "column": "date",
+          "columnType": "DATE",
+          "dateFilterType": "RANGE",
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        }
+      ],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
@@ -154,12 +164,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABDElEQVRoge2SOwrCUBBF3UDWYKlFFiZuQAtBC21SCDZBQTQIQZBnsNBCTJxSbQWDjZ9SV/EsbKYMmsnoyxw4/T1wCwXhzTUIe5dFNMJybyIF/ONs6x9DLPcmUvTAVbrvApZ7EymnUlnFpTJguTeRMow702HcXmO5N5EyuDuqf3MAy72JFNuzle3ZgOXeRIre1JXe1AHLvYmU/AW3LKWbFmC5N5GSu+D5/qmC3QOw3JtIyV1wsbZSxdoSsNybSJFgCTYMCZZgw5BgCTYMCZZgw0gafJi4FWzWO1MjafB5VV1gs96ZGkmDjbm9BH8RHHW9BpZ2+YekGey4Yx9Lu/xD0gz+i9vnLlgQBOEXeQHYZ+hbiDHwJgAAAABJRU5ErkJggg\u003d\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABIUlEQVRoge2TvWoCURBGfQB9hViaYku1tVLyAoG8REiKoIKFpaABq5AbBBNcg2IhLFiIP0xpp4WSNm1K32BtP8IWy3JnB65z4HRTnK+YTEZRlG3ndYRK97BjnmiJSvewE76/bVDpHnZ+CreESvewY367hEr3sHN1g70vj1DpHnZqfmmFSvewE66bhEr3sBMOKkNUuoedsJ0jVLqHnXOv/I1K97Az3/0RKt3DztUNzjcWhEr3sKODXUcHu44Odh0d7Do62HV0sOvo4Aj2JigeTFBF0+60RpzBtXGxdeeXxmjandaIM7g+PfVfJkdC0+60RpzBN41F35lf18ERxB088h8+0NnsPstbnwCbg//fFOpBjrc+ATo4AtuDn83nI5q0/QJtNdRT9wNPRwAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Count by catu",
+  "name": "catu",
   "type": "CHART",
   "miniature": {
     "type": "chart",
