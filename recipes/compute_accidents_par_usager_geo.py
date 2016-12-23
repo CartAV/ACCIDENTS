@@ -23,6 +23,7 @@ def adresse_submit(df):
     global i
     s = StringIO.StringIO()
     i+=split
+    df["age"].fillna("NA")
     df.to_csv(s,sep=",", quotechar='"',encoding="utf8",index=False)
     requests_session = requests.Session()
     kwargs = {
