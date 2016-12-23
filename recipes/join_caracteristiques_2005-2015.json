@@ -26,7 +26,7 @@
     "main": {
       "items": [
         {
-          "ref": "accidents_par_usager",
+          "ref": "accidents_par_usager_brut",
           "appendMode": false
         }
       ]
@@ -39,13 +39,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1482503988395
+    "lastModifiedOn": 1482504279455
   },
   "customMeta": {
     "kv": {}
