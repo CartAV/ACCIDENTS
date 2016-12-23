@@ -5,7 +5,7 @@ from dataiku import pandasutils as pdu
 
 # Recipe inputs
 ds_in = dataiku.Dataset("accidents_par_usager_brut")
-events = ds_in.get_dataframe()
+events = ds_in.get_dataframe(infer_with_pandas=False)
 
 dico={
     'usagers': {
