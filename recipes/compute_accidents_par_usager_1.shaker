@@ -203,7 +203,7 @@
   "analysisColumnData": {},
   "explorationSampling": {
     "selection": {
-      "samplingMethod": "RANDOM_FIXED_NB",
+      "samplingMethod": "HEAD_SEQUENTIAL",
       "partitionSelectionMethod": "ALL",
       "maxRecords": 10000,
       "targetRatio": 0.02
@@ -223,40 +223,6 @@
     {
       "type": "global_search",
       "$$hashKey": "ZMZ"
-    },
-    {
-      "column": "code_insee",
-      "type": "columnFilter",
-      "currentMode": "FACET",
-      "active": true,
-      "facet": {
-        "type": "facet",
-        "column": "code_insee",
-        "columnType": "ALPHANUM",
-        "currentMode": "ALPHANUM",
-        "sort": "count",
-        "selectedValues": {}
-      },
-      "alphanumFilter": {
-        "type": "alphanum",
-        "column": "code_insee",
-        "values": [],
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "validityFilter": {
-        "type": "validity",
-        "column": "code_insee",
-        "params": {
-          "type": "Text",
-          "ok": true,
-          "nok": true,
-          "empty": true
-        }
-      },
-      "$$hashKey": "09P2"
     }
   ],
   "previewMode": "ALL_ROWS",
