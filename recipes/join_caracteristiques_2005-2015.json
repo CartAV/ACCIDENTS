@@ -4,19 +4,19 @@
     "main": {
       "items": [
         {
-          "ref": "caracteristiques_2005-2015",
+          "ref": "accidents_caracteristiques",
           "deps": []
         },
         {
-          "ref": "lieux_2005-2015",
+          "ref": "accidents_lieux",
           "deps": []
         },
         {
-          "ref": "vehicules_2005-2015",
+          "ref": "accidents_vehicules",
           "deps": []
         },
         {
-          "ref": "usagers_2005-2015",
+          "ref": "accidents_usagers",
           "deps": []
         }
       ]
@@ -39,13 +39,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
-      "login": "dauriame",
-      "displayName": "Mélanie d\u0027Auria",
-      "email": "melanie.d-auria@interieur.gouv.fr"
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1481723544483
+    "lastModifiedOn": 1482503768217
   },
   "customMeta": {
     "kv": {}
