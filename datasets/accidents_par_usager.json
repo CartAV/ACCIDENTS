@@ -92,6 +92,13 @@
         "maxLength": 16200
       },
       {
+        "name": "code_insee",
+        "type": "string",
+        "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
         "name": "adr",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -105,13 +112,15 @@
       },
       {
         "name": "lat",
-        "type": "bigint",
+        "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "long",
-        "type": "bigint",
+        "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -129,7 +138,8 @@
       },
       {
         "name": "voie",
-        "type": "bigint",
+        "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -355,13 +365,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1482506786234
+    "lastModifiedOn": 1482507532895
   },
   "customMeta": {
     "kv": {}
