@@ -217,15 +217,6 @@ dico={
         }
     },
     'caractéristiques': {
-        'jour_semaine':{
-            '0':'lundi',
-            '1':'mardi',
-            '2':'mercredi',
-            '3':'jeudi',
-            '4':'vendredi',
-            '5':'samedi',
-            '6':'dimanche'
-            },
         'lum': {
             '1': 'plein jour',
             '2': 'crépuscule ou aube',
@@ -278,5 +269,5 @@ for table in list(dico.keys()):
 
 
 # Recipe outputs
-ds_out = dataiku.Dataset("accidents_par_usager")
+ds_out = dataiku.Dataset("accidents_par_usager_valeurs")
 ds_out.write_with_schema(events)
