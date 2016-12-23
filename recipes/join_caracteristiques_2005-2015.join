@@ -146,7 +146,82 @@
   "selectedColumns": [
     {
       "name": "Num_Acc",
-      "table": 1,
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "an",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "mois",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "jour",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "hrmn",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "lum",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "agg",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "int",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "atm",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "col",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "com",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "adr",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "gps",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "lat",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "long",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "dep",
+      "table": 0,
       "type": "string"
     },
     {
