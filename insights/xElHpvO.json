@@ -165,7 +165,7 @@
   "name": "nombre d\u0027impliqués par semaine et gravité",
   "type": "CHART",
   "miniature": {
-    "type": "chart_full",
+    "type": "description_and_picture",
     "showTitle": true,
     "fullImage": true
   },
