@@ -170,7 +170,7 @@
     "fullImage": true
   },
   "fullView": {
-    "descriptionPosition": "right"
+    "descriptionPosition": "top"
   },
   "description": "Usagers : évolution du nombre dans le temps, par gravité (source BAAC opendata, 2005-2015)",
   "tags": [],
