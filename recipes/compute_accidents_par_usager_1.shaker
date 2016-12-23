@@ -122,6 +122,20 @@
           "preview": false,
           "disabled": false,
           "alwaysShowComment": false
+        },
+        {
+          "type": "FillEmptyWithValue",
+          "params": {
+            "value": "-1",
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "age"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
         }
       ],
       "metaType": "GROUP",
