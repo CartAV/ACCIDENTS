@@ -26,7 +26,7 @@
     "main": {
       "items": [
         {
-          "ref": "caracteristiques_lieux_2005-2015",
+          "ref": "accidents_par_usager",
           "appendMode": false
         }
       ]
@@ -39,13 +39,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1482503770444
+    "lastModifiedOn": 1482503956166
   },
   "customMeta": {
     "kv": {}

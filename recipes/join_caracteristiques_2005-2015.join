@@ -19,26 +19,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
+      "rightLimit": {},
       "type": "FULL"
     },
     {
@@ -46,26 +46,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Num_Acc",
             "table": 2
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
+      "rightLimit": {},
       "type": "FULL"
     },
     {
@@ -73,6 +73,42 @@
       "outerJoinOnTheLeft": true,
       "table2": 3,
       "conditionsMode": "AND",
+      "on": [
+        {
+          "maxDistance": 0,
+          "column1": {
+            "name": "Num_Acc",
+            "table": 2
+          },
+          "caseInsensitive": false,
+          "type": "EQ",
+          "strict": false,
+          "column2": {
+            "name": "Num_Acc",
+            "table": 3
+          },
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
+        },
+        {
+          "maxDistance": 0,
+          "column1": {
+            "name": "num_veh",
+            "table": 2
+          },
+          "caseInsensitive": false,
+          "type": "EQ",
+          "strict": false,
+          "column2": {
+            "name": "num_veh",
+            "table": 3
+          },
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
+        }
+      ],
       "rightLimit": {
         "decisionColumn": {
           "name": "Num_Acc",
@@ -82,42 +118,6 @@
         "type": "KEEP_LARGEST",
         "maxMatches": 1
       },
-      "on": [
-        {
-          "maxDistance": 0,
-          "caseInsensitive": false,
-          "column1": {
-            "name": "Num_Acc",
-            "table": 2
-          },
-          "strict": false,
-          "type": "EQ",
-          "normalizeText": false,
-          "column2": {
-            "name": "Num_Acc",
-            "table": 3
-          },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
-        },
-        {
-          "maxDistance": 0,
-          "caseInsensitive": false,
-          "column1": {
-            "name": "num_veh",
-            "table": 2
-          },
-          "strict": false,
-          "type": "EQ",
-          "normalizeText": false,
-          "column2": {
-            "name": "num_veh",
-            "table": 3
-          },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
-        }
-      ],
       "type": "FULL"
     }
   ],
