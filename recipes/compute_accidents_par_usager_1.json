@@ -29,7 +29,7 @@
   "checklists": {
     "checklists": [
       {
-        "title": "Checklist",
+        "title": "Usager",
         "createdOn": 0,
         "items": [
           {
@@ -40,18 +40,36 @@
             "stateChangedOn": 0
           }
         ]
+      },
+      {
+        "title": "Lieu",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": false,
+            "text": "Calcul du code commune à partir de dep et com",
+            "createdOn": 1482507669668,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          }
+        ]
+      },
+      {
+        "title": "Date",
+        "createdOn": 0,
+        "items": []
       }
     ]
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1482507714117
+    "lastModifiedOn": 1482507766320
   },
   "customMeta": {
     "kv": {}
