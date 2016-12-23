@@ -17,7 +17,80 @@
   "managed": true,
   "schema": {
     "userModified": false,
-    "columns": []
+    "columns": [
+      {
+        "name": "Num_Acc",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "place",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "catu",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "grav",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "sexe",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "trajet",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "secu",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "locp",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "actp",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "etatp",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "an_nais",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "num_veh",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      }
+    ]
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -32,6 +105,15 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa",
+      "displayName": "Fabien Antoine",
+      "email": "fabien.antoine@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1482503463081
   },
   "customMeta": {
     "kv": {}
