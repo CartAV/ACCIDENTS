@@ -85,12 +85,12 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
-  "originColumnName": "original_dataset",
   "postFilter": {
     "enabled": false,
     "language": "GREL",
     "distinct": false
   },
+  "originColumnName": "original_dataset",
   "selectedColumns": [
     "Num_Acc",
     "place",
