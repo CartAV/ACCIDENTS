@@ -27,17 +27,31 @@
     "hadoopConfigKeys": []
   },
   "checklists": {
-    "checklists": []
+    "checklists": [
+      {
+        "title": "Checklist",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": false,
+            "text": "Age de l\u0027usager lors de l\u0027accident",
+            "createdOn": 1482507613883,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          }
+        ]
+      }
+    ]
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1482507548908
+    "lastModifiedOn": 1482507710582
   },
   "customMeta": {
     "kv": {}
