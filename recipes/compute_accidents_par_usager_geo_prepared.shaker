@@ -1,6 +1,39 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "DateParser",
+      "params": {
+        "lang": "auto",
+        "timezone_id": "UTC",
+        "formats": [
+          "yyyy-MM-dd HH:mm:ss"
+        ],
+        "appliesTo": "COLUMNS",
+        "columns": [
+          "an_nais",
+          "date"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "geo_point_2d",
+        "lat_column": "latitude",
+        "lon_column": "longitude"
+      },
+      "metaType": "PROCESSOR",
+      "preview": true,
+      "disabled": false,
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -24,11 +57,14 @@
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "9XC"
     }
   ],
   "previewMode": "ALL_ROWS",
