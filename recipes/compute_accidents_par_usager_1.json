@@ -68,7 +68,7 @@
             "stateChangedOn": 0
           },
           {
-            "done": false,
+            "done": true,
             "text": "développement en dummies",
             "createdOn": 1483020100937,
             "createdBy": "antoinefa",
@@ -93,13 +93,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 61,
+    "versionNumber": 63,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483020204100
+    "lastModifiedOn": 1483020204762
   },
   "customMeta": {
     "kv": {}
