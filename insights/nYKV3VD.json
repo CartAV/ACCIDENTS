@@ -18,7 +18,7 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Count by nb_usagers",
+      "name": "histogramme du nombre de passager/véhicule impliqué",
       "userEditedName": true,
       "genericDimension0": [
         {
@@ -127,12 +127,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAV0lEQVRoge3PsQmAMABE0Uyig2QvxT4jBVtXcwDLEITLe3D9/VIAAGBd23XX/ezPZ0dvf3+bQrDgMIIFhxEsOIxgwWEECw4jWHAYwYLDCBYcRrDgMCPBL0D6h8rL8HyxAAAAAElFTkSuQmCC",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAV0lEQVRoge3PMQ0AMQzAwKhEAjNrQWUPtZ+eQiu5PgR2hCQRZPXcbjjKYTqH6Rymc5jOYTqH6Rymc5jOYTqH6bJ6npp2mM5hOofp/uGsnth73e6RJL3gA5lhTlnm9b8bAAAAAElFTkSuQmCC",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Count by nb_usagers",
+  "name": "histogramme du nombre de passager/véhicule impliqué",
   "type": "CHART",
   "miniature": {
     "type": "chart",
