@@ -162,7 +162,7 @@
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Chart",
+  "name": "nombre d\u0027hospitalisés et tués par mois",
   "type": "CHART",
   "miniature": {
     "type": "chart",
