@@ -157,7 +157,7 @@
   "miniature": {
     "type": "picture",
     "showTitle": true,
-    "fullImage": false
+    "fullImage": true
   },
   "fullView": {
     "descriptionPosition": "right"
