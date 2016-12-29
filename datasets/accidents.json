@@ -1540,6 +1540,12 @@
         "maxLength": -1
       },
       {
+        "name": "age_99_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "nb_usagers_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -1575,13 +1581,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483034181832
+    "lastModifiedOn": 1483034212982
   },
   "customMeta": {
     "kv": {}
