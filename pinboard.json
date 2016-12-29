@@ -2,8 +2,20 @@
   "sections": [
     {
       "title": "First section",
-      "pinlets": []
+      "pinlets": [
+        {
+          "box": {
+            "top": 0,
+            "left": 0,
+            "width": 1,
+            "height": 1
+          },
+          "insightId": "GjBNTGo"
+        }
+      ]
     }
   ],
-  "datasetNames": []
+  "datasetNames": [
+    "accidents"
+  ]
 }
