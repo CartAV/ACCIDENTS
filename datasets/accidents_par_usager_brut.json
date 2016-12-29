@@ -16,7 +16,7 @@
   "checks": [],
   "managed": true,
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
@@ -303,6 +303,7 @@
       {
         "name": "locp",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -341,13 +342,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1482512148282
+    "lastModifiedOn": 1483020359221
   },
   "customMeta": {
     "kv": {}
