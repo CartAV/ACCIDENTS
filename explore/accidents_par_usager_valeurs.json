@@ -6,27 +6,27 @@
     "list": [
       {
         "name": "Num_Acc",
-        "d": false
+        "d": true
       },
       {
         "name": "an",
-        "d": false
+        "d": true
       },
       {
         "name": "mois",
-        "d": false
+        "d": true
       },
       {
         "name": "jour",
-        "d": false
+        "d": true
       },
       {
         "name": "hrmn",
-        "d": false
+        "d": true
       },
       {
         "name": "lum",
-        "d": false
+        "d": true
       },
       {
         "name": "agg",
@@ -42,155 +42,155 @@
       },
       {
         "name": "col",
-        "d": false
+        "d": true
       },
       {
         "name": "com",
-        "d": false
+        "d": true
       },
       {
         "name": "adr",
-        "d": false
+        "d": true
       },
       {
         "name": "gps",
-        "d": false
+        "d": true
       },
       {
         "name": "lat",
-        "d": false
+        "d": true
       },
       {
         "name": "long",
-        "d": false
+        "d": true
       },
       {
         "name": "dep",
-        "d": false
+        "d": true
       },
       {
         "name": "catr",
-        "d": false
+        "d": true
       },
       {
         "name": "voie",
-        "d": false
+        "d": true
       },
       {
         "name": "v1",
-        "d": false
+        "d": true
       },
       {
         "name": "v2",
-        "d": false
+        "d": true
       },
       {
         "name": "circ",
-        "d": false
+        "d": true
       },
       {
         "name": "nbv",
-        "d": false
+        "d": true
       },
       {
         "name": "pr",
-        "d": false
+        "d": true
       },
       {
         "name": "pr1",
-        "d": false
+        "d": true
       },
       {
         "name": "vosp",
-        "d": false
+        "d": true
       },
       {
         "name": "prof",
-        "d": false
+        "d": true
       },
       {
         "name": "plan",
-        "d": false
+        "d": true
       },
       {
         "name": "lartpc",
-        "d": false
+        "d": true
       },
       {
         "name": "larrout",
-        "d": false
+        "d": true
       },
       {
         "name": "surf",
-        "d": false
+        "d": true
       },
       {
         "name": "infra",
-        "d": false
+        "d": true
       },
       {
         "name": "situ",
-        "d": false
+        "d": true
       },
       {
         "name": "env1",
-        "d": false
+        "d": true
       },
       {
         "name": "senc",
-        "d": false
+        "d": true
       },
       {
         "name": "catv",
-        "d": false
+        "d": true
       },
       {
         "name": "occutc",
-        "d": false
+        "d": true
       },
       {
         "name": "obs",
-        "d": false
+        "d": true
       },
       {
         "name": "obsm",
-        "d": false
+        "d": true
       },
       {
         "name": "choc",
-        "d": false
+        "d": true
       },
       {
         "name": "manv",
-        "d": false
+        "d": true
       },
       {
         "name": "num_veh",
-        "d": false
+        "d": true
       },
       {
         "name": "place",
-        "d": false
+        "d": true
       },
       {
         "name": "catu",
-        "d": false
+        "d": true
       },
       {
         "name": "grav",
-        "d": false
+        "d": true
       },
       {
         "name": "sexe",
-        "d": false
+        "d": true
       },
       {
         "name": "trajet",
-        "d": false
+        "d": true
       },
       {
         "name": "secu",
-        "d": false
+        "d": true
       },
       {
         "name": "locp",
@@ -206,7 +206,7 @@
       },
       {
         "name": "an_nais",
-        "d": false
+        "d": true
       }
     ]
   },
