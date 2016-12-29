@@ -16,10 +16,99 @@
     },
     "dataset": "accidents",
     "chart": {
-      "type": "grouped_columns",
+      "type": "stacked_columns",
       "variant": "normal",
-      "name": "Chart",
-      "userEditedName": false,
+      "name": "Count by date",
+      "userEditedName": true,
+      "genericDimension0": [
+        {
+          "column": "date",
+          "type": "DATE",
+          "dateParams": {
+            "mode": "MONTH"
+          },
+          "maxValues": 0,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [
+        {
+          "column": "nb_usagers_sum",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "TREAT_AS_ALPHANUM",
+            "nbBins": 5,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 3,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Count of records, descending"
+          }
+        }
+      ],
+      "genericMeasures": [
+        {
+          "function": "COUNT",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
       "xDimension": [],
       "yDimension": [],
       "uaXDimension": [],
@@ -37,10 +126,21 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "DATE_FACET",
+          "column": "date",
+          "columnType": "DATE",
+          "dateFilterType": "RANGE",
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        }
+      ],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
-      "hexbinRadius": 0,
+      "hexbinRadius": 20,
       "smoothing": false,
       "showLegend": true,
       "showXAxis": false,
@@ -73,11 +173,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAFY0lEQVRoge3WX2wURRgA8DXExz18IGjQ3PIAYuKDvugTfxITE2s0Jib6oibqQ6OJ2mCkMw1yewpIC7RbGzh6abCU1tbr9WZzd7PX3s2VoYDdFSHGBE1EItEInfrgs8aQz4fZXW5v746TWELJfi97M7f77fzmm51dRYkiiiju6QCGebiv+612zlt1AQyPNQajAw3ODZ9XQVMrNbYVCWB4DKwPMnV9HBgyaoHA8E7ofbgSun5VgnWVA0MpRVEUqKIPgWEOQ0/6YGC4CAzvBF0NV9h6/4j/u4LfvGMDv90APVYHxp8Cwxz0mAHJtaeg0rNDVlyCoYoH6673KwwMmaH8rGdu5RVthgsLghkyQFclWFe5D07EAmCo4hFFaQeMOVRQ350ytYwAOBGT4H0PBsF7HtgBusrh0CbZTsaag3U1DNbVhmCYnl6zcrIm4cIagm98sm4AdJXDiQ7DAxNbcEjGBoFhDqMd+2WOMBiqeFwe0bC8x9o+fz/geBOkO+9vuOMD3HdHwMQWN8FuZZ38SaMlWF87oiiKQmwxpSiKAuWP1oOummDteqglmGEOZdQBX758Eiq7NgfGw3A60J7bta3huGvfHhXU1R6W4RnQVU6cpRD4770byqYjJLD/sc+8Je6DJWIEGOY+uIILoKsmVPA86DEJTqo3we4ODwxzyHf2ufuGUTOeYzC782hgjNUeExjOrwj4r30bPweGeWnhkkFswT3wP8n1/afL5WleZgaxBV868sLBejBUUAUSaiG3KEJgOUnrDB+sqxyOPyNXTfYNQ1Hk8yxXjZoOYIrvTteCYR5t93L4fYlYl5wc3NsanFRnSmcuFT1wzl5KNQL/PNplEFtwXmZGd+ZS1nTEIOgqvzb86hGYeCkbAutqCFxwfpPAU91bAhuiHnPBr6yR7Tqwrpqgq3lgmNVWNgDu3yxz1KyWpmBiC06cpbHRU7/SnL2UAl31oS8OnQuBNUS5BybfiBHQVVnhRCwEBoa5Dz531VgsZDLwsbol8Hh44Px7G3ywv/R7qj547PkMMDxZu0pCYDdXW2ANUV4PjiNqvDP2HfHapiN8MLGFD9YQDYFNZ3kcSl1F4ggfTGzBIfua8TUl0z9O7AmCy92Ge+/GYD3GIL015f1HbOF/+v40vnu/96HUEvynsXVMwqwAuC9/+eCJ07/n44gaGqK8v3TlUDvgnC0KGiqaYqijYDrL43J/EMODpV/yPtit7Hnz+GEvp1edEDgZq5rOsklsIcGJ2KR8p+MRYgsOhc4DQN7OL8yVjLbAOWd55rmBszkPrCGaIrbgj+tlQ0OUe+Cuie8NDVG+rZfLfmz5YGILriE6lbOFDyaLYr4WrCHKN+0uGcQW/I+hjsD+YDrCAIb5jeQ6r52W1cMTteDK/PkcJGKTp2fLxAe7k7QwV/Im69ZgCQuCPeitwBq2moIzZ699cXHmaCGOLB/8bP8CqQW7q0V+5NSDDzwyUgvO2YIRR0xKqBoAezn+N3DoiK1BDdEQ+Ikk+8oDa4iOu4+LD/aAGqK8c/SioSHKH9092x/YNzBNu+/6CWKL6uvpb804piGwl4vYgm/vW2gPrCErBH5qb7V4u+A4sgoaKpoDpStTzcBZe+mwhih/eu/8gJfzwkyKZxevGx0D56w4pmkNUf7DZPI4sUVVQ1YIfCGbCoG9Qv1ncEtoA7B73VQcUR+sIWteQ3T8WOVqxgN71/YWLodyElvw7OJ1N7cEE1tM1ILjiDKtm066/wXAG7E1cFeA3dzDt8oZeIxqwBqiLcGNcqwKcDC3BGuYNgUPzV452CzHPQmOdxdDFY7AETgCR+AIHIFXGziKKKKIIoq7JP4FqpKfRhqFgZAAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Chart",
+  "name": "Count by date",
   "type": "CHART",
   "miniature": {
     "type": "chart",
