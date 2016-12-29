@@ -57,6 +57,13 @@
             "createdOn": 1483014865248,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Utilisation des champs complémentaires pour améliorer le traitement : numéro de voie, type de voie, ...",
+            "createdOn": 1483014869602,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
           }
         ]
       }
@@ -64,13 +71,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483014968214
+    "lastModifiedOn": 1483014972533
   },
   "customMeta": {
     "kv": {}
