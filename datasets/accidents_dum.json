@@ -26,66 +26,6 @@
         "maxLength": 16200
       },
       {
-        "name": "atm",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "atm_météo normale",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "atm_pluie légère",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "atm_temps couvert",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "atm_neige - grêle",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "atm_temps éblouissant",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "atm_brouillard - fumée",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "atm_pluie forte",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "atm_autre météo",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "atm_vent fort - tempête",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "an",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -98,19 +38,7 @@
         "maxLength": -1
       },
       {
-        "name": "an_2005",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "an_2009",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "an_2006",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -123,12 +51,6 @@
       },
       {
         "name": "an_2011",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "an_2007",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -158,6 +80,24 @@
         "maxLength": -1
       },
       {
+        "name": "an_2005",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "an_2006",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "an_2007",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "mois",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -176,13 +116,13 @@
         "maxLength": -1
       },
       {
-        "name": "mois_8",
+        "name": "mois_7",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "mois_7",
+        "name": "mois_3",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -200,7 +140,7 @@
         "maxLength": -1
       },
       {
-        "name": "mois_2",
+        "name": "mois_8",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -212,13 +152,7 @@
         "maxLength": -1
       },
       {
-        "name": "mois_3",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "mois_6",
+        "name": "mois_4",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -230,7 +164,13 @@
         "maxLength": -1
       },
       {
-        "name": "mois_4",
+        "name": "mois_2",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "mois_6",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -242,7 +182,7 @@
         "maxLength": 16200
       },
       {
-        "name": "jour_6",
+        "name": "jour_1",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -254,25 +194,25 @@
         "maxLength": -1
       },
       {
-        "name": "jour_5",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "jour_7",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "jour_4",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "jour_1",
+        "name": "jour_5",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "jour_6",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "jour_7",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -303,25 +243,7 @@
         "maxLength": -1
       },
       {
-        "name": "hr_12",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_11",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_14",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_20",
+        "name": "hr_19",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -333,13 +255,85 @@
         "maxLength": -1
       },
       {
+        "name": "hr_13",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "hr_20",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "hr_6",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "hr_7",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "hr_12",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "hr_17",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
+        "name": "hr_22",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "hr_8",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "hr_10",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "hr_11",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "hr_23",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "hr_4",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "hr_9",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "hr_0",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -357,67 +351,7 @@
         "maxLength": -1
       },
       {
-        "name": "hr_19",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_9",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_15",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_23",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_13",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_3",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_8",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_7",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_22",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_10",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "hr_5",
+        "name": "hr_14",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -429,13 +363,19 @@
         "maxLength": -1
       },
       {
-        "name": "hr_6",
+        "name": "hr_3",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "hr_0",
+        "name": "hr_15",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "hr_5",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -453,6 +393,12 @@
         "maxLength": 16200
       },
       {
+        "name": "lum_crépuscule ou aube",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "lum_plein jour",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -466,12 +412,6 @@
       },
       {
         "name": "lum_nuit sans éclairage public",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "lum_crépuscule ou aube",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -507,19 +447,19 @@
         "maxLength": 16200
       },
       {
-        "name": "int_intersection en X",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "int_place",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "int_hors intersection",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "int_intersection en Y",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "int_intersection en X",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -537,19 +477,19 @@
         "maxLength": -1
       },
       {
+        "name": "int_intersection +4 branches",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "int_autre intersection",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "int_intersection en Y",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "int_intersection +4 branches",
+        "name": "int_place",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -561,37 +501,73 @@
         "maxLength": -1
       },
       {
+        "name": "atm",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "atm_météo normale",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "atm_temps couvert",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "atm_pluie légère",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "atm_brouillard - fumée",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "atm_pluie forte",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "atm_temps éblouissant",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "atm_autre météo",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "atm_neige - grêle",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "atm_vent fort - tempête",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "col",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "col_2 véhicules par l\u0027arrière",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "col_2 véhicules côté",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "col_3+ véhicules en chaîne",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "col_Sans collision",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "col_3+ véhicules autre",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -604,6 +580,30 @@
       },
       {
         "name": "col_2 véhicules frontal",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "col_2 véhicules par l\u0027arrière",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "col_Sans collision",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "col_3+ véhicules en chaîne",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "col_3+ véhicules autre",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -663,13 +663,13 @@
         "maxLength": 16200
       },
       {
-        "name": "catr_route nationale",
+        "name": "catr_voie communale",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "catr_voie communale",
+        "name": "catr_route nationale",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -731,13 +731,13 @@
         "maxLength": 16200
       },
       {
-        "name": "circ_chaussées séparées",
+        "name": "circ_bidirectionnel",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "circ_bidirectionnel",
+        "name": "circ_chaussées séparées",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -762,19 +762,13 @@
         "maxLength": 16200
       },
       {
-        "name": "nbv_5",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "nbv_2",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "nbv_0",
+        "name": "nbv_5",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -786,25 +780,13 @@
         "maxLength": -1
       },
       {
+        "name": "nbv_0",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "nbv_4",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nbv_3",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nbv_8",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nbv_6",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -816,19 +798,31 @@
         "maxLength": -1
       },
       {
+        "name": "nbv_50",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "nbv_3",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "nbv_6",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "nbv_8",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "nbv_7",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nbv_30",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nbv_10",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -840,7 +834,13 @@
         "maxLength": -1
       },
       {
-        "name": "nbv_50",
+        "name": "nbv_25",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "nbv_10",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -852,43 +852,7 @@
         "maxLength": -1
       },
       {
-        "name": "nbv_24",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nbv_27",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "nbv_12",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nbv_40",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nbv_26",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nbv_15",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "nbv_13",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -900,19 +864,49 @@
         "maxLength": -1
       },
       {
-        "name": "nbv_91",
+        "name": "nbv_30",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "nbv_31",
+        "name": "nbv_62",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "nbv_21",
+        "name": "nbv_40",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "nbv_24",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "nbv_65",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "nbv_15",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "nbv_28",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "nbv_26",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -938,6 +932,12 @@
         "maxLength": 16200
       },
       {
+        "name": "vosp_voie réservée",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "vosp_piste cyclable",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -950,25 +950,19 @@
         "maxLength": -1
       },
       {
-        "name": "vosp_voie réservée",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "prof",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "prof_pente",
+        "name": "prof_plat",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "prof_plat",
+        "name": "prof_pente",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -998,12 +992,6 @@
         "maxLength": -1
       },
       {
-        "name": "plan_en S",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "plan_courbe à gauche",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -1011,6 +999,12 @@
       },
       {
         "name": "plan_courbe à droite",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "plan_en S",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1036,25 +1030,13 @@
         "maxLength": 16200
       },
       {
-        "name": "surf_surface mouillée",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "surf_surface normale",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "surf_autre surface",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "surf_surface verglacée",
+        "name": "surf_surface mouillée",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1066,7 +1048,7 @@
         "maxLength": -1
       },
       {
-        "name": "surf_surface enneigée",
+        "name": "surf_autre surface",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1084,7 +1066,19 @@
         "maxLength": -1
       },
       {
+        "name": "surf_surface enneigée",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "surf_surface innondée",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "surf_surface verglacée",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1102,7 +1096,7 @@
         "maxLength": -1
       },
       {
-        "name": "infra_échangeur",
+        "name": "infra_zone piétonne",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1114,7 +1108,7 @@
         "maxLength": -1
       },
       {
-        "name": "infra_zone piétonne",
+        "name": "infra_rails",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1126,7 +1120,7 @@
         "maxLength": -1
       },
       {
-        "name": "infra_rails",
+        "name": "infra_échangeur",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1150,12 +1144,6 @@
         "maxLength": -1
       },
       {
-        "name": "situ_accotement",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "situ_trottoir",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -1163,6 +1151,12 @@
       },
       {
         "name": "situ_bande d\u0027arrêt d\u0027urgence",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "situ_accotement",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1198,31 +1192,19 @@
         "maxLength": -1
       },
       {
-        "name": "catv_autre véhicule_sum",
+        "name": "catv_motocyclette +125cm3_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "catv_scooter +125cm3_sum",
+        "name": "catv_cyclomoteur -50cm3_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "catv_scooter -50cm3_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "catv_bicyclette_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "catv_quad -50cm3_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1240,43 +1222,7 @@
         "maxLength": -1
       },
       {
-        "name": "catv_cyclomoteur -50cm3_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "catv_quad +50cm3_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "catv_motocyclette +125cm3_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "catv_train_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "catv_voiture+remorque (ref obsolète)_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "catv_tracteur+semi-remorque_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "catv_motocyclette (ref obsolète)_sum",
+        "name": "catv_scooter immatriculé (ref obsolète)_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1288,13 +1234,25 @@
         "maxLength": -1
       },
       {
-        "name": "catv_tracteur_sum",
+        "name": "catv_utilitaire+remorque (ref obsolète)_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "catv_scooter immatriculé (ref obsolète)_sum",
+        "name": "catv_bicyclette_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catv_quad -50cm3_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catv_tracteur+semi-remorque_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1312,13 +1270,13 @@
         "maxLength": -1
       },
       {
-        "name": "catv_voiturette_sum",
+        "name": "catv_motocyclette (ref obsolète)_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "catv_utilitaire+remorque (ref obsolète)_sum",
+        "name": "catv_scooter +125cm3_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1330,7 +1288,43 @@
         "maxLength": -1
       },
       {
+        "name": "catv_autre véhicule_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "catv_tramway_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catv_voiturette_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catv_train_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catv_tracteur_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catv_quad +50cm3_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catv_voiture+remorque (ref obsolète)_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1366,19 +1360,7 @@
         "maxLength": -1
       },
       {
-        "name": "obs_Parapet_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "obs_Sortie de chaussée sans obtacle_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "obs_Ilot, refuge, borne haute_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1390,13 +1372,25 @@
         "maxLength": -1
       },
       {
-        "name": "obs_Bordure de trottoir_sum",
+        "name": "obs_Autre obstacle fixe sur trottoir ou accotement_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "obs_Autre obstacle fixe sur trottoir ou accotement_sum",
+        "name": "obs_Parapet_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "obs_Ilot, refuge, borne haute_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "obs_Bordure de trottoir_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1414,12 +1408,6 @@
         "maxLength": -1
       },
       {
-        "name": "obsm_choc sur rail_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "obsm_choc autre obstacle mobile_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -1432,31 +1420,13 @@
         "maxLength": -1
       },
       {
-        "name": "choc_avant gauche_sum",
+        "name": "obsm_choc sur rail_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "choc_avant_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "choc_arrière_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "choc_côté gauche_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "choc_multiples_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1474,13 +1444,49 @@
         "maxLength": -1
       },
       {
-        "name": "choc_arrière gauche_sum",
+        "name": "choc_avant gauche_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "choc_côté gauche_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "choc_multiples_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "choc_arrière_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "choc_arrière droit_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "choc_arrière gauche_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "manv_arrêté non stationné_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "manv_tournant à gauche_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1498,49 +1504,7 @@
         "maxLength": -1
       },
       {
-        "name": "manv_manoeuvre d\u0027évitement_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "manv_arrêté non stationné_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "manv_en faisant demi-tour sur la chaussée_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "manv_tournant à gauche_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "manv_déporté à droite_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "manv_tournant à droite_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "manv_manoeuvre de stationnement_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "manv_changeant de file à gauche_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1552,7 +1516,37 @@
         "maxLength": -1
       },
       {
+        "name": "manv_changeant de file à gauche_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "manv_déporté à droite_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "manv_manoeuvre d\u0027évitement_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "manv_changeant de file à droite_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "manv_manoeuvre de stationnement_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "manv_en faisant demi-tour sur la chaussée_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -2404,7 +2398,19 @@
         "maxLength": -1
       },
       {
+        "name": "age_105_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "age_93_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "age_96_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -2422,6 +2428,36 @@
         "maxLength": -1
       },
       {
+        "name": "age_98_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "age_100_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "age_108_sum",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "age_97_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "age_106_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "age_109_sum",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -2429,6 +2465,12 @@
       },
       {
         "name": "age_107_sum",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "age_99_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -2468,13 +2510,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483030608339
+    "lastModifiedOn": 1483034657553
   },
   "customMeta": {
     "kv": {}
