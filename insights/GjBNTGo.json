@@ -16,10 +16,100 @@
     },
     "dataset": "accidents",
     "chart": {
-      "type": "grouped_columns",
+      "type": "stacked_columns",
       "variant": "normal",
-      "name": "Chart",
+      "name": "Count by date",
       "userEditedName": false,
+      "genericDimension0": [
+        {
+          "column": "date",
+          "type": "DATE",
+          "dateParams": {
+            "mode": "MONTH"
+          },
+          "maxValues": 0,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of grav_calc_sum, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of grav_calc_sum, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [
+        {
+          "column": "grav_calc_sum",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "FIXED_SIZE",
+            "nbBins": 5,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of grav_calc_sum, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of grav_calc_sum, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericMeasures": [
+        {
+          "column": "grav_calc_sum",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
       "xDimension": [],
       "yDimension": [],
       "uaXDimension": [],
@@ -37,10 +127,11 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
-      "hexbinRadius": 0,
+      "hexbinRadius": 20,
       "smoothing": false,
       "showLegend": true,
       "showXAxis": false,
@@ -73,11 +164,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACvklEQVRoge2QTW7TQBiG5wI2a3ZsUFlMIsQN2PQk7g+lQmVDpkjEbkCUuggHpDrjTgJ2YloWQVGzAcWJZoPEAUqQAMWuQKw4xMfCduSENmmdAiHMs3k14/l+HiMkEPzzQPvu9b+9wx9FCM86QnjWEcKzjhCedYTwpDxZvXb7XBueM0J4UoTwlCGEJ0UITxlCeJju3JX6WRr+98LvGt2HKfb6baQWhtJO4bj7pDDQnVfvmx9ZqsVKpUtp6sb2nVTYOjIuJu8HhU2eWpiaPE3d2L7jhK0jvU4DndNAdwYKI2H2bTtLA72/3DhhGujNUy1GTW591ecRQoj29MunqUnMOPFnCeFhThIuHW0XaKDztMI00Dv9GcE2/WWxMwjTYOv10Iz0wtjGdWxjjm3sRGliG3Pjc8Gggc6xg7PYxv0B67mrBrYxxw4uRsmS37GN+8LYwbVYGNuYZ+yMgRBC2Vp2Lpo1jxBC8X3GzhjROyvZ0wr0RsbOHCRm9L/FtfF98iyEEUIIPFIHj3DwiBNmzozSwDbm4OWM+DyQbVKMkoFHOLRy+wghBC3SBC/XgBbpQJvUwjc5emzPDpkHj/Afb9e2wl3iGcSK0gVvvQ3t9QZ45AA84oFH9sJ5hGEb8+9vbm0O7zf1wvGSaYSP22+0sCbVQZU4qLIDqsQhL5vR2RiZmlwMzxdYdL8PebkFeakJqtQAVeqAKtfCtxI9Vc9+SlY0wwVNbkf9DkCVPcjLe9EbdlKPkcJBedH0meIeuhuPfaa4XXfjQdfNVw9f3lfj9JnifqqRgXPv+c2Nrpuv9srLW103X/XZ0rOAKbZfXtjtlRfph9o9J6gsGT5T3F5leTPMVS3MFS3seUdNnnuVVS3seeORzxS3V14q+rsL1UNXLQWVRctniuNXlp+GexY2k7VfXqyFtZUVbaSwQCAQCKaEn8EJftz1lLrVAAAAAElFTkSuQmCC",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Chart",
+  "name": "Count by date",
   "type": "CHART",
   "miniature": {
     "type": "chart",
