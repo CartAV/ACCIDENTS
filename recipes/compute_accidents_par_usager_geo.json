@@ -24,17 +24,31 @@
   "optionalDependencies": false,
   "params": {},
   "checklists": {
-    "checklists": []
+    "checklists": [
+      {
+        "title": "Checklist",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": false,
+            "text": "Améliorer la gestion du schéma de donnée par le code python, qui convertit en string les champs date et en float les entiers",
+            "createdOn": 1483014510004,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          }
+        ]
+      }
+    ]
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1482514123112
+    "lastModifiedOn": 1483014612946
   },
   "customMeta": {
     "kv": {}
