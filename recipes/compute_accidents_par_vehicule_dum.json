@@ -33,7 +33,7 @@
         "createdOn": 0,
         "items": [
           {
-            "done": false,
+            "done": true,
             "text": "examen du rejet de 5430 lignes",
             "createdOn": 1483033114855,
             "createdBy": "antoinefa",
@@ -45,13 +45,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 25,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483033523262
+    "lastModifiedOn": 1483033574258
   },
   "customMeta": {
     "kv": {}
