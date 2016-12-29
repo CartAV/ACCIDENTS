@@ -275,7 +275,9 @@ dico={
 }
 
 for table in list(dico.keys()):
+    print ">traduction {}".format(table)
     for key in list(dico[table].keys()):
+        print ">>>> {}".format(key)
         events[key]=events[key].map(dico[table][key])
 
 
