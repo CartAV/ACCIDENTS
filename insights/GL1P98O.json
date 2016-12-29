@@ -18,7 +18,7 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Sum of age_36 by catv",
+      "name": "Avg. of catu_passager by catv",
       "userEditedName": false,
       "genericDimension0": [
         {
@@ -38,27 +38,27 @@
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Sum of age_36, descending"
+              "label": "Average of catu_passager, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Sum of age_36, ascending",
+              "label": "Average of catu_passager, ascending",
               "sortAscending": true
             }
           ],
           "sort": {
-            "type": "AGGREGATION",
-            "measureIdx": 0,
-            "label": "Sum of age_36, descending"
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
           }
         }
       ],
       "genericDimension1": [],
       "genericMeasures": [
         {
-          "column": "age_36",
-          "function": "SUM",
+          "column": "catu_passager",
+          "function": "AVG",
           "type": "NUMERICAL",
           "displayed": true,
           "isA": "measure",
@@ -122,12 +122,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAgElEQVRoge3PoQ2FUBBEUTqghOXRB2Vg6AJBFnqhAvSiEK81LIKg+P8lwz3J+LlVBUCKeeTSH/6KYHUEqyNYHcHqCFZHsDqC1RGsjmB1BKsjWN1ng80jt37U5rGa70NaoktLdKX/ve4mODfTPppHflrjsV2X5uivK90FAACAXzsBkVNkzBMi4zEAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAtklEQVRoge3PvQ3CMBCG4Uzik1dgCDbICinowccwzECRL0Dn1SjAjcEiihInnL5HSpGT/96mISKqTAKiBMS131ENg61jsHUMto7B1jHYOgZbx2DrGGwdg62rEiwBUY79btFLRtp08BKPY/DkgxRD6aB/DP65LgV7ve1FcfjYvPHgfJ7+i29IwU77c74gBb82D9c0d4rOKTqvaL2ilYDL+/t6WT6XE+4u4DEluHT26GAiIiIimtETBEjlp2dHGDQAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Sum of age_36 by catv",
+  "name": "Avg. of catu_passager by catv",
   "type": "CHART",
   "miniature": {
     "type": "chart",
