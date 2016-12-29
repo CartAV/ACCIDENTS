@@ -64,8 +64,8 @@
         {
           "column": "sexe",
           "type": "ALPHANUM",
-          "maxValues": 20,
-          "generateOthersCategory": true,
+          "maxValues": 2,
+          "generateOthersCategory": false,
           "oneTickPerBin": false,
           "filters": [],
           "isA": "dimension",
@@ -123,29 +123,7 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
-      "filters": [
-        {
-          "filterType": "ALPHANUM_FACET",
-          "column": "an",
-          "columnType": "NUMERICAL",
-          "isA": "filter",
-          "excludedValues": {
-            "2005.0": true,
-            "2007.0": true,
-            "2006.0": true,
-            "2008.0": true,
-            "2009.0": true,
-            "2010.0": true,
-            "2011.0": true,
-            "2012.0": true,
-            "2014.0": true,
-            "2015.0": true,
-            "2013.0": true,
-            "NaN": true
-          },
-          "explicitExclude": false
-        }
-      ],
+      "filters": [],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
@@ -182,7 +160,7 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAIElEQVRoge3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAHgaJagAAXCxjHYAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACjUlEQVRoge3YMWsTYRzH8eIuLtmEewJOOvgqxKEuvgIXRxcHeZ4ICnFwEhG6lE5CtaFI7kmk/1RpsWlyyfOEWIwIphg0EHLJ8z/S9l6CDk3SS5rGxt7dk9Z8xyPD78PluXCZm5t1+njJeZQsqXndO0IrKdSiKdS+7h2hxQW2uEBX947Q6oF5CdO6t4RSHyxVR/eWUPKCzaK6o3tP4HnBXCqme0/gDYAFftO9J/CGwfH470u6NwVWYqcdGQZziVnduwLrvwTfXSi2CIUB8IVFJ3baEUKhRSi4Cx/qfbApnS+6twWSKbHQAxsU+uCkwEpKIure53vD4OXt5gCYC3RTJVzSvdO3hsFRBsfAXKLDhZO/EOf69ZY9EZhLrOrefKZGgQmDseDutfN5t08Cz78qjAcfvk5u6N4/cSQGI8GEQuXa48x4sFSd94XOZd2GiRoHJgyQUHDvLZUbJ4F5ycnrNkzUacCEZhwjBnnCYCSYS8yem/foScGEQZVQOAbm0qnptvw1LjH7r2BCwY2tfkcveOr/CDwr2KDQuRnfWPeCp/rnyg/w0dnugqf5Lt94+nHTL7BBoeZ5mDV120ZGGPh2hw0KNc/DrMmlY+n2DZQUajEI8K0Xub0eeGrOM5eY5UL9DAJMKLgGgyaXyjKlskyJ9cOvunq2JvauhoZMZNsRU6LdO2erVrsaJJgwsG6/LKQ94AMucNcUKmcKLAeK7f1HlRSquZK3968/WUeDQqB3mDCwCFuzCIV69/rBg+VKcSVvfzIFlrnEFpeO7TvWFKoRZZmt7ljbMzZ0MGGwazDIRVmmTCi0nqd/dLhA993mryu+gQmDRnfo1IGPPp/5/PDN17cpgfd9g8+aNWvWNPUHl5ssWqy7LdYAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
