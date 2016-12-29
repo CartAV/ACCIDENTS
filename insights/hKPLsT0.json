@@ -18,11 +18,11 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Count by catu",
+      "name": "Count by locp",
       "userEditedName": false,
       "genericDimension0": [
         {
-          "column": "catu",
+          "column": "locp",
           "type": "ALPHANUM",
           "maxValues": 20,
           "generateOthersCategory": true,
@@ -121,12 +121,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAbElEQVRoge3QsQmAMBRF0UyibuJU6grOI+ldzT6VCGJ8nAuv+0VOSpEU27jVs93Xb3o1YOCwgIHDAgYOCxg4LGDgsICBwwIGDgsY+NlttwEDP7vttrfA3X4OcDp4WOverufbaTnmdve1kv7QBakPzSO40bnlAAAAAElFTkSuQmCC",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAYUlEQVRoge3PMQ2AMABFwRqB6kAFbmhwgB/KjDUMMDA04Q/3kifgSpGkl6Z2rbX1e8R/Wz4FDAwMDJwcMDAwMHBywMDAwMDJAQMDAwMnBwwMDAycXN3PZd76MeK/LZJyegCn8sNnMx+riAAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Count by catu",
+  "name": "Count by locp",
   "type": "CHART",
   "miniature": {
     "type": "chart",
