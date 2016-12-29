@@ -40,13 +40,6 @@ dico={
             '31': 'avec siège enfant', '32': 'sans siège enfant',
             '41': 'avec réflecteur', '42': 'sans réflecteur'
         },
-        'locp': {
-            0: '',
-            1: 'plus de 50m un passage piéton',
-            2: 'moins de 50m passage piéton',
-            3: 'sans signalisation lumineuse',
-            4: 'avec signalisation lumineuse'
-        },
         'actp': {
             '0': '',
             '1': 'piéton sens véhicule',
@@ -56,6 +49,13 @@ dico={
             '5': 'piéton jouant',
             '6': 'piéton avec animal',
         },
+        'locp': {
+            0: '',
+            1: 'plus de 50m un passage piéton',
+            2: 'moins de 50m passage piéton',
+            3: 'sans signalisation lumineuse',
+            4: 'avec signalisation lumineuse'
+        },
         'etatp': {
             '0': '',
             '1': 'piéton seul',
@@ -63,7 +63,7 @@ dico={
             '3': 'piéton en groupe'
         }
     },
-    'vehicules': {
+    'véhicules': {
         'senc': {
             '0': '',
             '1': 'PK-PR-num rue croissant',
