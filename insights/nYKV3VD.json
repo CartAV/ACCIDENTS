@@ -18,8 +18,61 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Chart",
+      "name": "Count by nb_usagers",
       "userEditedName": false,
+      "genericDimension0": [
+        {
+          "column": "nb_usagers",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "NONE",
+            "nbBins": 10,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "genericMeasures": [
+        {
+          "function": "COUNT",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
       "xDimension": [],
       "yDimension": [],
       "uaXDimension": [],
@@ -37,10 +90,11 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
-      "hexbinRadius": 0,
+      "hexbinRadius": 20,
       "smoothing": false,
       "showLegend": true,
       "showXAxis": false,
@@ -73,11 +127,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAV0lEQVRoge3PMQ0AMQzAwKhEAjNrQWUPtZ+eQiu5PgR2hCQRZPXcbjjKYTqH6Rymc5jOYTqH6Rymc5jOYTqH6bJ6npp2mM5hOofp/uGsnth73e6RJL3gA5lhTlnm9b8bAAAAAElFTkSuQmCC",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Chart",
+  "name": "Count by nb_usagers",
   "type": "CHART",
   "miniature": {
     "type": "chart",
