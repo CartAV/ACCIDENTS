@@ -27,17 +27,31 @@
     "hadoopConfigKeys": []
   },
   "checklists": {
-    "checklists": []
+    "checklists": [
+      {
+        "title": "Checklist",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": false,
+            "text": "examen du rejet de 5430 lignes",
+            "createdOn": 1483033114855,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          }
+        ]
+      }
+    ]
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483032205313
+    "lastModifiedOn": 1483033218707
   },
   "customMeta": {
     "kv": {}
