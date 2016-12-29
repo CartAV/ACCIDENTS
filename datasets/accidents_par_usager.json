@@ -1291,7 +1291,6 @@
     "dimensions": []
   },
   "tags": [
-    "stats",
     "creator_antoinefa"
   ],
   "checklists": {
@@ -1302,13 +1301,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483024457143
+    "lastModifiedOn": 1483027577463
   },
   "customMeta": {
     "kv": {}
