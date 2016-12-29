@@ -340,13 +340,37 @@
         "maxLength": -1
       },
       {
+        "name": "catv_voiture+remorque (ref obsolète)",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "catv_tracteur+semi-remorque",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
+        "name": "catv_motocyclette (ref obsolète)",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catv_tramway (ref obsolète)",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "catv_tracteur",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catv_scooter immatriculé (ref obsolète)",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -370,13 +394,13 @@
         "maxLength": -1
       },
       {
-        "name": "catv_engin spécial",
+        "name": "catv_utilitaire+remorque (ref obsolète)",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "catv_motocyclette (ref obsolète)",
+        "name": "catv_engin spécial",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -388,13 +412,19 @@
         "maxLength": -1
       },
       {
-        "name": "catv_tramway (ref obsolète)",
+        "name": "catv_voiture+caravane (ref obsolète)",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "catv_scooter immatriculé (ref obsolète)",
+        "name": "catv_side-car (ref obsolète)",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "catv_utilitaire+caravane (ref obsolète)",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -425,25 +455,25 @@
         "maxLength": -1
       },
       {
-        "name": "obs_Autre obstacle fixe sur chaussée",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "obs_Sortie de chaussée sans obtacle",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "obs_Bordure de trottoir",
+        "name": "obs_Ilot, refuge, borne haute",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "obs_Ilot, refuge, borne haute",
+        "name": "obs_Autre obstacle fixe sur chaussée",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "obs_Bordure de trottoir",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -611,13 +641,13 @@
         "maxLength": -1
       },
       {
-        "name": "manv_stationné",
+        "name": "manv_changeant de file à gauche",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "manv_changeant de file à gauche",
+        "name": "manv_stationné",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1593,13 +1623,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483026774692
+    "lastModifiedOn": 1483026835811
   },
   "customMeta": {
     "kv": {}
