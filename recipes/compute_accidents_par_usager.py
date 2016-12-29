@@ -4,6 +4,7 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 # Recipe inputs
+print "lecture du dataset"
 ds_in = dataiku.Dataset("accidents_par_usager_brut")
 events = ds_in.get_dataframe(infer_with_pandas=False)
 
@@ -281,7 +282,7 @@ for table in list(dico.keys()):
         events[key]=events[key].map(dico[table][key])
 
 
-
+print "écriture du résultat"
 # Recipe outputs
 ds_out = dataiku.Dataset("accidents_par_usager_valeurs")
 ds_out.write_with_schema(events)
