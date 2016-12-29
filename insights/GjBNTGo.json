@@ -165,7 +165,7 @@
   "name": "Chart",
   "type": "CHART",
   "miniature": {
-    "type": "description",
+    "type": "description_and_picture",
     "showTitle": true,
     "fullImage": true
   },
