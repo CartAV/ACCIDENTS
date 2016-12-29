@@ -166,7 +166,7 @@
   "type": "CHART",
   "miniature": {
     "type": "chart",
-    "showTitle": true,
+    "showTitle": false,
     "fullImage": true
   },
   "fullView": {
