@@ -516,19 +516,7 @@
         "d": false
       },
       {
-        "name": "place_0",
-        "d": false
-      },
-      {
         "name": "place_1",
-        "d": false
-      },
-      {
-        "name": "place_2",
-        "d": false
-      },
-      {
-        "name": "place_4",
         "d": false
       },
       {
@@ -536,7 +524,15 @@
         "d": false
       },
       {
-        "name": "place_9",
+        "name": "place_2",
+        "d": false
+      },
+      {
+        "name": "place_0",
+        "d": false
+      },
+      {
+        "name": "place_4",
         "d": false
       },
       {
@@ -548,7 +544,7 @@
         "d": false
       },
       {
-        "name": "place_8",
+        "name": "place_9",
         "d": false
       },
       {
@@ -556,11 +552,11 @@
         "d": false
       },
       {
-        "name": "catu",
+        "name": "place_8",
         "d": false
       },
       {
-        "name": "catu_piéton",
+        "name": "catu",
         "d": false
       },
       {
@@ -572,6 +568,10 @@
         "d": false
       },
       {
+        "name": "catu_piéton",
+        "d": false
+      },
+      {
         "name": "catu_trottinette",
         "d": false
       },
@@ -580,7 +580,7 @@
         "d": false
       },
       {
-        "name": "grav_blessé léger",
+        "name": "grav_indemne",
         "d": false
       },
       {
@@ -588,7 +588,7 @@
         "d": false
       },
       {
-        "name": "grav_indemne",
+        "name": "grav_blessé léger",
         "d": false
       },
       {
@@ -600,11 +600,11 @@
         "d": false
       },
       {
-        "name": "sexe_homme",
+        "name": "sexe_femme",
         "d": false
       },
       {
-        "name": "sexe_femme",
+        "name": "sexe_homme",
         "d": false
       },
       {
@@ -612,19 +612,7 @@
         "d": false
       },
       {
-        "name": "trajet_domicile travail",
-        "d": false
-      },
-      {
         "name": "trajet_loisirs",
-        "d": false
-      },
-      {
-        "name": "trajet_courses",
-        "d": false
-      },
-      {
-        "name": "trajet_autres",
         "d": false
       },
       {
@@ -632,7 +620,19 @@
         "d": false
       },
       {
+        "name": "trajet_autres",
+        "d": false
+      },
+      {
         "name": "trajet_domicile école",
+        "d": false
+      },
+      {
+        "name": "trajet_domicile travail",
+        "d": false
+      },
+      {
+        "name": "trajet_courses",
         "d": false
       },
       {
@@ -644,11 +644,11 @@
         "d": false
       },
       {
-        "name": "secu_avec casque",
+        "name": "secu_sans ceinture",
         "d": false
       },
       {
-        "name": "secu_sans ceinture",
+        "name": "secu_avec casque",
         "d": false
       },
       {
@@ -660,11 +660,11 @@
         "d": false
       },
       {
-        "name": "secu_avec réflecteur",
+        "name": "secu_sans réflecteur",
         "d": false
       },
       {
-        "name": "secu_sans réflecteur",
+        "name": "secu_avec réflecteur",
         "d": false
       },
       {
@@ -676,11 +676,23 @@
         "d": true
       },
       {
-        "name": "actp",
-        "d": false
+        "name": "locp_moins de 50m passage piéton",
+        "d": true
       },
       {
-        "name": "actp_piéton traversant",
+        "name": "locp_avec signalisation lumineuse",
+        "d": true
+      },
+      {
+        "name": "locp_plus de 50m un passage piéton",
+        "d": true
+      },
+      {
+        "name": "locp_sans signalisation lumineuse",
+        "d": true
+      },
+      {
+        "name": "actp",
         "d": false
       },
       {
@@ -688,11 +700,11 @@
         "d": false
       },
       {
-        "name": "actp_piéton sens inverse véhicule",
+        "name": "actp_piéton traversant",
         "d": false
       },
       {
-        "name": "actp_piéton masqué",
+        "name": "actp_piéton sens inverse véhicule",
         "d": false
       },
       {
@@ -700,7 +712,19 @@
         "d": false
       },
       {
+        "name": "actp_piéton masqué",
+        "d": false
+      },
+      {
+        "name": "actp_piéton avec animal",
+        "d": true
+      },
+      {
         "name": "etatp",
+        "d": false
+      },
+      {
+        "name": "etatp_piéton en groupe",
         "d": false
       },
       {
@@ -712,10 +736,6 @@
         "d": false
       },
       {
-        "name": "etatp_piéton en groupe",
-        "d": false
-      },
-      {
         "name": "an_nais",
         "d": false
       },
@@ -724,151 +744,7 @@
         "d": false
       },
       {
-        "name": "age_11",
-        "d": false
-      },
-      {
-        "name": "age_33",
-        "d": false
-      },
-      {
-        "name": "age_23",
-        "d": false
-      },
-      {
-        "name": "age_62",
-        "d": false
-      },
-      {
-        "name": "age_52",
-        "d": false
-      },
-      {
-        "name": "age_30",
-        "d": false
-      },
-      {
-        "name": "age_18",
-        "d": false
-      },
-      {
-        "name": "age_26",
-        "d": false
-      },
-      {
-        "name": "age_13",
-        "d": false
-      },
-      {
-        "name": "age_22",
-        "d": false
-      },
-      {
-        "name": "age_29",
-        "d": false
-      },
-      {
-        "name": "age_48",
-        "d": false
-      },
-      {
-        "name": "age_19",
-        "d": false
-      },
-      {
-        "name": "age_86",
-        "d": false
-      },
-      {
         "name": "age_36",
-        "d": false
-      },
-      {
-        "name": "age_21",
-        "d": false
-      },
-      {
-        "name": "age_60",
-        "d": false
-      },
-      {
-        "name": "age_24",
-        "d": false
-      },
-      {
-        "name": "age_37",
-        "d": false
-      },
-      {
-        "name": "age_44",
-        "d": false
-      },
-      {
-        "name": "age_-1",
-        "d": false
-      },
-      {
-        "name": "age_39",
-        "d": false
-      },
-      {
-        "name": "age_63",
-        "d": false
-      },
-      {
-        "name": "age_56",
-        "d": false
-      },
-      {
-        "name": "age_49",
-        "d": false
-      },
-      {
-        "name": "age_15",
-        "d": false
-      },
-      {
-        "name": "age_69",
-        "d": false
-      },
-      {
-        "name": "age_58",
-        "d": false
-      },
-      {
-        "name": "age_43",
-        "d": false
-      },
-      {
-        "name": "age_46",
-        "d": false
-      },
-      {
-        "name": "age_75",
-        "d": false
-      },
-      {
-        "name": "age_59",
-        "d": false
-      },
-      {
-        "name": "age_57",
-        "d": false
-      },
-      {
-        "name": "age_74",
-        "d": false
-      },
-      {
-        "name": "age_31",
-        "d": false
-      },
-      {
-        "name": "age_20",
-        "d": false
-      },
-      {
-        "name": "age_72",
         "d": false
       },
       {
@@ -876,31 +752,55 @@
         "d": false
       },
       {
+        "name": "age_60",
+        "d": false
+      },
+      {
+        "name": "age_41",
+        "d": false
+      },
+      {
+        "name": "age_23",
+        "d": false
+      },
+      {
+        "name": "age_21",
+        "d": false
+      },
+      {
+        "name": "age_57",
+        "d": false
+      },
+      {
+        "name": "age_8",
+        "d": false
+      },
+      {
+        "name": "age_39",
+        "d": false
+      },
+      {
+        "name": "age_18",
+        "d": false
+      },
+      {
         "name": "age_27",
         "d": false
       },
       {
-        "name": "age_32",
+        "name": "age_7",
         "d": false
       },
       {
-        "name": "age_47",
+        "name": "age_19",
         "d": false
       },
       {
-        "name": "age_40",
+        "name": "age_20",
         "d": false
       },
       {
-        "name": "age_61",
-        "d": false
-      },
-      {
-        "name": "age_17",
-        "d": false
-      },
-      {
-        "name": "age_2",
+        "name": "age_1",
         "d": false
       },
       {
@@ -908,7 +808,195 @@
         "d": false
       },
       {
-        "name": "age_50",
+        "name": "age_65",
+        "d": false
+      },
+      {
+        "name": "age_54",
+        "d": false
+      },
+      {
+        "name": "age_49",
+        "d": false
+      },
+      {
+        "name": "age_16",
+        "d": false
+      },
+      {
+        "name": "age_29",
+        "d": false
+      },
+      {
+        "name": "age_17",
+        "d": false
+      },
+      {
+        "name": "age_33",
+        "d": false
+      },
+      {
+        "name": "age_38",
+        "d": false
+      },
+      {
+        "name": "age_24",
+        "d": false
+      },
+      {
+        "name": "age_59",
+        "d": false
+      },
+      {
+        "name": "age_56",
+        "d": false
+      },
+      {
+        "name": "age_12",
+        "d": false
+      },
+      {
+        "name": "age_11",
+        "d": false
+      },
+      {
+        "name": "age_48",
+        "d": false
+      },
+      {
+        "name": "age_43",
+        "d": false
+      },
+      {
+        "name": "age_32",
+        "d": false
+      },
+      {
+        "name": "age_4",
+        "d": false
+      },
+      {
+        "name": "age_31",
+        "d": false
+      },
+      {
+        "name": "age_53",
+        "d": false
+      },
+      {
+        "name": "age_44",
+        "d": false
+      },
+      {
+        "name": "age_42",
+        "d": false
+      },
+      {
+        "name": "age_66",
+        "d": false
+      },
+      {
+        "name": "age_81",
+        "d": false
+      },
+      {
+        "name": "age_40",
+        "d": false
+      },
+      {
+        "name": "age_64",
+        "d": false
+      },
+      {
+        "name": "age_61",
+        "d": false
+      },
+      {
+        "name": "age_52",
+        "d": false
+      },
+      {
+        "name": "age_73",
+        "d": false
+      },
+      {
+        "name": "age_55",
+        "d": false
+      },
+      {
+        "name": "age_58",
+        "d": false
+      },
+      {
+        "name": "age_62",
+        "d": false
+      },
+      {
+        "name": "age_47",
+        "d": false
+      },
+      {
+        "name": "age_82",
+        "d": false
+      },
+      {
+        "name": "age_30",
+        "d": false
+      },
+      {
+        "name": "age_37",
+        "d": false
+      },
+      {
+        "name": "age_15",
+        "d": false
+      },
+      {
+        "name": "age_83",
+        "d": false
+      },
+      {
+        "name": "age_46",
+        "d": false
+      },
+      {
+        "name": "age_71",
+        "d": false
+      },
+      {
+        "name": "age_85",
+        "d": false
+      },
+      {
+        "name": "age_6",
+        "d": false
+      },
+      {
+        "name": "age_34",
+        "d": false
+      },
+      {
+        "name": "age_35",
+        "d": false
+      },
+      {
+        "name": "age_70",
+        "d": false
+      },
+      {
+        "name": "age_69",
+        "d": false
+      },
+      {
+        "name": "age_22",
+        "d": false
+      },
+      {
+        "name": "age_-1",
+        "d": false
+      },
+      {
+        "name": "age_74",
         "d": false
       },
       {
@@ -920,123 +1008,7 @@
         "d": false
       },
       {
-        "name": "age_67",
-        "d": false
-      },
-      {
-        "name": "age_83",
-        "d": false
-      },
-      {
-        "name": "age_53",
-        "d": false
-      },
-      {
-        "name": "age_34",
-        "d": false
-      },
-      {
-        "name": "age_65",
-        "d": false
-      },
-      {
-        "name": "age_55",
-        "d": false
-      },
-      {
-        "name": "age_35",
-        "d": false
-      },
-      {
-        "name": "age_42",
-        "d": false
-      },
-      {
-        "name": "age_28",
-        "d": false
-      },
-      {
-        "name": "age_41",
-        "d": false
-      },
-      {
-        "name": "age_38",
-        "d": false
-      },
-      {
-        "name": "age_12",
-        "d": false
-      },
-      {
-        "name": "age_5",
-        "d": false
-      },
-      {
-        "name": "age_54",
-        "d": false
-      },
-      {
-        "name": "age_91",
-        "d": false
-      },
-      {
-        "name": "age_64",
-        "d": false
-      },
-      {
-        "name": "age_73",
-        "d": false
-      },
-      {
-        "name": "age_14",
-        "d": false
-      },
-      {
-        "name": "age_16",
-        "d": false
-      },
-      {
-        "name": "age_88",
-        "d": false
-      },
-      {
-        "name": "age_82",
-        "d": false
-      },
-      {
-        "name": "age_81",
-        "d": false
-      },
-      {
-        "name": "age_70",
-        "d": false
-      },
-      {
-        "name": "age_0",
-        "d": false
-      },
-      {
-        "name": "age_8",
-        "d": false
-      },
-      {
-        "name": "age_6",
-        "d": false
-      },
-      {
-        "name": "age_80",
-        "d": false
-      },
-      {
-        "name": "age_68",
-        "d": false
-      },
-      {
-        "name": "age_85",
-        "d": false
-      },
-      {
-        "name": "age_9",
+        "name": "age_26",
         "d": false
       },
       {
@@ -1044,7 +1016,19 @@
         "d": false
       },
       {
-        "name": "age_92",
+        "name": "age_28",
+        "d": false
+      },
+      {
+        "name": "age_13",
+        "d": false
+      },
+      {
+        "name": "age_63",
+        "d": false
+      },
+      {
+        "name": "age_14",
         "d": false
       },
       {
@@ -1052,39 +1036,11 @@
         "d": false
       },
       {
-        "name": "age_7",
+        "name": "age_50",
         "d": false
       },
       {
-        "name": "age_3",
-        "d": false
-      },
-      {
-        "name": "age_76",
-        "d": false
-      },
-      {
-        "name": "age_4",
-        "d": false
-      },
-      {
-        "name": "age_71",
-        "d": false
-      },
-      {
-        "name": "age_79",
-        "d": false
-      },
-      {
-        "name": "age_1",
-        "d": false
-      },
-      {
-        "name": "age_77",
-        "d": false
-      },
-      {
-        "name": "age_89",
+        "name": "age_9",
         "d": false
       },
       {
@@ -1092,27 +1048,35 @@
         "d": false
       },
       {
-        "name": "age_101",
+        "name": "age_80",
         "d": false
       },
       {
-        "name": "age_94",
+        "name": "age_67",
         "d": false
       },
       {
-        "name": "age_66",
+        "name": "age_2",
         "d": false
       },
       {
-        "name": "age_93",
+        "name": "age_0",
         "d": false
       },
       {
-        "name": "age_95",
+        "name": "age_5",
         "d": false
       },
       {
-        "name": "age_99",
+        "name": "age_77",
+        "d": false
+      },
+      {
+        "name": "age_68",
+        "d": false
+      },
+      {
+        "name": "age_79",
         "d": false
       },
       {
@@ -1120,16 +1084,92 @@
         "d": false
       },
       {
+        "name": "age_76",
+        "d": false
+      },
+      {
+        "name": "age_75",
+        "d": false
+      },
+      {
+        "name": "age_86",
+        "d": false
+      },
+      {
+        "name": "age_89",
+        "d": false
+      },
+      {
+        "name": "age_92",
+        "d": false
+      },
+      {
+        "name": "age_72",
+        "d": false
+      },
+      {
+        "name": "age_91",
+        "d": false
+      },
+      {
+        "name": "age_88",
+        "d": false
+      },
+      {
+        "name": "age_3",
+        "d": false
+      },
+      {
+        "name": "age_105",
+        "d": true
+      },
+      {
+        "name": "age_93",
+        "d": false
+      },
+      {
         "name": "age_96",
         "d": false
+      },
+      {
+        "name": "age_95",
+        "d": false
+      },
+      {
+        "name": "age_94",
+        "d": true
+      },
+      {
+        "name": "age_98",
+        "d": true
+      },
+      {
+        "name": "age_100",
+        "d": true
+      },
+      {
+        "name": "age_108",
+        "d": true
+      },
+      {
+        "name": "age_97",
+        "d": true
+      },
+      {
+        "name": "age_106",
+        "d": true
       },
       {
         "name": "age_109",
         "d": false
       },
       {
-        "name": "age_100",
-        "d": false
+        "name": "age_107",
+        "d": true
+      },
+      {
+        "name": "age_99",
+        "d": true
       }
     ]
   },
@@ -1143,11 +1183,11 @@
     "selection": {
       "samplingMethod": "RANDOM_FIXED_NB",
       "partitionSelectionMethod": "ALL",
-      "maxRecords": 10000,
+      "maxRecords": 100000,
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 2
+    "_refreshTrigger": 5
   },
   "vizSampling": {
     "autoRefreshSample": false,
