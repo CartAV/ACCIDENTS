@@ -26,7 +26,7 @@
     "engine": "DSS_STREAM",
     "hadoopConfigKeys": []
   },
-  "shortDesc": "Normalisation des type, parsing des dates,",
+  "shortDesc": "Préparation de données : typage, parsing des dates, parsing du code commune",
   "checklists": {
     "checklists": [
       {
@@ -86,13 +86,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 45,
+    "versionNumber": 47,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483015508409
+    "lastModifiedOn": 1483015534775
   },
   "customMeta": {
     "kv": {}
