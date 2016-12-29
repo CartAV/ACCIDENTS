@@ -40,6 +40,7 @@ dico={
             '41': 'avec réflecteur', '42': 'sans réflecteur'
         },
         'locp': {
+            0: '',
             1: '+50m passage piéton',
             2: '-50m passage piéton',
             3: 'sans signalisation lumineuse',
