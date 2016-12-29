@@ -308,11 +308,27 @@
         "d": true
       },
       {
+        "name": "catv_voiture+remorque (ref obsolète)",
+        "d": true
+      },
+      {
         "name": "catv_tracteur+semi-remorque",
         "d": true
       },
       {
+        "name": "catv_motocyclette (ref obsolète)",
+        "d": true
+      },
+      {
+        "name": "catv_tramway (ref obsolète)",
+        "d": true
+      },
+      {
         "name": "catv_tracteur",
+        "d": true
+      },
+      {
+        "name": "catv_scooter immatriculé (ref obsolète)",
         "d": true
       },
       {
@@ -328,11 +344,11 @@
         "d": true
       },
       {
-        "name": "catv_engin spécial",
+        "name": "catv_utilitaire+remorque (ref obsolète)",
         "d": true
       },
       {
-        "name": "catv_motocyclette (ref obsolète)",
+        "name": "catv_engin spécial",
         "d": true
       },
       {
@@ -340,11 +356,15 @@
         "d": true
       },
       {
-        "name": "catv_tramway (ref obsolète)",
+        "name": "catv_voiture+caravane (ref obsolète)",
         "d": true
       },
       {
-        "name": "catv_scooter immatriculé (ref obsolète)",
+        "name": "catv_side-car (ref obsolète)",
+        "d": true
+      },
+      {
+        "name": "catv_utilitaire+caravane (ref obsolète)",
         "d": true
       },
       {
@@ -364,19 +384,19 @@
         "d": true
       },
       {
-        "name": "obs_Autre obstacle fixe sur chaussée",
-        "d": true
-      },
-      {
         "name": "obs_Sortie de chaussée sans obtacle",
         "d": true
       },
       {
-        "name": "obs_Bordure de trottoir",
+        "name": "obs_Ilot, refuge, borne haute",
         "d": true
       },
       {
-        "name": "obs_Ilot, refuge, borne haute",
+        "name": "obs_Autre obstacle fixe sur chaussée",
+        "d": true
+      },
+      {
+        "name": "obs_Bordure de trottoir",
         "d": true
       },
       {
@@ -488,11 +508,11 @@
         "d": true
       },
       {
-        "name": "manv_stationné",
+        "name": "manv_changeant de file à gauche",
         "d": true
       },
       {
-        "name": "manv_changeant de file à gauche",
+        "name": "manv_stationné",
         "d": true
       },
       {
@@ -1147,7 +1167,7 @@
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 1
+    "_refreshTrigger": 2
   },
   "vizSampling": {
     "autoRefreshSample": false,
