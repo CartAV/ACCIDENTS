@@ -16,9 +16,9 @@
     },
     "dataset": "accidents",
     "chart": {
-      "type": "stacked_columns",
+      "type": "grouped_columns",
       "variant": "normal",
-      "name": "Sum of grav_tué_sum by date",
+      "name": "nombre d\u0027hospitalisés et tués par mois",
       "userEditedName": true,
       "genericDimension0": [
         {
@@ -147,12 +147,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACrklEQVRoge3VwU4TQRwGcA6+A7cuwoVEJTFE7148GINe4dLERGNikAsy1dQsFK6GCBdtDEYkQENnFulsQyVlItKZ2YMJF19A0+6ML6GHZdtluqVLpaUl8126+2U6+/9lt9u+Ph0dHR2dHg3ionji3BGZi5ql7bG4WERMkGCHHJFRu0sTHxwEhoG/cNnf+enakKhgxARB3J3u/ITnnNPAfucfX4rHXAUjJkhUsFWSQxcx83/lrOATT0LIHe/6p6AZeJ3L/tPAYb919RqICYKouN9+TYS0At45dK8hLh41AkPq4ur+JXkXMUEsLt+r185yOVI3D5UP2+GsDtcMnHXcuAq2eGU07K4jJjZUcGBNWu0sLlPBeSCTJmJuvNnckEkzzHJmMGRiMhKYlscbgMlpYHXdtvNnQZ0H0soTtcvSypTaEfL3itqhkrh+YeCQF14oWH0nWNRNqTNCVknWdSX3Vh2Yy7mGWMhc8zzB29y9FwUMmZhvBla7ULAjTX8dpOKdD4ZM7HcEvMXLD1oFw5K71AwcwFl1YCY+dBwMHTGhghGTT6OCa3vXwJDL3SAYUoFVsHXw+3bXgLO0MtUqGDGxFgXsQb1/h54HIyoLGqzBGqzBGqzBGnyJwDGAFwcTdnE0tVcFbxyWP47MFvY2v5d3so4bf/7p6DNigtyc/VpcIb82exIcm8mZBsAkBvCiATAxACbDyfyk19kZvxuYwXH/uNq9sMfV7s6bb2OBc2wATIZf56cDXdr7zM1Xu0R+wTveWRp6mS96XS5lAEzWD8ppRGVhANj7Bsglk1s/VyAV+PHKj2UDYBKbsc3BhF0cW6brz1aP3hoAkxvm7pwBcHTwVYBbBhuv7AkVHAO5qajgWueBjQReiwG7cPydZG1f2/LBgb03ji2NwTo6Ojo6XZR/LkcZ5fJNq/sAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACtElEQVRoge3TzUsUYRzA8aesS5hQN5EcX4piCcEouvjSxUMUFFinjECI6BAaqeOCGRWUihFEKUkXg1gd55kZ2ZnZ3dwcpfV5nnJvohB4CIzZZ3bzb5hOI+u4tOPLvijP9zY/5nn4fWAGABaLxTqoKTGzsdA75DQBrVWkPx9oMIynyjOBdbJeVqidcpoDljA1nFkmsEzM1vxvl4P+B5YJ7XBmMjFbP8bto4XZcg9zg2WS7HDAErZCAAAASfIWAwMAIDI73fcJRrI0P5vvsO2CJUKVjbMZwBBbAxlmI7k0bKvdgm3bPrTpvoMIFgShRMapKw5Ywol7G/e5wDCeKi8asITp/T0BE2scAAAUsu7zAhaMZKlEaGDr10Elb3tb+pYZSoxnP4jo63yCJUJ708GCYJdsepdQbSuOGgJaO+kFbBj2kYKBIaFvvYAhMh+kg4Nx89hOwSJK1ucNrJP1Mi9gOW7VZgPLOHE1GxgumNx0LHW86MEisercYIlYLdnAwmLqrIjp46IGB9HfCq9g27YPZwUjq9sNdv7bfQ8WEW33AoY4MczADMzADMzADMzADFxc4FNd6vk32qoC46nySy+jQQfsn1yWlZjZ6HsaDk0t0K8AAHB3bNGQidla49ejQiyhZwNXP9Ga3OCanumLDvjy82iLRGigoff7ibyBK3uCzwbVVTUdXM2rj7oDy6F0cFWXdsMN9vXq9TffoShEZmcVr81+nl9T2j6g081DcxGIrQGOV9XRyO+poeDKmQsvZiIQWyOcX3v/Svk1IRKr7lxfeEYiNFDr13v4iaWARKyWKl6bhYRqdf2Rh21jPydFRNs5XpMlTI2GoW+3mwfnZBFZ3RyvTonIjNwZ/XHd1xcOQZwY5nj105f5P7BfWLnG8ersvgVX8mrYATcNzCu7ArNYLBariPoH0ryoC0Jv4ucAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Sum of grav_tué_sum by date",
+  "name": "nombre d\u0027hospitalisés et tués par mois",
   "type": "CHART",
   "miniature": {
     "type": "chart",
