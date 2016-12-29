@@ -18,8 +18,8 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Sum of grav_blessé léger by catv",
-      "userEditedName": false,
+      "name": "Nombre d\u0027accidentés grave, hospitalisé, ... par véhicule",
+      "userEditedName": true,
       "genericDimension0": [
         {
           "column": "catv",
@@ -38,79 +38,35 @@
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Sum of grav_blessé léger, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Sum of grav_blessé léger, ascending",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Sum of grav_indemne, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Sum of grav_indemne, ascending",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 2,
               "label": "Sum of grav_hospitalisé, descending"
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 2,
+              "measureIdx": 0,
               "label": "Sum of grav_hospitalisé, ascending",
               "sortAscending": true
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 3,
+              "measureIdx": 1,
               "label": "Sum of grav_tué, descending"
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 3,
+              "measureIdx": 1,
               "label": "Sum of grav_tué, ascending",
               "sortAscending": true
             }
           ],
           "sort": {
             "type": "AGGREGATION",
-            "measureIdx": 3,
-            "label": "Sum of grav_tué, descending"
+            "measureIdx": 0,
+            "label": "Sum of grav_hospitalisé, descending"
           }
         }
       ],
       "genericDimension1": [],
       "genericMeasures": [
-        {
-          "column": "grav_blessé léger",
-          "function": "SUM",
-          "type": "NUMERICAL",
-          "displayed": true,
-          "isA": "measure",
-          "displayAxis": "axis1",
-          "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
-        },
-        {
-          "column": "grav_indemne",
-          "function": "SUM",
-          "type": "NUMERICAL",
-          "displayed": true,
-          "isA": "measure",
-          "displayAxis": "axis1",
-          "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
-        },
         {
           "column": "grav_hospitalisé",
           "function": "SUM",
@@ -188,12 +144,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAsUlEQVRoge3VOwoCMRSF4QMWghAtBAtBMmDhQlyP3UBUxMcO3IVgMc1cEGwulu5D13FtB2tNIDlfky6cvwgBiIiIiIjoJ3wQTb0hKgbnjsG5Y3Duigy2K3qpd0Tjg6ht3Dj1jmgYnDsG567Y4GL+Yx9E7V6LD6J2Gi1T7/m772AfRG0/PPsgagennXMLANX6VgHA9NgObIX+vG4mtnOL7p2Xx3sGAM3zVc5TISIiIirOBwdJW6Ez28ByAAAAAElFTkSuQmCC",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAbElEQVRoge3QsQ2AMAwFUU9CGIHlEIxERZXUKVmFMZggElUiXe41bv85QhJKOnIdvaErg+kMpjOYzmA6g+kMpjOYzmA6g+kMpktHrvfz1mnCpw/Gh7eCsQ/4G9y6y1muiIh1L1v/9ZIkSRrnA0+1ZmuwF9GGAAAAAElFTkSuQmCC",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Sum of grav_blessé léger by catv",
+  "name": "Nombre d\u0027accidentés grave, hospitalisé, ... par véhicule",
   "type": "CHART",
   "miniature": {
     "type": "chart",
