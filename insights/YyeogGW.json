@@ -18,8 +18,56 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Chart",
+      "name": "Avg. of grav_calc by catv",
       "userEditedName": false,
+      "genericDimension0": [
+        {
+          "column": "catv",
+          "type": "ALPHANUM",
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of grav_calc, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of grav_calc, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Average of grav_calc, descending"
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "genericMeasures": [
+        {
+          "column": "grav_calc",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
       "xDimension": [],
       "yDimension": [],
       "uaXDimension": [],
@@ -37,10 +85,11 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
-      "hexbinRadius": 0,
+      "hexbinRadius": 20,
       "smoothing": false,
       "showLegend": true,
       "showXAxis": false,
@@ -73,11 +122,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAArUlEQVRoge3SQQrCMBBA0ZxAXHVpAnoKT+IlBAVheowew1VdNNWdXs1VIFSKVWoHp//DQFbJPIhzRGQmL/GRRnuXSQJsPcDWA2w9wNYDbD3A1gNsvRzsJd7N4/vA61Nd5Ph3Zy9xq+kY3Jjg/K7N/rpIo+l76VfgvtG0us7Ck4DV8ZrgILddkKYK0lTzAJft8ZM3wuGyTOdV2Z6/+i2AAf8HeDB+dmAiIiIiGrEnoF8XyMTo/zsAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Chart",
+  "name": "Avg. of grav_calc by catv",
   "type": "CHART",
   "miniature": {
     "type": "chart",
