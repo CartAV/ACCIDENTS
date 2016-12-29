@@ -1590,7 +1590,7 @@
       },
       {
         "name": "age_99",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -1624,13 +1624,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483033520398
+    "lastModifiedOn": 1483033689216
   },
   "customMeta": {
     "kv": {}
