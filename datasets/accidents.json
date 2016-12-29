@@ -1444,12 +1444,6 @@
         "maxLength": -1
       },
       {
-        "name": "age_92_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "age_72_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -1546,12 +1540,6 @@
         "maxLength": -1
       },
       {
-        "name": "age_99_sum",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "nb_usagers_sum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -1587,13 +1575,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483033770916
+    "lastModifiedOn": 1483034181832
   },
   "customMeta": {
     "kv": {}
