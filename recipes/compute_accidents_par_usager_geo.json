@@ -23,6 +23,7 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {},
+  "shortDesc": "Script python de géolocalisation par l\u0027api adresse.data.gouv.fr (réinstanciée en local)",
   "checklists": {
     "checklists": [
       {
@@ -42,13 +43,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483014612946
+    "lastModifiedOn": 1483014634106
   },
   "customMeta": {
     "kv": {}
