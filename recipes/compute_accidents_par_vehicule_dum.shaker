@@ -264,23 +264,15 @@
         "d": true
       },
       {
-        "name": "catv_autre véhicule",
+        "name": "catv_motocyclette +125cm3",
         "d": true
       },
       {
-        "name": "catv_scooter +125cm3",
+        "name": "catv_cyclomoteur -50cm3",
         "d": true
       },
       {
         "name": "catv_scooter -50cm3",
-        "d": true
-      },
-      {
-        "name": "catv_bicyclette",
-        "d": true
-      },
-      {
-        "name": "catv_quad -50cm3",
         "d": true
       },
       {
@@ -292,31 +284,7 @@
         "d": true
       },
       {
-        "name": "catv_cyclomoteur -50cm3",
-        "d": true
-      },
-      {
-        "name": "catv_quad +50cm3",
-        "d": true
-      },
-      {
-        "name": "catv_motocyclette +125cm3",
-        "d": true
-      },
-      {
-        "name": "catv_train",
-        "d": true
-      },
-      {
-        "name": "catv_voiture+remorque (ref obsolète)",
-        "d": true
-      },
-      {
-        "name": "catv_tracteur+semi-remorque",
-        "d": true
-      },
-      {
-        "name": "catv_motocyclette (ref obsolète)",
+        "name": "catv_scooter immatriculé (ref obsolète)",
         "d": true
       },
       {
@@ -324,11 +292,19 @@
         "d": true
       },
       {
-        "name": "catv_tracteur",
+        "name": "catv_utilitaire+remorque (ref obsolète)",
         "d": true
       },
       {
-        "name": "catv_scooter immatriculé (ref obsolète)",
+        "name": "catv_bicyclette",
+        "d": true
+      },
+      {
+        "name": "catv_quad -50cm3",
+        "d": true
+      },
+      {
+        "name": "catv_tracteur+semi-remorque",
         "d": true
       },
       {
@@ -340,11 +316,11 @@
         "d": true
       },
       {
-        "name": "catv_voiturette",
+        "name": "catv_motocyclette (ref obsolète)",
         "d": true
       },
       {
-        "name": "catv_utilitaire+remorque (ref obsolète)",
+        "name": "catv_scooter +125cm3",
         "d": true
       },
       {
@@ -352,7 +328,31 @@
         "d": true
       },
       {
+        "name": "catv_autre véhicule",
+        "d": true
+      },
+      {
         "name": "catv_tramway",
+        "d": true
+      },
+      {
+        "name": "catv_voiturette",
+        "d": true
+      },
+      {
+        "name": "catv_train",
+        "d": true
+      },
+      {
+        "name": "catv_tracteur",
+        "d": true
+      },
+      {
+        "name": "catv_quad +50cm3",
+        "d": true
+      },
+      {
+        "name": "catv_voiture+remorque (ref obsolète)",
         "d": true
       },
       {
@@ -380,15 +380,7 @@
         "d": true
       },
       {
-        "name": "obs_Parapet",
-        "d": true
-      },
-      {
         "name": "obs_Sortie de chaussée sans obtacle",
-        "d": true
-      },
-      {
-        "name": "obs_Ilot, refuge, borne haute",
         "d": true
       },
       {
@@ -396,11 +388,19 @@
         "d": true
       },
       {
-        "name": "obs_Bordure de trottoir",
+        "name": "obs_Autre obstacle fixe sur trottoir ou accotement",
         "d": true
       },
       {
-        "name": "obs_Autre obstacle fixe sur trottoir ou accotement",
+        "name": "obs_Parapet",
+        "d": true
+      },
+      {
+        "name": "obs_Ilot, refuge, borne haute",
+        "d": true
+      },
+      {
+        "name": "obs_Bordure de trottoir",
         "d": true
       },
       {
@@ -416,10 +416,6 @@
         "d": true
       },
       {
-        "name": "obsm_choc sur rail",
-        "d": true
-      },
-      {
         "name": "obsm_choc autre obstacle mobile",
         "d": true
       },
@@ -428,27 +424,15 @@
         "d": true
       },
       {
+        "name": "obsm_choc sur rail",
+        "d": true
+      },
+      {
         "name": "choc",
         "d": true
       },
       {
-        "name": "choc_avant gauche",
-        "d": true
-      },
-      {
         "name": "choc_avant",
-        "d": true
-      },
-      {
-        "name": "choc_arrière",
-        "d": true
-      },
-      {
-        "name": "choc_côté gauche",
-        "d": true
-      },
-      {
-        "name": "choc_multiples",
         "d": true
       },
       {
@@ -460,7 +444,19 @@
         "d": true
       },
       {
-        "name": "choc_arrière gauche",
+        "name": "choc_avant gauche",
+        "d": true
+      },
+      {
+        "name": "choc_côté gauche",
+        "d": true
+      },
+      {
+        "name": "choc_multiples",
+        "d": true
+      },
+      {
+        "name": "choc_arrière",
         "d": true
       },
       {
@@ -468,7 +464,19 @@
         "d": true
       },
       {
+        "name": "choc_arrière gauche",
+        "d": true
+      },
+      {
         "name": "manv",
+        "d": true
+      },
+      {
+        "name": "manv_arrêté non stationné",
+        "d": true
+      },
+      {
+        "name": "manv_tournant à gauche",
         "d": true
       },
       {
@@ -480,35 +488,7 @@
         "d": true
       },
       {
-        "name": "manv_manoeuvre d\u0027évitement",
-        "d": true
-      },
-      {
-        "name": "manv_arrêté non stationné",
-        "d": true
-      },
-      {
-        "name": "manv_en faisant demi-tour sur la chaussée",
-        "d": true
-      },
-      {
-        "name": "manv_tournant à gauche",
-        "d": true
-      },
-      {
-        "name": "manv_déporté à droite",
-        "d": true
-      },
-      {
         "name": "manv_tournant à droite",
-        "d": true
-      },
-      {
-        "name": "manv_manoeuvre de stationnement",
-        "d": true
-      },
-      {
-        "name": "manv_changeant de file à gauche",
         "d": true
       },
       {
@@ -516,7 +496,27 @@
         "d": true
       },
       {
+        "name": "manv_changeant de file à gauche",
+        "d": true
+      },
+      {
+        "name": "manv_déporté à droite",
+        "d": true
+      },
+      {
+        "name": "manv_manoeuvre d\u0027évitement",
+        "d": true
+      },
+      {
         "name": "manv_changeant de file à droite",
+        "d": true
+      },
+      {
+        "name": "manv_manoeuvre de stationnement",
+        "d": true
+      },
+      {
+        "name": "manv_en faisant demi-tour sur la chaussée",
         "d": true
       },
       {
@@ -1161,13 +1161,13 @@
   "analysisColumnData": {},
   "explorationSampling": {
     "selection": {
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "RANDOM_FIXED_NB",
       "partitionSelectionMethod": "ALL",
       "maxRecords": 100000,
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 2
+    "_refreshTrigger": 3
   },
   "vizSampling": {
     "autoRefreshSample": false,
