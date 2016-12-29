@@ -6,6 +6,7 @@
         "column": "date",
         "outDayOfWeekColumn": "jour",
         "outHourColumn": "hr",
+        "outWeekOfYearColumn": "semaine",
         "timezone_id": "UTC"
       },
       "metaType": "PROCESSOR",
@@ -18,12 +19,23 @@
         {
           "type": "Unfold",
           "params": {
+            "column": "semaine",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": true,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
             "column": "jour",
             "prefix": true
           },
           "metaType": "PROCESSOR",
           "preview": false,
-          "disabled": false,
+          "disabled": true,
           "alwaysShowComment": false
         },
         {
@@ -34,7 +46,7 @@
           },
           "metaType": "PROCESSOR",
           "preview": false,
-          "disabled": false,
+          "disabled": true,
           "alwaysShowComment": false
         },
         {
@@ -45,7 +57,7 @@
           },
           "metaType": "PROCESSOR",
           "preview": false,
-          "disabled": false,
+          "disabled": true,
           "alwaysShowComment": false
         },
         {
@@ -56,7 +68,7 @@
           },
           "metaType": "PROCESSOR",
           "preview": false,
-          "disabled": false,
+          "disabled": true,
           "alwaysShowComment": false
         },
         {
