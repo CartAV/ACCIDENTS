@@ -27,6 +27,7 @@
     "hadoopConfigKeys": []
   },
   "shortDesc": "Préparation de données : typage, parsing des dates, parsing du code commune",
+  "description": "Attention le développement dummies (valeurs en colonnes) est calculé sur la base de l\u0027échantillon). Une meilleure représentativité sera donc obtenue en utilisant un échantillon plus important.",
   "checklists": {
     "checklists": [
       {
@@ -100,13 +101,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 65,
+    "versionNumber": 67,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483020219590
+    "lastModifiedOn": 1483020261413
   },
   "customMeta": {
     "kv": {}
