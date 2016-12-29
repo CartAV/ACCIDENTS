@@ -55,7 +55,7 @@
           },
           {
             "done": false,
-            "text": "regexps pour améliorer l\u0027adresser",
+            "text": "regexps pour améliorer l\u0027adresse",
             "createdOn": 1482507730500,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
@@ -86,13 +86,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 43,
+    "versionNumber": 45,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483015505911
+    "lastModifiedOn": 1483015508409
   },
   "customMeta": {
     "kv": {}
