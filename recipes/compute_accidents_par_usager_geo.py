@@ -23,25 +23,28 @@ def adresse_submit(df):
     global i
     s = StringIO.StringIO()
     i+=split
-    df.to_csv(s,sep=",", quotechar='"',encoding="utf8",index=False)
-    requests_session = requests.Session()
-    kwargs = {
-        'data': OrderedDict([
-                ('columns', 'adr'), 
-                ('citycode', 'code_insee')
-        ]),
-        'method': 'post',
-        'files': OrderedDict([
-            ('data', s.getvalue())
-        ]),
-        'stream': True,
-        'timeout':500,
-        'url': 'http://fa-srv-1/search/csv/'
-    }
     if ((i%verbosechunksize)==0):
         print("geocoding chunk %r to %r" %(i-verbosechunksize,i))
     t=1
     while (t<=maxtries):
+        df_adr=df[["Num_Acc","v1","adr","code_insee"]]
+        df.to_csv(s,sep=",", quotechar='"',encoding="utf8",index=False)
+        requests_session = requests.Session()
+        kwargs = {
+            'data': OrderedDict([
+                    ('columns', 'v1'),                     
+                    ('columns', 'adr'), 
+                    ('citycode', 'code_insee')
+              ]),
+            'method': 'post',
+            'files': OrderedDict([
+                ('data', s.getvalue())
+            ]),
+            'stream': True,
+            'timeout':500,
+            'url': 'http://fa-srv-1/search/csv/'
+        }
+    
         response = requests_session.request(**kwargs)
         if (response.status_code == 200):
             res=pd.read_csv(StringIO.StringIO(response.content.decode('utf-8')),sep=",",quotechar='"')
