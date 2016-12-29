@@ -28,13 +28,13 @@
     "gitCommitMode": "AUTO",
     "disableAutomaticTriggers": false
   },
-  "name": "accidents corporels - dataprep master",
+  "name": "accidents corporels - collaboratif",
   "description": "Le projet vise à reproduire les traitements déjà effectués en python/panda.\nLes données sont issues de la sécurité routière, dans la version opendata (liens directs des données depuis le site etalab).\nLe projet vise également à offrir un exemple d\u0027usage des outils de préparation des données et de modélisation.",
   "shortDesc": "Données issues de l\u0027opendata etalab (BAAC)\nDataprep master",
   "checklists": {
     "checklists": [
       {
-        "title": "Your new project\u0027s Todo",
+        "title": "Todo accidentalité",
         "createdOn": 0,
         "items": [
           {
@@ -74,7 +74,7 @@
           },
           {
             "done": true,
-            "text": "Géolocalisation",
+            "text": "Géolocalisation adresse gouv fr",
             "createdOn": 1480097013129,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
@@ -83,6 +83,20 @@
             "done": true,
             "text": "Migration vers vertica",
             "createdOn": 1482511565405,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Enrichissement IRIS",
+            "createdOn": 1483013763319,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Enrichissement segment routier",
+            "createdOn": 1483013770990,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
           }
