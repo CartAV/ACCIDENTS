@@ -73,6 +73,13 @@
             "createdOn": 1483020100937,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "recalcul avec prise en compte des valeurs de locp (suite bug process amont)",
+            "createdOn": 1483020116389,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
           }
         ]
       },
@@ -93,13 +100,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 63,
+    "versionNumber": 65,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483020204762
+    "lastModifiedOn": 1483020219590
   },
   "customMeta": {
     "kv": {}
