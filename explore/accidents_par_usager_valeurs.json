@@ -30,15 +30,15 @@
       },
       {
         "name": "agg",
-        "d": false
+        "d": true
       },
       {
         "name": "int",
-        "d": false
+        "d": true
       },
       {
         "name": "atm",
-        "d": false
+        "d": true
       },
       {
         "name": "col",
@@ -198,11 +198,11 @@
       },
       {
         "name": "actp",
-        "d": false
+        "d": true
       },
       {
         "name": "etatp",
-        "d": false
+        "d": true
       },
       {
         "name": "an_nais",
