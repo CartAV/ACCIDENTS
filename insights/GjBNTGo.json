@@ -18,8 +18,8 @@
     "chart": {
       "type": "stacked_columns",
       "variant": "normal",
-      "name": "Avg. of grav_tué_sum by date",
-      "userEditedName": false,
+      "name": "Sum of grav_tué_sum by date",
+      "userEditedName": true,
       "genericDimension0": [
         {
           "column": "date",
@@ -41,12 +41,23 @@
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of grav_tué_sum, descending"
+              "label": "Sum of grav_tué_sum, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of grav_tué_sum, ascending",
+              "label": "Sum of grav_tué_sum, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Sum of grav_hospitalisé_sum, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Sum of grav_hospitalisé_sum, ascending",
               "sortAscending": true
             }
           ],
@@ -61,7 +72,18 @@
       "genericMeasures": [
         {
           "column": "grav_tué_sum",
-          "function": "AVG",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "grav_hospitalisé_sum",
+          "function": "SUM",
           "type": "NUMERICAL",
           "displayed": true,
           "isA": "measure",
@@ -125,12 +147,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABc0lEQVRoge2QPUsDQRCGR4KfYKsgcWcPAxYpRPIv7IWUImJlBDXunIJ4KUWxsJCEFIJCCAcWuZ0LBiL702JxH0YRhFRR5qmGuZl59zkAQRAEQZhiRqOZ376Vg3Aua+nALXyZ2Q0Lk0ZjPfIm3Z0YNNwBAEBi553FuGl6ywAAeGF3kNiVav15TXFzLbBLybxt57u+PUJip3yueJe91aTX3/bIbmniqjJxVxNXN+qDlexu8SRc9CiqAQAoispI7AAANHEjfcdQ+xzmGcQOwrBQOWzNfn+79qO9rC76b6WxndufZYkdGu4g8QsSO2W4pSgeILFDP75HYofETlPcRGKniEM0/JpI2gApfkdit072NJv1DF9ltTJxN731nPXQtwd5fc77nxncSOuh9jlM857Gbl2n9aMy9ji/b2w77T8gMScZfJf9yP8gPFRkb0RYhEVYhEVYhEVYhEVYhEVYhEVYhEVYhEVYhEVYhEX47wkLgiAIU8YH40T5UWmvT1YAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACrklEQVRoge3VwU4TQRwGcA6+A7cuwoVEJTFE7148GINe4dLERGNikAsy1dQsFK6GCBdtDEYkQENnFulsQyVlItKZ2YMJF19A0+6ML6GHZdtluqVLpaUl8126+2U6+/9lt9u+Ph0dHR2dHg3ionji3BGZi5ql7bG4WERMkGCHHJFRu0sTHxwEhoG/cNnf+enakKhgxARB3J3u/ITnnNPAfucfX4rHXAUjJkhUsFWSQxcx83/lrOATT0LIHe/6p6AZeJ3L/tPAYb919RqICYKouN9+TYS0At45dK8hLh41AkPq4ur+JXkXMUEsLt+r185yOVI3D5UP2+GsDtcMnHXcuAq2eGU07K4jJjZUcGBNWu0sLlPBeSCTJmJuvNnckEkzzHJmMGRiMhKYlscbgMlpYHXdtvNnQZ0H0soTtcvSypTaEfL3itqhkrh+YeCQF14oWH0nWNRNqTNCVknWdSX3Vh2Yy7mGWMhc8zzB29y9FwUMmZhvBla7ULAjTX8dpOKdD4ZM7HcEvMXLD1oFw5K71AwcwFl1YCY+dBwMHTGhghGTT6OCa3vXwJDL3SAYUoFVsHXw+3bXgLO0MtUqGDGxFgXsQb1/h54HIyoLGqzBGqzBGqzBGnyJwDGAFwcTdnE0tVcFbxyWP47MFvY2v5d3so4bf/7p6DNigtyc/VpcIb82exIcm8mZBsAkBvCiATAxACbDyfyk19kZvxuYwXH/uNq9sMfV7s6bb2OBc2wATIZf56cDXdr7zM1Xu0R+wTveWRp6mS96XS5lAEzWD8ppRGVhANj7Bsglk1s/VyAV+PHKj2UDYBKbsc3BhF0cW6brz1aP3hoAkxvm7pwBcHTwVYBbBhuv7AkVHAO5qajgWueBjQReiwG7cPydZG1f2/LBgb03ji2NwTo6Ojo6XZR/LkcZ5fJNq/sAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Avg. of grav_tué_sum by date",
+  "name": "Sum of grav_tué_sum by date",
   "type": "CHART",
   "miniature": {
     "type": "chart",
