@@ -257,8 +257,8 @@
       },
       {
         "name": "occutc",
-        "type": "string",
-        "meaning": "Text",
+        "type": "bigint",
+        "meaning": "LongMeaning",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -378,13 +378,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483015110641
+    "lastModifiedOn": 1483018325084
   },
   "customMeta": {
     "kv": {}
