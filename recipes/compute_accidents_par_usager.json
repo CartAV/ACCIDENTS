@@ -31,7 +31,7 @@
         "createdOn": 0,
         "items": [
           {
-            "done": false,
+            "done": true,
             "text": "améliorer la conservation du schéma de données pour éviter une étape de post-traitement",
             "createdOn": 1483015337456,
             "createdBy": "antoinefa",
@@ -43,13 +43,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483015473671
+    "lastModifiedOn": 1483016333689
   },
   "customMeta": {
     "kv": {}
