@@ -28,7 +28,7 @@ def adresse_submit(df):
     t=1
     while (t<=maxtries):
         df_adr=df[["Num_Acc","v1","adr","code_insee"]]
-        df.to_csv(s,sep=",", quotechar='"',encoding="utf8",index=False)
+        df_adr.to_csv(s,sep=",", quotechar='"',encoding="utf8",index=False)
         requests_session = requests.Session()
         kwargs = {
             'data': OrderedDict([
@@ -48,20 +48,22 @@ def adresse_submit(df):
         response = requests_session.request(**kwargs)
         if (response.status_code == 200):
             res=pd.read_csv(StringIO.StringIO(response.content.decode('utf-8')),sep=",",quotechar='"')
+            res=pd.merge(df,res,how='left',on=
             t=maxtries+1
         elif (response.status_code == 400):
             print("chunk %r to %r generated an exception, try #%r" %(i-split,i,t))
             res=df
             res['result_score']=-1
-            df=shuffle(df)
+            df_adr=shuffle(df_adr)
             t=maxtries+1
         else:
             print("chunk %r to %r generated an exception, try #%r" %(i-split,i,t))
             res=df
             res['result_score']=-0.5
             t+=1
-            
-    return res
+        
+        
+    return 
 
 
 
