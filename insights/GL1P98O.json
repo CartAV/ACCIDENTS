@@ -18,14 +18,14 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Avg. of age_36 by catv",
+      "name": "Sum of age_36 by catv",
       "userEditedName": false,
       "genericDimension0": [
         {
           "column": "catv",
           "type": "ALPHANUM",
-          "maxValues": 20,
-          "generateOthersCategory": true,
+          "maxValues": 30,
+          "generateOthersCategory": false,
           "oneTickPerBin": false,
           "filters": [],
           "isA": "dimension",
@@ -38,30 +38,19 @@
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of age_36, descending"
+              "label": "Sum of age_36, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of age_36, ascending",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Average of age_25, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Average of age_25, ascending",
+              "label": "Sum of age_36, ascending",
               "sortAscending": true
             }
           ],
           "sort": {
-            "type": "NATURAL",
-            "label": "Natural ordering",
-            "sortAscending": true
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Sum of age_36, descending"
           }
         }
       ],
@@ -69,18 +58,7 @@
       "genericMeasures": [
         {
           "column": "age_36",
-          "function": "AVG",
-          "type": "NUMERICAL",
-          "displayed": true,
-          "isA": "measure",
-          "displayAxis": "axis1",
-          "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
-        },
-        {
-          "column": "age_25",
-          "function": "AVG",
+          "function": "SUM",
           "type": "NUMERICAL",
           "displayed": true,
           "isA": "measure",
@@ -144,12 +122,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA4ElEQVRoge3RMQrCMBTG8Syiq4Pi1OAZeh0nR1eH1GMoUnAonsCo+KxjJpsOvYGDm623cIpooYpQVB7fb014eX8iBADAn5CKjAz2h1/v8TUI5g7B3CGYOwRzh2DuEMwdgrlDMHcI5g7B3CGYu8dgqcjUNljb4mlY1XCd5PNFljVqe7hkk15H5T0+Cu5N4o43Jn+dXnwhhNC22Opj0b0PDGgoFRkXrG2ulubccsP7ajuQikJtC+PuzeJT0517wW4qFZmVzcN3u3gBtXWSR6/uuD3cW1XBUlFU/iQAAAAAqNsN0Ii9oyIaxKMAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAgElEQVRoge3PoQ2FUBBEUTqghOXRB2Vg6AJBFnqhAvSiEK81LIKg+P8lwz3J+LlVBUCKeeTSH/6KYHUEqyNYHcHqCFZHsDqC1RGsjmB1BKsjWN1ng80jt37U5rGa70NaoktLdKX/ve4mODfTPppHflrjsV2X5uivK90FAACAXzsBkVNkzBMi4zEAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Avg. of age_36 by catv",
+  "name": "Sum of age_36 by catv",
   "type": "CHART",
   "miniature": {
     "type": "chart",
