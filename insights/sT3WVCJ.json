@@ -18,8 +18,78 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Chart",
+      "name": "Avg. of grav_indemne by catv",
       "userEditedName": false,
+      "genericDimension0": [
+        {
+          "column": "catv",
+          "type": "ALPHANUM",
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of grav_indemne, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of grav_indemne, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of grav_hospitalisé, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of grav_hospitalisé, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "genericMeasures": [
+        {
+          "column": "grav_indemne",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "grav_hospitalisé",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
       "xDimension": [],
       "yDimension": [],
       "uaXDimension": [],
@@ -37,10 +107,11 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
-      "hexbinRadius": 0,
+      "hexbinRadius": 20,
       "smoothing": false,
       "showLegend": true,
       "showXAxis": false,
@@ -73,11 +144,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABcklEQVRoge3RPU7DMBQH8IqhYUAwISZiIbr1ID0GEiNSFyRwxhwBKnYGtii4QnXDANKbqLkAU4XYwLkFUyBK4tShduuG91+S+OM9/+JOB4PB/JuQgJ8SymHd51hZENz2ILjtQbBj6Q0Trx++dY0VdB1MKAcSTB/NFURws/jB5NrmD0Pw0gUVYP+Sn+jsXyVY90z1BRVgXYRJMKHTuNg/DzbSxy3wb51F4D/3tAm+F2lcNa48i2kwofy5NGYRzIRsdAs2wGVYQzATEkbJ3Mu+nQP3w6jbGya7qkXLgJmQ4Bz4kPIBoRyYkFBcxISEIjgWn+e38LFdtXYjwUxIeHhND1RgJiRET+97psE6+FaC2UxeqX7CxoGz+mEYbinBNbfeFMyEvHMavH8W7SwCj1/S4wbg8i3rgvMgW+B8n6oDV81bBWfPDMxmXze64Pz+PNinPCrOrwX8M1YHFhKOgslFcX6UzL3s3TkwBoPBYDAYDMZgvgHytIRR65BMFAAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Chart",
+  "name": "Avg. of grav_indemne by catv",
   "type": "CHART",
   "miniature": {
     "type": "chart",
