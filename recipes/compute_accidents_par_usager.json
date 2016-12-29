@@ -25,31 +25,17 @@
   "params": {},
   "shortDesc": "Développement des catégories numériques des champs en libéllés pour faciliter l\u0027exploitation des données",
   "checklists": {
-    "checklists": [
-      {
-        "title": "Checklist",
-        "createdOn": 0,
-        "items": [
-          {
-            "done": true,
-            "text": "améliorer la conservation du schéma de données pour éviter une étape de post-traitement",
-            "createdOn": 1483015337456,
-            "createdBy": "antoinefa",
-            "stateChangedOn": 0
-          }
-        ]
-      }
-    ]
+    "checklists": []
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483016333689
+    "lastModifiedOn": 1483016336998
   },
   "customMeta": {
     "kv": {}
