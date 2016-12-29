@@ -18,8 +18,8 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Sum of grav_tué by catv",
-      "userEditedName": false,
+      "name": "Véhicules implquant le plus de décès et d\u0027hospitalisation",
+      "userEditedName": true,
       "genericDimension0": [
         {
           "column": "catv",
@@ -107,7 +107,17 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
-      "filters": [],
+      "filters": [
+        {
+          "filterType": "DATE_FACET",
+          "column": "date",
+          "columnType": "DATE",
+          "dateFilterType": "RANGE",
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        }
+      ],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
@@ -149,7 +159,7 @@
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Sum of grav_tué by catv",
+  "name": "Véhicules implquant le plus de décès et d\u0027hospitalisation",
   "type": "CHART",
   "miniature": {
     "type": "chart",
