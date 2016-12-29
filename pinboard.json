@@ -5,15 +5,6 @@
       "pinlets": [
         {
           "box": {
-            "top": 0,
-            "left": 0,
-            "width": 1,
-            "height": 1
-          },
-          "insightId": "xElHpvO"
-        },
-        {
-          "box": {
             "top": 1,
             "left": 0,
             "width": 1,
@@ -25,7 +16,6 @@
     }
   ],
   "datasetNames": [
-    "accidents",
-    "accidents_par_usager"
+    "accidents"
   ]
 }
