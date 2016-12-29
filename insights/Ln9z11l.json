@@ -18,8 +18,56 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Chart",
-      "userEditedName": false,
+      "name": "Avg. of grav_tué by catv",
+      "userEditedName": true,
+      "genericDimension0": [
+        {
+          "column": "catv",
+          "type": "ALPHANUM",
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of grav_tué, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of grav_tué, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Average of grav_tué, descending"
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "genericMeasures": [
+        {
+          "column": "grav_tué",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
       "xDimension": [],
       "yDimension": [],
       "uaXDimension": [],
@@ -37,10 +85,11 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
-      "hexbinRadius": 0,
+      "hexbinRadius": 20,
       "smoothing": false,
       "showLegend": true,
       "showXAxis": false,
@@ -73,11 +122,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAw0lEQVRoge3UPQrCQBCG4YCVdwhMCAg5h3U6TyIos9umssohhDRb7k4CAWGvZiERSUQs1Mjke2BgfyDs2yRJAEAVYonEEud+x88gWDsEa4dg7RCsHYK1Q7B2CNYOwdohWDsEa7fo4GE9TGa6E7HUxFLP/c6PeSN42Mv4PnFuNT4jlpjZvshsX8zd9tQ3gl9983HSvVsTt91tQkMcGjLtmYxUZKRKj2GTW1/m1peKgifnl/va+N3k/uC3i/vvAAAAAPylK+4/PFCJpYwtAAAAAElFTkSuQmCC",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Chart",
+  "name": "Avg. of grav_tué by catv",
   "type": "CHART",
   "miniature": {
     "type": "chart",
