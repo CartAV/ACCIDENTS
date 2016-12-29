@@ -14,8 +14,8 @@ nrows=len(df.index)
 threshold=0.02*float(nrows)
 
 
-# développement des valeurs en colonnes
-liste=('catv','obs','obsm','choc','manv','catu','place','grav','sexe','age','actp','secu','env1','etatp','trajet')
+# développement des valeurs usagers en colonnes
+liste=('catu','place','grav','sexe','age','actp','secu','env1','etatp','trajet')
 for key in liste:
     print("dummies : "+key)    
     df=pd.concat([df,pd.get_dummies(df[key],prefix="DUM_"+key,prefix_sep=" ")],axis=1)
