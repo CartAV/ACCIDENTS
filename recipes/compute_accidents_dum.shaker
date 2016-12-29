@@ -1,6 +1,228 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "DateComponentsExtractor",
+      "params": {
+        "column": "date",
+        "outDayOfWeekColumn": "jour",
+        "outHourColumn": "hr",
+        "timezone_id": "UTC"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "steps": [
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "jour",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "hr",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "an",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "mois",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "situ",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "infra",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "prof",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "circ",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "vosp",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "plan",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "surf",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "nbv",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "catr",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "col",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "agg",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "lum",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "int",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "atm",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "dummies accidents",
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -24,11 +246,14 @@
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "033Y"
     }
   ],
   "previewMode": "ALL_ROWS",
