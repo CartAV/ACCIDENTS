@@ -18,8 +18,55 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Chart",
+      "name": "Count by occutc",
       "userEditedName": false,
+      "genericDimension0": [
+        {
+          "column": "occutc",
+          "type": "ALPHANUM",
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "genericMeasures": [
+        {
+          "function": "COUNT",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
       "xDimension": [],
       "yDimension": [],
       "uaXDimension": [],
@@ -37,10 +84,22 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "occutc",
+          "columnType": "ALPHANUM",
+          "isA": "filter",
+          "excludedValues": {
+            "000": true
+          },
+          "explicitExclude": false
+        }
+      ],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
-      "hexbinRadius": 0,
+      "hexbinRadius": 20,
       "smoothing": false,
       "showLegend": true,
       "showXAxis": false,
@@ -73,11 +132,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA/0lEQVRoge2SsQrCMBRFXXRwLYLamriXTvYr3P0FNweHJhSXShd/wc1ZsEteXftrToUqVaMWQ8I98CDk8l5yQno9AIBTcEkVl1SZvsffgLDrQNh1IOw6EHYdF4WZoBMTdGoNXRR+6QRhB4CwdmgpENYOLQXC2qGlQFg7tBQIa4eWAmHt0FIg3BY2q8vDw+w8CLPzoMuZ7zAqbOIHfSzc5SW/mcUS2rCENp/0BLKMAllGi/Wx/5Pwrw/x757J7sI7F77PVc6lyllCq7ra+ptnzkQZz0QZGxFmgg7PykQ+l7Sv18FW+Y85T9SyXk8zNfTTwvPTwqv3xul11JwPALCbG5o/sYv90i+AAAAAAElFTkSuQmCC",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Chart",
+  "name": "Count by occutc",
   "type": "CHART",
   "miniature": {
     "type": "chart",
