@@ -18,8 +18,8 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Avg. of catu_passager by catv",
-      "userEditedName": false,
+      "name": "Avg. of nb_usagers by catv",
+      "userEditedName": true,
       "genericDimension0": [
         {
           "column": "catv",
@@ -38,26 +38,26 @@
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of catu_passager, descending"
+              "label": "Average of nb_usagers, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of catu_passager, ascending",
+              "label": "Average of nb_usagers, ascending",
               "sortAscending": true
             }
           ],
           "sort": {
-            "type": "NATURAL",
-            "label": "Natural ordering",
-            "sortAscending": true
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Average of nb_usagers, descending"
           }
         }
       ],
       "genericDimension1": [],
       "genericMeasures": [
         {
-          "column": "catu_passager",
+          "column": "nb_usagers",
           "function": "AVG",
           "type": "NUMERICAL",
           "displayed": true,
@@ -122,12 +122,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAtklEQVRoge3PvQ3CMBCG4Uzik1dgCDbICinowccwzECRL0Dn1SjAjcEiihInnL5HSpGT/96mISKqTAKiBMS131ENg61jsHUMto7B1jHYOgZbx2DrGGwdg62rEiwBUY79btFLRtp08BKPY/DkgxRD6aB/DP65LgV7ve1FcfjYvPHgfJ7+i29IwU77c74gBb82D9c0d4rOKTqvaL2ilYDL+/t6WT6XE+4u4DEluHT26GAiIiIimtETBEjlp2dHGDQAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAzUlEQVRoge3PsQrCQAzG8Y5dXFxc1Fyn7oL0jdwdbO506SO4OPgUUi8HDsq9mkNxUSiUFgvp94OQMfknCQCoQVYCscSx//gbBGuHYO0QrB2CtUOwdgjWbrLBa+vdJMIRrN13cHYKpDq8LZhYIh38hlgicbgZFwrjQjH2z710CW727xjrnbHe5WU9y8t6NnZTqyGCu094EUukUi7EElf2vv3cNOzPy/1jbqyvMis7U8XUVDFVG0wsMTs+F81Pcu17C8EIRrCyYAAAAAAY0BtxyPlqrj4wWQAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Avg. of catu_passager by catv",
+  "name": "Avg. of nb_usagers by catv",
   "type": "CHART",
   "miniature": {
     "type": "chart",
