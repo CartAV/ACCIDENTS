@@ -6,7 +6,7 @@ import distance
 
 # Recipe inputs
 ds_in = dataiku.Dataset("accidents_par_usager")
-df = ds_in.get_dataframe()
+df = ds_in.get_dataframe(infer_with_pandas=False)
 print("chargement initial")    
 
 
