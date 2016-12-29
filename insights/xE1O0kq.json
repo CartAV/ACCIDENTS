@@ -18,7 +18,7 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Avg. of grav_calc by catv",
+      "name": "gravité moyenne par type de véhicule (no value \u003d piéton ?)",
       "userEditedName": true,
       "genericDimension0": [
         {
@@ -85,7 +85,18 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
-      "filters": [],
+      "filters": [
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "catv",
+          "columnType": "ALPHANUM",
+          "isA": "filter",
+          "excludedValues": {
+            "___dku_no_value___": true
+          },
+          "explicitExclude": false
+        }
+      ],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
@@ -122,12 +133,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAArUlEQVRoge3SQQrCMBBA0ZxAXHVpAnoKT+IlBAVheowew1VdNNWdXs1VIFSKVWoHp//DQFbJPIhzRGQmL/GRRnuXSQJsPcDWA2w9wNYDbD3A1gNsvRzsJd7N4/vA61Nd5Ph3Zy9xq+kY3Jjg/K7N/rpIo+l76VfgvtG0us7Ck4DV8ZrgILddkKYK0lTzAJft8ZM3wuGyTOdV2Z6/+i2AAf8HeDB+dmAiIiIiGrEnoF8XyMTo/zsAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAx0lEQVRoge3VwQ3CIBTG8beIPqKnXjuBY7iBC1iocQGH6ak89MhqnjDaaLQqReH7JyQkfWn40UOJEEJZxUY8G/GpzzFZRYPDXpl+E/ZsxKvW7bK5mHfAf40HeCT4ei6l4+W+CR7iWUvFWqp0ujtFBf/ilwc4EvjyTPf7VFZ6dCiAAQZ4FHg4VxRYmdP6ds51bFxHRKS2dhVWxuDIvzyAAQYYYIAnBnNja25sPWuOyzLA4V1aDgADnBl43soirKd4hBBCCCH0QWc1K7ro6rjhyQAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Avg. of grav_calc by catv",
+  "name": "gravité moyenne par type de véhicule (no value \u003d piéton ?)",
   "type": "CHART",
   "miniature": {
     "type": "chart",
