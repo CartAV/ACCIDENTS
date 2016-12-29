@@ -428,6 +428,7 @@
     "dimensions": []
   },
   "tags": [
+    "stats",
     "creator_antoinefa"
   ],
   "description": "Il s\u0027agit d\u0027aboutir à un niveau de préparation similaire à celui déjà réalisé en pure python. Il manque à ce stade un gestion préalable de la fusion des coordonnées géographiques.\u003cbr\u003e\nattention à ce stade le script amont de géolocalisation semble buguer",
@@ -453,13 +454,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483015602581
+    "lastModifiedOn": 1483027585536
   },
   "customMeta": {
     "kv": {}
