@@ -20,9 +20,9 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "an",
@@ -86,9 +86,9 @@
       },
       {
         "name": "com",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "code_insee",
@@ -110,9 +110,9 @@
       },
       {
         "name": "lat",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "long",
@@ -122,9 +122,9 @@
       },
       {
         "name": "dep",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "catr",
@@ -134,15 +134,15 @@
       },
       {
         "name": "voie",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "v1",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "v2",
@@ -158,21 +158,21 @@
       },
       {
         "name": "nbv",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "pr",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "pr1",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "vosp",
@@ -194,15 +194,15 @@
       },
       {
         "name": "lartpc",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "larrout",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "surf",
@@ -278,9 +278,9 @@
       },
       {
         "name": "place",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "catu",
@@ -314,9 +314,9 @@
       },
       {
         "name": "locp",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "actp",
@@ -367,61 +367,61 @@
         "maxLength": -1
       },
       {
-        "name": "DUM_place 0.0",
+        "name": "DUM_place 0",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "DUM_place 1.0",
+        "name": "DUM_place 1",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "DUM_place 2.0",
+        "name": "DUM_place 2",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "DUM_place 3.0",
+        "name": "DUM_place 3",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "DUM_place 4.0",
+        "name": "DUM_place 4",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "DUM_place 5.0",
+        "name": "DUM_place 5",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "DUM_place 6.0",
+        "name": "DUM_place 6",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "DUM_place 7.0",
+        "name": "DUM_place 7",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "DUM_place 8.0",
+        "name": "DUM_place 8",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "DUM_place 9.0",
+        "name": "DUM_place 9",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -1289,12 +1289,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1483018863626
+    "lastModifiedOn": 1483019208995
   },
   "customMeta": {
     "kv": {}
