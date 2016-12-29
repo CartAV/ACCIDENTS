@@ -18,11 +18,11 @@
     "chart": {
       "type": "stacked_bars",
       "variant": "normal",
-      "name": "Count by sexe_femme",
+      "name": "Count by sexe_homme",
       "userEditedName": false,
       "genericDimension0": [
         {
-          "column": "sexe_femme",
+          "column": "sexe_homme",
           "type": "NUMERICAL",
           "numParams": {
             "mode": "FIXED_NB",
@@ -127,12 +127,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAO0lEQVRoge3PsQ0AEBRFUa0dJGZU2Umtt5otCP+c5PXvpkQgtc/10wSHV9rItz8cJRgAAAAAAAAAHrUB+YTXaf91CVwAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAO0lEQVRoge3PsQ0AEBRFUb0BlJaUWEyjspotCP+c5PXvpkQgtY/10wSHV9rMtz8cJRgAAAAAAAAAHrUBl3rXlkDeIGQAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Count by sexe_femme",
+  "name": "Count by sexe_homme",
   "type": "CHART",
   "miniature": {
     "type": "chart",
