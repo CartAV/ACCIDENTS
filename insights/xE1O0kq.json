@@ -18,8 +18,8 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Sum of grav_calc by catv",
-      "userEditedName": false,
+      "name": "Avg. of grav_calc by catv",
+      "userEditedName": true,
       "genericDimension0": [
         {
           "column": "catv",
@@ -38,19 +38,19 @@
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Sum of grav_calc, descending"
+              "label": "Average of grav_calc, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Sum of grav_calc, ascending",
+              "label": "Average of grav_calc, ascending",
               "sortAscending": true
             }
           ],
           "sort": {
             "type": "AGGREGATION",
             "measureIdx": 0,
-            "label": "Sum of grav_calc, descending"
+            "label": "Average of grav_calc, descending"
           }
         }
       ],
@@ -58,7 +58,7 @@
       "genericMeasures": [
         {
           "column": "grav_calc",
-          "function": "SUM",
+          "function": "AVG",
           "type": "NUMERICAL",
           "displayed": true,
           "isA": "measure",
@@ -122,12 +122,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAg0lEQVRoge3RsQnDQBBE0WnEJ4FLUFdKhW+rcCNKvShVa4ouMEiZ0cH4Pxi4cD8nAbAyRO5tvW+5BcHuCHZHsDuC3RHsjmB3BLsj2B3B7gh299fBX6s5t/W+8acug11/nuDTfd7t/XhtzzFyHSNXSSo1o9QMSSpLTmXJqW8RAAAA7nEAZjPgQAxSrgQAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAArUlEQVRoge3SQQrCMBBA0ZxAXHVpAnoKT+IlBAVheowew1VdNNWdXs1VIFSKVWoHp//DQFbJPIhzRGQmL/GRRnuXSQJsPcDWA2w9wNYDbD3A1gNsvRzsJd7N4/vA61Nd5Ph3Zy9xq+kY3Jjg/K7N/rpIo+l76VfgvtG0us7Ck4DV8ZrgILddkKYK0lTzAJft8ZM3wuGyTOdV2Z6/+i2AAf8HeDB+dmAiIiIiGrEnoF8XyMTo/zsAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Sum of grav_calc by catv",
+  "name": "Avg. of grav_calc by catv",
   "type": "CHART",
   "miniature": {
     "type": "chart",
