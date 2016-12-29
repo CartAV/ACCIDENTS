@@ -4,7 +4,7 @@
       "chartsEngine": "LINO",
       "sampling": {
         "selection": {
-          "samplingMethod": "HEAD_SEQUENTIAL",
+          "samplingMethod": "FULL",
           "partitionSelectionMethod": "ALL",
           "maxRecords": 10000,
           "targetRatio": 0.02
@@ -18,7 +18,7 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Sum of grav_calc by catv",
+      "name": "gravité sommée",
       "userEditedName": true,
       "genericDimension0": [
         {
@@ -85,7 +85,26 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
-      "filters": [],
+      "filters": [
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "catv",
+          "columnType": "ALPHANUM",
+          "isA": "filter",
+          "excludedValues": {
+            "": true,
+            "motocyclette (ref obsolète)": true,
+            "scooter immatriculé (ref obsolète)": true,
+            "side-car (ref obsolète)": true,
+            "tramway (ref obsolète)": true,
+            "utilitaire+caravane (ref obsolète)": true,
+            "utilitaire+remorque (ref obsolète)": true,
+            "voiture+caravane (ref obsolète)": true,
+            "voiture+remorque (ref obsolète)": true
+          },
+          "explicitExclude": false
+        }
+      ],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
@@ -122,12 +141,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAg0lEQVRoge3RsQnDQBBE0WnEJ4FLUFdKhW+rcCNKvShVa4ouMEiZ0cH4Pxi4cD8nAbAyRO5tvW+5BcHuCHZHsDuC3RHsjmB3BLsj2B3B7gh299fBX6s5t/W+8acug11/nuDTfd7t/XhtzzFyHSNXSSo1o9QMSSpLTmXJqW8RAAAA7nEAZjPgQAxSrgQAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAhElEQVRoge3RMQ5AUBBFUSuwBJ9EorY5o7QEW5H/IzpbU2k0SDDJc0/y+rmZLAMgJ1hag6XV+47PEKyOYHUEqyNYHcHqCFZHsDqC1RGs7rfBVTc1pcWxtDh63/SqPTj0c/uLbxN8mPd9jzsLvjLvhlueCN5XD3NeWFoKS4t3FwAAAN60AZKkyzd+WkQXAAAAAElFTkSuQmCC",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Sum of grav_calc by catv",
+  "name": "gravité sommée",
   "type": "CHART",
   "miniature": {
     "type": "chart",
