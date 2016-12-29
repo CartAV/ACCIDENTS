@@ -430,7 +430,7 @@
   "tags": [
     "creator_antoinefa"
   ],
-  "description": "Il s\u0027agit d\u0027aboutir à un niveau de préparation similaire à celui déjà réalisé en pure python. Il manque à ce stade un gestion préalable de la fusion des coordonnées géographiques.",
+  "description": "Il s\u0027agit d\u0027aboutir à un niveau de préparation similaire à celui déjà réalisé en pure python. Il manque à ce stade un gestion préalable de la fusion des coordonnées géographiques.\u003cbr\u003e\nattention à ce stade le script amont de géolocalisation semble buguer",
   "checklists": {
     "checklists": [
       {
@@ -439,7 +439,7 @@
         "items": [
           {
             "done": false,
-            "text": "Générer les graphiques de statistiques par usager (ongle charts)",
+            "text": "Valider les données et leur utilisation graphique",
             "createdOn": 1483014677582,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
@@ -453,13 +453,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483014780513
+    "lastModifiedOn": 1483015602581
   },
   "customMeta": {
     "kv": {}
