@@ -210,8 +210,127 @@
         "expression": "if(occutc\u003d\u003d\"000\",\"\",occutc)"
       },
       "metaType": "PROCESSOR",
-      "preview": true,
+      "preview": false,
       "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "steps": [
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "etatp",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "locp",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "trajet",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "grav",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "secu",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "actp",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "sexe",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "catu",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "age",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "place",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "dummies colonnes usagers",
       "alwaysShowComment": false
     }
   ],
