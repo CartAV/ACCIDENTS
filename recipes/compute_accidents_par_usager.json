@@ -24,17 +24,31 @@
   "optionalDependencies": false,
   "params": {},
   "checklists": {
-    "checklists": []
+    "checklists": [
+      {
+        "title": "Checklist",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": false,
+            "text": "améliorer la conservation du schéma de données pour éviter une étape de post-traitement",
+            "createdOn": 1483015337456,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          }
+        ]
+      }
+    ]
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1482505307124
+    "lastModifiedOn": 1483015440326
   },
   "customMeta": {
     "kv": {}
