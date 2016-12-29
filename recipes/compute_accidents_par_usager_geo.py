@@ -48,7 +48,7 @@ def adresse_submit(df):
         response = requests_session.request(**kwargs)
         if (response.status_code == 200):
             res=pd.read_csv(StringIO.StringIO(response.content.decode('utf-8')),sep=",",quotechar='"')
-            res=pd.merge(df,res,how='left',on=
+            res=pd.merge(df,res,how='left',on=['Num_Acc','v1','adr','code_insee'])
             t=maxtries+1
         elif (response.status_code == 400):
             print("chunk %r to %r generated an exception, try #%r" %(i-split,i,t))
@@ -94,5 +94,5 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=nthreads) as executor:
 events=pd.concat(liste,ignore_index=True)
 
 # Recipe outputs
-out = d.Dataset("accidents_par_usager_geo")
+out = d.Dataset("accidents_geo")
 out.write_with_schema(events)
