@@ -46,7 +46,7 @@
           },
           {
             "done": false,
-            "text": "Déboguer",
+            "text": "Déboguer (le script génère actuellement du silence)",
             "createdOn": 1483014774594,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
@@ -57,13 +57,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483014877505
+    "lastModifiedOn": 1483014888848
   },
   "customMeta": {
     "kv": {}
