@@ -23,6 +23,7 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {},
+  "shortDesc": "Développement des catégories numériques des champs en libéllés pour faciliter l\u0027exploitation des données",
   "checklists": {
     "checklists": [
       {
@@ -42,13 +43,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483015440326
+    "lastModifiedOn": 1483015473671
   },
   "customMeta": {
     "kv": {}
