@@ -25,17 +25,31 @@
   "params": {},
   "shortDesc": "développement des valeurs usagers en colonne pour aggrégation ultérieure",
   "checklists": {
-    "checklists": []
+    "checklists": [
+      {
+        "title": "Checklist",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": false,
+            "text": "vérifier la raison du bug d\u0027insertion des naissances avant 1900 (compatibilité vertica/Python  ?)",
+            "createdOn": 1483019215731,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          }
+        ]
+      }
+    ]
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "antoinefa",
       "displayName": "Fabien Antoine",
       "email": "fabien.antoine@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483019296935
+    "lastModifiedOn": 1483019318732
   },
   "customMeta": {
     "kv": {}
