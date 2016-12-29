@@ -18,7 +18,7 @@
     "chart": {
       "type": "stacked_columns",
       "variant": "normal",
-      "name": "Count by date",
+      "name": "nombre d\u0027accidents dans le temps / nombre de véhicules impliqués",
       "userEditedName": true,
       "genericDimension0": [
         {
@@ -62,12 +62,12 @@
           "column": "nb_vehicules",
           "type": "NUMERICAL",
           "numParams": {
-            "mode": "NONE",
+            "mode": "TREAT_AS_ALPHANUM",
             "nbBins": 5,
             "binSize": 100,
             "emptyBinsMode": "ZEROS"
           },
-          "maxValues": 100,
+          "maxValues": 3,
           "generateOthersCategory": true,
           "oneTickPerBin": false,
           "filters": [],
@@ -91,9 +91,9 @@
             }
           ],
           "sort": {
-            "type": "NATURAL",
-            "label": "Natural ordering",
-            "sortAscending": true
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Count of records, descending"
           }
         }
       ],
@@ -126,7 +126,17 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
-      "filters": [],
+      "filters": [
+        {
+          "filterType": "DATE_FACET",
+          "column": "date",
+          "columnType": "DATE",
+          "dateFilterType": "RANGE",
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        }
+      ],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
@@ -163,12 +173,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAEpklEQVRoge3WX2gcRRwH8J/E171UqYoIu7EoYl/9UypKBUEp+iBoCypiELEIShqKnaDmdk1ITPone6aaJrnS5JKQQJKd7V1mk+ZPO5aWm20rKQWx1D4UEZJf4qtvVceHu73c7t5dQ23+tOz3ZW7nZn83n53d2QOIEiXKfR2pKzzU53zxXqiv6ZHT6zOjNYzUY6lS4IVDTzaHx4bHLU8f6F+jqa1Nrp+s66ACfRCpK/xSut8sBkpjy/7guNzY2Mh6zPOuhbqLKSqQy9YnugAAjjvv115PHRiwXTRvNT2WAQD4a+bLjIzH6kuBqcACuN/eu3f9Zn6HKYDjsS4AAGnEmqhAbrtoUoFcHtn2stQVfuoi1lOBXBqxhO/8IrDUFTtY/9bswam1V6wyUle4B7bEYhcAgCNudvjAjVt2UYEhsDS2JAH8YCuLIbDUFS716vb1MlXMcuKNviB48twvZjGYZhd3UYGcc/dwvj8H1qtXBc5dpOq2YP+e0T1VaycrEyowtMIe1Gtv8GGTCuR8mnv9CakrnF7EsuC+iQ+/AwCQhtJNBXJbLLZ7G6B5uX6bYbz6YMlXIcADGw/uq/Md2y4m5sc7B4Lg0RN7HrayaC9MHNgq9dggAMDPY12tHtjb8KSucBmP7aYCOZ+qrfGBdaWn+Hi48bWdpeYtO55d2TfSn3y2Kqw0lPHVgEu0CSqQ04uYlLrCPbCMKxkri7Y0qmdsd2kQAIC62B0EU4H816FGkwrkF0Z2N3nzOZ5+V7dd9IGlrthSV9LhuVfPFT7HY3WrAk/9dHUgCJa6UgkaAlOBnAockZP7M5bAjJVFm2bxTBCcuXDTLAZ7tZY7XzcBAOQoVOV/u0fS2sKtbrtLNh57s7Ca5wcO7/BqrIzBOgCAP469qFcEW+5SaIVvAy0L/td4aLISuLDjf6M8E6wJADAqZVX+uOfvb1f+vtrukk0FpqUem82veOGieWPOnXNNAIDFH9+u/Ca4m2BL4EwQnHvl+cHpy3+WBJvWp497YA8zP/7OCQ9sCZyV8dhw8V3iOc5On+3Ir7S5oeBcbT94uXN3qCYAwD/GVjMI/j350VwxmLroA8uWRw95j6A8VEM3JbhU661OEEwFlgRLXUlWqrXpwYGNsocK5LL7pd5yYCrw3gYH2p58zaEIHIHvEPxB76VeKpB/nrpyuLjAD9M3WzXCQoXVBufeBqvESWmEcY2wLiqQv9A8d0QjjKuEmR74+eZZ55U2bmqEhcAaYRXB7Znrw7aL5r7UlbENB+dgfrAH9dq6oau+Y7XBSWiEca3BKYB3tJxllsCMRiZsmsUzGmEFsEYYf+rrSTN4t3x8cn60PXMjBNYIC4FbTl1L/W+wRpwQ2Acr1xaB8+eNqITNqMTJaGTC1ohzRiNsMF+7WyOM1+TPbcv8FqpJBfKx7EL+cWE+8HNNc2NPfzVlqYT5VlgjjJvODYMK5G99f/4oFcj39c0f3TTgSjWpQL698fTRXO0VsEbYnEYcW21gaZWwWe0gG85/l/TONei1fpUwc3vj6VmVsM2zwretWaidA2sNrCxYPTiRLFcjAkfgCByB7x9wlChRokTZJPkP9QkN5GFqaJIAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAEu0lEQVRoge3V32scVRQH8AN9E2bbBwNicccHUVAQFCUKagShEBAR9KEPgij6oCAxCrmbttlZEtFEN9mlppuERM2PbUKT7J1s9u622cn2ujTunVRBhChiLYUWszf1wT+gyPVhd8b5tbtT08S2zPdlMsOds+czZ3IHIEiQIHd1hCJR17WzH73hutbfVtyfjvYwQgnNeIKTj8fdaz3Wab2n96q3PcnlqXcHMeM2iFAkejE7nbACRTTU7VxXWxta2I8+b1mwXp3BjFMxeHgYAEAUI+9UR1+ZVnWeuNF/3/n6tVIjMGbcBIs11Ll/nf/HmOBoKAUAIGKhfsw4VXWewIxTkWp/RigSXdnk3ZhxKmKhpO1+K1iRVGd9cfZDbe8VPiMUiRrgDKumAAAKlUsJG7jvUAdm3ATfGLg/DgAg4g+PANjBmQp3gxWJCuXg0H6ZmqY6+rIbXN6ygXGl2oEZp+e/3RyuX08CAAjl4CRAazBm3BMsCr1teydrEMy4C2xAjeNvpbkvMONU0zZGDLBQJIo3eUOwWO/pAwAQMWkcM05VVh0yNkBR7HlK5GL3eO34twX40jddtnNV58mthU9WnGChRZ7IVLgqCh8/KpTQHADA1sJnIwY4d+HXAkD9FY+GOjHjVJS6D1v7EYo0YTsvHnvJq28x1r5s/r385nu+sCImLfsBexyTmHGKN/mkUCRqgqPSaqbCVaFIJVXfmQMAwDo3J2zs8Jhx+ku6r7Y/nDl6wuxnPdKr6twOViRVKFLW1bv9c9nlC7yRW5pxgoUiNYO6wJhxihlfEEVUzDC+mqlwFVe4C7y6cSVhBRu1rp88kgAAEItwoP7bE2Ll7UWjR1XfUaujr06buFLkiFHj3zW8CwBATL54vCk4o++4JtwC2hgcDTUFmzv+CekRZ00AgEUhDtTPJ6zTU/UdFTOeFUpIs07WCqbli3EAgO1Tr434Br+e2sz5AcuIeIIzjLvAInZIc4Kz3//ZEmxgRP6Dzw1whnFNREPz1rfEcJTPFRL1SSd8gcMoPyMj4prwg4jsClx7mHbw9ZOdrpoAAH/H7k04wX/F22et4JXvrqWtYDH4wLAYaFtTdZ4QQ/L6rsAyIjTsAD8/SD3BMiK+wV5HYzpOMGZ83QrGOp+vfdOlSePe3IXfNWetmwY/pqyZYBkR2pX+KSEj4gsso5wLfGzp56+agR0b5QRmnIqpjuFGYMz4ZLOH1xRcg9XAMiKp2gMgnuCnB9bjMiIUV2pgOZL3BZYRoQ8dL7TaCG1gzHj6fwO7jpF8UkakITjDuGaAwyjvAh9N6bNnKtsj9bfF1vTSxvbYzYJny1d9givVxd2C6/ctZBgvhlF+VUY5VUb5koyIC2wArbWcG2I4QmwTllFeDUeIC2y994Whsj+wjPKuCTeF7gJsBTprYsbpUmXbF/i5QbrUCPz+7I/Nv8O3EvzW1A+n/YBny1c9wV+euzxkgL+m13KY8XS6/EfWCn720/PjMiKuCRs1wojs34TDiLgmXK893qqm7d8oQibqqLSMiDnhMCKa3EPmZURouCdngp217gjwkwNa1gk+Vbwy1grsVeuOANtr18ByhLSccAAOwAE4AAfguwocJEiQIEFuk/wD9EM82hsPnCQAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Count by date",
+  "name": "nombre d\u0027accidents dans le temps / nombre de véhicules impliqués",
   "type": "CHART",
   "miniature": {
     "type": "chart",
