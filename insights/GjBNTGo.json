@@ -16,7 +16,7 @@
     },
     "dataset": "accidents",
     "chart": {
-      "type": "grouped_columns",
+      "type": "lines",
       "variant": "normal",
       "name": "nombre d\u0027hospitalisés et tués par mois",
       "userEditedName": true,
@@ -110,7 +110,17 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
-      "filters": [],
+      "filters": [
+        {
+          "filterType": "DATE_FACET",
+          "column": "date",
+          "columnType": "DATE",
+          "dateFilterType": "RANGE",
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        }
+      ],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
@@ -147,12 +157,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACtElEQVRoge3TzUsUYRzA8aesS5hQN5EcX4piCcEouvjSxUMUFFinjECI6BAaqeOCGRWUihFEKUkXg1gd55kZ2ZnZ3dwcpfV5nnJvohB4CIzZZ3bzb5hOI+u4tOPLvijP9zY/5nn4fWAGABaLxTqoKTGzsdA75DQBrVWkPx9oMIynyjOBdbJeVqidcpoDljA1nFkmsEzM1vxvl4P+B5YJ7XBmMjFbP8bto4XZcg9zg2WS7HDAErZCAAAASfIWAwMAIDI73fcJRrI0P5vvsO2CJUKVjbMZwBBbAxlmI7k0bKvdgm3bPrTpvoMIFgShRMapKw5Ywol7G/e5wDCeKi8asITp/T0BE2scAAAUsu7zAhaMZKlEaGDr10Elb3tb+pYZSoxnP4jo63yCJUJ708GCYJdsepdQbSuOGgJaO+kFbBj2kYKBIaFvvYAhMh+kg4Nx89hOwSJK1ucNrJP1Mi9gOW7VZgPLOHE1GxgumNx0LHW86MEisercYIlYLdnAwmLqrIjp46IGB9HfCq9g27YPZwUjq9sNdv7bfQ8WEW33AoY4MczADMzADMzADMzADFxc4FNd6vk32qoC46nySy+jQQfsn1yWlZjZ6HsaDk0t0K8AAHB3bNGQidla49ejQiyhZwNXP9Ga3OCanumLDvjy82iLRGigoff7ibyBK3uCzwbVVTUdXM2rj7oDy6F0cFWXdsMN9vXq9TffoShEZmcVr81+nl9T2j6g081DcxGIrQGOV9XRyO+poeDKmQsvZiIQWyOcX3v/Svk1IRKr7lxfeEYiNFDr13v4iaWARKyWKl6bhYRqdf2Rh21jPydFRNs5XpMlTI2GoW+3mwfnZBFZ3RyvTonIjNwZ/XHd1xcOQZwY5nj105f5P7BfWLnG8ersvgVX8mrYATcNzCu7ArNYLBariPoH0ryoC0Jv4ucAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACa0lEQVRoge2Xz2vTYBjHH+uY6xwMkTlhbdPJ/FEUD+pBBQ87iOBRBAVFQfTmBKVJ6kAMiOCfIAjuKLw2bzeSVsRDEde8r9CT0FMPHtrlR5HhfxAPW7oY2ybrlsaV93N632++z5Nvfr1JABgMBmMYkGnrJqZGNuockYNqtdG/5gjtjypLKMjUvNhrO6rZo722M/YiUrk84p6rP34fcs8xMV8PNlHEIGQP13PdD3lqXI86Q6jIZO2ln0ey7dggsviCSetJv7Uy0c917btqXe23b6ggrTHn5/m4ql/pWFtdn3TGckXnAADw9+Zhrw9r5oOdZAwVTC0UyEesZ530PG0d92qoYcfbY60RBwBQtF+nAABwxTzi6XsnyPseaY0Zr7ZCrWn/5CFSIEb6H43q5wEAlso/xxwtT4z7bs8Ktc6655hYNwrUuuu3P7ncTMjUmO9hsff5NdkJpXr9QBCftnnV3aCKdckZO4/LsmZdc3uUqj6OvzVPeGsLxBA67kgm5rsggYJSLtsj/q7+Uar6eJj9tw2qtSb6rcVEz2Bqvvf1dVkAwz7ZgfnwdS0ZxIdp5wNRquspv9qCZjzGRM9sN9t/h0zMhVLdDrQOMBgMBoPB2CNwvNL1R37omBFKCQAAjlcepsTiW0fnxOXLSV65lc6pb9oary4efV6aiiLnQOFEddGrpcViLikUL4Bkx6YkNDG3eSKS/JY3Laq3N+qLr05LaOOnXrJjnKC+SEtLY4mnKA4AwAkKPyt8OgmwdbdxObX9bX1M/DLJCer8dPbzQUdLiepCSlQezfLKvXZOQc0ks+qZXT58BoPBYDB2gz/yXN6qj1unhQAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Chart",
+  "name": "nombre d\u0027hospitalisés et tués par mois",
   "type": "CHART",
   "miniature": {
     "type": "picture",
