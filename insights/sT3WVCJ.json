@@ -18,7 +18,7 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Avg. of grav_indemne by catv",
+      "name": "Avg. of grav_blessé léger by catv",
       "userEditedName": false,
       "genericDimension0": [
         {
@@ -38,23 +38,45 @@
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of grav_indemne, descending"
+              "label": "Average of grav_blessé léger, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of grav_indemne, ascending",
+              "label": "Average of grav_blessé léger, ascending",
               "sortAscending": true
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 1,
-              "label": "Average of grav_hospitalisé, descending"
+              "label": "Average of grav_indemne, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 1,
+              "label": "Average of grav_indemne, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 2,
+              "label": "Average of grav_hospitalisé, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 2,
               "label": "Average of grav_hospitalisé, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Average of grav_tué, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Average of grav_tué, ascending",
               "sortAscending": true
             }
           ],
@@ -68,6 +90,17 @@
       "genericDimension1": [],
       "genericMeasures": [
         {
+          "column": "grav_blessé léger",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
           "column": "grav_indemne",
           "function": "AVG",
           "type": "NUMERICAL",
@@ -80,6 +113,17 @@
         },
         {
           "column": "grav_hospitalisé",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "grav_tué",
           "function": "AVG",
           "type": "NUMERICAL",
           "displayed": true,
@@ -144,12 +188,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABcklEQVRoge3RPU7DMBQH8IqhYUAwISZiIbr1ID0GEiNSFyRwxhwBKnYGtii4QnXDANKbqLkAU4XYwLkFUyBK4tShduuG91+S+OM9/+JOB4PB/JuQgJ8SymHd51hZENz2ILjtQbBj6Q0Trx++dY0VdB1MKAcSTB/NFURws/jB5NrmD0Pw0gUVYP+Sn+jsXyVY90z1BRVgXYRJMKHTuNg/DzbSxy3wb51F4D/3tAm+F2lcNa48i2kwofy5NGYRzIRsdAs2wGVYQzATEkbJ3Mu+nQP3w6jbGya7qkXLgJmQ4Bz4kPIBoRyYkFBcxISEIjgWn+e38LFdtXYjwUxIeHhND1RgJiRET+97psE6+FaC2UxeqX7CxoGz+mEYbinBNbfeFMyEvHMavH8W7SwCj1/S4wbg8i3rgvMgW+B8n6oDV81bBWfPDMxmXze64Pz+PNinPCrOrwX8M1YHFhKOgslFcX6UzL3s3TkwBoPBYDAYDMZgvgHytIRR65BMFAAAAABJRU5ErkJggg\u003d\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABmklEQVRoge3TvUrDUBQH8OgifqS6dBBsYkE3F7fOLnXyBRxENwUXsb1x0EZEEERpJtHNVWyg5FIthd7NvEp8iuPSlKS5SRuSJiY9/zHnnpzzC7mCgMFgZiq6abG0d0g0CM57EJz3IDjvSRMsEzp2tm7+fsU6dKbAskJPooKj9COY+/6Mgnm4fwMO8xHss7zlJUI/hrNCgJ3zQ4FLhFaD6k7w1lWnyBs4LmmA9R+ry10mDNg5PA4w3BW2pwb22y8qWK63D4P6XWdHwap4kDlwWTFq9rPNOn2Ahuh73+1+AGFOEOIHS4S+8equOMFS3dCigGVCmRMMN+IxF6yq89MAT3TlSoRWfX+5W/FoFAzq6l6uwK6FG+KTBzyoIzgmMKiF5rD/em0382BoiCwQ7OyPCIbnjcXEwZJiaKmB1eJKZsC6aTEe2FW/X1pPFAyvFS0OcMu0epOAPfUoYOgpzPPC5k6LB4bu5bJuWgxeKp9lxaiN9kPnfEE3LQbv+y0bDD1y6gce1B9Dg+lZPxD8fdH3gDEYDAaDwWAwMeYPBxFmWU/Zs2AAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Avg. of grav_indemne by catv",
+  "name": "Avg. of grav_blessé léger by catv",
   "type": "CHART",
   "miniature": {
     "type": "chart",
