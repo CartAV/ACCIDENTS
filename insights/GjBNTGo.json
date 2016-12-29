@@ -155,7 +155,7 @@
   "name": "Chart",
   "type": "CHART",
   "miniature": {
-    "type": "chart_full",
+    "type": "picture",
     "showTitle": true,
     "fullImage": true
   },
