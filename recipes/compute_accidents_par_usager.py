@@ -49,7 +49,7 @@ dico={
             '5': 'piéton jouant',
             '6': 'piéton avec animal',
         },
-        'locp': {
+        "locp": {
             0: '',
             1: 'plus de 50m un passage piéton',
             2: 'moins de 50m passage piéton',
