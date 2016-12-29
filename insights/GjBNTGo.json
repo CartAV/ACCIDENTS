@@ -156,7 +156,7 @@
   "type": "CHART",
   "miniature": {
     "type": "picture",
-    "showTitle": false,
+    "showTitle": true,
     "fullImage": true
   },
   "fullView": {
