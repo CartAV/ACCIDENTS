@@ -41,12 +41,13 @@ dico={
         },
         'locp': {
             0: '',
-            1: '+50m passage piéton',
-            2: '-50m passage piéton',
+            1: 'plus de 50m un passage piéton',
+            2: 'moins de 50m passage piéton',
             3: 'sans signalisation lumineuse',
             4: 'avec signalisation lumineuse'
         },
         'actp': {
+            '0': '',
             '1': 'piéton sens véhicule',
             '2': 'piéton sens inverse véhicule',            
             '3': 'piéton traversant',
@@ -55,6 +56,7 @@ dico={
             '6': 'piéton avec animal',
         },
         'etatp': {
+            '0': '',
             '1': 'piéton seul',
             '2': 'piéton accompagné',
             '3': 'piéton en groupe'
@@ -62,6 +64,7 @@ dico={
     },
     'vehicules': {
         'senc': {
+            '0': '',
             '1': 'PK-PR-num rue croissant',
             '2': 'PK-PR-num rue décroissant',
             },
