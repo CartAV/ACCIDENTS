@@ -16,16 +16,16 @@
     },
     "dataset": "accidents_par_vehicule",
     "chart": {
-      "type": "grouped_columns",
+      "type": "stacked_bars",
       "variant": "normal",
-      "name": "Count by nb_usagers",
+      "name": "Count by sexe_femme",
       "userEditedName": false,
       "genericDimension0": [
         {
-          "column": "nb_usagers",
+          "column": "sexe_femme",
           "type": "NUMERICAL",
           "numParams": {
-            "mode": "NONE",
+            "mode": "FIXED_NB",
             "nbBins": 10,
             "binSize": 100,
             "emptyBinsMode": "ZEROS"
@@ -127,12 +127,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAV0lEQVRoge3PMQ0AMQzAwKhEAjNrQWUPtZ+eQiu5PgR2hCQRZPXcbjjKYTqH6Rymc5jOYTqH6Rymc5jOYTqH6bJ6npp2mM5hOofp/uGsnth73e6RJL3gA5lhTlnm9b8bAAAAAElFTkSuQmCC",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAO0lEQVRoge3PsQ0AEBRFUa0dJGZU2Umtt5otCP+c5PXvpkQgtc/10wSHV9rItz8cJRgAAAAAAAAAHrUB+YTXaf91CVwAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Count by nb_usagers",
+  "name": "Count by sexe_femme",
   "type": "CHART",
   "miniature": {
     "type": "chart",
