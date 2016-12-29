@@ -50,11 +50,11 @@ dico={
             '6': 'piéton avec animal',
         },
         "locp": {
-            0: '',
-            1: 'plus de 50m un passage piéton',
-            2: 'moins de 50m passage piéton',
-            3: 'sans signalisation lumineuse',
-            4: 'avec signalisation lumineuse'
+            '0': '',
+            '1': 'plus de 50m un passage piéton',
+            '2': 'moins de 50m passage piéton',
+            '3': 'sans signalisation lumineuse',
+            '4': 'avec signalisation lumineuse'
         },
         'etatp': {
             '0': '',
