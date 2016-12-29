@@ -18,7 +18,7 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Avg. of grav_tué by catv",
+      "name": "Véhicules ",
       "userEditedName": true,
       "genericDimension0": [
         {
@@ -45,6 +45,17 @@
               "measureIdx": 0,
               "label": "Average of grav_tué, ascending",
               "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of grav_hospitalisé, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of grav_hospitalisé, ascending",
+              "sortAscending": true
             }
           ],
           "sort": {
@@ -58,6 +69,17 @@
       "genericMeasures": [
         {
           "column": "grav_tué",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "grav_hospitalisé",
           "function": "AVG",
           "type": "NUMERICAL",
           "displayed": true,
@@ -122,12 +144,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAw0lEQVRoge3UPQrCQBCG4YCVdwhMCAg5h3U6TyIos9umssohhDRb7k4CAWGvZiERSUQs1Mjke2BgfyDs2yRJAEAVYonEEud+x88gWDsEa4dg7RCsHYK1Q7B2CNYOwdohWDsEa7fo4GE9TGa6E7HUxFLP/c6PeSN42Mv4PnFuNT4jlpjZvshsX8zd9tQ3gl9983HSvVsTt91tQkMcGjLtmYxUZKRKj2GTW1/m1peKgifnl/va+N3k/uC3i/vvAAAAAPylK+4/PFCJpYwtAAAAAElFTkSuQmCC",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABS0lEQVRoge2SvU7DMBRGK7rBAyB1aHmWbmysfQIGVkrFxkYkVkYkJAYkInTTH7dTpUiIxnThKSq4hIcwC4bIspOSmKZx7lls+XM+3yOl0SAIonYAx7DsGTYKCbsOCW8po+fPlpWiqghbm7NoURBhz8ogGWxMuGhui7Xe6QxY5iUSTskDHh/mGsQCpQjr7lZCGDiGw2XsmYogwkshxI6auyvMMfSFaKp5mnAQYS9tqIDHD8Bxnjm0gUoL/+WvkHedFoaXj2u1321hzZvOCQPHEBarrunNtYVN5UWEH6P3k1oJ685IuArCyXJbwj+5y8LanITzCxvlk8Jy3+mzKyl8cD47Kls4+c3/CH+vw2XsyX3rYrKr5r4QTblvD5j/m09nic6bGgjrO49vX8dp+f3TGwOOc3m2f3q3p3bCYtVtnzEvtzBBEARBEARhiS+07zuE1c311AAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Avg. of grav_tué by catv",
+  "name": "Véhicules ",
   "type": "CHART",
   "miniature": {
     "type": "chart",
