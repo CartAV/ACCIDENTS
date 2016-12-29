@@ -105,63 +105,63 @@
     "list": [
       {
         "name": "Num_Acc",
-        "d": true
+        "d": false
       },
       {
         "name": "an",
-        "d": true
+        "d": false
       },
       {
         "name": "mois",
-        "d": true
+        "d": false
       },
       {
         "name": "jour",
-        "d": true
+        "d": false
       },
       {
         "name": "hrmn",
-        "d": true
+        "d": false
       },
       {
         "name": "date",
-        "d": true
+        "d": false
       },
       {
         "name": "lum",
-        "d": true
+        "d": false
       },
       {
         "name": "agg",
-        "d": true
+        "d": false
       },
       {
         "name": "int",
-        "d": true
+        "d": false
       },
       {
         "name": "atm",
-        "d": true
+        "d": false
       },
       {
         "name": "col",
-        "d": true
+        "d": false
       },
       {
         "name": "com",
-        "d": true
+        "d": false
       },
       {
         "name": "code_insee",
-        "d": true
+        "d": false
       },
       {
         "name": "adr",
-        "d": true
+        "d": false
       },
       {
         "name": "gps",
-        "d": true
+        "d": false
       },
       {
         "name": "lat",
@@ -173,983 +173,983 @@
       },
       {
         "name": "dep",
-        "d": true
+        "d": false
       },
       {
         "name": "catr",
-        "d": true
+        "d": false
       },
       {
         "name": "voie",
-        "d": true
+        "d": false
       },
       {
         "name": "v1",
-        "d": true
+        "d": false
       },
       {
         "name": "v2",
-        "d": true
+        "d": false
       },
       {
         "name": "circ",
-        "d": true
+        "d": false
       },
       {
         "name": "nbv",
-        "d": true
+        "d": false
       },
       {
         "name": "pr",
-        "d": true
+        "d": false
       },
       {
         "name": "pr1",
-        "d": true
+        "d": false
       },
       {
         "name": "vosp",
-        "d": true
+        "d": false
       },
       {
         "name": "prof",
-        "d": true
+        "d": false
       },
       {
         "name": "plan",
-        "d": true
+        "d": false
       },
       {
         "name": "lartpc",
-        "d": true
+        "d": false
       },
       {
         "name": "larrout",
-        "d": true
+        "d": false
       },
       {
         "name": "surf",
-        "d": true
+        "d": false
       },
       {
         "name": "infra",
-        "d": true
+        "d": false
       },
       {
         "name": "situ",
-        "d": true
+        "d": false
       },
       {
         "name": "env1",
-        "d": true
+        "d": false
       },
       {
         "name": "senc",
-        "d": true
+        "d": false
       },
       {
         "name": "senc_PK-PR-num rue croissant",
-        "d": true
+        "d": false
       },
       {
         "name": "senc_PK-PR-num rue décroissant",
-        "d": true
+        "d": false
       },
       {
         "name": "catv",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_voiture",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_motocyclette +125cm3",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_cyclomoteur -50cm3",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_scooter -50cm3",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_utilitaire",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_poids lourd",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_scooter immatriculé (ref obsolète)",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_tramway (ref obsolète)",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_utilitaire+remorque (ref obsolète)",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_bicyclette",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_quad -50cm3",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_tracteur+semi-remorque",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_motocyclette +50cm3-125cm3",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_bus",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_motocyclette (ref obsolète)",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_scooter +125cm3",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_engin spécial",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_autre véhicule",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_tramway",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_voiturette",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_train",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_tracteur",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_quad +50cm3",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_voiture+remorque (ref obsolète)",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_voiture+caravane (ref obsolète)",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_side-car (ref obsolète)",
-        "d": true
+        "d": false
       },
       {
         "name": "catv_utilitaire+caravane (ref obsolète)",
-        "d": true
+        "d": false
       },
       {
         "name": "occutc",
-        "d": true
+        "d": false
       },
       {
         "name": "obs",
-        "d": true
+        "d": false
       },
       {
         "name": "obs_Fossé, talus, paroi rocheuse",
-        "d": true
+        "d": false
       },
       {
         "name": "obs_Sortie de chaussée sans obtacle",
-        "d": true
+        "d": false
       },
       {
         "name": "obs_Autre obstacle fixe sur chaussée",
-        "d": true
+        "d": false
       },
       {
         "name": "obs_Autre obstacle fixe sur trottoir ou accotement",
-        "d": true
+        "d": false
       },
       {
         "name": "obs_Parapet",
-        "d": true
+        "d": false
       },
       {
         "name": "obs_Ilot, refuge, borne haute",
-        "d": true
+        "d": false
       },
       {
         "name": "obs_Bordure de trottoir",
-        "d": true
+        "d": false
       },
       {
         "name": "obsm",
-        "d": true
+        "d": false
       },
       {
         "name": "obsm_choc véhicule",
-        "d": true
+        "d": false
       },
       {
         "name": "obsm_choc piéton",
-        "d": true
+        "d": false
       },
       {
         "name": "obsm_choc autre obstacle mobile",
-        "d": true
+        "d": false
       },
       {
         "name": "obsm_choc animal domestique",
-        "d": true
+        "d": false
       },
       {
         "name": "obsm_choc sur rail",
-        "d": true
+        "d": false
       },
       {
         "name": "choc",
-        "d": true
+        "d": false
       },
       {
         "name": "choc_avant",
-        "d": true
+        "d": false
       },
       {
         "name": "choc_avant droit",
-        "d": true
+        "d": false
       },
       {
         "name": "choc_côté droit",
-        "d": true
+        "d": false
       },
       {
         "name": "choc_avant gauche",
-        "d": true
+        "d": false
       },
       {
         "name": "choc_côté gauche",
-        "d": true
+        "d": false
       },
       {
         "name": "choc_multiples",
-        "d": true
+        "d": false
       },
       {
         "name": "choc_arrière",
-        "d": true
+        "d": false
       },
       {
         "name": "choc_arrière droit",
-        "d": true
+        "d": false
       },
       {
         "name": "choc_arrière gauche",
-        "d": true
+        "d": false
       },
       {
         "name": "manv",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_arrêté non stationné",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_tournant à gauche",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_déporté à gauche",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_traversant la chaussée",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_tournant à droite",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_stationné",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_changeant de file à gauche",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_déporté à droite",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_manoeuvre d\u0027évitement",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_changeant de file à droite",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_manoeuvre de stationnement",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_en faisant demi-tour sur la chaussée",
-        "d": true
+        "d": false
       },
       {
         "name": "manv_ouverture de porte",
-        "d": true
+        "d": false
       },
       {
         "name": "num_veh",
-        "d": true
+        "d": false
       },
       {
         "name": "place_1",
-        "d": true
+        "d": false
       },
       {
         "name": "place_3",
-        "d": true
+        "d": false
       },
       {
         "name": "place_2",
-        "d": true
+        "d": false
       },
       {
         "name": "place_0",
-        "d": true
+        "d": false
       },
       {
         "name": "place_4",
-        "d": true
+        "d": false
       },
       {
         "name": "place_5",
-        "d": true
+        "d": false
       },
       {
         "name": "place_7",
-        "d": true
+        "d": false
       },
       {
         "name": "place_9",
-        "d": true
+        "d": false
       },
       {
         "name": "place_6",
-        "d": true
+        "d": false
       },
       {
         "name": "place_8",
-        "d": true
+        "d": false
       },
       {
         "name": "catu_conducteur",
-        "d": true
+        "d": false
       },
       {
         "name": "catu_passager",
-        "d": true
+        "d": false
       },
       {
         "name": "catu_piéton",
-        "d": true
+        "d": false
       },
       {
         "name": "catu_trottinette",
-        "d": true
+        "d": false
       },
       {
         "name": "grav_indemne",
-        "d": true
+        "d": false
       },
       {
         "name": "grav_hospitalisé",
-        "d": true
+        "d": false
       },
       {
         "name": "grav_blessé léger",
-        "d": true
+        "d": false
       },
       {
         "name": "grav_tué",
-        "d": true
+        "d": false
       },
       {
         "name": "sexe_femme",
-        "d": true
+        "d": false
       },
       {
         "name": "sexe_homme",
-        "d": true
+        "d": false
       },
       {
         "name": "trajet_loisirs",
-        "d": true
+        "d": false
       },
       {
         "name": "trajet_professionnel",
-        "d": true
+        "d": false
       },
       {
         "name": "trajet_autres",
-        "d": true
+        "d": false
       },
       {
         "name": "trajet_domicile école",
-        "d": true
+        "d": false
       },
       {
         "name": "trajet_domicile travail",
-        "d": true
+        "d": false
       },
       {
         "name": "trajet_courses",
-        "d": true
+        "d": false
       },
       {
         "name": "secu_avec ceinture",
-        "d": true
+        "d": false
       },
       {
         "name": "secu_sans ceinture",
-        "d": true
+        "d": false
       },
       {
         "name": "secu_avec casque",
-        "d": true
+        "d": false
       },
       {
         "name": "secu_avec siège enfant",
-        "d": true
+        "d": false
       },
       {
         "name": "secu_sans casque",
-        "d": true
+        "d": false
       },
       {
         "name": "secu_sans réflecteur",
-        "d": true
+        "d": false
       },
       {
         "name": "secu_avec réflecteur",
-        "d": true
+        "d": false
       },
       {
         "name": "secu_sans siège enfant",
-        "d": true
+        "d": false
       },
       {
         "name": "locp_moins de 50m passage piéton",
-        "d": true
+        "d": false
       },
       {
         "name": "locp_avec signalisation lumineuse",
-        "d": true
+        "d": false
       },
       {
         "name": "locp_plus de 50m un passage piéton",
-        "d": true
+        "d": false
       },
       {
         "name": "locp_sans signalisation lumineuse",
-        "d": true
+        "d": false
       },
       {
         "name": "actp_piéton sens véhicule",
-        "d": true
+        "d": false
       },
       {
         "name": "actp_piéton traversant",
-        "d": true
+        "d": false
       },
       {
         "name": "actp_piéton sens inverse véhicule",
-        "d": true
+        "d": false
       },
       {
         "name": "actp_piéton jouant",
-        "d": true
+        "d": false
       },
       {
         "name": "actp_piéton masqué",
-        "d": true
+        "d": false
       },
       {
         "name": "actp_piéton avec animal",
-        "d": true
+        "d": false
       },
       {
         "name": "etatp_piéton en groupe",
-        "d": true
+        "d": false
       },
       {
         "name": "etatp_piéton seul",
-        "d": true
+        "d": false
       },
       {
         "name": "etatp_piéton accompagné",
-        "d": true
+        "d": false
       },
       {
         "name": "age_36",
-        "d": true
+        "d": false
       },
       {
         "name": "age_25",
-        "d": true
+        "d": false
       },
       {
         "name": "age_60",
-        "d": true
+        "d": false
       },
       {
         "name": "age_41",
-        "d": true
+        "d": false
       },
       {
         "name": "age_23",
-        "d": true
+        "d": false
       },
       {
         "name": "age_21",
-        "d": true
+        "d": false
       },
       {
         "name": "age_57",
-        "d": true
+        "d": false
       },
       {
         "name": "age_8",
-        "d": true
+        "d": false
       },
       {
         "name": "age_39",
-        "d": true
+        "d": false
       },
       {
         "name": "age_18",
-        "d": true
+        "d": false
       },
       {
         "name": "age_27",
-        "d": true
+        "d": false
       },
       {
         "name": "age_7",
-        "d": true
+        "d": false
       },
       {
         "name": "age_19",
-        "d": true
+        "d": false
       },
       {
         "name": "age_20",
-        "d": true
+        "d": false
       },
       {
         "name": "age_1",
-        "d": true
+        "d": false
       },
       {
         "name": "age_51",
-        "d": true
+        "d": false
       },
       {
         "name": "age_65",
-        "d": true
+        "d": false
       },
       {
         "name": "age_54",
-        "d": true
+        "d": false
       },
       {
         "name": "age_49",
-        "d": true
+        "d": false
       },
       {
         "name": "age_16",
-        "d": true
+        "d": false
       },
       {
         "name": "age_29",
-        "d": true
+        "d": false
       },
       {
         "name": "age_17",
-        "d": true
+        "d": false
       },
       {
         "name": "age_33",
-        "d": true
+        "d": false
       },
       {
         "name": "age_38",
-        "d": true
+        "d": false
       },
       {
         "name": "age_24",
-        "d": true
+        "d": false
       },
       {
         "name": "age_59",
-        "d": true
+        "d": false
       },
       {
         "name": "age_56",
-        "d": true
+        "d": false
       },
       {
         "name": "age_12",
-        "d": true
+        "d": false
       },
       {
         "name": "age_11",
-        "d": true
+        "d": false
       },
       {
         "name": "age_48",
-        "d": true
+        "d": false
       },
       {
         "name": "age_43",
-        "d": true
+        "d": false
       },
       {
         "name": "age_32",
-        "d": true
+        "d": false
       },
       {
         "name": "age_04",
-        "d": true
+        "d": false
       },
       {
         "name": "age_31",
-        "d": true
+        "d": false
       },
       {
         "name": "age_53",
-        "d": true
+        "d": false
       },
       {
         "name": "age_44",
-        "d": true
+        "d": false
       },
       {
         "name": "age_42",
-        "d": true
+        "d": false
       },
       {
         "name": "age_66",
-        "d": true
+        "d": false
       },
       {
         "name": "age_81",
-        "d": true
+        "d": false
       },
       {
         "name": "age_40",
-        "d": true
+        "d": false
       },
       {
         "name": "age_64",
-        "d": true
+        "d": false
       },
       {
         "name": "age_61",
-        "d": true
+        "d": false
       },
       {
         "name": "age_52",
-        "d": true
+        "d": false
       },
       {
         "name": "age_73",
-        "d": true
+        "d": false
       },
       {
         "name": "age_55",
-        "d": true
+        "d": false
       },
       {
         "name": "age_58",
-        "d": true
+        "d": false
       },
       {
         "name": "age_62",
-        "d": true
+        "d": false
       },
       {
         "name": "age_47",
-        "d": true
+        "d": false
       },
       {
         "name": "age_82",
-        "d": true
+        "d": false
       },
       {
         "name": "age_30",
-        "d": true
+        "d": false
       },
       {
         "name": "age_37",
-        "d": true
+        "d": false
       },
       {
         "name": "age_15",
-        "d": true
+        "d": false
       },
       {
         "name": "age_83",
-        "d": true
+        "d": false
       },
       {
         "name": "age_46",
-        "d": true
+        "d": false
       },
       {
         "name": "age_71",
-        "d": true
+        "d": false
       },
       {
         "name": "age_85",
-        "d": true
+        "d": false
       },
       {
         "name": "age_6",
-        "d": true
+        "d": false
       },
       {
         "name": "age_34",
-        "d": true
+        "d": false
       },
       {
         "name": "age_35",
-        "d": true
+        "d": false
       },
       {
         "name": "age_70",
-        "d": true
+        "d": false
       },
       {
         "name": "age_69",
-        "d": true
+        "d": false
       },
       {
         "name": "age_22",
-        "d": true
+        "d": false
       },
       {
         "name": "age_-1",
-        "d": true
+        "d": false
       },
       {
         "name": "age_74",
-        "d": true
+        "d": false
       },
       {
         "name": "age_45",
-        "d": true
+        "d": false
       },
       {
         "name": "age_78",
-        "d": true
+        "d": false
       },
       {
         "name": "age_26",
-        "d": true
+        "d": false
       },
       {
         "name": "age_10",
-        "d": true
+        "d": false
       },
       {
         "name": "age_28",
-        "d": true
+        "d": false
       },
       {
         "name": "age_13",
-        "d": true
+        "d": false
       },
       {
         "name": "age_63",
-        "d": true
+        "d": false
       },
       {
         "name": "age_14",
-        "d": true
+        "d": false
       },
       {
         "name": "age_84",
-        "d": true
+        "d": false
       },
       {
         "name": "age_50",
-        "d": true
+        "d": false
       },
       {
         "name": "age_09",
-        "d": true
+        "d": false
       },
       {
         "name": "age_90",
-        "d": true
+        "d": false
       },
       {
         "name": "age_80",
-        "d": true
+        "d": false
       },
       {
         "name": "age_67",
-        "d": true
+        "d": false
       },
       {
         "name": "age_02",
-        "d": true
+        "d": false
       },
       {
         "name": "age_00",
-        "d": true
+        "d": false
       },
       {
         "name": "age_05",
-        "d": true
+        "d": false
       },
       {
         "name": "age_77",
-        "d": true
+        "d": false
       },
       {
         "name": "age_68",
-        "d": true
+        "d": false
       },
       {
         "name": "age_79",
-        "d": true
+        "d": false
       },
       {
         "name": "age_87",
-        "d": true
+        "d": false
       },
       {
         "name": "age_76",
-        "d": true
+        "d": false
       },
       {
         "name": "age_75",
-        "d": true
+        "d": false
       },
       {
         "name": "age_86",
-        "d": true
+        "d": false
       },
       {
         "name": "age_89",
-        "d": true
+        "d": false
       },
       {
         "name": "age_92",
-        "d": true
+        "d": false
       },
       {
         "name": "age_72",
-        "d": true
+        "d": false
       },
       {
         "name": "age_91",
-        "d": true
+        "d": false
       },
       {
         "name": "age_88",
-        "d": true
+        "d": false
       },
       {
         "name": "age_03",
-        "d": true
+        "d": false
       },
       {
         "name": "age_105",
-        "d": true
+        "d": false
       },
       {
         "name": "age_93",
-        "d": true
+        "d": false
       },
       {
         "name": "age_96",
-        "d": true
+        "d": false
       },
       {
         "name": "age_95",
-        "d": true
+        "d": false
       },
       {
         "name": "age_94",
-        "d": true
+        "d": false
       },
       {
         "name": "age_98",
-        "d": true
+        "d": false
       },
       {
         "name": "age_100",
-        "d": true
+        "d": false
       },
       {
         "name": "age_108",
-        "d": true
+        "d": false
       },
       {
         "name": "age_97",
-        "d": true
+        "d": false
       },
       {
         "name": "age_106",
-        "d": true
+        "d": false
       },
       {
         "name": "age_109",
-        "d": true
+        "d": false
       },
       {
         "name": "age_107",
-        "d": true
+        "d": false
       },
       {
         "name": "age_99",
-        "d": true
+        "d": false
       },
       {
         "name": "nb_usagers",
-        "d": true
+        "d": false
       },
       {
         "name": "grav_calc",
-        "d": true
+        "d": false
       }
     ]
   },
