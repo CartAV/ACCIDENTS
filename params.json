@@ -23,7 +23,7 @@
     "disableAutomaticTriggers": false
   },
   "name": "accidents corporels - collaboratif",
-  "description": "Le projet vise à reproduire les traitements déjà effectués en python/panda.\nLes données sont issues de la sécurité routière, dans la version opendata (liens directs des données depuis le site etalab).\nLe projet vise également à offrir un exemple d\u0027usage des outils de préparation des données et de modélisation.",
+  "description": "Le projet vise à reproduire les traitements déjà effectués en python/panda.\nLes données sont issues de la sécurité routière, dans la version opendata (liens directs des données depuis le site etalab).\nLe projet vise également à offrir un exemple d\u0027usage des outils de préparation des données et de modélisation. \u003cbr\u003e\nStatistiques par usager : http://10.237.27.129/projects/ACCIDENTS/datasets/accidents_par_usager/explore/",
   "shortDesc": "Données issues de l\u0027opendata etalab (BAAC)\nDataprep master",
   "checklists": {
     "checklists": [
@@ -67,8 +67,8 @@
             "stateChangedOn": 0
           },
           {
-            "done": true,
-            "text": "Géolocalisation adresse gouv fr",
+            "done": false,
+            "text": "Géolocalisation adresse gouv fr (à déboguer)",
             "createdOn": 1480097013129,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
@@ -91,6 +91,27 @@
             "done": false,
             "text": "Enrichissement segment routier",
             "createdOn": 1483013770990,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": true,
+            "text": "Statistiques par usager",
+            "createdOn": 1483015266358,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Statistiques aggrégées par véhicules",
+            "createdOn": 1483015272493,
+            "createdBy": "antoinefa",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Statistiques aggrégées par accident",
+            "createdOn": 1483015281030,
             "createdBy": "antoinefa",
             "stateChangedOn": 0
           }
