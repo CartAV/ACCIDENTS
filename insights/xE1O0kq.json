@@ -18,7 +18,7 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "gravité moyenne par type de véhicule (no value \u003d piéton ?)",
+      "name": "gravité moyenne par type de véhicule",
       "userEditedName": true,
       "genericDimension0": [
         {
@@ -92,7 +92,14 @@
           "columnType": "ALPHANUM",
           "isA": "filter",
           "excludedValues": {
-            "___dku_no_value___": true
+            "motocyclette (ref obsolète)": true,
+            "scooter immatriculé (ref obsolète)": true,
+            "tramway (ref obsolète)": true,
+            "___dku_no_value___": true,
+            "voiture+remorque (ref obsolète)": true,
+            "voiture+caravane (ref obsolète)": true,
+            "utilitaire+remorque (ref obsolète)": true,
+            "side-car (ref obsolète)": true
           },
           "explicitExclude": false
         }
@@ -133,12 +140,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAx0lEQVRoge3VwQ3CIBTG8beIPqKnXjuBY7iBC1iocQGH6ak89MhqnjDaaLQqReH7JyQkfWn40UOJEEJZxUY8G/GpzzFZRYPDXpl+E/ZsxKvW7bK5mHfAf40HeCT4ei6l4+W+CR7iWUvFWqp0ujtFBf/ilwc4EvjyTPf7VFZ6dCiAAQZ4FHg4VxRYmdP6ds51bFxHRKS2dhVWxuDIvzyAAQYYYIAnBnNja25sPWuOyzLA4V1aDgADnBl43soirKd4hBBCCCH0QWc1K7ro6rjhyQAAAABJRU5ErkJggg\u003d\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAxElEQVRoge3VPQrCQBBA4TQWYi02QrawsLfzJLY2FnYBcc2V7NQoWOUCHspqQ/xZw8rshOh7ME0Iy3xLIElCRD9VaouyPm3vEz0f2HcJxh4WbvS3FSgU3PmvQQI8zvZ9N7PVrae5f3AS4Iczdse15v7BxQS/e9dsz8v6xPa9pA1u/a8A+MOyvucSYLVLANywAODnMwB/D57kl6H4RXQRnNpi7ma0uQ7+AVw9M/lp2rQzYMCAAQMGDBgwYMAxwEREREQk1B2L0193RBeueAAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "gravité moyenne par type de véhicule (no value \u003d piéton ?)",
+  "name": "gravité moyenne par type de véhicule",
   "type": "CHART",
   "miniature": {
     "type": "chart",
