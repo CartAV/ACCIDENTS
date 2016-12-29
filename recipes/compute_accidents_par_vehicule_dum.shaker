@@ -1,8 +1,1137 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "grav_calc",
+        "expression": "round(100*(if(strval(\"grav_tué\")!\u003d\"\",100*numval(\"grav_tué\"),0)\n+if(strval(\"grav_hospitalisé\")!\u003d\"\",10.8*numval(\"grav_hospitalisé\"),0)\n+if(strval(\"grav_blessé léger\")!\u003d\"\",0.44*numval(\"grav_blessé léger\"),0)))/100"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "steps": [
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "manv",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "manv",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "choc",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "obsm",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "obs",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "senc",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "Unfold",
+          "params": {
+            "column": "catv",
+            "prefix": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "dummies colonnes véhicules",
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "SELECT",
+    "list": [
+      {
+        "name": "Num_Acc",
+        "d": true
+      },
+      {
+        "name": "an",
+        "d": true
+      },
+      {
+        "name": "mois",
+        "d": true
+      },
+      {
+        "name": "jour",
+        "d": true
+      },
+      {
+        "name": "hrmn",
+        "d": true
+      },
+      {
+        "name": "date",
+        "d": true
+      },
+      {
+        "name": "lum",
+        "d": true
+      },
+      {
+        "name": "agg",
+        "d": true
+      },
+      {
+        "name": "int",
+        "d": true
+      },
+      {
+        "name": "atm",
+        "d": true
+      },
+      {
+        "name": "col",
+        "d": true
+      },
+      {
+        "name": "com",
+        "d": true
+      },
+      {
+        "name": "code_insee",
+        "d": true
+      },
+      {
+        "name": "adr",
+        "d": true
+      },
+      {
+        "name": "gps",
+        "d": true
+      },
+      {
+        "name": "lat",
+        "d": true
+      },
+      {
+        "name": "long",
+        "d": true
+      },
+      {
+        "name": "dep",
+        "d": true
+      },
+      {
+        "name": "catr",
+        "d": true
+      },
+      {
+        "name": "voie",
+        "d": true
+      },
+      {
+        "name": "v1",
+        "d": true
+      },
+      {
+        "name": "v2",
+        "d": true
+      },
+      {
+        "name": "circ",
+        "d": true
+      },
+      {
+        "name": "nbv",
+        "d": true
+      },
+      {
+        "name": "pr",
+        "d": true
+      },
+      {
+        "name": "pr1",
+        "d": true
+      },
+      {
+        "name": "vosp",
+        "d": true
+      },
+      {
+        "name": "prof",
+        "d": true
+      },
+      {
+        "name": "plan",
+        "d": true
+      },
+      {
+        "name": "lartpc",
+        "d": true
+      },
+      {
+        "name": "larrout",
+        "d": true
+      },
+      {
+        "name": "surf",
+        "d": true
+      },
+      {
+        "name": "infra",
+        "d": true
+      },
+      {
+        "name": "situ",
+        "d": true
+      },
+      {
+        "name": "env1",
+        "d": true
+      },
+      {
+        "name": "senc",
+        "d": true
+      },
+      {
+        "name": "senc_PK-PR-num rue croissant",
+        "d": true
+      },
+      {
+        "name": "senc_PK-PR-num rue décroissant",
+        "d": true
+      },
+      {
+        "name": "catv",
+        "d": true
+      },
+      {
+        "name": "catv_voiture",
+        "d": true
+      },
+      {
+        "name": "catv_autre véhicule",
+        "d": true
+      },
+      {
+        "name": "catv_scooter +125cm3",
+        "d": true
+      },
+      {
+        "name": "catv_scooter -50cm3",
+        "d": true
+      },
+      {
+        "name": "catv_bicyclette",
+        "d": true
+      },
+      {
+        "name": "catv_quad -50cm3",
+        "d": true
+      },
+      {
+        "name": "catv_utilitaire",
+        "d": true
+      },
+      {
+        "name": "catv_poids lourd",
+        "d": true
+      },
+      {
+        "name": "catv_cyclomoteur -50cm3",
+        "d": true
+      },
+      {
+        "name": "catv_quad +50cm3",
+        "d": true
+      },
+      {
+        "name": "catv_motocyclette +125cm3",
+        "d": true
+      },
+      {
+        "name": "catv_train",
+        "d": true
+      },
+      {
+        "name": "catv_tracteur+semi-remorque",
+        "d": true
+      },
+      {
+        "name": "catv_tracteur",
+        "d": true
+      },
+      {
+        "name": "catv_motocyclette +50cm3-125cm3",
+        "d": true
+      },
+      {
+        "name": "catv_bus",
+        "d": true
+      },
+      {
+        "name": "catv_voiturette",
+        "d": true
+      },
+      {
+        "name": "catv_engin spécial",
+        "d": true
+      },
+      {
+        "name": "catv_motocyclette (ref obsolète)",
+        "d": true
+      },
+      {
+        "name": "catv_tramway",
+        "d": true
+      },
+      {
+        "name": "catv_tramway (ref obsolète)",
+        "d": true
+      },
+      {
+        "name": "catv_scooter immatriculé (ref obsolète)",
+        "d": true
+      },
+      {
+        "name": "occutc",
+        "d": true
+      },
+      {
+        "name": "obs",
+        "d": true
+      },
+      {
+        "name": "obs_Fossé, talus, paroi rocheuse",
+        "d": true
+      },
+      {
+        "name": "obs_Parapet",
+        "d": true
+      },
+      {
+        "name": "obs_Autre obstacle fixe sur chaussée",
+        "d": true
+      },
+      {
+        "name": "obs_Sortie de chaussée sans obtacle",
+        "d": true
+      },
+      {
+        "name": "obs_Bordure de trottoir",
+        "d": true
+      },
+      {
+        "name": "obs_Ilot, refuge, borne haute",
+        "d": true
+      },
+      {
+        "name": "obs_Autre obstacle fixe sur trottoir ou accotement",
+        "d": true
+      },
+      {
+        "name": "obsm",
+        "d": true
+      },
+      {
+        "name": "obsm_choc véhicule",
+        "d": true
+      },
+      {
+        "name": "obsm_choc piéton",
+        "d": true
+      },
+      {
+        "name": "obsm_choc sur rail",
+        "d": true
+      },
+      {
+        "name": "obsm_choc autre obstacle mobile",
+        "d": true
+      },
+      {
+        "name": "obsm_choc animal domestique",
+        "d": true
+      },
+      {
+        "name": "choc",
+        "d": true
+      },
+      {
+        "name": "choc_avant gauche",
+        "d": true
+      },
+      {
+        "name": "choc_avant",
+        "d": true
+      },
+      {
+        "name": "choc_arrière",
+        "d": true
+      },
+      {
+        "name": "choc_côté gauche",
+        "d": true
+      },
+      {
+        "name": "choc_multiples",
+        "d": true
+      },
+      {
+        "name": "choc_avant droit",
+        "d": true
+      },
+      {
+        "name": "choc_côté droit",
+        "d": true
+      },
+      {
+        "name": "choc_arrière gauche",
+        "d": true
+      },
+      {
+        "name": "choc_arrière droit",
+        "d": true
+      },
+      {
+        "name": "manv",
+        "d": true
+      },
+      {
+        "name": "manv_déporté à gauche",
+        "d": true
+      },
+      {
+        "name": "manv_traversant la chaussée",
+        "d": true
+      },
+      {
+        "name": "manv_manoeuvre d\u0027évitement",
+        "d": true
+      },
+      {
+        "name": "manv_arrêté non stationné",
+        "d": true
+      },
+      {
+        "name": "manv_en faisant demi-tour sur la chaussée",
+        "d": true
+      },
+      {
+        "name": "manv_tournant à gauche",
+        "d": true
+      },
+      {
+        "name": "manv_déporté à droite",
+        "d": true
+      },
+      {
+        "name": "manv_tournant à droite",
+        "d": true
+      },
+      {
+        "name": "manv_manoeuvre de stationnement",
+        "d": true
+      },
+      {
+        "name": "manv_stationné",
+        "d": true
+      },
+      {
+        "name": "manv_changeant de file à gauche",
+        "d": true
+      },
+      {
+        "name": "manv_changeant de file à droite",
+        "d": true
+      },
+      {
+        "name": "manv_ouverture de porte",
+        "d": true
+      },
+      {
+        "name": "num_veh",
+        "d": true
+      },
+      {
+        "name": "place_1",
+        "d": true
+      },
+      {
+        "name": "place_3",
+        "d": true
+      },
+      {
+        "name": "place_2",
+        "d": true
+      },
+      {
+        "name": "place_0",
+        "d": true
+      },
+      {
+        "name": "place_4",
+        "d": true
+      },
+      {
+        "name": "place_5",
+        "d": true
+      },
+      {
+        "name": "place_7",
+        "d": true
+      },
+      {
+        "name": "place_9",
+        "d": true
+      },
+      {
+        "name": "place_6",
+        "d": true
+      },
+      {
+        "name": "place_8",
+        "d": true
+      },
+      {
+        "name": "catu_conducteur",
+        "d": true
+      },
+      {
+        "name": "catu_passager",
+        "d": true
+      },
+      {
+        "name": "catu_piéton",
+        "d": true
+      },
+      {
+        "name": "catu_trottinette",
+        "d": true
+      },
+      {
+        "name": "grav_indemne",
+        "d": true
+      },
+      {
+        "name": "grav_hospitalisé",
+        "d": true
+      },
+      {
+        "name": "grav_blessé léger",
+        "d": true
+      },
+      {
+        "name": "grav_tué",
+        "d": true
+      },
+      {
+        "name": "sexe_femme",
+        "d": true
+      },
+      {
+        "name": "sexe_homme",
+        "d": true
+      },
+      {
+        "name": "trajet_loisirs",
+        "d": true
+      },
+      {
+        "name": "trajet_professionnel",
+        "d": true
+      },
+      {
+        "name": "trajet_autres",
+        "d": true
+      },
+      {
+        "name": "trajet_domicile école",
+        "d": true
+      },
+      {
+        "name": "trajet_domicile travail",
+        "d": true
+      },
+      {
+        "name": "trajet_courses",
+        "d": true
+      },
+      {
+        "name": "secu_avec ceinture",
+        "d": true
+      },
+      {
+        "name": "secu_sans ceinture",
+        "d": true
+      },
+      {
+        "name": "secu_avec casque",
+        "d": true
+      },
+      {
+        "name": "secu_avec siège enfant",
+        "d": true
+      },
+      {
+        "name": "secu_sans casque",
+        "d": true
+      },
+      {
+        "name": "secu_sans réflecteur",
+        "d": true
+      },
+      {
+        "name": "secu_avec réflecteur",
+        "d": true
+      },
+      {
+        "name": "secu_sans siège enfant",
+        "d": true
+      },
+      {
+        "name": "locp_moins de 50m passage piéton",
+        "d": true
+      },
+      {
+        "name": "locp_avec signalisation lumineuse",
+        "d": true
+      },
+      {
+        "name": "locp_plus de 50m un passage piéton",
+        "d": true
+      },
+      {
+        "name": "locp_sans signalisation lumineuse",
+        "d": true
+      },
+      {
+        "name": "actp_piéton sens véhicule",
+        "d": true
+      },
+      {
+        "name": "actp_piéton traversant",
+        "d": true
+      },
+      {
+        "name": "actp_piéton sens inverse véhicule",
+        "d": true
+      },
+      {
+        "name": "actp_piéton jouant",
+        "d": true
+      },
+      {
+        "name": "actp_piéton masqué",
+        "d": true
+      },
+      {
+        "name": "actp_piéton avec animal",
+        "d": true
+      },
+      {
+        "name": "etatp_piéton en groupe",
+        "d": true
+      },
+      {
+        "name": "etatp_piéton seul",
+        "d": true
+      },
+      {
+        "name": "etatp_piéton accompagné",
+        "d": true
+      },
+      {
+        "name": "age_36",
+        "d": true
+      },
+      {
+        "name": "age_25",
+        "d": true
+      },
+      {
+        "name": "age_60",
+        "d": true
+      },
+      {
+        "name": "age_41",
+        "d": true
+      },
+      {
+        "name": "age_23",
+        "d": true
+      },
+      {
+        "name": "age_21",
+        "d": true
+      },
+      {
+        "name": "age_57",
+        "d": true
+      },
+      {
+        "name": "age_8",
+        "d": true
+      },
+      {
+        "name": "age_39",
+        "d": true
+      },
+      {
+        "name": "age_18",
+        "d": true
+      },
+      {
+        "name": "age_27",
+        "d": true
+      },
+      {
+        "name": "age_7",
+        "d": true
+      },
+      {
+        "name": "age_19",
+        "d": true
+      },
+      {
+        "name": "age_20",
+        "d": true
+      },
+      {
+        "name": "age_1",
+        "d": true
+      },
+      {
+        "name": "age_51",
+        "d": true
+      },
+      {
+        "name": "age_65",
+        "d": true
+      },
+      {
+        "name": "age_54",
+        "d": true
+      },
+      {
+        "name": "age_49",
+        "d": true
+      },
+      {
+        "name": "age_16",
+        "d": true
+      },
+      {
+        "name": "age_29",
+        "d": true
+      },
+      {
+        "name": "age_17",
+        "d": true
+      },
+      {
+        "name": "age_33",
+        "d": true
+      },
+      {
+        "name": "age_38",
+        "d": true
+      },
+      {
+        "name": "age_24",
+        "d": true
+      },
+      {
+        "name": "age_59",
+        "d": true
+      },
+      {
+        "name": "age_56",
+        "d": true
+      },
+      {
+        "name": "age_12",
+        "d": true
+      },
+      {
+        "name": "age_11",
+        "d": true
+      },
+      {
+        "name": "age_48",
+        "d": true
+      },
+      {
+        "name": "age_43",
+        "d": true
+      },
+      {
+        "name": "age_32",
+        "d": true
+      },
+      {
+        "name": "age_04",
+        "d": true
+      },
+      {
+        "name": "age_31",
+        "d": true
+      },
+      {
+        "name": "age_53",
+        "d": true
+      },
+      {
+        "name": "age_44",
+        "d": true
+      },
+      {
+        "name": "age_42",
+        "d": true
+      },
+      {
+        "name": "age_66",
+        "d": true
+      },
+      {
+        "name": "age_81",
+        "d": true
+      },
+      {
+        "name": "age_40",
+        "d": true
+      },
+      {
+        "name": "age_64",
+        "d": true
+      },
+      {
+        "name": "age_61",
+        "d": true
+      },
+      {
+        "name": "age_52",
+        "d": true
+      },
+      {
+        "name": "age_73",
+        "d": true
+      },
+      {
+        "name": "age_55",
+        "d": true
+      },
+      {
+        "name": "age_58",
+        "d": true
+      },
+      {
+        "name": "age_62",
+        "d": true
+      },
+      {
+        "name": "age_47",
+        "d": true
+      },
+      {
+        "name": "age_82",
+        "d": true
+      },
+      {
+        "name": "age_30",
+        "d": true
+      },
+      {
+        "name": "age_37",
+        "d": true
+      },
+      {
+        "name": "age_15",
+        "d": true
+      },
+      {
+        "name": "age_83",
+        "d": true
+      },
+      {
+        "name": "age_46",
+        "d": true
+      },
+      {
+        "name": "age_71",
+        "d": true
+      },
+      {
+        "name": "age_85",
+        "d": true
+      },
+      {
+        "name": "age_6",
+        "d": true
+      },
+      {
+        "name": "age_34",
+        "d": true
+      },
+      {
+        "name": "age_35",
+        "d": true
+      },
+      {
+        "name": "age_70",
+        "d": true
+      },
+      {
+        "name": "age_69",
+        "d": true
+      },
+      {
+        "name": "age_22",
+        "d": true
+      },
+      {
+        "name": "age_-1",
+        "d": true
+      },
+      {
+        "name": "age_74",
+        "d": true
+      },
+      {
+        "name": "age_45",
+        "d": true
+      },
+      {
+        "name": "age_78",
+        "d": true
+      },
+      {
+        "name": "age_26",
+        "d": true
+      },
+      {
+        "name": "age_10",
+        "d": true
+      },
+      {
+        "name": "age_28",
+        "d": true
+      },
+      {
+        "name": "age_13",
+        "d": true
+      },
+      {
+        "name": "age_63",
+        "d": true
+      },
+      {
+        "name": "age_14",
+        "d": true
+      },
+      {
+        "name": "age_84",
+        "d": true
+      },
+      {
+        "name": "age_50",
+        "d": true
+      },
+      {
+        "name": "age_09",
+        "d": true
+      },
+      {
+        "name": "age_90",
+        "d": true
+      },
+      {
+        "name": "age_80",
+        "d": true
+      },
+      {
+        "name": "age_67",
+        "d": true
+      },
+      {
+        "name": "age_02",
+        "d": true
+      },
+      {
+        "name": "age_00",
+        "d": true
+      },
+      {
+        "name": "age_05",
+        "d": true
+      },
+      {
+        "name": "age_77",
+        "d": true
+      },
+      {
+        "name": "age_68",
+        "d": true
+      },
+      {
+        "name": "age_79",
+        "d": true
+      },
+      {
+        "name": "age_87",
+        "d": true
+      },
+      {
+        "name": "age_76",
+        "d": true
+      },
+      {
+        "name": "age_75",
+        "d": true
+      },
+      {
+        "name": "age_86",
+        "d": true
+      },
+      {
+        "name": "age_89",
+        "d": true
+      },
+      {
+        "name": "age_92",
+        "d": true
+      },
+      {
+        "name": "age_72",
+        "d": true
+      },
+      {
+        "name": "age_91",
+        "d": true
+      },
+      {
+        "name": "age_88",
+        "d": true
+      },
+      {
+        "name": "age_03",
+        "d": true
+      },
+      {
+        "name": "age_105",
+        "d": true
+      },
+      {
+        "name": "age_93",
+        "d": true
+      },
+      {
+        "name": "age_96",
+        "d": true
+      },
+      {
+        "name": "age_95",
+        "d": true
+      },
+      {
+        "name": "age_94",
+        "d": true
+      },
+      {
+        "name": "age_98",
+        "d": true
+      },
+      {
+        "name": "age_100",
+        "d": true
+      },
+      {
+        "name": "age_108",
+        "d": true
+      },
+      {
+        "name": "age_97",
+        "d": true
+      },
+      {
+        "name": "age_106",
+        "d": true
+      },
+      {
+        "name": "age_109",
+        "d": true
+      },
+      {
+        "name": "age_107",
+        "d": true
+      },
+      {
+        "name": "age_99",
+        "d": true
+      },
+      {
+        "name": "nb_usagers",
+        "d": true
+      },
+      {
+        "name": "grav_calc",
+        "d": true
+      }
+    ]
   },
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
@@ -14,21 +1143,24 @@
     "selection": {
       "samplingMethod": "HEAD_SEQUENTIAL",
       "partitionSelectionMethod": "ALL",
-      "maxRecords": 10000,
+      "maxRecords": 100000,
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 0
+    "_refreshTrigger": 1
   },
   "vizSampling": {
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "21NL"
     }
   ],
   "previewMode": "ALL_ROWS",
