@@ -18,8 +18,78 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Chart",
+      "name": "Sum of grav_tué by catv",
       "userEditedName": false,
+      "genericDimension0": [
+        {
+          "column": "catv",
+          "type": "ALPHANUM",
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of grav_tué, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of grav_tué, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Sum of grav_hospitalisé, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Sum of grav_hospitalisé, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Sum of grav_tué, descending"
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "genericMeasures": [
+        {
+          "column": "grav_tué",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "grav_hospitalisé",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
       "xDimension": [],
       "yDimension": [],
       "uaXDimension": [],
@@ -37,10 +107,11 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
-      "hexbinRadius": 0,
+      "hexbinRadius": 20,
       "smoothing": false,
       "showLegend": true,
       "showXAxis": false,
@@ -73,11 +144,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAp0lEQVRoge3SMQrCMBiG4dxAvEAET+QVvETrLTo5Obh0TYqQzSFjEC+S3MJJyNDqohE+32f6aaH8b1JjAMiZbmXnU46/3qMZgtURrI5gdQSrI1gdweoIVkewOoLVEVy/S+Xcep+v2vQh7k93VwdPqRyfs9zNzwUvzRIINsvBLmXfer+Pq4NtFwbbhcGnHLf9dWUPYf3iIC7vvu1SHueey/01AAAAf+kBj5DXedho1EsAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Chart",
+  "name": "Sum of grav_tué by catv",
   "type": "CHART",
   "miniature": {
     "type": "chart",
