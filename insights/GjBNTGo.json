@@ -18,7 +18,7 @@
     "chart": {
       "type": "lines",
       "variant": "normal",
-      "name": "nombre d\u0027hospitalisés et tués par mois",
+      "name": "nombre d\u0027hospitalisés et tués au cours du temps",
       "userEditedName": true,
       "genericDimension0": [
         {
@@ -162,7 +162,7 @@
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Chart",
+  "name": "nombre d\u0027hospitalisés et tués au cours du temps",
   "type": "CHART",
   "miniature": {
     "type": "chart",
