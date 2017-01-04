@@ -22,6 +22,20 @@
           "lon_column": "longitude"
         },
         "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "GeoDistanceProcessor",
+        "params": {
+          "input1": "geoPoint_natif",
+          "input2": "GeoPoint_BAN",
+          "output": "geoCode_distance",
+          "outputUnit": "KILOMETERS",
+          "compareTo": "COLUMN"
+        },
+        "metaType": "PROCESSOR",
         "preview": true,
         "disabled": false,
         "alwaysShowComment": false
@@ -66,7 +80,7 @@
       "login": "chabouisfr",
       "displayName": "Francis Chabouis"
     },
-    "lastModifiedOn": 1483534310709
+    "lastModifiedOn": 1483534420501
   },
   "creationTag": {
     "versionNumber": 0,
