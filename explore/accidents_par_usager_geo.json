@@ -30,39 +30,6 @@
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "column": "latitude",
-      "type": "columnFilter",
-      "currentMode": "FACET",
-      "active": true,
-      "facet": {
-        "type": "facet",
-        "column": "latitude",
-        "columnType": "NUMERICAL",
-        "currentMode": "NUMERICAL",
-        "sort": "count",
-        "selectedValues": {}
-      },
-      "alphanumFilter": {
-        "type": "alphanum",
-        "column": "latitude",
-        "values": [],
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "validityFilter": {
-        "type": "validity",
-        "column": "latitude",
-        "params": {
-          "type": "DoubleMeaning",
-          "ok": false,
-          "nok": false,
-          "empty": true
-        }
-      }
-    },
-    {
       "column": "lat",
       "type": "columnFilter",
       "currentMode": "FACET",
@@ -89,8 +56,8 @@
         "column": "lat",
         "params": {
           "type": "DoubleMeaning",
-          "ok": false,
-          "nok": false,
+          "ok": true,
+          "nok": true,
           "empty": true
         }
       }
