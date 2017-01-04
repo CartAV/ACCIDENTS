@@ -399,6 +399,25 @@
         },
         "sql": "select count(*) from \"geocodage_quali\"  where agg is null\n\n",
         "expandedSql": "select count(*) from \"geocodage_quali\"  where agg is null\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "8vOFqDqqPbBC",
+        "runOn": 1483546490898,
+        "runIn": 68,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "25OPLinnHEYa4cG2",
+        "hash": "f489d0a0632d24368b81b752b58682aa",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"geocodage_quali\"  where int is null\n\n",
+        "expandedSql": "select count(*) from \"geocodage_quali\"  where int is null\n\n"
       }
     ]
   }
