@@ -1,6 +1,52 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "valid_coord",
+        "expression": "!isBlank(long) \u0026\u0026 !isBlank(lat) \u0026\u0026 lat !\u003d 0"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "lat",
+        "expression": "lat/100000"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "long",
+        "expression": "long/100000"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "valid_address",
+        "expression": "!isBlank(adr)"
+      },
+      "metaType": "PROCESSOR",
+      "preview": true,
+      "disabled": false,
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -18,17 +64,20 @@
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 0
+    "_refreshTrigger": 2
   },
   "vizSampling": {
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "DTZ"
     }
   ],
   "previewMode": "ALL_ROWS",
