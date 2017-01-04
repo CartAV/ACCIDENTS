@@ -30,16 +30,136 @@
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS",
-    "charts": [],
+    "charts": [
+      {
+        "data": {
+          "name": "Chart",
+          "genericMeasures": [
+            {
+              "function": "COUNT",
+              "type": "NUMERICAL",
+              "displayed": true,
+              "displayAxis": "axis1",
+              "displayType": "column",
+              "isA": "measure",
+              "computeMode": "NORMAL"
+            }
+          ],
+          "genericDimension0": [
+            {
+              "column": "valid_coord",
+              "type": "ALPHANUM",
+              "maxValues": 20,
+              "generateOthersCategory": true,
+              "filters": [],
+              "isA": "dimension",
+              "possibleSorts": [
+                {
+                  "type": "NATURAL",
+                  "label": "Natural ordering",
+                  "sortAscending": true
+                },
+                {
+                  "type": "AGGREGATION",
+                  "measureIdx": 0,
+                  "label": "Count of records, descending"
+                },
+                {
+                  "type": "AGGREGATION",
+                  "measureIdx": 0,
+                  "label": "Count of records, ascending",
+                  "sortAscending": true
+                }
+              ],
+              "sort": {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              }
+            }
+          ],
+          "genericDimension1": [],
+          "type": "pie",
+          "includeZero": true,
+          "showLegend": true,
+          "chartOptions": {},
+          "hexbinRadius": 20,
+          "yAxisMode": "NORMAL",
+          "xAxisMode": "NORMAL",
+          "computeMode": "NONE",
+          "smoothing": true,
+          "strokeWidth": 1,
+          "colorPaletteType": "LINEAR",
+          "xDimension": [],
+          "yDimension": [],
+          "groupDimension": [],
+          "uaXDimension": [],
+          "uaYDimension": [],
+          "xMeasure": [],
+          "yMeasure": [],
+          "sizeMeasure": [],
+          "colorMeasure": [],
+          "tooltipMeasures": [],
+          "uaSize": [],
+          "uaColor": [],
+          "uaShape": [],
+          "uaTooltip": [],
+          "boxplotBreakdownDim": [],
+          "boxplotValue": [],
+          "geometry": [],
+          "colorOptions": {
+            "singleColor": "#659a88",
+            "transparency": 0.75,
+            "ccScaleMode": "NORMAL",
+            "colorPalette": "default"
+          },
+          "bubblesOptions": {
+            "defaultRadius": 5,
+            "singleShape": "FILLED_CIRCLE"
+          },
+          "pieOptions": {
+            "donutHoleSize": 50
+          },
+          "filters": [],
+          "mapOptions": {
+            "tilesLayer": "cartodb-positron"
+          },
+          "mapGridOptions": {
+            "gridLonDeg": 0.5,
+            "gridLatDeg": 0.5
+          },
+          "variant": "donut",
+          "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA50lEQVRoge3SMQoCMRCF4bnJXsCLWHkYiy09g+ApRKwWwUpki2C5t9BTaBVZYZMMMetMfPPDtOF9ECLLsnI7uvvFX9N275PeVbQxMgT+C/zBPU4hbAxcJTwG5YKrQTdtl8RywerR46GlwGrRU0NLgVWiocCxoaXAqtCpoR75DFQVmDM0BM2BS3uTYC6Wi5b2YoFLY9WjDWzgvJbb3kGBV7v+BgWG+9IG1gKeA60aa+Av0Zy3pL1ExEMvNudrCLreD0M1WCIeuMRJOz+CwhIBgonmQ0u7okFhfVBYHxR2HAx0KgikZf22Fz2QEhGTtuW9AAAAAElFTkSuQmCC"
+        },
+        "$$hashKey": "KH5",
+        "chartOptions": {
+          "zeroEnabled": false,
+          "enableLegendEnabled": true,
+          "smoothingEnabled": false,
+          "strokeWidthEnabled": false,
+          "xAxisEnabled": false,
+          "enabledMCModes": [
+            [
+              "NORMAL",
+              "Normal"
+            ],
+            [
+              "PERCENTAGE",
+              "Percentage scale"
+            ]
+          ]
+        }
+      }
+    ],
     "chartsEngine": "LINO"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener"
     },
-    "lastModifiedOn": 1483525972588
+    "lastModifiedOn": 1483526099915
   },
   "creationTag": {
     "versionNumber": 0,
