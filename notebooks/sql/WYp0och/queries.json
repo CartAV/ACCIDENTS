@@ -19,6 +19,25 @@
         },
         "sql": "select * from \"geocodage_quali\" limiti 1000",
         "expandedSql": "select * from \"geocodage_quali\" limiti 1000"
+      },
+      {
+        "mode": "SQL",
+        "id": "JxwWyR7GH2Fl",
+        "runOn": 1483543507608,
+        "runIn": 52,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "oO4jy35MQDTOnTsU",
+        "hash": "235de6af3d138b6b05633f04ecb454a7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from \"geocodage_quali\" limit 1000",
+        "expandedSql": "select * from \"geocodage_quali\" limit 1000"
       }
     ]
   }
