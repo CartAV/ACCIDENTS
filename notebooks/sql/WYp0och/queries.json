@@ -304,6 +304,25 @@
         },
         "sql": "select count(*) from \"geocodage_quali\"  where mois is null;\n\n",
         "expandedSql": "select count(*) from \"geocodage_quali\"  where mois is null;\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "8LHUtoHsyhF1",
+        "runOn": 1483546413648,
+        "runIn": 61,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "PHg0DUNFqPkbLTDr",
+        "hash": "86c7556d5b6f27992fdb81dc8027326a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"geocodage_quali\"  where mois is null\n\n",
+        "expandedSql": "select count(*) from \"geocodage_quali\"  where mois is null\n\n"
       }
     ]
   }
