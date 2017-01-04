@@ -11,7 +11,7 @@
         },
         "metaType": "PROCESSOR",
         "preview": false,
-        "disabled": false,
+        "disabled": true,
         "alwaysShowComment": false
       },
       {
@@ -34,6 +34,28 @@
           "output": "geoCode_distance",
           "outputUnit": "KILOMETERS",
           "compareTo": "COLUMN"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "lat_clean",
+          "expression": "lat"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "long_clean",
+          "expression": "long/"
         },
         "metaType": "PROCESSOR",
         "preview": true,
@@ -80,7 +102,7 @@
       "login": "chabouisfr",
       "displayName": "Francis Chabouis"
     },
-    "lastModifiedOn": 1483534420501
+    "lastModifiedOn": 1483534673426
   },
   "creationTag": {
     "versionNumber": 0,
