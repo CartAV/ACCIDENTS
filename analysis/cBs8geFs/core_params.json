@@ -1,5 +1,5 @@
 {
-  "inputDatasetSmartName": "accidents_lieux",
+  "inputDatasetSmartName": "accidents_caracteristiques",
   "script": {
     "steps": [],
     "tags": [],
@@ -34,12 +34,12 @@
     "chartsEngine": "LINO"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener"
     },
-    "lastModifiedOn": 1483519332118
+    "lastModifiedOn": 1483519921844
   },
   "creationTag": {
     "versionNumber": 0,
