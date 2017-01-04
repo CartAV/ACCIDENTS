@@ -13,8 +13,8 @@ f = d.Dataset("geocodage_quali")
 i=0
 liste=[]
 futures=[]
-split=5000
-verbosechunksize=5000
+split=500
+verbosechunksize=2000
 maxtries=4
 nthreads=3
 j=0
@@ -89,7 +89,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=nthreads) as executor:
             if ((j%verbosechunksize)==0):
                 print("geocoded chunk %r to %r" %(j-verbosechunksize,j))
 
-
+print "Going to concat"
 events=pd.concat(liste,ignore_index=True)
 
 # Recipe outputs
