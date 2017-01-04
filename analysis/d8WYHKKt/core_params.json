@@ -16,17 +16,19 @@
       "selection": {
         "samplingMethod": "HEAD_SEQUENTIAL",
         "partitionSelectionMethod": "ALL",
-        "maxRecords": 10000,
+        "maxRecords": 100000,
         "targetRatio": 0.02
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 3
     },
     "vizSampling": {
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS",
@@ -129,7 +131,7 @@
             "gridLatDeg": 0.5
           },
           "variant": "donut",
-          "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABBklEQVRoge3SsQ3CMBBA0VuAGViAhpoJqBiGgjJiASQkpkAoFUJEFBFKYVFmi1BkBqiCTLAT20nwOXdfuta6pzMAx3GuvaJJWs10c/6M7716TUbqwKPAn8TzEotCiW0CBwmPRZHK4wIOBl3HdgGjR6uwsSjScrdIXMFo0Tqs7so2YJRoUuA2rAptC0aFNgZrCgosL2QLdYH79kJ9ofn2dnXBmqJ9e3/A9WuPCty2nC0WPZrBDHZruc8EKfDqkD1Igcl9aQZjAQ+BRo1lcEe0yVu+vQBghp5FyV0HXR/zPBgsgBm4j/Ht/IoUFoAgGGA4tG9XY6SwVaSwVaSwcmSgqkggOe6/vQExBxuolmNw8AAAAABJRU5ErkJggg\u003d\u003d"
+          "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA9klEQVRoge3SsQ3CMBCF4VsgM7AACzACFcNQ0JGKAZCYgiKiQEg0RChFRJktskWoHBkUO5fEwWeef+m11n2SiWKx2NiaNMnVFrtrO993OU1HmsB/gW/2yc2EtYGDhGdlbYRywcGgs7LO1aaCxaN1rCuwWPQ3tg89BCwSDQU2YW3ooWBR6D5wizYUFJiFZRYE2hWWi/btxQK7xopHw4G7jlkdHhcosL6x4PWxKKHAm1PxggLDfekIlgKeAy0aG8ET0Zy3fHuJiIdepvenCbo9V1UwWCIe2MV8Oz+CwhIBgonmQ/t2WYPCqqCwKiisHgy0KwhkLPbb3gg5MMrzSoEnAAAAAElFTkSuQmCC"
         },
         "$$hashKey": "KH5",
         "chartOptions": {
@@ -154,12 +156,12 @@
     "chartsEngine": "LINO"
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener"
     },
-    "lastModifiedOn": 1483527037971
+    "lastModifiedOn": 1483527379183
   },
   "creationTag": {
     "versionNumber": 0,
