@@ -3,21 +3,43 @@
   "script": {
     "steps": [
       {
-        "type": "GeoPointCreator",
+        "type": "CreateColumnWithGREL",
         "params": {
-          "out_column": "geoPoint_natif",
-          "lat_column": "lat",
-          "lon_column": "long"
+          "column": "lat_clean",
+          "expression": "lat/100000"
         },
         "metaType": "PROCESSOR",
         "preview": false,
-        "disabled": true,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "long_clean",
+          "expression": "long/100000"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
         "alwaysShowComment": false
       },
       {
         "type": "GeoPointCreator",
         "params": {
-          "out_column": "GeoPoint_BAN",
+          "out_column": "geoPoint_initial",
+          "lat_column": "lat_clean",
+          "lon_column": "long_clean"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "GeoPointCreator",
+        "params": {
+          "out_column": "geoPoint_BAN",
           "lat_column": "latitude",
           "lon_column": "longitude"
         },
@@ -29,33 +51,11 @@
       {
         "type": "GeoDistanceProcessor",
         "params": {
-          "input1": "geoPoint_natif",
-          "input2": "GeoPoint_BAN",
+          "input1": "geoPoint_initial",
+          "input2": "geoPoint_BAN",
           "output": "geoCode_distance",
           "outputUnit": "KILOMETERS",
           "compareTo": "COLUMN"
-        },
-        "metaType": "PROCESSOR",
-        "preview": false,
-        "disabled": false,
-        "alwaysShowComment": false
-      },
-      {
-        "type": "CreateColumnWithGREL",
-        "params": {
-          "column": "lat_clean",
-          "expression": "lat"
-        },
-        "metaType": "PROCESSOR",
-        "preview": false,
-        "disabled": false,
-        "alwaysShowComment": false
-      },
-      {
-        "type": "CreateColumnWithGREL",
-        "params": {
-          "column": "long_clean",
-          "expression": "long/"
         },
         "metaType": "PROCESSOR",
         "preview": true,
@@ -102,7 +102,7 @@
       "login": "chabouisfr",
       "displayName": "Francis Chabouis"
     },
-    "lastModifiedOn": 1483534673426
+    "lastModifiedOn": 1483535089845
   },
   "creationTag": {
     "versionNumber": 0,
