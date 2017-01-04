@@ -99,6 +99,28 @@
         ]
       },
       "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "normalization": "EXACT",
+        "matching": "FULL_STRING",
+        "stopAfterFirstMatch": false,
+        "mapping": [
+          {
+            "to": "\"000\""
+          }
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "com"
+        ]
+      },
+      "metaType": "PROCESSOR",
       "preview": true,
       "disabled": false,
       "alwaysShowComment": false
