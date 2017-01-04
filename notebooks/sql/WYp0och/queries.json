@@ -437,6 +437,25 @@
         },
         "sql": "select count(*) from \"geocodage_quali\"  where atm is null\n\n",
         "expandedSql": "select count(*) from \"geocodage_quali\"  where atm is null\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "PBdUW3XgqXH4",
+        "runOn": 1483546629276,
+        "runIn": 64,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "C2cAMwaKGIM7kDKL",
+        "hash": "637d8616f41d26efe1535ab037cef813",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"geocodage_quali\"  where atm is null\n\n",
+        "expandedSql": "select count(*) from \"geocodage_quali\"  where atm is null\n\n"
       }
     ]
   }
