@@ -121,6 +121,28 @@
         ]
       },
       "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "normalization": "EXACT",
+        "matching": "FULL_STRING",
+        "stopAfterFirstMatch": false,
+        "mapping": [
+          {
+            "to": "1"
+          }
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "atm"
+        ]
+      },
+      "metaType": "PROCESSOR",
       "preview": true,
       "disabled": false,
       "alwaysShowComment": false
