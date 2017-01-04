@@ -133,6 +133,25 @@
         },
         "sql": "select * from \"geocodage_quali\"  where col \u003d NA limit 1000",
         "expandedSql": "select * from \"geocodage_quali\"  where col \u003d NA limit 1000"
+      },
+      {
+        "mode": "SQL",
+        "id": "Cn21OHiNiSEN",
+        "runOn": 1483543586635,
+        "runIn": 48,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "AcGmOibzVUsSdFoh",
+        "hash": "87e4f445b6f5bbb82b77adc5d1da502a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from \"geocodage_quali\"  where col is null limit 1000",
+        "expandedSql": "select * from \"geocodage_quali\"  where col is null limit 1000"
       }
     ]
   }
