@@ -15,7 +15,7 @@
       "type": "CreateColumnWithGREL",
       "params": {
         "column": "lat",
-        "expression": "lat/100000"
+        "expression": "if(lat!\u003d0,lat/100000,\"\")"
       },
       "metaType": "PROCESSOR",
       "preview": false,
@@ -26,7 +26,7 @@
       "type": "CreateColumnWithGREL",
       "params": {
         "column": "long",
-        "expression": "long/100000"
+        "expression": "if(long!\u003d0,long/100000,\"\")"
       },
       "metaType": "PROCESSOR",
       "preview": false,
@@ -51,7 +51,7 @@
         "expression": "if(valid_coord, \"Ok\", if(valid_address, \"Maybe\", \"Dead\"))"
       },
       "metaType": "PROCESSOR",
-      "preview": true,
+      "preview": false,
       "disabled": false,
       "alwaysShowComment": false
     }
