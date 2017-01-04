@@ -1,7 +1,32 @@
 {
   "inputDatasetSmartName": "accidents_par_usager_geo",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "GeoPointCreator",
+        "params": {
+          "out_column": "geoPoint_natif",
+          "lat_column": "lat",
+          "lon_column": "long"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "GeoPointCreator",
+        "params": {
+          "out_column": "GeoPoint_BAN",
+          "lat_column": "latitude",
+          "lon_column": "longitude"
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "tags": [],
     "columnsSelection": {
       "mode": "ALL"
@@ -26,7 +51,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS",
@@ -34,12 +61,12 @@
     "chartsEngine": "LINO"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis"
     },
-    "lastModifiedOn": 1483534190837
+    "lastModifiedOn": 1483534310709
   },
   "creationTag": {
     "versionNumber": 0,
