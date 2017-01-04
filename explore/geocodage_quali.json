@@ -5,7 +5,7 @@
     "mode": "ALL"
   },
   "coloring": {
-    "scheme": "MEANING_AND_STATUS",
+    "scheme": "INDIVIDUAL_COLUMNS_VALUES",
     "individualColumns": [],
     "valueColoringMode": "HASH"
   },
