@@ -152,6 +152,25 @@
         },
         "sql": "select * from \"geocodage_quali\"  where col is null limit 1000",
         "expandedSql": "select * from \"geocodage_quali\"  where col is null limit 1000"
+      },
+      {
+        "mode": "SQL",
+        "id": "bIGtFE0CNWWw",
+        "runOn": 1483543621956,
+        "runIn": 83,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "giqHVauRElhLVkiw",
+        "hash": "657d63185cae2c4206f176c21ae98d19",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select cout(*) from \"geocodage_quali\"  where col is null ",
+        "expandedSql": "select cout(*) from \"geocodage_quali\"  where col is null "
       }
     ]
   }
