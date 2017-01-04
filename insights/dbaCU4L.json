@@ -5,13 +5,13 @@
       "chartsEngine": "LINO",
       "sampling": {
         "selection": {
-          "samplingMethod": "HEAD_SEQUENTIAL",
+          "samplingMethod": "FULL",
           "partitionSelectionMethod": "ALL",
           "maxRecords": 10000,
           "targetRatio": 0.02
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 0
+        "_refreshTrigger": 1
       },
       "steps": [],
       "previewMode": "ALL_ROWS"
@@ -21,7 +21,7 @@
       "type": "pie",
       "variant": "donut",
       "name": "Chart",
-      "userEditedName": false,
+      "userEditedName": true,
       "genericDimension0": [
         {
           "column": "quali_coord",
@@ -106,6 +106,7 @@
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
       },
+      "computeMode": "NORMAL",
       "xAxisMode": "NORMAL",
       "yAxisMode": "NORMAL",
       "pieOptions": {
@@ -123,7 +124,7 @@
         "gridLonDeg": 0.5,
         "gridLatDeg": 0.5
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABBklEQVRoge3SsQ3CMBBA0VuAGViAhpoJqBiGgjJiASQkpkAoFUJEFBFKYVFmi1BkBqiCTLAT20nwOXdfuta6pzMAx3GuvaJJWs10c/6M7716TUbqwKPAn8TzEotCiW0CBwmPRZHK4wIOBl3HdgGjR6uwsSjScrdIXMFo0Tqs7so2YJRoUuA2rAptC0aFNgZrCgosL2QLdYH79kJ9ofn2dnXBmqJ9e3/A9WuPCty2nC0WPZrBDHZruc8EKfDqkD1Igcl9aQZjAQ+BRo1lcEe0yVu+vQBghp5FyV0HXR/zPBgsgBm4j/Ht/IoUFoAgGGA4tG9XY6SwVaSwVaSwcmSgqkggOe6/vQExBxuolmNw8AAAAABJRU5ErkJggg\u003d\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABEUlEQVRoge3SQQrCMBBA0bmA4A16AY/hxpWHcdFlvULBMygIBsRu3BiklOCypzDgHdRVaiudNrSpTZx8mP08ZgB8Pl/XXtGEqwnCpJix9zJaGYmB/wL/XE9PGLYJ7CScCcmZkChWB+wMWmGZkPwRz9Er64CtR5exbVfWBVuLrsMyIXl23O76gq1EY2Dsyk6Dm7BMSH7I7pe+YKvQbeDiykhOgbWwmjmBNoXVRY/tpQU2jbUe7cEe3K1FnApS4OUmvZECk3tpD7YFPATaamwbOAgTGuDvJU1hrQADVNHYorPofMWgq32eO4MF+IB1lu4zYzsrkcICEAQDDIce29UYKayKFFZFCluODLQuEkif77e9AZ2CgNL87916AAAAAElFTkSuQmCC",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
