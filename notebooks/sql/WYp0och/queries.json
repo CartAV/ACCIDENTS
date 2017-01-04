@@ -171,6 +171,25 @@
         },
         "sql": "select cout(*) from \"geocodage_quali\"  where col is null ",
         "expandedSql": "select cout(*) from \"geocodage_quali\"  where col is null "
+      },
+      {
+        "mode": "SQL",
+        "id": "8HuzOSVSFzGb",
+        "runOn": 1483543627502,
+        "runIn": 52,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "1FrpdC9gcAXGt6v6",
+        "hash": "6f2549e9e6b159ca37e002764333b183",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"geocodage_quali\"  where col is null ",
+        "expandedSql": "select count(*) from \"geocodage_quali\"  where col is null "
       }
     ]
   }
