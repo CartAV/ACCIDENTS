@@ -54,6 +54,32 @@
       "preview": false,
       "disabled": false,
       "alwaysShowComment": false
+    },
+    {
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "city_code",
+        "expression": "if(gps\u003d\u003d\"M\",slice(dep,0,2),dep)"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "ColumnsConcat",
+      "params": {
+        "join": "",
+        "columns": [
+          "city_code",
+          "com"
+        ],
+        "outputColumn": "city_code"
+      },
+      "metaType": "PROCESSOR",
+      "preview": true,
+      "disabled": false,
+      "alwaysShowComment": false
     }
   ],
   "tags": [],
