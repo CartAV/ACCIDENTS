@@ -27,12 +27,11 @@ def adresse_submit(df):
         print("geocoding chunk %r to %r" %(i-verbosechunksize,i))
     t=1
     while (t<=maxtries):
-        df_adr=df[["Num_Acc","v1","adr","city_code"]]
+        df_adr=df[["Num_Acc","adr","city_code"]]
         df_adr.to_csv(s,sep=",", quotechar='"',encoding="utf8",index=False)
         requests_session = requests.Session()
         kwargs = {
-            'data': OrderedDict([
-                    ('columns', 'v1'),                     
+            'data': OrderedDict([                     
                     ('columns', 'adr'), 
                     ('citycode', 'city_code')
               ]),
