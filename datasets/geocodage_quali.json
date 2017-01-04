@@ -121,6 +121,12 @@
         "maxLength": -1
       },
       {
+        "name": "quali_coord",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
         "name": "dep",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -143,13 +149,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483525775714
+    "lastModifiedOn": 1483526932039
   },
   "customMeta": {
     "kv": {}
