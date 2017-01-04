@@ -47,7 +47,7 @@
           ],
           "genericDimension0": [
             {
-              "column": "valid_coord",
+              "column": "quali_coord",
               "type": "ALPHANUM",
               "maxValues": 20,
               "generateOthersCategory": true,
@@ -129,7 +129,7 @@
             "gridLatDeg": 0.5
           },
           "variant": "donut",
-          "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA50lEQVRoge3SMQoCMRCF4bnJXsCLWHkYiy09g+ApRKwWwUpki2C5t9BTaBVZYZMMMetMfPPDtOF9ECLLsnI7uvvFX9N275PeVbQxMgT+C/zBPU4hbAxcJTwG5YKrQTdtl8RywerR46GlwGrRU0NLgVWiocCxoaXAqtCpoR75DFQVmDM0BM2BS3uTYC6Wi5b2YoFLY9WjDWzgvJbb3kGBV7v+BgWG+9IG1gKeA60aa+Av0Zy3pL1ExEMvNudrCLreD0M1WCIeuMRJOz+CwhIBgonmQ0u7okFhfVBYHxR2HAx0KgikZf22Fz2QEhGTtuW9AAAAAElFTkSuQmCC"
+          "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABBklEQVRoge3SsQ3CMBBA0VuAGViAhpoJqBiGgjJiASQkpkAoFUJEFBFKYVFmi1BkBqiCTLAT20nwOXdfuta6pzMAx3GuvaJJWs10c/6M7716TUbqwKPAn8TzEotCiW0CBwmPRZHK4wIOBl3HdgGjR6uwsSjScrdIXMFo0Tqs7so2YJRoUuA2rAptC0aFNgZrCgosL2QLdYH79kJ9ofn2dnXBmqJ9e3/A9WuPCty2nC0WPZrBDHZruc8EKfDqkD1Igcl9aQZjAQ+BRo1lcEe0yVu+vQBghp5FyV0HXR/zPBgsgBm4j/Ht/IoUFoAgGGA4tG9XY6SwVaSwVaSwcmSgqkggOe6/vQExBxuolmNw8AAAAABJRU5ErkJggg\u003d\u003d"
         },
         "$$hashKey": "KH5",
         "chartOptions": {
@@ -154,12 +154,12 @@
     "chartsEngine": "LINO"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener"
     },
-    "lastModifiedOn": 1483526099915
+    "lastModifiedOn": 1483527037971
   },
   "creationTag": {
     "versionNumber": 0,
