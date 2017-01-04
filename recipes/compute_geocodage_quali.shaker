@@ -40,6 +40,17 @@
         "expression": "!isBlank(adr)"
       },
       "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "quali_coord",
+        "expression": "if(valid_coord, \"Ok\", if(valid_address, \"Maybe\", \"Dead\"))"
+      },
+      "metaType": "PROCESSOR",
       "preview": true,
       "disabled": false,
       "alwaysShowComment": false
