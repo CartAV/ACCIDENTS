@@ -58,7 +58,7 @@
           "compareTo": "COLUMN"
         },
         "metaType": "PROCESSOR",
-        "preview": true,
+        "preview": false,
         "disabled": false,
         "alwaysShowComment": false
       }
@@ -97,12 +97,12 @@
     "chartsEngine": "LINO"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis"
     },
-    "lastModifiedOn": 1483535089845
+    "lastModifiedOn": 1483535156305
   },
   "creationTag": {
     "versionNumber": 0,
