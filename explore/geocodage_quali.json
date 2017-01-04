@@ -28,7 +28,41 @@
     "autoRefresh": true
   },
   "globalSearchQuery": "",
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "column": "adr",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "adr",
+        "columnType": "ALPHANUM",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "adr",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "adr",
+        "params": {
+          "type": "FreeText",
+          "ok": true,
+          "nok": false,
+          "empty": false
+        }
+      }
+    }
+  ],
   "previewMode": "ALL_ROWS",
   "charts": [],
   "chartsEngine": "LINO"
