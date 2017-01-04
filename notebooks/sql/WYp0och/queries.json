@@ -76,6 +76,25 @@
         },
         "sql": "select * from \"geocodage_quali\"  where col is Integer limit 1000",
         "expandedSql": "select * from \"geocodage_quali\"  where col is Integer limit 1000"
+      },
+      {
+        "mode": "SQL",
+        "id": "317qA9z4IgR7",
+        "runOn": 1483543560028,
+        "runIn": 41,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "51GleJqm95aiFEKs",
+        "hash": "9c6a21be46e6221fbcc9d062d51475a3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from \"geocodage_quali\"  where col is integer limit 1000",
+        "expandedSql": "select * from \"geocodage_quali\"  where col is integer limit 1000"
       }
     ]
   }
