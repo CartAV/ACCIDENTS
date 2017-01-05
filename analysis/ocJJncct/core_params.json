@@ -170,7 +170,21 @@
           "pieOptions": {
             "donutHoleSize": 50
           },
-          "filters": [],
+          "filters": [
+            {
+              "column": "result_score",
+              "type": "NUMERICAL",
+              "label": "result_score",
+              "cacheable": true,
+              "__justDragDropped": true,
+              "columnType": "NUMERICAL",
+              "filterType": "NUMERICAL_FACET",
+              "isA": "filter",
+              "excludedValues": {},
+              "$$hashKey": "A7S",
+              "minValue": 0.81713649
+            }
+          ],
           "mapOptions": {
             "tilesLayer": "cartodb-positron"
           },
@@ -179,7 +193,7 @@
             "gridLatDeg": 0.5
           },
           "variant": "normal",
-          "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAVklEQVRoge3QMQ3AMAwAwTAJyxArgUDrlKUAWul7J3nx5PcYQMpc1z7z9S2vEFwnuE5wneA6wXWC6wTXCa4TXCe4TnCd4DrBdYLrBNcJrhP82P3mERU3m8rdafLiQj0AAAAASUVORK5CYII\u003d",
+          "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAApklEQVRoge2UOw5AQBBAJa7hcwJnUbmJT+dASqJ3NNUmJGsoLDOb95JpXqbwRkgSAIiGsl82N38/yycQHDsEx85VcLSHIPjGm4fgG28eggWfDWtl/hAEC55gixAseIItQrDgCXY0U3oazbwRfHTq3zzBgifYs0uwNggWPMGeXYK1ETL46IpuHsPXPIBgwRPs2X0SHPJ7z9u5duNd0BT8xiHM/DxDsgP2T/uUv1woCwAAAABJRU5ErkJggg\u003d\u003d",
           "userEditedName": true
         },
         "$$hashKey": "6HD",
@@ -376,12 +390,12 @@
     "chartsEngine": "LINO"
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener"
     },
-    "lastModifiedOn": 1483638226182
+    "lastModifiedOn": 1483638419382
   },
   "creationTag": {
     "versionNumber": 0,
