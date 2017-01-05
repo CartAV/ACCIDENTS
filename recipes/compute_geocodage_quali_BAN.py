@@ -21,7 +21,7 @@ nthreads=3
 j=0
 
 # Recipe outputs
-out = d.Dataset("geocodage_quali_BAN")
+
 
 def adresse_submit(df):
     global i
@@ -88,6 +88,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=nthreads) as executor:
         j+=split
         try:
             #print(s.result())
+            out = d.Dataset("geocodage_quali_BAN")
             out.write_with_schema(s.result())
         except Exception as exc:
             print("chunk %r to %r generated an exception: %r\n%r" %(j-split,j,exc,s))
