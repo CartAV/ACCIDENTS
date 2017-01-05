@@ -9,6 +9,8 @@ from dataiku import pandasutils as pdu
 from collections import OrderedDict
 import pdb
 
+pdb.set_trace()
+
 
 # Recipe inputs
 f = d.Dataset("geocodage_quali")
