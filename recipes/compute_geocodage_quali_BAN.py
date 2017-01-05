@@ -94,7 +94,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=nthreads) as executor:
 
 print "Going to concat"
 print("len(liste) "+str(len(liste)))
-print(liste[0])
+#print(liste[0])
 events=pd.concat(liste,ignore_index=True)
 
 # Recipe outputs
