@@ -6,6 +6,10 @@
         {
           "ref": "geocodage_quali",
           "deps": []
+        },
+        {
+          "ref": "geocodage_quali_filtered",
+          "deps": []
         }
       ]
     }
@@ -28,13 +32,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483606412755
+    "lastModifiedOn": 1483606709813
   },
   "customMeta": {
     "kv": {}
