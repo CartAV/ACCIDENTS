@@ -100,5 +100,5 @@ print("len(events) "+str(len(events)))
 
 
 # Recipe outputs
-out = d.Dataset("geocodage_quali_ban")
+out = d.Dataset("geocodage_quali_BAN")
 out.write_with_schema(events)
