@@ -10,7 +10,7 @@ from collections import OrderedDict
 
 
 # Recipe inputs
-f = d.Dataset("geocodage_quali")
+f = d.Dataset("geocodage_quali_filtered")
 i=0
 liste=[]
 futures=[]
@@ -41,7 +41,7 @@ def adresse_submit(df):
             #  ]),
             'data': {                     
                         'columns':'adr', 
-                        'columns':'city_code'
+                        'postcode':'city_code'
             },
             'method': 'post',
             'files': OrderedDict([
