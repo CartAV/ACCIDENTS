@@ -96,6 +96,8 @@ print "Going to concat"
 print("len(liste) "+str(len(liste)))
 #print(liste[0])
 events=pd.concat(liste,ignore_index=True)
+print("len(events) "+str(len(events)))
+
 
 # Recipe outputs
 out = d.Dataset("geocodage_quali_ban")
