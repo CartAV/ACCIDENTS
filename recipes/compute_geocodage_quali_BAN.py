@@ -20,6 +20,9 @@ maxtries=4
 nthreads=3
 j=0
 
+# Recipe outputs
+out = d.Dataset("geocodage_quali_BAN")
+
 def adresse_submit(df):
     global i
     s = StringIO.StringIO()
@@ -84,8 +87,8 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=nthreads) as executor:
     for s in concurrent.futures.as_completed(enrich):  
         j+=split
         try:
-            print(s.result())
-            liste.append(s.result())
+            #print(s.result())
+            out.write_with_schema(s.result())
         except Exception as exc:
             print("chunk %r to %r generated an exception: %r\n%r" %(j-split,j,exc,s))
         else:
@@ -93,12 +96,11 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=nthreads) as executor:
                 print("geocoded chunk %r to %r" %(j-verbosechunksize,j))
 
 print "Going to concat"
-print("len(liste) "+str(len(liste)))
+#print("len(liste) "+str(len(liste)))
 #print(liste[0])
-events=pd.concat(liste,ignore_index=True)
-print("len(events) "+str(len(events)))
+#events=pd.concat(liste,ignore_index=True)
+#print("len(events) "+str(len(events)))
 
 
-# Recipe outputs
-out = d.Dataset("geocodage_quali_BAN")
-out.write_with_schema(events)
+
+
