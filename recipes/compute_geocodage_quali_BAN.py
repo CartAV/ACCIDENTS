@@ -91,7 +91,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=nthreads) as executor:
                 print("geocoded chunk %r to %r" %(j-verbosechunksize,j))
 
 print "Going to concat"
-print("len(list) "+str(len(list)))
+print("len(liste) "+str(len(liste)))
 events=pd.concat(liste,ignore_index=True)
 
 # Recipe outputs
