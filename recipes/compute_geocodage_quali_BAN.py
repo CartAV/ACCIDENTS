@@ -64,7 +64,7 @@ def adresse_submit(df):
             t+=1
         
         
-    return 
+    return res
 
 
 
