@@ -49,7 +49,7 @@ def adresse_submit(df):
         if (response.status_code == 200):
             res=pd.read_csv(StringIO.StringIO(response.content.decode('utf-8')),sep=",",quotechar='"')
             res=pd.merge(df,res,how='left',on=['Num_Acc','adr','city_code'])
-            print(res)
+            #print(res)
             t=maxtries+1
         elif (response.status_code == 400):
             print("chunk %r to %r generated an exception, try #%r" %(i-split,i,t))
