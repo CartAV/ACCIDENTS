@@ -88,8 +88,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=nthreads) as executor:
         j+=split
         try:
             #print(s.result())
-            out = d.Dataset("geocodage_quali_BAN")
-            out.write_with_schema(s.result())
+            liste.append(s.result)
         except Exception as exc:
             print("chunk %r to %r generated an exception: %r\n%r" %(j-split,j,exc,s))
         else:
@@ -99,9 +98,11 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=nthreads) as executor:
 print "Going to concat"
 #print("len(liste) "+str(len(liste)))
 #print(liste[0])
-#events=pd.concat(liste,ignore_index=True)
+events=pd.concat(liste,ignore_index=True)
 #print("len(events) "+str(len(events)))
 
+out = d.Dataset("geocodage_quali_BAN")
+out.write_with_schema(events)
 
 
 
