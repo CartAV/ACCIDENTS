@@ -7,6 +7,8 @@ import concurrent.futures
 from sklearn.utils import shuffle
 from dataiku import pandasutils as pdu
 from collections import OrderedDict
+import pdb
+
 
 # Recipe inputs
 f = d.Dataset("geocodage_quali")
