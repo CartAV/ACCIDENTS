@@ -83,6 +83,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=nthreads) as executor:
     for s in concurrent.futures.as_completed(enrich):  
         j+=split
         try:
+            print(s.result())
             liste.append(s.result())
         except Exception as exc:
             print("chunk %r to %r generated an exception: %r\n%r" %(j-split,j,exc,s))
