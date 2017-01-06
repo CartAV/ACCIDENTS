@@ -779,6 +779,25 @@
         },
         "sql": "select dep, com from \"accidents_caracteristiques\"  where dep like \u002720%\u0027",
         "expandedSql": "select dep, com from \"accidents_caracteristiques\"  where dep like \u002720%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "kgmWLVKxVGJK",
+        "runOn": 1483722144654,
+        "runIn": 84,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "wcl3XNMOPCqQQjlu",
+        "hash": "5d4ad5b8627c64225aa70d2ffe28db73",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select dep, com from \"geocodage_quali_joined\"  where code_insee is null",
+        "expandedSql": "select dep, com from \"geocodage_quali_joined\"  where code_insee is null"
       }
     ]
   }
