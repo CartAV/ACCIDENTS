@@ -665,6 +665,25 @@
         },
         "sql": "select count(*) from \"accidents_caracteristiques\"  where dep \u003d \u00272A0\u0027",
         "expandedSql": "select count(*) from \"accidents_caracteristiques\"  where dep \u003d \u00272A0\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "zfZaKN08o5z5",
+        "runOn": 1483713781441,
+        "runIn": 78,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Qhxv2aHHRm71G0ag",
+        "hash": "8759d96f00fd80fe615c29158861e35a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"accidents_caracteristiques\"  where like \u00272%%\u0027",
+        "expandedSql": "select count(*) from \"accidents_caracteristiques\"  where like \u00272%%\u0027"
       }
     ]
   }
