@@ -145,25 +145,31 @@
         "maxLength": 16200
       },
       {
-        "name": "Nom_commune",
+        "name": "nom_commune_by_insee",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "code_postal_insee",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "code_commune_by_postcode",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "nom_commune_by_postcode",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
         "name": "Code_postal",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "Libelle_acheminement",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "Ligne_5",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -185,13 +191,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483701040808
+    "lastModifiedOn": 1483701206038
   },
   "customMeta": {
     "kv": {}
