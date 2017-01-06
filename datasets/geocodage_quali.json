@@ -16,7 +16,7 @@
   "checks": [],
   "managed": true,
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
@@ -137,10 +137,10 @@
       },
       {
         "name": "city_code",
-        "type": "bigint",
+        "type": "string",
         "meaning": "Text",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       }
     ]
   },
@@ -159,13 +159,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483537740709
+    "lastModifiedOn": 1483700698309
   },
   "customMeta": {
     "kv": {}
