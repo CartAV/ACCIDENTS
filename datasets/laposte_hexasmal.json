@@ -41,31 +41,6 @@
         "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
-      },
-      {
-        "name": "Nom_commune",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "Code_postal",
-        "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "Libelle_acheminement",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "Ligne_5",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
       }
     ]
   },
@@ -84,13 +59,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483700213424
+    "lastModifiedOn": 1483700370963
   },
   "customMeta": {
     "kv": {}
