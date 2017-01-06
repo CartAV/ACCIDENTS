@@ -912,6 +912,25 @@
         },
         "sql": "select count(*) from \"geocodage_quali\"",
         "expandedSql": "select count(*) from \"geocodage_quali\""
+      },
+      {
+        "mode": "SQL",
+        "id": "U6NaM5BQL0E4",
+        "runOn": 1483722559827,
+        "runIn": 56,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "3nC61cmHqnh7hQaQ",
+        "hash": "cb9f55104d22d044580d8e3f561f6ae1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"geocodage_quali_joined\"",
+        "expandedSql": "select count(*) from \"geocodage_quali_joined\""
       }
     ]
   }
