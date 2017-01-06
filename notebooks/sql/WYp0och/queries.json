@@ -836,6 +836,25 @@
         },
         "sql": "select count(*) from \"geocodage_quali_joined\"  where code_postal_insee is null",
         "expandedSql": "select count(*) from \"geocodage_quali_joined\"  where code_postal_insee is null"
+      },
+      {
+        "mode": "SQL",
+        "id": "edBItcIkjIEI",
+        "runOn": 1483722255686,
+        "runIn": 99,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "X8iHfd79DYIAmCo9",
+        "hash": "32997dc3b08402cc69e7ed5da561d1f5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"geocodage_quali_joined\"  where Code_postal is null",
+        "expandedSql": "select count(*) from \"geocodage_quali_joined\"  where Code_postal is null"
       }
     ]
   }
