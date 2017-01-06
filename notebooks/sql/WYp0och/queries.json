@@ -627,6 +627,25 @@
         },
         "sql": "select count(*) from \"geocodage_quali\"  where dep \u003d \u00272A0\u0027",
         "expandedSql": "select count(*) from \"geocodage_quali\"  where dep \u003d \u00272A0\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "mpTvyfIJJXX0",
+        "runOn": 1483713760393,
+        "runIn": 48,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "P5kmn23wp7dDEyxQ",
+        "hash": "1b9e5e5f725b924fe76a2b6a611f8296",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"accidents_caracteristique\"  where dep \u003d \u00272A0\u0027",
+        "expandedSql": "select count(*) from \"accidents_caracteristique\"  where dep \u003d \u00272A0\u0027"
       }
     ]
   }
