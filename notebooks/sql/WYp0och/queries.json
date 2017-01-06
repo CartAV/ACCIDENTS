@@ -632,10 +632,10 @@
         "mode": "SQL",
         "id": "mpTvyfIJJXX0",
         "runOn": 1483713760393,
-        "runIn": 48,
+        "runIn": 44,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "P5kmn23wp7dDEyxQ",
         "hash": "1b9e5e5f725b924fe76a2b6a611f8296",
         "querySettings": {
