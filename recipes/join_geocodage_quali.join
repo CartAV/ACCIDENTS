@@ -5,9 +5,6 @@
     },
     {
       "index": 1
-    },
-    {
-      "index": 1
     }
   ],
   "joins": [
@@ -16,9 +13,6 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "on": [
         {
           "maxDistance": 1,
@@ -33,28 +27,9 @@
           }
         }
       ],
-      "type": "LEFT"
-    },
-    {
-      "table1": 0,
-      "outerJoinOnTheLeft": true,
-      "table2": 2,
-      "conditionsMode": "AND",
-      "rightLimit": {},
-      "on": [
-        {
-          "maxDistance": 1,
-          "column1": {
-            "name": "city_code",
-            "table": 0
-          },
-          "type": "EQ",
-          "column2": {
-            "name": "Code_postal",
-            "table": 2
-          }
-        }
-      ],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT"
     }
   ],
@@ -179,7 +154,7 @@
     {
       "name": "city_code",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
       "name": "Code_commune_INSEE",
