@@ -18,11 +18,11 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Count by Code_postal",
+      "name": "Count by dep",
       "userEditedName": false,
       "genericDimension0": [
         {
-          "column": "Code_postal",
+          "column": "dep",
           "type": "NUMERICAL",
           "numParams": {
             "mode": "FIXED_NB",
@@ -93,7 +93,7 @@
       "filters": [
         {
           "filterType": "NUMERICAL_FACET",
-          "column": "Code_postal",
+          "column": "code_postal_insee",
           "columnType": "NUMERICAL",
           "isA": "filter",
           "excludedValues": {},
@@ -136,12 +136,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAkElEQVRoge3QOw6AIBBFUVv3YHCNNtSux5bYuzQrExokED7yvDehMzNznCYiogqt1l3P631LkwCrB1g9wOoBVg+weoDVA6y+HHDLAIvu7LoccMtqLg/NHh7sz/DnAC64M7uU5ca6PQbLBRvrziY/AvBL0uDAUeOAl+2Y/ScPLnTUZ8DRb0cFp84GDBiwCPgP3V5ScWe+HA2PAAAAAElFTkSuQmCC",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAm0lEQVRoge2VwQmAMBAEU4QvQSxSsRMbMQ1Ymi9BAsZ4hst5zEA+QXZ38jEEAICEcYn7eVpvUQFh7yDsHYS9g7B3fiVcYyzCjTLUiqxkqBVZyVArspKhVmQlQ1x0vSsZIP12mLdVkvEJhAPCjwPeZCCcyein2FV/CIQzY2tkIJzJaC58V44wwggjjDDC8t+mW+GiR0AYYWfC3jkAp3OmqV57/48AAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Count by Code_postal",
+  "name": "Count by dep",
   "type": "CHART",
   "miniature": {
     "type": "chart",
