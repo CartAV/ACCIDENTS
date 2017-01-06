@@ -1,0 +1,69 @@
+{
+  "steps": [],
+  "tags": [],
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  },
+  "analysisColumnData": {},
+  "explorationSampling": {
+    "selection": {
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "partitionSelectionMethod": "ALL",
+      "maxRecords": 10000,
+      "targetRatio": 0.02
+    },
+    "autoRefreshSample": false,
+    "_refreshTrigger": 0
+  },
+  "vizSampling": {
+    "autoRefreshSample": false,
+    "_refreshTrigger": 0
+  },
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "globalSearchQuery": "",
+  "explorationFilters": [
+    {
+      "column": "latitude",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "latitude",
+        "columnType": "NUMERICAL",
+        "currentMode": "NUMERICAL",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "latitude",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "latitude",
+        "params": {
+          "type": "DoubleMeaning",
+          "ok": true,
+          "nok": false,
+          "empty": false
+        }
+      }
+    }
+  ],
+  "previewMode": "ALL_ROWS",
+  "charts": [],
+  "chartsEngine": "LINO"
+}
