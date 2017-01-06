@@ -608,6 +608,25 @@
         },
         "sql": "select count(*) from \"geocodage_quali\"  where dep \u003d \u00272A0\u0027",
         "expandedSql": "select count(*) from \"geocodage_quali\"  where dep \u003d \u00272A0\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "bzM3kXcfZmMe",
+        "runOn": 1483713724452,
+        "runIn": 114,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "dKI0jlDjCJ3yOQ7f",
+        "hash": "093c71d096819eed59e0743439d31442",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"geocodage_quali\"  where dep \u003d \u00272A0\u0027",
+        "expandedSql": "select count(*) from \"geocodage_quali\"  where dep \u003d \u00272A0\u0027"
       }
     ]
   }
