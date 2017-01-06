@@ -16,9 +16,6 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "on": [
         {
           "maxDistance": 1,
@@ -33,6 +30,9 @@
           }
         }
       ],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT"
     },
     {
@@ -40,6 +40,7 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "maxDistance": 1,
@@ -54,7 +55,6 @@
           }
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -134,7 +134,7 @@
     {
       "name": "com",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
       "name": "adr",
@@ -174,7 +174,7 @@
     {
       "name": "dep",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
       "name": "city_code",
