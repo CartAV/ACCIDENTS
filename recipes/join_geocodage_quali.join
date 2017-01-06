@@ -5,6 +5,9 @@
     },
     {
       "index": 1
+    },
+    {
+      "index": 1
     }
   ],
   "joins": [
@@ -30,6 +33,28 @@
       "rightLimit": {
         "decisionColumn": {}
       },
+      "type": "LEFT"
+    },
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 2,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "on": [
+        {
+          "maxDistance": 1,
+          "column1": {
+            "name": "city_code",
+            "table": 0
+          },
+          "type": "EQ",
+          "column2": {
+            "name": "Code_commune_INSEE",
+            "table": 2
+          }
+        }
+      ],
       "type": "LEFT"
     }
   ],
@@ -162,23 +187,32 @@
       "type": "string"
     },
     {
+      "alias": "nom_commune_by_insee",
       "name": "Nom_commune",
       "table": 1,
       "type": "string"
     },
     {
+      "alias": "code_postal_insee",
       "name": "Code_postal",
       "table": 1,
       "type": "string"
     },
     {
-      "name": "Libelle_acheminement",
-      "table": 1,
+      "alias": "code_commune_by_postcode",
+      "name": "Code_commune_INSEE",
+      "table": 2,
       "type": "string"
     },
     {
-      "name": "Ligne_5",
-      "table": 1,
+      "alias": "nom_commune_by_postcode",
+      "name": "Nom_commune",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "Code_postal",
+      "table": 2,
       "type": "string"
     }
   ]
