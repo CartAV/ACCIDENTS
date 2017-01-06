@@ -760,6 +760,25 @@
         },
         "sql": "select dep, com from \"accidents_caracteristiques\"  where dep like \u00272%%\u0027",
         "expandedSql": "select dep, com from \"accidents_caracteristiques\"  where dep like \u00272%%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "RvhkXWAi1kGF",
+        "runOn": 1483714541968,
+        "runIn": 81,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "rRN2vGwGH1N88ugO",
+        "hash": "5852520888c87a891c98101477bd522a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select dep, com from \"accidents_caracteristiques\"  where dep like \u002720%\u0027",
+        "expandedSql": "select dep, com from \"accidents_caracteristiques\"  where dep like \u002720%\u0027"
       }
     ]
   }
