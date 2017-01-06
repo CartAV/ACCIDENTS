@@ -722,6 +722,25 @@
         },
         "sql": "select distinct(dep) from \"accidents_caracteristiques\"  where dep like \u00272%%\u0027",
         "expandedSql": "select distinct(dep) from \"accidents_caracteristiques\"  where dep like \u00272%%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "e2SBGz8iQpwF",
+        "runOn": 1483714395633,
+        "runIn": 119,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "X3iwRynKb5twIjcI",
+        "hash": "d412a8979d4a42ea6facc095d91d795e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select distinct(dep, com) from \"accidents_caracteristiques\"  where dep like \u00272%%\u0027",
+        "expandedSql": "select distinct(dep, com) from \"accidents_caracteristiques\"  where dep like \u00272%%\u0027"
       }
     ]
   }
