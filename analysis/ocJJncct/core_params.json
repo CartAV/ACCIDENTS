@@ -193,7 +193,7 @@
             "gridLatDeg": 0.5
           },
           "variant": "normal",
-          "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAApklEQVRoge2UOw5AQBBAJa7hcwJnUbmJT+dASqJ3NNUmJGsoLDOb95JpXqbwRkgSAIiGsl82N38/yycQHDsEx85VcLSHIPjGm4fgG28eggWfDWtl/hAEC55gixAseIItQrDgCXY0U3oazbwRfHTq3zzBgifYs0uwNggWPMGeXYK1ETL46IpuHsPXPIBgwRPs2X0SHPJ7z9u5duNd0BT8xiHM/DxDsgP2T/uUv1woCwAAAABJRU5ErkJggg\u003d\u003d",
+          "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAoElEQVRoge3VMQ5FQBhF4RGdJQixHpXKFqxA2JOSDViaiiiuysjMP85JprmRFx+S5xwRJVMzbfv9hL6fzwOceoBT7wl838phKwLeot8Aix2w5QCL/ddg839hgMUOGLChAIsdMGBDeQJnrl/y68ScD3A1r62ZNw9Y7IABA443wGIHDFiDn347aIDFDvgl+MuHUI9rdx55QUxgHw8iui8qRAcjGz6Vbs6C0wAAAABJRU5ErkJggg\u003d\u003d",
           "userEditedName": true
         },
         "$$hashKey": "6HD",
@@ -395,7 +395,7 @@
       "login": "grabenertr",
       "displayName": "Tristam Gräbener"
     },
-    "lastModifiedOn": 1483638419382
+    "lastModifiedOn": 1483692486482
   },
   "creationTag": {
     "versionNumber": 0,
