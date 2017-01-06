@@ -708,10 +708,10 @@
         "mode": "SQL",
         "id": "ESbMFs3Z2Fx5",
         "runOn": 1483714362627,
-        "runIn": 77,
+        "runIn": 119,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "JER541QKzh2NaDnJ",
         "hash": "7c22838adb43e3fb52fb16ccbc98ceb7",
         "querySettings": {
