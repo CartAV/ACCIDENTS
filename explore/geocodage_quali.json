@@ -12,14 +12,14 @@
   "analysisColumnData": {},
   "explorationSampling": {
     "selection": {
-      "samplingMethod": "COLUMN_BASED",
+      "samplingMethod": "HEAD_SEQUENTIAL",
       "partitionSelectionMethod": "ALL",
-      "maxRecords": 100000,
+      "maxRecords": 10000,
       "targetRatio": 0.02,
       "column": "dep"
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 2
+    "_refreshTrigger": 3
   },
   "vizSampling": {
     "autoRefreshSample": false,
