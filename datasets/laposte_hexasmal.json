@@ -33,12 +33,11 @@
     "compress": ""
   },
   "schema": {
-    "userModified": true,
+    "userModified": false,
     "columns": [
       {
         "name": "Code_commune_INSEE",
         "type": "string",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -51,7 +50,18 @@
       {
         "name": "Code_postal",
         "type": "string",
-        "meaning": "Text",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Libelle_acheminement",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Ligne_5",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
@@ -72,13 +82,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483701053291
+    "lastModifiedOn": 1483701072312
   },
   "customMeta": {
     "kv": {}
