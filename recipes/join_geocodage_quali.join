@@ -16,6 +16,9 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "on": [
         {
           "maxDistance": 1,
@@ -30,9 +33,6 @@
           }
         }
       ],
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "type": "LEFT"
     },
     {
@@ -40,7 +40,6 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "maxDistance": 1,
@@ -50,11 +49,12 @@
           },
           "type": "EQ",
           "column2": {
-            "name": "Code_commune_INSEE",
+            "name": "Code_postal",
             "table": 2
           }
         }
       ],
+      "rightLimit": {},
       "type": "LEFT"
     }
   ],
