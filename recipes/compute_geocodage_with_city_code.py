@@ -9,7 +9,7 @@ class CityCodes():
         try:
             import dataiku
             mydataset = dataiku.Dataset("laposte_hexasmal")
-            poste = mydataset.get_dataframe()
+            poste = mydataset.get_dataframe(infer_with_pandas=False)
         except ImportError:
             poste = pd.read_csv('laposte_hexasmal.csv', sep=';', dtype={'Code_postal':str})
     
