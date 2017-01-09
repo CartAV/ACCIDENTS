@@ -1427,6 +1427,25 @@
         },
         "sql": "--select count(*), city_code_source from geocodage_with_city_code group by city_code_source\nselect count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027130\u0027 group by city_code, dep, com order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027",
         "expandedSql": "--select count(*), city_code_source from geocodage_with_city_code group by city_code_source\nselect count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027130\u0027 group by city_code, dep, com order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "kaPQZqZ2bUhu",
+        "runOn": 1483975034864,
+        "runIn": 156,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "YIwUtuIrRPO2JVLC",
+        "hash": "5ca67fea71f5e2f26cbc9a915b97fbe4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select count(*), city_code_source from geocodage_with_city_code group by city_code_source\nselect count(*), dep from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 group by dep order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027",
+        "expandedSql": "--select count(*), city_code_source from geocodage_with_city_code group by city_code_source\nselect count(*), dep from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 group by dep order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027"
       }
     ]
   }
