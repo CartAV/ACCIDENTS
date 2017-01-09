@@ -1793,10 +1793,10 @@
         "mode": "SQL",
         "id": "TWXrnklKdnnj",
         "runOn": 1483975743576,
-        "runIn": 171,
+        "runIn": 200,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "4uk6UQo8S5JRo4f6",
         "hash": "7c7bb1b8a752f80223b76e7669f387f8",
         "querySettings": {
