@@ -1142,6 +1142,25 @@
         },
         "sql": "select count(*), city_code_source from geocodage_with_city_code group by city_code_source;",
         "expandedSql": "select count(*), city_code_source from geocodage_with_city_code group by city_code_source;"
+      },
+      {
+        "mode": "SQL",
+        "id": "pPvqYdlC9ii9",
+        "runOn": 1483973023521,
+        "runIn": 184,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "yehuhmulmF1pVPKY",
+        "hash": "27135d2ae0a1d8c8c2cb24ff45466d6c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*), dep from geocodage_with_city_code group where city_code_source \u003d \u0027Postal\u0027 by dep;",
+        "expandedSql": "select count(*), dep from geocodage_with_city_code group where city_code_source \u003d \u0027Postal\u0027 by dep;"
       }
     ]
   }
