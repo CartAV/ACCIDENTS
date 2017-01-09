@@ -8,7 +8,7 @@ class CityCodes():
         try:
             import dataiku
             mydataset = dataiku.Dataset("laposte_hexasmal")
-            poste = mydataset.get_dataframe()
+            poste = mydataset.get_dataframe(infer_with_pandas=False)
         except ImportError:
             poste = pd.read_csv('laposte_hexasmal.csv', sep=';', dtype={'Code_postal':str})
     
@@ -90,7 +90,7 @@ c = CityCodes()
 
 # Recipe inputs
 geocodage_quali = dataiku.Dataset("geocodage_quali")
-geocodage_quali_df = geocodage_quali.get_dataframe()
+geocodage_quali_df = geocodage_quali.get_dataframe(infer_with_pandas=False)
 
 geocodage_quali_df.apply(lambda x: c.city_code(x["dep"], x["com"]), axis = 1)
 
