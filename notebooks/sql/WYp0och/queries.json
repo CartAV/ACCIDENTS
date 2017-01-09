@@ -2002,10 +2002,10 @@
         "mode": "SQL",
         "id": "Gqx95Mx5e8yN",
         "runOn": 1483978592595,
-        "runIn": 158,
+        "runIn": 106,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "JovjVKey770fXJRE",
         "hash": "6b4546ab313d57ddfaae7e855c2c3682",
         "querySettings": {
