@@ -1047,6 +1047,25 @@
         },
         "sql": "select count(*) from geocodage_quali_joined where Code_commune_Insee is null;",
         "expandedSql": "select count(*) from geocodage_quali_joined where Code_commune_Insee is null;"
+      },
+      {
+        "mode": "SQL",
+        "id": "Ud12679G89gq",
+        "runOn": 1483972755414,
+        "runIn": 94,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Fj8iZMYLi1d4uE2X",
+        "hash": "7e2b9d52ec9a2edb4520380d98045758",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select distinct(city_code_source) from geocodage_with_city_code",
+        "expandedSql": "select distinct(city_code_source) from geocodage_with_city_code"
       }
     ]
   }
