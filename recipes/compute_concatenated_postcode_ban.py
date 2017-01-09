@@ -10,7 +10,7 @@ from collections import OrderedDict
 
 
 # Recipe inputs
-f = d.Dataset("geocodage_quali")
+f = d.Dataset("geocodage_with_city_code")
 i=0
 liste=[]
 futures=[]
@@ -41,7 +41,7 @@ def adresse_submit(df):
             #  ]),
             'data': {                     
                         'columns':'adr', 
-                        'columns':'city_code'
+                        'citycode':'city_code'
             },
             'method': 'post',
             'files': OrderedDict([
@@ -105,7 +105,7 @@ print "Going to concat"
 events=pd.concat(liste,ignore_index=True)
 #print("len(events) "+str(len(events)))
 
-out = d.Dataset("concatenated_postcode_ban")
+out = d.Dataset("geocoded_caracteristiques_accident")
 out.write_with_schema(events)
 
 

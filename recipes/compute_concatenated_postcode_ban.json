@@ -4,7 +4,7 @@
     "main": {
       "items": [
         {
-          "ref": "geocodage_quali",
+          "ref": "geocodage_with_city_code",
           "deps": []
         }
       ]
@@ -14,7 +14,7 @@
     "main": {
       "items": [
         {
-          "ref": "concatenated_postcode_ban",
+          "ref": "geocoded_caracteristiques_accident",
           "appendMode": false
         }
       ]
@@ -28,13 +28,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483696412142
+    "lastModifiedOn": 1483981194483
   },
   "customMeta": {
     "kv": {}
