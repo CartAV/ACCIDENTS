@@ -1009,6 +1009,25 @@
         },
         "sql": "select com from geocodage_quali where com like \u0027%\"%\u0027;",
         "expandedSql": "select com from geocodage_quali where com like \u0027%\"%\u0027;"
+      },
+      {
+        "mode": "SQL",
+        "id": "h8gi16ry9Oua",
+        "runOn": 1483969419022,
+        "runIn": 105,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "zqDn4Q007Eg11hKs",
+        "hash": "0fee176a23a9fa81693190706ebc6443",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from geocodage_quali where city_code is null;",
+        "expandedSql": "select count(*) from geocodage_quali where city_code is null;"
       }
     ]
   }
