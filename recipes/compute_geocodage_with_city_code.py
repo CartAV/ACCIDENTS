@@ -3,7 +3,6 @@ import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
-
 class CityCodes():
     def __init__(self):
         try:
@@ -80,6 +79,9 @@ class CityCodes():
         Outre-Mer : le premier chiffre de la commune correspond au dernier du département
         >>> c.create_code('972', '224')
         '97224'
+        
+        >>> c.create_code('130', '55')
+        '13055'
         """
 
         if departement == '201':
@@ -89,8 +91,7 @@ class CityCodes():
         else:
             short_dep = departement[0:2]
         
-        return short_dep + commune
-
+        return short_dep + commune.zfill(3)
 
 c = CityCodes()
 
