@@ -1389,6 +1389,25 @@
         },
         "sql": "--select count(*), city_code_source from geocodage_with_city_code group by city_code_source\nselect count(*), dep, com from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027130\u0027 group by dep, com order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027",
         "expandedSql": "--select count(*), city_code_source from geocodage_with_city_code group by city_code_source\nselect count(*), dep, com from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027130\u0027 group by dep, com order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "qIrrXsuAW4Pz",
+        "runOn": 1483975002924,
+        "runIn": 140,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "io6I6nySRtIRjd1h",
+        "hash": "92fd7f7af54d8c6c0a5edfdb9343dcdb",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select count(*), city_code_source from geocodage_with_city_code group by city_code_source\nselect count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027130\u0027 group by city_code order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027",
+        "expandedSql": "--select count(*), city_code_source from geocodage_with_city_code group by city_code_source\nselect count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027130\u0027 group by city_code order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027"
       }
     ]
   }
