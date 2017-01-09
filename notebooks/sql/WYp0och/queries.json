@@ -1223,10 +1223,10 @@
         "mode": "SQL",
         "id": "g8SRxQgiOD1O",
         "runOn": 1483973070961,
-        "runIn": 49,
+        "runIn": 130,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "yNYRA7YSjWWmLCVI",
         "hash": "0cc2baf496a423c6ae59a49999c3053f",
         "querySettings": {
