@@ -931,6 +931,25 @@
         },
         "sql": "select count(*) from \"geocodage_quali_joined\"",
         "expandedSql": "select count(*) from \"geocodage_quali_joined\""
+      },
+      {
+        "mode": "SQL",
+        "id": "QLaOQTUBvWwl",
+        "runOn": 1483986316403,
+        "runIn": 80,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "16ZwaU9wuNFfRcKn",
+        "hash": "f8cabf88ac1c5c15fa3e4c40943d5e32",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"geocoded_caracteristiques_accident\" where result_nom is null",
+        "expandedSql": "select count(*) from \"geocoded_caracteristiques_accident\" where result_nom is null"
       }
     ],
     "j2vngiwpdz9": [
