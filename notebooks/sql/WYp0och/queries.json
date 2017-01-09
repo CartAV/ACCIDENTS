@@ -969,6 +969,25 @@
         },
         "sql": "select count(*) from \"geocoded_caracteristiques_accident\" where result_city is null",
         "expandedSql": "select count(*) from \"geocoded_caracteristiques_accident\" where result_city is null"
+      },
+      {
+        "mode": "SQL",
+        "id": "j7IbMtZOfDMJ",
+        "runOn": 1483986340537,
+        "runIn": 107,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "cak0D5wz2TCtRT2b",
+        "hash": "c96653de6f9e9eec1a5043363afd676f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"geocoded_caracteristiques_accident\" where result_label is null",
+        "expandedSql": "select count(*) from \"geocoded_caracteristiques_accident\" where result_label is null"
       }
     ],
     "j2vngiwpdz9": [
