@@ -76,7 +76,7 @@ class CityCodes():
         >>> c.create_code('972', '224')
         '97224'
         """
-"geocodage_quali"
+
         if departement == '201':
             short_dep = '2A'
         elif departement == '202':
