@@ -936,10 +936,10 @@
         "mode": "SQL",
         "id": "QLaOQTUBvWwl",
         "runOn": 1483986316403,
-        "runIn": 80,
+        "runIn": 46,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "16ZwaU9wuNFfRcKn",
         "hash": "f8cabf88ac1c5c15fa3e4c40943d5e32",
         "querySettings": {
