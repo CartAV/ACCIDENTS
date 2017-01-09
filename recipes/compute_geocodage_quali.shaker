@@ -122,20 +122,6 @@
       "alwaysShowComment": false
     },
     {
-      "type": "PythonUDF",
-      "params": {
-        "mode": "CELL",
-        "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027cell\u0027 mode, the process function must return\n    # a single cell value for each row,\n    # which will be affected to a new column.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    departement \u003d row[\u0027dep\u0027]\n    commune \u003d row[\u0027com\u0027]\n    if departement \u003d\u003d \u0027201\u0027:\n        short_dep \u003d \u00272A\u0027\n    elif departement \u003d\u003d \u0027202\u0027:\n        short_dep \u003d \u00272B\u0027\n    else:\n        short_dep \u003d departement[0:2]\n        \n    return short_dep + commune\n",
-        "column": "city_code",
-        "stopOnError": true,
-        "usePythonUnicode": true
-      },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": false,
-      "alwaysShowComment": false
-    },
-    {
       "type": "FindReplace",
       "params": {
         "output": "",
