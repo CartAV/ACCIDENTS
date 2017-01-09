@@ -1123,6 +1123,25 @@
         },
         "sql": "select count(*), city_code_source from geocodage_with_city_code group by city_code_source;",
         "expandedSql": "select count(*), city_code_source from geocodage_with_city_code group by city_code_source;"
+      },
+      {
+        "mode": "SQL",
+        "id": "SYDE9MYudElN",
+        "runOn": 1483972973771,
+        "runIn": 157,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "T3zT1UfxjQCVUpB0",
+        "hash": "b743a4df05c055a7189a7e6ef5e6a101",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*), city_code_source from geocodage_with_city_code group by city_code_source;",
+        "expandedSql": "select count(*), city_code_source from geocodage_with_city_code group by city_code_source;"
       }
     ]
   }
