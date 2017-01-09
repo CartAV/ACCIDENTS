@@ -971,6 +971,25 @@
         },
         "sql": "select com from geocodage_quali where com like \u0027%\"\"%\u0027;",
         "expandedSql": "select com from geocodage_quali where com like \u0027%\"\"%\u0027;"
+      },
+      {
+        "mode": "SQL",
+        "id": "bU0GUrEkfpcn",
+        "runOn": 1483952251562,
+        "runIn": 94,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "1JaYzrI6jR9TQCCY",
+        "hash": "cca8b19fbbc359595d65844ec34721dd",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select com from geocodage_quali where com like \u0027%\"%\u0027;",
+        "expandedSql": "select com from geocodage_quali where com like \u0027%\"%\u0027;"
       }
     ]
   }
