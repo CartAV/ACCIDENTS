@@ -1028,6 +1028,25 @@
         },
         "sql": "select count(*) from geocodage_quali where city_code is null;",
         "expandedSql": "select count(*) from geocodage_quali where city_code is null;"
+      },
+      {
+        "mode": "SQL",
+        "id": "T3ymNsn2JKtW",
+        "runOn": 1483969564737,
+        "runIn": 101,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "D0pFef1iKx5CzhUm",
+        "hash": "1fdce1a4b683fa341ec519a284523874",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from geocodage_quali_joined where Code_commune_Insee is null;",
+        "expandedSql": "select count(*) from geocodage_quali_joined where Code_commune_Insee is null;"
       }
     ]
   }
