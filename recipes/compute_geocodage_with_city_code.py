@@ -13,6 +13,9 @@ class CityCodes():
             poste = pd.read_csv('laposte_hexasmal.csv', sep=';', dtype={'Code_postal':str})
     
         self.city_codes_set = set(poste['Code_commune_INSEE'])
+        # Marseille est à part : son code insee n'est pas dans les données ouvertes de la poste
+        self.city_codes_set.add('13055')
+        
         self.post_to_city_code = {}
         for row in poste.itertuples():
             self.post_to_city_code[row[3]] = row[1]
@@ -76,22 +79,30 @@ class CityCodes():
         >>> c.create_code('201', '247')
         '2A247'
     
-        Outre-Mer : le premier chiffre de la commune correspond au dernier du département
-        >>> c.create_code('972', '224')
+        Outre-Mer : le département est sur 3 caractères, la commune sur 2
+        >>> c.create_code('972', '024')
         '97224'
         
         >>> c.create_code('130', '55')
         '13055'
+        
+        >>> c.create_code('10', '7')
+        '01007'
         """
+        
+        departement = departement.zfill(3)
+        commune = commune.zfill(3)
 
         if departement == '201':
-            short_dep = '2A'
+            departement = '2A'
         elif departement == '202':
-            short_dep = '2B'
+            departement = '2B'
+        elif departement[0:2] in ['97', '98']:
+            commune = commune[1:3]
         else:
-            short_dep = departement[0:2]
+            departement = departement[0:2]
         
-        return short_dep + commune.zfill(3)
+        return departement + commune
 
 c = CityCodes()
 
