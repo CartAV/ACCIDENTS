@@ -1,13 +1,13 @@
 {
   "creator": "chabouisfr",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483543462903
+    "lastModifiedOn": 1483952108099
   },
   "connection": "datalabmaster",
   "name": "chabouisfr\u0027s notebook on datalabmaster",
@@ -18,6 +18,16 @@
   "cells": [
     {
       "id": "augpe7i1t56",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "j2vngiwpdz9",
       "type": "QUERY",
       "querySettings": {
         "addLimitToStatement": true,
