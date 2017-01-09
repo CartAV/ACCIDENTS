@@ -7,18 +7,27 @@ class CityCodes():
     def __init__(self):
         try:
             import dataiku
-            mydataset = dataiku.Dataset("laposte_hexasmal")
+            mydataset = dataiku.Dataset('laposte_hexasmal')
             poste = mydataset.get_dataframe(infer_with_pandas=False)
         except ImportError:
             poste = pd.read_csv('laposte_hexasmal.csv', sep=';', dtype={'Code_postal':str})
     
         self.city_codes_set = set(poste['Code_commune_INSEE'])
-        # Marseille est à part : son code insee n'est pas dans les données ouvertes de la poste
+        # Marseille Lyon sont à part : leur code insee n'est pas dans les données ouvertes de la poste
         self.city_codes_set.add('13055')
+        self.city_codes_set.add('69123')
         
         self.post_to_city_code = {}
         for row in poste.itertuples():
             self.post_to_city_code[row[3]] = row[1]
+            
+        self.old_insee = {
+            '50602': '50129', # Tourlaville
+            '50173': '50129', # Équeurdreville-Hainneville
+            '50203': '50129', # Glacerie
+            '50416': '50129', # Querqueville
+            '59355': '59350', # Lomme
+        }
      
     def is_in_insee(self, code):
         """
@@ -27,18 +36,11 @@ class CityCodes():
         
         >>> c.is_in_insee('75012')
         False
-        """
-        return code in self.city_codes_set
-    
-    def get_city_code(self, postcode):
-        """
-        >>> c.get_city_code('75012')
-        '75112'
         
-        >>> c.get_city_code('75112') is None
+        >>> c.is_in_insee('13055')
         True
         """
-        return self.post_to_city_code.get(postcode, None)
+        return code in self.city_codes_set
     
     def city_code(self, departement, commune):
         """
@@ -57,16 +59,20 @@ class CityCodes():
         Code non valable
         >>> c.city_code('750', '121')
         ('75121', 'Unknown')
+        
+        Le code Insee a changé (par exemple fusion)
+        >>> c.city_code('500', '602')
+        ('50129', 'Old insee code')
         """
         code = self.create_code(departement, commune)
         if self.is_in_insee(code):
-            return (code, "Insee")
+            return (code, 'Insee')
+        elif code in self.post_to_city_code:
+            return (self.post_to_city_code[code], 'Postal')
+        elif code in self.old_insee:
+            return (self.old_insee[code], 'Old insee code')
         else:
-            city_code = self.get_city_code(code)
-            if city_code:
-                return (city_code, "Postal")
-            else:
-                return (code, "Unknown")
+            return (code, 'Unknown')
         
     def create_code(self, departement, commune):
         """Transforme les identifiants des départements et des communes
