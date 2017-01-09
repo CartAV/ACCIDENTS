@@ -1921,6 +1921,25 @@
         },
         "sql": "select count(*), dep, length(dep) from geocodage_with_city_code group by dep\n-- select count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep,com, city_code order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027\n\n--select count(1), dep, com, city_code from geocodage_with_city_code  where substring(dep, 3, 1) !\u003d  substring(com, 1, 1) and  substring(dep, 1, 2) \u003d \u002797\u0027 group by city_code, dep, com order by count DESC",
         "expandedSql": "select count(*), dep, length(dep) from geocodage_with_city_code group by dep\n-- select count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep,com, city_code order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027\n\n--select count(1), dep, com, city_code from geocodage_with_city_code  where substring(dep, 3, 1) !\u003d  substring(com, 1, 1) and  substring(dep, 1, 2) \u003d \u002797\u0027 group by city_code, dep, com order by count DESC"
+      },
+      {
+        "mode": "SQL",
+        "id": "iozEAEDk3jVF",
+        "runOn": 1483975946271,
+        "runIn": 130,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Ykl8Upb9g5fXd7xk",
+        "hash": "4fc1104933cf588a013fb3cd3555d96b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from geocodage_with_city_code where dep\u003d\u0027100\u0027\n-- select count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep,com, city_code order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027\n\n--select count(1), dep, com, city_code from geocodage_with_city_code  where substring(dep, 3, 1) !\u003d  substring(com, 1, 1) and  substring(dep, 1, 2) \u003d \u002797\u0027 group by city_code, dep, com order by count DESC",
+        "expandedSql": "select * from geocodage_with_city_code where dep\u003d\u0027100\u0027\n-- select count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep,com, city_code order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027\n\n--select count(1), dep, com, city_code from geocodage_with_city_code  where substring(dep, 3, 1) !\u003d  substring(com, 1, 1) and  substring(dep, 1, 2) \u003d \u002797\u0027 group by city_code, dep, com order by count DESC"
       }
     ]
   }
