@@ -932,6 +932,27 @@
         "sql": "select count(*) from \"geocodage_quali_joined\"",
         "expandedSql": "select count(*) from \"geocodage_quali_joined\""
       }
+    ],
+    "j2vngiwpdz9": [
+      {
+        "mode": "SQL",
+        "id": "p0fPnoEbhNFv",
+        "runOn": 1483952230576,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "vBamuoceAYbrtlvO",
+        "hash": "7e4c68def364b5f78def469298859c48",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select com from geocodage_quali where com like \"%\"\"%\";",
+        "expandedSql": "select com from geocodage_quali where com like \"%\"\"%\";"
+      }
     ]
   }
 }
