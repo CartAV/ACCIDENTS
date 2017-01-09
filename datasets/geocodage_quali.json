@@ -134,13 +134,6 @@
         "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
-      },
-      {
-        "name": "city_code",
-        "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
       }
     ]
   },
@@ -159,13 +152,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1483716756343
+    "lastModifiedOn": 1483970820331
   },
   "customMeta": {
     "kv": {}
