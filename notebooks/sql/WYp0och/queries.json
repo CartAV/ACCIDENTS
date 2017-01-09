@@ -1503,6 +1503,25 @@
         },
         "sql": "--select count(*), city_code_source from geocodage_with_city_code where dep \u003d \u0027974\u0027 group by city_code_source\n select count(*), dep, com from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep,com order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027",
         "expandedSql": "--select count(*), city_code_source from geocodage_with_city_code where dep \u003d \u0027974\u0027 group by city_code_source\n select count(*), dep, com from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep,com order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "ugch0HEc42AF",
+        "runOn": 1483975216386,
+        "runIn": 118,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "yUx8IFO27tG2Iwh5",
+        "hash": "9dd1492e9a8243fe9eeca615bd6e3e25",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select count(*), city_code_source from geocodage_with_city_code where dep \u003d \u0027974\u0027 group by city_code_source\n select count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep,com, city_code order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027",
+        "expandedSql": "--select count(*), city_code_source from geocodage_with_city_code where dep \u003d \u0027974\u0027 group by city_code_source\n select count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep,com, city_code order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027"
       }
     ]
   }
