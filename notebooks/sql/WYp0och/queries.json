@@ -1465,6 +1465,25 @@
         },
         "sql": "select count(*), city_code_source from geocodage_with_city_code where dep \u003d \u0027974\u0027 group by city_code_source\n-- select count(*), dep from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 group by dep order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027",
         "expandedSql": "select count(*), city_code_source from geocodage_with_city_code where dep \u003d \u0027974\u0027 group by city_code_source\n-- select count(*), dep from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 group by dep order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "Q6In7zqfRjCI",
+        "runOn": 1483975130274,
+        "runIn": 100,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "gnKJ0YVrrYvP4r00",
+        "hash": "1fea837424fbff4dde8bc38e0b3b2292",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select count(*), city_code_source from geocodage_with_city_code where dep \u003d \u0027974\u0027 group by city_code_source\n select count(*), dep, com from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027",
+        "expandedSql": "--select count(*), city_code_source from geocodage_with_city_code where dep \u003d \u0027974\u0027 group by city_code_source\n select count(*), dep, com from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027"
       }
     ]
   }
