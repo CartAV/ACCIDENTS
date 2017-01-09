@@ -59,7 +59,7 @@ class CityCodes():
         if self.is_in_insee(code):
             return code
         else:
-            print "Code inconnu : " + code + " " + self.get_city_code(code)
+            print "Code inconnu : " + code + " " + (self.get_city_code(code) or "None")
             return self.get_city_code(code) or code
         
     def create_code(self, departement, commune):
