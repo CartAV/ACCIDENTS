@@ -153,6 +153,28 @@
         ]
       },
       "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "normalization": "EXACT",
+        "matching": "SUBSTRING",
+        "stopAfterFirstMatch": false,
+        "mapping": [
+          {
+            "from": "\""
+          }
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "com"
+        ]
+      },
+      "metaType": "PROCESSOR",
       "preview": true,
       "disabled": false,
       "alwaysShowComment": false
