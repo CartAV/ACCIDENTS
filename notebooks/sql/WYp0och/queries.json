@@ -1313,6 +1313,25 @@
         },
         "sql": "--select count(*), dep, com from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027130\u0027 group by dep, com order by count desc;\nselect * from geocodage_with_city_code where com \u003d\u003d \u002755\u0027",
         "expandedSql": "--select count(*), dep, com from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027130\u0027 group by dep, com order by count desc;\nselect * from geocodage_with_city_code where com \u003d\u003d \u002755\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "G1GrHJ6yI2f8",
+        "runOn": 1483973489902,
+        "runIn": 56,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "29PoKvX8ufl3tuqk",
+        "hash": "d4df2ccb17bb224da675e62afa35099d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select count(*), dep, com from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027130\u0027 group by dep, com order by count desc;\nselect * from geocodage_with_city_code where com \u003d \u002755\u0027",
+        "expandedSql": "--select count(*), dep, com from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027130\u0027 group by dep, com order by count desc;\nselect * from geocodage_with_city_code where com \u003d \u002755\u0027"
       }
     ]
   }
