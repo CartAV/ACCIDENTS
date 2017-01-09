@@ -1275,6 +1275,25 @@
         },
         "sql": "select count(*), dep from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 group by dep order by count desc;",
         "expandedSql": "select count(*), dep from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 group by dep order by count desc;"
+      },
+      {
+        "mode": "SQL",
+        "id": "rhu7iHp9tHgQ",
+        "runOn": 1483973181985,
+        "runIn": 129,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "7zeOxVgXoAjH7FKW",
+        "hash": "ca2e65dd4051aef3422dd38b584f95c4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*), dep, com from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027130\u0027 group by dep, com order by count desc;",
+        "expandedSql": "select count(*), dep, com from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027130\u0027 group by dep, com order by count desc;"
       }
     ]
   }
