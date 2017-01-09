@@ -1066,6 +1066,25 @@
         },
         "sql": "select distinct(city_code_source) from geocodage_with_city_code",
         "expandedSql": "select distinct(city_code_source) from geocodage_with_city_code"
+      },
+      {
+        "mode": "SQL",
+        "id": "f4QuenUm3TUr",
+        "runOn": 1483972775596,
+        "runIn": 141,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "NaC1N9wAPkXGYgUM",
+        "hash": "c6911535b888b79d996b20608663451d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select cout(*), distinct(city_code_source) from geocodage_with_city_code",
+        "expandedSql": "select cout(*), distinct(city_code_source) from geocodage_with_city_code"
       }
     ]
   }
