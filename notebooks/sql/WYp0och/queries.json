@@ -2021,10 +2021,10 @@
         "mode": "SQL",
         "id": "QzU5hk3YgZgt",
         "runOn": 1483978617754,
-        "runIn": 106,
+        "runIn": 130,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "tLdSxQ1CXNKJFvNw",
         "hash": "b6f1a2cca1eb0babfe2fea398da5dcda",
         "querySettings": {
