@@ -1831,10 +1831,10 @@
         "mode": "SQL",
         "id": "taS1rsCMxXCD",
         "runOn": 1483975753826,
-        "runIn": 113,
+        "runIn": 55,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "M30uNISwKqMlZbq5",
         "hash": "361935299650422006d38e7763264978",
         "querySettings": {
