@@ -2,26 +2,7 @@
   "sections": [
     {
       "title": "First section",
-      "pinlets": [
-        {
-          "box": {
-            "top": 0,
-            "left": 0,
-            "width": 1,
-            "height": 1
-          },
-          "insightId": "dbaCU4L"
-        },
-        {
-          "box": {
-            "top": 1,
-            "left": 0,
-            "width": 1,
-            "height": 1
-          },
-          "insightId": "32ZYRKR"
-        }
-      ]
+      "pinlets": []
     }
   ],
   "datasetNames": [
