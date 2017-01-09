@@ -1432,10 +1432,10 @@
         "mode": "SQL",
         "id": "kaPQZqZ2bUhu",
         "runOn": 1483975034864,
-        "runIn": 156,
+        "runIn": 111,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "YIwUtuIrRPO2JVLC",
         "hash": "5ca67fea71f5e2f26cbc9a915b97fbe4",
         "querySettings": {
