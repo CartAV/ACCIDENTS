@@ -254,7 +254,7 @@
       },
       {
         "name": "ban_geo_point",
-        "type": "string",
+        "type": "geopoint",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -287,13 +287,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484055321781
+    "lastModifiedOn": 1484055327936
   },
   "customMeta": {
     "kv": {}
