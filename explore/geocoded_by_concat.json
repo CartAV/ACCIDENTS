@@ -28,7 +28,76 @@
     "autoRefresh": true
   },
   "globalSearchQuery": "",
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "column": "city_code_x",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "city_code_x",
+        "columnType": "NUMERICAL",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {}
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "city_code_x",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "city_code_x",
+        "params": {
+          "type": "LongMeaning",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      }
+    },
+    {
+      "column": "Num_Acc",
+      "type": "columnFilter",
+      "currentMode": "FACET",
+      "active": true,
+      "facet": {
+        "type": "facet",
+        "column": "Num_Acc",
+        "columnType": "NUMERICAL",
+        "currentMode": "ALPHANUM",
+        "sort": "count",
+        "selectedValues": {
+          "200500000012": true
+        }
+      },
+      "alphanumFilter": {
+        "type": "alphanum",
+        "column": "Num_Acc",
+        "values": [],
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "validityFilter": {
+        "type": "validity",
+        "column": "Num_Acc",
+        "params": {
+          "type": "LongMeaning",
+          "ok": true,
+          "nok": true,
+          "empty": true
+        }
+      }
+    }
+  ],
   "previewMode": "ALL_ROWS",
   "charts": [],
   "chartsEngine": "LINO"
