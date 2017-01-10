@@ -194,9 +194,9 @@
       },
       {
         "name": "result_housenumber",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "result_name",
@@ -251,12 +251,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1484046412317
+    "lastModifiedOn": 1484046785470
   },
   "customMeta": {
     "kv": {}
