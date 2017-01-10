@@ -37,7 +37,7 @@ def adresse_submit(df):
         kwargs = {
             'data': OrderedDict([                     
                     ('columns', 'adr'), 
-                    ('citycode', 'city_code')
+                    ('columns', 'city_code')
               ]),
             #'data': {                     
             #            'columns':'adr', 
