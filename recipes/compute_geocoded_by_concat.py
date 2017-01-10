@@ -35,14 +35,14 @@ def adresse_submit(df):
         df_adr.to_csv(s,sep=",", quotechar='"',encoding="utf8",index=False)
         requests_session = requests.Session()
         kwargs = {
-            #'data': OrderedDict([                     
-            #        ('columns', 'adr'), 
-            #        ('citycode', 'city_code')
-            #  ]),
-            'data': {                     
-                        'columns':'adr', 
-                        'citycode':'city_code'
-            },
+            'data': OrderedDict([                     
+                    ('columns', 'adr'), 
+                    ('citycode', 'city_code')
+              ]),
+            #'data': {                     
+            #            'columns':'adr', 
+            #            'citycode':'city_code'
+            #},
             'method': 'post',
             'files': OrderedDict([
                 ('data', s.getvalue())
