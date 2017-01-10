@@ -49,7 +49,7 @@ def adresse_submit(df):
             ]),
             'stream': True,
             'timeout':500,
-            'url': 'http://fa-srv-1/search/csv/'
+            'url': 'http://api-adresse.data.gouv.fr/search/csv/'
         }
     
         response = requests_session.request(**kwargs)
