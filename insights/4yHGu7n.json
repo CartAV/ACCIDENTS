@@ -16,31 +16,77 @@
     },
     "dataset": "geocoded_by_concat_quality_check_copy",
     "chart": {
-      "type": "grouped_columns",
+      "type": "scatter_map",
       "variant": "normal",
       "name": "Chart",
       "userEditedName": false,
+      "genericDimension0": [],
+      "genericDimension1": [],
+      "genericMeasures": [],
       "xDimension": [],
       "yDimension": [],
       "uaXDimension": [],
       "uaYDimension": [],
-      "uaSize": [],
+      "uaSize": [
+        {
+          "column": "distance_ban_gps",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0
+        }
+      ],
       "uaShape": [],
-      "uaColor": [],
+      "uaColor": [
+        {
+          "column": "result_score",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0
+        }
+      ],
       "uaTooltip": [],
       "groupDimension": [],
       "xMeasure": [],
       "yMeasure": [],
       "colorMeasure": [],
       "sizeMeasure": [],
-      "geometry": [],
+      "geometry": [
+        {
+          "column": "gps_geo_point",
+          "type": "GEOPOINT",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0
+        }
+      ],
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "NUMERICAL_FACET",
+          "column": "result_score",
+          "columnType": "NUMERICAL",
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        },
+        {
+          "filterType": "NUMERICAL_FACET",
+          "column": "distance_ban_gps",
+          "columnType": "NUMERICAL",
+          "minValue": 1.0,
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        }
+      ],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
-      "hexbinRadius": 0,
+      "hexbinRadius": 20,
       "smoothing": false,
       "showLegend": true,
       "showXAxis": false,
