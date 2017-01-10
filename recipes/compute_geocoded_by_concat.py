@@ -10,14 +10,14 @@ from collections import OrderedDict
 
 
 # Recipe inputs
-f = d.Dataset("geocodage_with_city_code_filtered")
+f = d.Dataset("geocodage_with_city_code")
 i=0
 liste=[]
 futures=[]
 split=500
 verbosechunksize=2000
 maxtries=4
-nthreads=3
+nthreads=1
 j=0
 
 # Recipe outputs
