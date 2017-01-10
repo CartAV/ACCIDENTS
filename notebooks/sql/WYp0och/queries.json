@@ -2244,6 +2244,25 @@
         },
         "sql": "--select * from geocodage_with_city_code where dep\u003d\u002710\u0027\n-- select count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep,com, city_code order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027\n\n--select count(1), dep, com, city_code from geocodage_with_city_code  where substring(dep, 3, 1) !\u003d  substring(com, 1, 1) and  substring(dep, 1, 2) \u003d \u002797\u0027 group by city_code, dep, com order by count DESC\n\n--select count(*), city_code_source from geocodage_with_city_code group by city_code_source\n--select city_code, com, dep from geocodage_with_city_code where length(city_code) !\u003d 5\n--select count(*), city_code, com, dep from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 group by city_code, com, dep order by count DESC;\nselect distinct(v1), count(*) from accidents_lieux group by v1",
         "expandedSql": "--select * from geocodage_with_city_code where dep\u003d\u002710\u0027\n-- select count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep,com, city_code order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027\n\n--select count(1), dep, com, city_code from geocodage_with_city_code  where substring(dep, 3, 1) !\u003d  substring(com, 1, 1) and  substring(dep, 1, 2) \u003d \u002797\u0027 group by city_code, dep, com order by count DESC\n\n--select count(*), city_code_source from geocodage_with_city_code group by city_code_source\n--select city_code, com, dep from geocodage_with_city_code where length(city_code) !\u003d 5\n--select count(*), city_code, com, dep from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 group by city_code, com, dep order by count DESC;\nselect distinct(v1), count(*) from accidents_lieux group by v1"
+      },
+      {
+        "mode": "SQL",
+        "id": "Px5mS8w6DoqI",
+        "runOn": 1484054761867,
+        "runIn": 95,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "1t09oJeXw6JJRWz3",
+        "hash": "9a320fbc8abb49421d6c062c01a590a0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select * from geocodage_with_city_code where dep\u003d\u002710\u0027\n-- select count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep,com, city_code order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027\n\n--select count(1), dep, com, city_code from geocodage_with_city_code  where substring(dep, 3, 1) !\u003d  substring(com, 1, 1) and  substring(dep, 1, 2) \u003d \u002797\u0027 group by city_code, dep, com order by count DESC\n\n--select count(*), city_code_source from geocodage_with_city_code group by city_code_source\n--select city_code, com, dep from geocodage_with_city_code where length(city_code) !\u003d 5\n--select count(*), city_code, com, dep from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 group by city_code, com, dep order by count DESC;\n--select distinct(v1), count(*) from accidents_lieux group by v1\nselect * from \"geocoded_by_concat_quality_check\" where distance_ban_gps \u003e 10000 and result_score \u003e 0.9",
+        "expandedSql": "--select * from geocodage_with_city_code where dep\u003d\u002710\u0027\n-- select count(*), dep, com, city_code from geocodage_with_city_code  where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027 group by dep,com, city_code order by count desc;\n--select * from geocodage_with_city_code where com \u003d \u002755\u0027\n\n--select count(1), dep, com, city_code from geocodage_with_city_code  where substring(dep, 3, 1) !\u003d  substring(com, 1, 1) and  substring(dep, 1, 2) \u003d \u002797\u0027 group by city_code, dep, com order by count DESC\n\n--select count(*), city_code_source from geocodage_with_city_code group by city_code_source\n--select city_code, com, dep from geocodage_with_city_code where length(city_code) !\u003d 5\n--select count(*), city_code, com, dep from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 group by city_code, com, dep order by count DESC;\n--select distinct(v1), count(*) from accidents_lieux group by v1\nselect * from \"geocoded_by_concat_quality_check\" where distance_ban_gps \u003e 10000 and result_score \u003e 0.9"
       }
     ]
   }
