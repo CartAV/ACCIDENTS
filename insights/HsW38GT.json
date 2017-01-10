@@ -4,13 +4,13 @@
       "chartsEngine": "LINO",
       "sampling": {
         "selection": {
-          "samplingMethod": "HEAD_SEQUENTIAL",
+          "samplingMethod": "FULL",
           "partitionSelectionMethod": "ALL",
           "maxRecords": 10000,
           "targetRatio": 0.02
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 0
+        "_refreshTrigger": 1
       },
       "steps": []
     },
@@ -27,7 +27,7 @@
           "numParams": {
             "mode": "FIXED_NB",
             "nbBins": 10,
-            "binSize": 100,
+            "binSize": "5",
             "emptyBinsMode": "ZEROS"
           },
           "maxValues": 100,
@@ -90,7 +90,51 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
-      "filters": [],
+      "filters": [
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "distance_ban_gps",
+          "columnType": "NUMERICAL",
+          "isA": "filter",
+          "excludedValues": {
+            "NaN": true
+          },
+          "explicitExclude": false
+        },
+        {
+          "filterType": "NUMERICAL_FACET",
+          "column": "distance_ban_gps",
+          "columnType": "NUMERICAL",
+          "maxValue": 1000.74,
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        },
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "result_type",
+          "columnType": "ALPHANUM",
+          "isA": "filter",
+          "excludedValues": {
+            "street": true,
+            "locality": true,
+            "village": true,
+            "town": true,
+            "city": true,
+            "___dku_no_value___": true
+          },
+          "explicitExclude": false
+        },
+        {
+          "filterType": "NUMERICAL_FACET",
+          "column": "result_score",
+          "columnType": "NUMERICAL",
+          "minValue": 0.8778508,
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        }
+      ],
       "axis1LogScale": false,
       "axis2LogScale": false,
       "includeZero": true,
@@ -127,7 +171,7 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAV0lEQVRoge3PsQnAMBAEQXWiMt2Yc7em1IEigxEsM/DJR7djABnzup/3nd7zO8F1gusE1wmuE1wnuE5wneA6wXWC6wTXCa4TXCe4TnCd4DrBm//JfXywALQrIxdyl2QWAAAAAElFTkSuQmCC",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAT0lEQVRoge3PsQ3AIAADQTbJmCxGn9VSsQIorzvJvX8MIOWZ6927/eUIwXWC6wTXCa4TXCe4TnCd4DrBdYLrBNcJrhNcJ7hOcJ3gOsH82wcKftWy3nVvagAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
