@@ -49,7 +49,8 @@ def adresse_submit(df):
             ]),
             'stream': True,
             'timeout':500,
-            'url': 'http://api-adresse.data.gouv.fr/search/csv/'
+            'url': 'http://api-adresse.data.gouv.fr/search/csv/',
+            'proxies': {'http': 'http://proxy-1:3128'}
         }
     
         response = requests_session.request(**kwargs)
