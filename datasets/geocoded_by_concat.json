@@ -215,6 +215,12 @@
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
+      },
+      {
+        "name": "result_citycode",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
       }
     ]
   },
@@ -233,12 +239,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1484044390909
+    "lastModifiedOn": 1484045216256
   },
   "customMeta": {
     "kv": {}
