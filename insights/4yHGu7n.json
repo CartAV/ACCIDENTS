@@ -69,6 +69,7 @@
           "filterType": "NUMERICAL_FACET",
           "column": "result_score",
           "columnType": "NUMERICAL",
+          "minValue": 0.892942,
           "isA": "filter",
           "excludedValues": {},
           "explicitExclude": false
@@ -77,7 +78,7 @@
           "filterType": "NUMERICAL_FACET",
           "column": "distance_ban_gps",
           "columnType": "NUMERICAL",
-          "minValue": 1.0,
+          "minValue": 164.6790412,
           "isA": "filter",
           "excludedValues": {},
           "explicitExclude": false
