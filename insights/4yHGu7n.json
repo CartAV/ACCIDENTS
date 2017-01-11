@@ -4,13 +4,13 @@
       "chartsEngine": "LINO",
       "sampling": {
         "selection": {
-          "samplingMethod": "HEAD_SEQUENTIAL",
+          "samplingMethod": "FULL",
           "partitionSelectionMethod": "ALL",
           "maxRecords": 10000,
           "targetRatio": 0.02
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 0
+        "_refreshTrigger": 1
       },
       "steps": []
     },
@@ -54,7 +54,7 @@
       "sizeMeasure": [],
       "geometry": [
         {
-          "column": "gps_geo_point",
+          "column": "ban_geo_point",
           "type": "GEOPOINT",
           "treatAsAlphanum": false,
           "isA": "ua",
@@ -69,7 +69,7 @@
           "filterType": "NUMERICAL_FACET",
           "column": "result_score",
           "columnType": "NUMERICAL",
-          "minValue": 0.892942,
+          "minValue": 0.6817114,
           "isA": "filter",
           "excludedValues": {},
           "explicitExclude": false
@@ -78,7 +78,7 @@
           "filterType": "NUMERICAL_FACET",
           "column": "distance_ban_gps",
           "columnType": "NUMERICAL",
-          "minValue": 164.6790412,
+          "minValue": 10043.21347168,
           "isA": "filter",
           "excludedValues": {},
           "explicitExclude": false
