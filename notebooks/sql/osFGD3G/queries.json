@@ -1144,6 +1144,25 @@
         },
         "sql": "select * from accidents_caracteristiques where length(lat) \u003e 1 and lat::int \u003e 52 * 100000\n",
         "expandedSql": "select * from accidents_caracteristiques where length(lat) \u003e 1 and lat::int \u003e 52 * 100000\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "GyPhEifWGmgt",
+        "runOn": 1484322189285,
+        "runIn": 125,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "J57bty6pglXyijWD",
+        "hash": "de8addce9333800ca449547a8f3ede7a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from accidents_caracteristiques where\n    (length(lat) \u003e 1 and lat::int \u003e 52 * 100000) or\n    (length(lat) \u003e 1 and lat::int \u003c 41 * 100000)\n",
+        "expandedSql": "select * from accidents_caracteristiques where\n    (length(lat) \u003e 1 and lat::int \u003e 52 * 100000) or\n    (length(lat) \u003e 1 and lat::int \u003c 41 * 100000)\n"
       }
     ]
   }
