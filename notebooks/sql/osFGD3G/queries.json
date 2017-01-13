@@ -1095,7 +1095,7 @@
         "runIn": 103,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "7iGrSVZ1Eexkvjpm",
         "hash": "55709bbc17a086a126632b75f3fe7d5f",
         "querySettings": {
