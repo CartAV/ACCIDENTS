@@ -726,6 +726,25 @@
         },
         "sql": "--select distinct(lat) from accidents_caracteristiques where length(long) \u003d 1\nselect count(*) from accidents_caracteristiques where length(long) \u003d 1 or length(lat) \u003d 1",
         "expandedSql": "--select distinct(lat) from accidents_caracteristiques where length(long) \u003d 1\nselect count(*) from accidents_caracteristiques where length(long) \u003d 1 or length(lat) \u003d 1"
+      },
+      {
+        "mode": "SQL",
+        "id": "MUfiYHm8FvKs",
+        "runOn": 1484317979857,
+        "runIn": 102,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "mdH5ZeSlIVrXRHQi",
+        "hash": "ac2adc6d0541f71e19bb3b38dda4efb6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select distinct(lat) from accidents_caracteristiques where length(long) \u003d 1\nselect distinct(long) from accidents_caracteristiques where length(long) \u003d 1 or length(lat) \u003d 1",
+        "expandedSql": "--select distinct(lat) from accidents_caracteristiques where length(long) \u003d 1\nselect distinct(long) from accidents_caracteristiques where length(long) \u003d 1 or length(lat) \u003d 1"
       }
     ]
   }
