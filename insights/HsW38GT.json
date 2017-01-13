@@ -115,14 +115,7 @@
           "column": "result_type",
           "columnType": "ALPHANUM",
           "isA": "filter",
-          "excludedValues": {
-            "street": true,
-            "locality": true,
-            "village": true,
-            "town": true,
-            "city": true,
-            "___dku_no_value___": true
-          },
+          "excludedValues": {},
           "explicitExclude": false
         },
         {
