@@ -1,13 +1,13 @@
 {
   "creator": "grabenertr",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484316730905
+    "lastModifiedOn": 1484317483699
   },
   "connection": "datalabmaster",
   "name": "Bidouilles à Tristram",
@@ -29,6 +29,7 @@
     {
       "id": "qr7fn2546y8",
       "type": "QUERY",
+      "name": "Coordonnées non numériques",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
