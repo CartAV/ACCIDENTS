@@ -135,6 +135,25 @@
         },
         "sql": "select count(*) from accidents_caracteristiques where long \u003d\u003d -1",
         "expandedSql": "select count(*) from accidents_caracteristiques where long \u003d\u003d -1"
+      },
+      {
+        "mode": "SQL",
+        "id": "tLvsy0UmM5Kz",
+        "runOn": 1484316844018,
+        "runIn": 47,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "QkB1Xi2ZGgtqRXqD",
+        "hash": "ae1e71fa6182e9b7152b6a73923a2619",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from accidents_caracteristiques where long \u003d\u003d \u0027-\u0027",
+        "expandedSql": "select count(*) from accidents_caracteristiques where long \u003d\u003d \u0027-\u0027"
       }
     ]
   }
