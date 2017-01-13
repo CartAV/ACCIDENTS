@@ -19,6 +19,25 @@
         },
         "sql": "Select count(*) from geocodage_quali where gps is not null and gps !\u003d \u0027M\u0027",
         "expandedSql": "Select count(*) from geocodage_quali where gps is not null and gps !\u003d \u0027M\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "riFgUqJO7EtQ",
+        "runOn": 1484316091595,
+        "runIn": 93,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "dlEZhhDSM97rEqvv",
+        "hash": "abb28be80e4077721f8c7598de3337f5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "Select count(*), min(lon), max(lon), min(lat), max(lat) from geocodage_quali where gps is not null and gps !\u003d \u0027M\u0027",
+        "expandedSql": "Select count(*), min(lon), max(lon), min(lat), max(lat) from geocodage_quali where gps is not null and gps !\u003d \u0027M\u0027"
       }
     ]
   }
