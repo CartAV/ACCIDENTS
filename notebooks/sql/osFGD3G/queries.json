@@ -214,10 +214,10 @@
         "mode": "SQL",
         "id": "PJpLPsOicdDp",
         "runOn": 1484326802232,
-        "runIn": 6929,
+        "runIn": 7134,
         "runBy": "antoinefa",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "268v4pXYZJeYbewl",
         "hash": "d8f412cf0fe1bf14ab165dce49887cd9",
         "querySettings": {
