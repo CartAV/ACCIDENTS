@@ -306,6 +306,25 @@
         },
         "sql": "select * from accidents_caracteristiques where long \u003d \u0027-\u0027 limit 100",
         "expandedSql": "select * from accidents_caracteristiques where long \u003d \u0027-\u0027 limit 100"
+      },
+      {
+        "mode": "SQL",
+        "id": "bCKwmGSseS4q",
+        "runOn": 1484317025245,
+        "runIn": 80,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "INW8UI1hgPJJL8Il",
+        "hash": "b1e5c408774fa25980b48f2a4d8adce1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select distinct(dep) from accidents_caracteristiques where long \u003d \u0027-\u0027 limit 100",
+        "expandedSql": "select distinct(dep) from accidents_caracteristiques where long \u003d \u0027-\u0027 limit 100"
       }
     ]
   }
