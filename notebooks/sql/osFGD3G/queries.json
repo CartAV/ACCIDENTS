@@ -1,0 +1,25 @@
+{
+  "queries": {
+    "96krh4o5fxg": [
+      {
+        "mode": "SQL",
+        "id": "Uh1D5aLMITD2",
+        "runOn": 1484316063665,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "mrNlqqvbTBChCLHw",
+        "hash": "fd1054607759b268b9934efda2ebc818",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "Select count(*) from geocodage_quali where gps is not null and gps !\u003d \u0027M\u0027",
+        "expandedSql": "Select count(*) from geocodage_quali where gps is not null and gps !\u003d \u0027M\u0027"
+      }
+    ]
+  }
+}
