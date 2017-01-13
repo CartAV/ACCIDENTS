@@ -76,6 +76,25 @@
         },
         "sql": "Select count(*), min(long), max(long), min(lat), max(lat) from geocodage_quali;-- where gps is not null and gps !\u003d \u0027M\u0027",
         "expandedSql": "Select count(*), min(long), max(long), min(lat), max(lat) from geocodage_quali;-- where gps is not null and gps !\u003d \u0027M\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "G9mYkAdLoTXQ",
+        "runOn": 1484316170746,
+        "runIn": 95,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "P9m55hSyzzNaCTlj",
+        "hash": "4b20a523d3e910984a28c31baf5de52c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "Select count(*), min(long), max(long), min(lat), max(lat) from accidents_caracteristiques;-- where gps is not null and gps !\u003d \u0027M\u0027",
+        "expandedSql": "Select count(*), min(long), max(long), min(lat), max(lat) from accidents_caracteristiques;-- where gps is not null and gps !\u003d \u0027M\u0027"
       }
     ]
   }
