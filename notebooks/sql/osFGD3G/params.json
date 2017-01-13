@@ -1,13 +1,13 @@
 {
   "creator": "grabenertr",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484316028935
+    "lastModifiedOn": 1484316730905
   },
   "connection": "datalabmaster",
   "name": "Bidouilles à Tristram",
@@ -18,6 +18,16 @@
   "cells": [
     {
       "id": "96krh4o5fxg",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "qr7fn2546y8",
       "type": "QUERY",
       "querySettings": {
         "addLimitToStatement": true,
