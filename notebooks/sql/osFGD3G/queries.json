@@ -1930,10 +1930,10 @@
         "mode": "SQL",
         "id": "EpBwiWV12bct",
         "runOn": 1484326439125,
-        "runIn": 76,
+        "runIn": 48,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "aVo4x2URzpOOfz62",
         "hash": "ab9e12deec655a056dccee88042247d0",
         "querySettings": {
