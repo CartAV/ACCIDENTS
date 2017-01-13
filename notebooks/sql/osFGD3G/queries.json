@@ -192,6 +192,25 @@
         },
         "sql": "select long, lat, gps from accidents_caracteristiques where long \u003d \u0027-\u0027 limit 10",
         "expandedSql": "select long, lat, gps from accidents_caracteristiques where long \u003d \u0027-\u0027 limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "r9st301JJowJ",
+        "runOn": 1484316950187,
+        "runIn": 70,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "irrVC5p838Tpzl0L",
+        "hash": "24e752659ddfb8bf47ac8a1675dc4c33",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select distinct(lat, gps@ from accidents_caracteristiques where long \u003d \u0027-\u0027 limit 10",
+        "expandedSql": "select distinct(lat, gps@ from accidents_caracteristiques where long \u003d \u0027-\u0027 limit 10"
       }
     ]
   }
