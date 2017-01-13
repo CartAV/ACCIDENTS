@@ -190,6 +190,25 @@
         },
         "sql": "--select distinct(gps), count(*) from accidents_caracteristiques group by gps\n/*update  geocoded_by_concat\nset long \u003d ac.long, lat \u003d ac.lat\nfrom accidents_caracteristiques as ac\nwhere geocoded_by_concat.Num_Acc \u003d ac.Num_Acc*/\n\nselect * from accidents_caracteristiques where Num_Acc \u003d 200500000001",
         "expandedSql": "--select distinct(gps), count(*) from accidents_caracteristiques group by gps\n/*update  geocoded_by_concat\nset long \u003d ac.long, lat \u003d ac.lat\nfrom accidents_caracteristiques as ac\nwhere geocoded_by_concat.Num_Acc \u003d ac.Num_Acc*/\n\nselect * from accidents_caracteristiques where Num_Acc \u003d 200500000001"
+      },
+      {
+        "mode": "SQL",
+        "id": "Vs00oXWqs6Gn",
+        "runOn": 1484326059864,
+        "runIn": 146,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "smjrRSkCf5Cyu2hX",
+        "hash": "d8f412cf0fe1bf14ab165dce49887cd9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select distinct(gps), count(*) from accidents_caracteristiques group by gps\nupdate  geocoded_by_concat\nset long \u003d ac.long, lat \u003d ac.lat\nfrom geocodage_quali as ac\nwhere geocoded_by_concat.Num_Acc \u003d ac.Num_Acc\n\n--select * from accidents_caracteristiques where Num_Acc \u003d 200500000001",
+        "expandedSql": "--select distinct(gps), count(*) from accidents_caracteristiques group by gps\nupdate  geocoded_by_concat\nset long \u003d ac.long, lat \u003d ac.lat\nfrom geocodage_quali as ac\nwhere geocoded_by_concat.Num_Acc \u003d ac.Num_Acc\n\n--select * from accidents_caracteristiques where Num_Acc \u003d 200500000001"
       }
     ],
     "qr7fn2546y8": [
