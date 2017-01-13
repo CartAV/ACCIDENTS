@@ -1,13 +1,13 @@
 {
   "creator": "grabenertr",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484318334633
+    "lastModifiedOn": 1484326224424
   },
   "connection": "datalabmaster",
   "name": "Bidouilles à Tristram",
@@ -41,6 +41,16 @@
       "id": "xjfc327ksfd",
       "type": "QUERY",
       "name": "Coordonnées probablement hors de france",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    },
+    {
+      "id": "ew5o7adni7u",
+      "type": "QUERY",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
