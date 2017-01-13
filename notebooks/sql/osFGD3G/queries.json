@@ -1396,10 +1396,10 @@
         "mode": "SQL",
         "id": "QgLygLMo20it",
         "runOn": 1484322694353,
-        "runIn": 187,
+        "runIn": 108,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "ocYikLRaqKBd3Vkf",
         "hash": "8cab177a0358121c3d504fce709c0517",
         "querySettings": {
