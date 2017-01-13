@@ -1562,6 +1562,25 @@
         },
         "sql": "select * from accidents_caracteristiques where\nlat::int \u003e 0\nand gps \u003d \u0027M\u0027\n/*\n    length(lat) \u003e 1 and lat::int \u003c\u003e 0 and gps not in (\u0027R\u0027, \u0027A\u0027, \u0027G\u0027) and (\n    lat::int \u003e 52 * 100000 or\n    lat::int \u003c 41 * 100000 or\n    long::int \u003e 10 * 100000 or\n    long::int \u003c -6 * 100000\n)*/",
         "expandedSql": "select * from accidents_caracteristiques where\nlat::int \u003e 0\nand gps \u003d \u0027M\u0027\n/*\n    length(lat) \u003e 1 and lat::int \u003c\u003e 0 and gps not in (\u0027R\u0027, \u0027A\u0027, \u0027G\u0027) and (\n    lat::int \u003e 52 * 100000 or\n    lat::int \u003c 41 * 100000 or\n    long::int \u003e 10 * 100000 or\n    long::int \u003c -6 * 100000\n)*/"
+      },
+      {
+        "mode": "SQL",
+        "id": "DNzPaKqtIe7b",
+        "runOn": 1484323886364,
+        "runIn": 90,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "JVjbxyTXSZd1RJtA",
+        "hash": "b0e23e89de7c7a194058d3b237c346d3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from accidents_caracteristiques where\nlat::int \u003e 0\nand gps \u003d \u0027Y\u0027\n/*\n    length(lat) \u003e 1 and lat::int \u003c\u003e 0 and gps not in (\u0027R\u0027, \u0027A\u0027, \u0027G\u0027) and (\n    lat::int \u003e 52 * 100000 or\n    lat::int \u003c 41 * 100000 or\n    long::int \u003e 10 * 100000 or\n    long::int \u003c -6 * 100000\n)*/",
+        "expandedSql": "select * from accidents_caracteristiques where\nlat::int \u003e 0\nand gps \u003d \u0027Y\u0027\n/*\n    length(lat) \u003e 1 and lat::int \u003c\u003e 0 and gps not in (\u0027R\u0027, \u0027A\u0027, \u0027G\u0027) and (\n    lat::int \u003e 52 * 100000 or\n    lat::int \u003c 41 * 100000 or\n    long::int \u003e 10 * 100000 or\n    long::int \u003c -6 * 100000\n)*/"
       }
     ]
   }
