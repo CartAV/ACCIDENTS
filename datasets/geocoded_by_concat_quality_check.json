@@ -249,7 +249,7 @@
       {
         "name": "gps_geo_point",
         "type": "string",
-        "meaning": "GeometryMeaning",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -282,13 +282,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484325659849
+    "lastModifiedOn": 1484325696459
   },
   "customMeta": {
     "kv": {}
