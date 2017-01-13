@@ -420,6 +420,25 @@
         },
         "sql": "select distinct(long) from accidents_caracteristiques where length(long) \u003d 2 or length(lat) \u003d 2",
         "expandedSql": "select distinct(long) from accidents_caracteristiques where length(long) \u003d 2 or length(lat) \u003d 2"
+      },
+      {
+        "mode": "SQL",
+        "id": "OKvQVX6VSr5x",
+        "runOn": 1484318650277,
+        "runIn": 120,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "6GkBaq1LITNZjNkD",
+        "hash": "12d8440926b40ab373d474f60ca109f9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select distinct(long) from accidents_caracteristiques where length(long) \u003d 3 or length(lat) \u003d 3",
+        "expandedSql": "select distinct(long) from accidents_caracteristiques where length(long) \u003d 3 or length(lat) \u003d 3"
       }
     ],
     "xjfc327ksfd": [
