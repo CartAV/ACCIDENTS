@@ -593,6 +593,25 @@
         },
         "sql": "select distinct(lat) from accidents_caracteristiques where long \u003d \u00270\u0027;\n--select distinct(dep), count(*) from accidents_caracteristiques where long \u003d \u00270\u0027 or lat \u003d \u00270\u0027 group by dep order by count desc;",
         "expandedSql": "select distinct(lat) from accidents_caracteristiques where long \u003d \u00270\u0027;\n--select distinct(dep), count(*) from accidents_caracteristiques where long \u003d \u00270\u0027 or lat \u003d \u00270\u0027 group by dep order by count desc;"
+      },
+      {
+        "mode": "SQL",
+        "id": "BapkFhpoMt3F",
+        "runOn": 1484317763919,
+        "runIn": 90,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "8NJS4V65wyG92yRo",
+        "hash": "fee234be285aa4d52b4e945697200db2",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select distinct(lat) from accidents_caracteristiques where lat \u003d \u00271\u0027;\n--select distinct(dep), count(*) from accidents_caracteristiques where long \u003d \u00270\u0027 or lat \u003d \u00270\u0027 group by dep order by count desc;",
+        "expandedSql": "select distinct(lat) from accidents_caracteristiques where lat \u003d \u00271\u0027;\n--select distinct(dep), count(*) from accidents_caracteristiques where long \u003d \u00270\u0027 or lat \u003d \u00270\u0027 group by dep order by count desc;"
       }
     ]
   }
