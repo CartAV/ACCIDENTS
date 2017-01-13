@@ -1353,6 +1353,25 @@
         },
         "sql": "select * from accidents_caracteristiques where\n    length(lat) \u003e 1 and lat::int \u003c\u003e 0 and (\n    lat::int \u003e 52 * 100000 or\n    lat::int \u003c 41 * 100000 or\n    long::int \u003e 10 * 100000 or\n    long::int \u003c -6 * 100000\n)",
         "expandedSql": "select * from accidents_caracteristiques where\n    length(lat) \u003e 1 and lat::int \u003c\u003e 0 and (\n    lat::int \u003e 52 * 100000 or\n    lat::int \u003c 41 * 100000 or\n    long::int \u003e 10 * 100000 or\n    long::int \u003c -6 * 100000\n)"
+      },
+      {
+        "mode": "SQL",
+        "id": "7sbjsmxphKsy",
+        "runOn": 1484322642110,
+        "runIn": 158,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "IPoxtL9GOx7MlISY",
+        "hash": "d37b1461b91fcd86a5064fc1b189aa53",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from accidents_caracteristiques where\n    length(lat) \u003e 1 and lat::int \u003c\u003e 0 and gps not in (\u0027R\u0027, \u0027A\u0027) and (\n    lat::int \u003e 52 * 100000 or\n    lat::int \u003c 41 * 100000 or\n    long::int \u003e 10 * 100000 or\n    long::int \u003c -6 * 100000\n)",
+        "expandedSql": "select * from accidents_caracteristiques where\n    length(lat) \u003e 1 and lat::int \u003c\u003e 0 and gps not in (\u0027R\u0027, \u0027A\u0027) and (\n    lat::int \u003e 52 * 100000 or\n    lat::int \u003c 41 * 100000 or\n    long::int \u003e 10 * 100000 or\n    long::int \u003c -6 * 100000\n)"
       }
     ]
   }
