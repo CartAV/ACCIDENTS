@@ -1201,6 +1201,25 @@
         },
         "sql": "select * from accidents_caracteristiques where\n    lat \u003c\u003e 0 and (\n    (length(lat) \u003e 1 and lat::int \u003e 52 * 100000) or\n    (length(lat) \u003e 1 and lat::int \u003c 41 * 100000)\n)",
         "expandedSql": "select * from accidents_caracteristiques where\n    lat \u003c\u003e 0 and (\n    (length(lat) \u003e 1 and lat::int \u003e 52 * 100000) or\n    (length(lat) \u003e 1 and lat::int \u003c 41 * 100000)\n)"
+      },
+      {
+        "mode": "SQL",
+        "id": "qf18jmZGtFpo",
+        "runOn": 1484322245666,
+        "runIn": 193,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "rhR8InmDZjpfLr4w",
+        "hash": "ee2e3100f6ad34db654ec7979b17d46b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from accidents_caracteristiques where\n    lat \u003c\u003e 0 and gps \u003d \u0027M\u0027 (\n    (length(lat) \u003e 1 and lat::int \u003e 52 * 100000) or\n    (length(lat) \u003e 1 and lat::int \u003c 41 * 100000)\n)",
+        "expandedSql": "select * from accidents_caracteristiques where\n    lat \u003c\u003e 0 and gps \u003d \u0027M\u0027 (\n    (length(lat) \u003e 1 and lat::int \u003e 52 * 100000) or\n    (length(lat) \u003e 1 and lat::int \u003c 41 * 100000)\n)"
       }
     ]
   }
