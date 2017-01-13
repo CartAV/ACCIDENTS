@@ -382,6 +382,25 @@
         },
         "sql": "select count(*) from accidents_caracteristiques where length(long) \u003d 1 or length(lat) \u003d 1",
         "expandedSql": "select count(*) from accidents_caracteristiques where length(long) \u003d 1 or length(lat) \u003d 1"
+      },
+      {
+        "mode": "SQL",
+        "id": "wnOEScU6bCIE",
+        "runOn": 1484318614974,
+        "runIn": 102,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Qtdvc0UbQggjfKqt",
+        "hash": "c45465156f7b8f1aae0380667b9f4270",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select distinct(long) from accidents_caracteristiques where length(long) \u003d 1 or length(lat) \u003d 1",
+        "expandedSql": "select distinct(long) from accidents_caracteristiques where length(long) \u003d 1 or length(lat) \u003d 1"
       }
     ],
     "xjfc327ksfd": [
