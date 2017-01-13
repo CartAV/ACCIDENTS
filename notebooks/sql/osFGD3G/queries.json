@@ -515,6 +515,25 @@
         },
         "sql": "select distinct(long) from accidents_caracteristiques where length(long) \u003c 6 or length(lat) \u003c 6",
         "expandedSql": "select distinct(long) from accidents_caracteristiques where length(long) \u003c 6 or length(lat) \u003c 6"
+      },
+      {
+        "mode": "SQL",
+        "id": "LwdUno7UZgua",
+        "runOn": 1484321863096,
+        "runIn": 120,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "FyFwZU50Bby27QEk",
+        "hash": "73a2ce3d9dbf2ef3418c64c0ef8c748c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select distinct(long) from accidents_caracteristiques where length(long) \u003c 7 or length(lat) \u003c 7",
+        "expandedSql": "select distinct(long) from accidents_caracteristiques where length(long) \u003c 7 or length(lat) \u003c 7"
       }
     ],
     "xjfc327ksfd": [
