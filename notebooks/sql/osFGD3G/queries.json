@@ -95,6 +95,25 @@
         },
         "sql": "Select count(*), min(long), max(long), min(lat), max(lat) from accidents_caracteristiques;-- where gps is not null and gps !\u003d \u0027M\u0027",
         "expandedSql": "Select count(*), min(long), max(long), min(lat), max(lat) from accidents_caracteristiques;-- where gps is not null and gps !\u003d \u0027M\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "wme6hJcTcIbM",
+        "runOn": 1484316710478,
+        "runIn": 127,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "DJDLytXkWP22iqyu",
+        "hash": "ed64d6079bc5b59e7f69905ebe2f9c10",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "Select count(*), min(long), max(long), min(lat), max(lat) from accidents_caracteristiques where long \u003c 0;-- where gps is not null and gps !\u003d \u0027M\u0027",
+        "expandedSql": "Select count(*), min(long), max(long), min(lat), max(lat) from accidents_caracteristiques where long \u003c 0;-- where gps is not null and gps !\u003d \u0027M\u0027"
       }
     ]
   }
