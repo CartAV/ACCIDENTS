@@ -287,6 +287,25 @@
         },
         "sql": "select distinct(lat), count(*) from accidents_caracteristiques where long \u003d \u0027-\u0027 group by lat",
         "expandedSql": "select distinct(lat), count(*) from accidents_caracteristiques where long \u003d \u0027-\u0027 group by lat"
+      },
+      {
+        "mode": "SQL",
+        "id": "ZppHJkCi5aBF",
+        "runOn": 1484317006173,
+        "runIn": 66,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "xNDJyakclNv2tI7m",
+        "hash": "0861c65edf370958524d3191dab5db3a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from accidents_caracteristiques where long \u003d \u0027-\u0027 limit 100",
+        "expandedSql": "select * from accidents_caracteristiques where long \u003d \u0027-\u0027 limit 100"
       }
     ]
   }
