@@ -161,6 +161,19 @@
         ]
       },
       "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "PythonUDF",
+      "params": {
+        "mode": "ROW",
+        "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    if row[\u0027lat\u0027] and len(row[\u0027lat\u0027]) \u003c 5:\n        row[\u0027lat\u0027] \u003d None\n        row[\u0027long\u0027] \u003d None\n    if row[\u0027gps\u0027] \u003d\u003d \u0027R\u0027 and row[\u0027lat\u0027]: # La Réunion\n        row[\u0027lat\u0027] \u003d -row[\u0027lat\u0027]\n    if row[\u0027gps\u0027] in (\u0027G\u0027, \u0027A\u0027) and row[\u0027lat\u0027]: # Guadeloupe et Martinique\n        row[\u0027lon\u0027] \u003d -row[\u0027lon\u0027]\n    return row\n",
+        "stopOnError": true,
+        "usePythonUnicode": true
+      },
+      "metaType": "PROCESSOR",
       "preview": true,
       "disabled": false,
       "alwaysShowComment": false
