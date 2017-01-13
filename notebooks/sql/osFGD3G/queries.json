@@ -364,6 +364,27 @@
         "sql": "select distinct(dep), count(*) from accidents_caracteristiques where long \u003d \u0027-\u0027 group by dep order by count desc",
         "expandedSql": "select distinct(dep), count(*) from accidents_caracteristiques where long \u003d \u0027-\u0027 group by dep order by count desc"
       }
+    ],
+    "xjfc327ksfd": [
+      {
+        "mode": "SQL",
+        "id": "j1Y6sqewONDJ",
+        "runOn": 1484317506616,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "JHvtGMC4T3oAhQ56",
+        "hash": "f27a8cd8a61f2d350c1436a17d6d1988",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select distinct(dep), count(*) from accidents_caracteristiques where long \u003d 0 or lat \u003d 0 group by dep",
+        "expandedSql": "select distinct(dep), count(*) from accidents_caracteristiques where long \u003d 0 or lat \u003d 0 group by dep"
+      }
     ]
   }
 }
