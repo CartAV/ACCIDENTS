@@ -248,7 +248,7 @@
       },
       {
         "name": "gps_geo_point",
-        "type": "geopoint",
+        "type": "string",
         "meaning": "GeometryMeaning",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -264,12 +264,6 @@
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
-      },
-      {
-        "name": "latitud",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
       }
     ]
   },
@@ -288,13 +282,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "antoinefa",
-      "displayName": "Fabien Antoine",
-      "email": "fabien.antoine@interieur.gouv.fr"
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484056887536
+    "lastModifiedOn": 1484325659849
   },
   "customMeta": {
     "kv": {}
