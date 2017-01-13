@@ -1792,6 +1792,25 @@
         },
         "sql": "--select count(*) from geocoded_by_concat_quality_check where distance_ban_gps \u003e 10\nselect count(*) from geocoded_by_concat_quality_check where lat is not null;",
         "expandedSql": "--select count(*) from geocoded_by_concat_quality_check where distance_ban_gps \u003e 10\nselect count(*) from geocoded_by_concat_quality_check where lat is not null;"
+      },
+      {
+        "mode": "SQL",
+        "id": "NaxOZ2K0yRn7",
+        "runOn": 1484326328724,
+        "runIn": 84,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "ACd9XmvPYVJofnnX",
+        "hash": "f449d5e53f61b541975c41aaaa55aa40",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "\nselect count(*) from geocoded_by_concat_quality_check where distance_ban_gps \u003e 10\n--select count(*) from geocoded_by_concat_quality_check where lat is not null;",
+        "expandedSql": "\nselect count(*) from geocoded_by_concat_quality_check where distance_ban_gps \u003e 10\n--select count(*) from geocoded_by_concat_quality_check where lat is not null;"
       }
     ]
   }
