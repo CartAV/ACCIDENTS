@@ -422,6 +422,25 @@
         },
         "sql": "select distinct(dep), count(*) from accidents_caracteristiques where long \u003d \u00270\u0027 or lat \u003d \u00270\u0027  and long !\u003d \u0027-\u0027 group by dep",
         "expandedSql": "select distinct(dep), count(*) from accidents_caracteristiques where long \u003d \u00270\u0027 or lat \u003d \u00270\u0027  and long !\u003d \u0027-\u0027 group by dep"
+      },
+      {
+        "mode": "SQL",
+        "id": "ch6MbD0iwwwF",
+        "runOn": 1484317615525,
+        "runIn": 127,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "LXgJKb487fRqOz3a",
+        "hash": "c37aa21a41cabda5d3c2e1dabb56d276",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select distinct(dep), count(*) from accidents_caracteristiques where long \u003d \u00270\u0027 or lat \u003d \u00270\u0027 group by dep order by count desc;",
+        "expandedSql": "select distinct(dep), count(*) from accidents_caracteristiques where long \u003d \u00270\u0027 or lat \u003d \u00270\u0027 group by dep order by count desc;"
       }
     ]
   }
