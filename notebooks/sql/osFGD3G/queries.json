@@ -133,6 +133,25 @@
         },
         "sql": "select distinct(gps) from accidents_caracteristiques",
         "expandedSql": "select distinct(gps) from accidents_caracteristiques"
+      },
+      {
+        "mode": "SQL",
+        "id": "eNPU2vmEGCem",
+        "runOn": 1484323954788,
+        "runIn": 107,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "t4xeUSIoEJXZlwhJ",
+        "hash": "8d7690bc780a872fae1322bb205ba99a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select distinct(gps), count(*) from accidents_caracteristiques group by gps",
+        "expandedSql": "select distinct(gps), count(*) from accidents_caracteristiques group by gps"
       }
     ],
     "qr7fn2546y8": [
