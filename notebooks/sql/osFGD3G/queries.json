@@ -465,10 +465,10 @@
         "mode": "SQL",
         "id": "COuNTOX5DsDN",
         "runOn": 1484317667438,
-        "runIn": 154,
+        "runIn": 92,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "xhVcioORWkLSjYiU",
         "hash": "58538c4fae3a291d7eec6992e34a6273",
         "querySettings": {
