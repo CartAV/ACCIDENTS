@@ -1,0 +1,25 @@
+{
+  "queries": {
+    "1n0q1ed8vod": [
+      {
+        "mode": "SQL",
+        "id": "W4n8APxrQzho",
+        "runOn": 1484579853026,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "b300nrK1gUPTqsWs",
+        "hash": "a7f9ab45901add6ef60e26b013fa6efc",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "update table \"geocoded_by_concat\" gbc set gbc.dep \u003d gcc.dep from \"geocodage_with_city_code\" gcc where gbc.Num_Acc \u003d gcc.Num_Acc;",
+        "expandedSql": "update table \"geocoded_by_concat\" gbc set gbc.dep \u003d gcc.dep from \"geocodage_with_city_code\" gcc where gbc.Num_Acc \u003d gcc.Num_Acc;"
+      }
+    ]
+  }
+}
