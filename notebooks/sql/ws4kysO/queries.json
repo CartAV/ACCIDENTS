@@ -214,10 +214,10 @@
         "mode": "SQL",
         "id": "Hp65BUtrizQL",
         "runOn": 1484580826392,
-        "runIn": 48,
+        "runIn": 59,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "k11OjYlX8oNUrLIn",
         "hash": "c6f95da77fc7b9a6da21e732f590c6b1",
         "querySettings": {
