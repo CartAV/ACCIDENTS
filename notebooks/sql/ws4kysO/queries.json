@@ -385,10 +385,10 @@
         "mode": "SQL",
         "id": "CEMARxGfuh82",
         "runOn": 1484581703851,
-        "runIn": 44,
+        "runIn": 46,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "847kFCLWW1vGv0fx",
         "hash": "616d3674f5022faf992c071166ae3eef",
         "querySettings": {
