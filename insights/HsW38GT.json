@@ -105,7 +105,7 @@
           "filterType": "NUMERICAL_FACET",
           "column": "distance_ban_gps",
           "columnType": "NUMERICAL",
-          "maxValue": 1000.74,
+          "minValue": 137.340077,
           "isA": "filter",
           "excludedValues": {},
           "explicitExclude": false
@@ -164,7 +164,7 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAT0lEQVRoge3PsQ3AIAADQTbJmCxGn9VSsQIorzvJvX8MIOWZ6927/eUIwXWC6wTXCa4TXCe4TnCd4DrBdYLrBNcJrhNcJ7hOcJ3gOsH82wcKftWy3nVvagAAAABJRU5ErkJggg\u003d\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAgElEQVRoge3RsQ2AMAwF0QyCYDpWIGMwDOlZjQZ3RE4DiT/3JDdWkHwiJQAyllxOm963fIJgdQSrI1gdweoIVkewOoLVEXybt7Lb9LrtFbVg2T9PsLMPj2BnHx7Bzj48gp19eAQ7+9FN+VhtHh+oBbt3E9z64aAIbn1AcBAE/9EFxvZ46i75uGIAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
