@@ -19,6 +19,25 @@
         },
         "sql": "update table \"geocoded_by_concat\" gbc set gbc.dep \u003d gcc.dep from \"geocodage_with_city_code\" gcc where gbc.Num_Acc \u003d gcc.Num_Acc;",
         "expandedSql": "update table \"geocoded_by_concat\" gbc set gbc.dep \u003d gcc.dep from \"geocodage_with_city_code\" gcc where gbc.Num_Acc \u003d gcc.Num_Acc;"
+      },
+      {
+        "mode": "SQL",
+        "id": "ZfBJDUKRi3BT",
+        "runOn": 1484579861641,
+        "runIn": 59,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "zGdcPw4Clj7k1Xu4",
+        "hash": "d9b6239be1f584b79b1e6c90430617ff",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "update \"geocoded_by_concat\" gbc set gbc.dep \u003d gcc.dep from \"geocodage_with_city_code\" gcc where gbc.Num_Acc \u003d gcc.Num_Acc;",
+        "expandedSql": "update \"geocoded_by_concat\" gbc set gbc.dep \u003d gcc.dep from \"geocodage_with_city_code\" gcc where gbc.Num_Acc \u003d gcc.Num_Acc;"
       }
     ]
   }
