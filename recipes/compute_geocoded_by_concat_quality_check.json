@@ -31,13 +31,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 19,
     "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
+      "login": "chabouisfr",
+      "displayName": "Francis Chabouis",
+      "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484325739279
+    "lastModifiedOn": 1484581754239
   },
   "customMeta": {
     "kv": {}
