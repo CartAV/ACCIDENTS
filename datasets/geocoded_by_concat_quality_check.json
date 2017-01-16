@@ -98,7 +98,7 @@
       },
       {
         "name": "dep",
-        "type": "bigint",
+        "type": "string",
         "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -283,13 +283,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484581553454
+    "lastModifiedOn": 1484581561159
   },
   "customMeta": {
     "kv": {}
