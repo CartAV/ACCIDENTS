@@ -190,6 +190,25 @@
         },
         "sql": "--update geocoded_by_concat set dep \u003d geocodage_with_city_code.dep from geocodage_with_city_code where geocoded_by_concat.Num_Acc \u003d geocodage_with_city_code.Num_Acc;\nselect dep from geocoded_by_concat limit 10",
         "expandedSql": "--update geocoded_by_concat set dep \u003d geocodage_with_city_code.dep from geocodage_with_city_code where geocoded_by_concat.Num_Acc \u003d geocodage_with_city_code.Num_Acc;\nselect dep from geocoded_by_concat limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "sx2nVlSOlvIA",
+        "runOn": 1484580817164,
+        "runIn": 61,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "PX4vifmruE766IRD",
+        "hash": "7f3c4d1919fbae300ce2637bbbb50d06",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--update geocoded_by_concat set dep \u003d geocodage_with_city_code.dep from geocodage_with_city_code where geocoded_by_concat.Num_Acc \u003d geocodage_with_city_code.Num_Acc;\nselect dep from geocoded_by_concat where len(dep) \u003e 2 limit 10",
+        "expandedSql": "--update geocoded_by_concat set dep \u003d geocodage_with_city_code.dep from geocodage_with_city_code where geocoded_by_concat.Num_Acc \u003d geocodage_with_city_code.Num_Acc;\nselect dep from geocoded_by_concat where len(dep) \u003e 2 limit 10"
       }
     ]
   }
