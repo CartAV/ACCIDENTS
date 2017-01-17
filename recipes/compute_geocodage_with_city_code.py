@@ -63,7 +63,7 @@ class GeoHisto(object):
                               (self.end_index > date)]
 
         if town.empty:
-            raise UnknownTown
+            return ""
         if len(town) > 1:
             raise TooManyTowns
         else:
