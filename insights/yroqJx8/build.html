@@ -60,7 +60,7 @@ map.addLayer(cartodb);
  * Don't forget that you need to authorize this web app to read your dataset.
  * Go to Settings > Dataset and check at least the "Read data" permission
  */
-dataiku.fetch('REPLACE_WITH_YOUR_DATASET_NAME', {
+dataiku.fetch('geocoded_by_concat_quality_check', {
         sampling : "head",
         limit : 20000
     }, function (df) {
