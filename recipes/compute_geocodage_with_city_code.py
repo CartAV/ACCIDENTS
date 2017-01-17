@@ -52,6 +52,7 @@ class GeoHisto(object):
 
         infinites = self.towns.end_datetime.isnull()
         self.towns.at[infinites, 'end_datetime'] = pd.Timestamp.max
+        self.towns = g.towns.query('start_datetime > 2004')
         self.insee_index = pd.Index(self.towns.insee_code)
         self.start_index = pd.DatetimeIndex(self.towns.start_datetime)
         self.end_index = pd.DatetimeIndex(self.towns.end_datetime)
@@ -62,10 +63,8 @@ class GeoHisto(object):
                               (self.start_index < date) &
                               (self.end_index > date)]
 
-        if town.empty:
+        if town.empty or len(town) > 1
             return ""
-        if len(town) > 1:
-            raise TooManyTowns
         else:
             return town.iloc[0].successors
 
