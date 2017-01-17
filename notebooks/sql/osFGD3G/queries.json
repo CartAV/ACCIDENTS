@@ -2117,6 +2117,25 @@
         },
         "sql": "select * from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d 974",
         "expandedSql": "select * from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d 974"
+      },
+      {
+        "mode": "SQL",
+        "id": "Nw4VAytGV3Uf",
+        "runOn": 1484675743237,
+        "runIn": 75,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "AKf6A9fqJDpIwg9P",
+        "hash": "1394536c0acc82bdeba88399d6425582",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027",
+        "expandedSql": "select * from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027"
       }
     ]
   }
