@@ -2060,6 +2060,25 @@
         },
         "sql": "select distinct(city_code) from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027",
         "expandedSql": "select distinct(city_code) from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "D17SUVo8MEEC",
+        "runOn": 1484675655915,
+        "runIn": 149,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "DyDu6KAIyoPBJPzf",
+        "hash": "dd3be1412351e9ce1d568ff910e5c1c0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select dep, count(*) from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 group by dep",
+        "expandedSql": "select dep, count(*) from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 group by dep"
       }
     ]
   }
