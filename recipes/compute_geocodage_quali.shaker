@@ -206,7 +206,7 @@
           "type": "CreateColumnWithGREL",
           "params": {
             "column": "jour",
-            "expression": "\"02%d\".format(jour)"
+            "expression": "\"%02d\".format(jour)"
           },
           "metaType": "PROCESSOR",
           "preview": false,
@@ -217,7 +217,7 @@
           "type": "CreateColumnWithGREL",
           "params": {
             "column": "hrmn",
-            "expression": "\"04%d\".format(hrmn)"
+            "expression": "\"%04d\".format(hrmn)"
           },
           "metaType": "PROCESSOR",
           "preview": false,
@@ -247,7 +247,9 @@
             "outCol": "",
             "lang": "auto",
             "timezone_id": "UTC",
-            "formats": [],
+            "formats": [
+              "yyyyMMddHHmm"
+            ],
             "appliesTo": "SINGLE_COLUMN",
             "columns": [
               "date"
@@ -263,13 +265,6 @@
       "preview": false,
       "disabled": false,
       "name": "Date",
-      "alwaysShowComment": false
-    },
-    {
-      "steps": [],
-      "metaType": "GROUP",
-      "preview": false,
-      "disabled": false,
       "alwaysShowComment": false
     }
   ],
