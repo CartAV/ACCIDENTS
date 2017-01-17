@@ -34,23 +34,33 @@ class GeoHisto(object):
         """
         try:
             import dataiku
-            mydataset = dataiku.Dataset("geohisto_towns")
+            mydataset = dataiku.Dataset('2016_geohisto_communes_prep')
             self.towns = mydataset.get_dataframe(infer_with_pandas=False)
             self.towns.fillna(value={"successors":""}, inplace=True)
             self.towns.set_index('id', inplace=True)
+            self.towns = self.towns.head(n=1000)
         except ImportError:
             self.towns = pd.read_csv('towns.csv',
                                      index_col='id',
                                      na_filter=False,
-                                     parse_dates=['start_datetime',
-                                                  'end_datetime'],
+                                     parse_dates=['start_datetime'],
                                      infer_datetime_format=True)
+
+        self.towns.end_datetime = pd.to_datetime(self.towns.end_datetime,
+                                                 errors='coerce',
+                                                 format="%Y-%m-%d %H:%M:%S")
+
+        infinites = self.towns.end_datetime.isnull()
+        self.towns.at[infinites, 'end_datetime'] = pd.Timestamp.max
+        self.insee_index = pd.Index(self.towns.insee_code)
+        self.start_index = pd.DatetimeIndex(self.towns.start_datetime)
+        self.end_index = pd.DatetimeIndex(self.towns.end_datetime)
 
     def successors(self, insee_code, date):
         u"""Retourne le champs successeur de la commune à une date donnée."""
-        town = self.towns.loc[(self.towns.insee_code == insee_code)]
-        town = town.loc[self.towns.start_datetime < date]
-        town = town.loc[self.towns.end_datetime > date]
+        town = self.towns.loc[(self.insee_index == insee_code) &
+                              (self.start_index < date) &
+                              (self.end_index > date)]
 
         if town.empty:
             raise UnknownTown
@@ -93,7 +103,7 @@ class GeoHisto(object):
             ...
         UnknownTown
         """
-        successors = self.successors(insee_code, date)
+        successors = self.successors(insee_code, pd.to_datetime(date))
 
         if successors:
             return self.last_successor(successors)
