@@ -102,7 +102,7 @@ class GeoHisto(object):
             ...
         UnknownTown
         """
-        successors = self.successors(insee_code, pd.to_datetime(date))
+        successors = self.successors(insee_code, date)
 
         if successors:
             return self.last_successor(successors)
