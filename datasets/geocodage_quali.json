@@ -50,7 +50,7 @@
       },
       {
         "name": "date",
-        "type": "bigint",
+        "type": "date",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -158,13 +158,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484647165282
+    "lastModifiedOn": 1484650098952
   },
   "customMeta": {
     "kv": {}
