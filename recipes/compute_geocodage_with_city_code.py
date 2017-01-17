@@ -52,7 +52,7 @@ class GeoHisto(object):
 
         infinites = self.towns.end_datetime.isnull()
         self.towns.at[infinites, 'end_datetime'] = pd.Timestamp.max
-        self.towns = g.towns.query('start_datetime > 2004')
+        self.towns = self.towns.query('start_datetime > 2004')
         self.insee_index = pd.Index(self.towns.insee_code)
         self.start_index = pd.DatetimeIndex(self.towns.start_datetime)
         self.end_index = pd.DatetimeIndex(self.towns.end_datetime)
