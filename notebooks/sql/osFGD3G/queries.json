@@ -2008,10 +2008,10 @@
         "mode": "SQL",
         "id": "M5Efxl08fyAa",
         "runOn": 1484645736485,
-        "runIn": -1,
+        "runIn": 122,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "CpCAJaJ4vFdA9qVi",
         "hash": "c12d367da420c39b2df75dd8f759d3d9",
         "querySettings": {
