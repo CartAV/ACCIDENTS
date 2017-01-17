@@ -2098,6 +2098,25 @@
         },
         "sql": "select dep, count(*) from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 group by dep order by count DESC",
         "expandedSql": "select dep, count(*) from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 group by dep order by count DESC"
+      },
+      {
+        "mode": "SQL",
+        "id": "rnCjy858VyFL",
+        "runOn": 1484675735010,
+        "runIn": 108,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "idtLAANo9ZPV0ue1",
+        "hash": "4123e562aec4d626ea1385487fae033b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d 974",
+        "expandedSql": "select * from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d 974"
       }
     ]
   }
