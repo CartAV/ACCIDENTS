@@ -220,7 +220,6 @@ c = CityCodes()
 geocodage_quali = dataiku.Dataset("geocodage_quali")
 geocodage_quali_df = geocodage_quali.get_dataframe(infer_with_pandas=False)
 
-print(geocodage_quali_df)
 
 geocodage_quali_df['city_code'] = geocodage_quali_df.apply(lambda x: c.city_code(x["dep"], x["com"], x["date"])[0], axis = 1)
 geocodage_quali_df['city_code_source'] = geocodage_quali_df.apply(lambda x: c.city_code(x["dep"], x["com"], x["date"])[1], axis = 1)
