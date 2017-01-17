@@ -244,6 +244,7 @@
         {
           "type": "DateParser",
           "params": {
+            "outCol": "yyyyMMddHHmm",
             "lang": "auto",
             "timezone_id": "UTC",
             "formats": [],
@@ -258,6 +259,14 @@
           "alwaysShowComment": false
         }
       ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "Date",
+      "alwaysShowComment": false
+    },
+    {
+      "steps": [],
       "metaType": "GROUP",
       "preview": false,
       "disabled": false,
@@ -283,7 +292,7 @@
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 2
+    "_refreshTrigger": 3
   },
   "vizSampling": {
     "autoRefreshSample": false,
