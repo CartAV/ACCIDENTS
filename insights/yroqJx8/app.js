@@ -56,3 +56,8 @@ dataiku.fetch('geocoded_by_concat_quality_check', {
         marker.addTo(map);
     };
 });
+
+/* Automatically added: Python interaction sample */
+$.getJSON("/html-apps-backends/yroqJx8/first_api_call", function(data) {
+    console.info(data);
+});

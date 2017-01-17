@@ -1,7 +1,7 @@
 {
   "apiKey": "XS897gKNfzzWBWlRfwFuZwMZKfTforJb",
-  "pyBackendEnabled": false,
-  "pyBackendMustRun": false,
+  "pyBackendEnabled": true,
+  "pyBackendMustRun": true,
   "published": false,
   "libraries": [
     "jquery",
