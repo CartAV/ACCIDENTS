@@ -59,6 +59,7 @@ class GeoHisto(object):
 
     def last_successor(self, successors):
         u"""Cherche récursivement tous les successeurs jusqu’au code actuel."""
+        print "successors {}".format(successors)
         successors = successors.split(",")
         if len(successors) > 1:
             raise TownSplitNotImplemented
