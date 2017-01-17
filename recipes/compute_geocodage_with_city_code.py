@@ -48,7 +48,9 @@ class GeoHisto(object):
 
     def successors(self, insee_code, date):
         u"""Retourne le champs successeur de la commune à une date donnée."""
-        town = self.towns.loc[self.towns.insee_code == insee_code].loc[self.towns.start_datetime < date].loc[self.towns.end_datetime > date]
+        town = self.towns.select( lambda row: row.insee_code == insee_code) &
+                              (row.start_datetime < date) &
+                              (row.end_datetime > date), axis=1)
 
         if town.empty:
             raise UnknownTown
