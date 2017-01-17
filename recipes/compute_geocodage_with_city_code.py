@@ -37,6 +37,7 @@ class GeoHisto(object):
             mydataset = dataiku.Dataset("geohisto_towns")
             self.towns = mydataset.get_dataframe(infer_with_pandas=False)
             self.towns.fillna(value={"successors":""}, inplace=True)
+            self.towns.set_index('id')
         except ImportError:
             self.towns = pd.read_csv('towns.csv',
                                      index_col='id',
