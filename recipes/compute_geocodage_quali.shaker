@@ -174,7 +174,92 @@
         "usePythonUnicode": true
       },
       "metaType": "PROCESSOR",
-      "preview": true,
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "steps": [
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "an",
+            "expression": "\"20%02d\".format(an)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "mois",
+            "expression": "\"%02d\".format(mois)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "jour",
+            "expression": "\"02%d\".format(jour)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "hrmn",
+            "expression": "\"04%d\".format(hrmn)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "ColumnsConcat",
+          "params": {
+            "join": "",
+            "columns": [
+              "an",
+              "mois",
+              "jour",
+              "hrmn"
+            ],
+            "outputColumn": "date"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "DateParser",
+          "params": {
+            "lang": "auto",
+            "timezone_id": "UTC",
+            "formats": [],
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "date"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
       "disabled": false,
       "alwaysShowComment": false
     }
