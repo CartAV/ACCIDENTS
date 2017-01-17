@@ -49,6 +49,12 @@
         "maxLength": -1
       },
       {
+        "name": "date",
+        "type": "date",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "lum",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -161,12 +167,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1484645512915
+    "lastModifiedOn": 1484660020188
   },
   "customMeta": {
     "kv": {}
