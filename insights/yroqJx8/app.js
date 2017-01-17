@@ -29,7 +29,7 @@ map.addLayer(cartodb);
  */
 dataiku.fetch('geocoded_by_concat_quality_check', {
         sampling : "head",
-        limit : 20000
+        limit : 200
     }, function (df) {
 
     // Add a map marker for each row on the dataset
