@@ -3,6 +3,102 @@ import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
+class TooManyTowns(Exception):
+    u"""Si le code INSEE est utilisé deux fois pendant la même période."""
+
+    pass
+
+
+class TownSplitNotImplemented(Exception):
+    u"""Ce module ne gère pas encore la division de communes."""
+
+    pass
+
+
+class UnknownTown(Exception):
+    u"""Code INSEE inconnu à la date spécifiée."""
+
+    pass
+
+
+class GeoHisto(object):
+    u"""Cette classe charge les données GeoHisto et permet de les explorer.
+
+    Voir https://github.com/etalab/geohisto
+    """
+
+    def __init__(self):
+        u"""Charge toutes les données GeoHisto.
+
+        Ces données doivent être dans le chemin courant.
+        """
+        try:
+            import dataiku
+            mydataset = dataiku.Dataset("geohisto_towns")
+            self.towns = mydataset.get_dataframe(infer_with_pandas=False)
+        except ImportError:
+            self.towns = pd.read_csv('towns.csv',
+                                     index_col='id',
+                                     na_filter=False,
+                                     parse_dates=['start_datetime',
+                                                  'end_datetime'],
+                                     infer_datetime_format=True)
+
+    def successors(self, insee_code, date):
+        u"""Retourne le champs successeur de la commune à une date donnée."""
+        town = self.towns.loc[(self.towns.insee_code == insee_code) &
+                              (self.towns.start_datetime < date) &
+                              (self.towns.end_datetime > date)]
+
+        if town.empty:
+            raise UnknownTown
+        if len(town) > 1:
+            raise TooManyTowns
+        else:
+            return town.iloc[0].successors
+
+    def last_successor(self, successors):
+        u"""Cherche récursivement tous les successeurs jusqu’au code actuel."""
+        successors = successors.split(",")
+        if len(successors) > 1:
+            raise TownSplitNotImplemented
+        elif len(successors) == 1:
+            town = self.towns.loc[successors[0]]
+            if town.successors:
+                return self.last_successor(town.successors)
+            else:
+                return town.insee_code
+
+    def current_insee(self, insee_code, date):
+        u"""Retourne le code INSEE actuel d’une commune à partir du code historique.
+
+        >>> g.current_insee('50602', '2000-01-01')
+        '50129'
+
+        >>> g.current_insee('75112', '2010-04-21')
+        '75112'
+
+        >>> g.current_insee('xxxxx', '2010-04-21')
+        Traceback (most recent call last):
+            ...
+        UnknownTown
+
+        >>> g.current_insee('75048', '1960-05-01')
+        '93048'
+
+        >>> g.current_insee('75048', '1999-05-01')
+        Traceback (most recent call last):
+            ...
+        UnknownTown
+        """
+        successors = self.successors(insee_code, date)
+
+        if successors:
+            return self.last_successor(successors)
+        else:
+            return insee_code
+
+
 class CityCodes():
     def __init__(self):
         try:
@@ -25,13 +121,7 @@ class CityCodes():
         for row in poste.itertuples():
             self.post_to_city_code[row[3]] = row[1]
 
-        self.old_insee = {
-            '50602': '50129',  # Tourlaville
-            '50173': '50129',  # Équeurdreville-Hainneville
-            '50203': '50129',  # Glacerie
-            '50416': '50129',  # Querqueville
-            '59355': '59350',  # Lomme
-        }
+        self.gh = GeoHisto()
 
     def is_in_insee(self, code):
         """
@@ -46,7 +136,7 @@ class CityCodes():
         """
         return code in self.city_codes_set
 
-    def city_code(self, departement, commune):
+    def city_code(self, departement, commune, date=''):
         """
         Transforme les identifiants des départements et des communes de la
         base d'accidents corporels en code INSEE si possible. Sinon, on tente
@@ -66,16 +156,23 @@ class CityCodes():
         ('75121', 'Unknown', '75')
 
         Le code Insee a changé (par exemple fusion)
-        >>> c.city_code('500', '602')
+        >>> c.city_code('500', '602', '2005-01-01')
         ('50129', 'Old insee code', '50')
         """
         (code, dep) = self.create_code(departement, commune)
-        if self.is_in_insee(code):
-            return (code, 'Insee', dep)
+
+        if date:
+            current_code = self.gh.current_insee(code, date)
+        else:
+            current_code = code
+
+        if self.is_in_insee(current_code):
+            if current_code == code:
+                return (code, 'Insee', dep)
+            else:
+                return (current_code, 'Old insee code', dep)
         elif code in self.post_to_city_code:
             return (self.post_to_city_code[code], 'Postal', dep)
-        elif code in self.old_insee:
-            return (self.old_insee[code], 'Old insee code', dep)
         else:
             return (code, 'Unknown', dep)
 
@@ -115,6 +212,7 @@ class CityCodes():
             departement = departement[0:2]
 
         return (departement + commune, departement)
+
 
 c = CityCodes()
 

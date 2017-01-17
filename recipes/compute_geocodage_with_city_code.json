@@ -10,6 +10,10 @@
         {
           "ref": "laposte_hexasmal",
           "deps": []
+        },
+        {
+          "ref": "geohisto_towns",
+          "deps": []
         }
       ]
     }
@@ -32,13 +36,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
-      "login": "chabouisfr",
-      "displayName": "Francis Chabouis",
-      "email": "francis.chabouis@interieur.gouv.fr"
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484579367982
+    "lastModifiedOn": 1484645451011
   },
   "customMeta": {
     "kv": {}
