@@ -41,8 +41,8 @@ dataiku.fetch('geocoded_by_concat_quality_check', {
         // Replace by your own column names here
         var lat = parseFloat(record["latitude"]);
         var lon = parseFloat(record["longitude"]);
-        var name = record["name"];
-        var size = parseInt(record["size"]);
+        var name = record["Num_Acc"];
+        var size = parseInt(record["result_score"]);
 
         // Radius of the marker is in meters
         var radius = Math.log(size) * 20;
