@@ -173,13 +173,13 @@ class CityCodes():
 
         if self.is_in_insee(current_code):
             if current_code == code:
-                return (code, 'Insee', dep)
+                return [code, 'Insee', dep]
             else:
-                return (current_code, 'Old insee code', dep)
+                return [current_code, 'Old insee code', dep]
         elif code in self.post_to_city_code:
-            return (self.post_to_city_code[code], 'Postal', dep)
+            return [self.post_to_city_code[code], 'Postal', dep]
         else:
-            return (code, 'Unknown', dep)
+            return [code, 'Unknown', dep]
 
     def create_code(self, departement, commune):
         """Transforme les identifiants des départements et des communes de la
@@ -226,9 +226,9 @@ geocodage_quali = dataiku.Dataset("geocodage_quali")
 geocodage_quali_df = geocodage_quali.get_dataframe(infer_with_pandas=False)
 
 
-geocodage_quali_df['city_code'] = geocodage_quali_df.apply(lambda x: c.city_code(x["dep"], x["com"], str(x["date"]))[0], axis = 1)
-geocodage_quali_df['city_code_source'] = geocodage_quali_df.apply(lambda x: c.city_code(x["dep"], x["com"], str(x["date"]))[1], axis = 1)
-geocodage_quali_df['dep'] = geocodage_quali_df.apply(lambda x: c.city_code(x["dep"], x["com"])[2], axis = 1)
+geocodage_quali_df[['city_code', 'city_code_source', 'dep']] = geocodage_quali_df.apply(lambda x: c.city_code(x["dep"], x["com"], str(x["date"])), axis = 1)
+#geocodage_quali_df[] = geocodage_quali_df.apply(lambda x: c.city_code(x["dep"], x["com"], str(x["date"]))[1], axis = 1)
+#geocodage_quali_df['dep'] = geocodage_quali_df.apply(lambda x: c.city_code(x["dep"], x["com"])[2], axis = 1)
 
 # Recipe outputs
 geocodage_with_city_code = dataiku.Dataset("geocodage_with_city_code")
