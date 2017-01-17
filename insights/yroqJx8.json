@@ -1,0 +1,29 @@
+{
+  "apiKey": "XS897gKNfzzWBWlRfwFuZwMZKfTforJb",
+  "pyBackendEnabled": false,
+  "pyBackendMustRun": false,
+  "published": false,
+  "libraries": [
+    "jquery",
+    "dataiku",
+    "leaflet",
+    "bootstrap"
+  ],
+  "name": "Test FA",
+  "type": "HTML_APP",
+  "miniature": {
+    "type": "html_app",
+    "showTitle": true,
+    "fullImage": true
+  },
+  "fullView": {
+    "descriptionPosition": "right"
+  },
+  "description": "",
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "createdBy": "antoinefa",
+  "createdOn": 1484663508787
+}
