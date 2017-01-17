@@ -166,7 +166,10 @@ class CityCodes():
         (code, dep) = self.create_code(departement, commune)
 
         if date:
-            current_code = self.gh.current_insee(code, date)
+            try:
+                current_code = self.gh.current_insee(code, date)
+            except:
+                current_code = code
         else:
             current_code = code
 
