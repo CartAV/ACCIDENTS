@@ -2041,6 +2041,25 @@
         },
         "sql": "select city_code_source, count(*) from geocodage_with_city_code group by city_code_source",
         "expandedSql": "select city_code_source, count(*) from geocodage_with_city_code group by city_code_source"
+      },
+      {
+        "mode": "SQL",
+        "id": "tXh1PHX9uivT",
+        "runOn": 1484675640283,
+        "runIn": 661,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "JwPycdRWUbD0isT3",
+        "hash": "1fc717a028a1a532029d8e0c4141cf14",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select distinct(city_code) from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027",
+        "expandedSql": "select distinct(city_code) from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027"
       }
     ]
   }
