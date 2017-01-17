@@ -63,7 +63,7 @@ class GeoHisto(object):
                               (self.start_index < date) &
                               (self.end_index > date)]
 
-        if town.empty or len(town) > 1
+        if town.empty or len(town) > 1:
             return ""
         else:
             return town.iloc[0].successors
