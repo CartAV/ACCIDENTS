@@ -42,7 +42,7 @@ def adresse_submit(df):
             'data': {                     
                         'columns':'adr', 
                         'citycode':'city_code',
-                        'with-bom': 'false'
+                        'with_bom': 'false'
             },
             'method': 'post',
             'files': OrderedDict([
