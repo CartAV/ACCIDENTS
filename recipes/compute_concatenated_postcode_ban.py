@@ -55,6 +55,7 @@ def adresse_submit(df):
         response = requests_session.request(**kwargs)
         if (response.status_code == 200):
             res=pd.read_csv(StringIO.StringIO(response.content.decode('utf-8')),sep=",",quotechar='"')
+            print res
             res=pd.merge(df,res,how='left',on=['Num_Acc','adr','city_code'])
             #print(res)
             t=maxtries+1
