@@ -92,9 +92,10 @@
       "boxplotValue": [],
       "filters": [
         {
-          "filterType": "ALPHANUM_FACET",
-          "column": "result_type",
-          "columnType": "ALPHANUM",
+          "filterType": "NUMERICAL_FACET",
+          "column": "distance_ban_gps",
+          "columnType": "NUMERICAL",
+          "minValue": 384.23573361,
           "isA": "filter",
           "excludedValues": {},
           "explicitExclude": false
@@ -136,7 +137,7 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAT0lEQVRoge3PsQ3AIAADQTbJmCxGn9VSsQIorzvJvX8MIOWZ6927/eUIwXWC6wTXCa4TXCe4TnCd4DrBdYLrBNcJrhNcJ7hOcJ3gOsH82wcKftWy3nVvagAAAABJRU5ErkJggg\u003d\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAVklEQVRoge3PsQ2AMAADwWzCmCyWntVoaeiIUF53knv/GEDGcc7rub//LCe4TnCd4DrBdYLrBNcJrhNcJ7hOcJ3gOsF1gusE1wmuE1wneBNvv3ds+dwNH9orO1scwwoAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
