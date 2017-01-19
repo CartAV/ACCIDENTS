@@ -16,35 +16,73 @@
     },
     "dataset": "geocoded_by_concat_prepared",
     "chart": {
-      "type": "scatter",
-      "variant": "normal",
-      "name": "Avg. of result_score by distance_ban_gps",
+      "type": "binned_xy",
+      "variant": "binned_xy_hex",
+      "name": "distance_ban_gps vs result_score (aggregated)",
       "userEditedName": false,
       "genericDimension0": [],
       "genericDimension1": [],
       "genericMeasures": [],
-      "xDimension": [],
-      "yDimension": [],
-      "uaXDimension": [
+      "xDimension": [
         {
           "column": "distance_ban_gps",
           "type": "NUMERICAL",
-          "treatAsAlphanum": false,
-          "sortBy": "NATURAL",
-          "sortAscending": false,
-          "isA": "ua"
+          "numParams": {
+            "mode": "FIXED_NB",
+            "nbBins": 10,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
         }
       ],
-      "uaYDimension": [
+      "yDimension": [
         {
           "column": "result_score",
           "type": "NUMERICAL",
-          "treatAsAlphanum": false,
-          "sortBy": "NATURAL",
-          "sortAscending": false,
-          "isA": "ua"
+          "numParams": {
+            "mode": "FIXED_NB",
+            "nbBins": 10,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
         }
       ],
+      "uaXDimension": [],
+      "uaYDimension": [],
       "uaSize": [],
       "uaShape": [],
       "uaColor": [],
@@ -117,7 +155,7 @@
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Avg. of result_score by distance_ban_gps",
+  "name": "distance_ban_gps vs result_score (aggregated)",
   "type": "CHART",
   "miniature": {
     "type": "chart",
