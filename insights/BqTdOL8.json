@@ -4,13 +4,13 @@
       "chartsEngine": "LINO",
       "sampling": {
         "selection": {
-          "samplingMethod": "HEAD_SEQUENTIAL",
+          "samplingMethod": "FULL",
           "partitionSelectionMethod": "ALL",
           "maxRecords": 10000,
           "targetRatio": 0.02
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 0
+        "_refreshTrigger": 1
       },
       "steps": []
     },
@@ -98,8 +98,8 @@
           "isA": "filter",
           "excludedValues": {
             "city": true,
-            "housenumber": true,
             "locality": true,
+            "street": true,
             "town": true,
             "village": true
           },
@@ -168,7 +168,7 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABpUlEQVRoge3ZvWoUYRTG8bkDkUCCJO9zehsvxipYmyaNoHMObue9WFmIYZ4DdpNEozGzrPEjgXRCoqTaa0izAVFXNmRmTzL7/rtlpnh+M8zswhZFLpfrXWKsxVhH75hbGdz3xFjD/Ff0jrm1cGAYxxnc5xYWvDBv6kswSp5Fb5lLv4OhPI/e03kZ3PcWHgzjOHpTp2Wwcdzr7+R/gaH8Gb2rs6aBYX4Uva2TpoKVP2A+it7Xev8FK0+j97VeBv8BhlXna1o9it7ZWrOAoX4qxjpZtZms2oTyWIz16vPXS9H7r9ys4FT6UTKeiPEEyuOkPITyWyp9Pdpwpa4LhvH7rfqh0gY4qX9JymG0ZabaBK9a9UBKfwitXka7ptYmGOYHYjyE+gjGF8uDrZVo3191BlZvlgdbKzfu+e4SDPX3MA5hHIp6E20timK+4Mkfd/t4+ub+3Y1Xd0LufghY+UnUGyh3YdyB8sPk8x6MO2KsRf1jKjm43Ln2rHosT97e6yUYxneT8/dh3BP17cnxBuYHUO6KeiPKzzAfQdmIeQPl12tfkNwt6gK71EObukjSiQAAAABJRU5ErkJggg\u003d\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAlklEQVRoge3TMQrDMAyFYY05hdxTWmvOlMqz196heyCBOFfo1NDmADY8vQ80edEPsggRwUnmdfQOXTEYHYPRMRgdg9ExGB2D0TEYHYPRMRgdg9ExGJ2at9E7dBUyONRZMxidmje1so7eoxsGo/sGh/nHV3AuW4jov+Dse8p+/o7mcqg9l2T+UvP3/f0+IiKPuU6juyiCDwkqiYAbnL+IAAAAAElFTkSuQmCC",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
