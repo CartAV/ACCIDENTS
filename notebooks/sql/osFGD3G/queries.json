@@ -2231,6 +2231,25 @@
         },
         "sql": "select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003e 10 and result_score \u003e 0.5",
         "expandedSql": "select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003e 10 and result_score \u003e 0.5"
+      },
+      {
+        "mode": "SQL",
+        "id": "aKTqlzwFdkW5",
+        "runOn": 1484836112944,
+        "runIn": 88,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "la7QwX2Usmplw98D",
+        "hash": "489d0bee20acc20d02d7311e31e01f13",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003e 1 and result_score \u003e 0.5",
+        "expandedSql": "select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003e 1 and result_score \u003e 0.5"
       }
     ]
   }
