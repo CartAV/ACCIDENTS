@@ -2136,6 +2136,25 @@
         },
         "sql": "select * from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027",
         "expandedSql": "select * from geocodage_with_city_code where city_code_source \u003d \u0027Unknown\u0027 and dep \u003d \u0027974\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "NvM8MfOeOQP4",
+        "runOn": 1484835748402,
+        "runIn": 129,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "XToeb84vesocmwzC",
+        "hash": "39453d7ea195d29a9020caae1af7018c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from geocoded_by_concat_prepared where distance_ban_gps \u003e 10",
+        "expandedSql": "select * from geocoded_by_concat_prepared where distance_ban_gps \u003e 10"
       }
     ]
   }
