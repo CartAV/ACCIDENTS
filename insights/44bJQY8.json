@@ -4,13 +4,13 @@
       "chartsEngine": "LINO",
       "sampling": {
         "selection": {
-          "samplingMethod": "HEAD_SEQUENTIAL",
+          "samplingMethod": "FULL",
           "partitionSelectionMethod": "ALL",
           "maxRecords": 10000,
           "targetRatio": 0.02
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 0
+        "_refreshTrigger": 1
       },
       "steps": []
     },
@@ -18,7 +18,7 @@
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Avg. of result_score by distance_ban_gps",
+      "name": "Count by distance_ban_gps",
       "userEditedName": false,
       "genericDimension0": [
         {
@@ -44,12 +44,12 @@
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of result_score, descending"
+              "label": "Count of records, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of result_score, ascending",
+              "label": "Count of records, ascending",
               "sortAscending": true
             }
           ],
@@ -63,8 +63,7 @@
       "genericDimension1": [],
       "genericMeasures": [
         {
-          "column": "result_score",
-          "function": "AVG",
+          "function": "COUNT",
           "type": "NUMERICAL",
           "displayed": true,
           "isA": "measure",
@@ -137,12 +136,12 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAiUlEQVRoge3TwQmAMBBE0TSilmYXsSpve7c1r4IDJrBhTfI/eBlEfQFTIqJh2g67nlf09zQP8OgBHj3AYl+ynZHf6BpgsU8N7v5/Byx2wIA7ygtccxChhwZY7IABAy5+p6+mIMBiBwxY7yXPbu17BVjskeA12+56QIA7B3/eCxgwYMCAAf8IPEM3csuGJEfp/5cAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAT0lEQVRoge3PsQ3AIAADQTbJmCxGn9VSsQIorzvJvX8MIOWZ6927/eUIwXWC6wTXCa4TXCe4TnCd4DrBdYLrBNcJrhNcJ7hOcJ3gOsH82wcKftWy3nVvagAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Avg. of result_score by distance_ban_gps",
+  "name": "Count by distance_ban_gps",
   "type": "CHART",
   "miniature": {
     "type": "chart",
