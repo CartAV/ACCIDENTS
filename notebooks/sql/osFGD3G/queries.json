@@ -2459,6 +2459,25 @@
         },
         "sql": "select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003e 1 and result_score \u003e 0.5\n--select count(*) from geocoded_by_concat_prepared where distance_ban_gps is not null",
         "expandedSql": "select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003e 1 and result_score \u003e 0.5\n--select count(*) from geocoded_by_concat_prepared where distance_ban_gps is not null"
+      },
+      {
+        "mode": "SQL",
+        "id": "hkyLFo2DDeOF",
+        "runOn": 1484836286128,
+        "runIn": 78,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "v9MQR0ueNzp9Lhp5",
+        "hash": "a7bdc045234ed76797044639a1429368",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003e 1 and result_score \u003e 0.7\n--select count(*) from geocoded_by_concat_prepared where distance_ban_gps is not null",
+        "expandedSql": "select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003e 1 and result_score \u003e 0.7\n--select count(*) from geocoded_by_concat_prepared where distance_ban_gps is not null"
       }
     ]
   }
