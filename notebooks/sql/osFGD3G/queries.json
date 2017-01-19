@@ -2155,6 +2155,25 @@
         },
         "sql": "select * from geocoded_by_concat_prepared where distance_ban_gps \u003e 10",
         "expandedSql": "select * from geocoded_by_concat_prepared where distance_ban_gps \u003e 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "1ny1uNPERyD0",
+        "runOn": 1484835778004,
+        "runIn": 513,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Kk9x6DwMyBpDYGHp",
+        "hash": "e9ae3d14322b576815e8d5351cb05e3b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from geocoded_by_concat_prepared where distance_ban_gps \u003e 100",
+        "expandedSql": "select * from geocoded_by_concat_prepared where distance_ban_gps \u003e 100"
       }
     ]
   }
