@@ -3314,6 +3314,25 @@
         },
         "sql": "--select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003c 1 and result_score \u003e 0.7\nselect substring(lat, 3, 2), count(*) lat from \"public\".\"accidents_caracteristiques\" where lat is not null group by substring;",
         "expandedSql": "--select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003c 1 and result_score \u003e 0.7\nselect substring(lat, 3, 2), count(*) lat from \"public\".\"accidents_caracteristiques\" where lat is not null group by substring;"
+      },
+      {
+        "mode": "SQL",
+        "id": "7gyORDJHCAT4",
+        "runOn": 1484907641274,
+        "runIn": 106,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "89ShmbfBpwMRbB8i",
+        "hash": "4ff8dc46fcb8ac7a72af21cf7e3efd4e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003c 1 and result_score \u003e 0.7\nselect substring(lat, 3, 2), count(*) lat from \"public\".\"accidents_caracteristiques\" where lat is not null group by substring order by count DESC;",
+        "expandedSql": "--select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003c 1 and result_score \u003e 0.7\nselect substring(lat, 3, 2), count(*) lat from \"public\".\"accidents_caracteristiques\" where lat is not null group by substring order by count DESC;"
       }
     ]
   }
