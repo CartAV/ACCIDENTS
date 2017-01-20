@@ -1,13 +1,13 @@
 {
   "creator": "grabenertr",
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484645644364
+    "lastModifiedOn": 1484908834791
   },
   "connection": "datalabmaster",
   "name": "Bidouilles à Tristram",
@@ -61,7 +61,7 @@
     {
       "id": "s8lwfa16d8o",
       "type": "QUERY",
-      "name": "Origine des code INSEE",
+      "name": "Coordonnées décimales ou minutes/secondes",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
