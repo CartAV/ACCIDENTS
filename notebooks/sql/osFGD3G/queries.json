@@ -3544,6 +3544,25 @@
         },
         "sql": "--select count(*) from accidents_caracteristiques where lat is not null and length(lat) \u003e 1 and lat !\u003d \u00270000000\u0027 and gps in (\u0027R\u0027, \u0027G\u0027, \u0027Y\u0027, \u0027C\u0027, \u0027A\u0027, \u0027T\u0027, \u0027S\u0027, \u0027P\u0027)\n--select distinct(gps) from accidents_caracteristiques\nselect count(*) from accidents_caracteristiques where dep like \u002720%\u0027",
         "expandedSql": "--select count(*) from accidents_caracteristiques where lat is not null and length(lat) \u003e 1 and lat !\u003d \u00270000000\u0027 and gps in (\u0027R\u0027, \u0027G\u0027, \u0027Y\u0027, \u0027C\u0027, \u0027A\u0027, \u0027T\u0027, \u0027S\u0027, \u0027P\u0027)\n--select distinct(gps) from accidents_caracteristiques\nselect count(*) from accidents_caracteristiques where dep like \u002720%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "6flPZvAL726A",
+        "runOn": 1484909576695,
+        "runIn": 77,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "gwJMZO4ASpmHs8vl",
+        "hash": "56a1e2b90089b41ae59d23e7c729a8a2",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select count(*) from accidents_caracteristiques where lat is not null and length(lat) \u003e 1 and lat !\u003d \u00270000000\u0027 and gps in (\u0027R\u0027, \u0027G\u0027, \u0027Y\u0027, \u0027C\u0027, \u0027A\u0027, \u0027T\u0027, \u0027S\u0027, \u0027P\u0027)\n--select distinct(gps) from accidents_caracteristiques\nselect distinct(dep) from accidents_caracteristiques where dep like \u002720%\u0027",
+        "expandedSql": "--select count(*) from accidents_caracteristiques where lat is not null and length(lat) \u003e 1 and lat !\u003d \u00270000000\u0027 and gps in (\u0027R\u0027, \u0027G\u0027, \u0027Y\u0027, \u0027C\u0027, \u0027A\u0027, \u0027T\u0027, \u0027S\u0027, \u0027P\u0027)\n--select distinct(gps) from accidents_caracteristiques\nselect distinct(dep) from accidents_caracteristiques where dep like \u002720%\u0027"
       }
     ]
   }
