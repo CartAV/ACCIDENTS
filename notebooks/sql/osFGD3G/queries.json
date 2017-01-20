@@ -3113,7 +3113,7 @@
         "runIn": 87,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "38OEtLJaVIQECjoJ",
         "hash": "e0a3dcbe47ae9fb0255aa8772e996c6e",
         "querySettings": {
