@@ -3696,6 +3696,25 @@
         },
         "sql": "--select count(*) from accidents_caracteristiques where lat is not null and length(lat) \u003e 1 and lat !\u003d \u00270000000\u0027 and gps in (\u0027R\u0027, \u0027G\u0027, \u0027Y\u0027, \u0027C\u0027, \u0027A\u0027, \u0027T\u0027, \u0027S\u0027, \u0027P\u0027)\n--select distinct(gps) from accidents_caracteristiques\n--select count(*) from accidents_caracteristiques where dep like \u002797%\u0027 or dep like \u002798%\u0027\nselect distinct(city_code_source), count(*) from geocodage_with_city_code group by city_code_source",
         "expandedSql": "--select count(*) from accidents_caracteristiques where lat is not null and length(lat) \u003e 1 and lat !\u003d \u00270000000\u0027 and gps in (\u0027R\u0027, \u0027G\u0027, \u0027Y\u0027, \u0027C\u0027, \u0027A\u0027, \u0027T\u0027, \u0027S\u0027, \u0027P\u0027)\n--select distinct(gps) from accidents_caracteristiques\n--select count(*) from accidents_caracteristiques where dep like \u002797%\u0027 or dep like \u002798%\u0027\nselect distinct(city_code_source), count(*) from geocodage_with_city_code group by city_code_source"
+      },
+      {
+        "mode": "SQL",
+        "id": "oKa5yPqDMlC1",
+        "runOn": 1484910434554,
+        "runIn": 125,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "c9TgJDYvCd6EEV4k",
+        "hash": "e3895c9fb11a3089044ec7497224ddee",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select count(*) from accidents_caracteristiques where lat is not null and length(lat) \u003e 1 and lat !\u003d \u00270000000\u0027 and gps in (\u0027R\u0027, \u0027G\u0027, \u0027Y\u0027, \u0027C\u0027, \u0027A\u0027, \u0027T\u0027, \u0027S\u0027, \u0027P\u0027)\n--select distinct(gps) from accidents_caracteristiques\n--select count(*) from accidents_caracteristiques where dep like \u002797%\u0027 or dep like \u002798%\u0027\n--select distinct(city_code_source), count(*) from geocodage_with_city_code group by city_code_source\nselect dep, count(*) from geocodage_with_city_code where city_code_source \u003d \u0027Postal\u0027 group by dep",
+        "expandedSql": "--select count(*) from accidents_caracteristiques where lat is not null and length(lat) \u003e 1 and lat !\u003d \u00270000000\u0027 and gps in (\u0027R\u0027, \u0027G\u0027, \u0027Y\u0027, \u0027C\u0027, \u0027A\u0027, \u0027T\u0027, \u0027S\u0027, \u0027P\u0027)\n--select distinct(gps) from accidents_caracteristiques\n--select count(*) from accidents_caracteristiques where dep like \u002797%\u0027 or dep like \u002798%\u0027\n--select distinct(city_code_source), count(*) from geocodage_with_city_code group by city_code_source\nselect dep, count(*) from geocodage_with_city_code where city_code_source \u003d \u0027Postal\u0027 group by dep"
       }
     ]
   }
