@@ -3319,10 +3319,10 @@
         "mode": "SQL",
         "id": "7gyORDJHCAT4",
         "runOn": 1484907641274,
-        "runIn": 106,
+        "runIn": 41,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "89ShmbfBpwMRbB8i",
         "hash": "4ff8dc46fcb8ac7a72af21cf7e3efd4e",
         "querySettings": {
