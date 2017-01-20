@@ -3376,10 +3376,10 @@
         "mode": "SQL",
         "id": "ZJl0t6J1P3OI",
         "runOn": 1484907682783,
-        "runIn": 102,
+        "runIn": 105,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "cCiYNqnE4ApdGufe",
         "hash": "4d489304dba5919db0bd6b70136895db",
         "querySettings": {
