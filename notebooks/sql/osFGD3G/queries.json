@@ -2991,6 +2991,25 @@
         },
         "sql": "--select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003c 1 and result_score \u003e 0.7\nselect count(*) from \"public\".\"accidents_caracteristiques\" where long like \u0027%000\u0027",
         "expandedSql": "--select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003c 1 and result_score \u003e 0.7\nselect count(*) from \"public\".\"accidents_caracteristiques\" where long like \u0027%000\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "tidxm7t0WxWo",
+        "runOn": 1484907264523,
+        "runIn": 88,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "EPN1k3IsYj9nG5Og",
+        "hash": "70839fcf0d6403eaec014426df1a2cca",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003c 1 and result_score \u003e 0.7\nselect count(*) from \"public\".\"accidents_caracteristiques\" where long like \u0027%000\u0027 and long !\u003d \u0027000000\u0027",
+        "expandedSql": "--select count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003c 1 and result_score \u003e 0.7\nselect count(*) from \"public\".\"accidents_caracteristiques\" where long like \u0027%000\u0027 and long !\u003d \u0027000000\u0027"
       }
     ]
   }
