@@ -3601,6 +3601,25 @@
         },
         "sql": "--select count(*) from accidents_caracteristiques where lat is not null and length(lat) \u003e 1 and lat !\u003d \u00270000000\u0027 and gps in (\u0027R\u0027, \u0027G\u0027, \u0027Y\u0027, \u0027C\u0027, \u0027A\u0027, \u0027T\u0027, \u0027S\u0027, \u0027P\u0027)\n--select distinct(gps) from accidents_caracteristiques\nselect count(*) from accidents_caracteristiques where dep like \u002797%\u0027 and dep !\u003d \u002720\u0027",
         "expandedSql": "--select count(*) from accidents_caracteristiques where lat is not null and length(lat) \u003e 1 and lat !\u003d \u00270000000\u0027 and gps in (\u0027R\u0027, \u0027G\u0027, \u0027Y\u0027, \u0027C\u0027, \u0027A\u0027, \u0027T\u0027, \u0027S\u0027, \u0027P\u0027)\n--select distinct(gps) from accidents_caracteristiques\nselect count(*) from accidents_caracteristiques where dep like \u002797%\u0027 and dep !\u003d \u002720\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "pifbLNcTASZ7",
+        "runOn": 1484909694774,
+        "runIn": 78,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "ZEesZUhnDM4XixsY",
+        "hash": "a6b5bc3f950f81be28b74df38e894c78",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select count(*) from accidents_caracteristiques where lat is not null and length(lat) \u003e 1 and lat !\u003d \u00270000000\u0027 and gps in (\u0027R\u0027, \u0027G\u0027, \u0027Y\u0027, \u0027C\u0027, \u0027A\u0027, \u0027T\u0027, \u0027S\u0027, \u0027P\u0027)\n--select distinct(gps) from accidents_caracteristiques\nselect count(*) from accidents_caracteristiques where dep like \u002797%\u0027 and dep like \u002798%\u0027 and dep !\u003d \u002720\u0027",
+        "expandedSql": "--select count(*) from accidents_caracteristiques where lat is not null and length(lat) \u003e 1 and lat !\u003d \u00270000000\u0027 and gps in (\u0027R\u0027, \u0027G\u0027, \u0027Y\u0027, \u0027C\u0027, \u0027A\u0027, \u0027T\u0027, \u0027S\u0027, \u0027P\u0027)\n--select distinct(gps) from accidents_caracteristiques\nselect count(*) from accidents_caracteristiques where dep like \u002797%\u0027 and dep like \u002798%\u0027 and dep !\u003d \u002720\u0027"
       }
     ]
   }
