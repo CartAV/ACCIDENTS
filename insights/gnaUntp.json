@@ -19,7 +19,7 @@
     "chart": {
       "type": "stacked_columns",
       "variant": "stacked_100",
-      "name": "Count by an",
+      "name": "Coordonnées invalides",
       "userEditedName": true,
       "genericDimension0": [
         {
@@ -166,7 +166,7 @@
       "useLiveProcessingIfAvailable": true
     }
   },
-  "name": "Count by an",
+  "name": "Coordonnées invalides",
   "type": "CHART",
   "miniature": {
     "type": "chart",
