@@ -5244,10 +5244,10 @@
         "mode": "SQL",
         "id": "tRrT2umDSpoW",
         "runOn": 1485179261477,
-        "runIn": 97,
+        "runIn": 109,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "Cu3rACP9IZDi8IX1",
         "hash": "2196b797c0593a571fea406a82ab92f2",
         "querySettings": {
