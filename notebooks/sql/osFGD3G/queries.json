@@ -4059,6 +4059,25 @@
         },
         "sql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban;\n--select count(*) from geocoded_by_concat_prepared\n\nselect (10.533002244719269 + 1.966148454015304 + 50.446956809345 + 5.983439586797307)",
         "expandedSql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban;\n--select count(*) from geocoded_by_concat_prepared\n\nselect (10.533002244719269 + 1.966148454015304 + 50.446956809345 + 5.983439586797307)"
+      },
+      {
+        "mode": "SQL",
+        "id": "brsMgkDSqwPo",
+        "runOn": 1485175857608,
+        "runIn": 106,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "PGoiFJEabKyMibsg",
+        "hash": "c3ad028e4b9d711cf9d72c88f767e7ac",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban;\n--select count(*) from geocoded_by_concat_prepared\n\n--select (10.533002244719269 + 1.966148454015304 + 50.446956809345 + 5.983439586797307)",
+        "expandedSql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban;\n--select count(*) from geocoded_by_concat_prepared\n\n--select (10.533002244719269 + 1.966148454015304 + 50.446956809345 + 5.983439586797307)"
       }
     ]
   }
