@@ -5263,10 +5263,10 @@
         "mode": "SQL",
         "id": "vP4Sjq8VKCC0",
         "runOn": 1485179271349,
-        "runIn": 109,
+        "runIn": 108,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "h7FYUDqnnGl9MlWy",
         "hash": "c73fafce00fe5fa766e2b5b9e0ca20f6",
         "querySettings": {
