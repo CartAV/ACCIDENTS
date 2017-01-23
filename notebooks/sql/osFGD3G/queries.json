@@ -4294,10 +4294,10 @@
         "mode": "SQL",
         "id": "OPVRLEqS26QA",
         "runOn": 1485177558289,
-        "runIn": 44,
+        "runIn": 51,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "F98gz0Cqxp0JS4Aj",
         "hash": "ae9a300f4ca81d65147fa4b2f619bbe6",
         "querySettings": {
