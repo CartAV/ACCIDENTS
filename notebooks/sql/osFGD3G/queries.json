@@ -4650,6 +4650,25 @@
         },
         "sql": "--select count(*), percentile_cont(0.1) within group (order by distance_ban_gps)   from geocoded_by_concat_prepared \n\nselect count(*) / 986.20 from geocoded_by_concat_prepared where distance_ban_gps \u003e 10 and result_score \u003e 0.7\n\nselect count(*) from geocoded_by_concat_prepared where distance_ban_gps is not null and result_score \u003e 0.7",
         "expandedSql": "--select count(*), percentile_cont(0.1) within group (order by distance_ban_gps)   from geocoded_by_concat_prepared \n\nselect count(*) / 986.20 from geocoded_by_concat_prepared where distance_ban_gps \u003e 10 and result_score \u003e 0.7\n\nselect count(*) from geocoded_by_concat_prepared where distance_ban_gps is not null and result_score \u003e 0.7"
+      },
+      {
+        "mode": "SQL",
+        "id": "874tAjXSVj7y",
+        "runOn": 1485178536586,
+        "runIn": 43,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Aln0MGc4a0vS3Nxs",
+        "hash": "2b275c8e613ec9ee87a516235c84625e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select count(*), percentile_cont(0.1) within group (order by distance_ban_gps)   from geocoded_by_concat_prepared \n\nselect count(*) / 986.20 from geocoded_by_concat_prepared where distance_ban_gps \u003e 10 and result_score \u003e 0.7;\n\nselect count(*) from geocoded_by_concat_prepared where distance_ban_gps is not null and result_score \u003e 0.7",
+        "expandedSql": "--select count(*), percentile_cont(0.1) within group (order by distance_ban_gps)   from geocoded_by_concat_prepared \n\nselect count(*) / 986.20 from geocoded_by_concat_prepared where distance_ban_gps \u003e 10 and result_score \u003e 0.7;\n\nselect count(*) from geocoded_by_concat_prepared where distance_ban_gps is not null and result_score \u003e 0.7"
       }
     ]
   }
