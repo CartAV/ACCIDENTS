@@ -8,10 +8,11 @@ import pandas as pd
 
 
 def fillna(dataset):
-    return dataset.fillna(axis=1, value={
-        'col': '0'}).fillna(axis=1, value={
-        'com': '000'}).fillna(axis=1, value={
-        'atm': '1'})
+    return dataset.fillna(value={
+        'col': '0',
+        'com': '000',
+        'atm': '1',
+        })
 
 
 def invalid_coordinates(lon, lat):
