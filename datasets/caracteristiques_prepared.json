@@ -98,15 +98,15 @@
       },
       {
         "name": "lat",
-        "type": "string",
+        "type": "double",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "long",
-        "type": "string",
+        "type": "double",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "dep",
@@ -137,12 +137,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1485190673576
+    "lastModifiedOn": 1485191243055
   },
   "customMeta": {
     "kv": {}
