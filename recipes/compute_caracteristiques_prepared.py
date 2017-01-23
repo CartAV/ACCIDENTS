@@ -67,9 +67,10 @@ def fix_coordinates(dataset):
     return dataset.apply(process_coordinates, axis=1)
 
 def parse_date(dataset):
-    return dataset.apply(axis=1, lambda row: pd.to_datetime(
+    return dataset.apply(
+        lambda row: pd.to_datetime(
             "20%02d%02d%02d%04d".format(
-            row['an'], row['mois'], row['jour'], row['hrmn'])))
+            row['an'], row['mois'], row['jour'], row['hrmn'])), axis=1)
 
 
 def prepare(dataset):
