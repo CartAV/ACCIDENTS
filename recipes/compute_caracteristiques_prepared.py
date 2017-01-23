@@ -69,9 +69,9 @@ def fix_coordinates(dataset):
 def parse_date(dataset):
     return dataset.apply(
         lambda row: pd.to_datetime(
-            "20%02d%02d%02d%04d".format(
-            row['an'], row['mois'], row['jour'], row['hrmn'])), axis=1)
-
+            "20{:02d}{:02d}{:02d}{:04d}".format(
+            int(row['an']), int(row['mois']), int(row['jour']), int(row['hrmn']))),
+        axis=1)
 
 def prepare(dataset):
     labels = {
