@@ -4940,10 +4940,10 @@
         "mode": "SQL",
         "id": "K53uQC9bdodV",
         "runOn": 1485178932143,
-        "runIn": 84,
+        "runIn": 108,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "E6ToCzjMPJIw8BXP",
         "hash": "1f1ce12a8a26a0f0fa3aa82197772c10",
         "querySettings": {
