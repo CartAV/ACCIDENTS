@@ -4921,10 +4921,10 @@
         "mode": "SQL",
         "id": "yaGTH5TRs46e",
         "runOn": 1485178891216,
-        "runIn": 80,
+        "runIn": 84,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "uTaDENgl0UjaLDE0",
         "hash": "f5dc13fd1a8f4c001d480965e31f4b11",
         "querySettings": {
