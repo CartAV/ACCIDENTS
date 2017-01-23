@@ -3793,6 +3793,25 @@
         },
         "sql": "select count(*) from geocoded_by_concat_prepared where agg \u003d 1 and long is not null and longitude is not null",
         "expandedSql": "select count(*) from geocoded_by_concat_prepared where agg \u003d 1 and long is not null and longitude is not null"
+      },
+      {
+        "mode": "SQL",
+        "id": "QkylI7NRxk2R",
+        "runOn": 1485168400634,
+        "runIn": 77,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "O5rYcXog4xMUsC96",
+        "hash": "48a3dac332bfcb17686089f0b7f350e4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from geocoded_by_concat_prepared where agg \u003d 1 and long is null and longitude is not null",
+        "expandedSql": "select count(*) from geocoded_by_concat_prepared where agg \u003d 1 and long is null and longitude is not null"
       }
     ]
   }
