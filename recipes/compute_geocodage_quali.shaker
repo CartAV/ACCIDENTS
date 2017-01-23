@@ -1,61 +1,6 @@
 {
   "steps": [
     {
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "column": "valid_coord",
-        "expression": "!isBlank(long) \u0026\u0026 !isBlank(lat) \u0026\u0026 lat !\u003d 0"
-      },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": false,
-      "alwaysShowComment": false
-    },
-    {
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "column": "lat",
-        "expression": "if(lat!\u003d0,lat/100000,\"\")"
-      },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": true,
-      "alwaysShowComment": false
-    },
-    {
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "column": "long",
-        "expression": "if(long!\u003d0,long/100000,\"\")"
-      },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": true,
-      "alwaysShowComment": false
-    },
-    {
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "column": "valid_address",
-        "expression": "!isBlank(adr)"
-      },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": false,
-      "alwaysShowComment": false
-    },
-    {
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "column": "quali_coord",
-        "expression": "if(valid_coord, \"Ok\", if(valid_address, \"Maybe\", \"Dead\"))"
-      },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": false,
-      "alwaysShowComment": false
-    },
-    {
       "type": "FindReplace",
       "params": {
         "output": "",
