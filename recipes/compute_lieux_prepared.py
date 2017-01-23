@@ -3,16 +3,6 @@ import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
-# Recipe inputs
-accidents_lieux = dataiku.Dataset("accidents_lieux")
-accidents_lieux_df = accidents_lieux.get_dataframe()
-
-prepared = prepare(accidents_lieux_df)
-
-# Recipe outputs
-lieux_prepared = dataiku.Dataset("lieux_prepared")
-lieux_prepared.write_with_schema(prepared)
-
 def prepare(dataset):
     """ Prépare le jeux de données caractérisant les lieux d'accident
 
@@ -90,3 +80,15 @@ def prepare(dataset):
         dataset[key] = dataset[key].map(values)
 
     return dataset
+
+
+# Recipe inputs
+accidents_lieux = dataiku.Dataset("accidents_lieux")
+accidents_lieux_df = accidents_lieux.get_dataframe()
+
+prepared = prepare(accidents_lieux_df)
+
+# Recipe outputs
+lieux_prepared = dataiku.Dataset("lieux_prepared")
+lieux_prepared.write_with_schema(prepared)
+
