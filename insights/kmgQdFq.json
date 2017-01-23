@@ -4,19 +4,19 @@
       "chartsEngine": "LINO",
       "sampling": {
         "selection": {
-          "samplingMethod": "HEAD_SEQUENTIAL",
+          "samplingMethod": "FULL",
           "partitionSelectionMethod": "ALL",
           "maxRecords": 10000,
           "targetRatio": 0.02
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 0
+        "_refreshTrigger": 1
       },
       "steps": []
     },
     "dataset": "geocoded_by_concat_prepared",
     "chart": {
-      "type": "grouped_columns",
+      "type": "lines",
       "variant": "normal",
       "name": "Count by distance_ban_gps",
       "userEditedName": false,
@@ -25,8 +25,48 @@
           "column": "distance_ban_gps",
           "type": "NUMERICAL",
           "numParams": {
-            "mode": "NONE",
+            "mode": "FIXED_SIZE",
             "nbBins": 10,
+            "binSize": "0.1",
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [
+        {
+          "column": "agg",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "NONE",
+            "nbBins": 30,
             "binSize": 100,
             "emptyBinsMode": "ZEROS"
           },
@@ -60,7 +100,6 @@
           }
         }
       ],
-      "genericDimension1": [],
       "genericMeasures": [
         {
           "function": "COUNT",
@@ -69,8 +108,8 @@
           "isA": "measure",
           "displayAxis": "axis1",
           "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
+          "computeMode": "CUMULATIVE_PERCENTAGE",
+          "computeModeDim": 1
         }
       ],
       "xDimension": [],
@@ -92,41 +131,10 @@
       "boxplotValue": [],
       "filters": [
         {
-          "filterType": "ALPHANUM_FACET",
-          "column": "result_type",
-          "columnType": "ALPHANUM",
-          "isA": "filter",
-          "excludedValues": {
-            "city": true,
-            "locality": true,
-            "street": true,
-            "town": true,
-            "village": true
-          },
-          "explicitExclude": false
-        },
-        {
           "filterType": "NUMERICAL_FACET",
           "column": "distance_ban_gps",
           "columnType": "NUMERICAL",
-          "maxValue": 1.558664,
-          "isA": "filter",
-          "excludedValues": {},
-          "explicitExclude": false
-        },
-        {
-          "filterType": "NUMERICAL_FACET",
-          "column": "agg",
-          "columnType": "NUMERICAL",
-          "isA": "filter",
-          "excludedValues": {},
-          "explicitExclude": false
-        },
-        {
-          "filterType": "NUMERICAL_FACET",
-          "column": "result_score",
-          "columnType": "NUMERICAL",
-          "minValue": 0.697824,
+          "maxValue": 20.0,
           "isA": "filter",
           "excludedValues": {},
           "explicitExclude": false
@@ -168,7 +176,7 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAkklEQVRoge3XsQnDMBRFUe+QMuAPmSGzfZE+RYYJqZ67QNZxpxVSuLELtxI83QMqBe+CGk0TADtR9Ou9oSmC3RHsjmB3BLsj2B3B7gh2R7C7SNXeG5oi2B3B7gh2R7A7gt1Fqt5yuffe0Uyk6lAfiEjVoZ71sMHDRO+DD6dovT6+l9N7ZXlH6hlFnzn1arkZ2PwBqchq9fhK9HIAAAAASUVORK5CYII\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAqklEQVRoge3Suw3CMBRGYY9AhagSQ8EOVIgBaKgjWAEKcELFRE6BvUKilExhIpZgACTC01eC87X3L05xlQLwd2zTTmwVll07vfWDoXFZjKaPsHW76NokhVvFaPmqsg763l3nfhMpRdao8GPpBuAJtrncvKzO/UEgBcCb9LrsSTcAeJytwlS6ISp7OvelG0SkOzeTbgDwmsQc59INAAAopVLj9tINAADgt10BH10iBhoYNWwAAAAASUVORK5CYII\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
