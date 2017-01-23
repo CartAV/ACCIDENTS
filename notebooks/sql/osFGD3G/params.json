@@ -7,7 +7,7 @@
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485177298129
+    "lastModifiedOn": 1485177303884
   },
   "connection": "datalabmaster",
   "name": "Bidouilles à Tristram",
@@ -93,6 +93,7 @@
     {
       "id": "187yn6jy0im",
       "type": "QUERY",
+      "name": "Distances par déciles",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
