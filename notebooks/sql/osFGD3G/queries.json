@@ -4522,10 +4522,10 @@
         "mode": "SQL",
         "id": "V8yPVjFUsXqF",
         "runOn": 1485178456098,
-        "runIn": 70,
+        "runIn": 169,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "cadF3DTp2Uo1zNMn",
         "hash": "8986b43d523dedb56ecbdc2dc2e0e8a5",
         "querySettings": {
