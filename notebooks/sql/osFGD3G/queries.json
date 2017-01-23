@@ -5073,10 +5073,10 @@
         "mode": "SQL",
         "id": "TkiejS9k75pt",
         "runOn": 1485179039607,
-        "runIn": 108,
+        "runIn": 124,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "5oi0WkGPcLZmufor",
         "hash": "b36b0bc3e1c5b5ad037b63cb97da98eb",
         "querySettings": {
