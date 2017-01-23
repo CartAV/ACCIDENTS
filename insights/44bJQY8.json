@@ -96,20 +96,14 @@
           "column": "result_type",
           "columnType": "ALPHANUM",
           "isA": "filter",
-          "excludedValues": {
-            "city": true,
-            "housenumber": true,
-            "locality": true,
-            "town": true,
-            "village": true
-          },
+          "excludedValues": {},
           "explicitExclude": false
         },
         {
           "filterType": "NUMERICAL_FACET",
           "column": "distance_ban_gps",
           "columnType": "NUMERICAL",
-          "maxValue": 1.558664,
+          "maxValue": 3.0652929,
           "isA": "filter",
           "excludedValues": {},
           "explicitExclude": false
@@ -126,7 +120,7 @@
           "filterType": "NUMERICAL_FACET",
           "column": "result_score",
           "columnType": "NUMERICAL",
-          "minValue": 0.697824,
+          "minValue": 0.71088,
           "isA": "filter",
           "excludedValues": {},
           "explicitExclude": false
@@ -168,7 +162,7 @@
         "gridLonDeg": 0.6,
         "gridLatDeg": 0.6
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABpUlEQVRoge3ZvWoUYRTG8bkDkUCCJO9zehsvxipYmyaNoHMObue9WFmIYZ4DdpNEozGzrPEjgXRCoqTaa0izAVFXNmRmTzL7/rtlpnh+M8zswhZFLpfrXWKsxVhH75hbGdz3xFjD/Ff0jrm1cGAYxxnc5xYWvDBv6kswSp5Fb5lLv4OhPI/e03kZ3PcWHgzjOHpTp2Wwcdzr7+R/gaH8Gb2rs6aBYX4Uva2TpoKVP2A+it7Xev8FK0+j97VeBv8BhlXna1o9it7ZWrOAoX4qxjpZtZms2oTyWIz16vPXS9H7r9ys4FT6UTKeiPEEyuOkPITyWyp9Pdpwpa4LhvH7rfqh0gY4qX9JymG0ZabaBK9a9UBKfwitXka7ptYmGOYHYjyE+gjGF8uDrZVo3191BlZvlgdbKzfu+e4SDPX3MA5hHIp6E20timK+4Mkfd/t4+ub+3Y1Xd0LufghY+UnUGyh3YdyB8sPk8x6MO2KsRf1jKjm43Ln2rHosT97e6yUYxneT8/dh3BP17cnxBuYHUO6KeiPKzzAfQdmIeQPl12tfkNwt6gK71EObukjSiQAAAABJRU5ErkJggg\u003d\u003d",
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAmklEQVRoge3PsQ3CQBBEURrxbkCN3FZCJwMpBVAMAQIbLiHAThAh3Ern/6TJ5282AAAAAAAAqzAU7bM/NOWhU/aHpgjuHcG9I7h3XnTJ/tDU6oItVLM/NEVw7wjunYWqFd2zfzQzB0/D7rjN/tLEEuyhh8fhnP3n7z6CRy+aLHSzUPWip4Wu2R9/6lvwHL0E12UeGi00Zn8G3l4humTYyb53MgAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true
     }
