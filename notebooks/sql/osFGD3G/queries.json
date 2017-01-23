@@ -4002,6 +4002,25 @@
         },
         "sql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban\n\n--select count(*) from geocoded_by_concat_prepared\n\nselect (2.109728441528973 + 7.865747583818023 + 6.767873465008147)",
         "expandedSql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban\n\n--select count(*) from geocoded_by_concat_prepared\n\nselect (2.109728441528973 + 7.865747583818023 + 6.767873465008147)"
+      },
+      {
+        "mode": "SQL",
+        "id": "XDenjAHhaOo3",
+        "runOn": 1485175651058,
+        "runIn": 41,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "raskrzDqGaoaKATY",
+        "hash": "493438f49dec619756dab8207257071c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban;\n--select count(*) from geocoded_by_concat_prepared\n\nselect (2.109728441528973 + 7.865747583818023 + 6.767873465008147)",
+        "expandedSql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban;\n--select count(*) from geocoded_by_concat_prepared\n\nselect (2.109728441528973 + 7.865747583818023 + 6.767873465008147)"
       }
     ]
   }
