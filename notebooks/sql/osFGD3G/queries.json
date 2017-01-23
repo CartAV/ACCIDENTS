@@ -4555,6 +4555,25 @@
         },
         "sql": "--select count(*), percentile_cont(0.1) within group (order by distance_ban_gps)   from geocoded_by_concat_prepared \n\nselect count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003e 10 / 986.20\n\n--select count(*) from geocoded_by_concat_prepared where distance_ban_gps is not null",
         "expandedSql": "--select count(*), percentile_cont(0.1) within group (order by distance_ban_gps)   from geocoded_by_concat_prepared \n\nselect count(*) from geocoded_by_concat_prepared where distance_ban_gps \u003e 10 / 986.20\n\n--select count(*) from geocoded_by_concat_prepared where distance_ban_gps is not null"
+      },
+      {
+        "mode": "SQL",
+        "id": "drTFunVCN0Ks",
+        "runOn": 1485178482362,
+        "runIn": 82,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Nvj7eNcPQd1Wvcd7",
+        "hash": "72fda76d2e417e0002f00711e7d935aa",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select count(*), percentile_cont(0.1) within group (order by distance_ban_gps)   from geocoded_by_concat_prepared \n\nselect count(*) / 986.20 from geocoded_by_concat_prepared where distance_ban_gps \u003e 10 \n\n--select count(*) from geocoded_by_concat_prepared where distance_ban_gps is not null",
+        "expandedSql": "--select count(*), percentile_cont(0.1) within group (order by distance_ban_gps)   from geocoded_by_concat_prepared \n\nselect count(*) / 986.20 from geocoded_by_concat_prepared where distance_ban_gps \u003e 10 \n\n--select count(*) from geocoded_by_concat_prepared where distance_ban_gps is not null"
       }
     ]
   }
