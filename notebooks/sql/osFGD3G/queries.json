@@ -4403,6 +4403,25 @@
         },
         "sql": "select count(*), percentile_cont(0.1) within group (order by distance_ban_gps)  over() from geocoded_by_concat_prepared ",
         "expandedSql": "select count(*), percentile_cont(0.1) within group (order by distance_ban_gps)  over() from geocoded_by_concat_prepared "
+      },
+      {
+        "mode": "SQL",
+        "id": "eWN9iz4nCBhO",
+        "runOn": 1485177959458,
+        "runIn": 45,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Nccoxs4o3kXAg0LV",
+        "hash": "135091d14a23cb98139f9ca7e1675eca",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*), percentile_cont(0.1) within group (order by distance_ban_gps)  over(distance_ban_gps) from geocoded_by_concat_prepared ",
+        "expandedSql": "select count(*), percentile_cont(0.1) within group (order by distance_ban_gps)  over(distance_ban_gps) from geocoded_by_concat_prepared "
       }
     ]
   }
