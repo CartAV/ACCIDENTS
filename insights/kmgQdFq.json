@@ -1,0 +1,193 @@
+{
+  "content": {
+    "dataView": {
+      "chartsEngine": "LINO",
+      "sampling": {
+        "selection": {
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "partitionSelectionMethod": "ALL",
+          "maxRecords": 10000,
+          "targetRatio": 0.02
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
+      "steps": []
+    },
+    "dataset": "geocoded_by_concat_prepared",
+    "chart": {
+      "type": "grouped_columns",
+      "variant": "normal",
+      "name": "Count by distance_ban_gps",
+      "userEditedName": false,
+      "genericDimension0": [
+        {
+          "column": "distance_ban_gps",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "NONE",
+            "nbBins": 10,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "genericMeasures": [
+        {
+          "function": "COUNT",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "result_type",
+          "columnType": "ALPHANUM",
+          "isA": "filter",
+          "excludedValues": {
+            "city": true,
+            "locality": true,
+            "street": true,
+            "town": true,
+            "village": true
+          },
+          "explicitExclude": false
+        },
+        {
+          "filterType": "NUMERICAL_FACET",
+          "column": "distance_ban_gps",
+          "columnType": "NUMERICAL",
+          "maxValue": 1.558664,
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        },
+        {
+          "filterType": "NUMERICAL_FACET",
+          "column": "agg",
+          "columnType": "NUMERICAL",
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        },
+        {
+          "filterType": "NUMERICAL_FACET",
+          "column": "result_score",
+          "columnType": "NUMERICAL",
+          "minValue": 0.697824,
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        }
+      ],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "hexbinRadius": 20,
+      "smoothing": false,
+      "showLegend": true,
+      "showXAxis": false,
+      "strokeWidth": 1,
+      "colorOptions": {
+        "singleColor": "#659a88",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL"
+      },
+      "colorPaletteType": "LINEAR",
+      "bubblesOptions": {
+        "defaultRadius": 5.0
+      },
+      "computeMode": "NORMAL",
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 50.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.6,
+        "gridLatDeg": 0.6
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAkklEQVRoge3XsQnDMBRFUe+QMuAPmSGzfZE+RYYJqZ67QNZxpxVSuLELtxI83QMqBe+CGk0TADtR9Ou9oSmC3RHsjmB3BLsj2B3B7gh2R7C7SNXeG5oi2B3B7gh2R7A7gt1Fqt5yuffe0Uyk6lAfiEjVoZ71sMHDRO+DD6dovT6+l9N7ZXlH6hlFnzn1arkZ2PwBqchq9fhK9HIAAAAASUVORK5CYII\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true
+    }
+  },
+  "name": "Count by distance_ban_gps",
+  "type": "CHART",
+  "miniature": {
+    "type": "chart",
+    "showTitle": true,
+    "fullImage": true
+  },
+  "fullView": {
+    "descriptionPosition": "right"
+  },
+  "description": "",
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "createdBy": "antoinefa",
+  "createdOn": 1485180845059
+}
