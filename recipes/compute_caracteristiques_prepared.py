@@ -132,7 +132,7 @@ def prepare(dataset):
 
 # Recipe inputs
 accidents_caracteristiques = dataiku.Dataset("accidents_caracteristiques")
-accidents_caracteristiques_df = accidents_caracteristiques.get_dataframe()
+accidents_caracteristiques_df = accidents_caracteristiques.get_dataframe(infer_with_pandas=False)
 
 prepared = prepare(accidents_caracteristiques_df)
 # Recipe outputs
