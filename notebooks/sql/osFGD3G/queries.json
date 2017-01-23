@@ -3907,6 +3907,25 @@
         },
         "sql": "SELECT COUNT(*),\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban",
         "expandedSql": "SELECT COUNT(*),\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban"
+      },
+      {
+        "mode": "SQL",
+        "id": "v1NOksSJns8j",
+        "runOn": 1485175277577,
+        "runIn": 115,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "cS1TGgt5ZOLA4Gru",
+        "hash": "23858b6a2dc6297ddeec054d9d9e93fb",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "/*SELECT COUNT(*),\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban*/\n\nselect count(*) from geocoded_by_concat_prepared",
+        "expandedSql": "/*SELECT COUNT(*),\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban*/\n\nselect count(*) from geocoded_by_concat_prepared"
       }
     ]
   }
