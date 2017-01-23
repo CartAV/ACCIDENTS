@@ -4078,6 +4078,25 @@
         },
         "sql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban;\n--select count(*) from geocoded_by_concat_prepared\n\n--select (10.533002244719269 + 1.966148454015304 + 50.446956809345 + 5.983439586797307)",
         "expandedSql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban;\n--select count(*) from geocoded_by_concat_prepared\n\n--select (10.533002244719269 + 1.966148454015304 + 50.446956809345 + 5.983439586797307)"
+      },
+      {
+        "mode": "SQL",
+        "id": "f855L8jfTtp5",
+        "runOn": 1485175882479,
+        "runIn": 105,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "rxmL3OJd88qUHQVT",
+        "hash": "34af0e859d738a4f19a63aae2273c6d5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban;\n--select count(*) from geocoded_by_concat_prepared\n\n--select (2.109728441528973 + 7.8657475838180 + 14.32710341476797 + 6.767873465008147)",
+        "expandedSql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban;\n--select count(*) from geocoded_by_concat_prepared\n\n--select (2.109728441528973 + 7.8657475838180 + 14.32710341476797 + 6.767873465008147)"
       }
     ]
   }
