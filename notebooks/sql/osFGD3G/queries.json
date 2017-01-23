@@ -4427,10 +4427,10 @@
         "mode": "SQL",
         "id": "6bq8qAgXVJPh",
         "runOn": 1485177982818,
-        "runIn": 47,
+        "runIn": 56,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "75AKWZh1qmMTuaDb",
         "hash": "df3ac06014629135e861e288ef1ef6e6",
         "querySettings": {
