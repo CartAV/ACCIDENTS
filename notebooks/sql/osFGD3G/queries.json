@@ -4136,6 +4136,27 @@
         "sql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban;\n--select count(*) from geocoded_by_concat_prepared\n\n--select (2.109728441528973 + 7.8657475838180 + 14.32710341476797 + 6.767873465008147)",
         "expandedSql": "SELECT COUNT(*) / 7800.53 as count,\n       agg,\n       (long is not null) as coord_initiales,\n       (longitude is not null) as coord_ban\nFROM geocoded_by_concat_prepared\nGROUP BY agg, coord_initiales, coord_ban;\n--select count(*) from geocoded_by_concat_prepared\n\n--select (2.109728441528973 + 7.8657475838180 + 14.32710341476797 + 6.767873465008147)"
       }
+    ],
+    "187yn6jy0im": [
+      {
+        "mode": "SQL",
+        "id": "iTFxPn79WpPB",
+        "runOn": 1485177479498,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "5QxZlxLVluH4YtU7",
+        "hash": "9d01bc67ab5725689a5860d1476ef252",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*), distance_ban_gps, ntile(10) over(count(*))  from geocoded_by_concat_prepared",
+        "expandedSql": "select count(*), distance_ban_gps, ntile(10) over(count(*))  from geocoded_by_concat_prepared"
+      }
     ]
   }
 }
