@@ -4161,10 +4161,10 @@
         "mode": "SQL",
         "id": "Kev5zeHPKpo5",
         "runOn": 1485177490896,
-        "runIn": 51,
+        "runIn": 65,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "eqkzn1zVtC32GOFK",
         "hash": "2e83c92b2245e9255767213b0bb18684",
         "querySettings": {
