@@ -84,7 +84,7 @@ def prepare(dataset):
 
 # Recipe inputs
 accidents_lieux = dataiku.Dataset("accidents_lieux")
-accidents_lieux_df = accidents_lieux.get_dataframe()
+accidents_lieux_df = accidents_lieux.get_dataframe(infer_with_pandas=False)
 
 prepared = prepare(accidents_lieux_df)
 
