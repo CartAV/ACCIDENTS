@@ -124,7 +124,7 @@ def prepare(dataset):
     for key, values in labels.items():
         dataset[key] = dataset[key].map(values)
 
-    dataset = process_coordinates(dataset)
+    dataset = fix_coordinates(dataset)
     dataset['date'] = parse_date(dataset)
 
     return dataset
