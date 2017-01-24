@@ -4,10 +4,6 @@
     "main": {
       "items": [
         {
-          "ref": "geocodage_quali",
-          "deps": []
-        },
-        {
           "ref": "DATAPREPOPENDATAGEO.2016_codes_postaux_prep",
           "deps": []
         },
@@ -40,13 +36,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 81,
+    "versionNumber": 82,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485253725178
+    "lastModifiedOn": 1485253782005
   },
   "customMeta": {
     "kv": {}
