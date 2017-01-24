@@ -32,7 +32,7 @@ def adresse_submit(df):
     t=1
     while (t<=maxtries):
         df_adr=df[["Num_Acc","adr","city_code"]]
-        df_adr.to_csv(s,sep=",", quotechar='"',encoding="utf-8",index=False)
+        df_adr.to_csv(s,sep=",", quotechar='"',encoding="utf-8-sig",index=False)
         requests_session = requests.Session()
         kwargs = {
             #'data': OrderedDict([                     
@@ -71,7 +71,7 @@ def adresse_submit(df):
             res['result_score']=-0.5
             t+=1
         
-        
+    print res
     return res
 
 
@@ -92,7 +92,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=nthreads) as executor:
     for s in concurrent.futures.as_completed(enrich):  
         j+=split
         try:
-            print(s.result())
+            #print(s.result())
             liste.append(s.result())
         except Exception as exc:
             print("chunk %r to %r generated an exception: %r\n%r" %(j-split,j,exc,s))
