@@ -35,7 +35,7 @@ class GeoHisto(object):
         try:
             import dataiku
             mydataset = dataiku.Dataset("DATAPREPOPENDATAGEO.2016_geohisto_communes_prep")
-            self.towns = mydataset.get_dataframe(infer_with_pandas=False)
+            self.towns = mydataset.get_dataframe(columns=['id', 'insee_code', 'start_datetime', 'end_datetime', 'successors'], infer_with_pandas=False)
             self.towns.fillna(value={"successors":""}, inplace=True)
             self.towns.set_index('id', inplace=True)
             
