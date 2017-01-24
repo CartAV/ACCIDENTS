@@ -17,7 +17,7 @@ futures=[]
 split=500
 verbosechunksize=2000
 maxtries=4
-nthreads=1
+nthreads=8
 j=0
 
 # Recipe outputs
