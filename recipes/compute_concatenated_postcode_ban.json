@@ -4,7 +4,7 @@
     "main": {
       "items": [
         {
-          "ref": "geocodage_with_city_code",
+          "ref": "caracteristiques_prepared2",
           "deps": []
         }
       ]
@@ -28,13 +28,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
+      "login": "chabouisfr",
+      "displayName": "Francis Chabouis",
+      "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1484830884085
+    "lastModifiedOn": 1485255706059
   },
   "customMeta": {
     "kv": {}

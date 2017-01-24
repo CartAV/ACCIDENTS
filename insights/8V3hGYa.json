@@ -14,7 +14,7 @@
       },
       "steps": []
     },
-    "dataset": "geocodage_with_city_code",
+    "dataset": "caracteristiques_prepared2",
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",

@@ -22,7 +22,7 @@
     "main": {
       "items": [
         {
-          "ref": "geocodage_with_city_code",
+          "ref": "caracteristiques_prepared2",
           "appendMode": false
         }
       ]
@@ -36,13 +36,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 85,
+    "versionNumber": 86,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485254015346
+    "lastModifiedOn": 1485255706050
   },
   "customMeta": {
     "kv": {}
