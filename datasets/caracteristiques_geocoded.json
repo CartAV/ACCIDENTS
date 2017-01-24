@@ -20,69 +20,63 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "an",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "mois",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "jour",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "hrmn",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "date",
-        "type": "date",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "lum",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "agg",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "int",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "atm",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "col",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "com",
@@ -95,12 +89,6 @@
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
-      },
-      {
-        "name": "valid_address",
-        "type": "boolean",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
       },
       {
         "name": "gps",
@@ -121,22 +109,16 @@
         "maxLength": -1
       },
       {
-        "name": "valid_coord",
-        "type": "boolean",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "quali_coord",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
         "name": "dep",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
+      },
+      {
+        "name": "date",
+        "type": "date",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
       },
       {
         "name": "city_code_x",
@@ -257,13 +239,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "chabouisfr",
-      "displayName": "Francis Chabouis",
-      "email": "francis.chabouis@interieur.gouv.fr"
+      "login": "DSS",
+      "displayName": "DSS"
     },
-    "lastModifiedOn": 1485255828060
+    "lastModifiedOn": 1485257012195
   },
   "customMeta": {
     "kv": {}
