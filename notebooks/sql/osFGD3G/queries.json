@@ -5317,6 +5317,25 @@
         },
         "sql": "select * from accidents where adr like \u0027%PK%\u0027",
         "expandedSql": "select * from accidents where adr like \u0027%PK%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "gHtXEMGjwIlj",
+        "runOn": 1485277445386,
+        "runIn": 555,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "oIaYYqs4SM9jqXi9",
+        "hash": "46e9c8032856e9df2471fc6224065be1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from accidents where adr like \u0027%PK%\u0027",
+        "expandedSql": "select count(*) from accidents where adr like \u0027%PK%\u0027"
       }
     ]
   }
