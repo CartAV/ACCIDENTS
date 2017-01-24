@@ -6,10 +6,6 @@
         {
           "ref": "caracteristiques_prepared2",
           "deps": []
-        },
-        {
-          "ref": "caracteristiques_prepared2_sample",
-          "deps": []
         }
       ]
     }
@@ -19,10 +15,6 @@
       "items": [
         {
           "ref": "caracteristiques_geocoded",
-          "appendMode": false
-        },
-        {
-          "ref": "caracteristiques_geocoded_sample",
           "appendMode": false
         }
       ]
@@ -36,13 +28,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 48,
+    "versionNumber": 49,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485266273856
+    "lastModifiedOn": 1485266294354
   },
   "customMeta": {
     "kv": {}
