@@ -13,7 +13,19 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "on": [],
+      "on": [
+        {
+          "column1": {
+            "name": "Num_Acc",
+            "table": 0
+          },
+          "type": "EQ",
+          "column2": {
+            "name": "Num_Acc",
+            "table": 1
+          }
+        }
+      ],
       "type": "LEFT"
     }
   ],
@@ -38,234 +50,292 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "postFilter": {},
   "selectedColumns": [
     {
       "name": "Num_Acc",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "an",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "mois",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "jour",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "hrmn",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "date",
-      "table": 0
+      "table": 0,
+      "type": "date"
     },
     {
       "name": "lum",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "agg",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "int",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "atm",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "col",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "com",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "adr_x",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "valid_address",
-      "table": 0
+      "table": 0,
+      "type": "boolean"
     },
     {
       "name": "gps",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "lat",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "long",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "valid_coord",
-      "table": 0
+      "table": 0,
+      "type": "boolean"
     },
     {
       "name": "quali_coord",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "dep",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "city_code_x",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "city_code_source",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "adr_y",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "city_code_y",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "latitude",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "longitude",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "result_label",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "result_score",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "result_type",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "result_id",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "result_housenumber",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "result_name",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "result_street",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "result_postcode",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "result_city",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "result_context",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "result_citycode",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "gps_geo_point",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "ban_geo_point",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "distance_ban_gps",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "catr",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "voie",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "v1",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "v2",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "circ",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "nbv",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "pr",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "pr1",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "vosp",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "prof",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "plan",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "lartpc",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "larrout",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "surf",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "infra",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "situ",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "env1",
-      "table": 0
+      "table": 1,
+      "type": "string"
     }
   ]
 }
