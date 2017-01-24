@@ -14,7 +14,7 @@
       },
       "steps": []
     },
-    "dataset": "geocoded_caracteristiques_accident",
+    "dataset": "caracteristiques_geocoded",
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",
