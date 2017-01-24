@@ -14,6 +14,10 @@
         {
           "ref": "DATAPREPOPENDATAGEO.2016_geohisto_communes_prep",
           "deps": []
+        },
+        {
+          "ref": "caracteristiques_prepared",
+          "deps": []
         }
       ]
     }
@@ -36,13 +40,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 80,
+    "versionNumber": 81,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485253614264
+    "lastModifiedOn": 1485253725178
   },
   "customMeta": {
     "kv": {}
