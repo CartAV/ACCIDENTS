@@ -54,8 +54,10 @@ def adresse_submit(df):
     
         response = requests_session.request(**kwargs)
         if (response.status_code == 200):
+            print response.content.decode('utf-8-sig')
             res=pd.read_csv(StringIO.StringIO(response.content.decode('utf-8-sig')),sep=",",quotechar='"')
             res=pd.merge(df,res,how='left',on=['Num_Acc'])
+            print res
             t=maxtries+1
         elif (response.status_code == 400):
             print("chunk %r to %r generated an exception, try #%r" %(i-split,i,t))
