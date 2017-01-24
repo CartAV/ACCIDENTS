@@ -104,7 +104,7 @@ print "Going to concat"
 events=pd.concat(liste,ignore_index=True)
 #print("len(events) "+str(len(events)))
 
-out = d.Dataset("geocoded_caracteristiques_accident")
+out = d.Dataset("caracteristiques_geocoded")
 out.write_with_schema(events)
 
 
