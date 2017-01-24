@@ -10,7 +10,7 @@ from collections import OrderedDict
 
 
 # Recipe inputs
-f = d.Dataset("caracteristiques_prepared2_sample")
+f = d.Dataset("caracteristiques_prepared2")
 i=0
 liste=[]
 futures=[]
@@ -103,7 +103,7 @@ print "Going to concat"
 events=pd.concat(liste,ignore_index=True)
 #print("len(events) "+str(len(events)))
 
-out = d.Dataset("caracteristiques_geocoded_sample")
+out = d.Dataset("caracteristiques_geocoded")
 out.write_with_schema(events)
 
 
