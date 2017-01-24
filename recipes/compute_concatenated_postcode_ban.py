@@ -17,7 +17,7 @@ futures=[]
 split=500
 verbosechunksize=2000
 maxtries=4
-nthreads=8
+nthreads=1
 j=0
 
 # Recipe outputs
@@ -54,10 +54,10 @@ def adresse_submit(df):
     
         response = requests_session.request(**kwargs)
         if (response.status_code == 200):
-            print response.content.decode('utf-8-sig')
+            #print response.content.decode('utf-8-sig')
             res=pd.read_csv(StringIO.StringIO(response.content.decode('utf-8-sig')),sep=",",quotechar='"')
             res=pd.merge(df,res,how='left',on=['Num_Acc'])
-            print res
+            #print res
             t=maxtries+1
         elif (response.status_code == 400):
             print("chunk %r to %r generated an exception, try #%r" %(i-split,i,t))
@@ -92,7 +92,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=nthreads) as executor:
     for s in concurrent.futures.as_completed(enrich):  
         j+=split
         try:
-            #print(s.result())
+            print(s.result())
             liste.append(s.result())
         except Exception as exc:
             print("chunk %r to %r generated an exception: %r\n%r" %(j-split,j,exc,s))
