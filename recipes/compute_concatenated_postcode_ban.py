@@ -32,7 +32,7 @@ def adresse_submit(df):
     t=1
     while (t<=maxtries):
         df_adr=df[["Num_Acc","adr","city_code"]]
-        df_adr.to_csv(s,sep=",", quotechar='"',encoding="utf-8-sig",index=False)
+        df_adr.to_csv(s,sep=",", quotechar='"',encoding="utf-8",index=False)
         requests_session = requests.Session()
         kwargs = {
             #'data': OrderedDict([                     
