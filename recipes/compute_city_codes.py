@@ -231,7 +231,7 @@ class CityCodes():
 c = CityCodes()
 
 # Recipe inputs
-geocodage_quali = dataiku.Dataset("geocodage_quali")
+geocodage_quali = dataiku.Dataset("caracteristiques_prepared")
 geocodage_quali_df = geocodage_quali.get_dataframe(infer_with_pandas=False)
 
 
