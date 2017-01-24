@@ -18,13 +18,15 @@
       "targetRatio": 0.02
     },
     "autoRefreshSample": false,
-    "_refreshTrigger": 0
+    "_refreshTrigger": 1
   },
   "vizSampling": {
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [],
   "previewMode": "ALL_ROWS",
