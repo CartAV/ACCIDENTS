@@ -5355,6 +5355,25 @@
         },
         "sql": "select count(*) from accidents where adr like \u0027%PK%\u0027 and lon is null",
         "expandedSql": "select count(*) from accidents where adr like \u0027%PK%\u0027 and lon is null"
+      },
+      {
+        "mode": "SQL",
+        "id": "amSfsESF0mnr",
+        "runOn": 1485277455783,
+        "runIn": 45,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "WQXAx6HnenFRce40",
+        "hash": "7ce28e42ee03fa6c0363519d9c731a54",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from accidents where adr like \u0027%PK%\u0027 and long is null",
+        "expandedSql": "select count(*) from accidents where adr like \u0027%PK%\u0027 and long is null"
       }
     ]
   }
