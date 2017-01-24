@@ -8,14 +8,6 @@
           "deps": []
         },
         {
-          "ref": "laposte_hexasmal",
-          "deps": []
-        },
-        {
-          "ref": "geohisto_towns",
-          "deps": []
-        },
-        {
           "ref": "DATAPREPOPENDATAGEO.2016_codes_postaux_prep",
           "deps": []
         },
@@ -44,13 +36,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 79,
+    "versionNumber": 80,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485253379830
+    "lastModifiedOn": 1485253614264
   },
   "customMeta": {
     "kv": {}
