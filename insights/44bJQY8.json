@@ -14,7 +14,7 @@
       },
       "steps": []
     },
-    "dataset": "geocoded_by_concat_prepared",
+    "dataset": "caracteristiques",
     "chart": {
       "type": "grouped_columns",
       "variant": "normal",

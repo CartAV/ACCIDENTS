@@ -4,7 +4,7 @@
     "main": {
       "items": [
         {
-          "ref": "geocoded_by_concat_prepared",
+          "ref": "caracteristiques",
           "deps": []
         },
         {
@@ -31,13 +31,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485255246972
+    "lastModifiedOn": 1485255993598
   },
   "customMeta": {
     "kv": {}
