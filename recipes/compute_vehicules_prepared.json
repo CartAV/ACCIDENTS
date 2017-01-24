@@ -1,0 +1,43 @@
+{
+  "type": "python",
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "accidents_vehicules",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "vehicules_prepared",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {},
+  "checklists": {
+    "checklists": []
+  },
+  "tags": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr",
+      "displayName": "Francis Chabouis",
+      "email": "francis.chabouis@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1485248689106
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false
+}
