@@ -78,34 +78,29 @@
       "type": "bigint"
     },
     {
-      "name": "date",
-      "table": 0,
-      "type": "date"
-    },
-    {
       "name": "lum",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
       "name": "agg",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
       "name": "int",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
       "name": "atm",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
       "name": "col",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
       "name": "com",
@@ -116,11 +111,6 @@
       "name": "adr_x",
       "table": 0,
       "type": "string"
-    },
-    {
-      "name": "valid_address",
-      "table": 0,
-      "type": "boolean"
     },
     {
       "name": "gps",
@@ -138,19 +128,14 @@
       "type": "double"
     },
     {
-      "name": "valid_coord",
-      "table": 0,
-      "type": "boolean"
-    },
-    {
-      "name": "quali_coord",
-      "table": 0,
-      "type": "string"
-    },
-    {
       "name": "dep",
       "table": 0,
       "type": "string"
+    },
+    {
+      "name": "date",
+      "table": 0,
+      "type": "date"
     },
     {
       "name": "city_code_x",
