@@ -34,7 +34,7 @@ class GeoHisto(object):
         """
         try:
             import dataiku
-            mydataset = dataiku.Dataset("2016_geohisto_communes_prep")
+            mydataset = dataiku.Dataset("DATAPREPOPENDATAGEO.2016_geohisto_communes_prep")
             self.towns = mydataset.get_dataframe(infer_with_pandas=False)
             self.towns.fillna(value={"successors":""}, inplace=True)
             self.towns.set_index('id', inplace=True)
@@ -114,7 +114,7 @@ class CityCodes():
     def __init__(self):
         try:
             import dataiku
-            mydataset = dataiku.Dataset("2016_codes_postaux_prep")
+            mydataset = dataiku.Dataset("DATAPREPOPENDATAGEO.2016_codes_postaux_prep")
             poste = mydataset.get_dataframe(infer_with_pandas=False)
         except ImportError:
             poste = pd.read_csv(
