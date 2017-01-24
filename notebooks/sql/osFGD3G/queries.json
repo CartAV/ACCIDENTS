@@ -5341,10 +5341,10 @@
         "mode": "SQL",
         "id": "7YiGMgyys5Ae",
         "runOn": 1485277452069,
-        "runIn": 142,
+        "runIn": 45,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "RwVL3LA7csDwMsu7",
         "hash": "8b31a9fb1afaa6f039a6eb242dbc5792",
         "querySettings": {
