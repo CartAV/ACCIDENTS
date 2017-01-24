@@ -6,6 +6,10 @@
         {
           "ref": "caracteristiques_prepared2",
           "deps": []
+        },
+        {
+          "ref": "caracteristiques_prepared2_sample",
+          "deps": []
         }
       ]
     }
@@ -28,13 +32,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485256109691
+    "lastModifiedOn": 1485265220857
   },
   "customMeta": {
     "kv": {}
