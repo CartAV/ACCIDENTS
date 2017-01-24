@@ -4,6 +4,7 @@
     "connection": "el",
     "index": "es2_2005_2015_accidents_caracteristiques_lieux",
     "type": "es2_2005_2015_accidents_caracteristiques_lieux",
+    "rawCopyColumns": "*",
     "frameSize": 10000,
     "partitioned": false
   },
@@ -369,6 +370,15 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr",
+      "displayName": "Francis Chabouis",
+      "email": "francis.chabouis@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1485266808158
   },
   "customMeta": {
     "kv": {}
