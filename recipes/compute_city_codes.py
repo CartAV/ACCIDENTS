@@ -240,7 +240,7 @@ geocodage_quali_df[['city_code', 'city_code_source', 'dep']] = geocodage_quali_d
 #geocodage_quali_df['dep'] = geocodage_quali_df.apply(lambda x: c.city_code(x["dep"], x["com"])[2], axis = 1)
 
 # Recipe outputs
-geocodage_with_city_code = dataiku.Dataset("geocodage_with_city_code")
+geocodage_with_city_code = dataiku.Dataset("caracteristiques_prepared2")
 geocodage_with_city_code.write_with_schema(geocodage_quali_df)
 
 
