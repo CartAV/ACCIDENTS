@@ -18,6 +18,10 @@
         {
           "ref": "DATAPREPOPENDATAGEO.2016_codes_postaux_prep",
           "deps": []
+        },
+        {
+          "ref": "DATAPREPOPENDATAGEO.2016_geohisto_communes_prep",
+          "deps": []
         }
       ]
     }
@@ -40,13 +44,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 74,
+    "versionNumber": 75,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485251768117
+    "lastModifiedOn": 1485252799137
   },
   "customMeta": {
     "kv": {}
