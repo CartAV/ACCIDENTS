@@ -146,15 +146,15 @@
       },
       {
         "name": "latitude",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "longitude",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "result_label",
@@ -164,9 +164,9 @@
       },
       {
         "name": "result_score",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "result_type",
@@ -194,15 +194,15 @@
       },
       {
         "name": "result_street",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "result_postcode",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "result_city",
@@ -239,12 +239,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1485257012195
+    "lastModifiedOn": 1485268904623
   },
   "customMeta": {
     "kv": {}
