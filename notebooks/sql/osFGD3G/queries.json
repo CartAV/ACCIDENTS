@@ -5284,10 +5284,10 @@
         "mode": "SQL",
         "id": "9vpOaQDLcaI7",
         "runOn": 1485277304865,
-        "runIn": -1,
+        "runIn": 75,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "Sma3AyJjO209rFJ3",
         "hash": "92a98fcba1c46522dd983af2a7afce2d",
         "querySettings": {
