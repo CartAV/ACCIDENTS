@@ -20,6 +20,10 @@
         {
           "ref": "caracteristiques_geocoded",
           "appendMode": false
+        },
+        {
+          "ref": "caracteristiques_geocoded_sample",
+          "appendMode": false
         }
       ]
     }
@@ -32,13 +36,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 32,
+    "versionNumber": 33,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485265220857
+    "lastModifiedOn": 1485265289143
   },
   "customMeta": {
     "kv": {}
