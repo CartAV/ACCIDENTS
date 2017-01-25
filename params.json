@@ -1,14 +1,7 @@
 {
   "projectType": "REGULAR",
   "owner": "antoinefa",
-  "permissions": [
-    {
-      "group": "data_team",
-      "type": "ANALYST_READWRITE",
-      "runJob": false,
-      "downloadData": false
-    }
-  ],
+  "permissions": [],
   "tutorialProject": false,
   "settings": {
     "flowAnchorSourcesAndSinks": true,
