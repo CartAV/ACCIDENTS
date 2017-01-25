@@ -1,6 +1,25 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "DateComponentsExtractor",
+      "params": {
+        "column": "date",
+        "outYearColumn": "ANNEE",
+        "outMonthColumn": "",
+        "outDayColumn": "",
+        "outDayOfWeekColumn": "LIBELLE_JOUR",
+        "outHourColumn": "HEURE",
+        "outWeekOfYearColumn": "SEMAINE",
+        "timezone_id": "UTC"
+      },
+      "metaType": "PROCESSOR",
+      "preview": true,
+      "disabled": false,
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -24,11 +43,14 @@
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "0XH"
     }
   ],
   "previewMode": "ALL_ROWS",
