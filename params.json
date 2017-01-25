@@ -3,12 +3,6 @@
   "owner": "antoinefa",
   "permissions": [
     {
-      "group": "DSCR",
-      "type": "ANALYST_READWRITE",
-      "runJob": false,
-      "downloadData": true
-    },
-    {
       "group": "data_team",
       "type": "ANALYST_READWRITE",
       "runJob": false,
