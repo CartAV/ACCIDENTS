@@ -13,6 +13,53 @@
         "timezone_id": "UTC"
       },
       "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "normalization": "EXACT",
+        "matching": "FULL_STRING",
+        "stopAfterFirstMatch": false,
+        "mapping": [
+          {
+            "from": "1",
+            "to": "LUNDI"
+          },
+          {
+            "from": "2",
+            "to": "MARDI"
+          },
+          {
+            "from": "3",
+            "to": "MERCREDI"
+          },
+          {
+            "from": "4",
+            "to": "JEUDI"
+          },
+          {
+            "from": "5",
+            "to": "VENDREDI"
+          },
+          {
+            "from": "6",
+            "to": "SAMEDI"
+          },
+          {
+            "from": "7",
+            "to": "DIMANCHE"
+          }
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "LIBELLE_JOUR"
+        ]
+      },
+      "metaType": "PROCESSOR",
       "preview": true,
       "disabled": false,
       "alwaysShowComment": false
