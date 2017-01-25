@@ -134,9 +134,9 @@
       },
       {
         "name": "LIBELLE_JOUR",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "HEURE",
@@ -383,13 +383,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr",
       "displayName": "Francis Chabouis",
       "email": "francis.chabouis@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485350631318
+    "lastModifiedOn": 1485355217361
   },
   "customMeta": {
     "kv": {}
