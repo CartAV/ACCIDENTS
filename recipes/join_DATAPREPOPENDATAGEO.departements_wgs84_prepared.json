@@ -1,0 +1,46 @@
+{
+  "type": "join",
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "DATAPREPOPENDATAGEO.departements_wgs84_prepared",
+          "deps": []
+        },
+        {
+          "ref": "accidents_caracteristiques",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "departements_wgs84_prepared_joined",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "checklists": {
+    "checklists": []
+  },
+  "tags": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1485883985081
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false
+}
