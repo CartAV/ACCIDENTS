@@ -26,7 +26,9 @@
     "customConfig": {
       "server_address": "http://datalab-ban/search/csv",
       "concurent_requests": 1.0,
-      "columns": [],
+      "columns": [
+        "adr"
+      ],
       "lines_per_request": 1000.0
     }
   },
@@ -35,13 +37,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1486402024070
+    "lastModifiedOn": 1486402187769
   },
   "customMeta": {
     "kv": {}
