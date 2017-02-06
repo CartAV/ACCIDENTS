@@ -24,7 +24,7 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "server_address": "http://api-adresse.data.gouv.fr",
+      "server_address": "http://fa-srv-1/search/csv/",
       "concurent_requests": 1.0,
       "columns": [],
       "city_code": [],
@@ -36,13 +36,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1486397327500
+    "lastModifiedOn": 1486397437303
   },
   "customMeta": {
     "kv": {}
