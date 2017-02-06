@@ -106,7 +106,7 @@
         "maxLength": -1
       },
       {
-        "name": "adr_x",
+        "name": "adr",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -119,13 +119,13 @@
       },
       {
         "name": "lat",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "long",
-        "type": "double",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -137,30 +137,18 @@
       },
       {
         "name": "date",
-        "type": "date",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "city_code_x",
+        "name": "city_code",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "city_code_source",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "adr_y",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "city_code_y",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -260,12 +248,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1486402650970
+    "lastModifiedOn": 1486403024292
   },
   "customMeta": {
     "kv": {}
