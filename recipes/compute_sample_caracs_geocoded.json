@@ -1,0 +1,49 @@
+{
+  "type": "CustomCode_geocoding_BAN_compute_winecorrelation",
+  "inputs": {
+    "input": {
+      "items": [
+        {
+          "ref": "sample_caracs",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "output": {
+      "items": [
+        {
+          "ref": "sample_caracs_geocoded",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {
+      "server_address": "http://api-adresse.data.gouv.fr",
+      "concurent_requests": 1.0,
+      "lines_per_request": 1000.0
+    }
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "tags": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1486397308317
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false
+}
