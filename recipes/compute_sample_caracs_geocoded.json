@@ -24,7 +24,7 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "server_address": "http://fa-srv-1/search/csv/",
+      "server_address": "http://datalab-ban/search/csv/",
       "concurent_requests": 1.0,
       "columns": [],
       "city_code": [],
@@ -36,13 +36,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1486397443116
+    "lastModifiedOn": 1486398024924
   },
   "customMeta": {
     "kv": {}
