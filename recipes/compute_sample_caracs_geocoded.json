@@ -4,7 +4,7 @@
     "input": {
       "items": [
         {
-          "ref": "sample_caracs",
+          "ref": "caracteristiques_prepared2",
           "deps": []
         }
       ]
@@ -39,13 +39,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1486578880425
+    "lastModifiedOn": 1486578984595
   },
   "customMeta": {
     "kv": {}
