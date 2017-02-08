@@ -365,6 +365,12 @@
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
+      },
+      {
+        "name": "NOM_REG",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
       }
     ]
   },
@@ -383,13 +389,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "chabouisfr",
-      "displayName": "Francis Chabouis",
-      "email": "francis.chabouis@interieur.gouv.fr"
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1485355217361
+    "lastModifiedOn": 1486574447250
   },
   "customMeta": {
     "kv": {}
