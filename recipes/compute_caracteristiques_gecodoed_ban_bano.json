@@ -1,0 +1,51 @@
+{
+  "type": "CustomCode_geocoding_ban",
+  "inputs": {
+    "input": {
+      "items": [
+        {
+          "ref": "sample_caracs_geocoded",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "output": {
+      "items": [
+        {
+          "ref": "caracteristiques_gecodoed_ban_bano",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {
+      "server_address": "http://api-adresse.data.gouv.fr",
+      "concurent_requests": 1.0,
+      "prefix": " \"result_\"",
+      "timeout": " 1000",
+      "lines_per_request": 1000.0
+    }
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "tags": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1486635059006
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false
+}
