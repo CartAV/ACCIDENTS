@@ -19,6 +19,25 @@
         },
         "sql": "select * from \"caracteristiques_gecodoed_ban_bano\" where bano_score \u003e ban_score limit 10",
         "expandedSql": "select * from \"caracteristiques_gecodoed_ban_bano\" where bano_score \u003e ban_score limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "JNVfdtfao7WA",
+        "runOn": 1486976265853,
+        "runIn": 78,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "4QxurZcdhIMmU3J4",
+        "hash": "35b4df83ec7fb8a96db76f1c4fbcfbc2",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from \"caracteristiques_gecodoed_ban_bano\" where ban_city is null and bano_score \u003e 0.5 limit 10",
+        "expandedSql": "select * from \"caracteristiques_gecodoed_ban_bano\" where ban_city is null and bano_score \u003e 0.5 limit 10"
       }
     ]
   }
