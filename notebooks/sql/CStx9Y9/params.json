@@ -1,13 +1,33 @@
 {
   "creator": "grabenertr",
   "analyzedDataset": "caracteristiques_gecodoed_ban_bano",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1486976201481
+  },
   "connection": "datalabmaster",
   "name": "grabenertr\u0027s notebook on caracteristiques_gecodoed_ban_bano",
   "checklists": {
     "checklists": []
   },
   "tags": [],
-  "cells": [],
+  "cells": [
+    {
+      "id": "taoyz9c43e",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    }
+  ],
   "automationLocal": false,
   "createdBy": {},
   "createdOn": 0,
