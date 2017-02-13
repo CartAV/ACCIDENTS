@@ -176,10 +176,10 @@
         "mode": "SQL",
         "id": "M71ST6fC32UM",
         "runOn": 1486976418671,
-        "runIn": 80,
+        "runIn": 62,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "tUinMhJSxtV7FU1H",
         "hash": "0b8f5ff96600e25c1ee3faf34a2355e0",
         "querySettings": {
