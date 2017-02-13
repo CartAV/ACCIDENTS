@@ -247,6 +247,25 @@
         },
         "sql": "select *, substring(bano_citycode, 0, 3) from \"caracteristiques_gecodoed_ban_bano\" where ban_city is null and bano_score \u003e 0.5 \n\nlimit 10;\n\n",
         "expandedSql": "select *, substring(bano_citycode, 0, 3) from \"caracteristiques_gecodoed_ban_bano\" where ban_city is null and bano_score \u003e 0.5 \n\nlimit 10;\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "IZHfRlmHIReo",
+        "runOn": 1486976476030,
+        "runIn": 88,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "OiW7m42Xogms6y6A",
+        "hash": "71c263d4f74ace853afc81ee921b10ec",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select *, substring(bano_postcode, 0, 3) from \"caracteristiques_gecodoed_ban_bano\" where ban_city is null and bano_score \u003e 0.5 \n\nlimit 10;\n\n",
+        "expandedSql": "select *, substring(bano_postcode, 0, 3) from \"caracteristiques_gecodoed_ban_bano\" where ban_city is null and bano_score \u003e 0.5 \n\nlimit 10;\n\n"
       }
     ]
   }
