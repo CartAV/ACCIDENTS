@@ -1,0 +1,25 @@
+{
+  "queries": {
+    "taoyz9c43e": [
+      {
+        "mode": "SQL",
+        "id": "3Q4kr608dXia",
+        "runOn": 1486976224802,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "EgPpxwkW8w3HtG40",
+        "hash": "1f83607ba9f796a9965d9c51fdc5ed0c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from \"caracteristiques_gecodoed_ban_bano\" where bano_score \u003e ban_score limit 10",
+        "expandedSql": "select * from \"caracteristiques_gecodoed_ban_bano\" where bano_score \u003e ban_score limit 10"
+      }
+    ]
+  }
+}
