@@ -3,112 +3,6 @@ import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
-class TooManyTowns(Exception):
-    u"""Si le code INSEE est utilisé deux fois pendant la même période."""
-
-    pass
-
-
-class TownSplitNotImplemented(Exception):
-    u"""Ce module ne gère pas encore la division de communes."""
-
-    pass
-
-
-class UnknownTown(Exception):
-    u"""Code INSEE inconnu à la date spécifiée."""
-
-    pass
-
-
-class GeoHisto(object):
-    u"""Cette classe charge les données GeoHisto et permet de les explorer.
-
-    Voir https://github.com/etalab/geohisto
-    """
-
-    def __init__(self):
-        u"""Charge toutes les données GeoHisto.
-
-        Ces données doivent être dans le chemin courant.
-        """
-        try:
-            import dataiku
-            mydataset = dataiku.Dataset("DATAPREPOPENDATAGEO.2016_geohisto_communes_prep")
-            self.towns = mydataset.get_dataframe(columns=['id', 'insee_code', 'start_datetime', 'end_datetime', 'successors'], infer_with_pandas=False)
-            self.towns.fillna(value={"successors":""}, inplace=True)
-            self.towns.set_index('id', inplace=True)
-            
-        except ImportError:
-            self.towns = pd.read_csv('towns.csv',
-                                     index_col='id',
-                                     na_filter=False,
-                                     parse_dates=['start_datetime'],
-                                     infer_datetime_format=True)
-
-        self.towns.end_datetime = pd.to_datetime(self.towns.end_datetime,
-                                                 errors='coerce',
-                                                 format="%Y-%m-%d %H:%M:%S")
-
-        infinites = self.towns.end_datetime.isnull()
-        self.towns.at[infinites, 'end_datetime'] = pd.Timestamp.max
-        self.towns = self.towns.query('start_datetime > 2004')
-        self.insee_index = pd.Index(self.towns.insee_code)
-        self.start_index = pd.DatetimeIndex(self.towns.start_datetime)
-        self.end_index = pd.DatetimeIndex(self.towns.end_datetime)
-
-    def successors(self, insee_code, date):
-        u"""Retourne le champs successeur de la commune à une date donnée."""
-        town = self.towns.loc[(self.insee_index == insee_code) &
-                              (self.start_index < date) &
-                              (self.end_index > date)]
-
-        if town.empty or len(town) > 1:
-            return ""
-        else:
-            return town.iloc[0].successors
-
-    def last_successor(self, successors):
-        u"""Cherche récursivement tous les successeurs jusqu’au code actuel."""
-        successors = successors.split(",")
-        if len(successors) > 1:
-            raise TownSplitNotImplemented
-        elif len(successors) == 1:
-            town = self.towns.loc[successors[0]]
-            if town.successors:
-                return self.last_successor(town.successors)
-            else:
-                return town.insee_code
-
-    def current_insee(self, insee_code, date):
-        u"""Retourne le code INSEE actuel d’une commune à partir du code historique.
-
-        >>> g.current_insee('50602', '2000-01-01')
-        '50129'
-
-        >>> g.current_insee('75112', '2010-04-21')
-        '75112'
-
-        >>> g.current_insee('xxxxx', '2010-04-21')
-        Traceback (most recent call last):
-            ...
-        UnknownTown
-
-        >>> g.current_insee('75048', '1960-05-01')
-        '93048'
-
-        >>> g.current_insee('75048', '1999-05-01')
-        Traceback (most recent call last):
-            ...
-        UnknownTown
-        """
-        successors = self.successors(insee_code, date)
-
-        if successors:
-            return self.last_successor(successors)
-        else:
-            return insee_code
-
 
 class CityCodes():
     def __init__(self):
@@ -132,7 +26,6 @@ class CityCodes():
         for row in poste.itertuples():
             self.post_to_city_code[row[3]] = row[1]
 
-        self.gh = GeoHisto()
 
     def is_in_insee(self, code):
         """
@@ -172,19 +65,8 @@ class CityCodes():
         """
         (code, dep) = self.create_code(departement, commune)
 
-        if date:
-            try:
-                current_code = self.gh.current_insee(code, date)
-            except:
-                current_code = code
-        else:
-            current_code = code
-
-        if self.is_in_insee(current_code):
-            if current_code == code:
-                return [code, 'Insee', dep]
-            else:
-                return [current_code, 'Old insee code', dep]
+        if self.is_in_insee(code):
+            return [code, 'Insee', dep]
         elif code in self.post_to_city_code:
             return [self.post_to_city_code[code], 'Postal', dep]
         else:
