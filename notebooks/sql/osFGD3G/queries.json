@@ -5394,6 +5394,27 @@
         "sql": "select * from accidents where adr like \u0027%PK%\u0027 --and long is null",
         "expandedSql": "select * from accidents where adr like \u0027%PK%\u0027 --and long is null"
       }
+    ],
+    "5rqzkie4zzt": [
+      {
+        "mode": "SQL",
+        "id": "oK4PkODT1rci",
+        "runOn": 1487174273016,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "1PvFsasNbz9tvZUb",
+        "hash": "4145a4f83fa0852be60f57b1f788c4b7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"accidents_caracteristiques_prep3\" where original_city_code !\u003d current_insee_code",
+        "expandedSql": "select count(*) from \"accidents_caracteristiques_prep3\" where original_city_code !\u003d current_insee_code"
+      }
     ]
   }
 }
