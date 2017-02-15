@@ -1,0 +1,50 @@
+{
+  "type": "sampling",
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "accidents_caracteristiques_geocoded_citycode",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "caracteristiques_not_geocoded",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "selection": {
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "partitionSelectionMethod": "ALL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02
+    }
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "tags": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1487179697047
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false
+}
