@@ -5457,10 +5457,10 @@
         "mode": "SQL",
         "id": "EOsU3Vd8YkL2",
         "runOn": 1487175539466,
-        "runIn": 58,
+        "runIn": 109,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "pcSjXUINzQC4CApq",
         "hash": "4c7ba916494cd0c3fe6acfecf3310c63",
         "querySettings": {
