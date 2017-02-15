@@ -5452,6 +5452,25 @@
         },
         "sql": "select * from \"accidents_caracteristiques_prep3\" where original_city_code !\u003d current_insee_code limit 100",
         "expandedSql": "select * from \"accidents_caracteristiques_prep3\" where original_city_code !\u003d current_insee_code limit 100"
+      },
+      {
+        "mode": "SQL",
+        "id": "EOsU3Vd8YkL2",
+        "runOn": 1487175539466,
+        "runIn": 58,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "pcSjXUINzQC4CApq",
+        "hash": "4c7ba916494cd0c3fe6acfecf3310c63",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from \"accidents_caracteristiques_prep3\" where original_city_code !\u003d current_city_code limit 100",
+        "expandedSql": "select * from \"accidents_caracteristiques_prep3\" where original_city_code !\u003d current_city_code limit 100"
       }
     ]
   }
