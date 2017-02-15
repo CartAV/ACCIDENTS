@@ -20,33 +20,33 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "an",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "mois",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "jour",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "hrmn",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "lum",
@@ -121,13 +121,25 @@
         "maxLength": -1
       },
       {
-        "name": "city_code",
+        "name": "original_city_code",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "city_code_source",
+        "name": "original_name",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "current_city_code",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "current_name",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -293,12 +305,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1486635223139
+    "lastModifiedOn": 1487179391731
   },
   "customMeta": {
     "kv": {}
