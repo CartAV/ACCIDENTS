@@ -1,0 +1,151 @@
+{
+  "virtualInputs": [
+    {
+      "index": 0
+    },
+    {
+      "index": 1
+    }
+  ],
+  "joins": [
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 1,
+      "conditionsMode": "AND",
+      "on": [],
+      "type": "LEFT"
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "useGlobalMetastore": false
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "overwriteOutputSchema": true,
+      "readParams": {
+        "map": {}
+      }
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "selectedColumns": [
+    {
+      "name": "Num_Acc",
+      "table": 0
+    },
+    {
+      "name": "an",
+      "table": 0
+    },
+    {
+      "name": "mois",
+      "table": 0
+    },
+    {
+      "name": "jour",
+      "table": 0
+    },
+    {
+      "name": "hrmn",
+      "table": 0
+    },
+    {
+      "name": "lum",
+      "table": 0
+    },
+    {
+      "name": "agg",
+      "table": 0
+    },
+    {
+      "name": "int",
+      "table": 0
+    },
+    {
+      "name": "atm",
+      "table": 0
+    },
+    {
+      "name": "col",
+      "table": 0
+    },
+    {
+      "name": "com",
+      "table": 0
+    },
+    {
+      "name": "adr",
+      "table": 0
+    },
+    {
+      "name": "gps",
+      "table": 0
+    },
+    {
+      "name": "lat",
+      "table": 0
+    },
+    {
+      "name": "long",
+      "table": 0
+    },
+    {
+      "name": "dep",
+      "table": 0
+    },
+    {
+      "name": "date",
+      "table": 0
+    },
+    {
+      "name": "original_city_code",
+      "table": 0
+    },
+    {
+      "name": "id",
+      "table": 0
+    },
+    {
+      "name": "insee_code",
+      "table": 0
+    },
+    {
+      "name": "start_datetime",
+      "table": 0
+    },
+    {
+      "name": "end_datetime",
+      "table": 0
+    },
+    {
+      "name": "end_datetime_parsed",
+      "table": 0
+    },
+    {
+      "name": "name",
+      "table": 0
+    },
+    {
+      "name": "successors",
+      "table": 0
+    },
+    {
+      "name": "population",
+      "table": 0
+    },
+    {
+      "name": "current_insee_code",
+      "table": 0
+    }
+  ]
+}
