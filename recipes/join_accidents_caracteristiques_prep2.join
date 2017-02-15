@@ -1,5 +1,4 @@
 {
-  "engineType": "SPARK",
   "virtualInputs": [
     {
       "index": 0
@@ -8,15 +7,13 @@
       "index": 1
     }
   ],
+  "engineType": "SPARK",
   "joins": [
     {
       "table1": 0,
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "on": [
         {
           "maxDistance": 1,
@@ -53,6 +50,9 @@
           }
         }
       ],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT"
     }
   ],
@@ -179,6 +179,7 @@
       "type": "string"
     },
     {
+      "alias": "original_name",
       "name": "name",
       "table": 1,
       "type": "string"
