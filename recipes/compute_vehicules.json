@@ -1,0 +1,45 @@
+{
+  "type": "CustomCode_user-meaning",
+  "inputs": {
+    "input": {
+      "items": [
+        {
+          "ref": "accidents_vehicules",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "output": {
+      "items": [
+        {
+          "ref": "vehicules",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {}
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "tags": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1487180811281
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false
+}
