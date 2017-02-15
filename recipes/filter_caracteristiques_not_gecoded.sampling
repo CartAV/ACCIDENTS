@@ -1,0 +1,16 @@
+{
+  "expression": "val(\"ban_id\") \u003d\u003d \u0027\u0027 || isNull(val(\"ban_id\"))",
+  "enabled": true,
+  "uiData": {
+    "conditions": [
+      {
+        "num": 0,
+        "col": "an",
+        "input": "ban_id",
+        "operator": "is empty"
+      }
+    ],
+    "mode": "\u0026\u0026"
+  },
+  "language": "GREL"
+}
