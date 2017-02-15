@@ -23,20 +23,22 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {}
+    "customConfig": {
+      "meanings": "{\n  \"senc\": {\n    \"0\": \"\",\n    \"1\": \"PK-PR-num rue croissant\",\n    \"2\": \"PK-PR-num rue décroissant\"\n  },\n  \"catv\": {\n    \"10\": \"utilitaire\",\n    \"11\": \"utilitaire+caravane (ref obsolète)\",\n    \"12\": \"utilitaire+remorque (ref obsolète)\",\n    \"13\": \"poids lourd\",\n    \"14\": \"poids lourd\",\n    \"15\": \"poids lourd\",\n    \"16\": \"tracteur\",\n    \"17\": \"tracteur+semi-remorque\",\n    \"18\": \"transport en commun (ref obsolète)\",\n    \"19\": \"tramway (ref obsolète)\",\n    \"20\": \"engin spécial\",\n    \"21\": \"tracteur\",\n    \"30\": \"scooter -50cm3\",\n    \"31\": \"motocyclette +50cm3-125cm3\",\n    \"33\": \"motocyclette +125cm3\",\n    \"34\": \"scooter +125cm3\",\n    \"35\": \"quad -50cm3\",\n    \"36\": \"quad +50cm3\",\n    \"37\": \"bus\",\n    \"39\": \"train\",\n    \"40\": \"tramway\",\n    \"99\": \"autre véhicule\",\n    \"01\": \"bicyclette\",\n    \"02\": \"cyclomoteur -50cm3\",\n    \"03\": \"voiturette\",\n    \"04\": \"scooter immatriculé (ref obsolète)\",\n    \"05\": \"motocyclette (ref obsolète)\",\n    \"06\": \"side-car (ref obsolète)\",\n    \"07\": \"voiture\",\n    \"08\": \"voiture+caravane (ref obsolète)\",\n    \"09\": \"voiture+remorque (ref obsolète)\"\n  },\n  \"obsm\": {\n    \"1\": \"choc piéton\",\n    \"2\": \"choc véhicule\",\n    \"4\": \"choc sur rail\",\n    \"6\": \"choc animal domestique\",\n    \"9\": \"choc autre obstacle mobile\"\n  },\n  \"obs\": {\n    \"1\": \"Véhicule en stationnement\",\n    \"2\": \"Arbre\",\n    \"3\": \"Glissière métallique\",\n    \"4\": \"Glissière béton\",\n    \"5\": \"Autre glissière\",\n    \"6\": \"Bâtiment, mur, pile de pont\",\n    \"7\": \"Support de signalisation verticale ou poste d’appel d’urgence\",\n    \"8\": \"Poteau\",\n    \"9\": \"Mobilier urbain\",\n    \"10\": \"Parapet\",\n    \"11\": \"Ilot, refuge, borne haute\",\n    \"12\": \"Bordure de trottoir\",\n    \"13\": \"Fossé, talus, paroi rocheuse\",\n    \"14\": \"Autre obstacle fixe sur chaussée\",\n    \"15\": \"Autre obstacle fixe sur trottoir ou accotement\",\n    \"16\": \"Sortie de chaussée sans obtacle\"\n  },\n  \"choc\": {\n    \"1\": \"avant\",\n    \"2\": \"avant droit\",\n    \"3\": \"avant gauche\",\n    \"4\": \"arrière\",\n    \"5\": \"arrière droit\",\n    \"6\": \"arrière gauche\",\n    \"7\": \"côté droit\",\n    \"8\": \"côté gauche\",\n    \"9\": \"multiples\"\n  },\n  \"manv\": {\n    \"1\": \"sans changement de direction\",\n    \"2\": \"même sens, même file\",\n    \"3\": \"entre 2 files\",\n    \"4\": \"en marche arrière\",\n    \"5\": \"à contresens\",\n    \"6\": \"en franchissant le terre-plein central\",\n    \"7\": \"dans le couloir bus, dans le même sens\",\n    \"8\": \"dans le couloir bus, dans le sens inverse\",\n    \"9\": \"en s’insérant\",\n    \"10\": \"en faisant demi-tour sur la chaussée\",\n    \"11\": \"changeant de file à gauche\",\n    \"12\": \"changeant de file à droite\",\n    \"13\": \"déporté à gauche\",\n    \"14\": \"déporté à droite\",\n    \"15\": \"tournant à gauche\",\n    \"16\": \"tournant à droite\",\n    \"17\": \"tournant à gauche\",\n    \"18\": \"tournant à droite\",\n    \"19\": \"traversant la chaussée\",\n    \"20\": \"manoeuvre de stationnement\",\n    \"21\": \"manoeuvre d’évitement\",\n    \"22\": \"ouverture de porte\",\n    \"23\": \"arrêté non stationné\",\n    \"24\": \"stationné\"\n  }\n}"
+    }
   },
   "checklists": {
     "checklists": []
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487180811281
+    "lastModifiedOn": 1487180816615
   },
   "customMeta": {
     "kv": {}
