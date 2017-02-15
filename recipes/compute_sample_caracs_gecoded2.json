@@ -4,7 +4,7 @@
     "input": {
       "items": [
         {
-          "ref": "sample_caracs",
+          "ref": "accidents_caracteristiques_prep3",
           "deps": []
         }
       ]
@@ -14,7 +14,7 @@
     "output": {
       "items": [
         {
-          "ref": "sample_caracs_gecoded2",
+          "ref": "accidents_caracteristiques_geocoded_citycode",
           "appendMode": false
         }
       ]
@@ -25,12 +25,12 @@
   "params": {
     "customConfig": {
       "server_address": "http://datalab-ban",
-      "concurent_requests": 1.0,
+      "concurent_requests": 8.0,
       "prefix": "ban_",
       "columns": [
         "adr"
       ],
-      "city_code": "city_code",
+      "city_code": "original_city_code",
       "timeout": " 1000",
       "lines_per_request": 1000.0
     }
@@ -40,13 +40,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1486632130782
+    "lastModifiedOn": 1487177815408
   },
   "customMeta": {
     "kv": {}
