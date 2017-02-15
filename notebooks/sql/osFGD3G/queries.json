@@ -5547,6 +5547,25 @@
         },
         "sql": "select count(*) from \"accidents_caracteristiques_prep3\"\n\nwhere \noriginal_city_code is not null and current_city_code is null\nand dep !\u003d \u002775\u0027\nlimit 100",
         "expandedSql": "select count(*) from \"accidents_caracteristiques_prep3\"\n\nwhere \noriginal_city_code is not null and current_city_code is null\nand dep !\u003d \u002775\u0027\nlimit 100"
+      },
+      {
+        "mode": "SQL",
+        "id": "A5EMK4vB7TuU",
+        "runOn": 1487176515714,
+        "runIn": 119,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "bdjuyPnweOvkcm1f",
+        "hash": "af2adccd58f4aa56550fd5fd0108eff9",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from \"accidents_caracteristiques_prep3\"\n\nwhere \noriginal_city_code is not null and current_city_code is null\nand dep !\u003d 75\nlimit 100",
+        "expandedSql": "select count(*) from \"accidents_caracteristiques_prep3\"\n\nwhere \noriginal_city_code is not null and current_city_code is null\nand dep !\u003d 75\nlimit 100"
       }
     ]
   }
