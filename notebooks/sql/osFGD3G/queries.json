@@ -5628,10 +5628,10 @@
         "mode": "SQL",
         "id": "dWNBLHXIkSnZ",
         "runOn": 1487176575637,
-        "runIn": 178,
+        "runIn": 143,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "4MzFn2eudHnNYrj1",
         "hash": "01158b6b27a53b50aa1777dbebbccd28",
         "querySettings": {
