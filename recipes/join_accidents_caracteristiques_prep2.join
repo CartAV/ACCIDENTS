@@ -13,9 +13,6 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "on": [
         {
           "maxDistance": 1,
@@ -52,6 +49,9 @@
           }
         }
       ],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT"
     }
   ],
