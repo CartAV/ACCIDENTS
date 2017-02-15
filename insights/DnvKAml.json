@@ -1,0 +1,21 @@
+{
+  "dataset": "DATAPREPOPENDATAGEO.geohisto",
+  "datasetType": "Vertica",
+  "name": "DATAPREPOPENDATAGEO.geohisto",
+  "type": "DATASET",
+  "miniature": {
+    "type": "description",
+    "showTitle": true,
+    "fullImage": true
+  },
+  "fullView": {
+    "descriptionPosition": "right"
+  },
+  "description": "",
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "createdBy": "grabenertr",
+  "createdOn": 1487173944601
+}
