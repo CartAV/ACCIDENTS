@@ -4,15 +4,15 @@
   "uiData": {
     "conditions": [
       {
-        "input": "ban_id",
-        "col": "an",
         "num": 0,
+        "col": "an",
+        "input": "ban_id",
         "operator": "is empty"
       },
       {
-        "col": "an",
-        "input": "ban_score",
         "num": 0.5,
+        "input": "ban_score",
+        "col": "an",
         "operator": "\u003c\u003d [number]"
       }
     ],
