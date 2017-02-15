@@ -23,20 +23,22 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {}
+    "customConfig": {
+      "meanings": "{\n  \"grav\": {\n    \"1\": \"indemne\",\n    \"2\": \"tué\",\n    \"3\": \"hospitalisé\",\n    \"4\": \"blessé léger\"\n  },\n  \"catu\": {\n    \"1\": \"conducteur\",\n    \"2\": \"passager\",\n    \"3\": \"piéton\",\n    \"4\": \"trottinette\"\n  },\n  \"sexe\": {\n    \"1\": \"homme\",\n    \"2\": \"femme\"\n  },\n  \"trajet\": {\n    \"1\": \"domicile travail\",\n    \"2\": \"domicile école\",\n    \"3\": \"courses\",\n    \"4\": \"professionnel\",\n    \"5\": \"loisirs\",\n    \"9\": \"autres\"\n  },\n  \"secu\": {\n    \"11\": \"avec ceinture\",\n    \"12\": \"sans ceinture\",\n    \"21\": \"avec casque\",\n    \"22\": \"sans casque\",\n    \"31\": \"avec siège enfant\",\n    \"32\": \"sans siège enfant\",\n    \"41\": \"avec réflecteur\",\n    \"42\": \"sans réflecteur\"\n  },\n  \"actp\": {\n    \"0\": \"\",\n    \"1\": \"piéton sens véhicule\",\n    \"2\": \"piéton sens inverse véhicule\",\n    \"3\": \"piéton traversant\",\n    \"4\": \"piéton masqué\",\n    \"5\": \"piéton jouant\",\n    \"6\": \"piéton avec animal\"\n  },\n  \"locp\": {\n    \"0\": \"\",\n    \"1\": \"plus de 50m un passage piéton\",\n    \"2\": \"moins de 50m passage piéton\",\n    \"3\": \"sans signalisation lumineuse\",\n    \"4\": \"avec signalisation lumineuse\"\n  },\n  \"etatp\": {\n    \"0\": \"\",\n    \"1\": \"piéton seul\",\n    \"2\": \"piéton accompagné\",\n    \"3\": \"piéton en groupe\"\n  }\n}"
+    }
   },
   "checklists": {
     "checklists": []
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487181223327
+    "lastModifiedOn": 1487181229607
   },
   "customMeta": {
     "kv": {}
