@@ -26,7 +26,6 @@
       }
     }
   ],
-  "engineType": "SQL",
   "joins": [
     {
       "table1": 0,
