@@ -123,7 +123,7 @@
         "maxLength": -1
       },
       {
-        "name": "city_code",
+        "name": "original_city_code",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -145,13 +145,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487169746536
+    "lastModifiedOn": 1487172460104
   },
   "customMeta": {
     "kv": {}
