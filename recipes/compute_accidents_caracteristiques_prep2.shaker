@@ -3,6 +3,38 @@
     {
       "steps": [
         {
+          "type": "FilterOnBadType",
+          "params": {
+            "type": "LongMeaning",
+            "action": "CLEAR_CELL",
+            "booleanMode": "AND",
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "lat"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "FilterOnBadType",
+          "params": {
+            "type": "LongMeaning",
+            "action": "CLEAR_CELL",
+            "booleanMode": "AND",
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "long"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
           "type": "PythonUDF",
           "params": {
             "mode": "ROW",
