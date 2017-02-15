@@ -23,15 +23,104 @@
       "alwaysShowComment": false
     },
     {
+      "steps": [
+        {
+          "type": "PythonUDF",
+          "params": {
+            "mode": "ROW",
+            "pythonSourceCode": "def invalid_coordinates(lon, lat):\n    if lon and lat:\n        lon \u003d int(lon)\n        lat \u003d int(lat)\n        return (abs(lat) \u003c 10 or abs(lon) \u003c 10 or\n                (lat % 1000 \u003d\u003d 0 and lon % 1000 \u003d\u003d 0))\n    else:\n        return True\n\ndef process(row):\n    if invalid_coordinates(row[\"long\"], row[\"lat\"]):\n        row[\"long\"] \u003d None\n        row[\"lat\"] \u003d None\n    return row\n",
+            "stopOnError": true,
+            "usePythonUnicode": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "lat",
+            "expression": "lat / 100000"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "long",
+            "expression": "long / 100000"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "lat",
+            "expression": "if(gps \u003d\u003d \u0027Y\u0027, -1 * abs(lat), lat)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "lat",
+            "expression": "if(gps \u003d\u003d \u0027R\u0027, -1 * abs(lat), lat)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "long",
+            "expression": "if(gps \u003d\u003d \u0027G\u0027, -1 * abs(long), long)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "column": "long",
+            "expression": "if(gps \u003d\u003d \u0027A\u0027, -1 * abs(long), long)"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "Nettoyage coordonnées",
+      "alwaysShowComment": false
+    },
+    {
       "type": "PythonUDF",
       "params": {
-        "mode": "ROW",
-        "pythonSourceCode": "def invalid_coordinates(lon, lat):\n    if lon and lat:\n        lon \u003d int(lon)\n        lat \u003d int(lat)\n        return (abs(lat) \u003c 10 or abs(lon) \u003c 10 or\n                (lat % 1000 \u003d\u003d 0 and lon % 1000 \u003d\u003d 0))\n    else:\n        return true\n\ndef process(row):\n    if invalid_coordinates(row[\"long\"], row[\"lat\"]):\n        row[\"long\"] \u003d None\n        row[\"lat\"] \u003d None\n    return row\n",
+        "mode": "CELL",
+        "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027cell\u0027 mode, the process function must return\n    # a single cell value for each row,\n    # which will be affected to a new column.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    return len(row)\n",
+        "column": "date",
         "stopOnError": true,
         "usePythonUnicode": true
       },
       "metaType": "PROCESSOR",
-      "preview": false,
+      "preview": true,
       "disabled": false,
       "alwaysShowComment": false
     }
