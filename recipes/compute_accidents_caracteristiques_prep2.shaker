@@ -1,6 +1,43 @@
 {
-  "steps": [],
+  "steps": [
+    {
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "normalization": "EXACT",
+        "matching": "FULL_STRING",
+        "stopAfterFirstMatch": false,
+        "mapping": [
+          {
+            "to": "000"
+          }
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "com"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "PythonUDF",
+      "params": {
+        "mode": "ROW",
+        "pythonSourceCode": "def invalid_coordinates(lon, lat):\n    return (abs(lat) \u003c 10 or abs(lon) \u003c 10 or\n            (lat % 1000 \u003d\u003d 0 and lon % 1000 \u003d\u003d 0))\n\ndef process(row):\n    if invalid_coordinates(int(row[\"long\"]), int(row[\"lat\"])):\n        row[\"long\"] \u003d None\n        row[\"lat\"] \u003d None\n    return row\n",
+        "stopOnError": true,
+        "usePythonUnicode": true
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    }
+  ],
   "tags": [],
+  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
@@ -24,11 +61,14 @@
     "autoRefreshSample": false,
     "_refreshTrigger": 0
   },
-  "exploreUIParams": {},
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "globalSearchQuery": "",
   "explorationFilters": [
     {
-      "type": "global_search"
+      "type": "global_search",
+      "$$hashKey": "1NB"
     }
   ],
   "previewMode": "ALL_ROWS",
