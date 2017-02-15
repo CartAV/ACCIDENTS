@@ -5490,6 +5490,25 @@
         },
         "sql": "select * from \"accidents_caracteristiques_prep3\" where \noriginal_city_code is null -- !\u003d current_city_code\n\nlimit 100",
         "expandedSql": "select * from \"accidents_caracteristiques_prep3\" where \noriginal_city_code is null -- !\u003d current_city_code\n\nlimit 100"
+      },
+      {
+        "mode": "SQL",
+        "id": "bBIuIJovhEwJ",
+        "runOn": 1487176456237,
+        "runIn": 110,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "EK6Nxyn7r4mcqmdR",
+        "hash": "53e917ad01d4461cd752ea117a44cd81",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from \"accidents_caracteristiques_prep3\" where \noriginal_city_code is not null and current_city_code is null\n\nlimit 100",
+        "expandedSql": "select * from \"accidents_caracteristiques_prep3\" where \noriginal_city_code is not null and current_city_code is null\n\nlimit 100"
       }
     ]
   }
