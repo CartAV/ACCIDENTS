@@ -131,51 +131,77 @@
       "alwaysShowComment": false
     },
     {
-      "type": "FindReplace",
-      "params": {
-        "output": "",
-        "normalization": "EXACT",
-        "matching": "FULL_STRING",
-        "stopAfterFirstMatch": false,
-        "mapping": [
-          {
-            "from": "201",
-            "to": "2A"
+      "steps": [
+        {
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "normalization": "EXACT",
+            "matching": "FULL_STRING",
+            "stopAfterFirstMatch": false,
+            "mapping": [
+              {
+                "from": "201",
+                "to": "2A"
+              },
+              {
+                "from": "202",
+                "to": "2B"
+              }
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "dep"
+            ]
           },
-          {
-            "from": "202",
-            "to": "2B"
-          }
-        ],
-        "appliesTo": "SINGLE_COLUMN",
-        "columns": [
-          "dep"
-        ]
-      },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": false,
-      "alwaysShowComment": false
-    },
-    {
-      "steps": [],
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "PythonUDF",
+          "params": {
+            "mode": "CELL",
+            "pythonSourceCode": "def process(row):\n    departement \u003d row[\"dep\"].zfill(3)\n    commune \u003d row[\"com\"].zfill(3)\n    if departement[0:2] in [\u002797\u0027, \u002798\u0027]:\n        commune \u003d commune[1:3]\n    else:\n        departement \u003d departement[0:2]\n\n    return departement + commune\n ",
+            "column": "original_city_code",
+            "stopOnError": true,
+            "usePythonUnicode": true
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
       "metaType": "GROUP",
       "preview": false,
       "disabled": false,
+      "name": "Codes INSEE",
       "alwaysShowComment": false
     },
     {
-      "type": "PythonUDF",
+      "type": "MemoryEquiJoiner",
       "params": {
-        "mode": "CELL",
-        "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027cell\u0027 mode, the process function must return\n    # a single cell value for each row,\n    # which will be affected to a new column.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    return len(row)\n",
-        "column": "city_code",
-        "stopOnError": true,
-        "usePythonUnicode": true
+        "leftCol": "city_code",
+        "rightInput": "DATAPREPOPENDATAGEO.2016_codes_postaux_prep",
+        "rightCol": "Code_commune_INSEE",
+        "copyColumns": [
+          "Code_postal"
+        ],
+        "copyPrefix": "",
+        "fuzzy": false,
+        "maxLevenshtein": 1,
+        "forceRawLevenshteinEngine": false,
+        "sortAlphabetically": false,
+        "clearStopWords": false,
+        "normalize": false,
+        "stem": false,
+        "language": "english"
       },
       "metaType": "PROCESSOR",
-      "preview": true,
-      "disabled": false,
+      "preview": false,
+      "disabled": true,
       "alwaysShowComment": false
     }
   ],
