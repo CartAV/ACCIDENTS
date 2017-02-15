@@ -194,7 +194,7 @@
       },
       {
         "name": "ban_score",
-        "type": "string",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -237,6 +237,15 @@
   "flowOptions": {
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1487180243202
   },
   "customMeta": {
     "kv": {}
