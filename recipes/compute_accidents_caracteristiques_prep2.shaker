@@ -114,7 +114,7 @@
       "type": "PythonUDF",
       "params": {
         "mode": "CELL",
-        "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027cell\u0027 mode, the process function must return\n    # a single cell value for each row,\n    # which will be affected to a new column.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    return len(row)\n",
+        "pythonSourceCode": "def process(row):\n    return \"20{:02d}{:02d}{:02d}{:04d}\".format(\n            int(row[\u0027an\u0027]), int(row[\u0027mois\u0027]), int(row[\u0027jour\u0027]), int(row[\u0027hrmn\u0027])))\n    \n",
         "column": "date",
         "stopOnError": true,
         "usePythonUnicode": true
