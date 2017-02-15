@@ -13,7 +13,45 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "on": [],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
+      "on": [
+        {
+          "maxDistance": 1,
+          "column1": {
+            "name": "original_city_code",
+            "table": 0
+          },
+          "type": "EQ",
+          "column2": {
+            "name": "insee_code",
+            "table": 1
+          }
+        },
+        {
+          "column1": {
+            "name": "date",
+            "table": 0
+          },
+          "type": "GTE",
+          "column2": {
+            "name": "start_datetime",
+            "table": 1
+          }
+        },
+        {
+          "column1": {
+            "name": "date",
+            "table": 0
+          },
+          "type": "LTE",
+          "column2": {
+            "name": "end_datetime",
+            "table": 1
+          }
+        }
+      ],
       "type": "LEFT"
     }
   ],
@@ -38,114 +76,112 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "postFilter": {},
   "selectedColumns": [
     {
       "name": "Num_Acc",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "an",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "mois",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "jour",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "hrmn",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "lum",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "agg",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "int",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "atm",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "col",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "com",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "adr",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "gps",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "lat",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "long",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "dep",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "date",
-      "table": 0
+      "table": 0,
+      "type": "date"
     },
     {
       "name": "original_city_code",
-      "table": 0
-    },
-    {
-      "name": "id",
-      "table": 0
-    },
-    {
-      "name": "insee_code",
-      "table": 0
-    },
-    {
-      "name": "start_datetime",
-      "table": 0
-    },
-    {
-      "name": "end_datetime",
-      "table": 0
-    },
-    {
-      "name": "end_datetime_parsed",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "name",
-      "table": 0
-    },
-    {
-      "name": "successors",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "population",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "current_insee_code",
-      "table": 0
+      "table": 1,
+      "type": "string"
     }
   ]
 }
