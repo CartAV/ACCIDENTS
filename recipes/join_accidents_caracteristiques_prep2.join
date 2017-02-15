@@ -5,6 +5,25 @@
     },
     {
       "index": 1
+    },
+    {
+      "index": 1,
+      "preFilter": {
+        "expression": "val(\"successors\") \u003d\u003d \u0027\u0027 || isNull(val(\"successors\"))",
+        "enabled": true,
+        "uiData": {
+          "conditions": [
+            {
+              "num": 0,
+              "col": "insee_code",
+              "input": "successors",
+              "operator": "is empty"
+            }
+          ],
+          "mode": "\u0026\u0026"
+        },
+        "language": "GREL"
+      }
     }
   ],
   "engineType": "SPARK",
@@ -53,6 +72,28 @@
       "rightLimit": {
         "decisionColumn": {}
       },
+      "type": "LEFT"
+    },
+    {
+      "table1": 1,
+      "outerJoinOnTheLeft": true,
+      "table2": 2,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "on": [
+        {
+          "maxDistance": 1,
+          "column1": {
+            "name": "current_insee_code",
+            "table": 1
+          },
+          "type": "EQ",
+          "column2": {
+            "name": "insee_code",
+            "table": 2
+          }
+        }
+      ],
       "type": "LEFT"
     }
   ],
@@ -192,6 +233,12 @@
     {
       "name": "current_insee_code",
       "table": 1,
+      "type": "string"
+    },
+    {
+      "alias": "current_name",
+      "name": "name",
+      "table": 2,
       "type": "string"
     }
   ]
