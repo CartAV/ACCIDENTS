@@ -26,7 +26,7 @@
       }
     }
   ],
-  "engineType": "SPARK",
+  "engineType": "SQL",
   "joins": [
     {
       "table1": 0,
