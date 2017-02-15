@@ -16,7 +16,7 @@
   "checks": [],
   "managed": true,
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
@@ -194,7 +194,7 @@
       },
       {
         "name": "ban_score",
-        "type": "string",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -239,12 +239,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "DSS",
-      "displayName": "DSS"
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487177842252
+    "lastModifiedOn": 1487180209662
   },
   "customMeta": {
     "kv": {}
