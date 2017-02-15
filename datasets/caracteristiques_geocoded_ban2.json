@@ -16,7 +16,7 @@
   "checks": [],
   "managed": true,
   "schema": {
-    "userModified": true,
+    "userModified": false,
     "columns": [
       {
         "name": "Num_Acc",
@@ -194,7 +194,7 @@
       },
       {
         "name": "ban_score",
-        "type": "string",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -225,7 +225,6 @@
       {
         "name": "ban2_city",
         "type": "string",
-        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -306,13 +305,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
+      "login": "DSS",
+      "displayName": "DSS"
     },
-    "lastModifiedOn": 1487180952108
+    "lastModifiedOn": 1487181090663
   },
   "customMeta": {
     "kv": {}
