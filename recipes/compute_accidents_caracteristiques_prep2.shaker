@@ -236,30 +236,6 @@
       "disabled": false,
       "name": "Codes INSEE",
       "alwaysShowComment": false
-    },
-    {
-      "type": "MemoryEquiJoiner",
-      "params": {
-        "leftCol": "city_code",
-        "rightInput": "DATAPREPOPENDATAGEO.2016_codes_postaux_prep",
-        "rightCol": "Code_commune_INSEE",
-        "copyColumns": [
-          "Code_postal"
-        ],
-        "copyPrefix": "",
-        "fuzzy": false,
-        "maxLevenshtein": 1,
-        "forceRawLevenshteinEngine": false,
-        "sortAlphabetically": false,
-        "clearStopWords": false,
-        "normalize": false,
-        "stem": false,
-        "language": "english"
-      },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": true,
-      "alwaysShowComment": false
     }
   ],
   "tags": [],

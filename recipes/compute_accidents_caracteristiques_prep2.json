@@ -10,12 +10,7 @@
       ]
     },
     "scriptDeps": {
-      "items": [
-        {
-          "ref": "DATAPREPOPENDATAGEO.2016_codes_postaux_prep",
-          "deps": []
-        }
-      ]
+      "items": []
     }
   },
   "outputs": {
@@ -39,13 +34,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487173409162
+    "lastModifiedOn": 1487177000494
   },
   "customMeta": {
     "kv": {}
