@@ -225,11 +225,6 @@
       "type": "string"
     },
     {
-      "name": "population",
-      "table": 1,
-      "type": "string"
-    },
-    {
       "alias": "current_city_code",
       "name": "current_insee_code",
       "table": 1,
