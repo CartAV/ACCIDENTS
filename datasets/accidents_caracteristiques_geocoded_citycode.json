@@ -16,7 +16,7 @@
   "checks": [],
   "managed": true,
   "schema": {
-    "userModified": true,
+    "userModified": false,
     "columns": [
       {
         "name": "Num_Acc",
@@ -181,6 +181,18 @@
         "maxLength": 16200
       },
       {
+        "name": "ban_latitude",
+        "type": "float",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "ban_longitude",
+        "type": "float",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "ban_name",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -194,9 +206,9 @@
       },
       {
         "name": "ban_score",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "ban_street",
@@ -206,18 +218,6 @@
       },
       {
         "name": "ban_type",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "latitude",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "longitude",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -239,13 +239,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
+      "login": "DSS",
+      "displayName": "DSS"
     },
-    "lastModifiedOn": 1487180209662
+    "lastModifiedOn": 1487268175275
   },
   "customMeta": {
     "kv": {}
