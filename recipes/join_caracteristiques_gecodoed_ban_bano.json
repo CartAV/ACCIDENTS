@@ -1,0 +1,46 @@
+{
+  "type": "join",
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "caracteristiques_gecodoed_ban_bano",
+          "deps": []
+        },
+        {
+          "ref": "caracteristiques_geocoded_ban2",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "caracteristiques_gecodoed_3",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "checklists": {
+    "checklists": []
+  },
+  "tags": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1487267290371
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false
+}
