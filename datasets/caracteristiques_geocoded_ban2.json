@@ -272,9 +272,9 @@
       },
       {
         "name": "ban2_score",
-        "type": "string",
+        "type": "float",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
         "name": "ban2_street",
@@ -305,12 +305,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1487181090663
+    "lastModifiedOn": 1487265826873
   },
   "customMeta": {
     "kv": {}
