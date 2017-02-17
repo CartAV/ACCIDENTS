@@ -1,18 +1,18 @@
 {
-  "expression": "val(\"ban_id\") \u003d\u003d \u0027\u0027 || isNull(val(\"ban_id\"))   ||   val(\"ban_score\") \u003c\u003d 0.5",
+  "expression": "val(\"ban_id\") \u003d\u003d \u0027\u0027 || isNull(val(\"ban_id\"))   ||   val(\"ban_score\") \u003c\u003d 0.2",
   "enabled": true,
   "uiData": {
     "conditions": [
       {
-        "num": 0,
-        "col": "an",
         "input": "ban_id",
+        "col": "an",
+        "num": 0,
         "operator": "is empty"
       },
       {
-        "num": 0.5,
-        "input": "ban_score",
         "col": "an",
+        "input": "ban_score",
+        "num": 0.2,
         "operator": "\u003c\u003d [number]"
       }
     ],
