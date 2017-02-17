@@ -6426,10 +6426,10 @@
         "mode": "SQL",
         "id": "yopvxJuH4SKX",
         "runOn": 1487350656478,
-        "runIn": 333,
+        "runIn": 48,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "IFAU98AlVi2kJ8Ug",
         "hash": "e9a71faf2ceebe11244b3201f2861abe",
         "querySettings": {
