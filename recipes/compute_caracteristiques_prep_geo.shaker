@@ -55,6 +55,18 @@
         {
           "type": "GeoPointCreator",
           "params": {
+            "out_column": "geopoint",
+            "lat_column": "latitude",
+            "lon_column": "longitude"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoPointCreator",
+          "params": {
             "out_column": "bano_geopoint",
             "lat_column": "bano_latitude",
             "lon_column": "bano_longitude"
@@ -79,7 +91,7 @@
         {
           "type": "GeoPointCreator",
           "params": {
-            "out_column": "geopoint",
+            "out_column": "baac_geopoint",
             "lat_column": "lat",
             "lon_column": "long"
           },
