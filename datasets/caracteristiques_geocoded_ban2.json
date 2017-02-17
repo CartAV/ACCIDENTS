@@ -181,6 +181,18 @@
         "maxLength": 16200
       },
       {
+        "name": "ban_latitude",
+        "type": "float",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "ban_longitude",
+        "type": "float",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "ban_name",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -194,7 +206,7 @@
       },
       {
         "name": "ban_score",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -206,18 +218,6 @@
       },
       {
         "name": "ban_type",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "latitude",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "longitude",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -317,12 +317,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1487266039007
+    "lastModifiedOn": 1487322079798
   },
   "customMeta": {
     "kv": {}
