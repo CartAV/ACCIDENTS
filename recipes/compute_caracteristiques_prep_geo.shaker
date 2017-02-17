@@ -79,7 +79,7 @@
         {
           "type": "GeoPointCreator",
           "params": {
-            "out_column": "baac_geopoint",
+            "out_column": "geopoint",
             "lat_column": "lat",
             "lon_column": "long"
           },
@@ -146,7 +146,7 @@
           "type": "GeoDistanceProcessor",
           "params": {
             "input1": "baac_geopoint",
-            "input2": "baac_geopoint",
+            "input2": "geopoint",
             "output": "distance_baac_final",
             "outputUnit": "KILOMETERS",
             "compareTo": "COLUMN"
