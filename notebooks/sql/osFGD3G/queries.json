@@ -6711,10 +6711,10 @@
         "mode": "SQL",
         "id": "MlnyR4CNUI8B",
         "runOn": 1487351236586,
-        "runIn": 149,
+        "runIn": 93,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "OuXNO1mjl9fZ64po",
         "hash": "051b3fa3c683d121f8b2394f2bb74ac4",
         "querySettings": {
