@@ -6008,10 +6008,10 @@
         "mode": "SQL",
         "id": "uRWjPzj86vzp",
         "runOn": 1487345959101,
-        "runIn": 131,
+        "runIn": 106,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "KSmtoESLk2mRX6ul",
         "hash": "4db5ba46982c1c20398a4b47a2b75f2a",
         "querySettings": {
