@@ -6003,6 +6003,25 @@
         },
         "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source",
         "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source"
+      },
+      {
+        "mode": "SQL",
+        "id": "uRWjPzj86vzp",
+        "runOn": 1487345959101,
+        "runIn": 131,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "KSmtoESLk2mRX6ul",
+        "hash": "4db5ba46982c1c20398a4b47a2b75f2a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source;\n\nselect count(*) from caracteristiques_prep_geo where geo_sources is null",
+        "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source;\n\nselect count(*) from caracteristiques_prep_geo where geo_sources is null"
       }
     ]
   }
