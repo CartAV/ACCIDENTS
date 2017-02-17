@@ -6345,6 +6345,25 @@
         },
         "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source ;\n\nselect count(*), geo_type from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\nselect * from caracteristiques_prep_geo\nwhere geo_type is null\nlimit 100",
         "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source ;\n\nselect count(*), geo_type from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\nselect * from caracteristiques_prep_geo\nwhere geo_type is null\nlimit 100"
+      },
+      {
+        "mode": "SQL",
+        "id": "j2XUn1HP4Toj",
+        "runOn": 1487349286492,
+        "runIn": 506,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "enggtN9Y4OKkCQDu",
+        "hash": "e6501427e8021fab92a0228e6b348905",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source ;\n\nselect count(*), geo_type from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100",
+        "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source ;\n\nselect count(*), geo_type from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100"
       }
     ]
   }
