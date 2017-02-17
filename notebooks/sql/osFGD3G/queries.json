@@ -6231,6 +6231,25 @@
         },
         "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source ;\n\nselect count(*), geo_type from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n-- select * from caracteristiques_prep_geo\n-- where geo_type \u003d \u0027\u0027\n--limit 100",
         "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source ;\n\nselect count(*), geo_type from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n-- select * from caracteristiques_prep_geo\n-- where geo_type \u003d \u0027\u0027\n--limit 100"
+      },
+      {
+        "mode": "SQL",
+        "id": "fx9Yu7tuUgvi",
+        "runOn": 1487346396984,
+        "runIn": 191,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "qasbUxz4kqRYVrlx",
+        "hash": "eba20f3ed2a4b5dbea8e35c32198695a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source ;\n\nselect count(*), geo_type from \"caracteristiques_prep_geo\"\ngroup by geo_type;\nselect count(*) from caracteristiques_prep_geo where geo_source is null\n select * from caracteristiques_prep_geo\n where geo_type \u003d \u0027\u0027\nlimit 100",
+        "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source ;\n\nselect count(*), geo_type from \"caracteristiques_prep_geo\"\ngroup by geo_type;\nselect count(*) from caracteristiques_prep_geo where geo_source is null\n select * from caracteristiques_prep_geo\n where geo_type \u003d \u0027\u0027\nlimit 100"
       }
     ]
   }
