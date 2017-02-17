@@ -6,7 +6,7 @@
           "type": "PythonUDF",
           "params": {
             "mode": "CELL",
-            "pythonSourceCode": "def process(row):\n    if row[\"bano_score\"] and row[\"bano_score\"][0:2] !\u003d row[\"original_city_code\"][0:2]:\n        return 0.0\n",
+            "pythonSourceCode": "def process(row):\n    if row[\"bano_score\"] and row[\"bano_citycode\"][0:2] !\u003d row[\"original_city_code\"][0:2]:\n        return 0.0\n    else:\n        return row[\"bano_score\"]\n",
             "column": "bano_score",
             "stopOnError": true,
             "usePythonUnicode": true
@@ -20,7 +20,7 @@
           "type": "PythonUDF",
           "params": {
             "mode": "CELL",
-            "pythonSourceCode": "def process(row):\n    if row[\"ban2_score\"] and row[\"ban2_score\"][0:2] !\u003d row[\"original_city_code\"][0:2]:\n        return 0.0\n",
+            "pythonSourceCode": "def process(row):\n    if row[\"ban2_score\"] and row[\"ban2_citycode\"][0:2] !\u003d row[\"original_city_code\"][0:2]:\n        return 0.0\n    else:\n        return row[\"ban2_score\"]\n",
             "column": "ban2_score",
             "stopOnError": true,
             "usePythonUnicode": true
@@ -47,16 +47,6 @@
       },
       "metaType": "PROCESSOR",
       "preview": false,
-      "disabled": false,
-      "alwaysShowComment": false
-    },
-    {
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "column": "newcolumn_expression"
-      },
-      "metaType": "PROCESSOR",
-      "preview": true,
       "disabled": false,
       "alwaysShowComment": false
     }
