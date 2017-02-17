@@ -293,6 +293,48 @@
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
+      },
+      {
+        "name": "ban_geopoint",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "distance_baac_ban",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "bano_geopoint",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "distance_ban_bano",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "distance_baac_bano",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "ban2_geopoint",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "baac_geopoint",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
       }
     ]
   },
@@ -311,13 +353,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487339828838
+    "lastModifiedOn": 1487347599242
   },
   "customMeta": {
     "kv": {}
