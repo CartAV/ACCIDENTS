@@ -55,6 +55,18 @@
         {
           "type": "GeoPointCreator",
           "params": {
+            "out_column": "baac_geopoint",
+            "lat_column": "lat",
+            "lon_column": "long"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoPointCreator",
+          "params": {
             "out_column": "geopoint",
             "lat_column": "latitude",
             "lon_column": "longitude"
@@ -82,18 +94,6 @@
             "out_column": "ban_geopoint",
             "lat_column": "ban_latitude",
             "lon_column": "ban_longitude"
-          },
-          "metaType": "PROCESSOR",
-          "preview": false,
-          "disabled": false,
-          "alwaysShowComment": false
-        },
-        {
-          "type": "GeoPointCreator",
-          "params": {
-            "out_column": "baac_geopoint",
-            "lat_column": "lat",
-            "lon_column": "long"
           },
           "metaType": "PROCESSOR",
           "preview": false,
