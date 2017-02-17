@@ -6820,6 +6820,25 @@
         },
         "sql": "select \ncount(*), geo_source,\nmin(distance_baac_final)\nfrom \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\nand distance_baac_final is not null\nand distance_baac_final \u003c\u003e \u0027NaN\u0027::Float\ngroup by geo_source ;\n\n--select count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\n--group by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100",
         "expandedSql": "select \ncount(*), geo_source,\nmin(distance_baac_final)\nfrom \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\nand distance_baac_final is not null\nand distance_baac_final \u003c\u003e \u0027NaN\u0027::Float\ngroup by geo_source ;\n\n--select count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\n--group by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100"
+      },
+      {
+        "mode": "SQL",
+        "id": "25HdVyAlDZ0s",
+        "runOn": 1487352161215,
+        "runIn": 163,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "J0LLlR0xMPeHn7Qk",
+        "hash": "866477d597d2af557cffd58eee3ce908",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select \ncount(*), geo_source,\nmin(distance_baac_final)\nfrom \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\nand distance_baac_final is not null\nand distance_baac_final \u003c\u003e \u0027NaN\u0027::Float\ngroup by geo_source ;\n\n--select count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\n--group by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100\n\nselect min(distance_baac_final) from caracteristiques_prep_geo",
+        "expandedSql": "select \ncount(*), geo_source,\nmin(distance_baac_final)\nfrom \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\nand distance_baac_final is not null\nand distance_baac_final \u003c\u003e \u0027NaN\u0027::Float\ngroup by geo_source ;\n\n--select count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\n--group by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100\n\nselect min(distance_baac_final) from caracteristiques_prep_geo"
       }
     ]
   }
