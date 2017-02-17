@@ -295,13 +295,7 @@
         "maxLength": 16200
       },
       {
-        "name": "geopoint",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "distance_baac_final",
+        "name": "baac_geopoint",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -337,13 +331,13 @@
         "maxLength": 16200
       },
       {
-        "name": "ban2_geopoint",
+        "name": "geopoint",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "baac_geopoint",
+        "name": "distance_baac_final",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -365,13 +359,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487349460802
+    "lastModifiedOn": 1487350039851
   },
   "customMeta": {
     "kv": {}
