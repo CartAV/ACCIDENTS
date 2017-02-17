@@ -6573,6 +6573,25 @@
         },
         "sql": "select \ncount(*), geo_source,\nsum(distance_baac_final)\nfrom \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\nand distance_baac_final is not null\nand distance baac_final is notNaN\ngroup by geo_source ;\n\n--select count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\n--group by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100",
         "expandedSql": "select \ncount(*), geo_source,\nsum(distance_baac_final)\nfrom \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\nand distance_baac_final is not null\nand distance baac_final is notNaN\ngroup by geo_source ;\n\n--select count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\n--group by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100"
+      },
+      {
+        "mode": "SQL",
+        "id": "BJYuK7NFgMEH",
+        "runOn": 1487350718995,
+        "runIn": 71,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "hG2lcNL5WP3V3PxJ",
+        "hash": "80c5284e1141ddf4cfdc181e26ec7361",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select \ncount(*), geo_source,\nsum(distance_baac_final)\nfrom \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\nand distance_baac_final is not null\nand distance baac_final is not NaN\ngroup by geo_source ;\n\n--select count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\n--group by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100",
+        "expandedSql": "select \ncount(*), geo_source,\nsum(distance_baac_final)\nfrom \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\nand distance_baac_final is not null\nand distance baac_final is not NaN\ngroup by geo_source ;\n\n--select count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\n--group by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100"
       }
     ]
   }
