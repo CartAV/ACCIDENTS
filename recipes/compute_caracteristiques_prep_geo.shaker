@@ -49,6 +49,105 @@
       "preview": false,
       "disabled": false,
       "alwaysShowComment": false
+    },
+    {
+      "steps": [
+        {
+          "type": "GeoPointExtractor",
+          "params": {
+            "column": "ban_geopoint",
+            "lat_col": "ban_latitude",
+            "lon_col": "ban_longitude"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoPointExtractor",
+          "params": {
+            "column": "bano_geopoint",
+            "lat_col": "bano_latitude",
+            "lon_col": "bano_longitude"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoPointExtractor",
+          "params": {
+            "column": "ban2_geopoint",
+            "lat_col": "ban2_latitude",
+            "lon_col": "ban2_longitude"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoPointExtractor",
+          "params": {
+            "column": "baac_geopoint",
+            "lat_col": "lat",
+            "lon_col": "long"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoDistanceProcessor",
+          "params": {
+            "input1": "baac_geopoint",
+            "input2": "ban_geopoint",
+            "output": "distance_baac_ban",
+            "outputUnit": "KILOMETERS",
+            "compareTo": "COLUMN"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoDistanceProcessor",
+          "params": {
+            "input1": "baac_geopoint",
+            "input2": "bano_geopoint",
+            "output": "distance_baac_bano",
+            "outputUnit": "KILOMETERS",
+            "compareTo": "COLUMN"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoDistanceProcessor",
+          "params": {
+            "input1": "ban_geopoint",
+            "input2": "bano_geopoint",
+            "output": "distance_ban_bano",
+            "outputUnit": "KILOMETERS",
+            "compareTo": "COLUMN"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "Coordonnées \u0026 distances",
+      "alwaysShowComment": false
     }
   ],
   "tags": [],
