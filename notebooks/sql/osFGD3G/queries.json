@@ -6027,10 +6027,10 @@
         "mode": "SQL",
         "id": "Nn5bMJdKeg5Y",
         "runOn": 1487345964776,
-        "runIn": 106,
+        "runIn": 146,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "rqS1CrxQxVxv96a3",
         "hash": "a2a58e340a2ad06a8664c4f07edf0db4",
         "querySettings": {
