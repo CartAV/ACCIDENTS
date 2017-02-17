@@ -6098,6 +6098,25 @@
         },
         "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source;\n\n--select count(*), geo_type from \"caracteristiques_prep_geo\"\n--group by geo_type\n--select count(*) from caracteristiques_prep_geo where geo_source is null",
         "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source;\n\n--select count(*), geo_type from \"caracteristiques_prep_geo\"\n--group by geo_type\n--select count(*) from caracteristiques_prep_geo where geo_source is null"
+      },
+      {
+        "mode": "SQL",
+        "id": "PcO3CQ8idjg8",
+        "runOn": 1487346226256,
+        "runIn": 118,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "w8IYvUktRW6YFr1K",
+        "hash": "cc23c87f0f4e172574f2d2f188c4ff11",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source where geo_type in (\u0027unknown\u0027, \u0027street\u0027, \u0027housenumber\u0027)\n\n--select count(*), geo_type from \"caracteristiques_prep_geo\"\n--group by geo_type\n--select count(*) from caracteristiques_prep_geo where geo_source is null",
+        "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source where geo_type in (\u0027unknown\u0027, \u0027street\u0027, \u0027housenumber\u0027)\n\n--select count(*), geo_type from \"caracteristiques_prep_geo\"\n--group by geo_type\n--select count(*) from caracteristiques_prep_geo where geo_source is null"
       }
     ]
   }
