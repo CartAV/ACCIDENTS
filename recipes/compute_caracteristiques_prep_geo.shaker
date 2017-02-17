@@ -55,9 +55,45 @@
         {
           "type": "GeoPointCreator",
           "params": {
+            "out_column": "bano_geopoint",
+            "lat_column": "bano_latitude",
+            "lon_column": "bano_longitude"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoPointCreator",
+          "params": {
+            "out_column": "ban_geopoint",
+            "lat_column": "ban_latitude",
+            "lon_column": "ban_longitude"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoPointCreator",
+          "params": {
             "out_column": "baac_geopoint",
             "lat_column": "lat",
             "lon_column": "long"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoPointCreator",
+          "params": {
+            "out_column": "ban2_geopoint",
+            "lat_column": "ban2_latitude",
+            "lon_column": "ban2_longitude"
           },
           "metaType": "PROCESSOR",
           "preview": false,
@@ -110,7 +146,7 @@
           "type": "GeoDistanceProcessor",
           "params": {
             "input1": "baac_geopoint",
-            "input2": "geopoint",
+            "input2": "baac_geopoint",
             "output": "distance_baac_final",
             "outputUnit": "KILOMETERS",
             "compareTo": "COLUMN"
