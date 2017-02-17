@@ -6155,6 +6155,25 @@
         },
         "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source \n\n--select count(*), geo_type from \"caracteristiques_prep_geo\"\n--group by geo_type\n--select count(*) from caracteristiques_prep_geo where geo_source is null",
         "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source \n\n--select count(*), geo_type from \"caracteristiques_prep_geo\"\n--group by geo_type\n--select count(*) from caracteristiques_prep_geo where geo_source is null"
+      },
+      {
+        "mode": "SQL",
+        "id": "yESo4QBy0ODr",
+        "runOn": 1487346366863,
+        "runIn": 179,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "hn3dx0ojxQS5ir5h",
+        "hash": "89611f31b55e0303a6182f03a16c075c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source ;\n\n--select count(*), geo_type from \"caracteristiques_prep_geo\"\n--group by geo_type\n--select count(*) from caracteristiques_prep_geo where geo_source is null\nselect * from caracteristiques_prep_geo\nwhere geo_source is null\nlimit 100",
+        "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source ;\n\n--select count(*), geo_type from \"caracteristiques_prep_geo\"\n--group by geo_type\n--select count(*) from caracteristiques_prep_geo where geo_source is null\nselect * from caracteristiques_prep_geo\nwhere geo_source is null\nlimit 100"
       }
     ]
   }
