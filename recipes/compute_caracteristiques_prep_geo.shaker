@@ -53,59 +53,11 @@
     {
       "steps": [
         {
-          "type": "GeoPointExtractor",
+          "type": "GeoPointCreator",
           "params": {
-            "column": "geopoint",
-            "lat_col": "latitude",
-            "lon_col": "longitude"
-          },
-          "metaType": "PROCESSOR",
-          "preview": false,
-          "disabled": false,
-          "alwaysShowComment": false
-        },
-        {
-          "type": "GeoPointExtractor",
-          "params": {
-            "column": "ban_geopoint",
-            "lat_col": "ban_latitude",
-            "lon_col": "ban_longitude"
-          },
-          "metaType": "PROCESSOR",
-          "preview": false,
-          "disabled": false,
-          "alwaysShowComment": false
-        },
-        {
-          "type": "GeoPointExtractor",
-          "params": {
-            "column": "bano_geopoint",
-            "lat_col": "bano_latitude",
-            "lon_col": "bano_longitude"
-          },
-          "metaType": "PROCESSOR",
-          "preview": false,
-          "disabled": false,
-          "alwaysShowComment": false
-        },
-        {
-          "type": "GeoPointExtractor",
-          "params": {
-            "column": "ban2_geopoint",
-            "lat_col": "ban2_latitude",
-            "lon_col": "ban2_longitude"
-          },
-          "metaType": "PROCESSOR",
-          "preview": false,
-          "disabled": false,
-          "alwaysShowComment": false
-        },
-        {
-          "type": "GeoPointExtractor",
-          "params": {
-            "column": "baac_geopoint",
-            "lat_col": "lat",
-            "lon_col": "long"
+            "out_column": "baac_geopoint",
+            "lat_column": "lat",
+            "lon_column": "long"
           },
           "metaType": "PROCESSOR",
           "preview": false,
