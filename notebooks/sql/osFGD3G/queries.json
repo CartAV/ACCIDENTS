@@ -5984,6 +5984,25 @@
         },
         "sql": "select \ncount(*) from \"caracteristiques_prep_geo\" limit 1",
         "expandedSql": "select \ncount(*) from \"caracteristiques_prep_geo\" limit 1"
+      },
+      {
+        "mode": "SQL",
+        "id": "LN0kZMCPDIrQ",
+        "runOn": 1487345915466,
+        "runIn": 78,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "TXr7kGsJFXlXXHeY",
+        "hash": "8562a9451d26abb38c6246ac45495bef",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source",
+        "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source"
       }
     ]
   }
