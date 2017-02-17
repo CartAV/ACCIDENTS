@@ -6288,6 +6288,25 @@
         },
         "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source ;\n\nselect count(*), geo_type from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n select * from caracteristiques_prep_geo\n where geo_type is null\nlimit 100",
         "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\nwhere geo_type in (\u0027unknown\u0027, \u0027housenumber\u0027)\ngroup by geo_source ;\n\nselect count(*), geo_type from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n select * from caracteristiques_prep_geo\n where geo_type is null\nlimit 100"
+      },
+      {
+        "mode": "SQL",
+        "id": "wxmQgFhtHhi4",
+        "runOn": 1487348997058,
+        "runIn": 218,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "zzumYLOjlucP090p",
+        "hash": "45b6da28276a38a94ac7086bc0ea3e82",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select \ncount(*) from \"accidents_caracteristiques_prep3\"\n\nwhere \noriginal_city_code is not null and current_city_code is null",
+        "expandedSql": "select \ncount(*) from \"accidents_caracteristiques_prep3\"\n\nwhere \noriginal_city_code is not null and current_city_code is null"
       }
     ]
   }
