@@ -6041,6 +6041,25 @@
         },
         "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source;\n\nselect count(*) from caracteristiques_prep_geo where geo_source is null",
         "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source;\n\nselect count(*) from caracteristiques_prep_geo where geo_source is null"
+      },
+      {
+        "mode": "SQL",
+        "id": "xANuTVfevWTD",
+        "runOn": 1487345998017,
+        "runIn": 146,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "xMk2vWh6Jlp43cKj",
+        "hash": "63a051754c00f62da27ab57661e6418c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source;\n\nselect count(*), geo_type from \"caracteristiques_prep_geo\"\ngoup by geo_type\n--select count(*) from caracteristiques_prep_geo where geo_source is null",
+        "expandedSql": "select \ncount(*), geo_source from \"caracteristiques_prep_geo\"\ngroup by geo_source;\n\nselect count(*), geo_type from \"caracteristiques_prep_geo\"\ngoup by geo_type\n--select count(*) from caracteristiques_prep_geo where geo_source is null"
       }
     ]
   }
