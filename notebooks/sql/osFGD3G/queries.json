@@ -6901,10 +6901,10 @@
         "mode": "SQL",
         "id": "xW5EZSS0H4mH",
         "runOn": 1487352317224,
-        "runIn": 155,
+        "runIn": 142,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "bIOAmlcZbcWjP3B3",
         "hash": "8b63569dbad76f338bccada887f21ce2",
         "querySettings": {
