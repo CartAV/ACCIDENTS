@@ -14,7 +14,7 @@
     "output": {
       "items": [
         {
-          "ref": "caracteristiques_gecodoed_ban_bano",
+          "ref": "caracteristiques_gecodoed_bano",
           "appendMode": false
         }
       ]
@@ -40,13 +40,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487179892045
+    "lastModifiedOn": 1487325956544
   },
   "customMeta": {
     "kv": {}

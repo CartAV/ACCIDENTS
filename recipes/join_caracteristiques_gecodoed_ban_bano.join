@@ -13,28 +13,28 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT"
     }
   ],
