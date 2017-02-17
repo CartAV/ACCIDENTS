@@ -55,6 +55,18 @@
         {
           "type": "GeoPointExtractor",
           "params": {
+            "column": "geopoint",
+            "lat_col": "latitude",
+            "lon_col": "longitude"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoPointExtractor",
+          "params": {
             "column": "ban_geopoint",
             "lat_col": "ban_latitude",
             "lon_col": "ban_longitude"
@@ -134,6 +146,20 @@
             "input1": "ban_geopoint",
             "input2": "bano_geopoint",
             "output": "distance_ban_bano",
+            "outputUnit": "KILOMETERS",
+            "compareTo": "COLUMN"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "GeoDistanceProcessor",
+          "params": {
+            "input1": "baac_geopoint",
+            "input2": "geopoint",
+            "output": "distance_baac_final",
             "outputUnit": "KILOMETERS",
             "compareTo": "COLUMN"
           },
