@@ -1,5 +1,5 @@
 {
-  "expression": "val(\"ban_id\") \u003d\u003d \u0027\u0027 || isNull(val(\"ban_id\"))   ||   val(\"ban_score\") \u003c\u003d 0.2   ||   val(\"adr\") !\u003d \u0027\u0027 \u0026\u0026 isNotNull(val(\"adr\"))",
+  "expression": "val(\"ban_id\") \u003d\u003d \u0027\u0027 || isNull(val(\"ban_id\"))   \u0026\u0026   val(\"adr\") !\u003d \u0027\u0027 \u0026\u0026 isNotNull(val(\"adr\"))",
   "enabled": true,
   "uiData": {
     "conditions": [
@@ -10,19 +10,13 @@
         "operator": "is empty"
       },
       {
-        "num": 0.2,
-        "input": "ban_score",
-        "col": "an",
-        "operator": "\u003c\u003d [number]"
-      },
-      {
         "col": "an",
         "input": "adr",
         "num": 0,
         "operator": "not empty"
       }
     ],
-    "mode": "||"
+    "mode": "\u0026\u0026"
   },
   "language": "GREL"
 }
