@@ -32,6 +32,7 @@
         "adr",
         "original_name"
       ],
+      "error_col": "errorr",
       "timeout": 100.0,
       "lines_per_request": 1000.0
     }
@@ -41,13 +42,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487594739971
+    "lastModifiedOn": 1487594961203
   },
   "customMeta": {
     "kv": {}
