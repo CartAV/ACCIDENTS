@@ -26,8 +26,13 @@
     "customConfig": {
       "server_address": "http://api-adresse.data.gouv.fr",
       "concurent_requests": 1.0,
+      "error": "err",
       "prefix": "result_",
-      "timeout": 1000.0,
+      "columns": [
+        "adr",
+        "original_name"
+      ],
+      "timeout": 1.0,
       "lines_per_request": 1000.0
     }
   },
@@ -36,13 +41,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487587697196
+    "lastModifiedOn": 1487587725274
   },
   "customMeta": {
     "kv": {}
