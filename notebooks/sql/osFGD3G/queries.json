@@ -7528,10 +7528,10 @@
         "mode": "SQL",
         "id": "Y2NDISQK1chd",
         "runOn": 1487770201784,
-        "runIn": 275,
+        "runIn": 113,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "tjJ5Gbn6SqNmf75q",
         "hash": "ce64cf550b5c771555a6a885255bf8b4",
         "querySettings": {
