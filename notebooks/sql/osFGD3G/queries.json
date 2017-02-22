@@ -7813,10 +7813,10 @@
         "mode": "SQL",
         "id": "aUeShr6yJBdl",
         "runOn": 1487772054897,
-        "runIn": 111,
+        "runIn": 514,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "Vcd9ibFCWNGznS1z",
         "hash": "8a41632a9e8705f701a0cd68417d8423",
         "querySettings": {
