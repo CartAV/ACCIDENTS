@@ -7927,10 +7927,10 @@
         "mode": "SQL",
         "id": "D0H3VvRUI558",
         "runOn": 1487775338259,
-        "runIn": 326,
+        "runIn": 202,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "CUnqiseXRnjeJJor",
         "hash": "7ab29a1e025b631b4d2c57ffaf1bbb2c",
         "querySettings": {
