@@ -7015,10 +7015,10 @@
         "mode": "SQL",
         "id": "GoUBbEsIHSEc",
         "runOn": 1487757360823,
-        "runIn": 571,
+        "runIn": 429,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "PQPVQjUYw5DME2D1",
         "hash": "805aa8ee1ea46d03f95b7b0fe1893fa6",
         "querySettings": {
