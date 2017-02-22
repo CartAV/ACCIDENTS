@@ -7281,10 +7281,10 @@
         "mode": "SQL",
         "id": "rOQrhabIQAnM",
         "runOn": 1487757697857,
-        "runIn": 130,
+        "runIn": 122,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "NsPGj5u02PIz1nPo",
         "hash": "179e4a2cedb59613cd05c7dddf022aea",
         "querySettings": {
