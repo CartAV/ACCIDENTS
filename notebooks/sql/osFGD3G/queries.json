@@ -7718,10 +7718,10 @@
         "mode": "SQL",
         "id": "E29E3O60B4o1",
         "runOn": 1487771953506,
-        "runIn": 280,
+        "runIn": 86,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "YDlzUHfjiecST3YJ",
         "hash": "8a41632a9e8705f701a0cd68417d8423",
         "querySettings": {
