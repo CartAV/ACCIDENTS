@@ -8231,10 +8231,10 @@
         "mode": "SQL",
         "id": "6jZZrpL9qSSH",
         "runOn": 1487785176291,
-        "runIn": 249,
+        "runIn": 267,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "D1KbO8UD2HH5ByJ6",
         "hash": "84501499269a809da08d23d8a46cf355",
         "querySettings": {
