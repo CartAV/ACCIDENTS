@@ -8041,10 +8041,10 @@
         "mode": "SQL",
         "id": "Vc4iL0o6KrfD",
         "runOn": 1487781157854,
-        "runIn": 286,
+        "runIn": 336,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "jOlY9tfd11mYdvve",
         "hash": "296bdc22c740b725f05f3b618f9ba915",
         "querySettings": {
