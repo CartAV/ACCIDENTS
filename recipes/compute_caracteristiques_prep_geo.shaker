@@ -6,7 +6,7 @@
           "type": "PythonUDF",
           "params": {
             "mode": "CELL",
-            "pythonSourceCode": "def process(row):\n    if row[\"bano_citycode\"] and row[\"bano_citycode\"][0:2] !\u003d row[\"original_city_code\"][0:2]:\n        return 0.0\n    else:\n        return row[\"bano_score\"]\n",
+            "pythonSourceCode": "def process(row):\n    if row[\"bano_postcode\"] and row[\"bano_postcode\"][0:2] !\u003d row[\"original_city_code\"][0:2]:\n        return 0.0\n    else:\n        return row[\"bano_score\"]\n",
             "column": "bano_score",
             "stopOnError": true,
             "usePythonUnicode": true
@@ -173,6 +173,17 @@
       "preview": false,
       "disabled": false,
       "name": "Coordonnées \u0026 distances",
+      "alwaysShowComment": false
+    },
+    {
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "distance_baac_final",
+        "expression": "if(distance_baac_final \u003d\u003d \u0027NaN\u0027, 0.0, distance_baac_final)"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
       "alwaysShowComment": false
     }
   ],
