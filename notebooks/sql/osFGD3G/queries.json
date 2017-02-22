@@ -8117,10 +8117,10 @@
         "mode": "SQL",
         "id": "0zvL5wRQFkAQ",
         "runOn": 1487785132886,
-        "runIn": 467,
+        "runIn": 168,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "mNaVmEKr8IPqnONs",
         "hash": "34ad8e65572b6041191ea368cdcb87a4",
         "querySettings": {
