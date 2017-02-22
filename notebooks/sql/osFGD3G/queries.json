@@ -8212,10 +8212,10 @@
         "mode": "SQL",
         "id": "GS3BBIIMTC7d",
         "runOn": 1487785170483,
-        "runIn": 193,
+        "runIn": 249,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "ZzKdRtFsCF7AH7dN",
         "hash": "c47712abbdab56631f0a4fa56bc81145",
         "querySettings": {
