@@ -7091,10 +7091,10 @@
         "mode": "SQL",
         "id": "FpGk8QsNMYPO",
         "runOn": 1487757418558,
-        "runIn": 54,
+        "runIn": 42,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "cP4CWoeLYIIskycP",
         "hash": "81cc42d72e488ee4e1aef30cc6aa9145",
         "querySettings": {
