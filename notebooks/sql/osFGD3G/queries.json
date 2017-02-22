@@ -7200,6 +7200,25 @@
         },
         "sql": "select count(*) from \"caracteristiques_prep_geo\" where distance_baac_final is not null\n--select count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\n--group by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100\n\n--select count(*) from caracteristiques_prep_geo\n--where distance_baac_final is not null\n--and geo_source \u003c\u003e \u0027baac\u0027;\n\n--select avg(distance_ban_bano) from  caracteristiques_prep_geo\n--where distance_ban_bano \u003c\u003e \u0027NaN\u0027::float",
         "expandedSql": "select count(*) from \"caracteristiques_prep_geo\" where distance_baac_final is not null\n--select count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\n--group by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100\n\n--select count(*) from caracteristiques_prep_geo\n--where distance_baac_final is not null\n--and geo_source \u003c\u003e \u0027baac\u0027;\n\n--select avg(distance_ban_bano) from  caracteristiques_prep_geo\n--where distance_ban_bano \u003c\u003e \u0027NaN\u0027::float"
+      },
+      {
+        "mode": "SQL",
+        "id": "KmIARrFt7Gab",
+        "runOn": 1487757570722,
+        "runIn": 79,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "IjS9DlzNGcVefllL",
+        "hash": "56048f09e2638f0edda9e0b76cb9b8ea",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select geo_source, count(*) from \"caracteristiques_prep_geo\" where distance_baac_final is not null group by geo_source\n--select count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\n--group by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100\n\n--select count(*) from caracteristiques_prep_geo\n--where distance_baac_final is not null\n--and geo_source \u003c\u003e \u0027baac\u0027;\n\n--select avg(distance_ban_bano) from  caracteristiques_prep_geo\n--where distance_ban_bano \u003c\u003e \u0027NaN\u0027::float",
+        "expandedSql": "select geo_source, count(*) from \"caracteristiques_prep_geo\" where distance_baac_final is not null group by geo_source\n--select count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\n--group by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100\n\n--select count(*) from caracteristiques_prep_geo\n--where distance_baac_final is not null\n--and geo_source \u003c\u003e \u0027baac\u0027;\n\n--select avg(distance_ban_bano) from  caracteristiques_prep_geo\n--where distance_ban_bano \u003c\u003e \u0027NaN\u0027::float"
       }
     ]
   }
