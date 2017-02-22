@@ -7072,10 +7072,10 @@
         "mode": "SQL",
         "id": "3Ne388j6OVgb",
         "runOn": 1487757414141,
-        "runIn": 136,
+        "runIn": 54,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "fpCisFeKmnyTRGR3",
         "hash": "7acc6deb6d2e8efcaa1405914fbfb93b",
         "querySettings": {
