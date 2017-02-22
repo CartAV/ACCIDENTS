@@ -8136,10 +8136,10 @@
         "mode": "SQL",
         "id": "Ss9axcSuhT8Q",
         "runOn": 1487785138416,
-        "runIn": 168,
+        "runIn": 157,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "qBDXnR3Xvpkv50yF",
         "hash": "a62279cb9d888eafc4ea51aeadcf48f8",
         "querySettings": {
