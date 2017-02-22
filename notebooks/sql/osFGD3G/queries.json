@@ -7623,10 +7623,10 @@
         "mode": "SQL",
         "id": "CLKLgOUg8l0F",
         "runOn": 1487771365877,
-        "runIn": 275,
+        "runIn": 216,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "Ft6mPJ7asxAHHgp2",
         "hash": "23b1e50b1d3be8980b6f4944e2e1d9e1",
         "querySettings": {
