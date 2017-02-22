@@ -293,6 +293,60 @@
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
+      },
+      {
+        "name": "baac_geopoint",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "geopoint",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "distance_baac_final",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "bano_geopoint",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "distance_ban_bano",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "distance_baac_bano",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "ban_geopoint",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "distance_baac_ban",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "ban2_geopoint",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
       }
     ]
   },
@@ -311,13 +365,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487775871580
+    "lastModifiedOn": 1487780725612
   },
   "customMeta": {
     "kv": {}
