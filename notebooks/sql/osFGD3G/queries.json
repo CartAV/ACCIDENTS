@@ -8079,10 +8079,10 @@
         "mode": "SQL",
         "id": "btbcWRs0GeDk",
         "runOn": 1487785101102,
-        "runIn": 292,
+        "runIn": 132,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "Wd49BLiqHkItAmnU",
         "hash": "ff29574c38b550aab58446e4aa64d246",
         "querySettings": {
