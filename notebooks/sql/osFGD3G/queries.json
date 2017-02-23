@@ -8437,6 +8437,25 @@
         },
         "sql": "select substring(long,1,5) from accidents_caracteristiques_prep1 limit 10 -- where substring(long,1,5) \u003d \u00273456\u0027 limit 10",
         "expandedSql": "select substring(long,1,5) from accidents_caracteristiques_prep1 limit 10 -- where substring(long,1,5) \u003d \u00273456\u0027 limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "3HeU7YdkPpa4",
+        "runOn": 1487845956306,
+        "runIn": 81,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "NAckpNW408ZZqZ2T",
+        "hash": "5b0795238e344ab6374dd58e7b3c71c4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select substring(long,1,5) from accidents_caracteristiques_prep1 limit 10  where substring(long,1,5) \u003d \u002703456\u0027 limit 10",
+        "expandedSql": "select substring(long,1,5) from accidents_caracteristiques_prep1 limit 10  where substring(long,1,5) \u003d \u002703456\u0027 limit 10"
       }
     ]
   }
