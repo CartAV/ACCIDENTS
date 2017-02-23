@@ -8265,6 +8265,27 @@
         "sql": "--select geo_source, count(*) from \"caracteristiques_prep_geo\" where distance_baac_final is not null group by geo_source\nselect count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100\n\n--select count(*) from caracteristiques_prep_geo\n--where distance_baac_final is not null\n--and geo_source \u003c\u003e \u0027baac\u0027;\n\n--select avg(distance_ban_bano) from  caracteristiques_prep_geo\n--where distance_ban_bano \u003c\u003e \u0027NaN\u0027::float\n\nselect geo_source, count(*), max(distance_baac_final) from \"caracteristiques_prep_geo\"\ngroup by geo_source; \n\nselect * from caracteristiques_prep_geo\nwhere geo_source \u003d \u0027ban + citycode\u0027 and distance_baac_final \u003e 100;\n",
         "expandedSql": "--select geo_source, count(*) from \"caracteristiques_prep_geo\" where distance_baac_final is not null group by geo_source\nselect count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100\n\n--select count(*) from caracteristiques_prep_geo\n--where distance_baac_final is not null\n--and geo_source \u003c\u003e \u0027baac\u0027;\n\n--select avg(distance_ban_bano) from  caracteristiques_prep_geo\n--where distance_ban_bano \u003c\u003e \u0027NaN\u0027::float\n\nselect geo_source, count(*), max(distance_baac_final) from \"caracteristiques_prep_geo\"\ngroup by geo_source; \n\nselect * from caracteristiques_prep_geo\nwhere geo_source \u003d \u0027ban + citycode\u0027 and distance_baac_final \u003e 100;\n"
       }
+    ],
+    "e6d7ujed9w8": [
+      {
+        "mode": "SQL",
+        "id": "neTMihL0f49p",
+        "runOn": 1487845849731,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "nwe9xrhsD9GV7PGK",
+        "hash": "99d16c0b1cbb32b6abf5c2a4bf415253",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select lat from accidents_caracteristiques_prep1 limit 10",
+        "expandedSql": "select lat from accidents_caracteristiques_prep1 limit 10"
+      }
     ]
   }
 }
