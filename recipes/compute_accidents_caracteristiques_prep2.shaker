@@ -87,7 +87,7 @@
           "type": "PythonUDF",
           "params": {
             "mode": "CELL",
-            "pythonSourceCode": "def process(row):\n    if row[\u0027lat\u0027]:\n        long \u003d float(row[\u0027lat\u0027])\n        if row[\u0027gps\u0027] in [\u0027Y\u0027, \u0027R\u0027]:\n            lat \u003d -1 * abs(lat)\n        return long\n    else:\n        return None\n",
+            "pythonSourceCode": "def process(row):\n    if row[\u0027lat\u0027]:\n        lat \u003d float(row[\u0027lat\u0027])\n        if row[\u0027gps\u0027] in [\u0027Y\u0027, \u0027R\u0027]:\n            lat \u003d -1 * abs(lat)\n        return long\n    else:\n        return None\n",
             "column": "lat",
             "stopOnError": true,
             "usePythonUnicode": true
