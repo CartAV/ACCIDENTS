@@ -8556,10 +8556,10 @@
         "mode": "SQL",
         "id": "njgxoDyAQBNb",
         "runOn": 1487846274675,
-        "runIn": 277,
+        "runIn": 42,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "j7XS5B9OUC6tczew",
         "hash": "69aa073eb7cde9c7c6f66cc824ad42ac",
         "querySettings": {
