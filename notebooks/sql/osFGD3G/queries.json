@@ -8271,10 +8271,10 @@
         "mode": "SQL",
         "id": "neTMihL0f49p",
         "runOn": 1487845849731,
-        "runIn": -1,
+        "runIn": 104,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "nwe9xrhsD9GV7PGK",
         "hash": "99d16c0b1cbb32b6abf5c2a4bf415253",
         "querySettings": {
