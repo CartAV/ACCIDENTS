@@ -8380,6 +8380,25 @@
         },
         "sql": "select lat from accidents_caracteristiques_prep1  where substring(long,0,4) \u003d \u00273456\u0027 limit 10",
         "expandedSql": "select lat from accidents_caracteristiques_prep1  where substring(long,0,4) \u003d \u00273456\u0027 limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "YEB0lK5DbPNd",
+        "runOn": 1487845925696,
+        "runIn": 123,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Yclqd67gNQMVwn9E",
+        "hash": "317952c7a7c1a8001f342443e41b1906",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select lat from accidents_caracteristiques_prep1  where substring(long,1,4) \u003d \u00273456\u0027 limit 10",
+        "expandedSql": "select lat from accidents_caracteristiques_prep1  where substring(long,1,4) \u003d \u00273456\u0027 limit 10"
       }
     ]
   }
