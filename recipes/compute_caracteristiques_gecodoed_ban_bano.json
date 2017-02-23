@@ -29,7 +29,7 @@
       "prefix": "bano_",
       "columns": [
         "adr",
-        "current_name"
+        "original_name"
       ],
       "timeout": " 1000",
       "lines_per_request": 1000.0
@@ -40,13 +40,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487325956544
+    "lastModifiedOn": 1487856809188
   },
   "customMeta": {
     "kv": {}
