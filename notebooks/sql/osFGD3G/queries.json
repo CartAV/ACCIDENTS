@@ -8309,10 +8309,10 @@
         "mode": "SQL",
         "id": "vy6T3WmazN0t",
         "runOn": 1487845882686,
-        "runIn": 54,
+        "runIn": 48,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "RYHYbzz1wcRx2yTm",
         "hash": "07e3079f80d9309a0c4b43cabf7f25cc",
         "querySettings": {
