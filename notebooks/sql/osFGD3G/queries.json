@@ -8589,6 +8589,25 @@
         },
         "sql": "select count(*), lat from accidents_caracteristiques_prep1 group by lat order by count desc limit 100 ",
         "expandedSql": "select count(*), lat from accidents_caracteristiques_prep1 group by lat order by count desc limit 100 "
+      },
+      {
+        "mode": "SQL",
+        "id": "EOM6A7VdNoq5",
+        "runOn": 1487846310806,
+        "runIn": 234,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "ZZcll2CQWFXB74pv",
+        "hash": "ba76c0d9697a39751381ec063aabfca4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*), long from accidents_caracteristiques_prep1 group by long order by count desc limit 100 ",
+        "expandedSql": "select count(*), long from accidents_caracteristiques_prep1 group by long order by count desc limit 100 "
       }
     ]
   }
