@@ -8646,6 +8646,25 @@
         },
         "sql": "-- select count(*), long from accidents_caracteristiques_prep1 group by long order by count desc limit 100 \n\nselect *\nfrom accidents_caracteristiques_prep2 where \nlong \u003e 0 and dep in (\u002744\u0027, \u002729\u0027, \u002722\u0027, \u002756\u0027, \u002735\u0027, \u002750\u0027, \u002785\u0027)",
         "expandedSql": "-- select count(*), long from accidents_caracteristiques_prep1 group by long order by count desc limit 100 \n\nselect *\nfrom accidents_caracteristiques_prep2 where \nlong \u003e 0 and dep in (\u002744\u0027, \u002729\u0027, \u002722\u0027, \u002756\u0027, \u002735\u0027, \u002750\u0027, \u002785\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "U5ySgjNsenwi",
+        "runOn": 1487855614121,
+        "runIn": 140,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "sAawA6eb6DR9gIHx",
+        "hash": "429502289c659da2e2a9adeb4dd4627a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "-- select count(*), long from accidents_caracteristiques_prep1 group by long order by count desc limit 100 \n\nselect *\nfrom accidents_caracteristiques_prep2 where \nlong \u003e 0 and dep in (\u002744\u0027, \u002729\u0027, \u002722\u0027, \u002756\u0027, \u002735\u0027, \u002750\u0027, \u002785\u0027, \u002717\u0027, \u002733\u0027, \u002740\u0027, \u002764\u0027)",
+        "expandedSql": "-- select count(*), long from accidents_caracteristiques_prep1 group by long order by count desc limit 100 \n\nselect *\nfrom accidents_caracteristiques_prep2 where \nlong \u003e 0 and dep in (\u002744\u0027, \u002729\u0027, \u002722\u0027, \u002756\u0027, \u002735\u0027, \u002750\u0027, \u002785\u0027, \u002717\u0027, \u002733\u0027, \u002740\u0027, \u002764\u0027)"
       }
     ]
   }
