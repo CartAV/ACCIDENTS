@@ -8494,6 +8494,25 @@
         },
         "sql": "select count(*) from accidents_caracteristiques_prep1  where substring(long,1,5) \u003d \u002703456\u0027 limit 10",
         "expandedSql": "select count(*) from accidents_caracteristiques_prep1  where substring(long,1,5) \u003d \u002703456\u0027 limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "Qeu0qwoiZW0Q",
+        "runOn": 1487845985266,
+        "runIn": 122,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "WhASsE9Xi4s6A0jN",
+        "hash": "a0bf9f444e22f1c9f43d00a8623e0dd4",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*) from accidents_caracteristiques_prep1  where substring(long,1,5) \u003d \u002703456\u0027 group by dep",
+        "expandedSql": "select count(*) from accidents_caracteristiques_prep1  where substring(long,1,5) \u003d \u002703456\u0027 group by dep"
       }
     ]
   }
