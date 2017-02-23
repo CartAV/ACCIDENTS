@@ -8532,6 +8532,25 @@
         },
         "sql": "select count(*), dep from accidents_caracteristiques_prep1  where substring(long,1,5) \u003d \u002703456\u0027 group by dep",
         "expandedSql": "select count(*), dep from accidents_caracteristiques_prep1  where substring(long,1,5) \u003d \u002703456\u0027 group by dep"
+      },
+      {
+        "mode": "SQL",
+        "id": "N4gQJqmcXmya",
+        "runOn": 1487846269733,
+        "runIn": 73,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "G2yOvpLOIJ5yZXmm",
+        "hash": "8a37d9d70100ade0d480be054163a5ad",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(*), lat from accidents_caracteristiques_prep1 group by lat order by count limit 100",
+        "expandedSql": "select count(*), lat from accidents_caracteristiques_prep1 group by lat order by count limit 100"
       }
     ]
   }
