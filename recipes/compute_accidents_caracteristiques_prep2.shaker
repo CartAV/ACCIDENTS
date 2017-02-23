@@ -70,32 +70,13 @@
           "alwaysShowComment": false
         },
         {
-          "type": "CreateColumnWithGREL",
+          "type": "PythonUDF",
           "params": {
-            "column": "lat",
-            "expression": "if(gps \u003d\u003d \u0027Y\u0027, -1 * abs(lat), lat)"
-          },
-          "metaType": "PROCESSOR",
-          "preview": false,
-          "disabled": false,
-          "alwaysShowComment": false
-        },
-        {
-          "type": "CreateColumnWithGREL",
-          "params": {
-            "column": "lat",
-            "expression": "if(gps \u003d\u003d \u0027R\u0027, -1 * abs(lat), lat)"
-          },
-          "metaType": "PROCESSOR",
-          "preview": false,
-          "disabled": false,
-          "alwaysShowComment": false
-        },
-        {
-          "type": "CreateColumnWithGREL",
-          "params": {
+            "mode": "CELL",
+            "pythonSourceCode": "def process(row):\n    if row[\u0027long\u0027]:\n        long \u003d float(row[\u0027long\u0027])\n        if row[\u0027gps\u0027] in [\u0027G\u0027, \u0027A\u0027] or row[\u0027dep\u0027] in [\u002744\u0027, \u002729\u0027, \u002722\u0027, \u002756\u0027, \u002735\u0027, \u002750\u0027, \u002785\u0027, \u002717\u0027, \u002733\u0027, \u002740\u0027, \u002764\u0027, \u002753\u0027]:\n            long \u003d -1 * abs(long)\n        return long\n    else:\n        return None\n",
             "column": "long",
-            "expression": "if(gps \u003d\u003d \u0027G\u0027, -1 * abs(long), long)"
+            "stopOnError": true,
+            "usePythonUnicode": true
           },
           "metaType": "PROCESSOR",
           "preview": false,
@@ -103,10 +84,13 @@
           "alwaysShowComment": false
         },
         {
-          "type": "CreateColumnWithGREL",
+          "type": "PythonUDF",
           "params": {
-            "column": "long",
-            "expression": "if(gps \u003d\u003d \u0027A\u0027, -1 * abs(long), long)"
+            "mode": "CELL",
+            "pythonSourceCode": "def process(row):\n    if row[\u0027lat\u0027]:\n        long \u003d float(row[\u0027lat\u0027])\n        if row[\u0027gps\u0027] in [\u0027Y\u0027, \u0027R\u0027]:\n            lat \u003d -1 * abs(lat)\n        return long\n    else:\n        return None\n",
+            "column": "lat",
+            "stopOnError": true,
+            "usePythonUnicode": true
           },
           "metaType": "PROCESSOR",
           "preview": false,
