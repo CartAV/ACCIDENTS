@@ -8665,6 +8665,25 @@
         },
         "sql": "-- select count(*), long from accidents_caracteristiques_prep1 group by long order by count desc limit 100 \n\nselect *\nfrom accidents_caracteristiques_prep2 where \nlong \u003e 0 and dep in (\u002744\u0027, \u002729\u0027, \u002722\u0027, \u002756\u0027, \u002735\u0027, \u002750\u0027, \u002785\u0027, \u002717\u0027, \u002733\u0027, \u002740\u0027, \u002764\u0027)",
         "expandedSql": "-- select count(*), long from accidents_caracteristiques_prep1 group by long order by count desc limit 100 \n\nselect *\nfrom accidents_caracteristiques_prep2 where \nlong \u003e 0 and dep in (\u002744\u0027, \u002729\u0027, \u002722\u0027, \u002756\u0027, \u002735\u0027, \u002750\u0027, \u002785\u0027, \u002717\u0027, \u002733\u0027, \u002740\u0027, \u002764\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "QyQH4vhjCpnr",
+        "runOn": 1487855736111,
+        "runIn": 162,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "pQ0VWxVRDSy34pS6",
+        "hash": "7edc8ce12f7808453b691b1026b3495f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "-- select count(*), long from accidents_caracteristiques_prep1 group by long order by count desc limit 100 \n\nselect *\nfrom accidents_caracteristiques_prep2 where \nlong \u003e 0 and dep in (\u002744\u0027, \u002729\u0027, \u002722\u0027, \u002756\u0027, \u002735\u0027, \u002750\u0027, \u002785\u0027, \u002717\u0027, \u002733\u0027, \u002740\u0027, \u002764\u0027, \u002753\u0027)",
+        "expandedSql": "-- select count(*), long from accidents_caracteristiques_prep1 group by long order by count desc limit 100 \n\nselect *\nfrom accidents_caracteristiques_prep2 where \nlong \u003e 0 and dep in (\u002744\u0027, \u002729\u0027, \u002722\u0027, \u002756\u0027, \u002735\u0027, \u002750\u0027, \u002785\u0027, \u002717\u0027, \u002733\u0027, \u002740\u0027, \u002764\u0027, \u002753\u0027)"
       }
     ]
   }
