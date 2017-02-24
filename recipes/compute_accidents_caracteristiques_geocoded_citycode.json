@@ -31,7 +31,7 @@
         "adr"
       ],
       "city_code": "current_city_code",
-      "error_col": "",
+      "error_col": "error",
       "timeout": 1000.0,
       "lines_per_request": 2000.0
     }
@@ -41,13 +41,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487951679044
+    "lastModifiedOn": 1487951952026
   },
   "customMeta": {
     "kv": {}
