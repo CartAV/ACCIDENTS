@@ -188,13 +188,13 @@
       },
       {
         "name": "ban_latitude",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "ban_longitude",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -212,7 +212,7 @@
       },
       {
         "name": "ban_score",
-        "type": "double",
+        "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -245,13 +245,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
+      "login": "DSS",
+      "displayName": "DSS"
     },
-    "lastModifiedOn": 1487951945234
+    "lastModifiedOn": 1487951972506
   },
   "customMeta": {
     "kv": {}
