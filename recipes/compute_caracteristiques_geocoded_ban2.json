@@ -24,9 +24,14 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "server_address": "http://api-adresse.data.gouv.fr",
+      "server_address": "http://datalab-ban",
       "concurent_requests": 1.0,
-      "prefix": "result_",
+      "prefix": "ban2_",
+      "columns": [
+        "adr",
+        "current_name"
+      ],
+      "error_col": "errors",
       "timeout": 1000.0,
       "lines_per_request": 1000.0
     }
@@ -36,13 +41,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487942335344
+    "lastModifiedOn": 1487942368759
   },
   "customMeta": {
     "kv": {}
