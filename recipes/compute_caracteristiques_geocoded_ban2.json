@@ -29,7 +29,7 @@
       "prefix": "ban2_",
       "columns": [
         "adr",
-        "current_name"
+        "original_name"
       ],
       "timeout": " 1000",
       "lines_per_request": 1000.0
@@ -40,13 +40,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487933005451
+    "lastModifiedOn": 1487941083367
   },
   "customMeta": {
     "kv": {}
