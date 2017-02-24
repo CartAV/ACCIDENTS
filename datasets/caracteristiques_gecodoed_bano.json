@@ -145,79 +145,79 @@
         "maxLength": 16200
       },
       {
-        "name": "result_city",
+        "name": "bano_city",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "result_citycode",
+        "name": "bano_citycode",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "result_context",
+        "name": "bano_context",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "result_housenumber",
+        "name": "bano_housenumber",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "result_id",
+        "name": "bano_id",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "result_label",
+        "name": "bano_label",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "result_latitude",
+        "name": "bano_latitude",
         "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "result_longitude",
+        "name": "bano_longitude",
         "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "result_name",
+        "name": "bano_name",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "result_postcode",
+        "name": "bano_postcode",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "result_score",
+        "name": "bano_score",
         "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "result_street",
+        "name": "bano_street",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "result_type",
+        "name": "bano_type",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -239,12 +239,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "DSS",
       "displayName": "DSS"
     },
-    "lastModifiedOn": 1487956673994
+    "lastModifiedOn": 1487956840937
   },
   "customMeta": {
     "kv": {}
