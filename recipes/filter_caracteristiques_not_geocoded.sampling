@@ -4,15 +4,15 @@
   "uiData": {
     "conditions": [
       {
-        "num": 0,
-        "col": "an",
         "input": "ban_id",
+        "col": "an",
+        "num": 0,
         "operator": "is empty"
       },
       {
-        "col": "an",
-        "input": "adr",
         "num": 0,
+        "input": "adr",
+        "col": "an",
         "operator": "not empty"
       }
     ],
