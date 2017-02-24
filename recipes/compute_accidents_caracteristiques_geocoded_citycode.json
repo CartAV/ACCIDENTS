@@ -28,7 +28,8 @@
       "concurent_requests": 8.0,
       "prefix": "ban_",
       "columns": [
-        "adr"
+        "adr",
+        "current_city_code"
       ],
       "city_code": "current_city_code",
       "error_col": "error",
@@ -41,13 +42,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487954525044
+    "lastModifiedOn": 1487954811527
   },
   "customMeta": {
     "kv": {}
