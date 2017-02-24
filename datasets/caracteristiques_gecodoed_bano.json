@@ -145,79 +145,79 @@
         "maxLength": 16200
       },
       {
-        "name": "bano_city",
+        "name": "result_city",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "bano_citycode",
+        "name": "result_citycode",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "bano_context",
+        "name": "result_context",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "bano_housenumber",
+        "name": "result_housenumber",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "bano_id",
+        "name": "result_id",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "bano_label",
+        "name": "result_label",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "bano_latitude",
+        "name": "result_latitude",
         "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "bano_longitude",
+        "name": "result_longitude",
         "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "bano_name",
+        "name": "result_name",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "bano_postcode",
+        "name": "result_postcode",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "bano_score",
+        "name": "result_score",
         "type": "float",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "bano_street",
+        "name": "result_street",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "bano_type",
+        "name": "result_type",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -239,13 +239,12 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
+      "login": "DSS",
+      "displayName": "DSS"
     },
-    "lastModifiedOn": 1487325953299
+    "lastModifiedOn": 1487956673994
   },
   "customMeta": {
     "kv": {}
