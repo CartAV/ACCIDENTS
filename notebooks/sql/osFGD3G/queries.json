@@ -8345,10 +8345,10 @@
         "mode": "SQL",
         "id": "ilbentia5T2q",
         "runOn": 1488206573304,
-        "runIn": 115,
+        "runIn": 233,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "aGYwO25BHaIws5Gv",
         "hash": "86423214eaaeb3d56aead6d58e22edf6",
         "querySettings": {
