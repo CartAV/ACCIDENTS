@@ -8853,6 +8853,25 @@
         },
         "sql": "--select geo_source, count(*) from \"caracteristiques_prep_geo\" where distance_baac_final is not null group by geo_source\nselect count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100\n\n--select count(*) from caracteristiques_prep_geo\n--where distance_baac_final is not null\n--and geo_source \u003c\u003e \u0027baac\u0027;\n\n--select avg(distance_ban_bano) from  caracteristiques_prep_geo\n--where distance_ban_bano \u003c\u003e \u0027NaN\u0027::float\n\nselect agg, count(*) from \"caracteristiques_prep_geo\"\nwhere (geo_type not in  (\u0027street\u0027, \u0027housenumber\u0027))\ngroup by agg order by count DESC;\n\n\n\n--select * from caracteristiques_prep_geo\n-- where geo_source \u003d \u0027ban + citycode\u0027 and distance_baac_final \u003e 100;\n-- select count(*) from caracteristiques_prep_geo\n\n--select count(*) from caracteristiques_prep_geo where adr is null and long is null",
         "expandedSql": "--select geo_source, count(*) from \"caracteristiques_prep_geo\" where distance_baac_final is not null group by geo_source\nselect count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100\n\n--select count(*) from caracteristiques_prep_geo\n--where distance_baac_final is not null\n--and geo_source \u003c\u003e \u0027baac\u0027;\n\n--select avg(distance_ban_bano) from  caracteristiques_prep_geo\n--where distance_ban_bano \u003c\u003e \u0027NaN\u0027::float\n\nselect agg, count(*) from \"caracteristiques_prep_geo\"\nwhere (geo_type not in  (\u0027street\u0027, \u0027housenumber\u0027))\ngroup by agg order by count DESC;\n\n\n\n--select * from caracteristiques_prep_geo\n-- where geo_source \u003d \u0027ban + citycode\u0027 and distance_baac_final \u003e 100;\n-- select count(*) from caracteristiques_prep_geo\n\n--select count(*) from caracteristiques_prep_geo where adr is null and long is null"
+      },
+      {
+        "mode": "SQL",
+        "id": "wanw8rNqy0WN",
+        "runOn": 1488211701262,
+        "runIn": 227,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "ZUqvZ7d47x65r3k4",
+        "hash": "bbedd47efe025fd62ad6010f96e2478b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "--select geo_source, count(*) from \"caracteristiques_prep_geo\" where distance_baac_final is not null group by geo_source\nselect count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100\n\n--select count(*) from caracteristiques_prep_geo\n--where distance_baac_final is not null\n--and geo_source \u003c\u003e \u0027baac\u0027;\n\n--select avg(distance_ban_bano) from  caracteristiques_prep_geo\n--where distance_ban_bano \u003c\u003e \u0027NaN\u0027::float\n\nselect * from \"caracteristiques_prep_geo\"\nwhere (geo_type not in  (\u0027street\u0027, \u0027housenumber\u0027))\nlimit 100;\n\n\n\n--select * from caracteristiques_prep_geo\n-- where geo_source \u003d \u0027ban + citycode\u0027 and distance_baac_final \u003e 100;\n-- select count(*) from caracteristiques_prep_geo\n\n--select count(*) from caracteristiques_prep_geo where adr is null and long is null",
+        "expandedSql": "--select geo_source, count(*) from \"caracteristiques_prep_geo\" where distance_baac_final is not null group by geo_source\nselect count(*), geo_type, avg(distance_baac_final) from \"caracteristiques_prep_geo\"\ngroup by geo_type;\n\n--select count(*) from caracteristiques_prep_geo where geo_source is null\n--select * from caracteristiques_prep_geo\n--where geo_type is null\n--limit 100\n\n--select count(*) from caracteristiques_prep_geo\n--where distance_baac_final is not null\n--and geo_source \u003c\u003e \u0027baac\u0027;\n\n--select avg(distance_ban_bano) from  caracteristiques_prep_geo\n--where distance_ban_bano \u003c\u003e \u0027NaN\u0027::float\n\nselect * from \"caracteristiques_prep_geo\"\nwhere (geo_type not in  (\u0027street\u0027, \u0027housenumber\u0027))\nlimit 100;\n\n\n\n--select * from caracteristiques_prep_geo\n-- where geo_source \u003d \u0027ban + citycode\u0027 and distance_baac_final \u003e 100;\n-- select count(*) from caracteristiques_prep_geo\n\n--select count(*) from caracteristiques_prep_geo where adr is null and long is null"
       }
     ],
     "e6d7ujed9w8": [
