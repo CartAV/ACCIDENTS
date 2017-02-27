@@ -8744,10 +8744,10 @@
         "mode": "SQL",
         "id": "qyUxiWQGFSO2",
         "runOn": 1488211531757,
-        "runIn": 239,
+        "runIn": 243,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "yF4LBfb7qUY26LRe",
         "hash": "c7f1248bf78c5c9fa5cbbfde05a7a634",
         "querySettings": {
