@@ -8402,10 +8402,10 @@
         "mode": "SQL",
         "id": "NuDT229oT4kX",
         "runOn": 1488209746250,
-        "runIn": 248,
+        "runIn": 134,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "cUtlAQHUT10Cjtox",
         "hash": "567d327d84752134181c11993581ef0a",
         "querySettings": {
