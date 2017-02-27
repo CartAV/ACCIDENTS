@@ -229,79 +229,37 @@
         "maxLength": 16200
       },
       {
-        "name": "ban_city",
+        "name": "ban2_citycode",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "ban_context",
+        "name": "ban2_label",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "ban_housenumber",
-        "type": "string",
+        "name": "ban2_latitude",
+        "type": "float",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
-        "name": "ban_id",
-        "type": "string",
+        "name": "ban2_longitude",
+        "type": "float",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
-        "name": "ban_name",
-        "type": "string",
+        "name": "ban2_score",
+        "type": "float",
         "timestampNoTzAsDate": false,
-        "maxLength": 16200
+        "maxLength": -1
       },
       {
-        "name": "ban_street",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "ban2_city",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "ban2_context",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "ban2_errors",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "ban2_housenumber",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "ban2_id",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "ban2_name",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "ban2_street",
+        "name": "ban2_type",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -323,13 +281,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488188120547
+    "lastModifiedOn": 1488188314223
   },
   "customMeta": {
     "kv": {}
