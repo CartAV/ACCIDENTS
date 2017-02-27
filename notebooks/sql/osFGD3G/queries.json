@@ -8953,10 +8953,10 @@
         "mode": "SQL",
         "id": "14ptuvOyvQHo",
         "runOn": 1488212011239,
-        "runIn": 176,
+        "runIn": 215,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "NU4iCQYasS28f54L",
         "hash": "22ac1a78b6ce9b78f72adadf4b1e02df",
         "querySettings": {
