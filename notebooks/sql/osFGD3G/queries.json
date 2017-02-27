@@ -8668,10 +8668,10 @@
         "mode": "SQL",
         "id": "ZW8G3WSgZehA",
         "runOn": 1488211447701,
-        "runIn": 268,
+        "runIn": 215,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "WICYyZOH3aKUavg9",
         "hash": "aede423ccb9a959db62ce3528b237eba",
         "querySettings": {
