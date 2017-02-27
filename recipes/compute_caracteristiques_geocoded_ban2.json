@@ -14,7 +14,7 @@
     "output": {
       "items": [
         {
-          "ref": "TEMP",
+          "ref": "geocoded_ban_cityname",
           "appendMode": false
         }
       ]
@@ -41,13 +41,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488204354477
+    "lastModifiedOn": 1488204453782
   },
   "customMeta": {
     "kv": {}
