@@ -24,7 +24,7 @@
   "optionalDependencies": false,
   "params": {
     "selection": {
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "FULL",
       "partitionSelectionMethod": "ALL",
       "maxRecords": 100000,
       "targetRatio": 0.02
@@ -35,13 +35,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488200399775
+    "lastModifiedOn": 1488200413988
   },
   "customMeta": {
     "kv": {}
