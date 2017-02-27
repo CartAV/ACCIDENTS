@@ -8706,10 +8706,10 @@
         "mode": "SQL",
         "id": "pgNrUwhAkNod",
         "runOn": 1488211469795,
-        "runIn": 142,
+        "runIn": 203,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "Mail7yaCyfoXrCqG",
         "hash": "4018f97bbbec798efdb6b6af6a602f8d",
         "querySettings": {
