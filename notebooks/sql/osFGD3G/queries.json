@@ -8763,10 +8763,10 @@
         "mode": "SQL",
         "id": "WELUEqGwFqmy",
         "runOn": 1488211535946,
-        "runIn": 243,
+        "runIn": 279,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "QPqYPbBdrt0dzDej",
         "hash": "841e19e7f83a66747a1b64f6454ef119",
         "querySettings": {
