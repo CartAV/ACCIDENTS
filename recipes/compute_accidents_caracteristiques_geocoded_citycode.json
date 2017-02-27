@@ -25,7 +25,7 @@
   "params": {
     "customConfig": {
       "server_address": "http://datalab-ban",
-      "concurent_requests": 1.0,
+      "concurent_requests": 8.0,
       "prefix": "ban_",
       "columns": [
         "adr"
@@ -33,7 +33,7 @@
       "city_code": "current_city_code",
       "error_col": "",
       "timeout": 1000.0,
-      "lines_per_request": 10.0
+      "lines_per_request": 1000.0
     }
   },
   "checklists": {
@@ -41,13 +41,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488191740428
+    "lastModifiedOn": 1488191867668
   },
   "customMeta": {
     "kv": {}
