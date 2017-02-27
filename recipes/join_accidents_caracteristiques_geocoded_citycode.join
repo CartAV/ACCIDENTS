@@ -16,26 +16,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     },
     {
@@ -43,26 +43,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Num_Acc",
             "table": 2
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
+      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -265,67 +265,32 @@
       "type": "string"
     },
     {
-      "name": "ban_city",
+      "name": "ban2_citycode",
       "table": 2,
       "type": "string"
     },
     {
-      "name": "ban_context",
+      "name": "ban2_label",
       "table": 2,
       "type": "string"
     },
     {
-      "name": "ban_housenumber",
+      "name": "ban2_latitude",
       "table": 2,
-      "type": "string"
+      "type": "float"
     },
     {
-      "name": "ban_id",
+      "name": "ban2_longitude",
       "table": 2,
-      "type": "string"
+      "type": "float"
     },
     {
-      "name": "ban_name",
+      "name": "ban2_score",
       "table": 2,
-      "type": "string"
+      "type": "float"
     },
     {
-      "name": "ban_street",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban2_city",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban2_context",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban2_errors",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban2_housenumber",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban2_id",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban2_name",
-      "table": 2,
-      "type": "string"
-    },
-    {
-      "name": "ban2_street",
+      "name": "ban2_type",
       "table": 2,
       "type": "string"
     }
