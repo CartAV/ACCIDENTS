@@ -8,11 +8,11 @@
           "deps": []
         },
         {
-          "ref": "caracteristiques_geocoded_ban2",
+          "ref": "caracteristiques_gecodoed_bano",
           "deps": []
         },
         {
-          "ref": "caracteristiques_gecodoed_bano",
+          "ref": "geocoded_ban_cityname",
           "deps": []
         }
       ]
@@ -35,13 +35,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487326813451
+    "lastModifiedOn": 1488188120730
   },
   "customMeta": {
     "kv": {}

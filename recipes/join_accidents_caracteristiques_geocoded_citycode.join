@@ -16,28 +16,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
+      "rightLimit": {},
       "type": "LEFT"
     },
     {
@@ -232,72 +230,102 @@
       "type": "string"
     },
     {
-      "name": "ban2_citycode",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "ban2_label",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "ban2_latitude",
-      "table": 1,
-      "type": "float"
-    },
-    {
-      "name": "ban2_longitude",
-      "table": 1,
-      "type": "float"
-    },
-    {
-      "name": "ban2_postcode",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "ban2_score",
-      "table": 1,
-      "type": "float"
-    },
-    {
-      "name": "ban2_type",
-      "table": 1,
-      "type": "string"
-    },
-    {
       "name": "bano_citycode",
-      "table": 2,
+      "table": 1,
       "type": "string"
     },
     {
       "name": "bano_label",
-      "table": 2,
+      "table": 1,
       "type": "string"
     },
     {
       "name": "bano_latitude",
-      "table": 2,
+      "table": 1,
       "type": "float"
     },
     {
       "name": "bano_longitude",
-      "table": 2,
+      "table": 1,
       "type": "float"
     },
     {
       "name": "bano_postcode",
-      "table": 2,
+      "table": 1,
       "type": "string"
     },
     {
       "name": "bano_score",
-      "table": 2,
+      "table": 1,
       "type": "float"
     },
     {
       "name": "bano_type",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "ban_city",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "ban_context",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "ban_housenumber",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "ban_id",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "ban_name",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "ban_street",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "ban2_city",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "ban2_context",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "ban2_errors",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "ban2_housenumber",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "ban2_id",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "ban2_name",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "ban2_street",
       "table": 2,
       "type": "string"
     }
