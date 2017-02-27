@@ -289,6 +289,12 @@
         "maxLength": 16200
       },
       {
+        "name": "geo_score",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "baac_geopoint",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -359,13 +365,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488205996503
+    "lastModifiedOn": 1488210665843
   },
   "customMeta": {
     "kv": {}
