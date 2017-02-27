@@ -8269,10 +8269,10 @@
         "mode": "SQL",
         "id": "GK8vr5KxrZl0",
         "runOn": 1488206336165,
-        "runIn": 534,
+        "runIn": 220,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "OdefxWl2OdjYLfm9",
         "hash": "b91773e8a204faa1876f7e18e242247f",
         "querySettings": {
