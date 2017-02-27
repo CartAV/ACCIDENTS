@@ -8611,10 +8611,10 @@
         "mode": "SQL",
         "id": "Jc2HqvBGBwht",
         "runOn": 1488211122351,
-        "runIn": 258,
+        "runIn": 237,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "GUCkwxbM5ZgiokiA",
         "hash": "c9de772429ad473c626bef67746948df",
         "querySettings": {
