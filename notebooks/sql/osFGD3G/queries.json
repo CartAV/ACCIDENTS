@@ -9162,10 +9162,10 @@
         "mode": "SQL",
         "id": "K7KMhC3LK5xP",
         "runOn": 1488278689366,
-        "runIn": 103,
+        "runIn": 86,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "0SITqg4s2I7gKjpI",
         "hash": "b06ad362eb8962aa8deefb4b7eae0874",
         "querySettings": {
