@@ -1,0 +1,25 @@
+{
+  "queries": {
+    "ugdlgsv0kvs": [
+      {
+        "mode": "SQL",
+        "id": "vKqkBijKWjUg",
+        "runOn": 1488300644129,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "0rEYvVHvEuBJxL2R",
+        "hash": "378832f04655c3d694a2e4fad22b9c8b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from \"public\".\"ign_departement_prep\"",
+        "expandedSql": "select * from \"public\".\"ign_departement_prep\""
+      }
+    ]
+  }
+}
