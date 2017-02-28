@@ -26,7 +26,7 @@
     "customConfig": {
       "server_address": "http://datalab-bano",
       "concurent_requests": 8.0,
-      "prefix": "result_",
+      "prefix": "bano_",
       "columns": [
         "adr",
         "original_name"
@@ -40,13 +40,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1487956820509
+    "lastModifiedOn": 1488285365233
   },
   "customMeta": {
     "kv": {}
