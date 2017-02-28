@@ -1,12 +1,32 @@
 {
   "creator": "grabenertr",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1488300629142
+  },
   "connection": "postgis",
   "name": "Bidouilles Postgis",
   "checklists": {
     "checklists": []
   },
   "tags": [],
-  "cells": [],
+  "cells": [
+    {
+      "id": "ugdlgsv0kvs",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "extraConf": [],
+        "addDkuUdf": false
+      }
+    }
+  ],
   "automationLocal": false,
   "createdBy": {},
   "createdOn": 0,
