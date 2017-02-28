@@ -9371,10 +9371,10 @@
         "mode": "SQL",
         "id": "DdxaLMgFb3Br",
         "runOn": 1488291231089,
-        "runIn": 163,
+        "runIn": 122,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "yCFZGMPOsaAgTUSj",
         "hash": "212041da0264ed8fc879a2b069521946",
         "querySettings": {
