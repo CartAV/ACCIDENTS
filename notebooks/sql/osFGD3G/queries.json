@@ -9181,10 +9181,10 @@
         "mode": "SQL",
         "id": "couVxX6RMAAz",
         "runOn": 1488278697280,
-        "runIn": 86,
+        "runIn": 108,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "BETPm7SKSK5ieaI3",
         "hash": "a65f2a6afd0d2d9ced75799fa0081a98",
         "querySettings": {
