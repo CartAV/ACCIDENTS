@@ -9119,6 +9119,25 @@
         },
         "sql": "\nselect distinct(dep) from caracteristiques_prep_geo_joined order by dep;\n\n--select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;",
         "expandedSql": "\nselect distinct(dep) from caracteristiques_prep_geo_joined order by dep;\n\n--select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;"
+      },
+      {
+        "mode": "SQL",
+        "id": "bsK8mD0i0pnf",
+        "runOn": 1488278658675,
+        "runIn": 104,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "5hmVraDldyaLwPn1",
+        "hash": "66a573bf97e071dd5189404f54e51a14",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "\n--select distinct(dep) from caracteristiques_prep_geo_joined order by dep;\n\nselect distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;",
+        "expandedSql": "\n--select distinct(dep) from caracteristiques_prep_geo_joined order by dep;\n\nselect distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;"
       }
     ],
     "e6d7ujed9w8": [
