@@ -9238,10 +9238,10 @@
         "mode": "SQL",
         "id": "IWLfdMKG4AMS",
         "runOn": 1488278774767,
-        "runIn": 56,
+        "runIn": 117,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "JCbeDz54FQelZMiG",
         "hash": "428eb1520ad13907768a272f3bb3f831",
         "querySettings": {
