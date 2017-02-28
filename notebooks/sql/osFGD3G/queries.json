@@ -9029,10 +9029,10 @@
         "mode": "SQL",
         "id": "iwo8BzoYlDSO",
         "runOn": 1488278395981,
-        "runIn": 207,
+        "runIn": 85,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "1wIyzn1dfumuF2hR",
         "hash": "c12d6abefdbf6a3355af1393c8a5b58b",
         "querySettings": {
