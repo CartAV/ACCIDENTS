@@ -79,6 +79,18 @@
         "maxLength": -1
       },
       {
+        "name": "date_formated",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "heures_minutes",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
         "name": "ANNEE",
         "type": "bigint",
         "timestampNoTzAsDate": false,
@@ -181,13 +193,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488287835626
+    "lastModifiedOn": 1488293245061
   },
   "customMeta": {
     "kv": {}
