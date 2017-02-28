@@ -20,9 +20,9 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "maxLength": 16200
       },
       {
         "name": "an",
@@ -479,13 +479,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488272274242
+    "lastModifiedOn": 1488272336078
   },
   "customMeta": {
     "kv": {}
