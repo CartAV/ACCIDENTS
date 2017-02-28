@@ -9352,10 +9352,10 @@
         "mode": "SQL",
         "id": "jTqgWxvxzog2",
         "runOn": 1488291222378,
-        "runIn": 423,
+        "runIn": 163,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "6hAFszUtuquxQLD7",
         "hash": "3e847ebbf80d43992c52db99309c132d",
         "querySettings": {
