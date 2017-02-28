@@ -38,6 +38,25 @@
         },
         "sql": "select nom_chf from \"public\".\"ign_departement_prep\"",
         "expandedSql": "select nom_chf from \"public\".\"ign_departement_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "EaqQRSm2qZVw",
+        "runOn": 1488300668806,
+        "runIn": 41,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "bORSzz9KOGcbpk1C",
+        "hash": "5a36e2869244ff34e879577b45d55055",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select NOM_CHF from \"public\".\"ign_departement_prep\"",
+        "expandedSql": "select NOM_CHF from \"public\".\"ign_departement_prep\""
       }
     ]
   }
