@@ -9219,10 +9219,10 @@
         "mode": "SQL",
         "id": "d2tD9L2rmRXS",
         "runOn": 1488278767198,
-        "runIn": 109,
+        "runIn": 56,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "sDHps4egdNrjWpN2",
         "hash": "ab006222ab288e82fb46280d4a82ee91",
         "querySettings": {
