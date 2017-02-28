@@ -305,6 +305,34 @@
       "preview": false,
       "disabled": false,
       "alwaysShowComment": false
+    },
+    {
+      "type": "DateFormatter",
+      "params": {
+        "format": "HH:mm",
+        "inCol": "date",
+        "outCol": "heures_minutes",
+        "lang": "auto",
+        "timezone_id": "UTC"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "DateFormatter",
+      "params": {
+        "format": "dd/MM/yyyy",
+        "inCol": "date",
+        "outCol": "date_formated",
+        "lang": "auto",
+        "timezone_id": "UTC"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
     }
   ],
   "tags": [],
