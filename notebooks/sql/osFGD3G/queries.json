@@ -9295,10 +9295,10 @@
         "mode": "SQL",
         "id": "rUVIbBbErSVo",
         "runOn": 1488279042128,
-        "runIn": 63,
+        "runIn": 65,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "y3QbOLvdIM86YTvd",
         "hash": "7f4e9e1d74f80773594113a1683e02fc",
         "querySettings": {
