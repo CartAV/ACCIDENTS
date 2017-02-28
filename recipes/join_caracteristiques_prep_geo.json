@@ -10,6 +10,10 @@
         {
           "ref": "DATAPREPOPENDATAGEO.departements_wgs84_prep",
           "deps": []
+        },
+        {
+          "ref": "lieux_prepared",
+          "deps": []
         }
       ]
     }
@@ -31,13 +35,13 @@
   },
   "tags": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488272235343
+    "lastModifiedOn": 1488272274557
   },
   "customMeta": {
     "kv": {}

@@ -5,6 +5,9 @@
     },
     {
       "index": 1
+    },
+    {
+      "index": 2
     }
   ],
   "joins": [
@@ -33,6 +36,27 @@
           },
           "dateDiffUnit": "DAY",
           "maxMatches": 1
+        }
+      ],
+      "type": "LEFT"
+    },
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 2,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "on": [
+        {
+          "column1": {
+            "name": "Num_Acc",
+            "table": 0
+          },
+          "type": "EQ",
+          "column2": {
+            "name": "Num_Acc",
+            "table": 2
+          }
         }
       ],
       "type": "LEFT"
@@ -344,6 +368,91 @@
     {
       "name": "NOM_REG",
       "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "catr",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "voie",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "v1",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "v2",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "circ",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "nbv",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "pr",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "pr1",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "vosp",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "prof",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "plan",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "lartpc",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "larrout",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "surf",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "infra",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "situ",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "env1",
+      "table": 2,
       "type": "string"
     }
   ]
