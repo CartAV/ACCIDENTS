@@ -171,6 +171,25 @@
         },
         "sql": "select acc.*, dep.NOM_CHF\nfrom \"accidents_pg_prep\" as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.NOM_CHF\nfrom \"accidents_pg_prep\" as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "EST8GotXq1jo",
+        "runOn": 1488300895494,
+        "runIn": 40,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "kQ70K8vT5KaWC6RD",
+        "hash": "5fda138c13354a74e92c68c6ea6c7d6a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10",
+        "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10"
       }
     ]
   }
