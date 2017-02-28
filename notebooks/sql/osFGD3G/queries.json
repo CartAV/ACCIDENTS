@@ -9385,6 +9385,25 @@
         },
         "sql": "\nselect distinct(dep), count(1) from accidents_caracteristiques_prep2 group by dep order by dep;\n\n-- select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;\n\nselect * from caracteristiques_prep_geo_joined  where num_acc in (201500011017, 201500011201, 201500010595, 201300022909, 201400023187, 201300023027, 201500022973, \n201300023205)",
         "expandedSql": "\nselect distinct(dep), count(1) from accidents_caracteristiques_prep2 group by dep order by dep;\n\n-- select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;\n\nselect * from caracteristiques_prep_geo_joined  where num_acc in (201500011017, 201500011201, 201500010595, 201300022909, 201400023187, 201300023027, 201500022973, \n201300023205)"
+      },
+      {
+        "mode": "SQL",
+        "id": "DnSbhrz0Kd1P",
+        "runOn": 1488291260620,
+        "runIn": 122,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "iQaU5SZAOilKlUlN",
+        "hash": "8fdd843bec86d6aad28b59860fe753a5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "\nselect distinct(dep), count(1) from accidents_caracteristiques_prep2 group by dep order by dep;\n\n-- select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;\n\nselect * from caracteristiques_prep_geo_joined  where num_acc in (\u0027201500011017\u0027, \u0027201500011201\u0027, \u0027201500010595\u0027, \u0027201300022909\u0027, \u0027201400023187\u0027, \u0027201300023027\u0027, \u0027201500022973\u0027, \n\u0027201300023205\u0027)",
+        "expandedSql": "\nselect distinct(dep), count(1) from accidents_caracteristiques_prep2 group by dep order by dep;\n\n-- select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;\n\nselect * from caracteristiques_prep_geo_joined  where num_acc in (\u0027201500011017\u0027, \u0027201500011201\u0027, \u0027201500010595\u0027, \u0027201300022909\u0027, \u0027201400023187\u0027, \u0027201300023027\u0027, \u0027201500022973\u0027, \n\u0027201300023205\u0027)"
       }
     ],
     "e6d7ujed9w8": [
