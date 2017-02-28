@@ -228,6 +228,25 @@
         },
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\nWHERE longitude is not null\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\nWHERE longitude is not null\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "zepcyBxFax8H",
+        "runOn": 1488300933995,
+        "runIn": 47,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "F26OD8lLiNyVAbOv",
+        "hash": "564c9e2e42f46d190bab7c390c478701",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n\nLIMIT 10",
+        "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n\nLIMIT 10"
       }
     ]
   }
