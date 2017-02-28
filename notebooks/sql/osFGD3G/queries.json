@@ -9328,6 +9328,25 @@
         },
         "sql": "\nselect distinct(dep), count(1) from accidents_caracteristiques_prep2 group by dep order by dep;\n\n-- select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;",
         "expandedSql": "\nselect distinct(dep), count(1) from accidents_caracteristiques_prep2 group by dep order by dep;\n\n-- select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;"
+      },
+      {
+        "mode": "SQL",
+        "id": "br3aeex8zllD",
+        "runOn": 1488291104142,
+        "runIn": 337,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "a2mT7sZP4HaqIKfC",
+        "hash": "cb39d4b45567d201094ab7f27860a832",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "\nselect distinct(dep), count(1) from accidents_caracteristiques_prep2 group by dep order by dep;\n\n-- select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;\n\nselect * from caracteristiques_prep_geo_joined  where num_acc \u003d 201500011017\n",
+        "expandedSql": "\nselect distinct(dep), count(1) from accidents_caracteristiques_prep2 group by dep order by dep;\n\n-- select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;\n\nselect * from caracteristiques_prep_geo_joined  where num_acc \u003d 201500011017\n"
       }
     ],
     "e6d7ujed9w8": [
