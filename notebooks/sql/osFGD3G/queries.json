@@ -9442,6 +9442,25 @@
         },
         "sql": "\nselect distinct(dep), count(1) from accidents_caracteristiques_prep2 group by dep order by dep;\n\n-- select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;\n\nselect * from caracteristiques_geocoded_3  where num_acc in (\u0027201500011017\u0027, \u0027201500011201\u0027, \u0027201500010595\u0027, \u0027201300022909\u0027, \u0027201400023187\u0027, \u0027201300023027\u0027, \u0027201500022973\u0027, \n\u0027201300023205\u0027)",
         "expandedSql": "\nselect distinct(dep), count(1) from accidents_caracteristiques_prep2 group by dep order by dep;\n\n-- select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;\n\nselect * from caracteristiques_geocoded_3  where num_acc in (\u0027201500011017\u0027, \u0027201500011201\u0027, \u0027201500010595\u0027, \u0027201300022909\u0027, \u0027201400023187\u0027, \u0027201300023027\u0027, \u0027201500022973\u0027, \n\u0027201300023205\u0027)"
+      },
+      {
+        "mode": "SQL",
+        "id": "YYJfalvQg6Y8",
+        "runOn": 1488292353655,
+        "runIn": 174,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "YNyYGYxgQkSxJhKz",
+        "hash": "0a2500a6929d93569f2f582144f9a5d8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "\nselect distinct(dep), count(1) from accidents_caracteristiques_prep2 group by dep order by dep;\n\n-- select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;\n\nselect * from caracteristiques_prep_geo_joined   where num_acc in (\u0027201500011017\u0027, \u0027201500011201\u0027, \u0027201500010595\u0027, \u0027201300022909\u0027, \u0027201400023187\u0027, \u0027201300023027\u0027, \u0027201500022973\u0027, \n\u0027201300023205\u0027)",
+        "expandedSql": "\nselect distinct(dep), count(1) from accidents_caracteristiques_prep2 group by dep order by dep;\n\n-- select distinct(dep) from  caracteristiques_lieux_prep_analyse  order by dep;\n\nselect * from caracteristiques_prep_geo_joined   where num_acc in (\u0027201500011017\u0027, \u0027201500011201\u0027, \u0027201500010595\u0027, \u0027201300022909\u0027, \u0027201400023187\u0027, \u0027201300023027\u0027, \u0027201500022973\u0027, \n\u0027201300023205\u0027)"
       }
     ],
     "e6d7ujed9w8": [
