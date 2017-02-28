@@ -185,6 +185,85 @@
       "preview": false,
       "disabled": false,
       "alwaysShowComment": false
+    },
+    {
+      "steps": [
+        {
+          "type": "DateComponentsExtractor",
+          "params": {
+            "column": "date",
+            "outYearColumn": "ANNEE",
+            "outMonthColumn": "",
+            "outDayOfWeekColumn": "LIBELLE_JOUR",
+            "outHourColumn": "HEURE",
+            "outWeekOfYearColumn": "SEMAINE",
+            "timezone_id": "UTC"
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        },
+        {
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "normalization": "EXACT",
+            "matching": "SUBSTRING",
+            "stopAfterFirstMatch": false,
+            "mapping": [
+              {
+                "from": "1",
+                "to": "LUNDI"
+              },
+              {
+                "from": "2",
+                "to": "MARDI"
+              },
+              {
+                "from": "3",
+                "to": "MERCREDI"
+              },
+              {
+                "from": "4",
+                "to": "JEUDI"
+              },
+              {
+                "from": "5",
+                "to": "VENDREDI"
+              },
+              {
+                "from": "6",
+                "to": "SAMEDI"
+              },
+              {
+                "from": "7",
+                "to": "DIMANCHE"
+              }
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "columns": [
+              "LIBELLE_JOUR"
+            ]
+          },
+          "metaType": "PROCESSOR",
+          "preview": false,
+          "disabled": false,
+          "alwaysShowComment": false
+        }
+      ],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "name": "Préparation Analyse",
+      "alwaysShowComment": false
+    },
+    {
+      "steps": [],
+      "metaType": "GROUP",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
     }
   ],
   "tags": [],
