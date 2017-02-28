@@ -361,6 +361,25 @@
         },
         "sql": "select count(1) -- acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n-- and not st_within(acc.\"geom_acc\", dep.\"geometry\")\n\nLIMIT 10",
         "expandedSql": "select count(1) -- acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n-- and not st_within(acc.\"geom_acc\", dep.\"geometry\")\n\nLIMIT 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "BxJaTSWO9fBY",
+        "runOn": 1488301794715,
+        "runIn": 429,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "TPyLmaYKS5haUArv",
+        "hash": "8ebd44ae4c250fce2914014df39a6b62",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select count(1) -- acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n-- and not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10",
+        "expandedSql": "select count(1) -- acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n-- and not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10"
       }
     ]
   }
