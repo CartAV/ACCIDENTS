@@ -16,28 +16,28 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "on": [
         {
           "maxDistance": 1,
+          "caseInsensitive": false,
           "column1": {
             "name": "dep",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "CODE_DEPT",
             "table": 1
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "type": "LEFT"
     },
     {
@@ -45,6 +45,7 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "column1": {
@@ -58,7 +59,6 @@
           }
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -91,22 +91,7 @@
       "type": "string"
     },
     {
-      "name": "an",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
       "name": "mois",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "jour",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "hrmn",
       "table": 0,
       "type": "bigint"
     },
@@ -136,29 +121,9 @@
       "type": "string"
     },
     {
-      "name": "com",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
       "name": "adr",
       "table": 0,
       "type": "string"
-    },
-    {
-      "name": "gps",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "lat",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "long",
-      "table": 0,
-      "type": "double"
     },
     {
       "name": "dep",
@@ -169,6 +134,26 @@
       "name": "date",
       "table": 0,
       "type": "date"
+    },
+    {
+      "name": "ANNEE",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "SEMAINE",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "LIBELLE_JOUR",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "HEURE",
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "original_city_code",
@@ -187,106 +172,6 @@
     },
     {
       "name": "current_name",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "ban_citycode",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "ban_label",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "ban_latitude",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "ban_longitude",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "ban_postcode",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "ban_score",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "ban_type",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "bano_citycode",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "bano_label",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "bano_latitude",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "bano_longitude",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "bano_postcode",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "bano_score",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "bano_type",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "ban2_citycode",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "ban2_label",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "ban2_latitude",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "ban2_longitude",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "ban2_score",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "ban2_type",
       "table": 0,
       "type": "string"
     },
@@ -316,47 +201,7 @@
       "type": "double"
     },
     {
-      "name": "baac_geopoint",
-      "table": 0,
-      "type": "string"
-    },
-    {
       "name": "geopoint",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "distance_baac_final",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "bano_geopoint",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "distance_ban_bano",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "distance_baac_bano",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "ban_geopoint",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "distance_baac_ban",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "ban2_geopoint",
       "table": 0,
       "type": "string"
     },
