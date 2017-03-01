@@ -610,6 +610,25 @@
         },
         "sql": "SELECT *\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 10",
         "expandedSql": "SELECT *\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "mntVCSgE8BNq",
+        "runOn": 1488371076558,
+        "runIn": 77,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "sJPW1b33fP3gpjgN",
+        "hash": "aa346e928f9e213f77b493409a202de6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "SELECT acc.*\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 10",
+        "expandedSql": "SELECT acc.*\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 10"
       }
     ]
   }
