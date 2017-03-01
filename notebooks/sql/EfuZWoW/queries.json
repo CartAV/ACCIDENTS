@@ -477,6 +477,25 @@
         },
         "sql": "CREATE INDEX geom_idx ON \"accidents_pg_prep\"\n\tUSING GIST(geom_acc);\nVACUUM ANALYSE \"accidents_pg_prep\";",
         "expandedSql": "CREATE INDEX geom_idx ON \"accidents_pg_prep\"\n\tUSING GIST(geom_acc);\nVACUUM ANALYSE \"accidents_pg_prep\";"
+      },
+      {
+        "mode": "SQL",
+        "id": "04Pw8KFy2ieF",
+        "runOn": 1488366254533,
+        "runIn": 40,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "MGmhEs4doceFx7F9",
+        "hash": "f88bcf7c652afd809eb08c308e6bdbfd",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from accidents_pg_prep where num_acc \u003d \u0027201500051694\u0027",
+        "expandedSql": "select * from accidents_pg_prep where num_acc \u003d \u0027201500051694\u0027"
       }
     ]
   }
