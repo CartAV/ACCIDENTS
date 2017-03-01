@@ -496,6 +496,25 @@
         },
         "sql": "select * from accidents_pg_prep where num_acc \u003d \u0027201500051694\u0027",
         "expandedSql": "select * from accidents_pg_prep where num_acc \u003d \u0027201500051694\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "NFHINMX7Imq7",
+        "runOn": 1488366266693,
+        "runIn": 49,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "VnZRyalerIMESj2H",
+        "hash": "d3b8fccb1c2ce8a7e79c30b23b57520f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from accidents_pg_prep where Num_Acc \u003d \u0027201500051694\u0027",
+        "expandedSql": "select * from accidents_pg_prep where Num_Acc \u003d \u0027201500051694\u0027"
       }
     ]
   }
