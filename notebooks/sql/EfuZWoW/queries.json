@@ -504,7 +504,7 @@
         "runIn": 49,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "VnZRyalerIMESj2H",
         "hash": "d3b8fccb1c2ce8a7e79c30b23b57520f",
         "querySettings": {
