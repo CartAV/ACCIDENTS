@@ -572,6 +572,25 @@
         },
         "sql": "select * from accidents_pg_prep where \"Num_Acc\" \u003d \u0027201500051694\u0027",
         "expandedSql": "select * from accidents_pg_prep where \"Num_Acc\" \u003d \u0027201500051694\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "81WWflnNqrti",
+        "runOn": 1488371041772,
+        "runIn": 331,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "ql8umY2LS5Tk7TAh",
+        "hash": "daaedf303706320aa334135d47e5dae7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "SELECT *\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.CODE_DEPT\nLIMIT 10",
+        "expandedSql": "SELECT *\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.CODE_DEPT\nLIMIT 10"
       }
     ]
   }
