@@ -534,6 +534,25 @@
         },
         "sql": "select * from accidents_pg where Num_Acc \u003d \u0027201500051694\u0027",
         "expandedSql": "select * from accidents_pg where Num_Acc \u003d \u0027201500051694\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "NWQZFw4o2vdq",
+        "runOn": 1488366289671,
+        "runIn": 59,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Ndir7NpEv7Fmb7Aw",
+        "hash": "cde87dd3d3cefe9cd935ccbe2cd1fb66",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "select * from accidents_pg where \"Num_Acc\" \u003d \u0027201500051694\u0027",
+        "expandedSql": "select * from accidents_pg where \"Num_Acc\" \u003d \u0027201500051694\u0027"
       }
     ]
   }
