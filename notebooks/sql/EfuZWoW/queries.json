@@ -824,10 +824,10 @@
         "mode": "SQL",
         "id": "ZEbILCshWpsg",
         "runOn": 1488385899439,
-        "runIn": 20378,
+        "runIn": 49,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "LXEpEDpnUk5OyC5U",
         "hash": "d5ea60b761acc3ef772a84eac9bcc25a",
         "querySettings": {
