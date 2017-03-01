@@ -743,6 +743,25 @@
         },
         "sql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.\"longitude\" IS NOT NULL\nAND\n    st_within(acc.geom_acc, dep.\"GEOMETRY\")\nLIMIT 1000",
         "expandedSql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.\"longitude\" IS NOT NULL\nAND\n    st_within(acc.geom_acc, dep.\"GEOMETRY\")\nLIMIT 1000"
+      },
+      {
+        "mode": "SQL",
+        "id": "0vUnAyRHrd8s",
+        "runOn": 1488371190809,
+        "runIn": 106,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "5gL0BLszP7pqn7uW",
+        "hash": "630fb0c8ec07d3c81c013194cfb8b161",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.\"longitude\" IS NOT NULL\nAND\n    st_within(acc.geom_acc, dep.\"geometry\")\nLIMIT 1000",
+        "expandedSql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.\"longitude\" IS NOT NULL\nAND\n    st_within(acc.geom_acc, dep.\"geometry\")\nLIMIT 1000"
       }
     ]
   }
