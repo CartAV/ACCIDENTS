@@ -667,6 +667,25 @@
         },
         "sql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nINNER JOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 1000",
         "expandedSql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nINNER JOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 1000"
+      },
+      {
+        "mode": "SQL",
+        "id": "la54gFf70VYF",
+        "runOn": 1488371139269,
+        "runIn": 448,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "J0IQZuL6CxrPocxX",
+        "hash": "3fa0ebe4b1f3c05e79345f2dcd64ec23",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\n\nWHERE acc.long IS NOT NULL\nLIMIT 1000",
+        "expandedSql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\n\nWHERE acc.long IS NOT NULL\nLIMIT 1000"
       }
     ]
   }
