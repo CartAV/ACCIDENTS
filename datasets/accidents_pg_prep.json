@@ -19,7 +19,7 @@
   "checks": [],
   "managed": true,
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
@@ -278,12 +278,6 @@
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
-      },
-      {
-        "name": "geom_acc",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
       }
     ]
   },
@@ -302,13 +296,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488362686531
+    "lastModifiedOn": 1488362942918
   },
   "customMeta": {
     "kv": {}
