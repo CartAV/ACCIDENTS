@@ -7,7 +7,7 @@
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488300629142
+    "lastModifiedOn": 1488362695342
   },
   "connection": "postgis",
   "name": "Bidouilles Postgis",
@@ -17,7 +17,7 @@
   "tags": [],
   "cells": [
     {
-      "id": "ugdlgsv0kvs",
+      "id": "b56sieusdt",
       "type": "QUERY",
       "querySettings": {
         "addLimitToStatement": true,
