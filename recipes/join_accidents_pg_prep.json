@@ -1,0 +1,46 @@
+{
+  "type": "join",
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "accidents_pg_prep",
+          "deps": []
+        },
+        {
+          "ref": "DATAPREPOPENDATAGEO.IGN_TRONCON_ROUTE_postgis",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "accidents_pg_prep_joined",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "checklists": {
+    "checklists": []
+  },
+  "tags": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr",
+      "displayName": "Tristam Gräbener",
+      "email": "tristam.grabener@interieur.gouv.fr"
+    },
+    "lastModifiedOn": 1488390556473
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false
+}
