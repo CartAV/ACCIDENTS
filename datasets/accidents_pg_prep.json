@@ -8,9 +8,9 @@
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "table": "accidents_pg_prep",
-    "tableCreationMode": "custom",
+    "tableCreationMode": "auto",
     "customCreateStatement": "CREATE TABLE \"accidents_pg_prep\" (\n\t\"Num_Acc\" text,\n\t\"mois\" bigint,\n\t\"lum\" text,\n\t\"agg\" text,\n\t\"int\" text,\n\t\"atm\" text,\n\t\"col\" text,\n\t\"adr\" text,\n\t\"dep\" text,\n\t\"date\" timestamptz,\n\t\"ANNEE\" bigint,\n\t\"SEMAINE\" bigint,\n\t\"LIBELLE_JOUR\" text,\n\t\"HEURE\" bigint,\n\t\"original_city_code\" text,\n\t\"original_name\" text,\n\t\"current_city_code\" text,\n\t\"current_name\" text,\n\t\"latitude\" double precision,\n\t\"geo_type\" text,\n\t\"longitude\" double precision,\n\t\"geo_source\" text,\n\t\"geo_score\" double precision,\n\t\"geopoint\" text,\n\t\"NOM_DEPT\" text,\n\t\"NOM_REG\" text,\n\t\"catr\" text,\n\t\"voie\" text,\n\t\"v1\" text,\n\t\"v2\" text,\n\t\"circ\" text,\n\t\"nbv\" text,\n\t\"pr\" text,\n\t\"pr1\" text,\n\t\"vosp\" text,\n\t\"prof\" text,\n\t\"plan\" text,\n\t\"lartpc\" text,\n\t\"larrout\" text,\n\t\"surf\" text,\n\t\"infra\" text,\n\t\"situ\" text,\n\t\"env1\" text\n)",
-    "customPreWriteStatements": " select AddGeometryColumn(\"accidents_pg_prep\", geom_acc, 4326, \u0027MULTIPOLYGON\u0027, 2); ",
+    "customPreWriteStatements": "ALTER TABLE \"accidents_pg_prep\" DROP COLUMN geom_acc; \nSELECT AddGeometryColumn(\"accidents_pg_prep\", geom_acc, 4326, \u0027MULTIPOLYGON\u0027, 2); ",
     "customPostWriteStatements": "CREATE INDEX geom_idx ON \"accidents_pg_prep\"\n\tUSING GIST(geom_acc);\nVACUUM ANALYSE \"accidents_pg_prep\";",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
@@ -303,13 +303,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488365219277
+    "lastModifiedOn": 1488365396320
   },
   "customMeta": {
     "kv": {}
