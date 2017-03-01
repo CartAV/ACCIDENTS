@@ -520,10 +520,10 @@
         "mode": "SQL",
         "id": "PAhr37H0eV2K",
         "runOn": 1488366273627,
-        "runIn": 49,
+        "runIn": 59,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "2Qwar3WO13FV45zs",
         "hash": "a192e708432ccb651a9de3bba67dd005",
         "querySettings": {
