@@ -9,6 +9,8 @@
     "normalizeDoubles": true,
     "table": "accidents_pg_prep",
     "tableCreationMode": "auto",
+    "customPreWriteStatements": "",
+    "customPostWriteStatements": "CREATE INDEX geom_idx ON \"accidents_pg_prep\"\n\tUSING GIST(geom_acc);\nVACUUM ANALYSE \"accidents_pg_prep\";",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
@@ -300,13 +302,13 @@
     "crossProjectBuildBehavior": "DEFAULT"
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr",
       "displayName": "Tristam Gräbener",
       "email": "tristam.grabener@interieur.gouv.fr"
     },
-    "lastModifiedOn": 1488300106961
+    "lastModifiedOn": 1488362686531
   },
   "customMeta": {
     "kv": {}
