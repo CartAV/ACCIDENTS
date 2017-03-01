@@ -457,6 +457,27 @@
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10"
       }
+    ],
+    "b56sieusdt": [
+      {
+        "mode": "SQL",
+        "id": "mlcdlepT89cG",
+        "runOn": 1488362702239,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "sRhuj6VgJOHOoI4J",
+        "hash": "5fc6f60fb51aa4d65daff785214da800",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "extraConf": [],
+          "addDkuUdf": false
+        },
+        "sql": "CREATE INDEX geom_idx ON \"accidents_pg_prep\"\n\tUSING GIST(geom_acc);\nVACUUM ANALYSE \"accidents_pg_prep\";",
+        "expandedSql": "CREATE INDEX geom_idx ON \"accidents_pg_prep\"\n\tUSING GIST(geom_acc);\nVACUUM ANALYSE \"accidents_pg_prep\";"
+      }
     ]
   }
 }
