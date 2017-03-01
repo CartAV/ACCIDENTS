@@ -7,6 +7,12 @@
       "type": "ADMIN",
       "runJob": false,
       "downloadData": true
+    },
+    {
+      "group": "DSCR",
+      "type": "ANALYST_READWRITE",
+      "runJob": false,
+      "downloadData": true
     }
   ],
   "tutorialProject": false,
