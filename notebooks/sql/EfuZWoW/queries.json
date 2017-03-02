@@ -2578,6 +2578,28 @@
         },
         "sql": "select (st_y(st_startpoint(st_geometryn(the_geom, 1)))) as y from \"public\".\"ign_troncon_route_postgis\"\n\nlimit 10",
         "expandedSql": "select (st_y(st_startpoint(st_geometryn(the_geom, 1)))) as y from \"public\".\"ign_troncon_route_postgis\"\n\nlimit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "zFS2JS3IHkMX",
+        "runOn": 1488460455769,
+        "runIn": 57,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "vNl2D3ctHflDaW2J",
+        "hash": "5ebb854aa2a1f0b71ac0d24bfc9d436b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select (st_y(st_startpoint(st_geometryn(the_geom, 1)))) as y from \"public\".\"ign_troncon_route_postgis\"\nwhere y \u003e 40\nlimit 10",
+        "expandedSql": "select (st_y(st_startpoint(st_geometryn(the_geom, 1)))) as y from \"public\".\"ign_troncon_route_postgis\"\nwhere y \u003e 40\nlimit 10"
       }
     ]
   }
