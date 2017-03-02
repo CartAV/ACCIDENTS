@@ -2212,7 +2212,7 @@
         "runIn": 51,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "Fxx4kESEagi8zvR1",
         "hash": "d3ce90a887b0b2bf56083e04b8f359d6",
         "querySettings": {
