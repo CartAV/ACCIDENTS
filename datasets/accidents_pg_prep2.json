@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488472552391
+    "lastModifiedOn": 1488473795803
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,7 +43,7 @@
     "normalizeDoubles": true,
     "table": "accidents_pg_prep2",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "ALTER TABLE \"accidents_pg_prep2\" ALTER COLUMN geom_acc type geography(Point) using geom_acc::geography(Point);\n\nCREATE INDEX geom_acc2_idx ON \"accidents_pg_prep2\"\n\tUSING GIST(geom_acc);\n",
+    "customPostWriteStatements": "ALTER TABLE \"accidents_pg_prep2\"\n\tALTER\n\t\tCOLUMN geom_acc type geography(Point) using geom_acc::geography(Point)\n\t\tCOLUMN projected_point type geography(Point) using geom_acc::geography(Point)\n\n\nCREATE INDEX geom_acc2_idx ON \"accidents_pg_prep2\"\n\tUSING GIST(geom_acc);\n\nCREATE INDEX geom_acc_projected_idx ON \"accidents_pg_prep2\"\n\tUSING GIST(projected_point);\n",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
