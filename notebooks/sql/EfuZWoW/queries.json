@@ -2336,6 +2336,28 @@
         },
         "sql": "select st_astext(st_enveloppe(the_geom, 1)) from \"public\".\"ign_troncon_route_postgis\" limit 10",
         "expandedSql": "select st_astext(st_enveloppe(the_geom, 1)) from \"public\".\"ign_troncon_route_postgis\" limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "5y99iLg3PopN",
+        "runOn": 1488460314599,
+        "runIn": 81,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "AcETsRQYzjkuxvDj",
+        "hash": "10f5db8eaf93c7c987794e89f6f80ea1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_astext(st_enveloppe(the_geom)) from \"public\".\"ign_troncon_route_postgis\" limit 10",
+        "expandedSql": "select st_astext(st_enveloppe(the_geom)) from \"public\".\"ign_troncon_route_postgis\" limit 10"
       }
     ]
   }
