@@ -2226,6 +2226,28 @@
         },
         "sql": "select st_astext(geom_acc) from \"public\".\"accidents_pg_prep\"",
         "expandedSql": "select st_astext(geom_acc) from \"public\".\"accidents_pg_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "YLlSVipUxHIT",
+        "runOn": 1488459578216,
+        "runIn": 51,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "9accnSd4LsMVtLeL",
+        "hash": "35266a495931e048f4eb4e910840453f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_astext(the_geom) from \"public\".\"ign_troncon_route_postgis\"",
+        "expandedSql": "select st_astext(the_geom) from \"public\".\"ign_troncon_route_postgis\""
       }
     ]
   }
