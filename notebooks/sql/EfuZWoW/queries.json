@@ -2388,7 +2388,7 @@
         "runIn": 55,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "W5aaNYMen8Mi4362",
         "hash": "e0164351d5240e53bdc3b46b04d95d91",
         "querySettings": {
