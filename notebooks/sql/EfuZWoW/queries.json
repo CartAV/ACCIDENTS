@@ -2181,6 +2181,30 @@
         "sql": "WITH acc AS (SELECT * from accidents_pg_prep limit 100000)\n\nSELECT acc.\"Num_Acc\", \"ID_RTE500\", dist\nFROM acc, \n    LATERAL (SELECT \"ID_RTE500\", acc.\"Num_Acc\", st_distance(geom_acc, the_geom) as dist\n     FROM \"public\".\"ign_troncon_route_postgis\"\n     where geom_acc \u0026\u0026 \"the_geom\"\n     ORDER BY dist\n             \n    LIMIT 1) as nearest_route\n\n\n-- SELECT \"ID_RTE500\", acc.\"Num_Acc\"\n     -- FROM \"public\".\"ign_troncon_route_postgis\", acc\n     -- WHERE acc.\"Num_Acc\" \u003d acc.\"Num_Acc\"\n      \n--FROM accidents_pg_prep as acc\n--JOIN \"public\".\"ign_departement_prep\" as dep\n--    ON acc.dep \u003d dep.\"CODE_DEPT\"\n--WHERE\n--    acc.longitude IS NOT NULL\n--AND\n--    NOT st_within(acc.geom_acc, dep.\"geometry\")\n-- GROUP BY acc.geo_source",
         "expandedSql": "WITH acc AS (SELECT * from accidents_pg_prep limit 100000)\n\nSELECT acc.\"Num_Acc\", \"ID_RTE500\", dist\nFROM acc, \n    LATERAL (SELECT \"ID_RTE500\", acc.\"Num_Acc\", st_distance(geom_acc, the_geom) as dist\n     FROM \"public\".\"ign_troncon_route_postgis\"\n     where geom_acc \u0026\u0026 \"the_geom\"\n     ORDER BY dist\n             \n    LIMIT 1) as nearest_route\n\n\n-- SELECT \"ID_RTE500\", acc.\"Num_Acc\"\n     -- FROM \"public\".\"ign_troncon_route_postgis\", acc\n     -- WHERE acc.\"Num_Acc\" \u003d acc.\"Num_Acc\"\n      \n--FROM accidents_pg_prep as acc\n--JOIN \"public\".\"ign_departement_prep\" as dep\n--    ON acc.dep \u003d dep.\"CODE_DEPT\"\n--WHERE\n--    acc.longitude IS NOT NULL\n--AND\n--    NOT st_within(acc.geom_acc, dep.\"geometry\")\n-- GROUP BY acc.geo_source"
       }
+    ],
+    "26keck2q9z": [
+      {
+        "mode": "SQL",
+        "id": "5UQHQz3V7xsr",
+        "runOn": 1488459552668,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "a5NSOUXg2KbdscCt",
+        "hash": "967930927106cc9a399eca042a8c34b6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_astext(the_geom) from \"public\".\"accidents_pg_prep\"",
+        "expandedSql": "select st_astext(the_geom) from \"public\".\"accidents_pg_prep\""
+      }
     ]
   }
 }
