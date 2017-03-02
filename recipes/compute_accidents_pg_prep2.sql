@@ -5,3 +5,4 @@ FROM accidents_pg_prep
      where st_dwithin(geom_acc, "the_geom", 50)
      ORDER BY distance_route_accident
     LIMIT 1) as nearest_route
+    ON true
