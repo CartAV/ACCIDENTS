@@ -1,5 +1,32 @@
 {
   "type": "Vertica",
+  "managed": true,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "antoinefa"
+    },
+    "lastModifiedOn": 1488440135456
+  },
+  "tags": [
+    "creator_antoinefa"
+  ],
   "params": {
     "connection": "datalabmaster",
     "mode": "table",
@@ -13,8 +40,6 @@
     "hasColsWithUnknownTz": false,
     "readColsWithUnknownTzAsDates": false
   },
-  "checks": [],
-  "managed": true,
   "schema": {
     "userModified": false,
     "columns": [
@@ -1224,32 +1249,6 @@
       }
     ]
   },
-  "partitioning": {
-    "ignoreNonMatchingFile": false,
-    "dimensions": []
-  },
-  "tags": [
-    "creator_antoinefa"
-  ],
-  "checklists": {
-    "checklists": []
-  },
-  "flowOptions": {
-    "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
-  },
-  "versionTag": {
-    "versionNumber": 1,
-    "lastModifiedBy": {
-      "login": "antoinefa",
-      "displayName": "Fabien Antoine",
-      "email": "fabien.antoine@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1483025775683
-  },
-  "customMeta": {
-    "kv": {}
-  },
   "metrics": {
     "probes": [
       {
@@ -1271,23 +1270,78 @@
           "level": 0
         },
         "configuration": {}
+      },
+      {
+        "type": "col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns statistics",
+          "level": 2
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "adv_col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Most frequent values",
+          "level": 3
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "percentile_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns percentiles",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "verify_col",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Data validity",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
       }
     ],
     "engineConfig": {
       "padRunsWithMetrics": false,
       "hive": {
         "active": true,
-        "extraConf": [],
-        "addDkuUdf": false
+        "extraConf": []
       },
       "basic": {},
       "dss": {
         "active": true,
         "selection": {
-          "samplingMethod": "FULL",
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
           "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "samplingMethod": "FULL",
           "maxRecords": 10000,
-          "targetRatio": 0.02
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
         }
       },
       "sql": {
@@ -1299,9 +1353,12 @@
       "python": {}
     },
     "displayedState": {
+      "partition": "NP",
+      "columns": [],
       "metrics": [
         "basic:COUNT_COLUMNS",
-        "records:COUNT_RECORDS"
+        "records:COUNT_RECORDS",
+        "reporting:BUILD_DURATION"
       ]
     }
   },
@@ -1309,6 +1366,7 @@
     "runOnBuild": false,
     "checks": [],
     "displayedState": {
+      "partition": "NP",
       "checks": []
     }
   }
