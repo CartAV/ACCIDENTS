@@ -1283,10 +1283,10 @@
         "mode": "SQL",
         "id": "yvcWe7N3JqDL",
         "runOn": 1488451101291,
-        "runIn": 45,
+        "runIn": 107,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "DxwhCF6BEqNoRl6O",
         "hash": "09167270798be0a7cc04696388af052d",
         "querySettings": {
