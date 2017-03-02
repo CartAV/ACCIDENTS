@@ -14,21 +14,21 @@
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
-        "maxStoredBytes": 2097152000,
+        "maxStoredBytes": -1,
         "filter": {
           "distinct": false,
           "enabled": false
         },
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
-        "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 700000,
+        "samplingMethod": "RANDOM_FIXED_NB_EXACT",
+        "maxRecords": 100000,
         "targetRatio": 0.02,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 2
+      "_refreshTrigger": 3
     },
     "vizSampling": {
       "autoRefreshSample": false,
@@ -180,7 +180,8 @@
         "showXAxis": false,
         "strokeWidth": 1,
         "hexbinRadius": 20,
-        "hexbinNumber": 0,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
         "colorOptions": {
           "singleColor": "#659a88",
           "transparency": 0.75,
@@ -758,7 +759,8 @@
         "showXAxis": false,
         "strokeWidth": 1,
         "hexbinRadius": 20,
-        "hexbinNumber": 0,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
         "colorOptions": {
           "singleColor": "#659a88",
           "transparency": 0.75,
