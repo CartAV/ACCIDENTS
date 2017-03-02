@@ -1542,6 +1542,28 @@
         },
         "sql": "WITH acc AS (SELECT * from accidents_pg_prep limit 10)\n\nSELECT acc.\"Num_Acc\", \"ID_RTE500\"\nFROM acc,\n    (SELECT \"ID_RTE500\", acc2.\"Num_Acc\"\n     FROM \"public\".\"ign_troncon_route_postgis\", acc as acc2\n     WHERE acc2.\"Num_Acc\" \u003d acc.\"Num_Acc\"\n    ORDER BY the_geom \u003c-\u003e geom_acc\n    LIMIT 1) as nearest_route\n      \n--FROM accidents_pg_prep as acc\n--JOIN \"public\".\"ign_departement_prep\" as dep\n--    ON acc.dep \u003d dep.\"CODE_DEPT\"\n--WHERE\n--    acc.longitude IS NOT NULL\n--AND\n--    NOT st_within(acc.geom_acc, dep.\"geometry\")\n-- GROUP BY acc.geo_source",
         "expandedSql": "WITH acc AS (SELECT * from accidents_pg_prep limit 10)\n\nSELECT acc.\"Num_Acc\", \"ID_RTE500\"\nFROM acc,\n    (SELECT \"ID_RTE500\", acc2.\"Num_Acc\"\n     FROM \"public\".\"ign_troncon_route_postgis\", acc as acc2\n     WHERE acc2.\"Num_Acc\" \u003d acc.\"Num_Acc\"\n    ORDER BY the_geom \u003c-\u003e geom_acc\n    LIMIT 1) as nearest_route\n      \n--FROM accidents_pg_prep as acc\n--JOIN \"public\".\"ign_departement_prep\" as dep\n--    ON acc.dep \u003d dep.\"CODE_DEPT\"\n--WHERE\n--    acc.longitude IS NOT NULL\n--AND\n--    NOT st_within(acc.geom_acc, dep.\"geometry\")\n-- GROUP BY acc.geo_source"
+      },
+      {
+        "mode": "SQL",
+        "id": "MOea13cZxNpa",
+        "runOn": 1488451796522,
+        "runIn": 49,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "seqc5ScitUqiWnV4",
+        "hash": "26cb18e2cbe635eabcdfbecb40c47874",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "WITH acc AS (SELECT * from accidents_pg_prep limit 10)\n\nSELECT acc.\"Num_Acc\", \"ID_RTE500\"\nFROM acc,\n    (SELECT \"ID_RTE500\", acc2.\"Num_Acc\"\n     FROM \"public\".\"ign_troncon_route_postgis\", acc acc2\n     WHERE acc2.\"Num_Acc\" \u003d acc.\"Num_Acc\"\n    ORDER BY the_geom \u003c-\u003e geom_acc\n    LIMIT 1) as nearest_route\n      \n--FROM accidents_pg_prep as acc\n--JOIN \"public\".\"ign_departement_prep\" as dep\n--    ON acc.dep \u003d dep.\"CODE_DEPT\"\n--WHERE\n--    acc.longitude IS NOT NULL\n--AND\n--    NOT st_within(acc.geom_acc, dep.\"geometry\")\n-- GROUP BY acc.geo_source",
+        "expandedSql": "WITH acc AS (SELECT * from accidents_pg_prep limit 10)\n\nSELECT acc.\"Num_Acc\", \"ID_RTE500\"\nFROM acc,\n    (SELECT \"ID_RTE500\", acc2.\"Num_Acc\"\n     FROM \"public\".\"ign_troncon_route_postgis\", acc acc2\n     WHERE acc2.\"Num_Acc\" \u003d acc.\"Num_Acc\"\n    ORDER BY the_geom \u003c-\u003e geom_acc\n    LIMIT 1) as nearest_route\n      \n--FROM accidents_pg_prep as acc\n--JOIN \"public\".\"ign_departement_prep\" as dep\n--    ON acc.dep \u003d dep.\"CODE_DEPT\"\n--WHERE\n--    acc.longitude IS NOT NULL\n--AND\n--    NOT st_within(acc.geom_acc, dep.\"geometry\")\n-- GROUP BY acc.geo_source"
       }
     ]
   }
