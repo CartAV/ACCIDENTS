@@ -1154,7 +1154,7 @@
         "runIn": 47,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "Bd2z9fux4sxMZemw",
         "hash": "33a3a7784fcbf9c59c68b2e36131c936",
         "querySettings": {
