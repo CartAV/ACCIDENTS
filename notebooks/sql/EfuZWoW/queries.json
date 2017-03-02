@@ -2204,6 +2204,28 @@
         },
         "sql": "select st_astext(the_geom) from \"public\".\"accidents_pg_prep\"",
         "expandedSql": "select st_astext(the_geom) from \"public\".\"accidents_pg_prep\""
+      },
+      {
+        "mode": "SQL",
+        "id": "YNN2cqLZHQ5t",
+        "runOn": 1488459557699,
+        "runIn": 51,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Fxx4kESEagi8zvR1",
+        "hash": "d3ce90a887b0b2bf56083e04b8f359d6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_astext(geom_acc) from \"public\".\"accidents_pg_prep\"",
+        "expandedSql": "select st_astext(geom_acc) from \"public\".\"accidents_pg_prep\""
       }
     ]
   }
