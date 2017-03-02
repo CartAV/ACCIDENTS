@@ -1,5 +1,16 @@
 {
   "type": "sql_query",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "allowMultipleConnections": false,
+    "displayExecutionPlan": true,
+    "skipPrerunValidate": false
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
   "inputs": {
     "main": {
       "items": [
@@ -20,27 +31,15 @@
       ]
     }
   },
-  "neverRecomputeExistingPartitions": false,
-  "optionalDependencies": false,
-  "params": {
-    "allowMultipleConnections": false,
-    "displayExecutionPlan": true
-  },
-  "checklists": {
-    "checklists": []
+  "versionTag": {
+    "versionNumber": 10,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488471022220
   },
   "tags": [],
-  "versionTag": {
-    "versionNumber": 9,
-    "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1488366827947
-  },
-  "customMeta": {
-    "kv": {}
-  },
-  "redispatchPartitioning": false
+  "checklists": {
+    "checklists": []
+  }
 }
