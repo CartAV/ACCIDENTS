@@ -14,7 +14,7 @@
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
-        "maxStoredBytes": -1,
+        "maxStoredBytes": 2097152000,
         "filter": {
           "distinct": false,
           "enabled": false
@@ -28,7 +28,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1
+      "_refreshTrigger": 2
     },
     "vizSampling": {
       "autoRefreshSample": false,
