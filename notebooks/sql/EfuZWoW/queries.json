@@ -2119,10 +2119,10 @@
         "mode": "SQL",
         "id": "PTwCfkDvw7vH",
         "runOn": 1488459232830,
-        "runIn": 166,
+        "runIn": 69,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "KZuRqcZL6zcdlLo7",
         "hash": "3968fede0f61649117e83184bc0e4108",
         "querySettings": {
