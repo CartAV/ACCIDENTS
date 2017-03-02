@@ -1102,6 +1102,28 @@
         },
         "sql": "WITH acc AS (SELECT * from accidents_pg_prep limit 1000)\nSELECT *\nFROM acc\nLEFT JOIN (\n    SELECT \"ID_RTE500\" FROM \"public\".\"ign_troncon_route_postgis\"\n    ORDER BY the_geom \u003c-\u003e geom_acc\n    LIMIT 1\n) as route500\n",
         "expandedSql": "WITH acc AS (SELECT * from accidents_pg_prep limit 1000)\nSELECT *\nFROM acc\nLEFT JOIN (\n    SELECT \"ID_RTE500\" FROM \"public\".\"ign_troncon_route_postgis\"\n    ORDER BY the_geom \u003c-\u003e geom_acc\n    LIMIT 1\n) as route500\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "sUCiuAcHbu2h",
+        "runOn": 1488450809967,
+        "runIn": 62,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "nYoNKUR8IDCyFzP6",
+        "hash": "c24294df62d99b6012ff5311bff091cd",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "WITH acc AS (SELECT * from accidents_pg_prep limit 1000)\nSELECT *\nFROM acc\nLEFT JOIN (\n    SELECT \"ID_RTE500\" FROM \"public\".\"ign_troncon_route_postgis\"\n    ORDER BY the_geom \u003c-\u003e geom_acc\n    LIMIT 1\n) as route500\n\n      \n--FROM accidents_pg_prep as acc\n--JOIN \"public\".\"ign_departement_prep\" as dep\n--    ON acc.dep \u003d dep.\"CODE_DEPT\"\n--WHERE\n--    acc.longitude IS NOT NULL\n--AND\n--    NOT st_within(acc.geom_acc, dep.\"geometry\")\n-- GROUP BY acc.geo_source ",
+        "expandedSql": "WITH acc AS (SELECT * from accidents_pg_prep limit 1000)\nSELECT *\nFROM acc\nLEFT JOIN (\n    SELECT \"ID_RTE500\" FROM \"public\".\"ign_troncon_route_postgis\"\n    ORDER BY the_geom \u003c-\u003e geom_acc\n    LIMIT 1\n) as route500\n\n      \n--FROM accidents_pg_prep as acc\n--JOIN \"public\".\"ign_departement_prep\" as dep\n--    ON acc.dep \u003d dep.\"CODE_DEPT\"\n--WHERE\n--    acc.longitude IS NOT NULL\n--AND\n--    NOT st_within(acc.geom_acc, dep.\"geometry\")\n-- GROUP BY acc.geo_source "
       }
     ]
   }
