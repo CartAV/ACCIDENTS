@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488472746851
+    "lastModifiedOn": 1488472872172
   },
   "creationTag": {
     "versionNumber": 0,
@@ -45,7 +45,7 @@
     "tableCreationMode": "auto",
     "customCreateStatement": "CREATE TABLE \"accidents_pg_prep\" (\n\t\"Num_Acc\" text,\n\t\"mois\" bigint,\n\t\"lum\" text,\n\t\"agg\" text,\n\t\"int\" text,\n\t\"atm\" text,\n\t\"col\" text,\n\t\"adr\" text,\n\t\"dep\" text,\n\t\"date\" timestamptz,\n\t\"ANNEE\" bigint,\n\t\"SEMAINE\" bigint,\n\t\"LIBELLE_JOUR\" text,\n\t\"HEURE\" bigint,\n\t\"original_city_code\" text,\n\t\"original_name\" text,\n\t\"current_city_code\" text,\n\t\"current_name\" text,\n\t\"latitude\" double precision,\n\t\"geo_type\" text,\n\t\"longitude\" double precision,\n\t\"geo_source\" text,\n\t\"geo_score\" double precision,\n\t\"geopoint\" text,\n\t\"NOM_DEPT\" text,\n\t\"NOM_REG\" text,\n\t\"catr\" text,\n\t\"voie\" text,\n\t\"v1\" text,\n\t\"v2\" text,\n\t\"circ\" text,\n\t\"nbv\" text,\n\t\"pr\" text,\n\t\"pr1\" text,\n\t\"vosp\" text,\n\t\"prof\" text,\n\t\"plan\" text,\n\t\"lartpc\" text,\n\t\"larrout\" text,\n\t\"surf\" text,\n\t\"infra\" text,\n\t\"situ\" text,\n\t\"env1\" text\n)",
     "customPreWriteStatements": "",
-    "customPostWriteStatements": "CREATE INDEX geom_idx ON \"accidents_pg_prep\"\n\tUSING GIST(geom_acc);\n",
+    "customPostWriteStatements": "ALTER TABLE \"accidents_pg_prep\" ALTER COLUMN geom_acc type geography(Point);\n\nCREATE INDEX geom_idx ON \"accidents_pg_prep\"\n\tUSING GIST(geom_acc);\n",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
