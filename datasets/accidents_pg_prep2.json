@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488467345139
+    "lastModifiedOn": 1488472552391
   },
   "creationTag": {
     "versionNumber": 0,
@@ -325,6 +325,12 @@
       {
         "name": "distance_route_accident",
         "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "projected_point",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
