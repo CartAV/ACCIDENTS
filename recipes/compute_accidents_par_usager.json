@@ -1,5 +1,14 @@
 {
   "type": "python",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "skipPrerunValidate": false
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
   "inputs": {
     "main": {
       "items": [
@@ -20,25 +29,16 @@
       ]
     }
   },
-  "neverRecomputeExistingPartitions": false,
-  "optionalDependencies": false,
-  "params": {},
+  "versionTag": {
+    "versionNumber": 25,
+    "lastModifiedBy": {
+      "login": "antoinefa"
+    },
+    "lastModifiedOn": 1488438873349
+  },
   "shortDesc": "Développement des catégories numériques des champs en libéllés pour faciliter l\u0027exploitation des données",
+  "tags": [],
   "checklists": {
     "checklists": []
-  },
-  "tags": [],
-  "versionTag": {
-    "versionNumber": 24,
-    "lastModifiedBy": {
-      "login": "antoinefa",
-      "displayName": "Fabien Antoine",
-      "email": "fabien.antoine@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1483023635073
-  },
-  "customMeta": {
-    "kv": {}
-  },
-  "redispatchPartitioning": false
+  }
 }
