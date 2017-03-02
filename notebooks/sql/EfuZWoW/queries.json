@@ -14,8 +14,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select * from \"public\".\"ign_departement_prep\"",
         "expandedSql": "select * from \"public\".\"ign_departement_prep\""
@@ -33,8 +36,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select nom_chf from \"public\".\"ign_departement_prep\"",
         "expandedSql": "select nom_chf from \"public\".\"ign_departement_prep\""
@@ -52,8 +58,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select NOM_CHF from \"public\".\"ign_departement_prep\"",
         "expandedSql": "select NOM_CHF from \"public\".\"ign_departement_prep\""
@@ -71,8 +80,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select NOM_CHF from \"public\".\"ign_departement_prep\"",
         "expandedSql": "select NOM_CHF from \"public\".\"ign_departement_prep\""
@@ -90,8 +102,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select \"NOM_CHF\" from \"public\".\"ign_departement_prep\"",
         "expandedSql": "select \"NOM_CHF\" from \"public\".\"ign_departement_prep\""
@@ -109,8 +124,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.NOM_CHF\n\nfrom \"accidents_pg_prep\" as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.CODE_DEPT \u003d acc.dep\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.NOM_CHF\n\nfrom \"accidents_pg_prep\" as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.CODE_DEPT \u003d acc.dep\n\nLIMIT 10"
@@ -128,8 +146,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.NOM_CHF\nfrom  as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.CODE_DEPT \u003d acc.dep\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.NOM_CHF\nfrom  as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.CODE_DEPT \u003d acc.dep\n\nLIMIT 10"
@@ -147,8 +168,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.NOM_CHF\nfrom \"accidents_pg_prep\" as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.CODE_DEPT \u003d acc.dep\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.NOM_CHF\nfrom \"accidents_pg_prep\" as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.CODE_DEPT \u003d acc.dep\n\nLIMIT 10"
@@ -166,8 +190,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.NOM_CHF\nfrom \"accidents_pg_prep\" as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.NOM_CHF\nfrom \"accidents_pg_prep\" as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10"
@@ -185,8 +212,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10"
@@ -204,8 +234,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\nWHERE longitude is not null\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\nWHERE longitude is not null\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10"
@@ -223,8 +256,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\nWHERE longitude is not null\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\nWHERE longitude is not null\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nLIMIT 10"
@@ -242,8 +278,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nLEFT JOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n\nLIMIT 10"
@@ -261,8 +300,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n\nLIMIT 10"
@@ -280,8 +322,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand st_with( acc.\"geom_acc\", dep.\"geometry\")\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand st_with( acc.\"geom_acc\", dep.\"geometry\")\n\nLIMIT 10"
@@ -299,8 +344,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand st_within(acc.\"geom_acc\", dep.\"geometry\")\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand st_within(acc.\"geom_acc\", dep.\"geometry\")\n\nLIMIT 10"
@@ -318,8 +366,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\n\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\n\nLIMIT 10"
@@ -337,8 +388,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select count(1) -- acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\n\nLIMIT 10",
         "expandedSql": "select count(1) -- acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\n\nLIMIT 10"
@@ -356,8 +410,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select count(1) -- acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n-- and not st_within(acc.\"geom_acc\", dep.\"geometry\")\n\nLIMIT 10",
         "expandedSql": "select count(1) -- acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n-- and not st_within(acc.\"geom_acc\", dep.\"geometry\")\n\nLIMIT 10"
@@ -375,8 +432,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select count(1) -- acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n-- and not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10",
         "expandedSql": "select count(1) -- acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\n-- and not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10"
@@ -394,8 +454,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select count(1) -- acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10",
         "expandedSql": "select count(1) -- acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10"
@@ -413,8 +476,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10"
@@ -432,8 +498,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10"
@@ -451,8 +520,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10",
         "expandedSql": "select acc.*, dep.\"NOM_CHF\"\nfrom \"accidents_pg_prep\" as acc\n\nJOIN \"public\".\"ign_departement_prep\" as dep\nON dep.\"CODE_DEPT\" \u003d acc.dep\n\nWHERE longitude is not null\nand not st_within(acc.\"geom_acc\", dep.\"geometry\")\nand acc.dep \u003d \u002766\u0027\nLIMIT 10"
@@ -472,8 +544,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "CREATE INDEX geom_idx ON \"accidents_pg_prep\"\n\tUSING GIST(geom_acc);\nVACUUM ANALYSE \"accidents_pg_prep\";",
         "expandedSql": "CREATE INDEX geom_idx ON \"accidents_pg_prep\"\n\tUSING GIST(geom_acc);\nVACUUM ANALYSE \"accidents_pg_prep\";"
@@ -491,8 +566,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select * from accidents_pg_prep where num_acc \u003d \u0027201500051694\u0027",
         "expandedSql": "select * from accidents_pg_prep where num_acc \u003d \u0027201500051694\u0027"
@@ -510,8 +588,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select * from accidents_pg_prep where Num_Acc \u003d \u0027201500051694\u0027",
         "expandedSql": "select * from accidents_pg_prep where Num_Acc \u003d \u0027201500051694\u0027"
@@ -529,8 +610,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select * from accidents_pg where Num_Acc \u003d \u0027201500051694\u0027",
         "expandedSql": "select * from accidents_pg where Num_Acc \u003d \u0027201500051694\u0027"
@@ -548,8 +632,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select * from accidents_pg where \"Num_Acc\" \u003d \u0027201500051694\u0027",
         "expandedSql": "select * from accidents_pg where \"Num_Acc\" \u003d \u0027201500051694\u0027"
@@ -567,8 +654,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "select * from accidents_pg_prep where \"Num_Acc\" \u003d \u0027201500051694\u0027",
         "expandedSql": "select * from accidents_pg_prep where \"Num_Acc\" \u003d \u0027201500051694\u0027"
@@ -586,8 +676,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT *\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.CODE_DEPT\nLIMIT 10",
         "expandedSql": "SELECT *\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.CODE_DEPT\nLIMIT 10"
@@ -605,8 +698,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT *\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 10",
         "expandedSql": "SELECT *\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 10"
@@ -624,8 +720,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT acc.*\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 10",
         "expandedSql": "SELECT acc.*\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 10"
@@ -643,8 +742,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 1000",
         "expandedSql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 1000"
@@ -662,8 +764,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nINNER JOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 1000",
         "expandedSql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nINNER JOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nLIMIT 1000"
@@ -681,8 +786,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\n\nWHERE acc.long IS NOT NULL\nLIMIT 1000",
         "expandedSql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\n\nWHERE acc.long IS NOT NULL\nLIMIT 1000"
@@ -700,8 +808,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\n\nWHERE acc.\"long\" IS NOT NULL\nLIMIT 1000",
         "expandedSql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\n\nWHERE acc.\"long\" IS NOT NULL\nLIMIT 1000"
@@ -719,8 +830,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\n\nWHERE acc.\"longitude\" IS NOT NULL\nLIMIT 1000",
         "expandedSql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\n\nWHERE acc.\"longitude\" IS NOT NULL\nLIMIT 1000"
@@ -738,8 +852,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.\"longitude\" IS NOT NULL\nAND\n    st_within(acc.geom_acc, dep.\"GEOMETRY\")\nLIMIT 1000",
         "expandedSql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.\"longitude\" IS NOT NULL\nAND\n    st_within(acc.geom_acc, dep.\"GEOMETRY\")\nLIMIT 1000"
@@ -757,8 +874,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.\"longitude\" IS NOT NULL\nAND\n    st_within(acc.geom_acc, dep.\"geometry\")\nLIMIT 1000",
         "expandedSql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.\"longitude\" IS NOT NULL\nAND\n    st_within(acc.geom_acc, dep.\"geometry\")\nLIMIT 1000"
@@ -776,8 +896,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.\"longitude\" IS NOT NULL\nAND\n    NOT st_within(acc.geom_acc, dep.\"geometry\")\nLIMIT 1000",
         "expandedSql": "SELECT count(acc.*)\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.\"longitude\" IS NOT NULL\nAND\n    NOT st_within(acc.geom_acc, dep.\"geometry\")\nLIMIT 1000"
@@ -795,8 +918,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT acc.*\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.longitude IS NOT NULL\nAND\n    NOT st_within(acc.geom_acc, dep.\"geometry\")",
         "expandedSql": "SELECT acc.*\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.longitude IS NOT NULL\nAND\n    NOT st_within(acc.geom_acc, dep.\"geometry\")"
@@ -814,8 +940,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT count(*), acc.geo_source\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.longitude IS NOT NULL\nAND\n    NOT st_within(acc.geom_acc, dep.\"geometry\")\nGROUP BY acc.geo_source",
         "expandedSql": "SELECT count(*), acc.geo_source\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.longitude IS NOT NULL\nAND\n    NOT st_within(acc.geom_acc, dep.\"geometry\")\nGROUP BY acc.geo_source"
@@ -833,8 +962,11 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT acc.*\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.longitude IS NOT NULL\nAND\n    NOT st_within(acc.geom_acc, dep.\"geometry\")\nGROUP BY acc.geo_source",
         "expandedSql": "SELECT acc.*\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.longitude IS NOT NULL\nAND\n    NOT st_within(acc.geom_acc, dep.\"geometry\")\nGROUP BY acc.geo_source"
@@ -852,11 +984,36 @@
         "querySettings": {
           "addLimitToStatement": true,
           "statementsOutOfTransaction": false,
+          "inheritConf": "default",
           "extraConf": [],
-          "addDkuUdf": false
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
         },
         "sql": "SELECT acc.*\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.longitude IS NOT NULL\nAND\n    NOT st_within(acc.geom_acc, dep.\"geometry\")\n-- GROUP BY acc.geo_source",
         "expandedSql": "SELECT acc.*\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.longitude IS NOT NULL\nAND\n    NOT st_within(acc.geom_acc, dep.\"geometry\")\n-- GROUP BY acc.geo_source"
+      },
+      {
+        "mode": "SQL",
+        "id": "7M5zWed40RiA",
+        "runOn": 1488445827156,
+        "runIn": 3201,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "7fv2cRfjZxRAwiRM",
+        "hash": "17ee80215e276695d46dd88b1649082f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "WITH (SELECT * from accidents_pg_prep limit 1000) as acc\nselect * from acc\n      \n      /*\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.longitude IS NOT NULL\nAND\n    NOT st_within(acc.geom_acc, dep.\"geometry\")\n-- GROUP BY acc.geo_source */",
+        "expandedSql": "WITH (SELECT * from accidents_pg_prep limit 1000) as acc\nselect * from acc\n      \n      /*\nFROM accidents_pg_prep as acc\nJOIN \"public\".\"ign_departement_prep\" as dep\n    ON acc.dep \u003d dep.\"CODE_DEPT\"\nWHERE\n    acc.longitude IS NOT NULL\nAND\n    NOT st_within(acc.geom_acc, dep.\"geometry\")\n-- GROUP BY acc.geo_source */"
       }
     ]
   }
