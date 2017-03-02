@@ -2292,6 +2292,28 @@
         },
         "sql": "select st_astext(the_geom) from \"public\".\"ign_troncon_route_postgis\" limit 10",
         "expandedSql": "select st_astext(the_geom) from \"public\".\"ign_troncon_route_postgis\" limit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "IVhTLzN8O59z",
+        "runOn": 1488460295982,
+        "runIn": 52,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "vOXjIXkhydsicqyZ",
+        "hash": "28b63a9dcfc8e2125d57979a85400c33",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_astext(st_pointN(the_geom, 1)) from \"public\".\"ign_troncon_route_postgis\" limit 10",
+        "expandedSql": "select st_astext(st_pointN(the_geom, 1)) from \"public\".\"ign_troncon_route_postgis\" limit 10"
       }
     ]
   }
