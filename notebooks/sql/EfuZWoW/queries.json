@@ -2600,6 +2600,28 @@
         },
         "sql": "select (st_y(st_startpoint(st_geometryn(the_geom, 1)))) as y from \"public\".\"ign_troncon_route_postgis\"\nwhere y \u003e 40\nlimit 10",
         "expandedSql": "select (st_y(st_startpoint(st_geometryn(the_geom, 1)))) as y from \"public\".\"ign_troncon_route_postgis\"\nwhere y \u003e 40\nlimit 10"
+      },
+      {
+        "mode": "SQL",
+        "id": "x9lErGvZvANf",
+        "runOn": 1488460464209,
+        "runIn": 40,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "1ebIFV7xHTOQM1nx",
+        "hash": "0079418c7f867125f41f8d079656e8a6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select st_y(st_startpoint(st_geometryn(the_geom, 1))) as y from \"public\".\"ign_troncon_route_postgis\"\nwhere y \u003e 40\nlimit 10",
+        "expandedSql": "select st_y(st_startpoint(st_geometryn(the_geom, 1))) as y from \"public\".\"ign_troncon_route_postgis\"\nwhere y \u003e 40\nlimit 10"
       }
     ]
   }
