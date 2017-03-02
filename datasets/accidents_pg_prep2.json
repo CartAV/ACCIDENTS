@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488467247822
+    "lastModifiedOn": 1488467345139
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,7 +43,7 @@
     "normalizeDoubles": true,
     "table": "accidents_pg_prep2",
     "tableCreationMode": "auto",
-    "customPostWriteStatements": "ALTER TABLE \"accidents_pg_prep2\" ALTER COLUMN geom_acc type geography(Point) using geom_acc::geography(Point);\n\nCREATE INDEX geom_idx ON \"accidents_pg_prep2\"\n\tUSING GIST(geom_acc);\n",
+    "customPostWriteStatements": "ALTER TABLE \"accidents_pg_prep2\" ALTER COLUMN geom_acc type geography(Point) using geom_acc::geography(Point);\n\nCREATE INDEX geom_acc2_idx ON \"accidents_pg_prep2\"\n\tUSING GIST(geom_acc);\n",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "hasColsWithUnknownTz": false,
