@@ -3,7 +3,19 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {}
+    "customConfig": {
+      "server_address": "http://datalab-ban",
+      "concurent_requests": 2.0,
+      "post_code": "",
+      "prefix": "result_",
+      "columns": [
+        "voie",
+        "adr"
+      ],
+      "city_code": "code_insee",
+      "timeout": 1000.0,
+      "lines_per_request": 500.0
+    }
   },
   "customMeta": {
     "kv": {}
@@ -30,11 +42,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1488440592592
+    "lastModifiedOn": 1488440749549
   },
   "creationTag": {
     "versionNumber": 0,
