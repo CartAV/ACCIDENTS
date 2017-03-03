@@ -3311,10 +3311,10 @@
         "mode": "SQL",
         "id": "Mrvgl4pNVHdr",
         "runOn": 1488558066107,
-        "runIn": 41,
+        "runIn": 50,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "DapujBipsJSCBsy9",
         "hash": "d8d866383ad7e871f42c2803559874a1",
         "querySettings": {
