@@ -3064,6 +3064,28 @@
         },
         "sql": "alter table ign_routes_par_commune\n    rename column st_intersection to the_geom",
         "expandedSql": "alter table ign_routes_par_commune\n    rename column st_intersection to the_geom"
+      },
+      {
+        "mode": "SQL",
+        "id": "gqeuTQ6ZqvHW",
+        "runOn": 1488557271055,
+        "runIn": 43,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "B5pmtoNWrREeWfgu",
+        "hash": "4482a0c998589e35e57f6ec37ba4ee93",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "ALTER TABLE ign_routes_par_commune\n\tALTER COLUMN the_geom type geometry(MultiLineString) USING the_geom::geometry(MultiLineString)",
+        "expandedSql": "ALTER TABLE ign_routes_par_commune\n\tALTER COLUMN the_geom type geometry(MultiLineString) USING the_geom::geometry(MultiLineString)"
       }
     ]
   }
