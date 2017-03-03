@@ -3042,6 +3042,28 @@
         },
         "sql": "alter table ign_route_par_commune\n    rename column st_intersection to the_geom",
         "expandedSql": "alter table ign_route_par_commune\n    rename column st_intersection to the_geom"
+      },
+      {
+        "mode": "SQL",
+        "id": "UJ7SL8jwBkCm",
+        "runOn": 1488556961229,
+        "runIn": 64,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "w4kXjN3LdGKnuHMf",
+        "hash": "475965d8d2b26b6843197ad6f215f5c5",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "alter table ign_routes_par_commune\n    rename column st_intersection to the_geom",
+        "expandedSql": "alter table ign_routes_par_commune\n    rename column st_intersection to the_geom"
       }
     ]
   }
