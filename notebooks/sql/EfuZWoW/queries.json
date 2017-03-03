@@ -3020,6 +3020,28 @@
         },
         "sql": "select count(*) from \"public\".\"ign_troncon_route_postgis\" where \"NUM_ROUTE\" is null",
         "expandedSql": "select count(*) from \"public\".\"ign_troncon_route_postgis\" where \"NUM_ROUTE\" is null"
+      },
+      {
+        "mode": "SQL",
+        "id": "dlT2EnpqL2K7",
+        "runOn": 1488556953529,
+        "runIn": 135,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "KAQ1sG5gL6gltzJU",
+        "hash": "808c631edb5a53bc05312579198f5eab",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "alter table ign_route_par_commune\n    rename column st_intersection to the_geom",
+        "expandedSql": "alter table ign_route_par_commune\n    rename column st_intersection to the_geom"
       }
     ]
   }
