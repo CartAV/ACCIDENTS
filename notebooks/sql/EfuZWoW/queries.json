@@ -2998,6 +2998,28 @@
         },
         "sql": "select count(*) from \"public\".\"ign_troncon_route_postgis\" where num_route is null",
         "expandedSql": "select count(*) from \"public\".\"ign_troncon_route_postgis\" where num_route is null"
+      },
+      {
+        "mode": "SQL",
+        "id": "ZSA9S6w8IWOL",
+        "runOn": 1488537540539,
+        "runIn": 57,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "J3gyytVw2i4CdwwU",
+        "hash": "cc055826c1a23418da541f3fdb5e395e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"public\".\"ign_troncon_route_postgis\" where \"NUM_ROUTE\" is null",
+        "expandedSql": "select count(*) from \"public\".\"ign_troncon_route_postgis\" where \"NUM_ROUTE\" is null"
       }
     ]
   }
