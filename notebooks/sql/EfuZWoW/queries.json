@@ -3086,6 +3086,28 @@
         },
         "sql": "ALTER TABLE ign_routes_par_commune\n\tALTER COLUMN the_geom type geometry(MultiLineString) USING the_geom::geometry(MultiLineString)",
         "expandedSql": "ALTER TABLE ign_routes_par_commune\n\tALTER COLUMN the_geom type geometry(MultiLineString) USING the_geom::geometry(MultiLineString)"
+      },
+      {
+        "mode": "SQL",
+        "id": "ebs5Y9urot2m",
+        "runOn": 1488557283975,
+        "runIn": 165,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "S6wlFnxPuNq6IUvH",
+        "hash": "21b383b291bbc3063429551e00ba614b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "ALTER TABLE ign_routes_par_commune\n\tALTER COLUMN the_geom type geometry(LineString) USING the_geom::geometry(LineString)",
+        "expandedSql": "ALTER TABLE ign_routes_par_commune\n\tALTER COLUMN the_geom type geometry(LineString) USING the_geom::geometry(LineString)"
       }
     ]
   }
