@@ -2976,6 +2976,28 @@
         },
         "sql": "ALTER TABLE \"ign_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_routes_dep_idx ON \"ign_routes_par_departement\"\n\tUSING GIST(the_geom);",
         "expandedSql": "ALTER TABLE \"ign_routes_par_departement\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_routes_dep_idx ON \"ign_routes_par_departement\"\n\tUSING GIST(the_geom);"
+      },
+      {
+        "mode": "SQL",
+        "id": "sTiD6LG56SdJ",
+        "runOn": 1488537533587,
+        "runIn": 3678,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "d7K1OpwwoSYyTXlj",
+        "hash": "0aceb3ae27e6a961dd18aada2c196e5f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"public\".\"ign_troncon_route_postgis\" where num_route is null",
+        "expandedSql": "select count(*) from \"public\".\"ign_troncon_route_postgis\" where num_route is null"
       }
     ]
   }
