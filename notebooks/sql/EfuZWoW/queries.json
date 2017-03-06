@@ -3377,10 +3377,10 @@
         "mode": "SQL",
         "id": "VJyfrYMyMVeQ",
         "runOn": 1488789544547,
-        "runIn": 57,
+        "runIn": 42,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "NhXVLhvM8Gsrepr8",
         "hash": "65e08ffc7b39b04fa2633aa0f09a10f0",
         "querySettings": {
