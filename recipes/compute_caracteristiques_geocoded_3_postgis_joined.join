@@ -19,11 +19,28 @@
   ],
   "joins": [
     {
+      "customSQLCondition": "st_distance($left.the_geom, $right.the_geom) \u003c 1000 and $left.the_geom \u0026\u0026 $right.the_geom",
       "table1": 0,
       "outerJoinOnTheLeft": true,
       "table2": 1,
-      "conditionsMode": "AND",
-      "on": [],
+      "conditionsMode": "CUSTOM",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
+      "on": [
+        {
+          "maxDistance": 1,
+          "column1": {
+            "name": "Num_Acc",
+            "table": 0
+          },
+          "type": "EQ",
+          "column2": {
+            "name": "the_geom",
+            "table": 1
+          }
+        }
+      ],
       "type": "LEFT"
     }
   ],
@@ -53,247 +70,226 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "postFilter": {},
   "enableAutoCastInJoinConditions": false,
+  "computedColumns": [
+    {
+      "expression": "st_distance(the_geom, st_point(lat, long))",
+      "name": "distance_baac_commune",
+      "language": "SQL",
+      "type": "DOUBLE"
+    }
+  ],
   "selectedColumns": [
     {
       "name": "Num_Acc",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "an",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "mois",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "jour",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "hrmn",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "lum",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "agg",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "int",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "atm",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "col",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "com",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "adr",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "gps",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "lat",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "long",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "dep",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "date",
-      "table": 0
+      "table": 0,
+      "type": "date"
     },
     {
       "name": "original_city_code",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "original_name",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "current_city_code",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "current_name",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "ban_citycode",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "ban_label",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "ban_latitude",
-      "table": 0
+      "table": 0,
+      "type": "float"
     },
     {
       "name": "ban_longitude",
-      "table": 0
+      "table": 0,
+      "type": "float"
     },
     {
       "name": "ban_postcode",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "ban_score",
-      "table": 0
+      "table": 0,
+      "type": "float"
     },
     {
       "name": "ban_type",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "bano_citycode",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "bano_label",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "bano_latitude",
-      "table": 0
+      "table": 0,
+      "type": "float"
     },
     {
       "name": "bano_longitude",
-      "table": 0
+      "table": 0,
+      "type": "float"
     },
     {
       "name": "bano_postcode",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "bano_score",
-      "table": 0
+      "table": 0,
+      "type": "float"
     },
     {
       "name": "bano_type",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "ban2_citycode",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "ban2_label",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "ban2_latitude",
-      "table": 0
+      "table": 0,
+      "type": "float"
     },
     {
       "name": "ban2_longitude",
-      "table": 0
+      "table": 0,
+      "type": "float"
     },
     {
       "name": "ban2_score",
-      "table": 0
+      "table": 0,
+      "type": "float"
     },
     {
       "name": "ban2_type",
-      "table": 0
-    },
-    {
-      "name": "the_geom",
-      "table": 0
-    },
-    {
-      "name": "shp_srs",
-      "table": 0
-    },
-    {
-      "name": "ID_GEOFLA",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "CODE_COM",
-      "table": 0
-    },
-    {
-      "name": "INSEE_COM",
-      "table": 0
-    },
-    {
-      "name": "NOM_COM",
-      "table": 0
-    },
-    {
-      "name": "STATUT",
-      "table": 0
-    },
-    {
-      "name": "X_CHF_LIEU",
-      "table": 0
-    },
-    {
-      "name": "Y_CHF_LIEU",
-      "table": 0
-    },
-    {
-      "name": "X_CENTROID",
-      "table": 0
-    },
-    {
-      "name": "Y_CENTROID",
-      "table": 0
-    },
-    {
-      "name": "Z_MOYEN",
-      "table": 0
-    },
-    {
-      "name": "SUPERFICIE",
-      "table": 0
-    },
-    {
-      "name": "POPULATION",
-      "table": 0
-    },
-    {
-      "name": "CODE_ARR",
-      "table": 0
-    },
-    {
-      "name": "CODE_DEPT",
-      "table": 0
-    },
-    {
-      "name": "NOM_DEPT",
-      "table": 0
-    },
-    {
-      "name": "CODE_REG",
-      "table": 0
-    },
-    {
-      "name": "NOM_REG",
-      "table": 0
+      "table": 1,
+      "type": "string"
     }
   ]
 }
