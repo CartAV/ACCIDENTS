@@ -16,6 +16,9 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "on": [
         {
           "maxDistance": 1,
@@ -35,9 +38,6 @@
           "dateDiffUnit": "DAY"
         }
       ],
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "type": "LEFT"
     },
     {
@@ -45,6 +45,7 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "column1": {
@@ -58,7 +59,6 @@
           }
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -66,6 +66,7 @@
     "hive": {
       "hiveconf": [],
       "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
       "useGlobalMetastore": false
     },
     "impala": {
