@@ -19,7 +19,7 @@
   ],
   "joins": [
     {
-      "customSQLCondition": "st_distance($left.the_geom, $right.the_geom) \u003c 1000 and $left.the_geom \u0026\u0026 $right.the_geom",
+      "customSQLCondition": "st_distance($left.the_geom, $right.the_geom) \u003c 1000 AND $left.the_geom \u0026\u0026 $right.the_geom AND lat IS NOT NULL",
       "table1": 0,
       "outerJoinOnTheLeft": true,
       "table2": 1,
