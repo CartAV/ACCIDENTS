@@ -16,28 +16,28 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "on": [
         {
           "maxDistance": 1,
+          "caseInsensitive": false,
           "column1": {
             "name": "dep",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "CODE_DEPT",
             "table": 1
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT"
     },
     {
@@ -45,7 +45,6 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "column1": {
@@ -59,6 +58,7 @@
           }
         }
       ],
+      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -135,6 +135,16 @@
       "name": "date",
       "table": 0,
       "type": "date"
+    },
+    {
+      "name": "date_formated",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "heures_minutes",
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "ANNEE",
