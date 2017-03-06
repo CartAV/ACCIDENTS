@@ -1,5 +1,39 @@
 {
   "type": "ElasticSearch",
+  "managed": true,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 7,
+    "lastModifiedBy": {
+      "login": "chabouisfr"
+    },
+    "lastModifiedOn": 1488797381085
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr"
+    },
+    "lastModifiedOn": 1488797381090
+  },
+  "tags": [
+    "creator_chabouisfr"
+  ],
   "params": {
     "connection": "el",
     "index": "es2_2005_2015_accidents_caracteristiques_lieux",
@@ -8,8 +42,6 @@
     "frameSize": 10000,
     "partitioned": false
   },
-  "checks": [],
-  "managed": true,
   "schema": {
     "userModified": false,
     "columns": [
@@ -72,6 +104,18 @@
         "type": "date",
         "timestampNoTzAsDate": false,
         "maxLength": -1
+      },
+      {
+        "name": "date_formated",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "heures_minutes",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
       },
       {
         "name": "ANNEE",
@@ -272,32 +316,6 @@
         "maxLength": 16200
       }
     ]
-  },
-  "partitioning": {
-    "ignoreNonMatchingFile": false,
-    "dimensions": []
-  },
-  "tags": [
-    "creator_chabouisfr"
-  ],
-  "checklists": {
-    "checklists": []
-  },
-  "flowOptions": {
-    "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
-  },
-  "versionTag": {
-    "versionNumber": 6,
-    "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1488278562158
-  },
-  "customMeta": {
-    "kv": {}
   },
   "metrics": {
     "probes": [
