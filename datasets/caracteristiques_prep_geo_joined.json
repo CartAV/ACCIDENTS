@@ -1,5 +1,39 @@
 {
   "type": "Vertica",
+  "managed": true,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 5,
+    "lastModifiedBy": {
+      "login": "chabouisfr"
+    },
+    "lastModifiedOn": 1488797293276
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr"
+    },
+    "lastModifiedOn": 1488797293281
+  },
+  "tags": [
+    "creator_grabenertr"
+  ],
   "params": {
     "connection": "datalabmaster",
     "mode": "table",
@@ -13,8 +47,6 @@
     "hasColsWithUnknownTz": false,
     "readColsWithUnknownTzAsDates": false
   },
-  "checks": [],
-  "managed": true,
   "schema": {
     "userModified": true,
     "columns": [
@@ -77,6 +109,18 @@
         "type": "date",
         "timestampNoTzAsDate": false,
         "maxLength": -1
+      },
+      {
+        "name": "date_formated",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "heures_minutes",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
       },
       {
         "name": "ANNEE",
@@ -277,32 +321,6 @@
         "maxLength": 16200
       }
     ]
-  },
-  "partitioning": {
-    "ignoreNonMatchingFile": false,
-    "dimensions": []
-  },
-  "tags": [
-    "creator_grabenertr"
-  ],
-  "checklists": {
-    "checklists": []
-  },
-  "flowOptions": {
-    "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
-  },
-  "versionTag": {
-    "versionNumber": 4,
-    "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1488278331291
-  },
-  "customMeta": {
-    "kv": {}
   },
   "metrics": {
     "probes": [
