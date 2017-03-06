@@ -3394,6 +3394,28 @@
         },
         "sql": "--ALTER TABLE ign_routes_par_commune\n\t--ALTER COLUMN the_geom type geography(MultiLineString) USING the_geom::geography(MultiLineString, 4326)\n\nselect count(*), st_numgeometries(the_geom) as num from ign_routes_par_commune group by num\n\n",
         "expandedSql": "--ALTER TABLE ign_routes_par_commune\n\t--ALTER COLUMN the_geom type geography(MultiLineString) USING the_geom::geography(MultiLineString, 4326)\n\nselect count(*), st_numgeometries(the_geom) as num from ign_routes_par_commune group by num\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "AyOGlcEcJnox",
+        "runOn": 1488789563670,
+        "runIn": 42,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "UsJ2A4zw3yvLf2z4",
+        "hash": "800d55a74250f02d91f1b96097514f9c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--ALTER TABLE ign_routes_par_commune\n\t--ALTER COLUMN the_geom type geography(MultiLineString) USING the_geom::geography(MultiLineString, 4326)\n\nselect count(*), st_numgeometries(st_intersection) as num from ign_routes_par_commune group by num\n\n",
+        "expandedSql": "--ALTER TABLE ign_routes_par_commune\n\t--ALTER COLUMN the_geom type geography(MultiLineString) USING the_geom::geography(MultiLineString, 4326)\n\nselect count(*), st_numgeometries(st_intersection) as num from ign_routes_par_commune group by num\n\n"
       }
     ]
   }
