@@ -14,6 +14,10 @@
           "deps": []
         },
         {
+          "ref": "accidents_vehicules",
+          "deps": []
+        },
+        {
           "ref": "accidents_usagers",
           "deps": []
         }
@@ -31,11 +35,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488802192831
+    "lastModifiedOn": 1488803703991
   },
   "creationTag": {
     "versionNumber": 0,
