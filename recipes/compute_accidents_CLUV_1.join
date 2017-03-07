@@ -1,0 +1,263 @@
+{
+  "virtualInputs": [
+    {
+      "autoSelectColumns": false,
+      "index": 0,
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 1,
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  ],
+  "joins": [
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 1,
+      "conditionsMode": "AND",
+      "on": [],
+      "type": "LEFT"
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "enableAutoCastInJoinConditions": false,
+  "selectedColumns": [
+    {
+      "name": "Num_Acc",
+      "table": 0
+    },
+    {
+      "name": "mois",
+      "table": 0
+    },
+    {
+      "name": "lum",
+      "table": 0
+    },
+    {
+      "name": "agg",
+      "table": 0
+    },
+    {
+      "name": "int",
+      "table": 0
+    },
+    {
+      "name": "atm",
+      "table": 0
+    },
+    {
+      "name": "col",
+      "table": 0
+    },
+    {
+      "name": "adr",
+      "table": 0
+    },
+    {
+      "name": "dep",
+      "table": 0
+    },
+    {
+      "name": "date",
+      "table": 0
+    },
+    {
+      "name": "date_formated",
+      "table": 0
+    },
+    {
+      "name": "heures_minutes",
+      "table": 0
+    },
+    {
+      "name": "ANNEE",
+      "table": 0
+    },
+    {
+      "name": "SEMAINE",
+      "table": 0
+    },
+    {
+      "name": "LIBELLE_JOUR",
+      "table": 0
+    },
+    {
+      "name": "HEURE",
+      "table": 0
+    },
+    {
+      "name": "original_city_code",
+      "table": 0
+    },
+    {
+      "name": "original_name",
+      "table": 0
+    },
+    {
+      "name": "current_city_code",
+      "table": 0
+    },
+    {
+      "name": "current_name",
+      "table": 0
+    },
+    {
+      "name": "latitude",
+      "table": 0
+    },
+    {
+      "name": "geo_type",
+      "table": 0
+    },
+    {
+      "name": "longitude",
+      "table": 0
+    },
+    {
+      "name": "geo_source",
+      "table": 0
+    },
+    {
+      "name": "geo_score",
+      "table": 0
+    },
+    {
+      "name": "geopoint",
+      "table": 0
+    },
+    {
+      "name": "NOM_DEPT",
+      "table": 0
+    },
+    {
+      "name": "NOM_REG",
+      "table": 0
+    },
+    {
+      "name": "catr",
+      "table": 0
+    },
+    {
+      "name": "voie",
+      "table": 0
+    },
+    {
+      "name": "v1",
+      "table": 0
+    },
+    {
+      "name": "v2",
+      "table": 0
+    },
+    {
+      "name": "circ",
+      "table": 0
+    },
+    {
+      "name": "nbv",
+      "table": 0
+    },
+    {
+      "name": "pr",
+      "table": 0
+    },
+    {
+      "name": "pr1",
+      "table": 0
+    },
+    {
+      "name": "vosp",
+      "table": 0
+    },
+    {
+      "name": "prof",
+      "table": 0
+    },
+    {
+      "name": "plan",
+      "table": 0
+    },
+    {
+      "name": "lartpc",
+      "table": 0
+    },
+    {
+      "name": "larrout",
+      "table": 0
+    },
+    {
+      "name": "surf",
+      "table": 0
+    },
+    {
+      "name": "infra",
+      "table": 0
+    },
+    {
+      "name": "situ",
+      "table": 0
+    },
+    {
+      "name": "env1",
+      "table": 0
+    },
+    {
+      "name": "voiture_nb",
+      "table": 0
+    },
+    {
+      "name": "utilitaire_nb",
+      "table": 0
+    },
+    {
+      "name": "deuxrouesmotorises_nb",
+      "table": 0
+    },
+    {
+      "name": "velo_nb",
+      "table": 0
+    },
+    {
+      "name": "poidslourd_nb",
+      "table": 0
+    },
+    {
+      "name": "vehiculeautre_nb",
+      "table": 0
+    }
+  ]
+}
