@@ -12,7 +12,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "bigint",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -26,7 +26,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -40,7 +40,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -54,7 +54,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -68,7 +68,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -82,7 +82,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -96,7 +96,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -110,7 +110,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -124,7 +124,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "date",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -138,7 +138,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -152,7 +152,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -166,7 +166,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "bigint",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -180,7 +180,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "bigint",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -194,7 +194,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -208,7 +208,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "bigint",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -222,7 +222,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -236,7 +236,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -250,7 +250,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -264,7 +264,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -278,7 +278,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "double",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -292,7 +292,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -306,7 +306,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "double",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -320,7 +320,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -334,7 +334,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "double",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -348,7 +348,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -362,7 +362,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -376,7 +376,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -390,7 +390,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -404,7 +404,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -418,7 +418,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -432,7 +432,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -446,7 +446,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -460,7 +460,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -474,7 +474,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -488,7 +488,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -502,7 +502,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -516,7 +516,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -530,7 +530,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -544,7 +544,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -558,7 +558,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -572,7 +572,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -586,7 +586,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -600,7 +600,7 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
@@ -614,11 +614,12 @@
       "countDistinct": false,
       "avg": false,
       "type": "string",
-      "first": true
+      "first": false
     },
     {
       "min": false,
       "max": false,
+      "orderColumn": "Num_Acc",
       "last": false,
       "count": false,
       "sum2": false,
@@ -661,21 +662,39 @@
     }
   ],
   "outputColumnNameOverrides": {
+    "nbv_first": "nbv",
     "LIBELLE_JOUR_first": "LIBELLE_JOUR",
+    "geo_source_first": "geo_source",
+    "geo_score_first": "geo_score",
+    "ANNEE_first": "ANNEE",
+    "atm_first": "atm",
+    "v1_first": "v1",
+    "heures_minutes_first": "heures_minutes",
+    "latitude_first": "latitude",
+    "SEMAINE_first": "SEMAINE",
+    "original_city_code_first": "original_city_code",
+    "voie_first": "voie",
+    "catr_first": "catr",
+    "date_first": "date",
+    "current_name_first": "current_name",
     "adr_first": "adr",
     "mois_first": "mois",
     "int_first": "int",
     "date_formated_first": "date_formated",
-    "ANNEE_first": "ANNEE",
+    "longitude_first": "longitude",
     "col_first": "col",
-    "atm_first": "atm",
     "HEURE_first": "HEURE",
-    "heures_minutes_first": "heures_minutes",
+    "geo_type_first": "geo_type",
     "lum_first": "lum",
-    "SEMAINE_first": "SEMAINE",
+    "NOM_DEPT_first": "NOM_DEPT",
+    "current_city_code_first": "current_city_code",
+    "v2_first": "v2",
+    "NOM_REG_first": "NOM_REG",
+    "circ_first": "circ",
     "dep_first": "dep",
     "agg_first": "agg",
-    "date_first": "date"
+    "geopoint_first": "geopoint",
+    "original_name_first": "original_name"
   },
   "engineParams": {
     "hive": {
