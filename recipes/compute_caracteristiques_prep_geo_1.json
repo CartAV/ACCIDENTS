@@ -13,7 +13,12 @@
           "conf": []
         },
         "readParams": {
-          "map": {}
+          "map": {
+            "caracteristiques_geocoded_3_postgis_joined": {
+              "repartition": 10,
+              "cache": false
+            }
+          }
         }
       },
       "hadoopConfigKeys": [],
@@ -45,11 +50,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488904005819
+    "lastModifiedOn": 1488907043592
   },
   "creationTag": {
     "versionNumber": 0,
