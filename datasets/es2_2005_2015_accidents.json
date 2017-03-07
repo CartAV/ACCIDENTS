@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488896188519
+    "lastModifiedOn": 1488896803323
   },
   "creationTag": {
     "versionNumber": 0,
@@ -394,7 +394,7 @@
       },
       {
         "name": "gravite_accident",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
