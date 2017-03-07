@@ -1,0 +1,135 @@
+{
+  "virtualInputs": [
+    {
+      "autoSelectColumns": false,
+      "index": 0,
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 1,
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  ],
+  "joins": [
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 1,
+      "conditionsMode": "AND",
+      "on": [],
+      "type": "LEFT"
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "enableAutoCastInJoinConditions": false,
+  "selectedColumns": [
+    {
+      "name": "Num_Acc",
+      "table": 0
+    },
+    {
+      "name": "senc",
+      "table": 0
+    },
+    {
+      "name": "catv",
+      "table": 0
+    },
+    {
+      "name": "occutc",
+      "table": 0
+    },
+    {
+      "name": "obs",
+      "table": 0
+    },
+    {
+      "name": "obsm",
+      "table": 0
+    },
+    {
+      "name": "choc",
+      "table": 0
+    },
+    {
+      "name": "manv",
+      "table": 0
+    },
+    {
+      "name": "num_veh",
+      "table": 0
+    },
+    {
+      "name": "place",
+      "table": 0
+    },
+    {
+      "name": "catu",
+      "table": 0
+    },
+    {
+      "name": "grav",
+      "table": 0
+    },
+    {
+      "name": "sexe",
+      "table": 0
+    },
+    {
+      "name": "trajet",
+      "table": 0
+    },
+    {
+      "name": "secu",
+      "table": 0
+    },
+    {
+      "name": "locp",
+      "table": 0
+    },
+    {
+      "name": "actp",
+      "table": 0
+    },
+    {
+      "name": "etatp",
+      "table": 0
+    },
+    {
+      "name": "an_nais",
+      "table": 0
+    }
+  ]
+}
