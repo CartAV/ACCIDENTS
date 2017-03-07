@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488907474915
+    "lastModifiedOn": 1488907761235
   },
   "creationTag": {
     "versionNumber": 0,
@@ -364,19 +364,7 @@
         "maxLength": -1
       },
       {
-        "name": "score_bano",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "score_baac",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "score_ban2",
+        "name": "baac_score",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
