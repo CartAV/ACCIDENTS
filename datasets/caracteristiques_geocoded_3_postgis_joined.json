@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488877079054
+    "lastModifiedOn": 1488882276519
   },
   "creationTag": {
     "versionNumber": 0,
@@ -300,6 +300,12 @@
       {
         "name": "CODE_COM",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "distance_commune_baac",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
