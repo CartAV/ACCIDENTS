@@ -48,4 +48,4 @@ SELECT
     "IGN_COMMUNE_FRANCE"."CODE_COM" AS "CODE_COM"
   FROM "caracteristiques_geocoded_3_postgis"
   LEFT JOIN "ign_commune_france" "IGN_COMMUNE_FRANCE"
-    ON "caracteristiques_geocoded_3_postgis"."current_city_code" = "IGN_COMMUNE_FRANCE"."CODE_COM"
+    ON "caracteristiques_geocoded_3_postgis"."current_city_code" = "IGN_COMMUNE_FRANCE"."INSEE_COM"
