@@ -15,6 +15,9 @@
         "enabled": false,
         "distinct": false
       }
+    },
+    {
+      "index": 2
     }
   ],
   "joins": [
@@ -23,7 +26,69 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "on": [],
+      "on": [
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Num_Acc",
+            "table": 0
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "Num_Acc",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        }
+      ],
+      "type": "LEFT"
+    },
+    {
+      "table1": 1,
+      "outerJoinOnTheLeft": true,
+      "table2": 2,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "on": [
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Num_Acc",
+            "table": 1
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "Num_Acc",
+            "table": 2
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        },
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "num_veh",
+            "table": 1
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "num_veh",
+            "table": 2
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        }
+      ],
       "type": "LEFT"
     }
   ],
@@ -53,231 +118,248 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "postFilter": {},
   "enableAutoCastInJoinConditions": false,
   "selectedColumns": [
     {
       "name": "Num_Acc",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "mois",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "lum",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "agg",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "int",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "atm",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "col",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "adr",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "dep",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "date",
-      "table": 0
+      "table": 0,
+      "type": "date"
     },
     {
       "name": "date_formated",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "heures_minutes",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "ANNEE",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "SEMAINE",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "LIBELLE_JOUR",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "HEURE",
-      "table": 0
+      "table": 0,
+      "type": "bigint"
     },
     {
       "name": "original_city_code",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "original_name",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "current_city_code",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "current_name",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "latitude",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "geo_type",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "longitude",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "geo_source",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "geo_score",
-      "table": 0
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "geopoint",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "NOM_DEPT",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "NOM_REG",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "catr",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "voie",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "v1",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "v2",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "circ",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "nbv",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "pr",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "pr1",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "vosp",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "prof",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "plan",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "lartpc",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "larrout",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "surf",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "infra",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "situ",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "env1",
-      "table": 0
-    },
-    {
-      "name": "place",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "catu",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "grav",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
-      "name": "sexe",
-      "table": 0
-    },
-    {
-      "name": "trajet",
-      "table": 0
-    },
-    {
-      "name": "secu",
-      "table": 0
-    },
-    {
-      "name": "locp",
-      "table": 0
-    },
-    {
-      "name": "actp",
-      "table": 0
-    },
-    {
-      "name": "etatp",
-      "table": 0
-    },
-    {
-      "name": "an_nais",
-      "table": 0
-    },
-    {
-      "name": "num_veh",
-      "table": 0
+      "name": "catv",
+      "table": 2,
+      "type": "string"
     }
   ]
 }
