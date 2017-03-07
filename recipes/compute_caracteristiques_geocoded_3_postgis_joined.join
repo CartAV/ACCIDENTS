@@ -23,7 +23,7 @@
       "table1": 0,
       "outerJoinOnTheLeft": true,
       "table2": 1,
-      "conditionsMode": "CUSTOM",
+      "conditionsMode": "AND",
       "rightLimit": {
         "decisionColumn": {}
       },
@@ -31,12 +31,12 @@
         {
           "maxDistance": 1,
           "column1": {
-            "name": "Num_Acc",
+            "name": "current_city_code",
             "table": 0
           },
           "type": "EQ",
           "column2": {
-            "name": "the_geom",
+            "name": "CODE_COM",
             "table": 1
           }
         }
@@ -72,7 +72,14 @@
   },
   "postFilter": {},
   "enableAutoCastInJoinConditions": false,
-  "computedColumns": [],
+  "computedColumns": [
+    {
+      "expression": "st_distance(ign_commune_france.the_geom, st_point(long, lat))",
+      "name": "distance_commune_baac",
+      "language": "SQL",
+      "type": "DOUBLE"
+    }
+  ],
   "selectedColumns": [
     {
       "name": "Num_Acc",
