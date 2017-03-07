@@ -40,6 +40,7 @@ SELECT
     "caracteristiques_geocoded_3_postgis"."ban2_longitude" AS "ban2_longitude",
     "caracteristiques_geocoded_3_postgis"."ban2_score" AS "ban2_score",
     "caracteristiques_geocoded_3_postgis"."ban2_type" AS "ban2_type",
+    st_distance(ign_commune_france.the_geom, st_point(long, lat)) as distance_commune_baac
     "IGN_COMMUNE_FRANCE"."CODE_COM" AS "CODE_COM"
   FROM "caracteristiques_geocoded_3_postgis"
   LEFT JOIN "ign_commune_france" "IGN_COMMUNE_FRANCE"
