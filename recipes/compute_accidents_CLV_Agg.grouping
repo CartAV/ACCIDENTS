@@ -660,7 +660,23 @@
       "customName": "vehiculeautre_nb"
     }
   ],
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "LIBELLE_JOUR_first": "LIBELLE_JOUR",
+    "adr_first": "adr",
+    "mois_first": "mois",
+    "int_first": "int",
+    "date_formated_first": "date_formated",
+    "ANNEE_first": "ANNEE",
+    "col_first": "col",
+    "atm_first": "atm",
+    "HEURE_first": "HEURE",
+    "heures_minutes_first": "heures_minutes",
+    "lum_first": "lum",
+    "SEMAINE_first": "SEMAINE",
+    "dep_first": "dep",
+    "agg_first": "agg",
+    "date_first": "date"
+  },
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
