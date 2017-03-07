@@ -1,28 +1,56 @@
 {
+  "outputColumnNameOverrides": {},
   "values": [
     {
       "min": false,
       "max": false,
-      "last": false,
       "count": false,
+      "last": false,
       "sum2": false,
       "column": "catu",
       "sum": false,
       "countDistinct": false,
+      "type": "string",
       "avg": false,
       "first": false
     },
     {
       "min": false,
       "max": false,
-      "last": false,
       "count": false,
+      "last": false,
       "sum2": false,
       "column": "grav",
       "sum": false,
       "countDistinct": false,
+      "type": "string",
       "avg": false,
       "first": false
+    },
+    {
+      "customExpr": "sum(case when catu \u003d \u0027piéton\u0027 then 1 else 0 end)",
+      "type": "INT",
+      "customName": "pietons_nb"
+    },
+    {
+      "customExpr": "sum(case when grav \u003d \u0027indemne\u0027 then 1 else 0 end)",
+      "type": "INT",
+      "customName": "indemne_nb"
+    },
+    {
+      "customExpr": "sum(case when grav \u003d \u0027blessé léger\u0027 then 1 else 0 end)",
+      "type": "INT",
+      "customName": "blesseleger_nb"
+    },
+    {
+      "customExpr": "sum(case when grav \u003d \u0027hospitalisé\u0027 then 1 else 0 end)",
+      "type": "INT",
+      "customName": "hospitalise_nb"
+    },
+    {
+      "customExpr": "sum(case when grav \u003d \u0027tué\u0027 then 1 else 0 end)",
+      "type": "INT",
+      "customName": "tue_nb"
     }
   ],
   "engineParams": {
@@ -53,14 +81,15 @@
   },
   "keys": [
     {
-      "column": "Num_Acc"
+      "column": "Num_Acc",
+      "type": "string"
     }
   ],
   "postFilter": {
     "enabled": false,
     "distinct": false
   },
-  "globalCount": true,
+  "globalCount": false,
   "preFilter": {
     "enabled": false,
     "distinct": false
