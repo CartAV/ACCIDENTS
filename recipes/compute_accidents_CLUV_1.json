@@ -14,7 +14,7 @@
           "deps": []
         },
         {
-          "ref": "accidents_usagers",
+          "ref": "usagers_prepared",
           "deps": []
         }
       ]
@@ -31,11 +31,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488893755487
+    "lastModifiedOn": 1488894044147
   },
   "creationTag": {
     "versionNumber": 0,
