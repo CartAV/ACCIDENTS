@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488882386536
+    "lastModifiedOn": 1488882431519
   },
   "creationTag": {
     "versionNumber": 0,
@@ -299,6 +299,24 @@
       },
       {
         "name": "distance_commune_baac",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "distance_commune_ban",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "distance_commune_ban2",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "distance_commune_bano",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
