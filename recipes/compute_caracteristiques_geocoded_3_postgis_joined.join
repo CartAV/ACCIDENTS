@@ -72,14 +72,7 @@
   },
   "postFilter": {},
   "enableAutoCastInJoinConditions": false,
-  "computedColumns": [
-    {
-      "expression": "st_distance(ign_commune_france.the_geom, st_point(long, lat))",
-      "name": "distance_commune_baac",
-      "language": "SQL",
-      "type": "DOUBLE"
-    }
-  ],
+  "computedColumns": [],
   "selectedColumns": [
     {
       "name": "Num_Acc",
