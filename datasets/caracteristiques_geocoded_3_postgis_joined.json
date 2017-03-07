@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488882320703
+    "lastModifiedOn": 1488882386536
   },
   "creationTag": {
     "versionNumber": 0,
@@ -294,6 +294,12 @@
       {
         "name": "ban2_type",
         "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "distance_commune_baac",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
