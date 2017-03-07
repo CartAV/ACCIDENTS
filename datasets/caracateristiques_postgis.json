@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488907042723
+    "lastModifiedOn": 1488907474915
   },
   "creationTag": {
     "versionNumber": 0,
@@ -370,7 +370,7 @@
         "maxLength": -1
       },
       {
-        "name": "score_ban",
+        "name": "score_baac",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
@@ -400,14 +400,14 @@
         "maxLength": -1
       },
       {
-        "name": "geo_score",
-        "type": "double",
+        "name": "geo_source",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "geo_source",
-        "type": "string",
+        "name": "geo_score",
+        "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
