@@ -23,7 +23,25 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "on": [],
+      "on": [
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Num_Acc",
+            "table": 0
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "Num_Acc",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        }
+      ],
       "type": "LEFT"
     }
   ],
@@ -53,231 +71,23 @@
     },
     "lowerCaseSchemaIfEngineRequiresIt": true
   },
+  "postFilter": {},
   "enableAutoCastInJoinConditions": false,
   "selectedColumns": [
     {
       "name": "Num_Acc",
-      "table": 0
-    },
-    {
-      "name": "mois",
-      "table": 0
-    },
-    {
-      "name": "lum",
-      "table": 0
-    },
-    {
-      "name": "agg",
-      "table": 0
-    },
-    {
-      "name": "int",
-      "table": 0
-    },
-    {
-      "name": "atm",
-      "table": 0
-    },
-    {
-      "name": "col",
-      "table": 0
-    },
-    {
-      "name": "adr",
-      "table": 0
-    },
-    {
-      "name": "dep",
-      "table": 0
-    },
-    {
-      "name": "date",
-      "table": 0
-    },
-    {
-      "name": "date_formated",
-      "table": 0
-    },
-    {
-      "name": "heures_minutes",
-      "table": 0
-    },
-    {
-      "name": "ANNEE",
-      "table": 0
-    },
-    {
-      "name": "SEMAINE",
-      "table": 0
-    },
-    {
-      "name": "LIBELLE_JOUR",
-      "table": 0
-    },
-    {
-      "name": "HEURE",
-      "table": 0
-    },
-    {
-      "name": "original_city_code",
-      "table": 0
-    },
-    {
-      "name": "original_name",
-      "table": 0
-    },
-    {
-      "name": "current_city_code",
-      "table": 0
-    },
-    {
-      "name": "current_name",
-      "table": 0
-    },
-    {
-      "name": "latitude",
-      "table": 0
-    },
-    {
-      "name": "geo_type",
-      "table": 0
-    },
-    {
-      "name": "longitude",
-      "table": 0
-    },
-    {
-      "name": "geo_source",
-      "table": 0
-    },
-    {
-      "name": "geo_score",
-      "table": 0
-    },
-    {
-      "name": "geopoint",
-      "table": 0
-    },
-    {
-      "name": "NOM_DEPT",
-      "table": 0
-    },
-    {
-      "name": "NOM_REG",
-      "table": 0
-    },
-    {
-      "name": "catr",
-      "table": 0
-    },
-    {
-      "name": "voie",
-      "table": 0
-    },
-    {
-      "name": "v1",
-      "table": 0
-    },
-    {
-      "name": "v2",
-      "table": 0
-    },
-    {
-      "name": "circ",
-      "table": 0
-    },
-    {
-      "name": "nbv",
-      "table": 0
-    },
-    {
-      "name": "pr",
-      "table": 0
-    },
-    {
-      "name": "pr1",
-      "table": 0
-    },
-    {
-      "name": "vosp",
-      "table": 0
-    },
-    {
-      "name": "prof",
-      "table": 0
-    },
-    {
-      "name": "plan",
-      "table": 0
-    },
-    {
-      "name": "lartpc",
-      "table": 0
-    },
-    {
-      "name": "larrout",
-      "table": 0
-    },
-    {
-      "name": "surf",
-      "table": 0
-    },
-    {
-      "name": "infra",
-      "table": 0
-    },
-    {
-      "name": "situ",
-      "table": 0
-    },
-    {
-      "name": "env1",
-      "table": 0
-    },
-    {
-      "name": "place",
-      "table": 0
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "catu",
-      "table": 0
+      "table": 1,
+      "type": "string"
     },
     {
       "name": "grav",
-      "table": 0
-    },
-    {
-      "name": "sexe",
-      "table": 0
-    },
-    {
-      "name": "trajet",
-      "table": 0
-    },
-    {
-      "name": "secu",
-      "table": 0
-    },
-    {
-      "name": "locp",
-      "table": 0
-    },
-    {
-      "name": "actp",
-      "table": 0
-    },
-    {
-      "name": "etatp",
-      "table": 0
-    },
-    {
-      "name": "an_nais",
-      "table": 0
-    },
-    {
-      "name": "num_veh",
-      "table": 0
+      "table": 1,
+      "type": "string"
     }
   ]
 }
