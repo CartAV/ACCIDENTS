@@ -528,6 +528,28 @@
         },
         "sql": "select * from accidents_uasgers where Num_Acc\u003d200500000001",
         "expandedSql": "select * from accidents_uasgers where Num_Acc\u003d200500000001"
+      },
+      {
+        "mode": "SQL",
+        "id": "jIJammoRIAJ8",
+        "runOn": 1488891515959,
+        "runIn": 51,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "HuHUNU9dNdKpMdOu",
+        "hash": "7cf8b7628b95a6aee96044640828cd23",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from accidents_usagers where Num_Acc\u003d200500000001",
+        "expandedSql": "select * from accidents_usagers where Num_Acc\u003d200500000001"
       }
     ]
   }
