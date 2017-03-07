@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488898248024
+    "lastModifiedOn": 1488898357862
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,91 +57,91 @@
         "maxLength": 16200
       },
       {
-        "name": "mois_first",
+        "name": "mois",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "lum_first",
+        "name": "lum",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "agg_first",
+        "name": "agg",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "int_first",
+        "name": "int",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "atm_first",
+        "name": "atm",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "col_first",
+        "name": "col",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "adr_first",
+        "name": "adr",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "dep_first",
+        "name": "dep",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "date_first",
+        "name": "date",
         "type": "date",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "date_formated_first",
+        "name": "date_formated",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "heures_minutes_first",
+        "name": "heures_minutes",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "ANNEE_first",
+        "name": "ANNEE",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "SEMAINE_first",
+        "name": "SEMAINE",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "LIBELLE_JOUR_first",
+        "name": "LIBELLE_JOUR",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
       {
-        "name": "HEURE_first",
+        "name": "HEURE",
         "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
