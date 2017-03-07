@@ -25,7 +25,7 @@
         "usePythonUnicode": true,
         "stopOnError": true,
         "column": "gravite_accident",
-        "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027cell\u0027 mode, the process function must return\n    # a single cell value for each row,\n    # which will be affected to a new column.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    return len(row)\n",
+        "pythonSourceCode": "def process(row):\n    if int(row[\"tue_nb\"]):\n        return \"tué\"\n    elif int(row[\"hospitalise_nb\"]):\n        return \"hospitalisé\"\n    elif int(row[\"blesseleger_nb\"]):\n        return \"blessé léger\"\n    else:\n        return \"indemne\"\n",
         "mode": "CELL"
       },
       "type": "PythonUDF",
