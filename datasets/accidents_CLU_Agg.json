@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488898948038
+    "lastModifiedOn": 1488899060625
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,8 +57,32 @@
         "maxLength": 16200
       },
       {
-        "name": "count",
-        "type": "bigint",
+        "name": "pietons_nb",
+        "type": "int",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "indemne_nb",
+        "type": "int",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "blesseleger_nb",
+        "type": "int",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "hospitalise_nb",
+        "type": "int",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "tue_nb",
+        "type": "int",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       }
