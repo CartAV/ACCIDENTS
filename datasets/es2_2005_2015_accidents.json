@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488901612406
+    "lastModifiedOn": 1488901634149
   },
   "creationTag": {
     "versionNumber": 0,
@@ -38,6 +38,7 @@
     "connection": "el",
     "index": "es2_2005_2015_accidents",
     "type": "es2_2005_2015_accidents",
+    "rawCopyColumns": "*",
     "frameSize": 10000,
     "partitioned": false
   },
