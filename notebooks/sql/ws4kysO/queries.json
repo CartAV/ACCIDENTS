@@ -643,10 +643,10 @@
         "mode": "SQL",
         "id": "BUiaJPcQO5ed",
         "runOn": 1488896069843,
-        "runIn": 178,
+        "runIn": 158,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "H6rL3LJLthPPpWxK",
         "hash": "1c98977e9f7766b6edd3aabe7d94829e",
         "querySettings": {
