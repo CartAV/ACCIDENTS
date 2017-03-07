@@ -72,14 +72,7 @@
   },
   "postFilter": {},
   "enableAutoCastInJoinConditions": false,
-  "computedColumns": [
-    {
-      "expression": "st_distance(the_geom, st_point(lat, long))",
-      "name": "distance_baac_commune",
-      "language": "SQL",
-      "type": "DOUBLE"
-    }
-  ],
+  "computedColumns": [],
   "selectedColumns": [
     {
       "name": "Num_Acc",
