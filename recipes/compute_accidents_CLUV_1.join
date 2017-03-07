@@ -1,0 +1,311 @@
+{
+  "virtualInputs": [
+    {
+      "autoSelectColumns": false,
+      "index": 0,
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 1,
+      "preFilter": {
+        "enabled": false,
+        "distinct": false
+      }
+    }
+  ],
+  "joins": [
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 1,
+      "conditionsMode": "AND",
+      "on": [],
+      "type": "LEFT"
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "enableAutoCastInJoinConditions": false,
+  "selectedColumns": [
+    {
+      "name": "Num_Acc",
+      "table": 0
+    },
+    {
+      "name": "mois_first",
+      "table": 0
+    },
+    {
+      "name": "lum_first",
+      "table": 0
+    },
+    {
+      "name": "agg_first",
+      "table": 0
+    },
+    {
+      "name": "int_first",
+      "table": 0
+    },
+    {
+      "name": "atm_first",
+      "table": 0
+    },
+    {
+      "name": "col_first",
+      "table": 0
+    },
+    {
+      "name": "adr_first",
+      "table": 0
+    },
+    {
+      "name": "dep_first",
+      "table": 0
+    },
+    {
+      "name": "date_first",
+      "table": 0
+    },
+    {
+      "name": "date_formated_first",
+      "table": 0
+    },
+    {
+      "name": "heures_minutes_first",
+      "table": 0
+    },
+    {
+      "name": "ANNEE_first",
+      "table": 0
+    },
+    {
+      "name": "SEMAINE_first",
+      "table": 0
+    },
+    {
+      "name": "LIBELLE_JOUR_first",
+      "table": 0
+    },
+    {
+      "name": "HEURE_first",
+      "table": 0
+    },
+    {
+      "name": "original_city_code_first",
+      "table": 0
+    },
+    {
+      "name": "original_name_first",
+      "table": 0
+    },
+    {
+      "name": "current_city_code_first",
+      "table": 0
+    },
+    {
+      "name": "current_name_first",
+      "table": 0
+    },
+    {
+      "name": "latitude_first",
+      "table": 0
+    },
+    {
+      "name": "geo_type_first",
+      "table": 0
+    },
+    {
+      "name": "longitude_first",
+      "table": 0
+    },
+    {
+      "name": "geo_source_first",
+      "table": 0
+    },
+    {
+      "name": "geo_score_first",
+      "table": 0
+    },
+    {
+      "name": "geopoint_first",
+      "table": 0
+    },
+    {
+      "name": "NOM_DEPT_first",
+      "table": 0
+    },
+    {
+      "name": "NOM_REG_first",
+      "table": 0
+    },
+    {
+      "name": "catr_first",
+      "table": 0
+    },
+    {
+      "name": "voie_first",
+      "table": 0
+    },
+    {
+      "name": "v1_first",
+      "table": 0
+    },
+    {
+      "name": "v2_first",
+      "table": 0
+    },
+    {
+      "name": "circ_first",
+      "table": 0
+    },
+    {
+      "name": "nbv_first",
+      "table": 0
+    },
+    {
+      "name": "pr_first",
+      "table": 0
+    },
+    {
+      "name": "pr1_first",
+      "table": 0
+    },
+    {
+      "name": "vosp_first",
+      "table": 0
+    },
+    {
+      "name": "prof_first",
+      "table": 0
+    },
+    {
+      "name": "plan_first",
+      "table": 0
+    },
+    {
+      "name": "lartpc_first",
+      "table": 0
+    },
+    {
+      "name": "larrout_first",
+      "table": 0
+    },
+    {
+      "name": "surf_first",
+      "table": 0
+    },
+    {
+      "name": "infra_first",
+      "table": 0
+    },
+    {
+      "name": "situ_first",
+      "table": 0
+    },
+    {
+      "name": "env1_first",
+      "table": 0
+    },
+    {
+      "name": "voiture_nb",
+      "table": 0
+    },
+    {
+      "name": "utilitaire_nb",
+      "table": 0
+    },
+    {
+      "name": "deuxrouesmotorises_nb",
+      "table": 0
+    },
+    {
+      "name": "velo_nb",
+      "table": 0
+    },
+    {
+      "name": "poidslourd_nb",
+      "table": 0
+    },
+    {
+      "name": "vehiculeautre_nb",
+      "table": 0
+    },
+    {
+      "name": "count",
+      "table": 0
+    },
+    {
+      "name": "place",
+      "table": 0
+    },
+    {
+      "name": "catu",
+      "table": 0
+    },
+    {
+      "name": "grav",
+      "table": 0
+    },
+    {
+      "name": "sexe",
+      "table": 0
+    },
+    {
+      "name": "trajet",
+      "table": 0
+    },
+    {
+      "name": "secu",
+      "table": 0
+    },
+    {
+      "name": "locp",
+      "table": 0
+    },
+    {
+      "name": "actp",
+      "table": 0
+    },
+    {
+      "name": "etatp",
+      "table": 0
+    },
+    {
+      "name": "an_nais",
+      "table": 0
+    },
+    {
+      "name": "num_veh",
+      "table": 0
+    }
+  ]
+}
