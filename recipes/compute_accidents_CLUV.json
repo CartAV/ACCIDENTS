@@ -16,10 +16,6 @@
         {
           "ref": "vehicules",
           "deps": []
-        },
-        {
-          "ref": "usagers_prepared",
-          "deps": []
         }
       ]
     }
@@ -28,18 +24,18 @@
     "main": {
       "items": [
         {
-          "ref": "accidents_CLUV",
+          "ref": "accidents_CLV",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488882939820
+    "lastModifiedOn": 1488892950641
   },
   "creationTag": {
     "versionNumber": 0,
