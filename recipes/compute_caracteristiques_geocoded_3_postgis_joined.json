@@ -1,7 +1,12 @@
 {
-  "type": "join",
+  "type": "sql_query",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
+  "params": {
+    "allowMultipleConnections": false,
+    "displayExecutionPlan": true,
+    "skipPrerunValidate": false
+  },
   "customMeta": {
     "kv": {}
   },
@@ -31,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488882326147
+    "lastModifiedOn": 1488882326349
   },
   "creationTag": {
     "versionNumber": 0,
