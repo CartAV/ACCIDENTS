@@ -1,0 +1,69 @@
+{
+  "values": [
+    {
+      "min": false,
+      "max": false,
+      "last": false,
+      "count": false,
+      "sum2": false,
+      "column": "catu",
+      "sum": false,
+      "countDistinct": false,
+      "avg": false,
+      "first": false
+    },
+    {
+      "min": false,
+      "max": false,
+      "last": false,
+      "count": false,
+      "sum2": false,
+      "column": "grav",
+      "sum": false,
+      "countDistinct": false,
+      "avg": false,
+      "first": false
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": false,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "keys": [
+    {
+      "column": "Num_Acc"
+    }
+  ],
+  "postFilter": {
+    "enabled": false,
+    "distinct": false
+  },
+  "globalCount": true,
+  "preFilter": {
+    "enabled": false,
+    "distinct": false
+  },
+  "enlargeYourBits": true
+}
