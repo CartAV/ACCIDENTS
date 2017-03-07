@@ -16,6 +16,10 @@
         {
           "ref": "vehicules",
           "deps": []
+        },
+        {
+          "ref": "usagers_prepared",
+          "deps": []
         }
       ]
     }
@@ -31,11 +35,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488882444825
+    "lastModifiedOn": 1488882482456
   },
   "creationTag": {
     "versionNumber": 0,
