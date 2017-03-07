@@ -18,26 +18,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
+      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -76,226 +76,6 @@
       "type": "string"
     },
     {
-      "name": "mois_first",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "lum_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "agg_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "int_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "atm_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "col_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "adr_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "dep_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "date_first",
-      "table": 0,
-      "type": "date"
-    },
-    {
-      "name": "date_formated_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "heures_minutes_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "ANNEE_first",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "SEMAINE_first",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "LIBELLE_JOUR_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "HEURE_first",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "original_city_code_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "original_name_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "current_city_code_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "current_name_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "latitude_first",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "geo_type_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "longitude_first",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "geo_source_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "geo_score_first",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "geopoint_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "NOM_DEPT_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "NOM_REG_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "catr_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "voie_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "v1_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "v2_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "circ_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "nbv_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "pr_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "pr1_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "vosp_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "prof_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "plan_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "lartpc_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "larrout_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "surf_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "infra_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "situ_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "env1_first",
-      "table": 0,
-      "type": "string"
-    },
-    {
       "name": "voiture_nb",
       "table": 0,
       "type": "int"
@@ -324,11 +104,6 @@
       "name": "vehiculeautre_nb",
       "table": 0,
       "type": "int"
-    },
-    {
-      "name": "count",
-      "table": 0,
-      "type": "bigint"
     },
     {
       "name": "catu",
