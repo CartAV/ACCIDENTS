@@ -638,6 +638,28 @@
         },
         "sql": "/*select * from vehicules where Num_Acc\u003d200500000031*/\nselect * from usagers_prepared where Num_Acc\u003d200500000006\n\n",
         "expandedSql": "/*select * from vehicules where Num_Acc\u003d200500000031*/\nselect * from usagers_prepared where Num_Acc\u003d200500000006\n\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "BUiaJPcQO5ed",
+        "runOn": 1488896069843,
+        "runIn": 178,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "H6rL3LJLthPPpWxK",
+        "hash": "1c98977e9f7766b6edd3aabe7d94829e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "/*select * from vehicules where Num_Acc\u003d200500000031*/\nselect * from usagers_prepared where Num_Acc\u003d200500000032\n\n",
+        "expandedSql": "/*select * from vehicules where Num_Acc\u003d200500000031*/\nselect * from usagers_prepared where Num_Acc\u003d200500000032\n\n"
       }
     ]
   }
