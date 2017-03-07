@@ -555,10 +555,10 @@
         "mode": "SQL",
         "id": "jcr277CLF0M3",
         "runOn": 1488893552501,
-        "runIn": 155,
+        "runIn": 172,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "eDd5L7R2B6fJ6iFF",
         "hash": "c0e9bb49fea955ff5a0f3046286a4588",
         "querySettings": {
