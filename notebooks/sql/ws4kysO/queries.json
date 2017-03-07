@@ -506,6 +506,28 @@
         },
         "sql": "select * from vehicules where Num_Acc\u003d200500000001",
         "expandedSql": "select * from vehicules where Num_Acc\u003d200500000001"
+      },
+      {
+        "mode": "SQL",
+        "id": "aUxPYxm6vW4Q",
+        "runOn": 1488891496950,
+        "runIn": 194,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "KEtGUvprLVPzAo6D",
+        "hash": "55c044a0222a05e1762581e67f3cff80",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from accidents_uasgers where Num_Acc\u003d200500000001",
+        "expandedSql": "select * from accidents_uasgers where Num_Acc\u003d200500000001"
       }
     ]
   }
