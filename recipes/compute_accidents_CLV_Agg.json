@@ -10,7 +10,7 @@
     "main": {
       "items": [
         {
-          "ref": "vehicules",
+          "ref": "ACCIDENTS_BRUT.vehicules_vertica",
           "deps": []
         }
       ]
@@ -27,11 +27,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "grabenertr"
     },
-    "lastModifiedOn": 1488967771111
+    "lastModifiedOn": 1488983163882
   },
   "creationTag": {
     "versionNumber": 0,
