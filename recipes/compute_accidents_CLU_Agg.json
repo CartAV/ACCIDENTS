@@ -10,7 +10,7 @@
     "main": {
       "items": [
         {
-          "ref": "usagers_prepared",
+          "ref": "ACCIDENTS_BRUT.usagers_vertica",
           "deps": []
         }
       ]
@@ -27,11 +27,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "grabenertr"
     },
-    "lastModifiedOn": 1488967359558
+    "lastModifiedOn": 1488983137785
   },
   "creationTag": {
     "versionNumber": 0,
