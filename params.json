@@ -1,30 +1,85 @@
 {
+  "dashboardAuthorizations": {
+    "allAuthorized": false,
+    "authorizations": []
+  },
+  "exposedObjects": {
+    "objects": []
+  },
   "projectType": "REGULAR",
   "owner": "antoinefa",
   "permissions": [
     {
       "group": "eig",
-      "type": "ADMIN",
-      "runJob": false,
-      "downloadData": true
+      "admin": true,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false
     },
     {
       "group": "DSCR",
-      "type": "ANALYST_READWRITE",
-      "runJob": false,
-      "downloadData": true
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": true,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false
     }
   ],
   "tutorialProject": false,
   "settings": {
-    "flowAnchorSourcesAndSinks": true,
-    "exposedComputables": [],
+    "flowAnchorSourcesAndSinks": false,
     "gitCommitMode": "AUTO",
-    "disableAutomaticTriggers": false
+    "disableAutomaticTriggers": false,
+    "integrations": {
+      "integrations": []
+    },
+    "flowBuildSettings": {
+      "mergeSparkPipelines": false,
+      "pruneBeforeSparkPipelines": true
+    },
+    "limitsSettings": {
+      "memSampleBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "shakerMemTableBytes": {
+        "soft": -1,
+        "hard": -1
+      }
+    },
+    "relocationSettings": {
+      "sqlLikeRecipesInitializationMode": "RESOLVED_TABLE_REFERENCES"
+    },
+    "recipeEnginesPreferences": {
+      "forbiddenEngines": [],
+      "enginesPreferenceOrder": [],
+      "forbiddenByRecipeType": {},
+      "preferenceByRecipeType": {}
+    }
   },
   "name": "accidents corporels - geo",
+  "projectStatus": "In use",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "antoinefa"
+    },
+    "lastModifiedOn": 1488968302706
+  },
   "description": "Le projet vise à reproduire les traitements déjà effectués en python/panda.\nLes données sont issues de la sécurité routière, dans la version opendata (liens directs des données depuis le site etalab).\nLe projet vise également à offrir un exemple d\u0027usage des outils de préparation des données et de modélisation. \u003cbr\u003e\nStatistiques par accident : http://10.237.27.129/projects/ACCIDENTS/datasets/accidents/visualize/\n\u003cbr\u003e\npar usager \nhttp://10.237.27.129/projects/ACCIDENTS/datasets/accidents_par_usager/explore/",
   "shortDesc": "Données issues de l\u0027opendata etalab (BAAC)\nDataprep master\u003cbr\u003e\nstatistiques : http://10.237.27.129/projects/ACCIDENTS/datasets/accidents/visualize/",
+  "tags": [],
   "checklists": {
     "checklists": [
       {
@@ -118,7 +173,5 @@
         ]
       }
     ]
-  },
-  "tags": [],
-  "projectStatus": "In use"
+  }
 }
