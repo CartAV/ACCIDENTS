@@ -46,18 +46,18 @@
     "main": {
       "items": [
         {
-          "ref": "accidents_CLU_Agg_prepared",
+          "ref": "usagers_agg_prepared",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488967589099
+    "lastModifiedOn": 1488968018157
   },
   "creationTag": {
     "versionNumber": 0,
