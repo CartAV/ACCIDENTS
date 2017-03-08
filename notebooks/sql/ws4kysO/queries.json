@@ -841,10 +841,10 @@
         "mode": "SQL",
         "id": "Fb3LJcFJyhXX",
         "runOn": 1488992135878,
-        "runIn": 749,
+        "runIn": 57,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "kPJtvbONu8CvtPl1",
         "hash": "7866ed5150c4b8c11c39b9dc7c57ddd4",
         "querySettings": {
