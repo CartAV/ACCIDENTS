@@ -1,0 +1,296 @@
+{
+  "virtualInputs": [
+    {
+      "autoSelectColumns": false,
+      "index": 0
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 1
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 2
+    }
+  ],
+  "joins": [
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 1,
+      "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {
+          "table": 0
+        },
+        "enabled": false,
+        "strict": false,
+        "maxMatches": 0
+      },
+      "on": [
+        {
+          "maxDistance": 1,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "dep",
+            "table": 0
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "CODE_DEPT",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        }
+      ],
+      "type": "LEFT"
+    },
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 2,
+      "conditionsMode": "AND",
+      "rightLimit": {
+        "enabled": false,
+        "strict": false,
+        "maxMatches": 0
+      },
+      "on": [
+        {
+          "maxDistance": 0,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "Num_Acc",
+            "table": 0
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "Num_Acc",
+            "table": 2
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        }
+      ],
+      "type": "LEFT"
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL",
+      "inheritConf": "default"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "pipelineAllowStart": true,
+      "overwriteOutputSchema": true,
+      "readParams": {
+        "map": {}
+      },
+      "useGlobalMetastore": false
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true
+  },
+  "postFilter": {
+    "enabled": false,
+    "distinct": false
+  },
+  "enableAutoCastInJoinConditions": false,
+  "selectedColumns": [
+    {
+      "name": "Num_Acc",
+      "table": 0
+    },
+    {
+      "name": "mois",
+      "table": 0
+    },
+    {
+      "name": "lum",
+      "table": 0
+    },
+    {
+      "name": "agg",
+      "table": 0
+    },
+    {
+      "name": "int",
+      "table": 0
+    },
+    {
+      "name": "atm",
+      "table": 0
+    },
+    {
+      "name": "col",
+      "table": 0
+    },
+    {
+      "name": "adr",
+      "table": 0
+    },
+    {
+      "name": "dep",
+      "table": 0
+    },
+    {
+      "name": "date",
+      "table": 0
+    },
+    {
+      "name": "date_formated",
+      "table": 0
+    },
+    {
+      "name": "heures_minutes",
+      "table": 0
+    },
+    {
+      "name": "ANNEE",
+      "table": 0
+    },
+    {
+      "name": "SEMAINE",
+      "table": 0
+    },
+    {
+      "name": "LIBELLE_JOUR",
+      "table": 0
+    },
+    {
+      "name": "HEURE",
+      "table": 0
+    },
+    {
+      "name": "original_city_code",
+      "table": 0
+    },
+    {
+      "name": "original_name",
+      "table": 0
+    },
+    {
+      "name": "current_city_code",
+      "table": 0
+    },
+    {
+      "name": "current_name",
+      "table": 0
+    },
+    {
+      "name": "latitude",
+      "table": 0
+    },
+    {
+      "name": "geo_type",
+      "table": 0
+    },
+    {
+      "name": "longitude",
+      "table": 0
+    },
+    {
+      "name": "geo_source",
+      "table": 0
+    },
+    {
+      "name": "geo_score",
+      "table": 0
+    },
+    {
+      "name": "geopoint",
+      "table": 0
+    },
+    {
+      "name": "NOM_DEPT",
+      "table": 1
+    },
+    {
+      "name": "NOM_REG",
+      "table": 1
+    },
+    {
+      "name": "catr",
+      "table": 2
+    },
+    {
+      "name": "voie",
+      "table": 2
+    },
+    {
+      "name": "v1",
+      "table": 2
+    },
+    {
+      "name": "v2",
+      "table": 2
+    },
+    {
+      "name": "circ",
+      "table": 2
+    },
+    {
+      "name": "nbv",
+      "table": 2
+    },
+    {
+      "name": "pr",
+      "table": 2
+    },
+    {
+      "name": "pr1",
+      "table": 2
+    },
+    {
+      "name": "vosp",
+      "table": 2
+    },
+    {
+      "name": "prof",
+      "table": 2
+    },
+    {
+      "name": "plan",
+      "table": 2
+    },
+    {
+      "name": "lartpc",
+      "table": 2
+    },
+    {
+      "name": "larrout",
+      "table": 2
+    },
+    {
+      "name": "surf",
+      "table": 2
+    },
+    {
+      "name": "infra",
+      "table": 2
+    },
+    {
+      "name": "situ",
+      "table": 2
+    },
+    {
+      "name": "env1",
+      "table": 2
+    }
+  ]
+}

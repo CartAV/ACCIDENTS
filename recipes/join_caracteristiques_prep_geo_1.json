@@ -1,0 +1,55 @@
+{
+  "type": "join",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "caracateristiques_postgis_copy",
+          "deps": []
+        },
+        {
+          "ref": "DATAPREPOPENDATAGEO.departements_wgs84_prep",
+          "deps": []
+        },
+        {
+          "ref": "lieux_prepared",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "caracteristiques_prep_geo_joined2",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488966008496
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488966008496
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
