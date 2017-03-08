@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488968072006
+    "lastModifiedOn": 1488969179946
   },
   "creationTag": {
     "versionNumber": 0,
@@ -199,12 +199,6 @@
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
-      },
-      {
-        "name": "geopoint",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
       },
       {
         "name": "NOM_DEPT",
