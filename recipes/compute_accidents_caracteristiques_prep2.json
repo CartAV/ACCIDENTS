@@ -17,6 +17,10 @@
             "accidents_caracteristiques_prep1": {
               "repartition": 10,
               "cache": false
+            },
+            "ACCIDENTS_BRUT.caracteristiques_vertica": {
+              "repartition": 10,
+              "cache": false
             }
           }
         }
@@ -53,11 +57,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 40,
+    "versionNumber": 41,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488982732969
+    "lastModifiedOn": 1488982737626
   },
   "tags": [],
   "checklists": {
