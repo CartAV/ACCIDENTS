@@ -726,6 +726,28 @@
         },
         "sql": "/* select * from vehicules where Num_Acc\u003d201500050653 */\n/*select * from usagers_prepared where Num_Acc\u003d200500000032*/\n/*select * from \"accidents_cluv\" where Num_Acc\u003d201500050653*/\n\nselect Num_Acc, count(*) from usagers_prepared\n",
         "expandedSql": "/* select * from vehicules where Num_Acc\u003d201500050653 */\n/*select * from usagers_prepared where Num_Acc\u003d200500000032*/\n/*select * from \"accidents_cluv\" where Num_Acc\u003d201500050653*/\n\nselect Num_Acc, count(*) from usagers_prepared\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "K0hLLFgwdx24",
+        "runOn": 1488992054389,
+        "runIn": 48,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "TvrIJgeMpRFZcKrd",
+        "hash": "20457e14ef166b5ce4fe1cb824d20784",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "/* select * from vehicules where Num_Acc\u003d201500050653 */\n/*select * from usagers_prepared where Num_Acc\u003d200500000032*/\n/*select * from \"accidents_cluv\" where Num_Acc\u003d201500050653*/\n\nselect Num_Acc, count(*) from usagers_agg_prepared\n",
+        "expandedSql": "/* select * from vehicules where Num_Acc\u003d201500050653 */\n/*select * from usagers_prepared where Num_Acc\u003d200500000032*/\n/*select * from \"accidents_cluv\" where Num_Acc\u003d201500050653*/\n\nselect Num_Acc, count(*) from usagers_agg_prepared\n"
       }
     ]
   }
