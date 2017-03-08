@@ -21,12 +21,26 @@
     "creator_dauriame": {
       "color": "#afc277"
     },
-    "stats": {},
-    "s": {},
-    "creator_grabenertr": {},
-    "creator_chabouisfr": {},
-    "creator:antoinefa": {},
-    "creator:chabouisfr": {},
-    "creator:grabenertr": {}
+    "stats": {
+      "color": "#94be8e"
+    },
+    "s": {
+      "color": "#94be8e"
+    },
+    "creator_grabenertr": {
+      "color": "#a088bd"
+    },
+    "creator_chabouisfr": {
+      "color": "#a088bd"
+    },
+    "creator:antoinefa": {
+      "color": "#0f6d82"
+    },
+    "creator:chabouisfr": {
+      "color": "#90a8b7"
+    },
+    "creator:grabenertr": {
+      "color": "#123883"
+    }
   }
 }
