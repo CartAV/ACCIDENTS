@@ -37,18 +37,18 @@
   "name": "Default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "malaguttior"
     },
-    "lastModifiedOn": 1488969788931
+    "lastModifiedOn": 1488969788965
   },
   "creationTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "malaguttior"
     },
-    "lastModifiedOn": 1488969788931
+    "lastModifiedOn": 1488969788965
   },
   "tags": [],
   "checklists": {
