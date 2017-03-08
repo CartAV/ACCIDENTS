@@ -18,7 +18,7 @@
           "deps": []
         },
         {
-          "ref": "lieux_prepared",
+          "ref": "ACCIDENTS_BRUT.lieux_vertica",
           "deps": []
         }
       ]
@@ -35,11 +35,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488966858968
+    "lastModifiedOn": 1488982937982
   },
   "creationTag": {
     "versionNumber": 0,

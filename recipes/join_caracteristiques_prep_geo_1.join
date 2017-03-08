@@ -9,7 +9,6 @@
       "index": 1
     },
     {
-      "autoSelectColumns": false,
       "index": 2
     }
   ],
@@ -19,25 +18,6 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "on": [
-        {
-          "maxDistance": 1,
-          "column1": {
-            "name": "dep",
-            "table": 0
-          },
-          "caseInsensitive": false,
-          "type": "EQ",
-          "strict": false,
-          "column2": {
-            "name": "CODE_DEPT",
-            "table": 1
-          },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
-        }
-      ],
       "rightLimit": {
         "decisionColumn": {
           "table": 0
@@ -46,6 +26,25 @@
         "strict": false,
         "maxMatches": 0
       },
+      "on": [
+        {
+          "maxDistance": 1,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "dep",
+            "table": 0
+          },
+          "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
+          "column2": {
+            "name": "CODE_DEPT",
+            "table": 1
+          },
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
+        }
+      ],
       "type": "LEFT"
     },
     {
@@ -53,30 +52,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
-          "maxDistance": 1,
+          "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 2
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
-      "rightLimit": {
-        "enabled": false,
-        "strict": false,
-        "maxMatches": 0
-      },
       "type": "LEFT"
     }
   ],
@@ -115,7 +110,7 @@
     {
       "name": "Num_Acc",
       "table": 0,
-      "type": "bigint"
+      "type": "string"
     },
     {
       "name": "mois",
