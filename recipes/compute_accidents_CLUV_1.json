@@ -18,7 +18,7 @@
           "deps": []
         },
         {
-          "ref": "usagers_agg",
+          "ref": "usagers_agg_prepared",
           "deps": []
         }
       ]
@@ -35,11 +35,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488967918827
+    "lastModifiedOn": 1488968072205
   },
   "creationTag": {
     "versionNumber": 0,
