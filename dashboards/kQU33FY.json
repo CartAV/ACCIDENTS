@@ -1,0 +1,57 @@
+{
+  "pages": [
+    {
+      "id": "rTpz0Iy",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showXAxis": false,
+              "showYAxis": false,
+              "showLegend": false,
+              "showTooltips": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "NikLWSR",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImage": false
+          }
+        ]
+      },
+      "title": "First section",
+      "showTitle": false
+    }
+  ],
+  "owner": "admin",
+  "listed": true,
+  "name": "Default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "malaguttior"
+    },
+    "lastModifiedOn": 1488969788931
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "malaguttior"
+    },
+    "lastModifiedOn": 1488969788931
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
