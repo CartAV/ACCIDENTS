@@ -1,5 +1,11 @@
 {
   "type": "join",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
   "inputs": {
     "main": {
       "items": [
@@ -24,23 +30,15 @@
       ]
     }
   },
-  "neverRecomputeExistingPartitions": false,
-  "optionalDependencies": false,
-  "checklists": {
-    "checklists": []
+  "versionTag": {
+    "versionNumber": 16,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1488992728840
   },
   "tags": [],
-  "versionTag": {
-    "versionNumber": 15,
-    "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1487858404231
-  },
-  "customMeta": {
-    "kv": {}
-  },
-  "redispatchPartitioning": false
+  "checklists": {
+    "checklists": []
+  }
 }
