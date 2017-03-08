@@ -14,11 +14,11 @@
           "deps": []
         },
         {
-          "ref": "accidents_CLV_Agg",
+          "ref": "vehicules_agg",
           "deps": []
         },
         {
-          "ref": "accidents_CLU_Agg_prepared",
+          "ref": "usagers_agg",
           "deps": []
         }
       ]
@@ -35,11 +35,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488901454745
+    "lastModifiedOn": 1488967918827
   },
   "creationTag": {
     "versionNumber": 0,
