@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1488901454562
+    "lastModifiedOn": 1488967918585
   },
   "creationTag": {
     "versionNumber": 0,
@@ -358,39 +358,33 @@
       },
       {
         "name": "pietons_nb",
-        "type": "bigint",
+        "type": "int",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "indemne_nb",
-        "type": "bigint",
+        "type": "int",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "blesseleger_nb",
-        "type": "bigint",
+        "type": "int",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "hospitalise_nb",
-        "type": "bigint",
+        "type": "int",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "tue_nb",
-        "type": "bigint",
+        "type": "int",
         "timestampNoTzAsDate": false,
         "maxLength": -1
-      },
-      {
-        "name": "gravite_accident",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
       }
     ]
   },
