@@ -15,6 +15,9 @@
         "enabled": false,
         "distinct": false
       }
+    },
+    {
+      "index": 2
     }
   ],
   "joins": [
@@ -26,17 +29,44 @@
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
+            "table": 0
+          },
+          "caseInsensitive": false,
+          "type": "EQ",
+          "strict": false,
+          "column2": {
+            "name": "Num_Acc",
+            "table": 1
+          },
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
+        }
+      ],
+      "type": "LEFT"
+    },
+    {
+      "table1": 0,
+      "outerJoinOnTheLeft": true,
+      "table2": 2,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "on": [
+        {
+          "maxDistance": 1,
+          "caseInsensitive": false,
+          "column1": {
+            "name": "dep",
             "table": 0
           },
           "strict": false,
           "type": "EQ",
           "normalizeText": false,
           "column2": {
-            "name": "Num_Acc",
-            "table": 1
+            "name": "CODE_DEPT",
+            "table": 2
           },
           "dateDiffUnit": "DAY",
           "maxMatches": 1
@@ -302,6 +332,46 @@
     {
       "name": "env1",
       "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "lon",
+      "table": 2,
+      "type": "double"
+    },
+    {
+      "name": "X_CHF_LIEU",
+      "table": 2,
+      "type": "bigint"
+    },
+    {
+      "name": "Y_CHF_LIEU",
+      "table": 2,
+      "type": "bigint"
+    },
+    {
+      "name": "NOM_REG",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "name": "Y_CENTROID",
+      "table": 2,
+      "type": "bigint"
+    },
+    {
+      "name": "X_CENTROID",
+      "table": 2,
+      "type": "bigint"
+    },
+    {
+      "name": "lat",
+      "table": 2,
+      "type": "double"
+    },
+    {
+      "name": "chef_lieu_geo",
+      "table": 2,
       "type": "string"
     }
   ]
