@@ -3924,6 +3924,28 @@
         },
         "sql": "--select count(1), st_numgeometries(st_linemerge(the_geom)) as g from osm_routes_par_commune group by g\n--select * from osm_routes_par_commune where st_numgeometries(the_geom) \u003e 100\n--update osm_routes_par_commune set the_geom \u003d st_multi(the_geom) where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n--lect st_astext(the_geom) from osm_routes_par_commune where st_isempty(the_geom)\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/\nALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);",
         "expandedSql": "--select count(1), st_numgeometries(st_linemerge(the_geom)) as g from osm_routes_par_commune group by g\n--select * from osm_routes_par_commune where st_numgeometries(the_geom) \u003e 100\n--update osm_routes_par_commune set the_geom \u003d st_multi(the_geom) where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n--lect st_astext(the_geom) from osm_routes_par_commune where st_isempty(the_geom)\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/\nALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);"
+      },
+      {
+        "mode": "SQL",
+        "id": "j6pktjz5Nam4",
+        "runOn": 1489144318193,
+        "runIn": 25354,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "q7mzvmrkOOLfAzJB",
+        "hash": "0d08821224e87d1849f233a4c0c3d5bf",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--select count(1), st_numgeometries(st_linemerge(the_geom)) as g from osm_routes_par_commune group by g\n--select * from osm_routes_par_commune where st_numgeometries(the_geom) \u003e 100\n--update osm_routes_par_commune set the_geom \u003d st_multi(the_geom) where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n--lect st_astext(the_geom) from osm_routes_par_commune where st_isempty(the_geom)\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/\n--ALTER TABLE \"osm_routes_par_commune\"\n--\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);",
+        "expandedSql": "--select count(1), st_numgeometries(st_linemerge(the_geom)) as g from osm_routes_par_commune group by g\n--select * from osm_routes_par_commune where st_numgeometries(the_geom) \u003e 100\n--update osm_routes_par_commune set the_geom \u003d st_multi(the_geom) where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n--lect st_astext(the_geom) from osm_routes_par_commune where st_isempty(the_geom)\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/\n--ALTER TABLE \"osm_routes_par_commune\"\n--\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);"
       }
     ]
   }
