@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1488966737054
+    "lastModifiedOn": 1489162540773
   },
   "creationTag": {
     "versionNumber": 0,
@@ -52,7 +52,7 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "string",
+        "type": "bigint",
         "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -322,6 +322,12 @@
         "maxLength": -1
       },
       {
+        "name": "ban2_postcode",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "ban2_score",
         "type": "double",
         "timestampNoTzAsDate": false,
@@ -329,6 +335,12 @@
       },
       {
         "name": "ban2_type",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "nom_circonscription_police",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -388,16 +400,16 @@
         "maxLength": -1
       },
       {
-        "name": "geo_source",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
         "name": "geo_score",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
+      },
+      {
+        "name": "geo_source",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
       }
     ]
   },
