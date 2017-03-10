@@ -3638,6 +3638,28 @@
         },
         "sql": "select count(1), geometrytype(the_geom) as g from osm_routes_par_commune group by g\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/",
         "expandedSql": "select count(1), geometrytype(the_geom) as g from osm_routes_par_commune group by g\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/"
+      },
+      {
+        "mode": "SQL",
+        "id": "wSPbmmKgHdl7",
+        "runOn": 1489139880006,
+        "runIn": 27979,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "OyBYHmY7iCnGrQF4",
+        "hash": "5c34fcf35033362700c61f9d25f7f59a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--select count(1), geometrytype(the_geom) as g from osm_routes_par_commune group by g\nselect st_astext(the_geom) from osm_routes_par_commune where geometrytype(the_geom) \u003d \u0027GEOMETRYCOLLECTION\u0027\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/",
+        "expandedSql": "--select count(1), geometrytype(the_geom) as g from osm_routes_par_commune group by g\nselect st_astext(the_geom) from osm_routes_par_commune where geometrytype(the_geom) \u003d \u0027GEOMETRYCOLLECTION\u0027\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/"
       }
     ]
   }
