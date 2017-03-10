@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489163422144
+    "lastModifiedOn": 1489164638067
   },
   "creationTag": {
     "versionNumber": 0,
@@ -304,6 +304,24 @@
       },
       {
         "name": "env1",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "X_CHF_LIEU",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "Y_CHF_LIEU",
+        "type": "bigint",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "NOM_REG",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
