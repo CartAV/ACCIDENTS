@@ -3841,10 +3841,10 @@
         "mode": "SQL",
         "id": "oCRJIS8901xj",
         "runOn": 1489144105665,
-        "runIn": 39,
+        "runIn": 62,
         "runBy": "grabenertr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "mzhJtovEtotdM77f",
         "hash": "2f218dfbaede138167d164a1670cffd7",
         "querySettings": {
