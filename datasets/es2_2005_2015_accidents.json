@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "grabenertr"
     },
-    "lastModifiedOn": 1488901634149
+    "lastModifiedOn": 1489163738313
   },
   "creationTag": {
     "versionNumber": 0,
@@ -166,6 +166,12 @@
         "maxLength": 16200
       },
       {
+        "name": "nom_circonscription_police",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
         "name": "latitude",
         "type": "double",
         "timestampNoTzAsDate": false,
@@ -184,31 +190,13 @@
         "maxLength": -1
       },
       {
-        "name": "geo_source",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
         "name": "geo_score",
         "type": "double",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "geopoint",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "NOM_DEPT",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": 16200
-      },
-      {
-        "name": "NOM_REG",
+        "name": "geo_source",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
