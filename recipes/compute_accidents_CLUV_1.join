@@ -16,26 +16,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
+      "rightLimit": {},
       "type": "LEFT"
     },
     {
@@ -43,26 +43,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "Num_Acc",
             "table": 2
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
+      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -196,6 +196,11 @@
       "type": "string"
     },
     {
+      "name": "nom_circonscription_police",
+      "table": 0,
+      "type": "string"
+    },
+    {
       "name": "latitude",
       "table": 0,
       "type": "double"
@@ -211,22 +216,12 @@
       "type": "double"
     },
     {
-      "name": "geo_source",
-      "table": 0,
-      "type": "string"
-    },
-    {
       "name": "geo_score",
       "table": 0,
       "type": "double"
     },
     {
-      "name": "NOM_DEPT",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "NOM_REG",
+      "name": "geo_source",
       "table": 0,
       "type": "string"
     },
