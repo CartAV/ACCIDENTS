@@ -3726,6 +3726,28 @@
         },
         "sql": "select count(1), geometrytype(the_geom) as g from osm_routes_par_commune group by g\n--lect st_astext(the_geom) from osm_routes_par_commune where st_isempty(the_geom)\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/\n",
         "expandedSql": "select count(1), geometrytype(the_geom) as g from osm_routes_par_commune group by g\n--lect st_astext(the_geom) from osm_routes_par_commune where st_isempty(the_geom)\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "nB1y3mv55ENM",
+        "runOn": 1489141812657,
+        "runIn": 26990,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "lA2syNLEVzsiDwOx",
+        "hash": "961c6b98f40166c3f1d5f2fe7b9f34bd",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(1), st_numgeometries(the_geom) as g from osm_routes_par_commune group by g\n--lect st_astext(the_geom) from osm_routes_par_commune where st_isempty(the_geom)\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/\n",
+        "expandedSql": "select count(1), st_numgeometries(the_geom) as g from osm_routes_par_commune group by g\n--lect st_astext(the_geom) from osm_routes_par_commune where st_isempty(the_geom)\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/\n"
       }
     ]
   }
