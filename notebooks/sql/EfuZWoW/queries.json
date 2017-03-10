@@ -3616,6 +3616,28 @@
         },
         "sql": "select count(1), geometrytype(the_geom) from osm_routes_par_commune\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/",
         "expandedSql": "select count(1), geometrytype(the_geom) from osm_routes_par_commune\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/"
+      },
+      {
+        "mode": "SQL",
+        "id": "Ia00C8MvF3EA",
+        "runOn": 1489136203923,
+        "runIn": 54,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "bjzS9K7OaAAEDB2W",
+        "hash": "2562fb3019eca07df35f028b0b2b60d1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(1), geometrytype(the_geom) as g from osm_routes_par_commune group by g\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/",
+        "expandedSql": "select count(1), geometrytype(the_geom) as g from osm_routes_par_commune group by g\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/"
       }
     ]
   }
