@@ -3814,6 +3814,28 @@
         },
         "sql": "--select count(1), st_numgeometries(st_linemerge(the_geom)) as g from osm_routes_par_commune group by g\n--select * from osm_routes_par_commune where st_numgeometries(the_geom) \u003e 100\nupdate osm_routes_par_commune set the_geom \u003d st_multilinestring(the_geom) where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n--lect st_astext(the_geom) from osm_routes_par_commune where st_isempty(the_geom)\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/\n",
         "expandedSql": "--select count(1), st_numgeometries(st_linemerge(the_geom)) as g from osm_routes_par_commune group by g\n--select * from osm_routes_par_commune where st_numgeometries(the_geom) \u003e 100\nupdate osm_routes_par_commune set the_geom \u003d st_multilinestring(the_geom) where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n--lect st_astext(the_geom) from osm_routes_par_commune where st_isempty(the_geom)\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "godiIQ5t3v6B",
+        "runOn": 1489144099499,
+        "runIn": 52,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "D1xjuInZQ1vrRZYl",
+        "hash": "980953b78f041ef421b682d2593cc119",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--select count(1), st_numgeometries(st_linemerge(the_geom)) as g from osm_routes_par_commune group by g\n--select * from osm_routes_par_commune where st_numgeometries(the_geom) \u003e 100\nupdate osm_routes_par_commune set the_geom \u003d st_multilinestring(the_geom::geography(linestring) where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n--lect st_astext(the_geom) from osm_routes_par_commune where st_isempty(the_geom)\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/\n",
+        "expandedSql": "--select count(1), st_numgeometries(st_linemerge(the_geom)) as g from osm_routes_par_commune group by g\n--select * from osm_routes_par_commune where st_numgeometries(the_geom) \u003e 100\nupdate osm_routes_par_commune set the_geom \u003d st_multilinestring(the_geom::geography(linestring) where geometrytype(the_geom) \u003d \u0027LINESTRING\u0027\n--lect st_astext(the_geom) from osm_routes_par_commune where st_isempty(the_geom)\n\n/*ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);*/\n"
       }
     ]
   }
