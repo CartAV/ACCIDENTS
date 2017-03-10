@@ -3571,6 +3571,30 @@
         "sql": "--ALTER TABLE ign_routes_par_commune\n\t--ALTER COLUMN the_geom type geography(MultiLineString) USING the_geom::geography(MultiLineString, 4326)\n\n--select count(*), st_geometrytype(the_geom) as num from ign_commune_france group by num\n\nALTER TABLE \"ign_commune_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);",
         "expandedSql": "--ALTER TABLE ign_routes_par_commune\n\t--ALTER COLUMN the_geom type geography(MultiLineString) USING the_geom::geography(MultiLineString, 4326)\n\n--select count(*), st_geometrytype(the_geom) as num from ign_commune_france group by num\n\nALTER TABLE \"ign_commune_france\"\n\tALTER COLUMN the_geom type geography(MultiPolygon)\n\tUSING the_geom::geography(MultiPolygon);"
       }
+    ],
+    "ys8mi6mtl5i": [
+      {
+        "mode": "SQL",
+        "id": "xOanRacTyJ1b",
+        "runOn": 1489136164753,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "rBRLUYrRiTrmWuks",
+        "hash": "853d282cd9550a7b48b2ddd534ed289c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);",
+        "expandedSql": "ALTER TABLE \"osm_routes_par_commune\"\n\tALTER COLUMN the_geom type geography(MultiLineString) using the_geom::geography(MultiLineString);\n\nCREATE INDEX geom_osm_routes_com_idx ON \"osm_routes_par_commune\"\n\tUSING GIST(the_geom);"
+      }
     ]
   }
 }
