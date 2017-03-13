@@ -4256,6 +4256,28 @@
         },
         "sql": "select * from caracteristiques_prep3 where \"Num_Acc\" \u003d \u0027200600058736\u0027 \n\n--select * from geohisto_pg where insee_code \u003d \u002716097\u0027",
         "expandedSql": "select * from caracteristiques_prep3 where \"Num_Acc\" \u003d \u0027200600058736\u0027 \n\n--select * from geohisto_pg where insee_code \u003d \u002716097\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "dhD3r3jDQV1W",
+        "runOn": 1489400496293,
+        "runIn": 228,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "ZJuShA597sn0rIMS",
+        "hash": "8e26cb55c47196430e5164877b4a0f2f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from caracteristiques_prep3 where \"Num_Acc\" \u003d \u0027200600058736\u0027 \n\n--select * from geohisto_pg where insee_code \u003d \u002716097\u0027",
+        "expandedSql": "select * from caracteristiques_prep3 where \"Num_Acc\" \u003d \u0027200600058736\u0027 \n\n--select * from geohisto_pg where insee_code \u003d \u002716097\u0027"
       }
     ]
   }
