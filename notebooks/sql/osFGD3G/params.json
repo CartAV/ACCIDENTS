@@ -1,20 +1,6 @@
 {
-  "creator": "grabenertr",
-  "versionTag": {
-    "versionNumber": 8,
-    "lastModifiedBy": {
-      "login": "grabenertr",
-      "displayName": "Tristam Gräbener",
-      "email": "tristam.grabener@interieur.gouv.fr"
-    },
-    "lastModifiedOn": 1487845444226
-  },
   "connection": "datalabmaster",
   "name": "Bidouilles à Tristram",
-  "checklists": {
-    "checklists": []
-  },
-  "tags": [],
   "cells": [
     {
       "id": "96krh4o5fxg",
@@ -22,8 +8,11 @@
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
+        "inheritConf": "default",
         "extraConf": [],
-        "addDkuUdf": false
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
       }
     },
     {
@@ -33,8 +22,11 @@
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
+        "inheritConf": "default",
         "extraConf": [],
-        "addDkuUdf": false
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
       }
     },
     {
@@ -44,8 +36,11 @@
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
+        "inheritConf": "default",
         "extraConf": [],
-        "addDkuUdf": false
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
       }
     },
     {
@@ -54,8 +49,11 @@
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
+        "inheritConf": "default",
         "extraConf": [],
-        "addDkuUdf": false
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
       }
     },
     {
@@ -65,8 +63,11 @@
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
+        "inheritConf": "default",
         "extraConf": [],
-        "addDkuUdf": false
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
       }
     },
     {
@@ -75,8 +76,11 @@
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
+        "inheritConf": "default",
         "extraConf": [],
-        "addDkuUdf": false
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
       }
     },
     {
@@ -86,8 +90,11 @@
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
+        "inheritConf": "default",
         "extraConf": [],
-        "addDkuUdf": false
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
       }
     },
     {
@@ -97,8 +104,11 @@
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
+        "inheritConf": "default",
         "extraConf": [],
-        "addDkuUdf": false
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
       }
     },
     {
@@ -107,8 +117,11 @@
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
+        "inheritConf": "default",
         "extraConf": [],
-        "addDkuUdf": false
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
       }
     },
     {
@@ -117,8 +130,11 @@
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
+        "inheritConf": "default",
         "extraConf": [],
-        "addDkuUdf": false
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
       }
     },
     {
@@ -127,15 +143,37 @@
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
+        "inheritConf": "default",
         "extraConf": [],
-        "addDkuUdf": false
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    },
+    {
+      "id": "sqrsn4ydkr",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
       }
     }
   ],
   "automationLocal": false,
-  "createdBy": {},
-  "createdOn": 0,
-  "lastModifiedBy": {},
-  "lastModifiedOn": 0,
-  "allContributors": []
+  "versionTag": {
+    "versionNumber": 9,
+    "lastModifiedBy": {
+      "login": "grabenertr"
+    },
+    "lastModifiedOn": 1489395894340
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
 }
