@@ -4058,6 +4058,28 @@
         },
         "sql": "select * from caracteristiques_geocoded_3_postgis_joined   where \"Num_Acc\" \u003d \u0027200600058736\u0027 ",
         "expandedSql": "select * from caracteristiques_geocoded_3_postgis_joined   where \"Num_Acc\" \u003d \u0027200600058736\u0027 "
+      },
+      {
+        "mode": "SQL",
+        "id": "Vc1v1oDJTRtE",
+        "runOn": 1489396106030,
+        "runIn": 263,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "mNz1tkcmstilJVlJ",
+        "hash": "2b3f08f3ae2b564b6b5685bdcb9791f1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from caracteristiques_geocoded_3_postgis    where \"Num_Acc\" \u003d \u0027200600058736\u0027 ",
+        "expandedSql": "select * from caracteristiques_geocoded_3_postgis    where \"Num_Acc\" \u003d \u0027200600058736\u0027 "
       }
     ]
   }
