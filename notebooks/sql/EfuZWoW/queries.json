@@ -4102,6 +4102,28 @@
         },
         "sql": "select * from caracteristiques_prep3     where \"Num_Acc\" \u003d \u0027200600058736\u0027 ",
         "expandedSql": "select * from caracteristiques_prep3     where \"Num_Acc\" \u003d \u0027200600058736\u0027 "
+      },
+      {
+        "mode": "SQL",
+        "id": "8e1fVup4qaCZ",
+        "runOn": 1489396142668,
+        "runIn": 852,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "twB0AngiaeubzgSL",
+        "hash": "ed7edee0c327e4a7993a370931a85639",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from caracteristiques_prep2      where \"Num_Acc\" \u003d \u0027200600058736\u0027 ",
+        "expandedSql": "select * from caracteristiques_prep2      where \"Num_Acc\" \u003d \u0027200600058736\u0027 "
       }
     ]
   }
