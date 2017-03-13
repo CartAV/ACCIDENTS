@@ -11506,6 +11506,28 @@
         },
         "sql": "select * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027200600058736\u0027 ",
         "expandedSql": "select * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027200600058736\u0027 "
+      },
+      {
+        "mode": "SQL",
+        "id": "Fvx2k4rFGkOz",
+        "runOn": 1489396004767,
+        "runIn": 118,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "VL564T3dDlFW6uTC",
+        "hash": "28775c5eaf30bcb67e5c0d81ae15d1f1",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--select * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027200600058736\u0027 \nselect * from \"caracateristiques_postgis_copy \" where \"Num_Acc\" \u003d \u0027200600058736\u0027 ",
+        "expandedSql": "--select * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027200600058736\u0027 \nselect * from \"caracateristiques_postgis_copy \" where \"Num_Acc\" \u003d \u0027200600058736\u0027 "
       }
     ]
   }
