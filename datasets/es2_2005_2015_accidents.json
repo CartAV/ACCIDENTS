@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489164721472
+    "lastModifiedOn": 1490108226400
   },
   "creationTag": {
     "versionNumber": 0,
@@ -47,7 +47,7 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -197,6 +197,12 @@
       },
       {
         "name": "geo_source",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "num_route_or_id",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
