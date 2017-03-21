@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1489162916570
+    "lastModifiedOn": 1490108006505
   },
   "creationTag": {
     "versionNumber": 0,
@@ -52,7 +52,7 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "string",
+        "type": "bigint",
         "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
@@ -410,6 +410,30 @@
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
+      },
+      {
+        "name": "the_geom",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "INSEE_COM",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "num_route_or_id",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": 16200
+      },
+      {
+        "name": "distance",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
       }
     ]
   },
