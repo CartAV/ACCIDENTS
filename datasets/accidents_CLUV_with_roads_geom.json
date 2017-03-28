@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1490706239225
+    "lastModifiedOn": 1490706360551
   },
   "creationTag": {
     "versionNumber": 0,
@@ -401,18 +401,6 @@
       },
       {
         "name": "gravite_accident",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "the_geom",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "INSEE_COM",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
