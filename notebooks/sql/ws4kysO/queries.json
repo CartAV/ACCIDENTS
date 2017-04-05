@@ -990,6 +990,28 @@
         },
         "sql": "/* select * from vehicules where Num_Acc\u003d201500050653 */\n/*select * from usagers_prepared where Num_Acc\u003d200500000032*/\n/*select * from \"accidents_cluv\" where Num_Acc\u003d201500050653*/\n\nselect * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027200600058736\u0027",
         "expandedSql": "/* select * from vehicules where Num_Acc\u003d201500050653 */\n/*select * from usagers_prepared where Num_Acc\u003d200500000032*/\n/*select * from \"accidents_cluv\" where Num_Acc\u003d201500050653*/\n\nselect * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027200600058736\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "b10hPB6UaGzs",
+        "runOn": 1491403972192,
+        "runIn": 98,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Nt9QCtcSAf8neGcS",
+        "hash": "1c791e2b98caf43f3a9c3d94ca8bb537",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "/* select * from vehicules where Num_Acc\u003d201500050653 */\n/*select * from usagers_prepared where Num_Acc\u003d200500000032*/\n/*select * from \"accidents_cluv\" where Num_Acc\u003d201500050653*/\n\nselect * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027201500001080\u0027",
+        "expandedSql": "/* select * from vehicules where Num_Acc\u003d201500050653 */\n/*select * from usagers_prepared where Num_Acc\u003d200500000032*/\n/*select * from \"accidents_cluv\" where Num_Acc\u003d201500050653*/\n\nselect * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027201500001080\u0027"
       }
     ]
   }
