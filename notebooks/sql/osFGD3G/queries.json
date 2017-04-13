@@ -11595,6 +11595,30 @@
         "sql": "select * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027201500013719\u0027 \n--select * from \"caracateristiques_postgis_copy\" where \"Num_Acc\" \u003d \u0027200600058736\u0027 ",
         "expandedSql": "select * from \"caracteristiques_prep_geo_joined2\" where \"Num_Acc\" \u003d \u0027201500013719\u0027 \n--select * from \"caracateristiques_postgis_copy\" where \"Num_Acc\" \u003d \u0027200600058736\u0027 "
       }
+    ],
+    "bd5wy2aeti2bbirp4oqen4s4i": [
+      {
+        "mode": "SQL",
+        "id": "svaeZYgR48EM",
+        "runOn": 1492095691294,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "plJzlwpnvNqVXMkW",
+        "hash": "2d56acb0be53bace34be09578eaa45be",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"vehicules_agg\" where \"Num_Acc\" \u003d 201500028308",
+        "expandedSql": "select * from \"vehicules_agg\" where \"Num_Acc\" \u003d 201500028308"
+      }
     ]
   }
 }
