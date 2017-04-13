@@ -11601,10 +11601,10 @@
         "mode": "SQL",
         "id": "svaeZYgR48EM",
         "runOn": 1492095691294,
-        "runIn": -1,
+        "runIn": 166,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "plJzlwpnvNqVXMkW",
         "hash": "2d56acb0be53bace34be09578eaa45be",
         "querySettings": {
