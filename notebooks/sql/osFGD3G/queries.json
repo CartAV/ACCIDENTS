@@ -11618,6 +11618,28 @@
         },
         "sql": "select * from \"vehicules_agg\" where \"Num_Acc\" \u003d 201500028308",
         "expandedSql": "select * from \"vehicules_agg\" where \"Num_Acc\" \u003d 201500028308"
+      },
+      {
+        "mode": "SQL",
+        "id": "BQgczgF3MWLs",
+        "runOn": 1492095717218,
+        "runIn": 166,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "xsgMUIZPIacTWzzW",
+        "hash": "7e9b54be5f22d008a480b712b0773671",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"vehicules_vertica\" where \"Num_Acc\" \u003d 201500028308",
+        "expandedSql": "select * from \"vehicules_vertica\" where \"Num_Acc\" \u003d 201500028308"
       }
     ]
   }
