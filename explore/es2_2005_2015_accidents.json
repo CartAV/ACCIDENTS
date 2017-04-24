@@ -73,6 +73,41 @@
             "empty": true
           }
         }
+      },
+      {
+        "column": "dep",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "dep",
+          "columnType": "NUMERICAL",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "75": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "dep",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "dep",
+          "params": {
+            "type": "LongMeaning",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
       }
     ],
     "previewMode": "ALL_ROWS"
