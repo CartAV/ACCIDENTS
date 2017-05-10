@@ -726,6 +726,28 @@
         },
         "sql": "Select *from \"accidents_cluv\"\nwhere tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\nand (geo_score \u003c\u003d 0.5 or geo_type not in (\u0027street\u0027, \u0027housenumber\u0027, \u0027unknown\u0027))\n-- group by geo_source, geo_type",
         "expandedSql": "Select *from \"accidents_cluv\"\nwhere tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\nand (geo_score \u003c\u003d 0.5 or geo_type not in (\u0027street\u0027, \u0027housenumber\u0027, \u0027unknown\u0027))\n-- group by geo_source, geo_type"
+      },
+      {
+        "mode": "SQL",
+        "id": "x2Ua90L1zUzj",
+        "runOn": 1494429127213,
+        "runIn": 677,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "PdsLrNw1tmdbuk65",
+        "hash": "8d5a936e2420fea535fde2548a1eac00",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "Select *from \"accidents_cluv\"\nwhere tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\nand (geo_score \u003c 0.5 or geo_type not in (\u0027street\u0027, \u0027housenumber\u0027, \u0027unknown\u0027))\n-- group by geo_source, geo_type",
+        "expandedSql": "Select *from \"accidents_cluv\"\nwhere tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\nand (geo_score \u003c 0.5 or geo_type not in (\u0027street\u0027, \u0027housenumber\u0027, \u0027unknown\u0027))\n-- group by geo_source, geo_type"
       }
     ],
     "qr7fn2546y8": [
