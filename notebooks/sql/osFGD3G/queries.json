@@ -643,10 +643,10 @@
         "mode": "SQL",
         "id": "pIGKT5ZS6AVI",
         "runOn": 1494429030134,
-        "runIn": 56,
+        "runIn": 105,
         "runBy": "grabenertr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "lGDEBw8XFpmtf7Pe",
         "hash": "c97ed2140bfbdbfba6984e1d304f6035",
         "querySettings": {
