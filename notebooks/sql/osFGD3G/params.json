@@ -5,6 +5,7 @@
     {
       "id": "96krh4o5fxg",
       "type": "QUERY",
+      "name": "Accidents mortels",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -179,11 +180,11 @@
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1492095661474
+    "lastModifiedOn": 1494428455780
   },
   "tags": [],
   "checklists": {
