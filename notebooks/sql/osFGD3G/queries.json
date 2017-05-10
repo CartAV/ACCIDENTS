@@ -264,6 +264,28 @@
         },
         "sql": "--select distinct(gps), count(*) from accidents_caracteristiques group by gps\nupdate  geocoded_by_concat\nset long \u003d ac.long, lat \u003d ac.lat\nfrom geocodage_quali as ac\nwhere geocoded_by_concat.Num_Acc \u003d ac.Num_Acc\n\n--select * from accidents_caracteristiques where Num_Acc \u003d 200500000001",
         "expandedSql": "--select distinct(gps), count(*) from accidents_caracteristiques group by gps\nupdate  geocoded_by_concat\nset long \u003d ac.long, lat \u003d ac.lat\nfrom geocodage_quali as ac\nwhere geocoded_by_concat.Num_Acc \u003d ac.Num_Acc\n\n--select * from accidents_caracteristiques where Num_Acc \u003d 200500000001"
+      },
+      {
+        "mode": "SQL",
+        "id": "4F31IUzy7Z2b",
+        "runOn": 1494428498443,
+        "runIn": 7134,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "ZB82mSY5q0nL7PN9",
+        "hash": "8e8f3c86a045dcf7507e57ab0c37d509",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "Select count(*) from \"accidents_cluv\"\nwhere tue_nb \u003e 0",
+        "expandedSql": "Select count(*) from \"accidents_cluv\"\nwhere tue_nb \u003e 0"
       }
     ],
     "qr7fn2546y8": [
