@@ -836,6 +836,28 @@
         },
         "sql": "Select \ncount(*) from \"accidents_cluv\" where adr is null and tue_nb \u003e 0\n-- where tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\n--and (geo_score \u003c 0.5 or geo_type not in (\u0027street\u0027, \u0027housenumber\u0027, \u0027unknown\u0027))\n-- group by geo_source, geo_type",
         "expandedSql": "Select \ncount(*) from \"accidents_cluv\" where adr is null and tue_nb \u003e 0\n-- where tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\n--and (geo_score \u003c 0.5 or geo_type not in (\u0027street\u0027, \u0027housenumber\u0027, \u0027unknown\u0027))\n-- group by geo_source, geo_type"
+      },
+      {
+        "mode": "SQL",
+        "id": "4gpu1fsGQF9t",
+        "runOn": 1494429386706,
+        "runIn": 90,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "RQPwUlLtdN8tgKKO",
+        "hash": "afa6b6d62821bf4e5730f8d0e88d6cc2",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "Select count(*) from \"accidents_cluv\" where adr is null and tue_nb \u003e 0\nand longitude is null\n-- where tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\n--and (geo_score \u003c 0.5 or geo_type not in (\u0027street\u0027, \u0027housenumber\u0027, \u0027unknown\u0027))\n-- group by geo_source, geo_type",
+        "expandedSql": "Select count(*) from \"accidents_cluv\" where adr is null and tue_nb \u003e 0\nand longitude is null\n-- where tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\n--and (geo_score \u003c 0.5 or geo_type not in (\u0027street\u0027, \u0027housenumber\u0027, \u0027unknown\u0027))\n-- group by geo_source, geo_type"
       }
     ],
     "qr7fn2546y8": [
