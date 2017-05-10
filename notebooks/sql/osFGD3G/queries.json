@@ -286,6 +286,28 @@
         },
         "sql": "Select count(*) from \"accidents_cluv\"\nwhere tue_nb \u003e 0",
         "expandedSql": "Select count(*) from \"accidents_cluv\"\nwhere tue_nb \u003e 0"
+      },
+      {
+        "mode": "SQL",
+        "id": "OGo4NPI2I6k1",
+        "runOn": 1494428524679,
+        "runIn": 822,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "RATdCUtXgx8I47al",
+        "hash": "7cf254db0a068b0fd78d565fad784f59",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "Select count(*) from \"accidents_cluv\"\nwhere tue_nb \u003e 0 or hospitalise_nb \u003e 0",
+        "expandedSql": "Select count(*) from \"accidents_cluv\"\nwhere tue_nb \u003e 0 or hospitalise_nb \u003e 0"
       }
     ],
     "qr7fn2546y8": [
