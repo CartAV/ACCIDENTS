@@ -550,6 +550,28 @@
         },
         "sql": "Select count(*), geo_source from \"accidents_cluv\"\nwhere tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\nand geo_score \u003c 0.5\ngroup by geo_source",
         "expandedSql": "Select count(*), geo_source from \"accidents_cluv\"\nwhere tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\nand geo_score \u003c 0.5\ngroup by geo_source"
+      },
+      {
+        "mode": "SQL",
+        "id": "ysUKSy7JGm48",
+        "runOn": 1494428753882,
+        "runIn": 68,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "mNEHmkIKeeFzjMy2",
+        "hash": "93af9278ffdb3c052cd258650ee3e02a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "Select count(*), geo_source from \"accidents_cluv\"\nwhere tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\nand geo_score is null\ngroup by geo_source",
+        "expandedSql": "Select count(*), geo_source from \"accidents_cluv\"\nwhere tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\nand geo_score is null\ngroup by geo_source"
       }
     ],
     "qr7fn2546y8": [
