@@ -616,6 +616,28 @@
         },
         "sql": "Select count(*), geo_source from \"accidents_cluv\"\nwhere tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\nand geo_score \u003c\u003d 0.5\ngroup by geo_source",
         "expandedSql": "Select count(*), geo_source from \"accidents_cluv\"\nwhere tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\nand geo_score \u003c\u003d 0.5\ngroup by geo_source"
+      },
+      {
+        "mode": "SQL",
+        "id": "Hmj1HRW9Qojz",
+        "runOn": 1494429026074,
+        "runIn": 86,
+        "runBy": "grabenertr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Z3VPZmcrVPvDF5LG",
+        "hash": "b08aa7fbc175161fccaf087a602df0d3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "Select count(*), geo_source from \"accidents_cluv\"\nwhere tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\nand (geo_score \u003c\u003d 0.5 or geo_type not in (\u0027street\u0027, \u0027housenumber\u0027)\ngroup by geo_source",
+        "expandedSql": "Select count(*), geo_source from \"accidents_cluv\"\nwhere tue_nb \u003e 0 -- or hospitalise_nb \u003e 0\nand (geo_score \u003c\u003d 0.5 or geo_type not in (\u0027street\u0027, \u0027housenumber\u0027)\ngroup by geo_source"
       }
     ],
     "qr7fn2546y8": [
