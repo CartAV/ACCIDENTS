@@ -5,7 +5,7 @@
     {
       "id": "96krh4o5fxg",
       "type": "QUERY",
-      "name": "Accidents mortels",
+      "name": "Accidents mortels non géocodés",
       "querySettings": {
         "addLimitToStatement": true,
         "statementsOutOfTransaction": false,
@@ -184,7 +184,7 @@
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1494428455780
+    "lastModifiedOn": 1494428468221
   },
   "tags": [],
   "checklists": {
