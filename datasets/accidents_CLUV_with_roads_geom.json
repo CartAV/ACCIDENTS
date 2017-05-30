@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1496157848578
+    "lastModifiedOn": 1496157853478
   },
   "creationTag": {
     "versionNumber": 0,
@@ -356,6 +356,7 @@
       {
         "name": "velo_nb",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
