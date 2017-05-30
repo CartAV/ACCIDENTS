@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1496154649534
+    "lastModifiedOn": 1496155631637
   },
   "creationTag": {
     "versionNumber": 0,
@@ -48,7 +48,7 @@
     "readColsWithUnknownTzAsDates": false
   },
   "schema": {
-    "userModified": false,
+    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
@@ -341,6 +341,7 @@
       {
         "name": "voiture_nb",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
