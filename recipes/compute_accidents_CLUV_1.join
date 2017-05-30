@@ -4,10 +4,10 @@
       "index": 0
     },
     {
-      "index": 1
+      "index": 2
     },
     {
-      "index": 2
+      "index": 1
     }
   ],
   "joins": [
@@ -16,26 +16,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     },
     {
@@ -43,26 +43,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 2
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -338,27 +338,27 @@
     {
       "name": "voiture_nb",
       "table": 1,
-      "type": "int"
+      "type": "string"
     },
     {
       "name": "deuxrouesmotorises_nb",
       "table": 1,
-      "type": "int"
+      "type": "string"
     },
     {
       "name": "velo_nb",
       "table": 1,
-      "type": "int"
+      "type": "string"
     },
     {
       "name": "poidslourd_nb",
       "table": 1,
-      "type": "int"
+      "type": "string"
     },
     {
       "name": "vehiculeautre_nb",
       "table": 1,
-      "type": "int"
+      "type": "string"
     },
     {
       "name": "pietons_nb",

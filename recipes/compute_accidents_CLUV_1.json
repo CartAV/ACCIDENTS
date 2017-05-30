@@ -14,11 +14,11 @@
           "deps": []
         },
         {
-          "ref": "vehicules_agg",
+          "ref": "usagers_agg_prepared",
           "deps": []
         },
         {
-          "ref": "usagers_agg_prepared",
+          "ref": "vehicules_agg_prepared",
           "deps": []
         }
       ]
@@ -35,11 +35,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1496153957891
+    "lastModifiedOn": 1496154649814
   },
   "creationTag": {
     "versionNumber": 0,
