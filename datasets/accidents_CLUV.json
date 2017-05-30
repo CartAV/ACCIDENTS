@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1495632176946
+    "lastModifiedOn": 1496153957658
   },
   "creationTag": {
     "versionNumber": 0,
@@ -340,12 +340,6 @@
       },
       {
         "name": "voiture_nb",
-        "type": "int",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "utilitaire_nb",
         "type": "int",
         "timestampNoTzAsDate": false,
         "maxLength": -1
