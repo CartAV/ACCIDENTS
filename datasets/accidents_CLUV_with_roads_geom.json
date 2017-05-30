@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1496153986306
+    "lastModifiedOn": 1496155691032
   },
   "creationTag": {
     "versionNumber": 0,
@@ -341,31 +341,31 @@
       },
       {
         "name": "voiture_nb",
-        "type": "int",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "deuxrouesmotorises_nb",
-        "type": "int",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "velo_nb",
-        "type": "int",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "poidslourd_nb",
-        "type": "int",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
         "name": "vehiculeautre_nb",
-        "type": "int",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
