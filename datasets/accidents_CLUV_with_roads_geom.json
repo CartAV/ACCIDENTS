@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1496157853478
+    "lastModifiedOn": 1496157858735
   },
   "creationTag": {
     "versionNumber": 0,
@@ -363,6 +363,7 @@
       {
         "name": "poidslourd_nb",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
