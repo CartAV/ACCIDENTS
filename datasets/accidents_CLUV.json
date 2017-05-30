@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1496155631637
+    "lastModifiedOn": 1496155637639
   },
   "creationTag": {
     "versionNumber": 0,
@@ -348,6 +348,7 @@
       {
         "name": "deuxrouesmotorises_nb",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
