@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1496155650712
+    "lastModifiedOn": 1496155654661
   },
   "creationTag": {
     "versionNumber": 0,
@@ -376,6 +376,7 @@
       {
         "name": "pietons_nb",
         "type": "bigint",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
