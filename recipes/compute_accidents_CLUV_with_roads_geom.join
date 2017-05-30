@@ -23,34 +23,31 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {
-        "decisionColumn": {}
-      },
       "on": [
         {
           "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "num_route_or_id",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "num_route_or_id",
             "table": 1
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         },
         {
           "maxDistance": 1,
-          "caseInsensitive": true,
           "column1": {
             "name": "current_city_code",
             "table": 0
           },
+          "caseInsensitive": true,
           "type": "EQ",
           "column2": {
             "name": "INSEE_COM",
@@ -58,6 +55,9 @@
           }
         }
       ],
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT"
     }
   ],
@@ -333,27 +333,27 @@
     {
       "name": "voiture_nb",
       "table": 0,
-      "type": "int"
+      "type": "string"
     },
     {
       "name": "deuxrouesmotorises_nb",
       "table": 0,
-      "type": "int"
+      "type": "string"
     },
     {
       "name": "velo_nb",
       "table": 0,
-      "type": "int"
+      "type": "string"
     },
     {
       "name": "poidslourd_nb",
       "table": 0,
-      "type": "int"
+      "type": "string"
     },
     {
       "name": "vehiculeautre_nb",
       "table": 0,
-      "type": "int"
+      "type": "string"
     },
     {
       "name": "pietons_nb",
