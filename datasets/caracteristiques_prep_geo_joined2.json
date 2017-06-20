@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "grabenertr"
     },
-    "lastModifiedOn": 1495632124142
+    "lastModifiedOn": 1497953384137
   },
   "creationTag": {
     "versionNumber": 0,
@@ -50,7 +50,7 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -217,16 +217,16 @@
         "maxLength": -1
       },
       {
-        "name": "geo_score",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "geo_source",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
+      },
+      {
+        "name": "geo_score",
+        "type": "double",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
       },
       {
         "name": "num_route_or_id",
