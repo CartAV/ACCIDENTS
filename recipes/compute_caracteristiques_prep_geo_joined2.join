@@ -1,6 +1,9 @@
 {
   "virtualInputs": [
     {
+      "index": 2
+    },
+    {
       "autoSelectColumns": false,
       "index": 0,
       "preFilter": {
@@ -9,15 +12,7 @@
       }
     },
     {
-      "autoSelectColumns": false,
-      "index": 1,
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
-    },
-    {
-      "index": 2
+      "index": 1
     }
   ],
   "joins": [
@@ -29,20 +24,20 @@
       "on": [
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
       "type": "LEFT"
@@ -52,26 +47,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "maxDistance": 1,
-          "caseInsensitive": false,
           "column1": {
             "name": "dep",
             "table": 0
           },
-          "strict": false,
+          "caseInsensitive": false,
           "type": "EQ",
-          "normalizeText": false,
+          "strict": false,
           "column2": {
             "name": "CODE_DEPT",
             "table": 2
           },
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "normalizeText": false,
+          "maxMatches": 1,
+          "dateDiffUnit": "DAY"
         }
       ],
+      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -245,14 +240,14 @@
       "type": "double"
     },
     {
-      "name": "geo_score",
-      "table": 0,
-      "type": "double"
-    },
-    {
       "name": "geo_source",
       "table": 0,
       "type": "string"
+    },
+    {
+      "name": "geo_score",
+      "table": 0,
+      "type": "double"
     },
     {
       "name": "num_route_or_id",
