@@ -10,15 +10,15 @@
     "main": {
       "items": [
         {
-          "ref": "caracteristiques_prep_geo_joined2",
-          "deps": []
-        },
-        {
           "ref": "usagers_agg_prepared",
           "deps": []
         },
         {
           "ref": "vehicules_agg_prepared",
+          "deps": []
+        },
+        {
+          "ref": "caracteristiques_prep_geo_joined2_pg",
           "deps": []
         }
       ]
@@ -35,11 +35,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1497960459535
+    "lastModifiedOn": 1497965502904
   },
   "creationTag": {
     "versionNumber": 0,
