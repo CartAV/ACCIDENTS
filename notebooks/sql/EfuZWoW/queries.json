@@ -4324,6 +4324,28 @@
         },
         "sql": "select * from \"accidents_cluv_with_roads_geom\" where \"Num_Acc\"\u003d201500037852",
         "expandedSql": "select * from \"accidents_cluv_with_roads_geom\" where \"Num_Acc\"\u003d201500037852"
+      },
+      {
+        "mode": "SQL",
+        "id": "aAIIgnoc5jA6",
+        "runOn": 1498572280493,
+        "runIn": 47,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "EdHe1sBVvIKkP7G1",
+        "hash": "57ead28d210a48ac04df0f71875e893b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"accidents_cluv_with_roads_geom\" where \"Num_Acc\"\u003d\u0027201500037852\u0027",
+        "expandedSql": "select * from \"accidents_cluv_with_roads_geom\" where \"Num_Acc\"\u003d\u0027201500037852\u0027"
       }
     ]
   }
