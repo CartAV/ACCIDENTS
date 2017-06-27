@@ -4301,6 +4301,30 @@
         "sql": "select * from caracteristiques_postgis where \"Num_Acc\" \u003d \u0027200600058736\u0027 \n\n--select * from geohisto_pg where insee_code \u003d \u002716097\u0027",
         "expandedSql": "select * from caracteristiques_postgis where \"Num_Acc\" \u003d \u0027200600058736\u0027 \n\n--select * from geohisto_pg where insee_code \u003d \u002716097\u0027"
       }
+    ],
+    "1vywiohtpi5": [
+      {
+        "mode": "SQL",
+        "id": "hwUNfIp7rc4E",
+        "runOn": 1498572269358,
+        "runIn": -1,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "c3Wg4C850pkLPLIp",
+        "hash": "30a9e366e88cb91401166867843e4fab",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"accidents_cluv_with_roads_geom\" where \"Num_Acc\"\u003d201500037852",
+        "expandedSql": "select * from \"accidents_cluv_with_roads_geom\" where \"Num_Acc\"\u003d201500037852"
+      }
     ]
   }
 }
