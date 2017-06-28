@@ -4390,6 +4390,28 @@
         },
         "sql": "select count(*) from \"accidents_cluv_with_roads_geom\" where \"ANNEE\" \u003d 2016",
         "expandedSql": "select count(*) from \"accidents_cluv_with_roads_geom\" where \"ANNEE\" \u003d 2016"
+      },
+      {
+        "mode": "SQL",
+        "id": "IKPFFIPAviRW",
+        "runOn": 1498652664354,
+        "runIn": 529,
+        "runBy": "grabenertr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "NCQKjigMYwgBeceK",
+        "hash": "976e53706d33e5b681afe4258e3ff800",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracateristiques_postgis\" where \"ANNEE\" \u003d 2016",
+        "expandedSql": "select count(*) from \"caracateristiques_postgis\" where \"ANNEE\" \u003d 2016"
       }
     ]
   }
