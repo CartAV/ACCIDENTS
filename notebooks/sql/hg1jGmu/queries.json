@@ -66,6 +66,28 @@
         },
         "sql": "select * from \"accidents_cluv_with_roads_geom\" where \"dep\"\u003d\u002777\u0027",
         "expandedSql": "select * from \"accidents_cluv_with_roads_geom\" where \"dep\"\u003d\u002777\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "HsdliKSWD7IV",
+        "runOn": 1499248601535,
+        "runIn": 195,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "X86EKMG0PlBXjU2e",
+        "hash": "def4fdf9b7abeffe2152a8297659ed89",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"accidents_cluv_with_roads_geom\" where \"dep\"\u003d\u002777\u0027 and \"adr\" like \u0027autoroute\u0027",
+        "expandedSql": "select * from \"accidents_cluv_with_roads_geom\" where \"dep\"\u003d\u002777\u0027 and \"adr\" like \u0027autoroute\u0027"
       }
     ]
   }
