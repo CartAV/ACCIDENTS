@@ -244,6 +244,28 @@
         },
         "sql": "select * from \"accidents_cluv_with_roads_geom\" where \"adr\" like \u0027%A6%\u0027",
         "expandedSql": "select * from \"accidents_cluv_with_roads_geom\" where \"adr\" like \u0027%A6%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "09IZAsjsqYWn",
+        "runOn": 1499267899662,
+        "runIn": 195,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "sOXZ2VOc5Dllh0FH",
+        "hash": "80270cc8928716fa2189a21818daa670",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*), catr from \"accidents_cluv_with_roads_geom\" group by \"catr\" order by count desc",
+        "expandedSql": "select count(*), catr from \"accidents_cluv_with_roads_geom\" group by \"catr\" order by count desc"
       }
     ]
   }
