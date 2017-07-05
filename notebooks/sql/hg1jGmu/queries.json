@@ -176,6 +176,28 @@
         },
         "sql": "select count(*), voie from \"accidents_cluv_with_roads_geom\" where \"adr\" like \u0027%A104%\u0027 group by \"voie\";",
         "expandedSql": "select count(*), voie from \"accidents_cluv_with_roads_geom\" where \"adr\" like \u0027%A104%\u0027 group by \"voie\";"
+      },
+      {
+        "mode": "SQL",
+        "id": "hh94ddUAHzcG",
+        "runOn": 1499267752414,
+        "runIn": 870,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "DVmSRlZfBeCo9Vxb",
+        "hash": "14c56689177bfa96a0ad66cb29a2e0ca",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*), voie from \"accidents_cluv_with_roads_geom\" where \"adr\" like \u0027%A6%\u0027 group by \"voie\";",
+        "expandedSql": "select count(*), voie from \"accidents_cluv_with_roads_geom\" where \"adr\" like \u0027%A6%\u0027 group by \"voie\";"
       }
     ]
   }
