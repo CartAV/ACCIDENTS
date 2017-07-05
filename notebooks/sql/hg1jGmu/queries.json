@@ -601,10 +601,10 @@
         "mode": "SQL",
         "id": "YdoLLzJbvOFS",
         "runOn": 1499270191281,
-        "runIn": 583,
+        "runIn": 686,
         "runBy": "chabouisfr",
         "connection": "postgis",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "fostN9BX7r4bc97v",
         "hash": "7e4b665cf2f0d5c08d94c89735e1cef7",
         "querySettings": {
