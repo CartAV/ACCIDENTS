@@ -266,6 +266,28 @@
         },
         "sql": "select count(*), catr from \"accidents_cluv_with_roads_geom\" group by \"catr\" order by count desc",
         "expandedSql": "select count(*), catr from \"accidents_cluv_with_roads_geom\" group by \"catr\" order by count desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "XVut8MGU44wR",
+        "runOn": 1499267998790,
+        "runIn": 729,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "GAzDS4nPUwWJyBvw",
+        "hash": "c35c8eab5fc31e227308535409d7a02f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*), catr from \"accidents_cluv_with_roads_geom\" group by \"catr\" order by count desc\nselect count(*), voie from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027autoroute\u0027 order by count desc",
+        "expandedSql": "select count(*), catr from \"accidents_cluv_with_roads_geom\" group by \"catr\" order by count desc\nselect count(*), voie from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027autoroute\u0027 order by count desc"
       }
     ]
   }
