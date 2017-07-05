@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "fcu7mjo4sno": [
+      {
+        "mode": "SQL",
+        "id": "Zo5ZooPOB7UO",
+        "runOn": 1499248454248,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "cOgE9PKnikRRJ3BO",
+        "hash": "119bb4c0e312b786011a53659a2c0776",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"accidents_cluv_with_roads_geom\" where \"dep\"\u003d77",
+        "expandedSql": "select * from \"accidents_cluv_with_roads_geom\" where \"dep\"\u003d77"
+      }
+    ]
+  }
+}
