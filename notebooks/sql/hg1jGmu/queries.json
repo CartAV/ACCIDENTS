@@ -44,6 +44,28 @@
         },
         "sql": "select * from \"accidents_cluv_with_roads_geom\" where \"dep\"\u003d\"77\"",
         "expandedSql": "select * from \"accidents_cluv_with_roads_geom\" where \"dep\"\u003d\"77\""
+      },
+      {
+        "mode": "SQL",
+        "id": "Zjh2LxNG8hus",
+        "runOn": 1499248472863,
+        "runIn": 59,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "e8tus37E2vCLeLPJ",
+        "hash": "997b2d54e0979e89875da7f86a897126",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"accidents_cluv_with_roads_geom\" where \"dep\"\u003d\u002777\u0027",
+        "expandedSql": "select * from \"accidents_cluv_with_roads_geom\" where \"dep\"\u003d\u002777\u0027"
       }
     ]
   }
