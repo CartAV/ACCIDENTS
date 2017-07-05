@@ -464,6 +464,28 @@
         },
         "sql": "select count(*), catr from \"accidents_cluv_with_roads_geom\" group by \"catr\" order by count desc\n/*select count(*), adr, voie from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027départemental\u0027 group by \"adr\", \"voie\" order by count desc*/",
         "expandedSql": "select count(*), catr from \"accidents_cluv_with_roads_geom\" group by \"catr\" order by count desc\n/*select count(*), adr, voie from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027départemental\u0027 group by \"adr\", \"voie\" order by count desc*/"
+      },
+      {
+        "mode": "SQL",
+        "id": "YCVNXSJqh6cj",
+        "runOn": 1499269970822,
+        "runIn": 696,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "a5HOfXHm7EzI9LCp",
+        "hash": "edce8d44caca4e5e68bd7241085986f0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "/*select count(*), catr from \"accidents_cluv_with_roads_geom\" group by \"catr\" order by count desc*/\nselect count(*), adr, voie from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027route nationale\u0027 group by \"adr\", \"voie\" order by count desc",
+        "expandedSql": "/*select count(*), catr from \"accidents_cluv_with_roads_geom\" group by \"catr\" order by count desc*/\nselect count(*), adr, voie from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027route nationale\u0027 group by \"adr\", \"voie\" order by count desc"
       }
     ]
   }
