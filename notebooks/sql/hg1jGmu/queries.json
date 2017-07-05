@@ -132,6 +132,28 @@
         },
         "sql": "select * from \"accidents_cluv_with_roads_geom\" where \"dep\"\u003d\u002777\u0027 and \"adr\" like \u0027%A6%\u0027",
         "expandedSql": "select * from \"accidents_cluv_with_roads_geom\" where \"dep\"\u003d\u002777\u0027 and \"adr\" like \u0027%A6%\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "8edtSdQNxFhO",
+        "runOn": 1499267467343,
+        "runIn": 471,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "4IYqcUfjbvuMrZdj",
+        "hash": "7871e997fe5ca2489062d68dfd0e8075",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"accidents_cluv_with_roads_geom\" where \"adr\" like \u0027%A104%\u0027",
+        "expandedSql": "select * from \"accidents_cluv_with_roads_geom\" where \"adr\" like \u0027%A104%\u0027"
       }
     ]
   }
