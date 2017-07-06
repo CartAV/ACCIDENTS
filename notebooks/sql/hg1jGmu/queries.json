@@ -374,6 +374,28 @@
         },
         "sql": "/*select count(*), voie from \"accidents_cluv_with_roads_geom\" where \"voie\" like \u0027%RN 104%\u0027 group by \"voie\" order by count desc;*/\nselect * from \"accidents_cluv_with_roads_geom\" where \"adr\"\u003d\u0027A104\u0027",
         "expandedSql": "/*select count(*), voie from \"accidents_cluv_with_roads_geom\" where \"voie\" like \u0027%RN 104%\u0027 group by \"voie\" order by count desc;*/\nselect * from \"accidents_cluv_with_roads_geom\" where \"adr\"\u003d\u0027A104\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "vmkxzJspqplH",
+        "runOn": 1499334054243,
+        "runIn": 783,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "PuO4wkbLcBzBAaMh",
+        "hash": "52b485c9dadbe7816f74e93865a30b73",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "/*select count(*), voie from \"accidents_cluv_with_roads_geom\" where \"voie\" like \u0027%RN 104%\u0027 group by \"voie\" order by count desc;*/\nselect * from \"accidents_cluv_with_roads_geom\" where \"Num_Acc\"\u003d\u0027200500001233\u0027",
+        "expandedSql": "/*select count(*), voie from \"accidents_cluv_with_roads_geom\" where \"voie\" like \u0027%RN 104%\u0027 group by \"voie\" order by count desc;*/\nselect * from \"accidents_cluv_with_roads_geom\" where \"Num_Acc\"\u003d\u0027200500001233\u0027"
       }
     ],
     "k4oi8k8v5kl": [
