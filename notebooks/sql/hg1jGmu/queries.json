@@ -818,6 +818,28 @@
         },
         "sql": "    select * from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027route nationale\u0027 and \"v2\" \u003d \u0027A\u0027",
         "expandedSql": "    select * from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027route nationale\u0027 and \"v2\" \u003d \u0027A\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "QZNlPXZEEx8O",
+        "runOn": 1499335348635,
+        "runIn": 1078,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "PNuWOrTtVia5qy4R",
+        "hash": "2e86df524d890aefb2f5b4fe9927ea1f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "    select * from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027autoroute\u0027 and \"v2\" \u003d \u0027N\u0027",
+        "expandedSql": "    select * from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027autoroute\u0027 and \"v2\" \u003d \u0027N\u0027"
       }
     ]
   }
