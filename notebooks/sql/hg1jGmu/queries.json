@@ -840,6 +840,28 @@
         },
         "sql": "    select * from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027autoroute\u0027 and \"v2\" \u003d \u0027N\u0027",
         "expandedSql": "    select * from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027autoroute\u0027 and \"v2\" \u003d \u0027N\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "0vvMeIsUrsGV",
+        "runOn": 1499341125141,
+        "runIn": 1338,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "q5cvPAcYVQkUB5qF",
+        "hash": "910ae64eeb3979b6deefc2b0f54af02a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*),pr from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027autoroute\u0027 group by pr order by count desc",
+        "expandedSql": "select count(*),pr from \"accidents_cluv_with_roads_geom\" where \"catr\"\u003d\u0027autoroute\u0027 group by pr order by count desc"
       }
     ]
   }
