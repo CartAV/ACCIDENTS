@@ -1,0 +1,24 @@
+{
+  "connection": "postgis",
+  "name": "francis postgres",
+  "cells": [],
+  "automationLocal": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr"
+    },
+    "lastModifiedOn": 1499851751776
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "chabouisfr"
+    },
+    "lastModifiedOn": 1499851751776
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}
