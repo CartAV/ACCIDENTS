@@ -111,6 +111,30 @@
         "sql": "select count(*) from \"caracteristiques_prep_geo_joined2_pg\" where \"catr\"\u003d\u0027autoroute\u0027 and \"geo_source\" \u003d \u0027PR\u0027",
         "expandedSql": "select count(*) from \"caracteristiques_prep_geo_joined2_pg\" where \"catr\"\u003d\u0027autoroute\u0027 and \"geo_source\" \u003d \u0027PR\u0027"
       }
+    ],
+    "fv6s02cxyf": [
+      {
+        "mode": "SQL",
+        "id": "7KmKUnlw6kAe",
+        "runOn": 1499858845819,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "ClISTGWuMETtr3aG",
+        "hash": "d682d33e34f0133743592be69e209e68",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"public\".\"lieux_postgis\" where \"catr\"\u003d\u0027autoroute\u0027",
+        "expandedSql": "select count(*) from \"public\".\"lieux_postgis\" where \"catr\"\u003d\u0027autoroute\u0027"
+      }
     ]
   }
 }
