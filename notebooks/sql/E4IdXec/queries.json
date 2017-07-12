@@ -44,6 +44,28 @@
         },
         "sql": "select count(*) from \"caracteristiques_prep_geo_joined2_pg\" where \"catr\"\u003d\u0027autoroute\u0027",
         "expandedSql": "select count(*) from \"caracteristiques_prep_geo_joined2_pg\" where \"catr\"\u003d\u0027autoroute\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "BnGxfnAKBIEO",
+        "runOn": 1499851850947,
+        "runIn": 1033,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "HHoRa2pS3IvIVZQA",
+        "hash": "743d8d69ebd3c7dca111b3db8bee20ed",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracteristiques_prep_geo_joined2_pg\" where \"catr\"\u003d\u0027autoroute\u0027 and \u0027pr_score\u0027 \u003d 1.0",
+        "expandedSql": "select count(*) from \"caracteristiques_prep_geo_joined2_pg\" where \"catr\"\u003d\u0027autoroute\u0027 and \u0027pr_score\u0027 \u003d 1.0"
       }
     ]
   }
