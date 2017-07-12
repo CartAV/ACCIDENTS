@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "07gwavfnld3": [
+      {
+        "mode": "SQL",
+        "id": "jAVXjxoUYxls",
+        "runOn": 1499851783412,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "pqlRTYgG8jb4aD73",
+        "hash": "25da85fa3825e3a7d7747b603f8f61f8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"caracteristiques_prep_geo_joined2_pg\" where \"catr\"\u003d\u0027autoroute\u0027",
+        "expandedSql": "select count(*) from \"caracteristiques_prep_geo_joined2_pg\" where \"catr\"\u003d\u0027autoroute\u0027"
+      }
+    ]
+  }
+}
