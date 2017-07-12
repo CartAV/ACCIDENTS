@@ -16,26 +16,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     },
     {
@@ -43,26 +43,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 2
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -98,7 +98,7 @@
     {
       "name": "Num_Acc",
       "table": 0,
-      "type": "string"
+      "type": "bigint"
     },
     {
       "name": "mois",
@@ -221,14 +221,14 @@
       "type": "double"
     },
     {
-      "name": "geo_source",
-      "table": 0,
-      "type": "string"
-    },
-    {
       "name": "geo_score",
       "table": 0,
       "type": "double"
+    },
+    {
+      "name": "geo_source",
+      "table": 0,
+      "type": "string"
     },
     {
       "name": "num_route_or_id",
