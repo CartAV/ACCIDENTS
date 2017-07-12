@@ -178,6 +178,28 @@
         },
         "sql": "select count(*) from \"public\".\"lieux_postgis\" where \"catr\"\u003d\u0027autoroute\u0027 and \"pr\"::integer\u003e0",
         "expandedSql": "select count(*) from \"public\".\"lieux_postgis\" where \"catr\"\u003d\u0027autoroute\u0027 and \"pr\"::integer\u003e0"
+      },
+      {
+        "mode": "SQL",
+        "id": "oDtfOwkvleJz",
+        "runOn": 1499858895027,
+        "runIn": 165,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "qGdOzeKKUWM7qR3z",
+        "hash": "25ceb13f97229e5fbded4435d405752d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select count(*) from \"public\".\"lieux_postgis\" where \"catr\"\u003d\u0027autoroute\u0027 and \"pr\"::float\u003e0",
+        "expandedSql": "select count(*) from \"public\".\"lieux_postgis\" where \"catr\"\u003d\u0027autoroute\u0027 and \"pr\"::float\u003e0"
       }
     ]
   }
