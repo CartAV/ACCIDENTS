@@ -1,14 +1,28 @@
 {
   "connection": "postgis",
   "name": "francis postgres",
-  "cells": [],
+  "cells": [
+    {
+      "id": "07gwavfnld3",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499851751776
+    "lastModifiedOn": 1499851755579
   },
   "creationTag": {
     "versionNumber": 0,
