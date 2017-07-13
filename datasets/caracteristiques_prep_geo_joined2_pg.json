@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499851512335
+    "lastModifiedOn": 1499958368126
   },
   "creationTag": {
     "versionNumber": 0,
@@ -190,14 +190,14 @@
         "maxLength": -1
       },
       {
-        "name": "nom_circonscription_police",
-        "type": "string",
+        "name": "CODE_COM",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
       {
-        "name": "CODE_COM",
-        "type": "bigint",
+        "name": "nom_circonscription_police",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
