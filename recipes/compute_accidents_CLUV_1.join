@@ -406,6 +406,11 @@
       "type": "bigint"
     },
     {
+      "name": "has_pietons",
+      "table": 2,
+      "type": "boolean"
+    },
+    {
       "name": "indemne_nb",
       "table": 2,
       "type": "bigint"
