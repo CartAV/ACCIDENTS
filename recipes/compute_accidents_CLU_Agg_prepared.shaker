@@ -20,7 +20,7 @@
   "steps": [
     {
       "alwaysShowComment": false,
-      "preview": true,
+      "preview": false,
       "params": {
         "usePythonUnicode": true,
         "stopOnError": true,
@@ -29,6 +29,17 @@
         "mode": "CELL"
       },
       "type": "PythonUDF",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": false,
+      "preview": true,
+      "params": {
+        "expression": "if(pietons_nb\u003e0,\"True\",\"False\")",
+        "column": "has_pietons"
+      },
+      "type": "CreateColumnWithGREL",
       "disabled": false,
       "metaType": "PROCESSOR"
     }
