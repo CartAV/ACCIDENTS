@@ -16,26 +16,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     },
     {
@@ -43,26 +43,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
+          "type": "EQ",
+          "normalizeText": false,
           "column2": {
             "name": "Num_Acc",
             "table": 2
           },
-          "normalizeText": false,
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
-      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -356,9 +356,19 @@
       "type": "string"
     },
     {
+      "name": "has_voiture",
+      "table": 1,
+      "type": "boolean"
+    },
+    {
       "name": "deuxrouesmotorises_nb",
       "table": 1,
       "type": "string"
+    },
+    {
+      "name": "has_deuxrouesmotorises",
+      "table": 1,
+      "type": "boolean"
     },
     {
       "name": "velo_nb",
@@ -366,14 +376,29 @@
       "type": "string"
     },
     {
+      "name": "has_velo",
+      "table": 1,
+      "type": "boolean"
+    },
+    {
       "name": "poidslourd_nb",
       "table": 1,
       "type": "string"
     },
     {
+      "name": "has_poidslourd",
+      "table": 1,
+      "type": "boolean"
+    },
+    {
       "name": "vehiculeautre_nb",
       "table": 1,
       "type": "string"
+    },
+    {
+      "name": "has_vehiculeautre",
+      "table": 1,
+      "type": "boolean"
     },
     {
       "name": "pietons_nb",
