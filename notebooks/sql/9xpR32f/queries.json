@@ -22,6 +22,28 @@
         },
         "sql": "select * from \"ACCIDENTS_BRUT.vehicules_vertica\"",
         "expandedSql": "select * from \"ACCIDENTS_BRUT.vehicules_vertica\""
+      },
+      {
+        "mode": "SQL",
+        "id": "1LMMg6u2I9P5",
+        "runOn": 1500471133247,
+        "runIn": 52,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "YZ2J1L01rBeUKE6U",
+        "hash": "97c2517d93a0cd92865e54d4116de1bb",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"vehicules_agg\" where \"Num_Acc\" \u003d \u0027201300010686\u0027",
+        "expandedSql": "select * from \"vehicules_agg\" where \"Num_Acc\" \u003d \u0027201300010686\u0027"
       }
     ]
   }
