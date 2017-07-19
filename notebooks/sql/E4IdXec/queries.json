@@ -222,6 +222,28 @@
         },
         "sql": "select count(*) from \"public\".\"lieux_postgis\" where \"catr\"\u003d\u0027autoroute\u0027",
         "expandedSql": "select count(*) from \"public\".\"lieux_postgis\" where \"catr\"\u003d\u0027autoroute\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "SvZZTvygN3pz",
+        "runOn": 1500470966854,
+        "runIn": 179,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "qpMWwGY7UV3aZQV3",
+        "hash": "e0f1c9083b823f4b0d4c24fbf49a5dc3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"ACCIDENTS_BRUT.vehicules_vertica\"",
+        "expandedSql": "select * from \"ACCIDENTS_BRUT.vehicules_vertica\""
       }
     ]
   }
