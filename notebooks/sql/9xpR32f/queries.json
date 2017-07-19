@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "l3hwqtatnbc": [
+      {
+        "mode": "SQL",
+        "id": "Y0PjBLWN1HXq",
+        "runOn": 1500471012687,
+        "runIn": -1,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "EGS77CimZySsxSSQ",
+        "hash": "9c033958cd588934f782f79ca546658e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"ACCIDENTS_BRUT.vehicules_vertica\"",
+        "expandedSql": "select * from \"ACCIDENTS_BRUT.vehicules_vertica\""
+      }
+    ]
+  }
+}
