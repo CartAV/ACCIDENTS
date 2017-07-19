@@ -44,6 +44,28 @@
         },
         "sql": "select * from \"vehicules_agg\" where \"Num_Acc\" \u003d \u0027201300010686\u0027",
         "expandedSql": "select * from \"vehicules_agg\" where \"Num_Acc\" \u003d \u0027201300010686\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "rveY7dBfZVIP",
+        "runOn": 1500471252859,
+        "runIn": 59,
+        "runBy": "chabouisfr",
+        "connection": "datalabmaster",
+        "state": "RUNNING",
+        "futureId": "Ykuuk0Xt6uuIgmRP",
+        "hash": "97c2517d93a0cd92865e54d4116de1bb",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"vehicules_agg\" where \"Num_Acc\" \u003d \u0027201300010686\u0027",
+        "expandedSql": "select * from \"vehicules_agg\" where \"Num_Acc\" \u003d \u0027201300010686\u0027"
       }
     ]
   }
