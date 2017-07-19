@@ -5,10 +5,10 @@
         "mode": "SQL",
         "id": "Y0PjBLWN1HXq",
         "runOn": 1500471012687,
-        "runIn": -1,
+        "runIn": 52,
         "runBy": "chabouisfr",
         "connection": "datalabmaster",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "EGS77CimZySsxSSQ",
         "hash": "9c033958cd588934f782f79ca546658e",
         "querySettings": {
