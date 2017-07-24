@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 26,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500909883446
+    "lastModifiedOn": 1500909900742
   },
   "creationTag": {
     "versionNumber": 0,
@@ -315,6 +315,7 @@
       {
         "name": "lartpc",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
