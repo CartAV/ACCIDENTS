@@ -34,7 +34,7 @@
     },
     {
       "alwaysShowComment": true,
-      "preview": true,
+      "preview": false,
       "params": {
         "usePythonUnicode": true,
         "stopOnError": true,
@@ -43,6 +43,21 @@
         "mode": "CELL"
       },
       "comment": "geo_source_display est le label visible quand on clique sur les détail d\u0027un accident sur la carte",
+      "type": "PythonUDF",
+      "disabled": false,
+      "metaType": "PROCESSOR"
+    },
+    {
+      "alwaysShowComment": true,
+      "preview": true,
+      "params": {
+        "usePythonUnicode": true,
+        "stopOnError": true,
+        "column": "PR_display",
+        "pythonSourceCode": "def process(row):\n    pr \u003d row[\"pr\"]\n    if pr:\n        pr1 \u003d row[\"pr1\"]\n        if pr1:\n            return str(pr) + \".\" + str(pr1)\n        else:\n            return str(pr)\n    else:\n        return None\n",
+        "mode": "CELL"
+      },
+      "comment": "le PR tel que visible dans les détails de l\u0027accident sur la carte.",
       "type": "PythonUDF",
       "disabled": false,
       "metaType": "PROCESSOR"
