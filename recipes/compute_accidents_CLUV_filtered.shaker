@@ -34,7 +34,7 @@
     },
     {
       "alwaysShowComment": true,
-      "preview": true,
+      "preview": false,
       "params": {
         "usePythonUnicode": true,
         "stopOnError": true,
@@ -44,7 +44,7 @@
       },
       "comment": "geo_source_display est le label visible quand on clique sur les détail d\u0027un accident sur la carte",
       "type": "PythonUDF",
-      "disabled": false,
+      "disabled": true,
       "metaType": "PROCESSOR"
     }
   ],
