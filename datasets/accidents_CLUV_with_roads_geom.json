@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500909811701
+    "lastModifiedOn": 1500909815971
   },
   "creationTag": {
     "versionNumber": 0,
@@ -104,6 +104,7 @@
       {
         "name": "dep",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
