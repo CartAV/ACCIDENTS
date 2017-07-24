@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 26,
+    "versionNumber": 27,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500909900742
+    "lastModifiedOn": 1500909904420
   },
   "creationTag": {
     "versionNumber": 0,
@@ -322,6 +322,7 @@
       {
         "name": "larrout",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
