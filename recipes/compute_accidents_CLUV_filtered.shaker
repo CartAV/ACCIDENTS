@@ -27,9 +27,9 @@
         "pythonSourceCode": "def process(row):\n    #if row[\"geo_type\"] in [\"town\", \"village\", \"city\"]:\n    #    row[\"latitude\"] \u003d None \n    #    row[\"longitude\"] \u003d None\n    return row\n",
         "mode": "ROW"
       },
-      "comment": "",
+      "comment": "les points géocodés avec une précision town, village ou city ne doivent pas être localisées sur la carte.",
       "type": "PythonUDF",
-      "disabled": true,
+      "disabled": false,
       "metaType": "PROCESSOR"
     },
     {
@@ -44,7 +44,7 @@
       },
       "comment": "geo_source_display est le label visible quand on clique sur les détail d\u0027un accident sur la carte",
       "type": "PythonUDF",
-      "disabled": true,
+      "disabled": false,
       "metaType": "PROCESSOR"
     }
   ],
