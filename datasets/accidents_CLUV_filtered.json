@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1500908653699
+    "lastModifiedOn": 1500909043838
   },
   "creationTag": {
     "versionNumber": 0,
@@ -101,6 +101,7 @@
       {
         "name": "dep",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -155,6 +156,7 @@
       {
         "name": "original_city_code",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
@@ -167,6 +169,7 @@
       {
         "name": "current_city_code",
         "type": "string",
+        "meaning": "Text",
         "timestampNoTzAsDate": false,
         "maxLength": 16200
       },
