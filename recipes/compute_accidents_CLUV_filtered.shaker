@@ -24,7 +24,7 @@
       "params": {
         "usePythonUnicode": true,
         "stopOnError": true,
-        "pythonSourceCode": "def process(row):\n    #if row[\"geo_type\"] in [\"town\", \"village\", \"city\"]:\n    #    row[\"latitude\"] \u003d None \n    #    row[\"longitude\"] \u003d None\n    return row\n",
+        "pythonSourceCode": "def process(row):\n    if row[\"geo_type\"] in [\"town\", \"village\", \"city\"]:\n        row[\"latitude\"] \u003d None \n        row[\"longitude\"] \u003d None\n    return row\n",
         "mode": "ROW"
       },
       "comment": "les points géocodés avec une précision town, village ou city ne doivent pas être localisées sur la carte.",
