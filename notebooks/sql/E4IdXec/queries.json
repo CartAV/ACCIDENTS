@@ -266,6 +266,28 @@
         },
         "sql": "select * from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%PERIPH%\u0027 or c.adr like \u0027%BP%\u0027) and c.dep \u003d \u002775\u0027",
         "expandedSql": "select * from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%PERIPH%\u0027 or c.adr like \u0027%BP%\u0027) and c.dep \u003d \u002775\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "Lj0n8pQpvxFj",
+        "runOn": 1501245105649,
+        "runIn": 344,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "Ik9o1WctBUQMOmkx",
+        "hash": "b1fb6851debfb7a39e0fcb233bb97ebf",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%p%\u0027) and c.dep \u003d \u002775\u0027",
+        "expandedSql": "select * from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%p%\u0027) and c.dep \u003d \u002775\u0027"
       }
     ]
   }
