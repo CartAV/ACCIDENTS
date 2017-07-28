@@ -354,6 +354,28 @@
         },
         "sql": "select adr from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%P%\u0027) and c.dep \u003d \u002775\u0027 group by adr",
         "expandedSql": "select adr from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%P%\u0027) and c.dep \u003d \u002775\u0027 group by adr"
+      },
+      {
+        "mode": "SQL",
+        "id": "cO73j4tnRpMC",
+        "runOn": 1501245207572,
+        "runIn": 555,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "NDV1zbO2a4K2HtHV",
+        "hash": "e1588c52b284ab760d3182acd5842862",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select adr, count(adr) from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%P%\u0027) and c.dep \u003d \u002775\u0027 group by adr order by count desc",
+        "expandedSql": "select adr, count(adr) from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%P%\u0027) and c.dep \u003d \u002775\u0027 group by adr order by count desc"
       }
     ]
   }
