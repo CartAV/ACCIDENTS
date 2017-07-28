@@ -310,6 +310,28 @@
         },
         "sql": "select * from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%P%\u0027) and c.dep \u003d \u002775\u0027",
         "expandedSql": "select * from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%P%\u0027) and c.dep \u003d \u002775\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "YkhworyvaPt1",
+        "runOn": 1501245133740,
+        "runIn": 137,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "hHri8n5wJwgk4FPx",
+        "hash": "ed5cabe7bb81b844c15eb77d21c95b7e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select adr from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%P%\u0027) and c.dep \u003d \u002775\u0027",
+        "expandedSql": "select adr from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%P%\u0027) and c.dep \u003d \u002775\u0027"
       }
     ]
   }
