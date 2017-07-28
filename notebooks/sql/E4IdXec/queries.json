@@ -398,6 +398,28 @@
         },
         "sql": "select adr, count(adr) from \"public\".\"accidents_cluv_prepared\" c where and c.dep \u003d \u002775\u0027 group by adr order by count desc",
         "expandedSql": "select adr, count(adr) from \"public\".\"accidents_cluv_prepared\" c where and c.dep \u003d \u002775\u0027 group by adr order by count desc"
+      },
+      {
+        "mode": "SQL",
+        "id": "aWaMoAv4AibJ",
+        "runOn": 1501245232654,
+        "runIn": 186,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "STFMiplv8KMfOnnX",
+        "hash": "a4816103dca1a7923d758ac49f8342fb",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select adr, count(adr) from \"public\".\"accidents_cluv_prepared\" c where c.dep \u003d \u002775\u0027 group by adr order by count desc",
+        "expandedSql": "select adr, count(adr) from \"public\".\"accidents_cluv_prepared\" c where c.dep \u003d \u002775\u0027 group by adr order by count desc"
       }
     ]
   }
