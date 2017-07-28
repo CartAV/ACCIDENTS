@@ -14,11 +14,11 @@
           "deps": []
         },
         {
-          "ref": "DATAPREPOPENDATAGEO.departements_wgs84_prep",
+          "ref": "GECODAGE_ACCIDENTS.caracateristiques_postgis",
           "deps": []
         },
         {
-          "ref": "GECODAGE_ACCIDENTS.caracateristiques_postgis",
+          "ref": "DATAPREPOPENDATAGEO.departements_geom_noms_region",
           "deps": []
         }
       ]
@@ -35,11 +35,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "chabouisfr"
     },
-    "lastModifiedOn": 1499964346339
+    "lastModifiedOn": 1501247173918
   },
   "creationTag": {
     "versionNumber": 0,
