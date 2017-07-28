@@ -244,6 +244,28 @@
         },
         "sql": "select * from \"ACCIDENTS_BRUT.vehicules_vertica\"",
         "expandedSql": "select * from \"ACCIDENTS_BRUT.vehicules_vertica\""
+      },
+      {
+        "mode": "SQL",
+        "id": "MwIfODXdZDMN",
+        "runOn": 1501244513342,
+        "runIn": 43,
+        "runBy": "chabouisfr",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "PAj6IhdgViBnQiVd",
+        "hash": "b5cdd997d8cc387198b73c8999cd87bf",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%PERIPH%\u0027 or c.adr like \u0027%BP%\u0027) and c.dep \u003d \u002775\u0027",
+        "expandedSql": "select * from \"public\".\"accidents_cluv_prepared\" c where (c.adr like \u0027%PERIPH%\u0027 or c.adr like \u0027%BP%\u0027) and c.dep \u003d \u002775\u0027"
       }
     ]
   }
