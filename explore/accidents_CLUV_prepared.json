@@ -25,14 +25,7 @@
                 "input": "dep",
                 "operator": "\u003d\u003d [string]",
                 "col": "mois",
-                "string": "75",
-                "num": 0.0
-              },
-              {
-                "input": "adr",
-                "operator": "contains",
-                "col": "mois",
-                "string": "BP",
+                "string": "974",
                 "num": 0.0
               }
             ]
@@ -47,7 +40,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 5
+      "_refreshTrigger": 6
     },
     "vizSampling": {
       "autoRefreshSample": false,
