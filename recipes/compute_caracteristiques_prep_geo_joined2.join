@@ -205,11 +205,6 @@
       "type": "string"
     },
     {
-      "name": "CODE_COM",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
       "name": "nom_circonscription_police",
       "table": 0,
       "type": "string"
