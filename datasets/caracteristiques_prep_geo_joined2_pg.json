@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "grabenertr"
     },
-    "lastModifiedOn": 1501247173540
+    "lastModifiedOn": 1507724073062
   },
   "creationTag": {
     "versionNumber": 0,
@@ -65,12 +65,6 @@
         "maxLength": -1
       },
       {
-        "name": "jour",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "lum",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -97,12 +91,6 @@
       {
         "name": "col",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "com",
-        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
