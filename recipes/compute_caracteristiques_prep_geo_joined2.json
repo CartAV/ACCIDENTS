@@ -14,11 +14,11 @@
           "deps": []
         },
         {
-          "ref": "GECODAGE_ACCIDENTS.caracateristiques_postgis",
+          "ref": "DATAPREPOPENDATAGEO.departements_geom_noms_region",
           "deps": []
         },
         {
-          "ref": "DATAPREPOPENDATAGEO.departements_geom_noms_region",
+          "ref": "GECODAGE_ACCIDENTS.caracteristiques_arrondissements_prepared",
           "deps": []
         }
       ]
@@ -35,11 +35,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "grabenertr"
     },
-    "lastModifiedOn": 1502898128497
+    "lastModifiedOn": 1507724074995
   },
   "creationTag": {
     "versionNumber": 0,
