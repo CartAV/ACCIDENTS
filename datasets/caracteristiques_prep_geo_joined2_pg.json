@@ -18,11 +18,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "grabenertr"
     },
-    "lastModifiedOn": 1507724073062
+    "lastModifiedOn": 1507724142463
   },
   "creationTag": {
     "versionNumber": 0,
@@ -175,12 +175,6 @@
       {
         "name": "current_name",
         "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "CODE_COM",
-        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
