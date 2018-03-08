@@ -13,16 +13,26 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1501250141410
+    "lastModifiedOn": 1520536037288
   },
   "creationTag": {
     "versionNumber": 0,
@@ -37,6 +47,7 @@
   "params": {
     "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
     "connection": "postgis",
+    "notReadyIfEmpty": false,
     "mode": "table",
     "partitioned": false,
     "partitioningType": "custom",
@@ -45,8 +56,8 @@
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "hasColsWithUnknownTz": false,
-    "readColsWithUnknownTzAsDates": false
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
   },
   "schema": {
     "userModified": true,
@@ -282,6 +293,18 @@
         "maxLength": -1
       },
       {
+        "name": "vosp",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "prof",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
         "name": "pr",
         "type": "string",
         "meaning": "Text",
@@ -290,18 +313,6 @@
       },
       {
         "name": "pr1",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "vosp",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "prof",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
