@@ -7,6 +7,7 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "num_veh",
       "countDistinct": false,
@@ -22,6 +23,7 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "senc",
       "countDistinct": false,
@@ -37,6 +39,7 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "orderColumn": "Num_Acc",
       "sum2": false,
@@ -54,6 +57,7 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "obs",
       "countDistinct": false,
@@ -69,6 +73,7 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "obsm",
       "countDistinct": false,
@@ -84,6 +89,7 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "choc",
       "countDistinct": false,
@@ -99,6 +105,7 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "manv",
       "countDistinct": false,
@@ -114,6 +121,7 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "occutc",
       "countDistinct": false,
@@ -125,26 +133,31 @@
     {
       "customExpr": "sum(case when (catv \u003d \u0027voiture\u0027 or catv \u003d \u0027voiturette\u0027 or catv \u003d \u0027utilitaire\u0027 or catv is NULL) then 1 else 0 end)",
       "type": "INT",
+      "concatDistinct": false,
       "customName": "voiture_nb"
     },
     {
       "customExpr": "sum(case when (catv \u003d \u0027motocyclette +125cm3\u0027 or catv \u003d \u0027scooter -50cm3\u0027 or catv \u003d \u0027cyclomoteur -50cm3\u0027 or catv \u003d \u0027motocyclette +50cm3-125cm3\u0027 or catv \u003d \u0027scooter +125cm3\u0027) then 1 else 0 end)",
       "type": "INT",
+      "concatDistinct": false,
       "customName": "deuxrouesmotorises_nb"
     },
     {
       "customExpr": "sum(case when (catv \u003d \u0027bicyclette\u0027) then 1 else 0 end)",
       "type": "INT",
+      "concatDistinct": false,
       "customName": "velo_nb"
     },
     {
       "customExpr": "sum(case when (catv \u003d \u0027poids lourd\u0027) then 1 else 0 end)",
       "type": "INT",
+      "concatDistinct": false,
       "customName": "poidslourd_nb"
     },
     {
       "customExpr": "sum(case when (catv \u003d \u0027\u0027 or catv \u003d \u0027tracteur+semi-remorque\u0027 or catv \u003d \u0027bus\u0027 or catv \u003d \u0027autre véhicule\u0027 or catv \u003d \u0027tracteur\u0027 or catv \u003d \u0027quad +50cm3\u0027 or catv \u003d \u0027tramway\u0027 or catv \u003d \u0027engin spécial\u0027 or catv \u003d \u0027quad -50cm3\u0027 or catv \u003d \u0027train\u0027) then 1 else 0 end)",
       "type": "INT",
+      "concatDistinct": false,
       "customName": "vehiculeautre_nb"
     }
   ],
@@ -227,6 +240,49 @@
   ],
   "postFilter": {
     "enabled": false,
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "voiture_nb",
+            "type": "int"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "deuxrouesmotorises_nb",
+            "type": "int"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "velo_nb",
+            "type": "int"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "poidslourd_nb",
+            "type": "int"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "vehiculeautre_nb",
+            "type": "int"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false
   },
   "computedColumns": [],
