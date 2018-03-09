@@ -22,17 +22,21 @@
             "mode": "\u0026\u0026",
             "conditions": [
               {
-                "input": "dep",
-                "operator": "\u003d\u003d [string]",
+                "input": "ANNEE",
+                "operator": "\u003d\u003d [number]",
                 "col": "mois",
                 "string": "974",
-                "num": 0.0
+                "num": 2017.0
               }
             ]
           }
         },
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
         "samplingMethod": "HEAD_SEQUENTIAL",
         "maxRecords": 10000,
         "targetRatio": 0.02,
@@ -40,7 +44,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1
+      "_refreshTrigger": 2
     },
     "vizSampling": {
       "autoRefreshSample": false,
