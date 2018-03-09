@@ -22,10 +22,10 @@
             "mode": "\u0026\u0026",
             "conditions": [
               {
-                "input": "dep",
+                "input": "ANNEE",
                 "operator": "\u003d\u003d [string]",
                 "col": "mois",
-                "string": "974",
+                "string": "2017",
                 "num": 0.0
               }
             ]
@@ -44,7 +44,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 6
+      "_refreshTrigger": 7
     },
     "vizSampling": {
       "autoRefreshSample": false,
@@ -129,6 +129,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
