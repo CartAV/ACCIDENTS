@@ -22,9 +22,10 @@
             "mode": "\u0026\u0026",
             "conditions": [
               {
-                "input": "ANNEE",
-                "operator": "\u003d\u003d [number]",
+                "input": "Num_Acc",
+                "operator": "contains",
                 "col": "mois",
+                "string": "000105300",
                 "num": 2015.0
               }
             ]
@@ -32,6 +33,10 @@
         },
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
         "samplingMethod": "HEAD_SEQUENTIAL",
         "maxRecords": 10000,
         "targetRatio": 0.02,
@@ -39,7 +44,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 2
+      "_refreshTrigger": 3
     },
     "vizSampling": {
       "autoRefreshSample": false,
@@ -65,6 +70,10 @@
           },
           "partitionSelectionMethod": "ALL",
           "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
           "samplingMethod": "FULL",
           "maxRecords": 10000,
           "targetRatio": 0.02,
@@ -83,6 +92,9 @@
           {
             "column": "date",
             "type": "DATE",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
             "dateParams": {
               "mode": "YEAR"
             },
@@ -93,26 +105,26 @@
             "isA": "dimension",
             "possibleSorts": [
               {
-                "type": "NATURAL",
                 "label": "Natural ordering",
-                "sortAscending": true
+                "sortAscending": true,
+                "type": "NATURAL"
               },
               {
-                "type": "AGGREGATION",
+                "label": "Sum of tue_nb, descending",
                 "measureIdx": 0,
-                "label": "Sum of tue_nb, descending"
+                "type": "AGGREGATION"
               },
               {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
                 "label": "Sum of tue_nb, ascending",
-                "sortAscending": true
+                "measureIdx": 0,
+                "sortAscending": true,
+                "type": "AGGREGATION"
               }
             ],
             "sort": {
-              "type": "NATURAL",
               "label": "Natural ordering",
-              "sortAscending": true
+              "sortAscending": true,
+              "type": "NATURAL"
             }
           }
         ],
@@ -127,7 +139,7 @@
             "displayAxis": "axis1",
             "displayType": "column",
             "computeMode": "NORMAL",
-            "computeModeDim": 0
+            "computeModeDim": 1
           }
         ],
         "xDimension": [],
@@ -154,17 +166,36 @@
         "smoothing": true,
         "showLegend": true,
         "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": false,
         "strokeWidth": 1,
+        "fillOpacity": 0.5,
+        "showXAxisLabel": false,
+        "showYAxisLabel": false,
         "hexbinRadius": 20,
         "hexbinNumber": 20,
         "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 0,
+        "singleXAxis": false,
+        "multiTooltips": false,
+        "animationFrameDuration": 0,
+        "animationRepeat": true,
         "colorOptions": {
           "singleColor": "#659a88",
           "transparency": 0.75,
           "colorPalette": "default",
-          "ccScaleMode": "NORMAL"
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
         },
-        "colorPaletteType": "LINEAR",
         "bubblesOptions": {
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
@@ -189,8 +220,10 @@
         },
         "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAgUlEQVRoge3TMQ6AIBBEUS5hYmO4m701nsma3qtZ2RgLUWGXyf8JDRVvEkIgIpliyvt5rN/SJMDq3YGlR3gKlhkBcMFdl70FT2uer3ddjFIb7G4EC7DpCB7A47INzUYA7Bj8y5fxCv6CAwwYMGDAgAEDBgwYMGDAgAEDBgxYCkyCHbCEtqBcxMv9AAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
-        "useLiveProcessingIfAvailable": true
-      }
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
     }
   ]
 }
