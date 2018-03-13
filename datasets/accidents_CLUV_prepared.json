@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1520925448483
+    "lastModifiedOn": 1520926001705
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,7 +64,7 @@
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "string",
+        "type": "bigint",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
