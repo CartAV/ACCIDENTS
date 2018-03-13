@@ -13,16 +13,26 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "chabouisfr"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1501254399405
+    "lastModifiedOn": 1520925448483
   },
   "creationTag": {
     "versionNumber": 0,
@@ -37,6 +47,7 @@
   "params": {
     "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
     "connection": "postgis",
+    "notReadyIfEmpty": false,
     "mode": "table",
     "partitioned": false,
     "partitioningType": "custom",
@@ -45,15 +56,15 @@
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "hasColsWithUnknownTz": false,
-    "readColsWithUnknownTzAsDates": false
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
   },
   "schema": {
     "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
-        "type": "bigint",
+        "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
       },
@@ -276,18 +287,6 @@
         "maxLength": -1
       },
       {
-        "name": "pr",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "pr1",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
         "name": "vosp",
         "type": "string",
         "timestampNoTzAsDate": false,
@@ -295,6 +294,18 @@
       },
       {
         "name": "prof",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "pr",
+        "type": "string",
+        "timestampNoTzAsDate": false,
+        "maxLength": -1
+      },
+      {
+        "name": "pr1",
         "type": "string",
         "timestampNoTzAsDate": false,
         "maxLength": -1
