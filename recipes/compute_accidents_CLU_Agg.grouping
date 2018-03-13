@@ -1,4 +1,5 @@
 {
+  "outputColumnNameOverrides": {},
   "values": [
     {
       "min": false,
@@ -7,13 +8,14 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "num_veh",
       "countDistinct": false,
       "stddev": false,
       "avg": false,
-      "$idx": 0,
-      "first": false
+      "first": false,
+      "$idx": 0
     },
     {
       "min": false,
@@ -22,13 +24,14 @@
       "last": false,
       "sum": false,
       "type": "bigint",
+      "concatDistinct": false,
       "concat": false,
       "column": "place",
       "countDistinct": false,
       "stddev": false,
       "avg": false,
-      "$idx": 1,
-      "first": false
+      "first": false,
+      "$idx": 1
     },
     {
       "min": false,
@@ -37,14 +40,15 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "sum2": false,
       "column": "catu",
       "countDistinct": false,
       "stddev": false,
       "avg": false,
-      "$idx": 2,
-      "first": false
+      "first": false,
+      "$idx": 2
     },
     {
       "min": false,
@@ -53,14 +57,15 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "sum2": false,
       "column": "grav",
       "countDistinct": false,
       "stddev": false,
       "avg": false,
-      "$idx": 3,
-      "first": false
+      "first": false,
+      "$idx": 3
     },
     {
       "min": false,
@@ -69,13 +74,14 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "sexe",
       "countDistinct": false,
       "stddev": false,
       "avg": false,
-      "$idx": 4,
-      "first": false
+      "first": false,
+      "$idx": 4
     },
     {
       "min": false,
@@ -84,13 +90,14 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "an_nais",
       "countDistinct": false,
       "stddev": false,
       "avg": false,
-      "$idx": 5,
-      "first": false
+      "first": false,
+      "$idx": 5
     },
     {
       "min": false,
@@ -99,13 +106,14 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "trajet",
       "countDistinct": false,
       "stddev": false,
       "avg": false,
-      "$idx": 6,
-      "first": false
+      "first": false,
+      "$idx": 6
     },
     {
       "min": false,
@@ -114,13 +122,14 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "secu",
       "countDistinct": false,
       "stddev": false,
       "avg": false,
-      "$idx": 7,
-      "first": false
+      "first": false,
+      "$idx": 7
     },
     {
       "min": false,
@@ -129,13 +138,14 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "locp",
       "countDistinct": false,
       "stddev": false,
       "avg": false,
-      "$idx": 8,
-      "first": false
+      "first": false,
+      "$idx": 8
     },
     {
       "min": false,
@@ -144,13 +154,14 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "actp",
       "countDistinct": false,
       "stddev": false,
       "avg": false,
-      "$idx": 9,
-      "first": false
+      "first": false,
+      "$idx": 9
     },
     {
       "min": false,
@@ -159,41 +170,46 @@
       "last": false,
       "sum": false,
       "type": "string",
+      "concatDistinct": false,
       "concat": false,
       "column": "etatp",
       "countDistinct": false,
       "stddev": false,
       "avg": false,
-      "$idx": 10,
-      "first": false
+      "first": false,
+      "$idx": 10
     },
     {
       "customExpr": "sum(case when catu \u003d \u0027piéton\u0027 then 1 else 0 end)",
       "type": "INT",
+      "concatDistinct": false,
       "customName": "pietons_nb"
     },
     {
       "customExpr": "sum(case when grav \u003d \u0027indemne\u0027 then 1 else 0 end)",
       "type": "INT",
+      "concatDistinct": false,
       "customName": "indemne_nb"
     },
     {
       "customExpr": "sum(case when grav \u003d \u0027blessé léger\u0027 then 1 else 0 end)",
       "type": "INT",
+      "concatDistinct": false,
       "customName": "blesseleger_nb"
     },
     {
       "customExpr": "sum(case when grav \u003d \u0027hospitalisé\u0027 then 1 else 0 end)",
       "type": "INT",
+      "concatDistinct": false,
       "customName": "hospitalise_nb"
     },
     {
       "customExpr": "sum(case when grav \u003d \u0027tué\u0027 then 1 else 0 end)",
       "type": "INT",
+      "concatDistinct": false,
       "customName": "tue_nb"
     }
   ],
-  "outputColumnNameOverrides": {},
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -224,20 +240,63 @@
     {
       "min": false,
       "max": false,
-      "last": false,
       "count": false,
+      "last": false,
       "column": "Num_Acc",
       "sum": false,
       "countDistinct": false,
       "stddev": false,
-      "avg": false,
       "type": "string",
-      "first": false,
-      "concat": false
+      "avg": false,
+      "concat": false,
+      "first": false
     }
   ],
   "postFilter": {
     "enabled": false,
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "maxLength": 16200,
+            "timestampNoTzAsDate": false,
+            "name": "Num_Acc",
+            "type": "string"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "pietons_nb",
+            "type": "int"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "indemne_nb",
+            "type": "int"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "blesseleger_nb",
+            "type": "int"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "hospitalise_nb",
+            "type": "int"
+          },
+          {
+            "maxLength": -1,
+            "timestampNoTzAsDate": false,
+            "name": "tue_nb",
+            "type": "int"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false
   },
   "computedColumns": [],
