@@ -16,26 +16,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 1,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
-          "normalizeText": false,
+          "type": "EQ",
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "normalizeText": false,
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
+      "rightLimit": {},
       "type": "LEFT"
     },
     {
@@ -43,26 +43,26 @@
       "outerJoinOnTheLeft": true,
       "table2": 2,
       "conditionsMode": "AND",
-      "rightLimit": {},
       "on": [
         {
           "maxDistance": 0,
+          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "caseInsensitive": false,
-          "type": "EQ",
           "strict": false,
-          "normalizeText": false,
+          "type": "EQ",
           "column2": {
             "name": "Num_Acc",
             "table": 2
           },
-          "maxMatches": 1,
-          "dateDiffUnit": "DAY"
+          "normalizeText": false,
+          "dateDiffUnit": "DAY",
+          "maxMatches": 1
         }
       ],
+      "rightLimit": {},
       "type": "LEFT"
     }
   ],
@@ -499,6 +499,7 @@
     }
   },
   "enableAutoCastInJoinConditions": false,
+  "computedColumns": [],
   "selectedColumns": [
     {
       "name": "Num_Acc",
@@ -830,6 +831,5 @@
       "table": 2,
       "type": "string"
     }
-  ],
-  "computedColumns": []
+  ]
 }
