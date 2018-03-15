@@ -25,7 +25,7 @@
                 "input": "Num_Acc",
                 "operator": "contains",
                 "col": "mois",
-                "string": "000105300",
+                "string": "915890001901",
                 "num": 2015.0
               }
             ]
@@ -44,7 +44,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 3
+      "_refreshTrigger": 6
     },
     "vizSampling": {
       "autoRefreshSample": false,
@@ -369,6 +369,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -386,6 +387,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAcElEQVRoge3RsQ2AIBBAUeYwEUe0k0mcBBorV7OiU0uJ//5LSMjlCn5IKbqltLOf0W/5hMF0BtMZTGcwncF0BtMZTGcwncF0BtMZTBc6OES4wQbDGGwwzFPw3XzUbi71eNud1pr7fd7aHuLjJEl/dAFjUEC6qCebIQAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
