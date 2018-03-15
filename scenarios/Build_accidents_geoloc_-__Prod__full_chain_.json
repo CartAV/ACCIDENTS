@@ -1,0 +1,29 @@
+{
+  "projectKey": "ACCIDENTS",
+  "id": "Build_accidents_geoloc_-__Prod__full_chain_",
+  "type": "step_based",
+  "name": "Build accidents geoloc -\u003e Prod (full chain)",
+  "active": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dupontlau"
+    },
+    "lastModifiedOn": 1521111117388
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": []
+  },
+  "automationLocal": false
+}
