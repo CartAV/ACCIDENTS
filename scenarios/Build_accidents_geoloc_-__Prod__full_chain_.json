@@ -5,11 +5,11 @@
   "name": "Build accidents geoloc -\u003e Prod (full chain)",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1521111117388
+    "lastModifiedOn": 1521111162328
   },
   "checklists": {
     "checklists": []
@@ -23,7 +23,25 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_2_true_d_accidents_CLUV_prepared",
+        "type": "build_flowitem",
+        "name": "Build accidents_CLUV prepared",
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "accidents_CLUV_prepared",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false
 }
