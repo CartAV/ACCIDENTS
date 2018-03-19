@@ -3,7 +3,281 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "ALL"
+      "mode": "SELECT",
+      "list": [
+        {
+          "name": "Num_Acc",
+          "d": true
+        },
+        {
+          "name": "mois",
+          "d": false
+        },
+        {
+          "name": "lum",
+          "d": false
+        },
+        {
+          "name": "agg",
+          "d": false
+        },
+        {
+          "name": "int",
+          "d": false
+        },
+        {
+          "name": "atm",
+          "d": false
+        },
+        {
+          "name": "col",
+          "d": false
+        },
+        {
+          "name": "adr",
+          "d": false
+        },
+        {
+          "name": "dep",
+          "d": false
+        },
+        {
+          "name": "date",
+          "d": false
+        },
+        {
+          "name": "date_formated",
+          "d": true
+        },
+        {
+          "name": "heures_minutes",
+          "d": false
+        },
+        {
+          "name": "ANNEE",
+          "d": false
+        },
+        {
+          "name": "SEMAINE",
+          "d": false
+        },
+        {
+          "name": "LIBELLE_JOUR",
+          "d": false
+        },
+        {
+          "name": "HEURE",
+          "d": false
+        },
+        {
+          "name": "LIBELLE_PLAGE_HORAIRE",
+          "d": false
+        },
+        {
+          "name": "original_city_code",
+          "d": false
+        },
+        {
+          "name": "original_name",
+          "d": false
+        },
+        {
+          "name": "current_city_code",
+          "d": false
+        },
+        {
+          "name": "current_name",
+          "d": false
+        },
+        {
+          "name": "nom_circonscription_police",
+          "d": false
+        },
+        {
+          "name": "latitude",
+          "d": false
+        },
+        {
+          "name": "geo_type",
+          "d": true
+        },
+        {
+          "name": "longitude",
+          "d": false
+        },
+        {
+          "name": "geo_score",
+          "d": true
+        },
+        {
+          "name": "geo_source",
+          "d": true
+        },
+        {
+          "name": "num_route_or_id",
+          "d": false
+        },
+        {
+          "name": "num_route_com_id",
+          "d": false
+        },
+        {
+          "name": "distance",
+          "d": false
+        },
+        {
+          "name": "geojson",
+          "d": true
+        },
+        {
+          "name": "catr",
+          "d": false
+        },
+        {
+          "name": "voie",
+          "d": false
+        },
+        {
+          "name": "v1",
+          "d": false
+        },
+        {
+          "name": "v2",
+          "d": false
+        },
+        {
+          "name": "circ",
+          "d": false
+        },
+        {
+          "name": "nbv",
+          "d": false
+        },
+        {
+          "name": "vosp",
+          "d": false
+        },
+        {
+          "name": "prof",
+          "d": false
+        },
+        {
+          "name": "pr",
+          "d": false
+        },
+        {
+          "name": "pr1",
+          "d": false
+        },
+        {
+          "name": "plan",
+          "d": false
+        },
+        {
+          "name": "lartpc",
+          "d": false
+        },
+        {
+          "name": "larrout",
+          "d": false
+        },
+        {
+          "name": "surf",
+          "d": false
+        },
+        {
+          "name": "infra",
+          "d": false
+        },
+        {
+          "name": "situ",
+          "d": false
+        },
+        {
+          "name": "env1",
+          "d": false
+        },
+        {
+          "name": "NOM_REG",
+          "d": false
+        },
+        {
+          "name": "voiture_nb",
+          "d": false
+        },
+        {
+          "name": "has_voiture",
+          "d": false
+        },
+        {
+          "name": "deuxrouesmotorises_nb",
+          "d": false
+        },
+        {
+          "name": "has_deuxrouesmotorises",
+          "d": false
+        },
+        {
+          "name": "velo_nb",
+          "d": false
+        },
+        {
+          "name": "has_velo",
+          "d": false
+        },
+        {
+          "name": "poidslourd_nb",
+          "d": false
+        },
+        {
+          "name": "has_poidslourd",
+          "d": false
+        },
+        {
+          "name": "vehiculeautre_nb",
+          "d": false
+        },
+        {
+          "name": "has_vehiculeautre",
+          "d": false
+        },
+        {
+          "name": "pietons_nb",
+          "d": false
+        },
+        {
+          "name": "has_pietons",
+          "d": false
+        },
+        {
+          "name": "indemne_nb",
+          "d": false
+        },
+        {
+          "name": "blesseleger_nb",
+          "d": false
+        },
+        {
+          "name": "hospitalise_nb",
+          "d": false
+        },
+        {
+          "name": "tue_nb",
+          "d": false
+        },
+        {
+          "name": "gravite_accident",
+          "d": false
+        },
+        {
+          "name": "geo_source_display",
+          "d": true
+        },
+        {
+          "name": "PR_display",
+          "d": false
+        }
+      ]
     },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -613,6 +887,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
