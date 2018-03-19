@@ -253,9 +253,9 @@
         "_refreshTrigger": 1
       },
       "def": {
-        "type": "grouped_columns",
+        "type": "stacked_columns",
         "variant": "normal",
-        "name": "Count by ANNEE",
+        "name": "Count by ANNEE and geo_type",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -297,7 +297,43 @@
             }
           }
         ],
-        "genericDimension1": [],
+        "genericDimension1": [
+          {
+            "column": "geo_type",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            }
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
@@ -389,7 +425,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAiElEQVRoge3SwQmAMAxA0a7gANbJXKM6kBsYvbqaBymIl4qBJpX/oYfc8kJDoKthkiM/612q9ASX5uYDDPhnB9CC73NM22gneRlgJTgmWVx/+xpgVwcAXAFsegAP4D6te35fdmgOrJ0BAwYMGDBgwIABAwYMGHBxh1k6wIABAwYMGLBTMBE10QkGkcaYxfOyaAAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACPUlEQVRoge2WwUsbQRTG31m6B/HQS62nbSRR+k9IQa8eSsBDDnoSKRiCeyhdDx5q7roDKTQBBdE2EcxasjlMoVJbKPTS1lNrEUHxFvwDpgd52/VFdp1NdLOb+eCD9zGbx/zezrABULqSYOscHfVe7kW/UqMcDQBwsPuDo4W1xtyBWNZ01HvtithxkaMBrg/gp55iWB/pejKAZz/OVNEA1wdg/X7N3PpvMRnAY+UxjqY5/TbNsM6UM9MnE8820VHvO7RE0+BoAH/gnY15jgYAOJmc5OhoKSREgb1ZNI2KWzuFKb/7Hi2FhGSA6fGP5QA6AY7lAGSA/e77TZkOoCfUCbDMAI50Peu+8SepUiKA/QbAjotZ95v+Z7W0/+b7Chqg/fhvL9pb6JvWwwPbL/bRbcCmVhGmxoWpcfFyQBrYmzPlTNbziSvR4x6U6ekJD4xApna1yZWHTdcUmD4rAXzZWHzeauSdViPvtJy8FXT/aT79sMDR3QX2ZGlgn3XhFLL/a6NEgb7ZczX0bYbZm8DeXgRY+nqQ3r0PvKzl3PrVAyYLGH/gACAFrIBDqnp4ztG0cfXLRQXX3h2cRQp8uTpeQ3cV2JspcNtwCLBfr06Bae/EAfv1igVw7fAih/X7z+csCOjOgEeW6hxN8/CSXcH6UWGvHVjircQSmD6rgO8JWHwyBkP/t1bAMQCufj0dCn3EOwGWycOGncP6caHef8BBv1XASQf2G0BfAHtz3wGPG/XBp2ZzDy0FrKSkFAv9A9czv6EtUeHYAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
