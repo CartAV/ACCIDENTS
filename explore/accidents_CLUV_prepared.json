@@ -458,7 +458,7 @@
         "_refreshTrigger": 1
       },
       "def": {
-        "type": "stacked_columns",
+        "type": "grouped_columns",
         "variant": "normal",
         "name": "Avg. of geo_score by ANNEE and geo_type",
         "userEditedName": false,
@@ -630,7 +630,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAIElEQVRoge3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAHgaJagAAXCxjHYAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABS0lEQVRoge3Pz0oCURQG8Lts46Z1RDslhHJX0Kpdj2D4AEH7uLsZWqUE1YDjRASGq+yPbop0jLOx7AEacRG5ChJ6Bk+rSm83uKETDn3f8vCdw/kJgXzF6+YolO7zTkad2V17ynw/Ww7jL4DH1p1kMDvOjDrnw4PZZvWR1K7uBnv5q2Y1WB/q/gBmz9XeuKsE+8P72TIX3KKua/qXNir4svVKQowffH7/koo8+LNrAK489DIAD2QQzLaY1oG5LreF+CMw782fmoLZl6SCOydbDR2YfUnfwFaMVPBFq+dyXR6pYLZiNDKYSc79BtzPO7VIgD/KOvBbOr06CrixuXZsCm7HE2QKbscTFAr4aWnZBxjgfwhOFpNkCl4sLdRMwbsd61YFB9cbN6GAV0qpM4ABBhhggAEGGGCAAQYYYIABBhhggAEGeALACIJEIu/WRiVGrEt0HQAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
