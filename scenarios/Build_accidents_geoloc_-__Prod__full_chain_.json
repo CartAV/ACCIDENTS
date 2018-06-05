@@ -5,11 +5,11 @@
   "name": "Build accidents geoloc -\u003e Prod (full chain)",
   "active": false,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "dupontlau"
+      "login": "antoinefa"
     },
-    "lastModifiedOn": 1521123663089
+    "lastModifiedOn": 1528214609282
   },
   "checklists": {
     "checklists": []
@@ -38,6 +38,16 @@
           ],
           "jobType": "RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "run_scenario_ACCIDENTSMISEJOUR",
+        "type": "run_scenario",
+        "name": "update CARTAV",
+        "params": {
+          "projectKey": "BASESDEPRODUCTION",
+          "scenarioId": "ACCIDENTSMISEJOUR",
           "proceedOnFailure": false
         }
       }
