@@ -5,11 +5,11 @@
   "name": "Build accidents geoloc -\u003e Prod (full chain)",
   "active": false,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "antoinefa"
     },
-    "lastModifiedOn": 1528444460409
+    "lastModifiedOn": 1529602173407
   },
   "checklists": {
     "checklists": []
@@ -28,6 +28,12 @@
         "id": "build_2_true_d_accidents_CLUV_prepared",
         "type": "build_flowitem",
         "name": "Build accidents_CLUV prepared",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "resetScenarioStatus": false,
         "params": {
           "builds": [
             {
@@ -36,7 +42,7 @@
               "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_FORCED_BUILD",
+          "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
@@ -45,6 +51,12 @@
         "id": "run_scenario_ACCIDENTSMISEJOUR",
         "type": "run_scenario",
         "name": "update CARTAV",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "resetScenarioStatus": false,
         "params": {
           "projectKey": "BASESDEPRODUCTION",
           "scenarioId": "ACCIDENTSMISEJOUR",
