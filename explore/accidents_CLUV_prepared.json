@@ -618,8 +618,8 @@
             "isA": "measure",
             "displayAxis": "axis1",
             "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
+            "computeMode": "PERCENTAGE",
+            "computeModeDim": 1
           }
         ],
         "xDimension": [],
@@ -699,7 +699,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAADdElEQVRoQ+2YXUgUURTH75ntobJe0gdfNCxbJTWxFOrBcuhrie1jpYeESB/60ExsINseopQKVGI0aLEPEZPAF0nKzbYsHDA0UoJErCySMsOXipDooXZu7MPcae7qXi+zqzvqvp2dO5fz+5//OXdmAC2wH9C8uMEjI4As7X8oPinOJ02CgIftdhmBQIC/17QZeFM/9v0gf4D6Ik46UWslQYKAG0arZUA68FZH07Q82K8qaR9GqiwNXPPmfKUN2VI0iBVLY+KnA8IIKyVJbmsDpzWnyYD0Hg5VPRVUpac3N5P0u/935arGlsFornjw0Opyy+g/4Ixx77T5B4Cvv1yTR4CxKm2OzbqsxcsuXXFGGzwTOHTCqnIzOY4A+xGSREdTnXbP+ndvo27CmwbOGO8kwBhjqSyvkAAXJ50VR7JzujUB7AP9cy5A2IEBgAAPFQ2JN0ZrCXBAgDGHg/RIgs8365Y3DYyQQCqMsF/K+PrIAJzenE6ApxJgtns87MAIbAQYdlaLNDAdD6ekEkFmo+cjDoy7zhGgqQSgLU9XnBakofRZh7amxLN9L69g/MDPPXpOfqygbacMlqYrTAOzBGi/dZQI5DreGDQDaIFox7BaJBj4QozhWRptcP0ybDLYHkPiALANdOA/qoTEMoOlWcCFrblkiN0p6HGyWoC+vvtuzn0tn8eH+/ebBw61w0yAL67ULV01KbIEoIGyWzKfaCkMHHm9q65tX7MWSwcfFNH7RR8wpwAsgTC1X/QD8wpAr7c8MAOIrqj1K7wITA29cFu6rXdCFgCRTzwu3zrDHGh3vCcxRqDk+5JDH0smK8aysGlL08Chpl4AGBDW34dtgnTgp2w4h+/1TZBjKX9LvPjtmkjO3djybicvEL2e3p97SkcamE6QF5i+33LALADe69wVTqjwyoKg93BIS2NQ6l2bjJZ+uFa3dNWkyJuw2fURBwbQe/ivCtKX5YcWgTXVA0PLbAVZ97OerYPelngtHW0Vxp2lreQr6h5PAW3xeQfMmtphB14iYNLDn2qc4mq3l5zDU8Usi5q9HvEK8wKzBLn99DMR7NiORO4ZYDlgWhDeilsemFeAeQfMEmARmFYgsaKjHGOwsx7RAtcxQq8AoY3aWgy4HjCc1uKxq87ShDNe8l13LmJmhWcCauU1QeewlWFmkvuCA/4Hq7CKZeRUnO4AAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACfUlEQVRoQ2NkGGGAEZt/r6lr7IeJy/h6w5Xw9fQ6Istp3byBwkc2C12Ommpn3O+Cuy9Dsczx/+4KOB/ZDYyuHY7o/iPo4UM7kuB6QIajW4bMt/OYB1cL8iA+tcgOIWQuulqdBTpwD15JuEK5h5EdSk2HITsU2VyQo9E9QYpaimOYFMuQ1ebYx6GkBko8gc8NyB4EJdsB8zB6rC1YF7ISJpYQtCac3IC8LO0DNxrdg1TxML4Qwxe6uk+3wB2GnrcIOYyUWCNFLVGFFrkeRi8hSXEYSWrreeGFFmPjZ8f/SPz1HrfhzgiylCCulB50Hj4yFZGk0TwI8vC64y+wVkv09/CWHHgaZ/SZ4oMSkP/+fIf5gtG9x+v/zpJtKPz1SXA+w4XVnHC5Qe1hPEkPJflj8QRyMiWklr4xjOQpBpts1NJ0WHgYnydGPYy7NCWUTOmbpJGTKZLL0KsAdP7QTdKD3MPIhRSo6qG80Br1MCRdD1SSRm89DfsYHjIeJiUmaKWWuM4DlfIwrTxBirlEefjSsjZ4P1b3ZrsYcjsWn2WBXyagtLRIcRit1BLlYXzF/KiHkbpmIy+Gd6ii9FtplUxJMZfkJF244Qxcz8NOH8f8pRfXwAQmRuuHyJdvgXe+H3BEDk0PI3sCOYRAHkaWQ+ePehgpfxNq85KSTElRS1SSHo1haDCRmqTxJX9CWYXcqhHZXKIH8ciNYUKeINfc/gATlKHXQZOkRz2MVGWhZwdKAmfYxzB64Iw4D6MXhhQP8ZBbuFCSTCkp0ZH1ohdwNK2HB4OH0d1AlIdlSjd7oSsE8Z90+25DlkPnI+sZLGqJ8jA2zw4XMayLWoaL57D5AwCo1VZ0tqaqWwAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -732,9 +732,9 @@
         "_refreshTrigger": 1
       },
       "def": {
-        "type": "grouped_columns",
-        "variant": "normal",
-        "name": "Avg. of geo_score by ANNEE and geo_type",
+        "type": "stacked_columns",
+        "variant": "stacked_100",
+        "name": "Count by ANNEE and geo_source",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -760,12 +760,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of geo_score, descending"
+                "label": "Count of records, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of geo_score, ascending",
+                "label": "Count of records, ascending",
                 "sortAscending": true
               }
             ],
@@ -778,7 +778,7 @@
         ],
         "genericDimension1": [
           {
-            "column": "geo_type",
+            "column": "geo_source",
             "type": "ALPHANUM",
             "numParams": {
               "emptyBinsMode": "ZEROS"
@@ -797,19 +797,19 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of geo_score, descending"
+                "label": "Count of records, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of geo_score, ascending",
+                "label": "Count of records, ascending",
                 "sortAscending": true
               }
             ],
             "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
             }
           }
         ],
@@ -817,15 +817,14 @@
         "animationDimension": [],
         "genericMeasures": [
           {
-            "column": "geo_score",
-            "function": "AVG",
+            "function": "COUNT",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
             "displayAxis": "axis1",
             "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
+            "computeMode": "PERCENTAGE",
+            "computeModeDim": 1
           }
         ],
         "xDimension": [],
@@ -905,7 +904,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABS0lEQVRoge3Pz0oCURQG8Lts46Z1RDslhHJX0Kpdj2D4AEH7uLsZWqUE1YDjRASGq+yPbop0jLOx7AEacRG5ChJ6Bk+rSm83uKETDn3f8vCdw/kJgXzF6+YolO7zTkad2V17ynw/Ww7jL4DH1p1kMDvOjDrnw4PZZvWR1K7uBnv5q2Y1WB/q/gBmz9XeuKsE+8P72TIX3KKua/qXNir4svVKQowffH7/koo8+LNrAK489DIAD2QQzLaY1oG5LreF+CMw782fmoLZl6SCOydbDR2YfUnfwFaMVPBFq+dyXR6pYLZiNDKYSc79BtzPO7VIgD/KOvBbOr06CrixuXZsCm7HE2QKbscTFAr4aWnZBxjgfwhOFpNkCl4sLdRMwbsd61YFB9cbN6GAV0qpM4ABBhhggAEGGGCAAQYYYIABBhhggAEGeALACIJEIu/WRiVGrEt0HQAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABnklEQVRoQ+2aMUpDQRCG3QPYByy8QNA6dlvYSBQVTCdYCHqD2Ek63w0ULAQ7BROM2Fik01rJBSwE+xwgskmzC//IDi8Lu5NJ95Zhst/7//yzyYtZWbKXQbzNu+bIXx+fjK27Rus5107fLgIOs31lRQB/vZ4/+AJt7Fx33HU0MCqkGpRWCxUuDYKzXxnAl6vhZ7U3mWWODEsDuGm2wLc2CBdzOpqHCweiZm19SzPuLqlETQiq79PHb2D1w1YDjyUyBDgbAzMwFTACc86JB34+6/tzzezdHLCtlwj4fXD/6O9ta//4qD4wZdMMFEZwCtxqzMZSvKUzUJijGqcWp/QigEEPzsZS1SowlcbslJaqMGU9NHNT2ZTTl2VpzkhQ4N7EcpRIVQsVTvVmOfRVYOqEQq2vd1+CbyTfVZs85RSnMIITAUxBpAJO1Tf6LL0IYA4Ep5YzGkUAo5vDyQaY0jkrrMBV23KCU4TCCvzPWUAVdieq0kJLLa2Wnv+STT55kGJpxCE6tKKB17rDTf9xxk+1++mu0XpptVBhyX/sWTrgP9gfyHSPIK17AAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
