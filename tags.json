@@ -1,31 +1,13 @@
 {
   "tags": {
-    "source": {
-      "color": "#0f6d82"
-    },
-    "usagers": {
+    "creator:grabenertr": {
       "color": "#123883"
-    },
-    "vehicules": {
-      "color": "#90a8b7"
-    },
-    "caracteristiques": {
-      "color": "#d66b9b"
-    },
-    "lieux": {
-      "color": "#a088bd"
     },
     "creator_antoinefa": {
       "color": "#1ac2ab"
     },
-    "creator_dauriame": {
-      "color": "#afc277"
-    },
-    "stats": {
-      "color": "#94be8e"
-    },
-    "s": {
-      "color": "#94be8e"
+    "lieux": {
+      "color": "#a088bd"
     },
     "creator_grabenertr": {
       "color": "#a088bd"
@@ -33,14 +15,32 @@
     "creator_chabouisfr": {
       "color": "#a088bd"
     },
+    "source": {
+      "color": "#0f6d82"
+    },
+    "creator_dauriame": {
+      "color": "#afc277"
+    },
     "creator:antoinefa": {
       "color": "#0f6d82"
     },
-    "creator:chabouisfr": {
+    "caracteristiques": {
+      "color": "#d66b9b"
+    },
+    "s": {
+      "color": "#94be8e"
+    },
+    "stats": {
+      "color": "#94be8e"
+    },
+    "vehicules": {
       "color": "#90a8b7"
     },
-    "creator:grabenertr": {
+    "usagers": {
       "color": "#123883"
+    },
+    "creator:chabouisfr": {
+      "color": "#90a8b7"
     }
   }
 }
