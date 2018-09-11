@@ -86,20 +86,20 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by Num_Acc",
+        "name": "Count by date",
         "userEditedName": false,
         "genericDimension0": [
           {
-            "column": "Num_Acc",
-            "type": "NUMERICAL",
+            "column": "date",
+            "type": "DATE",
             "numParams": {
-              "mode": "TREAT_AS_ALPHANUM",
-              "nbBins": "10",
-              "binSize": 100,
               "emptyBinsMode": "ZEROS"
             },
-            "maxValues": 20,
-            "generateOthersCategory": false,
+            "dateParams": {
+              "mode": "MONTH"
+            },
+            "maxValues": 0,
+            "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
@@ -122,9 +122,9 @@
               }
             ],
             "sort": {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Count of records, descending"
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
             }
           }
         ],
@@ -220,7 +220,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAzklEQVRoQ+2ZsQ3CMBBFfThBYgpmoWcAGlagpaCmoGUFGgagZxamQCIxjly4SYRiyp88l9ad7Pv/P7mwuZkt68+7Pj6eae912W6mqAUD4/DEck2kiTSR1lYAhmFYO8GD2xNpIk2ktRWAYRjWTjDPEgzDMAxrKwDDMKydYN5hGIZhGNZWAIYzw58Qr0tvh19+xuiCmfP5Lzn3jfnfxsW+su8t1b192K2Cv4/1/HtG07Snuq7O/b705z1wuORw5RoGVnav5O44XKKScs3sHO4AYEOjKRuebI0AAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABUElEQVRoge3UQUrEMBQG4LmAC3EjMyTZiwvnAp7AradwJZq8LryCB3CjWxFm1PZlRFByNRdDagxpRtRWMv1/KJTm8ZIPmjeZIAgyrVbzrrWZtkdDnqX3KGKXAytiN+R5ek8MFsRLj1TEbqvAkprXUYE9aFqt5h6WAxePz4HDJ6zv6iW0vRrizL+KBwljH9v3DnDu91bEbqvAO2fLvc91e+zhUvOp7yOMvfV9Bdn6v0zZpMDSMMdgYZrrGKyI3Rewtvfte+lgqW2dBjfvvs93wPGVGHwI/gzMDyG4/Z4A54CbBqIgXhQFlhXvhgMvRm4GN39/LfoEx7gcOOhxXjx4/+LpYF1bnwR73KTAM813RYGDwVbHPYThRQosLvkwBPva4sHS8HNqjxR43aN8MCfB2r4ADDDAAAMMcEFgSfw2CnBbDzDAAAMM8BjACIIgyMD5AHgQZq8jHwBoAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
