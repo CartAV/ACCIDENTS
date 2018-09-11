@@ -160,7 +160,17 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "NUMERICAL_FACET",
+            "column": "ANNEE",
+            "columnType": "NUMERICAL",
+            "minValue": 2012.98830396,
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -220,7 +230,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABUElEQVRoge3UQUrEMBQG4LmAC3EjMyTZiwvnAp7AradwJZq8LryCB3CjWxFm1PZlRFByNRdDagxpRtRWMv1/KJTm8ZIPmjeZIAgyrVbzrrWZtkdDnqX3KGKXAytiN+R5ek8MFsRLj1TEbqvAkprXUYE9aFqt5h6WAxePz4HDJ6zv6iW0vRrizL+KBwljH9v3DnDu91bEbqvAO2fLvc91e+zhUvOp7yOMvfV9Bdn6v0zZpMDSMMdgYZrrGKyI3Rewtvfte+lgqW2dBjfvvs93wPGVGHwI/gzMDyG4/Z4A54CbBqIgXhQFlhXvhgMvRm4GN39/LfoEx7gcOOhxXjx4/+LpYF1bnwR73KTAM813RYGDwVbHPYThRQosLvkwBPva4sHS8HNqjxR43aN8MCfB2r4ADDDAAAMMcEFgSfw2CnBbDzDAAAMM8BjACIIgyMD5AHgQZq8jHwBoAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABGUlEQVRoge3UMQ6CMBQGYCZ3V2PbiQN4Ck9g4hU8AH1cxdHVxaEvrr2ai8+UilQQwZr/Txroy0t5HyEUBTJ+DLGfe4bBUcTbokgj1pUr5X5ssCLej3leZ2R4Q+y7IAJO9Um0ZXr3+VmAX/W+c562fAz7ZgW3DWqI/WDw7ryIe9rAk/0XUmDZp8DaOmesu2QNDvcpsCH2r8DPL2cGcBfuW2C5TgrWNe/iwVf1dTMErCo+NGp3cOOcCGyIvYB15U4/A47XunJlXPsU/Djn2+B4qCnA4coa3KgBDDDAAAMMMMAAA5wBWNe8DGvKuouy7vpXYAEaYi9gqQm495fwD+Be6F8HP3oCsCH2AAMMMMAAAwxwhmAEQRBkxtwAKh0n3rFQiygAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
