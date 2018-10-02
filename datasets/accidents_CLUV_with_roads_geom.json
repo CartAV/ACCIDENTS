@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 29,
+    "versionNumber": 30,
     "lastModifiedBy": {
-      "login": "antoinefa"
+      "login": "dupontlau"
     },
-    "lastModifiedOn": 1520536037288
+    "lastModifiedOn": 1538482075304
   },
   "creationTag": {
     "versionNumber": 0,
@@ -49,7 +49,6 @@
     "connection": "postgis",
     "notReadyIfEmpty": false,
     "mode": "table",
-    "partitioned": false,
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "table": "accidents_cluv_with_roads_geom",
@@ -60,422 +59,290 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "userModified": true,
     "columns": [
       {
         "name": "Num_Acc",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "mois",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "lum",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "agg",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "int",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "atm",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "col",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "adr",
-        "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "dep",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
+      },
+      {
+        "name": "agg",
+        "type": "string"
+      },
+      {
+        "name": "int",
+        "type": "string"
+      },
+      {
+        "name": "atm",
+        "type": "string"
+      },
+      {
+        "name": "col",
+        "type": "string"
+      },
+      {
+        "name": "adr",
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "date",
-        "type": "date",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "date"
       },
       {
         "name": "date_formated",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "heures_minutes",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "ANNEE",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "SEMAINE",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "LIBELLE_JOUR",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "HEURE",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "LIBELLE_PLAGE_HORAIRE",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "original_city_code",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "original_name",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "current_city_code",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "current_name",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "nom_circonscription_police",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "latitude",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
-      },
-      {
-        "name": "geo_type",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "longitude",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "double"
       },
       {
-        "name": "geo_score",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "name": "geo_type",
+        "type": "string"
+      },
+      {
+        "name": "latitude",
+        "type": "double"
       },
       {
         "name": "geo_source",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
+      },
+      {
+        "name": "geo_score",
+        "type": "double"
       },
       {
         "name": "num_route_or_id",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "num_route_com_id",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "distance",
-        "type": "double",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "double"
       },
       {
         "name": "geojson",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "catr",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "voie",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "v1",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "v2",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "circ",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "nbv",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "vosp",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "prof",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "pr",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "pr1",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "plan",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "lartpc",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "larrout",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "surf",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "infra",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "situ",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "env1",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "NOM_REG",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       },
       {
         "name": "voiture_nb",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "has_voiture",
-        "type": "boolean",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "boolean"
       },
       {
         "name": "deuxrouesmotorises_nb",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "has_deuxrouesmotorises",
-        "type": "boolean",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "boolean"
       },
       {
         "name": "velo_nb",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "has_velo",
-        "type": "boolean",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "boolean"
       },
       {
         "name": "poidslourd_nb",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "has_poidslourd",
-        "type": "boolean",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "boolean"
       },
       {
         "name": "vehiculeautre_nb",
         "type": "string",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "has_vehiculeautre",
-        "type": "boolean",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "boolean"
       },
       {
         "name": "pietons_nb",
         "type": "bigint",
-        "meaning": "Text",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "meaning": "Text"
       },
       {
         "name": "has_pietons",
-        "type": "boolean",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "boolean"
       },
       {
         "name": "indemne_nb",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "blesseleger_nb",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "hospitalise_nb",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "tue_nb",
-        "type": "bigint",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "bigint"
       },
       {
         "name": "gravite_accident",
-        "type": "string",
-        "timestampNoTzAsDate": false,
-        "maxLength": -1
+        "type": "string"
       }
-    ]
+    ],
+    "userModified": true
   },
   "metrics": {
     "probes": [
