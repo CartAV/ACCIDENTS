@@ -1,396 +1,562 @@
 {
-  "virtualInputs": [
-    {
-      "index": 2
-    },
-    {
-      "autoSelectColumns": false,
-      "index": 0,
-      "preFilter": {
-        "enabled": false,
-        "distinct": false
-      }
-    },
-    {
-      "index": 1
-    }
-  ],
   "joins": [
     {
-      "table1": 0,
-      "outerJoinOnTheLeft": true,
       "table2": 1,
+      "table1": 0,
       "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
       "on": [
         {
-          "maxDistance": 0,
-          "caseInsensitive": false,
           "column1": {
             "name": "Num_Acc",
             "table": 0
           },
-          "strict": false,
-          "type": "EQ",
+          "dateDiffUnit": "DAY",
           "column2": {
             "name": "Num_Acc",
             "table": 1
           },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
           "normalizeText": false,
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "strict": false,
+          "type": "EQ"
         }
-      ],
-      "type": "LEFT"
+      ]
     },
     {
-      "table1": 0,
-      "outerJoinOnTheLeft": true,
       "table2": 2,
+      "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
       "on": [
         {
-          "maxDistance": 1,
-          "caseInsensitive": false,
           "column1": {
             "name": "dep",
             "table": 0
           },
-          "strict": false,
-          "type": "EQ",
+          "dateDiffUnit": "DAY",
           "column2": {
             "name": "CODE_DEPT",
             "table": 2
           },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 1,
           "normalizeText": false,
-          "dateDiffUnit": "DAY",
-          "maxMatches": 1
+          "strict": false,
+          "type": "EQ"
         }
-      ],
-      "rightLimit": {},
-      "type": "LEFT"
+      ]
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "Num_Acc",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "mois",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "lum",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "agg",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "int",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "atm",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "col",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "adr",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "dep",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "date",
+      "type": "date",
+      "table": 0
+    },
+    {
+      "name": "date_formated",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "heures_minutes",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "ANNEE",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "SEMAINE",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "LIBELLE_JOUR",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "HEURE",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "LIBELLE_PLAGE_HORAIRE",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "original_city_code",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "original_name",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "current_city_code",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "current_name",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "nom_circonscription_police",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "latitude",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "geo_type",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "longitude",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "geo_score",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "geo_source",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "num_route_or_id",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "num_route_com_id",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "distance",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "geojson",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "catr",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "voie",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "v1",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "v2",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "circ",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "nbv",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "vosp",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "prof",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "pr",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "pr1",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "plan",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "lartpc",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "larrout",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "surf",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "infra",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "situ",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "env1",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "NOM_REG",
+      "type": "string",
+      "table": 2
     }
   ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
       "hiveconf": [],
+      "inheritConf": "default",
       "addDkuUdf": false,
-      "executionEngine": "HIVECLI_LOCAL",
-      "inheritConf": "default"
+      "executionEngine": "HIVECLI_LOCAL"
     },
     "impala": {
       "forceStreamMode": true
     },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
     "sparkSQL": {
       "pipelineAllowMerge": true,
-      "sparkConfig": {
-        "inheritConf": "default",
-        "conf": []
-      },
       "pipelineAllowStart": true,
-      "overwriteOutputSchema": false,
+      "useGlobalMetastore": false,
       "readParams": {
         "map": {}
       },
-      "useGlobalMetastore": false
-    },
-    "lowerCaseSchemaIfEngineRequiresIt": true
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
   },
+  "virtualInputs": [
+    {
+      "index": 2
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0
+    },
+    {
+      "index": 1
+    }
+  ],
   "postFilter": {
     "$status": {
       "schema": {
         "columns": [
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "Num_Acc",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "mois",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "lum",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "agg",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "int",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "atm",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "col",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "adr",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "dep",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "date",
             "type": "date"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "date_formated",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "heures_minutes",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "ANNEE",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "SEMAINE",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "LIBELLE_JOUR",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "HEURE",
             "type": "bigint"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "LIBELLE_PLAGE_HORAIRE",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "original_city_code",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "original_name",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "current_city_code",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "current_name",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "nom_circonscription_police",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "latitude",
             "type": "double"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "geo_type",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "longitude",
             "type": "double"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "geo_score",
             "type": "double"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "geo_source",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "num_route_or_id",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "num_route_com_id",
             "type": "string"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "distance",
             "type": "double"
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "geojson",
             "type": "string"
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "catr",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "voie",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "v1",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "v2",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "circ",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "nbv",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "vosp",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "prof",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "pr",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "pr1",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "plan",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "lartpc",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "larrout",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "surf",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "infra",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "situ",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": 16200,
-            "timestampNoTzAsDate": false,
             "name": "env1",
-            "type": "string"
+            "type": "string",
+            "maxLength": 16200
           },
           {
-            "maxLength": -1,
-            "timestampNoTzAsDate": false,
             "name": "NOM_REG",
             "type": "string"
           }
@@ -399,253 +565,6 @@
       }
     }
   },
-  "enableAutoCastInJoinConditions": false,
   "computedColumns": [],
-  "selectedColumns": [
-    {
-      "name": "Num_Acc",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "mois",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "lum",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "agg",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "int",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "atm",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "col",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "adr",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "dep",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "date",
-      "table": 0,
-      "type": "date"
-    },
-    {
-      "name": "date_formated",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "heures_minutes",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "ANNEE",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "SEMAINE",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "LIBELLE_JOUR",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "HEURE",
-      "table": 0,
-      "type": "bigint"
-    },
-    {
-      "name": "LIBELLE_PLAGE_HORAIRE",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "original_city_code",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "original_name",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "current_city_code",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "current_name",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "nom_circonscription_police",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "latitude",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "geo_type",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "longitude",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "geo_score",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "geo_source",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "num_route_or_id",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "num_route_com_id",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "distance",
-      "table": 0,
-      "type": "double"
-    },
-    {
-      "name": "geojson",
-      "table": 0,
-      "type": "string"
-    },
-    {
-      "name": "catr",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "voie",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "v1",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "v2",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "circ",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "nbv",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "vosp",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "prof",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "pr",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "pr1",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "plan",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "lartpc",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "larrout",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "surf",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "infra",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "situ",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "env1",
-      "table": 1,
-      "type": "string"
-    },
-    {
-      "name": "NOM_REG",
-      "table": 2,
-      "type": "string"
-    }
-  ]
+  "enableAutoCastInJoinConditions": false
 }
