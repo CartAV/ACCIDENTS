@@ -1,103 +1,103 @@
 {
-  "explorationFilters": [],
-  "maxProcessedMemTableBytes": -1,
-  "analysisColumnData": {},
   "columnsSelection": {
     "mode": "ALL"
   },
-  "globalSearchQuery": "",
+  "explorationSampling": {
+    "_refreshTrigger": 2,
+    "selection": {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "ANNEE",
+              "col": "mois",
+              "num": 2015.0,
+              "operator": "\u003d\u003d [number]"
+            }
+          ]
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": -1,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "comment": "les points géocodés avec une précision town, village ou city ne doivent pas être localisées sur la carte.",
+      "type": "PythonUDF",
+      "params": {
+        "mode": "ROW",
+        "stopOnError": true,
+        "pythonSourceCode": "def process(row):\n    if row[\"geo_type\"] in [\"town\", \"village\", \"city\"]:\n        row[\"latitude\"] \u003d None \n        row[\"longitude\"] \u003d None\n    return row\n",
+        "usePythonUnicode": true
+      },
+      "alwaysShowComment": true
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "comment": "geo_source_display est le label visible quand on clique sur les détail d\u0027un accident sur la carte",
+      "type": "PythonUDF",
+      "params": {
+        "mode": "CELL",
+        "stopOnError": true,
+        "pythonSourceCode": "dict \u003d {\"baac\": \"coordonnées GPS BAAC\",\n    \"bano + name\": \"géocodage BANO\",\n    \"ban + name\": \"géocodage BAN\",\n    \"bano + citycode\": \"géocodage BANO\",\n    \"ban + citycode\": \"géocodage BAN\",\n    \"PR\": \"Point de repère (PR)\"\n    }\n\ndef process(row):\n    gs \u003d row[\"geo_source\"]\n    if gs in dict :\n        return dict[gs]\n    else:\n        return None\n",
+        "column": "geo_source_display",
+        "usePythonUnicode": true
+      },
+      "alwaysShowComment": true
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "comment": "le PR tel que visible dans les détails de l\u0027accident sur la carte.",
+      "type": "PythonUDF",
+      "params": {
+        "mode": "CELL",
+        "stopOnError": true,
+        "pythonSourceCode": "def process(row):\n    pr \u003d row[\"pr\"]\n    if pr:\n        pr1 \u003d row[\"pr1\"]\n        if pr1:\n            return str(pr) + \".\" + str(pr1)\n        else:\n            return str(pr)\n    else:\n        return None\n",
+        "column": "PR_display",
+        "usePythonUnicode": true
+      },
+      "alwaysShowComment": true
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
   },
-  "origin": "PREPARE_RECIPE",
+  "analysisColumnData": {},
   "sorting": [],
+  "globalSearchQuery": "",
   "coloring": {
-    "individualColumns": [],
     "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
     "valueColoringMode": "HASH"
-  },
-  "steps": [
-    {
-      "alwaysShowComment": true,
-      "preview": false,
-      "params": {
-        "usePythonUnicode": true,
-        "stopOnError": true,
-        "pythonSourceCode": "def process(row):\n    if row[\"geo_type\"] in [\"town\", \"village\", \"city\"]:\n        row[\"latitude\"] \u003d None \n        row[\"longitude\"] \u003d None\n    return row\n",
-        "mode": "ROW"
-      },
-      "comment": "les points géocodés avec une précision town, village ou city ne doivent pas être localisées sur la carte.",
-      "type": "PythonUDF",
-      "disabled": false,
-      "metaType": "PROCESSOR"
-    },
-    {
-      "alwaysShowComment": true,
-      "preview": false,
-      "params": {
-        "usePythonUnicode": true,
-        "stopOnError": true,
-        "column": "geo_source_display",
-        "pythonSourceCode": "dict \u003d {\"baac\": \"coordonnées GPS BAAC\",\n    \"bano + name\": \"géocodage BANO\",\n    \"ban + name\": \"géocodage BAN\",\n    \"bano + citycode\": \"géocodage BANO\",\n    \"ban + citycode\": \"géocodage BAN\",\n    \"PR\": \"Point de repère (PR)\"\n    }\n\ndef process(row):\n    gs \u003d row[\"geo_source\"]\n    if gs in dict :\n        return dict[gs]\n    else:\n        return None\n",
-        "mode": "CELL"
-      },
-      "comment": "geo_source_display est le label visible quand on clique sur les détail d\u0027un accident sur la carte",
-      "type": "PythonUDF",
-      "disabled": false,
-      "metaType": "PROCESSOR"
-    },
-    {
-      "alwaysShowComment": true,
-      "preview": true,
-      "params": {
-        "usePythonUnicode": true,
-        "stopOnError": true,
-        "column": "PR_display",
-        "pythonSourceCode": "def process(row):\n    pr \u003d row[\"pr\"]\n    if pr:\n        pr1 \u003d row[\"pr1\"]\n        if pr1:\n            return str(pr) + \".\" + str(pr1)\n        else:\n            return str(pr)\n    else:\n        return None\n",
-        "mode": "CELL"
-      },
-      "comment": "le PR tel que visible dans les détails de l\u0027accident sur la carte.",
-      "type": "PythonUDF",
-      "disabled": false,
-      "metaType": "PROCESSOR"
-    }
-  ],
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
-  "previewMode": "ALL_ROWS",
-  "explorationSampling": {
-    "_refreshTrigger": 2,
-    "autoRefreshSample": false,
-    "selection": {
-      "targetRatio": 0.02,
-      "maxRecords": 10000,
-      "maxStoredBytes": -1,
-      "partitionSelectionMethod": "ALL",
-      "withinFirstN": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "latestPartitionsN": 1,
-      "ordering": {
-        "enabled": false,
-        "rules": []
-      },
-      "maxReadUncompressedBytes": -1,
-      "filter": {
-        "enabled": true,
-        "uiData": {
-          "conditions": [
-            {
-              "num": 2015.0,
-              "col": "mois",
-              "input": "ANNEE",
-              "operator": "\u003d\u003d [number]"
-            }
-          ],
-          "mode": "\u0026\u0026"
-        },
-        "distinct": false
-      }
-    }
   }
 }
