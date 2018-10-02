@@ -71,6 +71,11 @@
       "table": 0
     },
     {
+      "name": "dep",
+      "type": "string",
+      "table": 0
+    },
+    {
       "name": "agg",
       "type": "string",
       "table": 0
@@ -92,11 +97,6 @@
     },
     {
       "name": "adr",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "dep",
       "type": "string",
       "table": 0
     },
@@ -166,7 +166,7 @@
       "table": 0
     },
     {
-      "name": "latitude",
+      "name": "longitude",
       "type": "double",
       "table": 0
     },
@@ -176,18 +176,18 @@
       "table": 0
     },
     {
-      "name": "longitude",
-      "type": "double",
-      "table": 0
-    },
-    {
-      "name": "geo_score",
+      "name": "latitude",
       "type": "double",
       "table": 0
     },
     {
       "name": "geo_source",
       "type": "string",
+      "table": 0
+    },
+    {
+      "name": "geo_score",
+      "type": "double",
       "table": 0
     },
     {
@@ -360,6 +360,10 @@
             "type": "string"
           },
           {
+            "name": "dep",
+            "type": "string"
+          },
+          {
             "name": "agg",
             "type": "string"
           },
@@ -377,10 +381,6 @@
           },
           {
             "name": "adr",
-            "type": "string"
-          },
-          {
-            "name": "dep",
             "type": "string"
           },
           {
@@ -436,7 +436,7 @@
             "type": "string"
           },
           {
-            "name": "latitude",
+            "name": "longitude",
             "type": "double"
           },
           {
@@ -444,16 +444,16 @@
             "type": "string"
           },
           {
-            "name": "longitude",
-            "type": "double"
-          },
-          {
-            "name": "geo_score",
+            "name": "latitude",
             "type": "double"
           },
           {
             "name": "geo_source",
             "type": "string"
+          },
+          {
+            "name": "geo_score",
+            "type": "double"
           },
           {
             "name": "num_route_or_id",
