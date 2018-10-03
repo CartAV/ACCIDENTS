@@ -5,11 +5,11 @@
   "name": "Build accidents geoloc -\u003e Prod (full chain)",
   "active": false,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538409223431
+    "lastModifiedOn": 1538562021877
   },
   "checklists": {
     "checklists": []
@@ -59,7 +59,7 @@
         "resetScenarioStatus": false,
         "params": {
           "projectKey": "BASESDEPRODUCTION",
-          "scenarioId": "ACCIDENTSMISEJOUR",
+          "scenarioId": "ACCIDENTSDEVMISEJOUR",
           "proceedOnFailure": false
         }
       }
