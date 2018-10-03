@@ -1,14 +1,28 @@
 {
   "connection": "datalabmaster",
   "name": "dupontlau\u0027s notebook on datalabmaster",
-  "cells": [],
+  "cells": [
+    {
+      "id": "pz0ktanajbp",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1538556184289
+    "lastModifiedOn": 1538556187402
   },
   "creationTag": {
     "versionNumber": 0,
