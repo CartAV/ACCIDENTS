@@ -443,6 +443,30 @@
         "sql": "/*select adr, count(adr) from \"public\".\"accidents_cluv_prepared\" c where c.dep \u003d \u002775\u0027 group by adr order by count desc*/\nselect adr, pr from \"public\".\"accidents_cluv_prepared\" c where c.dep \u003d \u002775\u0027 and c.adr like \u0027%PORTE%\u0027",
         "expandedSql": "/*select adr, count(adr) from \"public\".\"accidents_cluv_prepared\" c where c.dep \u003d \u002775\u0027 group by adr order by count desc*/\nselect adr, pr from \"public\".\"accidents_cluv_prepared\" c where c.dep \u003d \u002775\u0027 and c.adr like \u0027%PORTE%\u0027"
       }
+    ],
+    "bn9my8lmpfa": [
+      {
+        "mode": "SQL",
+        "id": "IqvpEN1cBorB",
+        "runOn": 1538556324079,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "jOhR5Kje",
+        "hash": "a8580c2098485e49503866bf202ce8a0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"accidents_cluv_prepared\"\nWHERE Num_Acc \u003d \u002720180200010530000201\u0027",
+        "expandedSql": "SELECT *\nFROM \"accidents_cluv_prepared\"\nWHERE Num_Acc \u003d \u002720180200010530000201\u0027"
+      }
     ]
   }
 }
