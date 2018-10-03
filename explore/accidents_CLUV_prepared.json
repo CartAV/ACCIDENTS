@@ -470,213 +470,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Avg. of geo_score by ANNEE and geo_type",
-        "userEditedName": false,
-        "genericDimension0": [
-          {
-            "column": "ANNEE",
-            "type": "NUMERICAL",
-            "numParams": {
-              "mode": "NONE",
-              "nbBins": 10,
-              "binSize": 100,
-              "emptyBinsMode": "ZEROS"
-            },
-            "maxValues": 100,
-            "generateOthersCategory": true,
-            "oneTickPerBin": false,
-            "filters": [],
-            "isA": "dimension",
-            "possibleSorts": [
-              {
-                "type": "NATURAL",
-                "label": "Natural ordering",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of geo_score, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of geo_score, ascending",
-                "sortAscending": true
-              }
-            ],
-            "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
-            }
-          }
-        ],
-        "genericDimension1": [
-          {
-            "column": "geo_type",
-            "type": "ALPHANUM",
-            "numParams": {
-              "emptyBinsMode": "ZEROS"
-            },
-            "maxValues": 20,
-            "generateOthersCategory": true,
-            "oneTickPerBin": false,
-            "filters": [],
-            "isA": "dimension",
-            "possibleSorts": [
-              {
-                "type": "NATURAL",
-                "label": "Natural ordering",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of geo_score, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of geo_score, ascending",
-                "sortAscending": true
-              }
-            ],
-            "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
-            }
-          }
-        ],
-        "facetDimension": [],
-        "animationDimension": [],
-        "genericMeasures": [
-          {
-            "column": "geo_score",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          }
-        ],
-        "xDimension": [],
-        "yDimension": [],
-        "uaXDimension": [],
-        "uaYDimension": [],
-        "uaSize": [],
-        "uaShape": [],
-        "uaColor": [],
-        "uaTooltip": [],
-        "groupDimension": [],
-        "xMeasure": [],
-        "yMeasure": [],
-        "colorMeasure": [],
-        "sizeMeasure": [],
-        "geometry": [],
-        "tooltipMeasures": [],
-        "boxplotBreakdownDim": [],
-        "boxplotValue": [],
-        "filters": [],
-        "axis1LogScale": false,
-        "axis2LogScale": false,
-        "includeZero": true,
-        "smoothing": true,
-        "showLegend": true,
-        "showXAxis": false,
-        "showInChartValues": false,
-        "showInChartLabels": true,
-        "strokeWidth": 1,
-        "fillOpacity": 0.6,
-        "showXAxisLabel": true,
-        "showYAxisLabel": true,
-        "hexbinRadius": 20,
-        "hexbinNumber": 20,
-        "hexbinRadiusMode": "NUM_HEXAGONS",
-        "chartHeight": 200,
-        "singleXAxis": true,
-        "multiTooltips": false,
-        "animationFrameDuration": 3000,
-        "animationRepeat": true,
-        "colorOptions": {
-          "singleColor": "#2678B1",
-          "transparency": 0.75,
-          "colorPalette": "default",
-          "ccScaleMode": "NORMAL",
-          "customPalette": {
-            "id": "__dku_custom__",
-            "name": "Custom Palette",
-            "colors": [],
-            "values": [],
-            "fixedValues": false
-          },
-          "paletteType": "CONTINUOUS",
-          "quantizationMode": "NONE",
-          "numQuantizeSteps": 5,
-          "paletteMiddleValue": 0.0
-        },
-        "bubblesOptions": {
-          "defaultRadius": 5.0,
-          "singleShape": "FILLED_CIRCLE"
-        },
-        "computeMode": "NORMAL",
-        "xAxisMode": "NORMAL",
-        "yAxisMode": "NORMAL",
-        "pieOptions": {
-          "donutHoleSize": 54.0
-        },
-        "scatterOptions": {
-          "equalScales": false,
-          "identityLine": false
-        },
-        "mapOptions": {
-          "tilesLayer": "cartodb-positron",
-          "lockSquareGrid": false
-        },
-        "mapGridOptions": {
-          "gridLonDeg": 0.5,
-          "gridLatDeg": 0.5
-        },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA6klEQVRoge3PvQqCUBjG8RdaHaOtJSGC4y20tzR1BUEEXUKEbd1ANPcB0SBoS7UYBUHUHnQJ4R002qS99iFGdpR4/tvD4Xj8EaHXaWOtlfQ/EBGJkdClPARwQiUGPhdLJt/9xroc9VsnVc3zPWjaw6h3H8EGUSbq3Y8CWBLY7SpTvlMJnm0vWX7m6org++/A1t7J8bM4wbVlNfBubGDz4Gz4/go8r9t8T3btwA4DX3uFFd/SwB2jYvANMMD3AAb4N2Dr6CzenT0FMMAAA+wFMMAA+wEMMMB+AIcFMMAAA+wFMMApACOEEEpBN3yH5PVy/c6WAAAAAElFTkSuQmCC",
-        "disableSafetyLimits": false,
-        "useLiveProcessingIfAvailable": true,
-        "legendPlacement": "OUTER_RIGHT"
-      },
-      "maxDataBytes": 157286400
-    },
-    {
-      "copySelectionFromScript": true,
-      "engineType": "SQL",
-      "refreshableSelection": {
-        "selection": {
-          "useMemTable": false,
-          "filter": {
-            "distinct": false,
-            "enabled": false
-          },
-          "partitionSelectionMethod": "ALL",
-          "latestPartitionsN": 1,
-          "ordering": {
-            "enabled": false,
-            "rules": []
-          },
-          "samplingMethod": "FULL",
-          "maxRecords": -1,
-          "targetRatio": 0.02,
-          "withinFirstN": -1,
-          "maxReadUncompressedBytes": -1
-        },
-        "autoRefreshSample": false,
-        "_refreshTrigger": 1
-      },
-      "def": {
-        "type": "grouped_columns",
-        "variant": "normal",
-        "name": "Count by ANNEE and geojson",
+        "name": "Count by ANNEE and geo_source",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -690,7 +484,7 @@
             },
             "maxValues": 100,
             "generateOthersCategory": true,
-            "oneTickPerBin": true,
+            "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
             "possibleSorts": [
@@ -720,13 +514,13 @@
         ],
         "genericDimension1": [
           {
-            "column": "geojson",
+            "column": "geo_source",
             "type": "ALPHANUM",
             "numParams": {
               "emptyBinsMode": "ZEROS"
             },
-            "maxValues": 2,
-            "generateOthersCategory": false,
+            "maxValues": 20,
+            "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
@@ -765,8 +559,8 @@
             "isA": "measure",
             "displayAxis": "axis1",
             "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
+            "computeMode": "PERCENTAGE",
+            "computeModeDim": 1
           }
         ],
         "xDimension": [],
@@ -786,7 +580,17 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "NUMERICAL_FACET",
+            "column": "ANNEE",
+            "columnType": "NUMERICAL",
+            "minValue": 2012.4802,
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -846,7 +650,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAkklEQVRoge3SQQqAIBBAUTddQ2/XDcqztGzXXvderVVEEJXUjCb/QxshZx5oDO05H9P22TEspfcRD3DrAW49wK0HWGGO8zFJzclaBLDQHMCaAVaYA1gzwApzAGt2BpZYrpo7n4LfLtwM+HDWT92ny2XsXhQs8UIA/xFshzDf3Xn1P2DAgAEDBgwYMGDAJcFEVH0r2H2Mv1DGob4AAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA30lEQVRoge3SsQ3CMBCFYdOTFUhLkY0YITUyFWwSUSPkylQpLFGQJVKjkCVMRUUuJjFg6/z+9nQ6f5KFQPGXS21Cv+GvAcw9gLkHMPcA5h7A3AOYewBz72fgldR1kMOOYgUvPHaFajpyDvC3AnjaYSf4fLuvqTlLsGoeG2oO8Od35+cLdj06WrA9ZIMHcqkNNROpgsd2kwNfL2pL3Q4Gdj3aB9xWpaJuq6Yzdp9Jatf5+DkFB4/snky/dAKmFjN47MvPLmlwcSzeDrzAtt4NzdMFU7ttVSpiNwwYIYRQ4J7i4plCe3f2ngAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
