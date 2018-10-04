@@ -512,6 +512,28 @@
         },
         "sql": "SELECT audit_license_size()",
         "expandedSql": "SELECT audit_license_size()"
+      },
+      {
+        "mode": "SQL",
+        "id": "C5bz0IJQCOW7",
+        "runOn": 1538639862636,
+        "runIn": 25,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "QTy2nAbL",
+        "hash": "c68a16a9291e52e0c741b364e06b684d",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT audit_license_size();",
+        "expandedSql": "SELECT audit_license_size();"
       }
     ]
   }
