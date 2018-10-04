@@ -489,6 +489,30 @@
         "sql": "SELECT *\nFROM \"accidents_cluv_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027",
         "expandedSql": "SELECT *\nFROM \"accidents_cluv_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720180200010530000201\u0027"
       }
+    ],
+    "tw7kcwecua": [
+      {
+        "mode": "SQL",
+        "id": "vT14diVbbxka",
+        "runOn": 1538639825077,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "hJOh57R7",
+        "hash": "bcb387e4477432bbe55942901f39e975",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT audit_license_size()",
+        "expandedSql": "SELECT audit_license_size()"
+      }
     ]
   }
 }
