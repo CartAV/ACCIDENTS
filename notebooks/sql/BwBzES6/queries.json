@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "44d91sv9hza": [
+      {
+        "mode": "SQL",
+        "id": "2a4y3o02zh4Y",
+        "runOn": 1541598444461,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "tZhxc9E9",
+        "hash": "c28be56eaba4b8eefeda5ba3656158b8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"accidents_cluv_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
+        "expandedSql": "SELECT *\nFROM \"accidents_cluv_prepared\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
+      }
+    ]
+  }
+}
