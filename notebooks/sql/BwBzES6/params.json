@@ -1,14 +1,28 @@
 {
   "connection": "postgis",
   "name": "dupontlau\u0027s notebook on postgis",
-  "cells": [],
+  "cells": [
+    {
+      "id": "44d91sv9hza",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "dupontlau"
     },
-    "lastModifiedOn": 1541598427734
+    "lastModifiedOn": 1541598432262
   },
   "creationTag": {
     "versionNumber": 0,
