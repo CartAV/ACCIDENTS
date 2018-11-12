@@ -44,6 +44,28 @@
         },
         "sql": "SELECT *\nFROM \"caracteristiques_prep_geo_joined2_pg\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
         "expandedSql": "SELECT *\nFROM \"caracteristiques_prep_geo_joined2_pg\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "GMxmTyHVAVAG",
+        "runOn": 1542039713014,
+        "runIn": 463,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "zIpZNaZ7",
+        "hash": "985ea10ad8e6ad785113790a53694b67",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"caracteristiques_prep_geo_joined2_pg\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027",
+        "expandedSql": "SELECT *\nFROM \"caracteristiques_prep_geo_joined2_pg\"\nWHERE \"Num_Acc\" \u003d \u002720181003006015900022\u0027"
       }
     ]
   }
