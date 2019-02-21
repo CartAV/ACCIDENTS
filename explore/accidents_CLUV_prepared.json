@@ -165,7 +165,7 @@
             "filterType": "NUMERICAL_FACET",
             "column": "ANNEE",
             "columnType": "NUMERICAL",
-            "minValue": 2012.98830396,
+            "minValue": 2018.0,
             "isA": "filter",
             "excludedValues": {},
             "explicitExclude": false
@@ -230,7 +230,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAhUlEQVRoge3Puw2AIBRG4bsIMozj2MMgjgI9q1mRECM0RiJ/zql4JdzPjNZrC2n3MRcfczEzq+u6lwswYLEAAxYLsCK4RcmCWwhgwIDXCzBgAXAPAnhV8H1YSXAP0t6N3v0GPPq4nruQT8AKYBfT8TTU1+CpeMCAAQMGDBgw4GlgIiJ62QWf7o7MTq/lywAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAl0lEQVRoge3Ruw2AIABFUfYw6iYWruSHTdzBwsZg7WpWGCuUgPLx3oTCwuQdEILiqpZq1yf0llcq+rW9IgHnFuC/g8tua/QJvdVLd+AkX9w0OguwzWhbcJQXYjMySXA5qkWfX4BdRiYBdh0FGPAHYNOPPoGAAQcAV1LN5/egppTAjy8AMGDAgAEDBgwYMGDAgAEDJiKKtAMr8HUNGULBIwAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
