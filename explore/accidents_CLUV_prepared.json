@@ -435,7 +435,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAgElEQVRoge3PsQ2AMAxEUQaAFWDMQAMTQZUiUgqXMApMYVYIUpDl6H/p+ntdR/+leUmaZymZ9dcq6don3QYpmfXXKu3Xk47zlpJZf60SYMCNgccQ0xSilMz6a5UAAwbsO8CAAfsOMGDAvgMMGLDvAAMG7DvAgAH7DnDrYCIi+tgLho4d+UuoEcMAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAB5ElEQVRoge3Wv0rDQBwH8HuA+gQqDh3TB3HxBRx0yhuIFcQKrfUfDm52ECxuFQyUpgURuc0sbh3ESd0CrtK1Tj/7yy+985om3iW9H3yh5a6X+9yfUMZsMXb9evQA0T2Xf6nW+zmH0LbB8eYdRMfcMqnLt7oHYSy6ALLFyG1V2hUOYSwKpm2FqPHjHocwFl0AnKvPU7cQu03B+DsOBef2uKuCnRvHFR19vYIZKykYH/dc4VXB46eqq3LXGZvsvk6XsJKCcRsFG/1mTwMsetMzls5dh/GcttPIFny4NMkMYNHRbz8fDCB4MfDnaX94JuNXUwAjVNbgjd66D8FttB+9Ir9zqJXq6YMxEqe25AoX5mS5C6Fg1buO22ILaBxYcEpi/SQnQdoPgWmbGWBRP1WwaE65AOMxBDsne24MTNrMBs/Zb1wr1deqPocUFuwFIfeCkN8HYWNuMAzmBWHswbhNJxiAq7u9+XeYgvF3nO8LZ3vULHdGzXKHgkWLlhRMx9MC7gZfbgQlAYtOzEKAI9eCgPt86Pf50Jc91xywZEdUxpP1oygLLgIYQyzYNLBogn+Bp/3GWLDKnVOFWHCWYDoAhmy1XjqQwoJFD17ZGbiihdEF/rg924csBDjRbi8c2JYtW7ZMrR/y8nLZdX3drgAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
