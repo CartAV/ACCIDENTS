@@ -165,7 +165,7 @@
             "filterType": "NUMERICAL_FACET",
             "column": "ANNEE",
             "columnType": "NUMERICAL",
-            "minValue": 2018.0,
+            "minValue": 2019.0,
             "isA": "filter",
             "excludedValues": {},
             "explicitExclude": false
@@ -230,7 +230,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAjklEQVRoge3SQQqAIBBAUa/Rpg7RgbqFdTAhWnW1VokEDRWZ4/Q/tAjJ5onOkY66Maz7U3qWLB2BgK0F+M/gZlp6c3iTYOma3gGrvu5xOB/mXGBVByCB0/e3wJ/jT4cBXCm49WG4NAxgwGXB0ofpGmDAFYKlHwAGDBgwYMCAH+0DGDBgwIABA1YKJiLS2AZhuYNatqvHqwAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAZUlEQVRoge3QsQ2AMBAEQTqhTBojpzUKICHwyrY0Kzk9/fg49O287ufvm33rkEaBt/k4YGDgdCcPGBg43ckDBgZOd/KAgYHTnTxgYOB0Jw94Mjj/uNUOBQYGBgZe+VBgYGBJ2rMXyVPShfzw8yoAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
