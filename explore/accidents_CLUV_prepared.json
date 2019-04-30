@@ -650,7 +650,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAjUlEQVRoge3RsQ2AMAxEUS+QggkYEzo2okrvklXYIgxASY6Lov8GOPnLEXhbt5rrVtN9x28Inh3BsyPYvCNHsHlHjmDzjhzB5h05gs07cgSbd+QINu/IEWzekSPYvCNHsHlHjmDzjhzB5h253sHndY8dTfDHnfO6s+2xtD2WHvd1Jwk+SrajjP1pAMDPHhgACFxmv3kfAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABBElEQVRoge2WvQ3CMBCFb4HMQI89EgUSYgZSIFHQMQCigrQIQUWXIlAgCoagzRamQ8aJLfuC8mO9r33y3fuuMhFon9HiWnTdoVUgHDsQjh0Ix06Uwi4prvDlWfb3UBD2zFxAuE8MQvifAyHsmbmAcFM4A21vIOyZERGpVVKbQ7gpnPKuN5x5RG5hWxYMtyCEPeedH+XSNhPC2i4Ic4GwkdneQdhzHoQ11CopVJ5W3rYqHPr7GYxw3aLohcVBTM0stARXmLOLhS4sMzkLLSEzWZhvvgfMxNrMeiU8v0+OthK79+ZnoS6sZ8YBK8d4nbY3W4/Q47LoQljlaSH2Ytx0FwAARMMHY7qcBFamA7oAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -800,7 +800,7 @@
             "filterType": "NUMERICAL_FACET",
             "column": "ANNEE",
             "columnType": "NUMERICAL",
-            "minValue": 2018.0,
+            "minValue": 2019.0,
             "isA": "filter",
             "excludedValues": {},
             "explicitExclude": false
@@ -865,7 +865,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAz0lEQVRoge3SMQrCQBCF4bGxsxeJ6FFyCa+i23kOr6AgSIQ0ATu9hmVuoZ3ESUh2lTFZ+V+XZfNmPlgRMtiMqh+LzfliPlEPma9PM4s5icvS2uFqP27bxSRWYN0bFXjq8mXbPz69gEUAA7YIYMCAAfv0AhYBDNgigAEDBuzTC1gEMGCLAAYcOfh4K99KfcC74p6HLgb438BdvYnLUn1nMGB9xwp8uJZFV+/XiQ1cexWhaVrssZ28zn4Nrs7WuzT1BudTcOhi+k5vYEIIIT3nCZ6nGf3sjhFYAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA3UlEQVRoge3PsQ3CMBCF4SyQFWCAeD2Eu4yCu1RJAQgJpXCD5C2onSlMZYFCiA/J51jJe/WvO31FgfFvf7xqSrc7XCS1zXrZgv95xtECzD2AE7cAcw/gxC3A3AM4cQsw9wAOtK2xTWuGU6y7i4A7Y3VnbPDpux1ulJbyf1Vgyk0PprRRBjCpBfhnG+oA5h7ApHYlYFeXs083Cz4/nndq6+py9u4nONRGGcCEFuCZFuDRAAY48jYPdr3UQgktlPh6PAZTWo9wvZyETIH9XQ5vUrBQQleqahYFYxiG5bYXP0RhE3xksqsAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
