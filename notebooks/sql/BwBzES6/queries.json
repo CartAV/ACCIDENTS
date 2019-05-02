@@ -133,6 +133,30 @@
         "sql": "SELECT *\nFROM \"caracteristiques_prep_geo_joined2_pg\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027",
         "expandedSql": "SELECT *\nFROM \"caracteristiques_prep_geo_joined2_pg\"\nWHERE \"Num_Acc\" \u003d \u002720180917001357201346\u0027"
       }
+    ],
+    "y15yn8knpz": [
+      {
+        "mode": "SQL",
+        "id": "Wa06ef2cX0sl",
+        "runOn": 1556810918590,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "UvW7ICO6",
+        "hash": "71c72a072adaf16f39754ba63e937c7b",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"geo_source\", COUNT(*)\nFROM  \"accidents_cluv_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nGROUP BY \"geo_source\"",
+        "expandedSql": "SELECT \"geo_source\", COUNT(*)\nFROM  \"accidents_cluv_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nGROUP BY \"geo_source\""
+      }
     ]
   }
 }
