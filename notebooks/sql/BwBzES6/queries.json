@@ -157,6 +157,30 @@
         "sql": "SELECT \"geo_source\", COUNT(*)\nFROM  \"accidents_cluv_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nGROUP BY \"geo_source\"",
         "expandedSql": "SELECT \"geo_source\", COUNT(*)\nFROM  \"accidents_cluv_prepared\"\nWHERE  \"nom_circonscription_police\" \u003d \u0027BLOIS\u0027\nAND \"ANNEE\" \u003d \u00272019\u0027\nAND  \"mois\" in (1, 2, 3, 4)\nGROUP BY \"geo_source\""
       }
+    ],
+    "0.03321002270792017": [
+      {
+        "mode": "SQL",
+        "id": "J240AUalQgYe",
+        "runOn": 1557146115373,
+        "runIn": -1,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "TyZLlKNC",
+        "hash": "659943bfca7b6757f982304a2bb3158a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM  \"accidents_cluv_prepared\"\nWHERE  \"Num_Acc\" \u003d \u002720190128004101800010\u0027",
+        "expandedSql": "SELECT *\nFROM  \"accidents_cluv_prepared\"\nWHERE  \"Num_Acc\" \u003d \u002720190128004101800010\u0027"
+      }
     ]
   }
 }
