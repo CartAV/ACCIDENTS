@@ -180,6 +180,28 @@
         },
         "sql": "SELECT *\nFROM  \"accidents_cluv_prepared\"\nWHERE  \"Num_Acc\" \u003d \u002720190128004101800010\u0027",
         "expandedSql": "SELECT *\nFROM  \"accidents_cluv_prepared\"\nWHERE  \"Num_Acc\" \u003d \u002720190128004101800010\u0027"
+      },
+      {
+        "mode": "SQL",
+        "id": "HYQ48Z5yHUIa",
+        "runOn": 1557147355844,
+        "runIn": 532,
+        "runBy": "dupontlau",
+        "connection": "postgis",
+        "state": "RUNNING",
+        "futureId": "lUnGUMCR",
+        "hash": "980da8ded17f0a0e5ebb9be3628b3ad2",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM  \"accidents_cluv_prepared\"\nWHERE  \"Num_Acc\" \u003d \u002720190118004101800006\u0027",
+        "expandedSql": "SELECT *\nFROM  \"accidents_cluv_prepared\"\nWHERE  \"Num_Acc\" \u003d \u002720190118004101800006\u0027"
       }
     ]
   }
