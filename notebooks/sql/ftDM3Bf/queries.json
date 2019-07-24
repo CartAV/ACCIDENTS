@@ -401,10 +401,10 @@
         "mode": "SQL",
         "id": "EnZvRyNipa12",
         "runOn": 1563973814754,
-        "runIn": 132,
+        "runIn": 101,
         "runBy": "candussojp",
         "connection": "vertica-dsr-admin",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "6usZzjro",
         "hash": "c7483d3877f5569818a0df88b84bdaa3",
         "querySettings": {
