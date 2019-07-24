@@ -132,6 +132,28 @@
         },
         "sql": "SELECT aue_ban_isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY aue_ban_isgeocoded;\n--SELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;\n\n--DELETE FROM dku_er.poc_geoplugin_data_out_geochunking WHERE aue_dep_code \u003e\u003d \u002710\u0027 AND aue_dep_code \u003c\u003d \u002720\u0027;",
         "expandedSql": "SELECT aue_ban_isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY aue_ban_isgeocoded;\n--SELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;\n\n--DELETE FROM dku_er.poc_geoplugin_data_out_geochunking WHERE aue_dep_code \u003e\u003d \u002710\u0027 AND aue_dep_code \u003c\u003d \u002720\u0027;"
+      },
+      {
+        "mode": "SQL",
+        "id": "z35YiKft8JFA",
+        "runOn": 1563955957633,
+        "runIn": 140,
+        "runBy": "candussojp",
+        "connection": "vertica-dsr-admin",
+        "state": "RUNNING",
+        "futureId": "ZnDWUKqx",
+        "hash": "0d07a915a29aba9b50a877bd1455e157",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT aue_ban_isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY aue_ban_isgeocoded;\n--SELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;\n\n--DELETE FROM dku_er.poc_geoplugin_data_out_geochunking WHERE aue_dep_code \u003e\u003d \u002710\u0027 AND aue_dep_code \u003c\u003d \u002720\u0027;",
+        "expandedSql": "SELECT aue_ban_isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY aue_ban_isgeocoded;\n--SELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;\n\n--DELETE FROM dku_er.poc_geoplugin_data_out_geochunking WHERE aue_dep_code \u003e\u003d \u002710\u0027 AND aue_dep_code \u003c\u003d \u002720\u0027;"
       }
     ]
   }
