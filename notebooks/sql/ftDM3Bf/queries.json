@@ -484,6 +484,28 @@
         },
         "sql": "DELETE FROM dku_er.poc_geoplugin_test2 WHERE aue_dep_code \u003e\u003d \u002710\u0027 AND aue_dep_code \u003c\u003d \u002720\u0027;\n\n--SELECT aue_ban_isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_test2 GROUP BY aue_ban_isgeocoded;\n--SELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;\n\n--SELECT aue_adresse, aue_code_postal, aue_commune, aue_ban_label\n--FROM dku_er.poc_geoplugin_data_out_geochunking WHERE aue_dep_code \u003e\u003d \u002710\u0027 AND aue_dep_code \u003c\u003d \u002720\u0027;\n\n\n--SELECT COUNT(*) FROM dku_er.poc_geoplugin_data_in_chunking GROUP BY aue_adresse, aue_code_postal, aue_commune ORDER BY COUNT(*) DESC;\n",
         "expandedSql": "DELETE FROM dku_er.poc_geoplugin_test2 WHERE aue_dep_code \u003e\u003d \u002710\u0027 AND aue_dep_code \u003c\u003d \u002720\u0027;\n\n--SELECT aue_ban_isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_test2 GROUP BY aue_ban_isgeocoded;\n--SELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;\n\n--SELECT aue_adresse, aue_code_postal, aue_commune, aue_ban_label\n--FROM dku_er.poc_geoplugin_data_out_geochunking WHERE aue_dep_code \u003e\u003d \u002710\u0027 AND aue_dep_code \u003c\u003d \u002720\u0027;\n\n\n--SELECT COUNT(*) FROM dku_er.poc_geoplugin_data_in_chunking GROUP BY aue_adresse, aue_code_postal, aue_commune ORDER BY COUNT(*) DESC;\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "2SFm9DiAmivK",
+        "runOn": 1563973903545,
+        "runIn": 84,
+        "runBy": "candussojp",
+        "connection": "vertica-dsr-admin",
+        "state": "RUNNING",
+        "futureId": "2OUsPkQo",
+        "hash": "63af9adaf89033a4315b94442896628c",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--DELETE FROM dku_er.poc_geoplugin_test2 WHERE aue_dep_code \u003e\u003d \u002710\u0027 AND aue_dep_code \u003c\u003d \u002720\u0027;\n\nSELECT aue_ban_isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_test2 GROUP BY aue_ban_isgeocoded;\n--SELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;\n\n--SELECT aue_adresse, aue_code_postal, aue_commune, aue_ban_label\n--FROM dku_er.poc_geoplugin_data_out_geochunking WHERE aue_dep_code \u003e\u003d \u002710\u0027 AND aue_dep_code \u003c\u003d \u002720\u0027;\n\n\n--SELECT COUNT(*) FROM dku_er.poc_geoplugin_data_in_chunking GROUP BY aue_adresse, aue_code_postal, aue_commune ORDER BY COUNT(*) DESC;\n",
+        "expandedSql": "--DELETE FROM dku_er.poc_geoplugin_test2 WHERE aue_dep_code \u003e\u003d \u002710\u0027 AND aue_dep_code \u003c\u003d \u002720\u0027;\n\nSELECT aue_ban_isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_test2 GROUP BY aue_ban_isgeocoded;\n--SELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;\n\n--SELECT aue_adresse, aue_code_postal, aue_commune, aue_ban_label\n--FROM dku_er.poc_geoplugin_data_out_geochunking WHERE aue_dep_code \u003e\u003d \u002710\u0027 AND aue_dep_code \u003c\u003d \u002720\u0027;\n\n\n--SELECT COUNT(*) FROM dku_er.poc_geoplugin_data_in_chunking GROUP BY aue_adresse, aue_code_postal, aue_commune ORDER BY COUNT(*) DESC;\n"
       }
     ]
   }
