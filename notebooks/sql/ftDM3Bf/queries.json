@@ -511,10 +511,10 @@
         "mode": "SQL",
         "id": "xbOtWQ38ca3Z",
         "runOn": 1563973984330,
-        "runIn": 107,
+        "runIn": 100,
         "runBy": "candussojp",
         "connection": "vertica-dsr-admin",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "a4lO9C73",
         "hash": "63af9adaf89033a4315b94442896628c",
         "querySettings": {
