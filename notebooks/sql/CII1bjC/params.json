@@ -1,28 +1,14 @@
 {
   "connection": "vertica-er-stat-dss",
   "name": "candussojp\u0027s notebook on vertica-er-stat-dss",
-  "cells": [
-    {
-      "id": "ymvqqmy0j8q",
-      "type": "QUERY",
-      "querySettings": {
-        "addLimitToStatement": true,
-        "statementsOutOfTransaction": false,
-        "inheritConf": "default",
-        "extraConf": [],
-        "addDkuUdf": false,
-        "statementsParseMode": "SPLIT",
-        "statementsExecutionMode": "PREPARED"
-      }
-    }
-  ],
+  "cells": [],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "candussojp"
     },
-    "lastModifiedOn": 1563955459817
+    "lastModifiedOn": 1563955502990
   },
   "creationTag": {
     "versionNumber": 0,
