@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "j8d9m7kqth": [
+      {
+        "mode": "SQL",
+        "id": "d43hkpt1TaWj",
+        "runOn": 1563955538465,
+        "runIn": -1,
+        "runBy": "candussojp",
+        "connection": "vertica-dsr-admin",
+        "state": "RUNNING",
+        "futureId": "0DRmx2d6",
+        "hash": "132d3886ae2fbd304ad96b81edc243b3",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY isgeocoded;",
+        "expandedSql": "SELECT isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY isgeocoded;"
+      }
+    ]
+  }
+}
