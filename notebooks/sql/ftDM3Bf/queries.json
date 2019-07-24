@@ -44,6 +44,28 @@
         },
         "sql": "--SELECT isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY isgeocoded;\nSELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;",
         "expandedSql": "--SELECT isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY isgeocoded;\nSELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;"
+      },
+      {
+        "mode": "SQL",
+        "id": "Nc97P83DUw3z",
+        "runOn": 1563955583693,
+        "runIn": 509,
+        "runBy": "candussojp",
+        "connection": "vertica-dsr-admin",
+        "state": "RUNNING",
+        "futureId": "lMwp8loy",
+        "hash": "809d6c887274a6c80fc0f83f991818ec",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT aue_isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY aue_isgeocoded;\n--SELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;",
+        "expandedSql": "SELECT aue_isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY aue_isgeocoded;\n--SELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;"
       }
     ]
   }
