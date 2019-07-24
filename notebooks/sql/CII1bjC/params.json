@@ -1,0 +1,25 @@
+{
+  "connection": "vertica-er-stat-dss",
+  "name": "candussojp\u0027s notebook on vertica-er-stat-dss",
+  "cells": [],
+  "automationLocal": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "candussojp"
+    },
+    "lastModifiedOn": 1563955452676
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "candussojp"
+    },
+    "lastModifiedOn": 1563955452676
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
