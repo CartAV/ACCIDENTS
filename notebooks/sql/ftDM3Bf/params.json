@@ -1,14 +1,28 @@
 {
   "connection": "vertica-dsr-admin",
   "name": "candussojp\u0027s notebook on vertica-dsr-admin",
-  "cells": [],
+  "cells": [
+    {
+      "id": "j8d9m7kqth",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "candussojp"
     },
-    "lastModifiedOn": 1563955533882
+    "lastModifiedOn": 1563955536816
   },
   "creationTag": {
     "versionNumber": 0,
