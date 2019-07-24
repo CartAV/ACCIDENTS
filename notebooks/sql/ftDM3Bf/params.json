@@ -1,0 +1,25 @@
+{
+  "connection": "vertica-dsr-admin",
+  "name": "candussojp\u0027s notebook on vertica-dsr-admin",
+  "cells": [],
+  "automationLocal": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "candussojp"
+    },
+    "lastModifiedOn": 1563955533882
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "candussojp"
+    },
+    "lastModifiedOn": 1563955533882
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
