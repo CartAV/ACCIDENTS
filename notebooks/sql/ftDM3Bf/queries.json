@@ -22,6 +22,28 @@
         },
         "sql": "SELECT isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY isgeocoded;",
         "expandedSql": "SELECT isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY isgeocoded;"
+      },
+      {
+        "mode": "SQL",
+        "id": "FVOZAMHkB5lJ",
+        "runOn": 1563955568378,
+        "runIn": 815,
+        "runBy": "candussojp",
+        "connection": "vertica-dsr-admin",
+        "state": "RUNNING",
+        "futureId": "Px5wtZVd",
+        "hash": "17c6ee149ee7eb10546479af523d7a82",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "--SELECT isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY isgeocoded;\nSELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;",
+        "expandedSql": "--SELECT isgeocoded, COUNT(*) AS count FROM dku_er.poc_geoplugin_data_out_geochunking GROUP BY isgeocoded;\nSELECT * FROM dku_er.poc_geoplugin_data_out_geochunking;"
       }
     ]
   }
